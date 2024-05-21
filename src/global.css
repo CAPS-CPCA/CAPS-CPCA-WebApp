@@ -1,0 +1,25 @@
+/* Import fonts here */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Declare variables here */
+:root {   
+    --Primary: #011627;
+    --Primary-stroke: #0F3E65;
+    --Highlight: #20A4F3;
+    --Pressed: #0E6EB8;
+    --Background: #F6F7F8;
+}
+:accents {
+    --Prescribing: #FF3366
+    --Dispensing: #2EC4B6
+    --Supporting: #FB9246
+}
+
+/* Reset CSS */
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles */
