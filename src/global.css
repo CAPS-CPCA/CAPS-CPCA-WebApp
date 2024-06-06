@@ -16,10 +16,12 @@
 }
 
 /* Reset CSS */
+html { font-size: 14px; }
 body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background: var(--Background);
 }
 
 /* Styles */
