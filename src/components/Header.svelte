@@ -1,5 +1,5 @@
 <script lang="ts">
-    let list: { [key: string]: string | string[] } = { '/': 'Home', content: ['Prescribing', 'Dispensing', 'Supporting Roles'], faqs: 'FAQ', about: 'About', search: '🔍'}
+    let list: { [key: string]: string | string[] } = { '/': 'Home', content: ['Prescribing', 'Dispensing', 'Supporting Roles'], faqs: 'FAQ', about: 'About', search: '🔍', fr : 'FR' , exit: 'Exit'}
 </script>
 
 <section class="header">
@@ -17,7 +17,11 @@
                         <li><a href={item.toLowerCase()}>{item}</a></li>
                     {/each}
                 {:else}
-                    <li><a href={key}>{list[key]}</a></li>
+                    {#if key === 'exit'}
+                        <li><a href="https://www.theweathernetwork.com/ca" target="_self">{list[key]}</a></li>
+                    {:else}
+                        <li><a href={key}>{list[key]}</a></li>
+                    {/if}
                 {/if}
             {/each}
         </ul>
