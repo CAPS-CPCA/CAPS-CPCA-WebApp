@@ -1,28 +1,31 @@
-// writable store for website translations
-import { writable } from 'svelte/store';
-
-const lang = writable('en');
-
-const translations: { [key: string]: any } = {
+// translations data
+export const translations: { [key: string]: any } = {
     en: {
         header: {
-            logo: '🩺',
-            home: 'Home',
-            content: ['Prescribing', 'Dispensing', 'Supporting Roles'],
-            faq: 'FAQ',
-            about: 'About',
-            search: '🔍',
+            logo: 'EnSOGC',
+            nav: {
+                '/': 'Home',
+                content: ['Prescribing', 'Dispensing', 'Supporting roles'],
+                faqs: 'FAQs',
+                about: 'About',
+                search: '🔍',
+                lang: 'FR',
+                exit: 'Exit'
+            }
         }
     },
     fr: {
         header: {
-            logo: '🩺',
-            home: 'Accueil',
-            content: ['Prescrire', 'Dispenser', 'Rôles de soutien'],
-            faq: 'FAQ',
-            about: 'À propos de nous',
-            search: '🔍',
+            logo: 'FrSOGC',
+            nav: {
+                '/': 'Accueil',
+                content: ['Prescrire', 'Dispenser', 'Rôles de soutien'],
+                faqs: 'FAQ',
+                about: 'À propos de nous',
+                search: '🔍',
+                lang: 'EN',
+                exit: 'Sortie'
+            }
         }
     }
 };
-

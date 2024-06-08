@@ -1,5 +1,12 @@
-<script lang="ts">
-    let list: { [key: string]: string | string[] } = { '/': 'Home', content: ['Prescribing', 'Dispensing', 'Supporting Roles'], faqs: 'FAQ', about: 'About', search: '🔍', fr : 'FR' , exit: 'Exit'}
+<script lang='ts'>
+    import { Header } from './header';
+    let header = new Header('en');
+    let list = header.navigation;
+
+    function langHandler() {
+        header.toggleLang();
+        list = header.navigation;
+    }
 </script>
 
 <section class="header">
@@ -11,17 +18,17 @@
     </div>
     <nav>
         <ul>
-            {#each Object.keys(list) as key}
+            {#each Object.entries(list) as [key, value]}
                 {#if key === 'content'}
-                    {#each list[key] as item}
+                    {#each value as item}
                         <li><a href={item.toLowerCase()}>{item}</a></li>
                     {/each}
+                {:else if key === 'exit'}
+                    <li><a href="https://www.theweathernetwork.com/ca" target="_self">{value}</a></li>
+                {:else if key === 'lang'}
+                    <li><button on:click={langHandler}>{value}</button></li>
                 {:else}
-                    {#if key === 'exit'}
-                        <li><a href="https://www.theweathernetwork.com/ca" target="_self">{list[key]}</a></li>
-                    {:else}
-                        <li><a href={key}>{list[key]}</a></li>
-                    {/if}
+                    <li><a href={key}>{value}</a></li>
                 {/if}
             {/each}
         </ul>
