@@ -7,7 +7,8 @@
 		"build": "vite build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"build-css": "tailwind build src/styles.css -o dist/styles.css"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^3.2.1",
@@ -23,6 +24,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"tailwindcss": "^3.4.4",
 		"vite-plugin-eslint": "^1.8.1"
 	}
 }
