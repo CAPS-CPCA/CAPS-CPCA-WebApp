@@ -1,21 +1,33 @@
 <script lang='ts'>
     import { Header } from './header';
-    import {images} from '../assets/index';
-    let header = new Header('en');
-    let partnersList = header.partners;
-    let navList = header.navigation;
+    import { images } from '../assets/index';
+    import { onMount } from 'svelte';
 
-    function langHandler() {
-        header.toggleLang();
-        partnersList = header.partners;
-        navList = header.navigation;
+    let header = new Header();
+    let isSticky = false;
+
+    onMount(() => {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 0) {
+                isSticky = true;
+            } else {
+                isSticky = false;
+            }
+        });
+    });
+
+    const toggleLang = () => {
+        if (header.lang === 'fr')
+            header = new Header('en');
+        else
+            header = new Header('fr');
     }
 </script>
 
 <header>
-    <div class="partner-sites">
+    <div class="partner-sites" style={isSticky ? 'display: none;' : ''}>
         <ul>
-            {#each Object.entries(partnersList) as [key, value]}
+            {#each Object.entries(header.partners) as [key, value]}
                 <li><a href={key}>{value}</a></li>
             {/each}
         </ul>
@@ -23,9 +35,9 @@
     <nav>
         <ul>
             <div class="logo">
-                <img src={images.EnSOGC} alt="The Weather Network Logo" />
+                <img src={isSticky ? header.logo : images.CAPS} alt="Logo"/>
             </div>
-            {#each Object.entries(navList) as [key, value]}
+            {#each Object.entries(header.navigation) as [key, value]}
                 {#if key === 'content'}
                     {#each value as i}
                         <li><a href={i.toLowerCase()}>{i}</a></li>
@@ -33,7 +45,7 @@
                 {:else if key === 'exit'}
                     <li><a href="https://www.theweathernetwork.com/ca" target="_self"><span id="exit">{value}</span></a></li>
                 {:else if key === 'lang'}
-                    <li><button on:click={langHandler}>{value}</button></li>
+                    <li><button on:click={toggleLang}>{value}</button></li>
                 {:else}
                     <li><a href={key}>{value}</a></li>
                 {/if}
@@ -44,18 +56,22 @@
 
 <style>
 /* Specific Sheet for Navigation bar */
-    /* * {
-        box-sizing: border-box;
-        border: 1px solid gray;
-    } */
-    /* .focus {
-        box-sizing: border-box;
-        border: 1px solid greenyellow;
-    } */
     .logo {
         position: absolute;
         top: 0;
         left: 0;
+        background: #f1f1f1;
+        transition: all 0.3s ease-in-out;
+    }
+    .logo:hover {
+        background: #b5b5b5;
+    }
+    header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        background: var(--Primary);
     }
     button {
         background: none;

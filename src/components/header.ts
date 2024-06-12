@@ -1,4 +1,5 @@
 import { translations } from '$lib/translations';
+import { images } from '../assets/index';
 
 export type partners = {
     [key: string]: string;
@@ -15,18 +16,15 @@ export type navigation = {
 }
 
 export class Header {
+    logo: string;
     lang: string;
     partners: partners;
     navigation: navigation;
 
-    constructor(lang: string) {
+    constructor(lang: string = 'en') {
+        this.logo = images[lang === 'en' ? 'EnSOGC' : 'FrSOGC']
         this.lang = lang;
         this.partners = translations[lang].header.partners;
         this.navigation = translations[lang].header.nav;
-    }
-    toggleLang() {
-        this.lang = this.lang === 'en' ? 'fr' : 'en';
-        this.partners = translations[this.lang].header.partners;
-        this.navigation = translations[this.lang].header.nav;
     }
 }

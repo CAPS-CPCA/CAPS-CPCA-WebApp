@@ -1,11 +1,10 @@
 // import logos
 import {images} from '../assets';
 
-// translations data 
-export const translations: { [key: string]: any } = {
+export const translations = {
     en: {
         header: {
-            logo: [ images.EnSOGC, images.CAPS ],
+            logo: [images.EnSOGC, images.CAPS],
             partners: {
                 'https://caps.sogc.org/': 'MEDICATION ABORTION',
                 'https://sogc.org/': 'SOGC.ORG'
@@ -23,7 +22,7 @@ export const translations: { [key: string]: any } = {
     },
     fr: {
         header: {
-            logo: [ images.FrSOGC, images.CAPS ],
+            logo: [images.FrSOGC, images.CAPS],
             partners: {
                 'https://caps.sogc.org/': 'AVORTEMENT PAR MÉDICAMENTS',
                 'https://sogc.org/fr': 'SOGC.ORG'
