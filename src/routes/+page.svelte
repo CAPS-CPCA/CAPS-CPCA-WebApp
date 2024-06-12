@@ -1,11 +1,19 @@
-<div>
-    <h1>
-        Homepage
-    </h1>
-</div>
+<script lang="ts">
+    import {images} from '../assets/index';
+    
+</script>
 
 <style>
-div {
-    height: 5000px;
-}
+    .banner {
+        width: 100%;
+        height: auto;
+    }
+    .header {
+        text-align: center;
+        margin-top: 60px;
+    }
 </style>
+
+<div class="header">
+    <img src={images.EnBanner} alt="Medication Abortion in Canada" class="banner" />
+</div>
