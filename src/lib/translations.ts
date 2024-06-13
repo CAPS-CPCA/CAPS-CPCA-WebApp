@@ -1,6 +1,7 @@
 // import logos
 import {images} from '../assets';
 
+// define translations object
 export const translations = {
     en: {
         header: {
@@ -13,7 +14,7 @@ export const translations = {
                 '/': 'Home',
                 content: ['Prescribing', 'Dispensing', 'Supporting roles'],
                 faqs: 'FAQs',
-                about: 'About',
+                about: 'About us',
                 search: '🔍',
                 lang: 'FR',
                 exit: 'Exit'

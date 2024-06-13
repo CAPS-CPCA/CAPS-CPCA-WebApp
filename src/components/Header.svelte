@@ -35,7 +35,7 @@
     <nav>
         <ul>
             <div class="logo">
-                <img src={isSticky ? header.logo : images.CAPS} alt="Logo"/>
+                <img src={isSticky ? header.logo : images.CAPS} alt="CAPS-CPCA SOGC Logo"/>
             </div>
             {#each Object.entries(header.navigation) as [key, value]}
                 {#if key === 'content'}
@@ -60,6 +60,7 @@
         position: absolute;
         top: 0;
         left: 0;
+        height: 90px;
         background: #f1f1f1;
         transition: all 0.3s ease-in-out;
     }
@@ -83,7 +84,7 @@
         cursor: pointer;
     }
     .partner-sites {
-        height: auto;
+        height: 2.5rem;
         display: flex;
         justify-content: center;
         gap: 1rem;
@@ -101,8 +102,8 @@
     }
     .partner-sites ul li a{
         font-family: 'Roboto', sans-serif;
-        font-size: 0.95rem;
-        font-weight: 500;
+        font-size: 0.85rem;
+        font-weight: 300;
         text-transform: uppercase;
         color: var(--Primary);
         text-decoration: none;
@@ -116,14 +117,15 @@
         justify-content: center;
         align-items: center;
         background: var(--Primary);
-        border-bottom: 1px solid var(--Pressed);
+        border-bottom: 1px solid var(--Primary-stroke);
     }
     ul {
         margin: 0;
-        position: relative;
+        padding: 0;
         height: 100%;
-        display: flex;
         width: 1200px;
+        position: relative;
+        display: flex;
         align-items: center;
         justify-content: flex-end;
         gap: 2rem;

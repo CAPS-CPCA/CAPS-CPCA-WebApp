@@ -6,13 +6,7 @@ export type partners = {
 }
 
 export type navigation = {
-    home: string;
-    content: string[];
-    faqs: string;
-    about: string;
-    search: string;
-    lang: string;
-    exit: string;
+    key: string | string[];
 }
 
 export class Header {
