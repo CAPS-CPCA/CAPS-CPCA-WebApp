@@ -5,6 +5,7 @@ import FrSOGC from './logo-sogc-fr.png';
 import EnBanner from './banner-en.png'
 import FrBanner from './banner-fr.png'
 import PresBanner from './Prescribing-Banner.png'
+import EnFooter from './logo-footer-en.png'
 
 export const images = {
     CAPS,
@@ -12,5 +13,6 @@ export const images = {
     FrSOGC,
     EnBanner,
     FrBanner,
-    PresBanner
+    PresBanner,
+    EnFooter
 };
