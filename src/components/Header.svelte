@@ -35,7 +35,7 @@
     <nav>
         <ul>
             <div class="logo">
-                <img src={isSticky ? header.logo : images.CAPS} alt="CAPS-CPCA SOGC Logo"/>
+                <img src={isSticky ? images.CAPS : header.logo } alt="CAPS-CPCA SOGC Logo"/>
             </div>
             {#each Object.entries(header.navigation) as [key, value]}
                 {#if key === 'content'}

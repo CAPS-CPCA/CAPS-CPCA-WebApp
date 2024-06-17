@@ -1,4 +1,5 @@
 <script lang='ts'>
+    import { cards } from "./cards";
 </script>
 <div class="container">
     <div class="card">

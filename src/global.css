@@ -47,7 +47,8 @@ p {
 }
 
 /* UI */
-a.primary {
+button.primary, a.primary {
+    color: var(--Background);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,10 +63,10 @@ a.primary {
     padding: 0.75rem 3.5rem;
     transition: all 0.3s ease;
 }
-a.primary:hover {
+button.primary:hover, a.primary:hover {
     background-color: var(--Highlight);
 }
-a.primary:active {
+button.primary:active, a.primary:active {
     background-color: var(--Pressed);
 }
 
@@ -77,6 +78,7 @@ section {
 }
 div.container {
     display: flex;
+    width: 100%;
     max-width: 1600px;
 }
 div.container > * {
