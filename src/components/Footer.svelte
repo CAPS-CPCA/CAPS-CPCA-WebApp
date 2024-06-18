@@ -65,8 +65,8 @@
         </div>
       <img src={images.EnFooter} alt="The Society of Obstetricians and Gynaecologists of Canada" class="footer-logo" />
       <div class="footer-icons">
-        <a href=""><i class="fa fa-share-alt"></i></a>
-        <a href=""><i class="fa fa-print"></i></a>
+        <a href="/"><i class="fa fa-share-alt"></i></a>
+        <a href="/"><i class="fa fa-print"></i></a>
         <a href="https://www.facebook.com/sogc.org" target = "_blank"><i class="fa fa-facebook"></i></a>
         <a href="https://x.com/SOGCorg" target = "_blank" ><i class="fa fa-twitter"></i></a>
         <a href="https://www.youtube.com/user/sexandu" target = "_blank" ><i class="fa fa-youtube"></i></a>

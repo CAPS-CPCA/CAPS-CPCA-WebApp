@@ -1,9 +1,7 @@
 <script lang='ts'>
-    import { Header } from './header';
-    import { images } from '../assets/index';
+    import { data } from '$lib/translations';
     import { onMount } from 'svelte';
 
-    let header = new Header();
     let isSticky = false;
 
     onMount(() => {
@@ -15,19 +13,12 @@
             }
         });
     });
-
-    const toggleLang = () => {
-        if (header.lang === 'fr')
-            header = new Header('en');
-        else
-            header = new Header('fr');
-    }
 </script>
 
 <header>
     <div class="partner-sites" style={isSticky ? 'display: none;' : ''}>
         <ul>
-            {#each Object.entries(header.partners) as [key, value]}
+            {#each Object.entries($data.header.partners) as [key, value]}
                 <li><a href={key}>{value}</a></li>
             {/each}
         </ul>
@@ -35,9 +26,9 @@
     <nav>
         <ul>
             <div class="logo">
-                <img src={isSticky ? images.CAPS : header.logo } alt="CAPS-CPCA SOGC Logo"/>
+                <img src={isSticky ? $data.header.logo[1] : $data.header.logo[0] } alt="CAPS-CPCA SOGC Logo"/>
             </div>
-            {#each Object.entries(header.navigation) as [key, value]}
+            {#each Object.entries($data.header.nav) as [key, value]}
                 {#if key === 'content'}
                     {#each value as i}
                         <li><a href={i.toLowerCase()}>{i}</a></li>
@@ -45,7 +36,7 @@
                 {:else if key === 'exit'}
                     <li><a href="https://www.theweathernetwork.com/ca" target="_self"><span id="exit">{value}</span></a></li>
                 {:else if key === 'lang'}
-                    <li><button on:click={toggleLang}>{value}</button></li>
+                    <li><button on:click={data.togLang}>{value}</button></li>
                 {:else}
                     <li><a href={key}>{value}</a></li>
                 {/if}

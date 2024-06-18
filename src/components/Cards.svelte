@@ -1,22 +1,14 @@
 <script lang='ts'>
-    import { cards } from "./cards";
+    import { data } from '$lib/translations';
 </script>
 <div class="container">
-    <div class="card">
-        <h1>Prescribing</h1>
-        <p>Go here if you are a physician, a nurse practitioner, a midwife or anybody who prescribes, plans to prescribe or supports prescribing medication abortion.</p>
-        <a class="primary" href="/prescribing">View</a>
-    </div>
-    <div class="card">
-        <h1>Dispensing</h1>
-        <p>Go here if you are a pharmacist or any other clinician who is currently dispensing or plans to dispense Mifegymiso.</p>
-        <a class="primary" href="/dispensing">View</a>
-    </div>
-    <div class="card">
-        <h1>Supporting</h1>
-        <p>Go here if you are a community worker, a social worker or a counsellor, or if you are supporting your colleagues and friends in taking medication abortion.</p>
-        <a class="primary" href="/supporting">View</a>
-    </div>
+    {#each $data.cards as card}
+        <div class="card">
+            <h1>{card.title}</h1>
+            <p>{card.desc}</p>
+            <a class="primary" href={card.link[0]}>{card.link[1]}</a>
+        </div>
+    {/each}
 </div>
 
 <style>
