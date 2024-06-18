@@ -56,17 +56,17 @@ export const translations: { [key: string]: any } = {
         cards: [{
             title: 'Prescrire',
             desc: 'Cliquez ici si vous êtes médecins, infirmières praticiennes spécialisées, sages-femmes ou toute personne qui prescrit, envisage de prescrire ou soutient la prescription d’un avortement par médicaments.',
-            link: ['/prescrire', 'View']
+            link: ['/prescrire', 'Voir']
         },
         {
             title: 'Dispenser',
             desc: 'Cliquez ici si vous êtes pharmaciens ou tout autre clinicien qui dispense actuellement ou envisage de délivrer du Mifé-Miso.',
-            link: ['/dispenser', 'View']
+            link: ['/dispenser', 'Voir']
         },
         {
             title: 'Rôles de soutien',
             desc: 'Cliquez ici si vous êtes travailleurs communautaires, travailleurs sociaux ou conseillers, des personnes à recourir à l’avortement par médicaments.',
-            link: ['/rôles%20de%20soutien', 'View']
+            link: ['/rôles%20de%20soutien', 'Voir']
         }]
     }
 };
