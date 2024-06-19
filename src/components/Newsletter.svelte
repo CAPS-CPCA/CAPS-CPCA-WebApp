@@ -7,10 +7,12 @@
         <p>Sign up to our newsletter and learn about multiple ways to be part of our community.
         </p>
     </div>
-    <form class="card">
-        <input type="email" placeholder="john.doe@email.com">
-        <button class="primary" type="submit">Subscribe</button>
-    </form>
+    <div class="card">
+        <form class="form">
+            <input type="email" placeholder="john.doe@email.com">
+            <button class="primary" type="submit">Subscribe</button>
+        </form>
+    </div>
 </div>
 
 <style>
@@ -20,6 +22,7 @@
     }
     .card {
         display: flex;
+        justify-content: center;
         padding: 7rem;
         flex-direction: column;
         gap: 2.5rem;
@@ -28,10 +31,29 @@
     .card h1, .card p {
         color: white;
     }
+    .form {
+        display: flex;
+        height: 4rem;
+        justify-content: center;
+        align-items: center;
+    }
     input {
+        width: 70%;
         font-family: 'Open Sans', sans-serif;
+        font-style: italic;
+        color: #69727d;
         padding: 1rem;
+        border: 1px solid #69727d;
+        transition: all 0.1s ease-in-out;
+    }
+    input:focus {
+        outline: none;
         border: 1px solid var(--Highlight);
-        border-radius: 0.5rem;
+    }
+    input:first-of-type {
+        border-radius: 1rem 0 0 1rem;
+    }
+    button:last-of-type {
+        border-radius: 0 1rem 1rem 0;
     }
 </style>
