@@ -1,16 +1,16 @@
 <script lang="ts">
+    import {data} from '$lib/translations'
 </script>
 
 <div class="container">
     <div class="card">
-        <h1>Stay in the loop</h1>
-        <p>Sign up to our newsletter and learn about multiple ways to be part of our community.
-        </p>
+        <h1>{$data.newsletter.title}</h1>
+        <p>{$data.newsletter.para}</p>
     </div>
     <div class="card">
         <form class="form">
             <input type="email" placeholder="john.doe@email.com">
-            <button class="primary" type="submit">Subscribe</button>
+            <button class="primary" type="submit">{$data.newsletter.button}</button>
         </form>
     </div>
 </div>
