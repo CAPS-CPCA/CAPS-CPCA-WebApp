@@ -1,5 +1,6 @@
 <script lang="ts">
     import {images} from '../../assets/index';
+    import { data } from '$lib/translations';
 </script>
 
 <style>
@@ -15,7 +16,9 @@
     }
 
     .text-content h1 {
-        font-size: 24px;
+        font-size: 32px; 
+        font-weight: 700;
+        color: #1f2937; 
     }
 
     .text-content h1 span {
@@ -50,13 +53,10 @@
 <main>
     <section class="content">
         <div class="text-content">
-            <h1>Medication Abortion <span>Prescribing</span> Resources</h1>
-            <p>
-                If you are a <span>physician, a nurse practitioner or a midwife</span> who is currently prescribing or plans to prescribe Mifegymiso, please scroll down for information about the <em>medication, abortion counselling, clinical processes, virtual care, billing codes and inclusivity toolkits.</em>
-            </p>
-            <p>
-                If you are a <span>midwife, a nurse or a medical officer</span> who is looking for information on prescribing Mifegymiso to support your team, you are also in the right place.
-            </p>
+            <h1>{@html $data.prescribing.title}</h1>
+            {#each $data.prescribing.paragraphs as paragraph}
+                <p>{@html paragraph}</p>
+            {/each}
         </div>
         <div class="image-content">
             <img src={images.PresBanner} alt="Logo">
