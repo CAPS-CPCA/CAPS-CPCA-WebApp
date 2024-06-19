@@ -59,6 +59,13 @@ export const translations: { [key: string]: any } = {
                 'If you are a <span>physician, a nurse practitioner or a midwife</span> who is currently prescribing or plans to prescribe Mifegymiso, please scroll down for information about the <em>medication, abortion counselling, clinical processes, virtual care, billing codes and inclusivity toolkits.</em>',
                 'If you are a <span>midwife, a nurse or a medical officer</span> who is looking for information on prescribing Mifegymiso to support your team, you are also in the right place.'
             ],
+        },
+        aboutus: {
+            title: 'About Us',
+            paragraphs: [
+                'Scroll down to learn more about Canadian Abortion Provider Support – Communauté de pratique Canadienne sur l’avortement (CAPS-CPCA), our collaborating partners and the process we undertook to develop this website.'
+
+            ]
         }
     },
     fr: {
@@ -116,6 +123,14 @@ export const translations: { [key: string]: any } = {
                 'Si vous êtes <span>médecins, infirmières praticiennes spécialisées et sages-femmes</span> et que vous prescrivez actuellement ou envisagez de prescrire le Mifé-Miso, veuillez faire défiler vers le bas pour obtenir des informations sur les médicaments, les conseils en matière d\'avortement, les processus cliniques, les soins virtuels, les codes de facturation et les boîtes à outils d\'inclusivité.</em>',
                 'Si vous êtes <span>sages-femmes, infirmières autorisées et médecins</span> et que vous recherchez des informations sur la prescription du Mifé-Miso pour soutenir votre équipe, vous êtes également au bon endroit.'
             ],
+        },
+
+        aboutus: {
+            title: 'À propos de nous',
+            paragraphs: [
+                'Faites défiler vers le bas pour en savoir plus sur Canadian Abortion Provider Support – Communauté de pratique Canadienne sur l’avortement (CAPS-CPCA), nos partenaires collaborateurs, et le processus que nous avons entrepris pour développer ce site web.'
+
+            ]
         }
     }
 };

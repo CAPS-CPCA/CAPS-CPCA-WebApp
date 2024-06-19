@@ -10,6 +10,7 @@ import EnSurvey from './survey-en.png'
 import FrSurvey from './survey-fr.png'
 import PresBanner from './Prescribing-Banner.png'
 import EnFooter from './logo-footer-en.png'
+import AboutUsBanner from './aboutus-banner.png'
 
 export const images = {
     CAPS,
@@ -22,5 +23,6 @@ export const images = {
     EnSurvey,
     FrSurvey,
     PresBanner,
-    EnFooter
+    EnFooter,
+    AboutUsBanner
 };
