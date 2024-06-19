@@ -20,6 +20,7 @@ export const translations: { [key: string]: any } = {
                 exit: 'Exit'
             }
         },
+        hero: images.EnBanner,
         cards: [{
             title: 'Prescribing',
             desc: 'Go here if you are a physician, a nurse practitioner, a midwife or anybody who prescribes, plans to prescribe or supports prescribing medication abortion.',
@@ -35,6 +36,12 @@ export const translations: { [key: string]: any } = {
             desc: 'Go here if you are a community worker, a social worker or a counsellor, or if you are supporting your colleagues and friends in taking medication abortion.',
             link: ['/supporting%20roles', 'View']
         }],
+        survey: {
+            title: 'Help us support you',
+            para: ['By default, this website does not store identifying information about the device or the website user. With this setting, you might see our evaluation survey more than once. This survey is to gather your user experience and feedback.', 'When you choose to enable cookies, you consent to share your device information and you will be asked to fill in this survey only once.'],
+            button: 'Enable cookies',
+            image: images.EnSurvey
+        }
     },
     fr: {
         header: {
@@ -53,6 +60,7 @@ export const translations: { [key: string]: any } = {
                 exit: 'Sortie'
             }
         },
+        hero: images.FrBanner,
         cards: [{
             title: 'Prescrire',
             desc: 'Cliquez ici si vous êtes médecins, infirmières praticiennes spécialisées, sages-femmes ou toute personne qui prescrit, envisage de prescrire ou soutient la prescription d’un avortement par médicaments.',
@@ -67,7 +75,13 @@ export const translations: { [key: string]: any } = {
             title: 'Rôles de soutien',
             desc: 'Cliquez ici si vous êtes travailleurs communautaires, travailleurs sociaux ou conseillers, des personnes à recourir à l’avortement par médicaments.',
             link: ['/rôles%20de%20soutien', 'Voir']
-        }]
+        }],
+        survey: {
+            title: 'Aidez-nous à mieux vous soutenir',
+            para: ['Par défaut, ce site web ne stocke pas d’informations d’identification sur l’appareil ou l’utilisateur du site web. Avec ce paramètre, vous pourriez voir notre sondage d’évaluation plus d’une fois. Ce sondage vise à recueillir votre expérience en tant qu’utilisateur.', 'Lorsque vous choisissez d’activer les cookies, vous consentez à partager les informations de votre appareil et vous serez invité à remplir ce sondage une seule fois.'],
+            button: 'Accepter les cookies',
+            image: images.FrSurvey
+        }
     }
 };
 

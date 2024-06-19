@@ -1,13 +1,16 @@
 <script lang='ts'>
+    import { data } from '../lib/translations';
 </script>
 
 <div class="container">
     <div class="card">
-        <h1>Help us support you</h1>
-        <p>By default, this website does not store identifying information about the device or the website user. With this setting, you might see our evaluation survey more than once. This survey is to gather your user experience and feedback.<br><br>When you choose to enable cookies, you consent to share your device information and you will be asked to fill in this survey only once.</p>
-        <button class="primary">Enable cookies</button>
+        <h1>{$data.survey.title}</h1>
+        {#each $data.survey.para as para}
+            <p>{para}</p>
+        {/each}
+        <button class="primary">{$data.survey.button}</button>
     </div>
-    <img src="https://caps.sogc.org/wp-content/uploads/2024/03/Survey.png" alt="Survey" />
+    <img src={$data.survey.image} alt="Survey" />
 </div>
 
 <style>

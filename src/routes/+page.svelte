@@ -3,11 +3,11 @@
     import Survey from '../components/Survey.svelte';
     import Newsletter from '../components/Newsletter.svelte';
     import AboutSogc from '../components/AboutSOGC.svelte';
-    import {images} from '../assets/index';
+    import { data } from '../lib/translations';
 </script>
 
 <section class="hero">
-    <img src={images.EnBanner} alt="Medication Abortion in Canada" />
+    <img src={$data.hero} alt="Medication Abortion in Canada" />
 </section>
 <section class="cards">
     <Cards />
@@ -21,6 +21,7 @@
 <section class="aboutSOGC">
     <AboutSogc />
 </section>
+
 <style>
     .hero {
         flex-direction: column;
