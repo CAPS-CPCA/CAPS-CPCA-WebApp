@@ -15,7 +15,8 @@
       margin: 0 auto;
       display: flex; 
       flex-direction: column; 
-      align-items: center; 
+      align-items: flex-start;
+      padding-left: 20px;
     }
 
     .footer-icons {
@@ -52,17 +53,15 @@
       padding-top: 10px;
       font-size: 14px;
       display: flex; 
-      justify-content: space-between; 
-      align-items: center; 
+      justify-content: flex-end; 
+      align-items: center;
+      width: 100%; 
     }
 
   </style>
 
   <footer>
     <div class="footer-content">
-        <div>
-            <i class="fa fa-arrow-up"></i>
-        </div>
       <img src={images.EnFooter} alt="The Society of Obstetricians and Gynaecologists of Canada" class="footer-logo" />
       <div class="footer-icons">
         <a href="/"><i class="fa fa-share-alt"></i></a>
