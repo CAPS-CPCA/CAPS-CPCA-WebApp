@@ -1,4 +1,5 @@
 // import all images
+import BacktoTop from './backtop.png';
 import CAPS from './logo-caps.png';
 import EnSOGC from './logo-sogc-en.png';
 import EnSOGCLarge from './logo-sogc-en-large.png';
@@ -13,6 +14,7 @@ import EnFooter from './logo-footer-en.png'
 import AboutUsBanner from './aboutus-banner.png'
 
 export const images = {
+    BacktoTop,
     CAPS,
     EnSOGC,
     EnSOGCLarge,

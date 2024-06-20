@@ -2,92 +2,124 @@
     import { images } from '../assets/index';
   </script>
 
-  <style>
-    footer {
-      background-color: #2f3e52;
-      color: #ffffff;
-      padding: 20px 0;
-      text-align: center;
-    }
-
-    .footer-content {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: flex; 
-      flex-direction: column; 
-      align-items: flex-start;
-      padding-left: 20px;
-    }
-
-    .footer-icons {
-      margin-bottom: 20px;
-    }
-
-    .footer-icons a {
-      margin: 0 10px;
-      color: #ffffff; 
-      text-decoration: none;
-    }
-
-    .footer-icons a:hover {
-      color: #ccc; 
-    }
-
-    .footer-contact {
-      text-align: left; 
-      margin-bottom: 20px;
-    }
-
-    .footer-contact p {
-      margin: 5px 0;
-      color: #ffffff; 
-    }
-
-    .footer-contact h3 { 
-      color: #ffffff; 
-      margin-bottom: 5px;
-    }
-
-    .footer-bottom {
-      border-top: 1px solid #444;
-      padding-top: 10px;
-      font-size: 14px;
-      display: flex; 
-      justify-content: flex-end; 
-      align-items: center;
-      width: 100%; 
-    }
-
-  </style>
-
   <footer>
-    <div class="footer-content">
-      <img src={images.EnFooter} alt="The Society of Obstetricians and Gynaecologists of Canada" class="footer-logo" />
-      <div class="footer-icons">
-        <a href="/"><i class="fa fa-share-alt"></i></a>
-        <a href="/"><i class="fa fa-print"></i></a>
-        <a href="https://www.facebook.com/sogc.org" target = "_blank"><i class="fa fa-facebook"></i></a>
-        <a href="https://x.com/SOGCorg" target = "_blank" ><i class="fa fa-twitter"></i></a>
-        <a href="https://www.youtube.com/user/sexandu" target = "_blank" ><i class="fa fa-youtube"></i></a>
+    <div class="container">
+      <a class="top" href="/"><img src={images.BacktoTop} alt="back to top"/></a>
+      <div class="social">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
       </div>
-      <div class="footer-contact">
-        <h3>CONTACT INFO</h3>
-        <p>2781 Lancaster Road, Suite 200</p>
-        <p>Ottawa, Ontario, K1B 1A7</p>
-        <p>(800) 561-2416</p>
-        <p>(613) 730-4192</p>
-        <p>info@sogc.com</p>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 | </p>
-        <span>Privacy Policy</span>
-        <span>Terms of Use</span>
-        <span>About</span>
+      <div class="bottom">
+        <a href="http://sogc.org/"><img src={images.EnFooter} alt="footer logo" /></a>
+        <div class="contact">
+          <ul>
+            <li>CONTACT INFO</li>
+            <li>2781 Lancaster Road, Suite 200<br>
+              Ottawa, Ontario, K1B 1A7</li>
+            <li>(800) 561-2416</li>
+            <li>(613) 730-4192</li>
+            <li><a href="mailto:info@sogc.com">info@sogc.com</a></li>
+          </ul>
+        </div>
+        <p class="copyright">Copyright © 2024 | Privacy Policy | Terms of Use | About |</p>
       </div>
     </div>
   </footer>
 
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-  />
+<style>
+  a {
+    transition: all 0.3s ease-in-out;
+  }
+  .top {
+    position: absolute;
+    top: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+    filter:invert();
+    transition: all 0.3s ease-in-out;
+  }
+  .top img {
+    width: 100%;
+    height: 100%;
+  }
+  .top:hover {
+    filter:invert(0.8);
+  }
+  footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 4.375rem 11.25rem;
+    background: linear-gradient(to bottom, #292f3c 0%, #031f2d 100%);
+  }
+  .social {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 4rem 0 2rem 0;
+  }
+  .bottom {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    align-items: end;
+    gap: 3rem;
+    width: 100%;
+    border-top: 3px solid #4e7385;
+    padding-top: 2rem;
+  }
+  .contact {
+    display: flex;
+    border-left: 3px solid #4e7385;
+  }
+  .copyright {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #4e7385;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+  .social li {
+    list-style-type:none;
+    width: 3.125rem;
+    height: 3.125rem;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+  }
+  .social li:hover {
+    border-color: #4e7385;
+  }
+  .contact ul {
+    list-style-type:none;
+    color: #4e7385;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 0;
+  }
+  .contact li {
+    list-style-type:none;
+  }
+  .contact li:first-of-type {
+    font-weight: 700;
+    margin: 1rem 0;
+  }
+  .contact li a { 
+    color: #4e7385;
+  }
+  .contact li a:hover {
+    color: #ffffff;
+  }
+</style>

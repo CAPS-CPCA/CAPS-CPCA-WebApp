@@ -17,7 +17,7 @@
 }
 
 /* Reset CSS */
-html { font-size: 14px; }
+html { font-size: 14px; scroll-behavior: smooth; }
 body {
     margin: 0;
     padding-top: 132px;
