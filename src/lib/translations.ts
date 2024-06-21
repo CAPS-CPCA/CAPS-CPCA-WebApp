@@ -69,7 +69,8 @@ export const translations: { [key: string]: any } = {
         },
         search: {
             title: 'Search the CAPS Platform',
-            input: 'Type here...'
+            input: 'Type here...',
+            button: 'Search'
         },
     },
     fr: {
@@ -138,7 +139,8 @@ export const translations: { [key: string]: any } = {
         },
         search: {
             title: 'Rechercher sur la plateforme CPCA',
-            input: 'Écrivez ici...'
+            input: 'Écrivez ici...',
+            button: 'Rechercher'
         },
     }
 };

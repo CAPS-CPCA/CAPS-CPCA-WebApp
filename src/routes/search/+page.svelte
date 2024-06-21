@@ -13,7 +13,7 @@
       height: 100vh;
       background-color: #213d4f;
       color: white;
-      padding-bottom: 50px; /* Ensure 50px whitespace at the bottom */
+      padding-bottom: 50px;
 
     }
   
@@ -48,7 +48,7 @@
   
     .search-button {
       padding: 0.5rem 1rem;
-      background-color: #0d1117; /* Dark blue background */
+      background-color: #0d1117;
       color: white;
       border: none;
       cursor: pointer;
@@ -56,7 +56,7 @@
     }
   
     .search-button:hover {
-      background-color: #1a1f24; /* Slightly lighter dark blue for hover effect */
+      background-color: #1a1f24;
     }
   </style>
   
@@ -66,7 +66,7 @@
       <div class="search-title">{@html $data.search.title}</div>
       <div class="search-bar">
         <input type="text" class="search-input" placeholder = {$data.search.input} />
-        <button class="search-button">Search</button>
+        <button class="search-button">{@html $data.search.button}</button>
       </div>
     </div>
   </main>
