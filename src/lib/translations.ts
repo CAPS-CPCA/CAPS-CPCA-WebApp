@@ -66,7 +66,11 @@ export const translations: { [key: string]: any } = {
                 'Scroll down to learn more about Canadian Abortion Provider Support – Communauté de pratique Canadienne sur l’avortement (CAPS-CPCA), our collaborating partners and the process we undertook to develop this website.'
 
             ]
-        }
+        },
+        search: {
+            title: 'Search the CAPS Platform',
+            input: 'Type here...'
+        },
     },
     fr: {
         header: {
@@ -131,7 +135,11 @@ export const translations: { [key: string]: any } = {
                 'Faites défiler vers le bas pour en savoir plus sur Canadian Abortion Provider Support – Communauté de pratique Canadienne sur l’avortement (CAPS-CPCA), nos partenaires collaborateurs, et le processus que nous avons entrepris pour développer ce site web.'
 
             ]
-        }
+        },
+        search: {
+            title: 'Rechercher sur la plateforme CPCA',
+            input: 'Écrivez ici...'
+        },
     }
 };
 

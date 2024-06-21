@@ -12,6 +12,7 @@ import FrSurvey from './survey-fr.png'
 import PresBanner from './Prescribing-Banner.png'
 import EnFooter from './logo-footer-en.png'
 import AboutUsBanner from './aboutus-banner.png'
+import SearchBanner from './search-banner.png'
 
 export const images = {
     BacktoTop,
@@ -26,5 +27,7 @@ export const images = {
     FrSurvey,
     PresBanner,
     EnFooter,
-    AboutUsBanner
+    AboutUsBanner,
+    SearchBanner,
+    
 };
