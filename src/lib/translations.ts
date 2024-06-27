@@ -1,5 +1,5 @@
-// import logos
 import { images } from '../assets';
+import { getHeader } from './header';
 import { writable } from 'svelte/store';
 import { browser } from '$app/environment';
 
@@ -8,22 +8,7 @@ userLang.subscribe(value => browser && localStorage.setItem('lang', value.toStri
 
 export const translations: { [key: string]: any } = {
     en: {
-        header: {
-            logo: [images.EnSOGC, images.CAPS],
-            partners: {
-                'https://caps.sogc.org/': 'MEDICATION ABORTION',
-                'https://sogc.org/': 'SOGC.ORG'
-            },
-            nav: {
-                '/': 'Home',
-                content: ['Prescribing', 'Dispensing', 'Supporting roles'],
-                faqs: 'FAQs',
-                about: 'About us',
-                search: '🔍',
-                lang: 'FR',
-                exit: 'Exit'
-            }
-        },
+        header: getHeader('en'),
         footer: {
             social: ['', '', '', '', ''],
             logo: images.EnFooter,
@@ -90,22 +75,7 @@ export const translations: { [key: string]: any } = {
         },
     },
     fr: {
-        header: {
-            logo: [images.FrSOGC, images.CAPS],
-            partners: {
-                'https://caps.sogc.org/': 'AVORTEMENT PAR MÉDICAMENTS',
-                'https://sogc.org/fr': 'SOGC.ORG'
-            },
-            nav: {
-                '/': 'Accueil',
-                content: ['Prescrire', 'Dispenser', 'Rôles de soutien'],
-                faqs: 'FAQ',
-                about: 'À propos de nous',
-                search: '🔍',
-                lang: 'EN',
-                exit: 'Sortie'
-            }
-        },
+        header: getHeader('fr'),
         footer: {
             social: ['', '', '', '', ''],
             logo: images.FrFooter,

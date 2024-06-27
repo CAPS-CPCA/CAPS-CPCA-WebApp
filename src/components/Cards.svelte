@@ -22,6 +22,15 @@
     .card:hover {
         background-color: #2094f32a;
     }
+    .card:first-of-type:hover h1 {
+        color: var(--Prescribing);
+    }
+    .card:nth-of-type(2):hover h1 {
+        color: var(--Dispensing);
+    }
+    .card:last-of-type:hover h1 {
+        color: var(--Supporting);
+    }
     h1, p {
         color: #EAEAEA;
     }

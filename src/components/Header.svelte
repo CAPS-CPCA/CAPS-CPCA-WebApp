@@ -1,12 +1,13 @@
 <script lang='ts'>
-    import { data } from '$lib/translations';
-    import { userLang } from '$lib/translations';
+    import { data, userLang } from '$lib/translations';
+    import { page } from '$app/stores';
     import { onMount } from 'svelte';
 
+    $: header = $data.header;
     let isSticky = false;
-    
+
     onMount(() => {
-        data.setLang($userLang);
+        data.setLang($userLang.toString());
         window.addEventListener('scroll', () => {
             if (window.scrollY > 0) {
                 isSticky = true;
@@ -20,27 +21,31 @@
 <header>
     <div class="partner-sites" style={isSticky ? 'display: none;' : ''}>
         <ul>
-            {#each Object.entries($data.header.partners) as [key, value]}
-                <li><a href={key}>{value}</a></li>
+            {#each header.partners as {href, title}}
+            <li><a href={href}>{title}</a></li>
             {/each}
         </ul>
     </div>
     <nav>
         <ul>
             <div class="logo">
-                <img src={isSticky ? $data.header.logo[1] : $data.header.logo[0] } alt="CAPS-CPCA SOGC Logo"/>
-            </div>
-            {#each Object.entries($data.header.nav) as [key, value]}
-                {#if key === 'content'}
-                    {#each value as i}
-                        <li><a href={i.toLowerCase()}>{i}</a></li>
-                    {/each}
-                {:else if key === 'exit'}
-                    <li><a href="https://www.theweathernetwork.com/ca" target="_self"><span id="exit">{value}</span></a></li>
-                {:else if key === 'lang'}
-                    <li><button on:click={data.togLang}>{value}</button></li>
+                {#if isSticky}
+                    <a href={header.logos[1].href}><img src={header.logos[1].src} alt="CAPS-CPCA Logo"/></a>
                 {:else}
-                    <li><a href={key}>{value}</a></li>
+                    <a href={header.logos[0].href} target="_blank"><img src={header.logos[0].src} alt="SOGC Logo"/></a>
+                {/if}
+            </div>
+            {#each header.nav as item}
+                {#if item.type === 'normal'}
+                    <li><a href={item.href}>{item.title}</a></li>
+                {:else if item.type === 'content'}
+                    {#each item.content as subitem}
+                        <li><a href={subitem.toLowerCase()}>{subitem}</a></li>
+                    {/each}
+                {:else if item.type === 'exit'}
+                    <li><a href={item.href} target="_self"><span id="exit">{item.title}</span></a></li>
+                {:else if item.type === 'switch'}
+                    <li><button on:click={data.togLang}>{item.title}</button></li>
                 {/if}
             {/each}
         </ul>

@@ -3,7 +3,6 @@
     import { userLang } from '$lib/translations';
     import {page} from '$app/stores';
 
-    let url = $page.url.pathname;
     $: url = $page.url.pathname;
     
 </script>
