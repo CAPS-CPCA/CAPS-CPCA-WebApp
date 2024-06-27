@@ -1,30 +1,30 @@
 <script>
-    import { images } from '../assets/index';
+  import { images } from '../assets/index';
+    import { data } from '$lib/translations';
   </script>
 
   <footer>
     <div class="container">
-      <a class="top" href="/"><img src={images.BacktoTop} alt="back to top"/></a>
+      <a class="top" href="#top"><img src={images.BacktoTop} alt="back to top"/></a>
       <div class="social">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        {#each $data.footer.social as i}
+          <li>{i}</li>
+        {/each}
       </div>
       <div class="bottom">
-        <a href="http://sogc.org/"><img src={images.EnFooter} alt="footer logo" /></a>
+        <a href="http://sogc.org/"><img src={$data.footer.logo} alt="footer logo" /></a>
         <div class="contact">
           <ul>
-            <li>CONTACT INFO</li>
-            <li>2781 Lancaster Road, Suite 200<br>
-              Ottawa, Ontario, K1B 1A7</li>
-            <li>(800) 561-2416</li>
-            <li>(613) 730-4192</li>
-            <li><a href="mailto:info@sogc.com">info@sogc.com</a></li>
+            {#each Object.entries($data.footer.contact) as [key, value]}
+              {#if key !== 'mailto:info@sogc.com'}
+                <li>{value}</li>
+              {:else}
+                <li><a href={key}>{value}</a></li>
+              {/if}
+            {/each}
           </ul>
         </div>
-        <p class="copyright">Copyright © 2024 | Privacy Policy | Terms of Use | About |</p>
+        <p class="copyright">{$data.footer.copyright}</p>
       </div>
     </div>
   </footer>

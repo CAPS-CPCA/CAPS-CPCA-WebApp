@@ -1,10 +1,12 @@
 <script lang='ts'>
     import { data } from '$lib/translations';
+    import { userLang } from '$lib/translations';
     import { onMount } from 'svelte';
 
     let isSticky = false;
-
+    
     onMount(() => {
+        data.setLang($userLang);
         window.addEventListener('scroll', () => {
             if (window.scrollY > 0) {
                 isSticky = true;
@@ -64,6 +66,9 @@
         top: 0;
         z-index: 1000;
         background: var(--Primary);
+    }
+    .selected {
+        color: var(--Highlight);
     }
     button {
         background: none;
@@ -136,10 +141,13 @@
         text-decoration: none;
         text-transform: uppercase;
         color: var(--Background);
-        transition: all 0.3s ease-in-out;
+        transition: all 0.1s ease-in-out;
     }
     ul li a:hover {
         color: var(--Highlight);
+    }
+    ul li a:focus {
+        color: var(--Pressed);
     }
     #exit {
         color: white;
