@@ -1,14 +1,12 @@
 <script lang="ts">
+    import Hero from '../components/Hero.svelte';
     import Cards from '../components/Cards.svelte';
     import Survey from '../components/Survey.svelte';
     import Newsletter from '../components/Newsletter.svelte';
     import AboutSogc from '../components/AboutSOGC.svelte';
-    import { data } from '../lib/translations';
 </script>
 
-<section class="hero">
-    <img src={$data.hero} alt="Medication Abortion in Canada" />
-</section>
+<Hero variant="home"/>
 <section class="cards">
     <Cards />
 </section>
@@ -23,10 +21,6 @@
 </section>
 
 <style>
-    .hero {
-        flex-direction: column;
-        padding: 1.5rem 3rem 3rem 3rem;
-    }
     .cards {
         background: radial-gradient(148.27% 200.49% at 44.09% 11.06%, #011627 0%, #4E7385 100%);
     }
@@ -36,11 +30,5 @@
     .newsletter {
         background: radial-gradient(148.27% 200.49% at 44.09% 11.06%, #011627 0%, #4E7385 100%);
         color: white;
-    }
-    img {
-        max-width: 1600px;
-        width: 100%;
-        height: auto;
-        border-radius: 3rem 3rem 0 0;
     }
 </style>

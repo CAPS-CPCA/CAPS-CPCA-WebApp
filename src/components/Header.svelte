@@ -1,6 +1,5 @@
 <script lang='ts'>
     import { data, userLang } from '$lib/translations';
-    import { page } from '$app/stores';
     import { onMount } from 'svelte';
 
     $: header = $data.header;

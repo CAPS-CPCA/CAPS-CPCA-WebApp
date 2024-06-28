@@ -9,11 +9,16 @@ import EnBanner from './banner-en.png'
 import FrBanner from './banner-fr.png'
 import EnSurvey from './survey-en.png'
 import FrSurvey from './survey-fr.png'
-import PresBanner from './Prescribing-Banner.png'
+
+import PrescribingIcon from './prescribing-icon.png'
+import DispensingIcon from './dispensing-icon.png'
+import SupportingIcon from './supporting-icon.png'
+import AboutIcon from './about-icon.png'
+import FaqIcon from './faq-icon.png'
+import SearchIcon from './search-icon.png'
+
 import EnFooter from './logo-footer-en.png'
 import FrFooter from './logo-footer-fr.png'
-import AboutUsBanner from './aboutus-banner.png'
-import SearchBanner from './search-banner.png'
 
 export const images = {
     BacktoTop,
@@ -26,10 +31,12 @@ export const images = {
     FrBanner,
     EnSurvey,
     FrSurvey,
-    PresBanner,
+    PrescribingIcon,
+    DispensingIcon,
+    SupportingIcon,
     EnFooter,
     FrFooter,
-    AboutUsBanner,
-    SearchBanner,
-    
+    AboutIcon,
+    FaqIcon,
+    SearchIcon,
 };

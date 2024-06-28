@@ -1,28 +1,8 @@
 <script lang="ts">
-  import {images} from '../../assets/index';
-  import { data } from '$lib/translations';
+  import Hero from '../../components/Hero.svelte';
 </script>
 
 <style>
-  .about-section {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-      background-color: #f0f0f0;
-    }
-
-  .about-text {
-    max-width: 600px; 
-    margin: 0 20px; 
-  }
-
-  .about-image {
-    border-radius: 50%;
-    width: 300px; 
-    height: auto;
-  }
-
   .about-us-box {
     background-color: #cccccc; 
     width: calc(80% - 40px);
@@ -33,7 +13,6 @@
     margin-bottom: 50px;
     justify-content: space-between; 
     align-items: center; 
-
 }
 
 .about-us-wrapper {
@@ -62,17 +41,9 @@
     width: 100%;
     grid-row: 1;
 }
-
 </style>
-<div class="about-section">
-   <img src="{images.AboutUsBanner}" alt="Banner" class="about-image">
-   <div class="about-text">
-      <h1>{@html $data.aboutus.title}</h1>
-          {#each $data.aboutus.paragraphs as paragraph}
-              <p>{@html paragraph}</p>
-          {/each}
-  </div>
-</div>
+
+<Hero variant="content" index={3} reverse/>
 
 <section>
   <div class="about-us-wrapper">

@@ -1,4 +1,5 @@
 <script lang="ts">
+    import Hero from '../../components/Hero.svelte';
     import {images} from '../../assets/index';
     import { data } from '$lib/translations';
   </script>
@@ -79,8 +80,7 @@
   
   <main>
     <div class="search-container">
-      <img src= {images.SearchBanner} alt="Logo" class="search-logo" />
-      <div class="search-title">{@html $data.search.title}</div>
+      <Hero variant="icon" index={1}/>
       <div class="search-bar">
         <input type="text" class="search-input" placeholder = {$data.search.input} />
         <button class="search-button">{@html $data.search.button}</button>
