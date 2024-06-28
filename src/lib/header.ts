@@ -3,7 +3,7 @@ import { images } from "../assets"
 export type Header = {
     logos: { src: string, href: string }[], 
     partners: { title: string, href: string }[], 
-    nav: { type: 'normal' | 'content' | 'search' | 'switch' | 'exit', title?: string, href?: string, content?: string[] }[] 
+    nav: { type: 'normal' | 'content' | 'search' | 'switch' | 'exit', title?: string, href?: string | string[], content?: { title: string, href: string }[] }[]
 }
 
 const headers: { [key: string]: Header } = {
@@ -18,7 +18,7 @@ const headers: { [key: string]: Header } = {
         ],
         nav: [
             { type: 'normal', title: 'Home', href: '/' },
-            { type: 'content', content: ['Prescribing', 'Dispensing', 'Supporting roles'] },
+            { type: 'content', content: [{title:'Prescribing', href:'/prescribing'}, {title:'Dispensing', href:'/dispensing'}, {title:'Supporting Roles', href:'/supporting%20roles'}] }, 
             { type: 'normal', title: 'FAQs', href: '/faqs' },
             { type: 'normal', title: 'About us', href: '/about' },
             { type: 'normal', title: '🔍', href: '/search' },
@@ -37,7 +37,7 @@ const headers: { [key: string]: Header } = {
         ],
         nav: [
             { type: 'normal', title: 'Accueil', href: '/' },
-            { type: 'content', content: ['Prescrire', 'Dispenser', 'Rôles de soutien'] },
+            { type: 'content', content: [{title:'Prescrire', href:'/prescrire'}, {title: 'Dispenser', href:'/dispenser'}, {title: 'Rôles de soutien', href:'/r%C3%B4les%20de%20soutien'}] },
             { type: 'normal', title: 'FAQs', href: '/faqs' },
             { type: 'normal', title: 'À propos de nous', href: '/about' },
             { type: 'normal', title: '🔍', href:'/search' },

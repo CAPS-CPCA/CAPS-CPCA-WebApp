@@ -1,9 +1,10 @@
 import { images } from '../assets';
 import { getHeader } from './header';
-import { getFooter } from './footer';
-import { get, writable } from 'svelte/store';
-import { browser } from '$app/environment';
 import { getHero } from './hero';
+import { getFooter } from './footer';
+import { writable } from 'svelte/store';
+import { browser } from '$app/environment';
+import { replaceState } from '$app/navigation';
 
 export const userLang = writable(browser && (localStorage.getItem('lang') || 'en'));
 userLang.subscribe(value => browser && localStorage.setItem('lang', value.toString()));
@@ -104,8 +105,25 @@ function createData(lang :string = 'en') {
         togLang: () => {
             update(data => data === translations.en ? translations.fr : translations.en);
             userLang.update(value => value === 'en' ? 'fr' : 'en');
+            updatePath();
         }
     };
+}
+
+function updatePath() {
+    const path = window.location.pathname;
+    const pathMap: { [key: string]: string } = {
+        '/prescribing': '/prescrire',
+        '/dispensing': '/dispenser',
+        '/supporting%20roles': '/r%C3%B4les%20de%20soutien',
+        '/prescrire': '/prescribing',
+        '/dispenser': '/dispensing',
+        '/r%C3%B4les%20de%20soutien': '/supporting%20roles'
+    };
+
+    if (pathMap[path]) {
+        replaceState(pathMap[path], {});
+    }
 }
 
 export const data = createData();

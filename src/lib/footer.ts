@@ -14,7 +14,7 @@ const footers: { [key: string]: Footer } = {
         contact: {
             1: 'CONTACT INFO',
             2: '2781 Lancaster Road, Suite 200',
-            3: 'Ottawa, ON K1B 1A7',
+            3: 'Ottawa, Ontario, K1B 1A7',
             4: '(800) 561-2416',
             5: '(613) 730-4192',
             'mailto:info@sogc.com': 'info@sogc.com'

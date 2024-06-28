@@ -4,13 +4,18 @@
 
     $: path = $page.url.pathname;
 
-</script>
-{#if path === '/prescribing' || path === '/prescrire'}
-    <Hero variant="content" index={0} reverse/>
-{:else if path === '/dispensing' || path === '/dispenser'}
-    <Hero variant='content' index={1}/>
-{:else if path === '/supporting%20roles' || path === '/r%C3%B4les%20de%20soutien'}
-    <Hero variant='content' index={2} reverse/>
-{/if}
+    const heroConfig: any = {
+        '/prescribing': { variant: 'content', index: 0, reverse: true },
+        '/prescrire': { variant: 'content', index: 0, reverse: true },
+        '/dispensing': { variant: 'content', index: 1 },
+        '/dispenser': { variant: 'content', index: 1 },
+        '/supporting%20roles': { variant: 'content', index: 2, reverse: true },
+        '/r%C3%B4les%20de%20soutien': { variant: 'content', index: 2, reverse: true }
+    };
 
+    $: hero = heroConfig[path] || {};
+</script>
+{#if hero}
+    <Hero {...hero} />
+{/if}
 <slot/>

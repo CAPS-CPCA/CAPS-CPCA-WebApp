@@ -1,6 +1,6 @@
 <script>
   import { images } from '../assets/index';
-    import { data } from '$lib/translations';
+  import { data } from '$lib/translations';
   </script>
 
   <footer>
@@ -31,7 +31,7 @@
 
 <style>
   a {
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
   .top {
     position: absolute;
@@ -76,6 +76,9 @@
     width: 100%;
     border-top: 3px solid #4e7385;
     padding-top: 2rem;
+  }
+  .bottom a:hover {
+    opacity: 0.75;
   }
   .contact {
     display: flex;

@@ -1,9 +1,10 @@
 <script lang='ts'>
     import { data, userLang } from '$lib/translations';
     import { onMount } from 'svelte';
+    import { page } from '$app/stores';
 
-    $: header = $data.header;
     let isSticky = false;
+    $: header = $data.header;
 
     onMount(() => {
         data.setLang($userLang.toString());
@@ -36,10 +37,10 @@
             </div>
             {#each header.nav as item}
                 {#if item.type === 'normal'}
-                    <li><a href={item.href}>{item.title}</a></li>
+                    <li><a href={item.href} class:selected={item.href === $page.url.pathname}>{item.title}</a></li>
                 {:else if item.type === 'content'}
                     {#each item.content as subitem}
-                        <li><a href={subitem.toLowerCase()}>{subitem}</a></li>
+                    <li><a href={subitem.href} class:selected={subitem.href === $page.url.pathname}>{subitem.title}</a></li>
                     {/each}
                 {:else if item.type === 'exit'}
                     <li><a href={item.href} target="_self"><span id="exit">{item.title}</span></a></li>
