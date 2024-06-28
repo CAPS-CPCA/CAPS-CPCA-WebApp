@@ -1,91 +1,40 @@
 <script lang="ts">
     import Hero from '../../components/Hero.svelte';
-    import {images} from '../../assets/index';
     import { data } from '$lib/translations';
   </script>
   
+    <Hero variant="icon" index={1}/>
+    <form class="form">
+      <input type="search" placeholder={$data.search.placeholder}>
+      <button class="primary" type="submit">{$data.search.button}</button>
+    </form>
+
   <style>
-
-    .search-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      background: linear-gradient(0deg, #011627 0%, #4E7385 100%);
-      color: white;
-      padding-bottom: 100px;
-      
-
+    .form {
+        display: flex;
+        height: 4rem;
+        justify-content: center;
+        align-items: center;
     }
-  
-    .search-logo {
-      width: 350px;
-      height: auto;
-      margin-bottom: 2rem;
+    input {
+        width: 20rem;
+        font-family: 'Open Sans', sans-serif;
+        font-style: italic;
+        color: #69727d;
+        padding: 1rem;
+        border: 1px solid #69727d;
+        transition: all 0.1s ease-in-out;
     }
-  
-    .search-title {
-      color: #FFFFFF;
-      font-family: "Open Sans", Sans-serif;
-      font-size: 48px;
-      font-weight: 600;
-      margin-bottom: 1rem;
+    input:focus {
+        outline: none;
+        border: 1px solid var(--Highlight);
     }
-  
-    .search-bar {
-      display: flex;
-      align-items: center;
-      max-width: 600px;
-      overflow: hidden;
-      color: #404040;
-      height: 48px;
-      width: 100%;
-      background: #F6F7F8;
-      border: 2px solid #01162740;
-      border-radius: 1em 0 0 1em;
-      font-family: 'Open Sans';
-      font-size: 1em;
+    input:first-of-type {
+        border-radius: 1rem 0 0 1rem;
     }
-  
-    .search-input {
-      flex: 1;
-      padding: 0.5rem 1rem;
-      border: none;
-      outline: none;
-      font-size: 1rem;
-      font-style: italic;
-    }
-  
-    .search-button {
-      cursor: pointer;
-      color: white;
-      height: 48px;
-      background: #011627;
-      text-align: center;
-      font-family: "Roboto";
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-      letter-spacing: 1px;
-      border: none;
-      border-radius: 0 1em 1em 0;
-    }
-  
-    .search-button:hover {
-      background-color: #1a1f24;
+    button:last-of-type {
+        border-radius: 0 1rem 1rem 0;
     }
   </style>
   
-  <main>
-    <div class="search-container">
-      <Hero variant="icon" index={1}/>
-      <div class="search-bar">
-        <input type="text" class="search-input" placeholder = {$data.search.input} />
-        <button class="search-button">{@html $data.search.button}</button>
-      </div>
-    </div>
-  </main>
-  
-  
+
