@@ -101,8 +101,38 @@
     border-radius: 50%;
     transition: all 0.3s ease-in-out;
   }
+  .social li::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    -webkit-mask: url(../assets/icon-share.svg) no-repeat center / 100%;
+    mask: url(../assets/icon-share.svg) no-repeat center / 100%;
+    background-color: #ffffff;
+    transform: scale(0.5);
+    transition: all 0.3s ease-in-out;
+  }
+  .social li:nth-child(2)::before {
+    -webkit-mask: url(../assets/icon-print.svg) no-repeat center / 100%;
+    mask: url(../assets/icon-print.svg) no-repeat center / 100%;
+  }
+  .social li:nth-child(3)::before {
+    -webkit-mask: url(../assets/icon-facebook.svg) no-repeat center / 100%;
+    mask: url(../assets/icon-facebook.svg) no-repeat center / 100%;
+  }
+  .social li:nth-child(4)::before {
+    -webkit-mask: url(../assets/icon-twitter.svg) no-repeat center / 100%;
+    mask: url(../assets/icon-twitter.svg) no-repeat center / 100%;
+  }
+  .social li:nth-child(5)::before {
+    -webkit-mask: url(../assets/icon-youtube.svg) no-repeat center / 100%;
+    mask: url(../assets/icon-youtube.svg) no-repeat center / 100%;
+  }
   .social li:hover {
     border-color: #4e7385;
+  }
+  .social li:hover::before {
+    background-color: #4e7385;
   }
   .contact ul {
     list-style-type:none;
