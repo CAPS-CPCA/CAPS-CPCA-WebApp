@@ -5,7 +5,7 @@ import Reader from "../../components/Reader.svelte";
 
 <section class="reader">
     <div class="container">
-        <Reader content='prescribing'/>
+        <Reader />
     </div>
 </section>
 

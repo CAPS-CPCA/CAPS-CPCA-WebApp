@@ -14,6 +14,9 @@
     --Prescribing: #FF3366;
     --Dispensing: #2EC4B6;
     --Supporting: #FB9246;
+
+    --MIFE: #2EC4B6;
+    --MISO: #FB9246;
 }
 
 /* Reset CSS */
@@ -26,6 +29,9 @@ body {
 }
 
 /* Typography */
+li {
+    list-style-type: none;
+}
 a {
     text-decoration: none;
     color: var(--Background);
@@ -45,7 +51,34 @@ p {
     font-size: 1.25rem;
     line-height: 1.5;
 }
-
+span {
+    font-weight: 500;
+}
+.module {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 3.5rem 4.5rem;
+    border: 1px solid #545454;
+    background: #F6F7F8;
+}
+.module p {
+    color: var(--Primary);
+    font-size: 1.25rem;
+    font-family: 'Roboto';
+    background: none;
+    line-height: 1.75;
+}
+.module a {
+    font-size: 1.25rem;
+    font-family: 'Roboto';
+    line-height: 1.75;
+    transition: 150ms ease-in-out;
+}
+a.in {
+    color: #296ec8;
+    border-bottom: 1px solid;
+}
 /* UI */
 button.primary, a.primary {
     color: var(--Background);
@@ -68,6 +101,33 @@ button.primary:hover, a.primary:hover {
 }
 button.primary:active, a.primary:active {
     background-color: var(--Pressed);
+}
+a.secondary {
+    color: var(--Primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", Sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    border: 3px solid var(--Primary);
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+}
+a.secondary:hover {
+    border: 3px solid var(--Highlight);
+    color: var(--Highlight);
+}
+a.secondary:active {
+    border: 3px solid var(--Pressed);
+    color: var(--Pressed);
+}
+a.secondary:focus {
+    color: var(--Background);
+    background-color: var(--Primary);
+    border: 3px solid var(--Primary);
 }
 
 /* Layout */
