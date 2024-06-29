@@ -11,29 +11,35 @@
 
   <style>
     .form {
-        display: flex;
-        height: 4rem;
-        justify-content: center;
-        align-items: center;
+      display: flex;
+      height: 4rem;
+      justify-content: center;
+      align-items: center;
     }
     input {
-        width: 20rem;
-        font-family: 'Open Sans', sans-serif;
-        font-style: italic;
-        color: #69727d;
-        padding: 1rem;
-        border: 1px solid #69727d;
-        transition: all 0.1s ease-in-out;
+      padding: 0.95rem;
+      width: 20rem;
+      background-color: #F6F7F8;
+      border: 2px solid #01162740;
+      transition: all 0.1s ease-in-out;
+    }
+    input::placeholder {
+      font-family: 'Open Sans', sans-serif;
+      font-style: italic;
+    }
+    input:hover {
+      background-color: #8FD5FF;
     }
     input:focus {
-        outline: none;
-        border: 1px solid var(--Highlight);
+      outline: none;
+      background-color: #F6F7F8;
+      border: 2px solid var(--Highlight);
     }
     input:first-of-type {
-        border-radius: 1rem 0 0 1rem;
+      border-radius: 1rem 0 0 1rem;
     }
     button:last-of-type {
-        border-radius: 0 1rem 1rem 0;
+      border-radius: 0 1rem 1rem 0;
     }
   </style>
   
