@@ -52,7 +52,7 @@ p {
     line-height: 1.5;
 }
 span {
-    font-weight: 500;
+    font-weight: 600;
 }
 .module {
     display: flex;
@@ -78,6 +78,9 @@ span {
 a.in {
     color: #296ec8;
     border-bottom: 1px solid;
+}
+a.in:hover {
+    color: var(--Highlight);
 }
 /* UI */
 button.primary, a.primary {

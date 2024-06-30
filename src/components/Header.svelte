@@ -1,13 +1,13 @@
 <script lang='ts'>
-    import { data, userLang } from '$lib/translations';
+    import { data, toggleLang } from '$lib/translations';
     import { onMount } from 'svelte';
     import { page } from '$app/stores';
 
     let isSticky = false;
+
     $: header = $data.header;
 
     onMount(() => {
-        data.setLang($userLang.toString());
         window.addEventListener('scroll', () => {
             if (window.scrollY > 0) {
                 isSticky = true;
@@ -35,17 +35,17 @@
                     <a href={header.logos[0].href} target="_blank"><img src={header.logos[0].src} alt="SOGC Logo"/></a>
                 {/if}
             </div>
-            {#each header.nav as item}
-                {#if item.type === 'normal'}
-                    <li><a href={item.href} class:selected={item.href === $page.url.pathname}>{item.title}</a></li>
-                {:else if item.type === 'content'}
-                    {#each item.content as subitem}
-                    <li><a href={subitem.href} class:selected={subitem.href === $page.url.pathname}>{subitem.title}</a></li>
+            {#each header.nav as {type, title, content, href}}
+                {#if type === 'normal'}
+                <li><a href={href} class:selected={href === $page.url.pathname}>{title}</a></li>
+                {:else if type === 'content'}
+                    {#each content as {title, href}}
+                    <li><a href={href} class:selected={href === $page.url.pathname}>{title}</a></li>
                     {/each}
-                {:else if item.type === 'exit'}
-                    <li><a href={item.href} target="_self"><span id="exit">{item.title}</span></a></li>
-                {:else if item.type === 'switch'}
-                    <li><button on:click={data.togLang}>{item.title}</button></li>
+                {:else if type === 'exit'}
+                <li><a href={href} target="_self"><span id="exit">{title}</span></a></li>
+                {:else if type === 'switch'}
+                <li><button on:click={toggleLang}>{title}</button></li>
                 {/if}
             {/each}
         </ul>

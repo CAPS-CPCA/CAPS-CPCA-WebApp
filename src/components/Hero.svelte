@@ -3,7 +3,7 @@
 
     $: hero = $data.hero;
     
-    export let variant: string;
+    export let variant: 'home' | 'content' | 'icon';
     export let index: number = 0;
     export let reverse: boolean = false;
 </script>

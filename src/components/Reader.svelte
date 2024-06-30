@@ -107,15 +107,14 @@
         border-left: 1.5rem solid transparent;
         border-right: 1.5rem solid transparent;
         border-top: 1.5rem solid var(--Primary);
-        transform: rotate(90deg);
+        transform: rotate(90deg) scale(0.75);
     }
     .arrow.collapsed {
-        transform: rotate(-90deg);
+        transform: rotate(-90deg) scale(0.75);
     }
     .pane {
         flex: 1;
-        padding: 0 6.5rem;
-        padding-bottom: 6.5rem;
+        padding: 4rem;
     }
     h1 {
         font-family: 'Open Sans', sans-serif;
@@ -123,5 +122,9 @@
         font-weight: 600;
         padding: 1.5rem 4.5rem;
         color: var(--Primary);
+    }
+    .pane h1 {
+        background: var(--Primary);
+        color: white;
     }
 </style>
