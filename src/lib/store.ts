@@ -288,7 +288,6 @@ const searches:{[key:string]:Search} = {
 }
 
 export function getTranslation(lang: string): { header: Header, footer: Footer, hero: Hero, cards: Cards, survey: Survey, newsletter: Newsletter, aboutSOGC: AboutSOGC, search: Search } {
-    console.log(lang)
     return {
         header: headers[lang],
         footer: footers[lang],

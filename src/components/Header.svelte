@@ -1,5 +1,5 @@
 <script lang='ts'>
-    import { data, toggleLang } from '$lib/translations';
+    import { data, userLang } from '$lib/translations';
     import { onMount } from 'svelte';
     import { page } from '$app/stores';
 
@@ -8,6 +8,7 @@
     $: header = $data.header;
 
     onMount(() => {
+        data.setLang($userLang);
         window.addEventListener('scroll', () => {
             if (window.scrollY > 0) {
                 isSticky = true;
@@ -45,7 +46,7 @@
                 {:else if type === 'exit'}
                 <li><a href={href} target="_self"><span id="exit">{title}</span></a></li>
                 {:else if type === 'switch'}
-                <li><button on:click={toggleLang}>{title}</button></li>
+                <li><button on:click={data.togLang}>{title}</button></li>
                 {/if}
             {/each}
         </ul>

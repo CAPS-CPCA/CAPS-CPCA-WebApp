@@ -3,6 +3,11 @@ import { writable } from 'svelte/store';
 import { browser } from '$app/environment';
 import { replaceState } from '$app/navigation';
 
+export const translations: { [key: string]: any } = {
+    en: getTranslation('en'),
+    fr: getTranslation('fr')
+};
+
 function updatePath() {
     const path = window.location.pathname;
     const pathMap: { [key: string]: string } = {
@@ -19,30 +24,22 @@ function updatePath() {
     }
 }
 
-function getLang() {
-    let lang = 'en';
-    if (browser) {
-        lang = localStorage.getItem('lang') || 'en';
-    }
-    return lang;
-}
+export const userLang = writable<string>(browser ? (localStorage.getItem('lang') || 'en') : undefined);
+userLang.subscribe(value => browser && localStorage.setItem('lang', value.toString()));
 
-function createTranslationStore() {
-    const lang = getLang();
-    const { subscribe, set } = writable(getTranslation(lang));
+function createData(lang :string = 'en') {
+    const { subscribe, set, update } = writable(translations[lang]);
 
     return {
         subscribe,
-        set: (lang: string) => {
-            localStorage.setItem('lang', lang);
-            set(getTranslation(lang));
+        set,
+        update,
+        setLang: (lang: string) => set(translations[lang]),
+        togLang: () => {
+            update(data => data === translations.en ? translations.fr : translations.en);
+            userLang.update(value => value === 'en' ? 'fr' : 'en');
             updatePath();
-        },
+        }
     };
 }
-
-export function toggleLang() {
-    data.set(getLang() === 'en' ? 'fr' : 'en');
-}
-
-export const data = createTranslationStore();
+export const data = createData();
