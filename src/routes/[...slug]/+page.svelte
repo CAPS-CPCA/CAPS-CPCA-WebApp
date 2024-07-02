@@ -1,6 +1,5 @@
 <script>
-import Reader from "../../components/Reader.svelte";
-
+import Reader from "../../components/content/Reader.svelte";
 </script>
 
 <section class="reader">
