@@ -2,20 +2,27 @@
     import Hero from '../../components/Hero.svelte';
     import {page} from '$app/stores';
 
+    interface HeroConfig {
+        variant: "content" | "home" | "icon";
+        index: number;
+        reverse?: boolean;
+    }
+
+    function getHeroConfig(path: string): HeroConfig | undefined {
+        if ((path.startsWith('/prescribing')) || (path.startsWith('/prescrire'))) {
+            return { variant: 'content', index: 0, reverse: true };
+        } else if ((path.startsWith('/dispensing')) || (path.startsWith('/dispenser'))) {
+            return { variant: 'content', index: 1 };
+        } else if ((path.startsWith('/supporting%20roles')) || (path.startsWith('/r%C3%B4les%20de%20soutien'))) {
+            return { variant: 'content', index: 2, reverse: true };
+        }
+    }
+
     $: path = $page.url.pathname;
-
-    const heroConfig: any = {
-        '/prescribing': { variant: 'content', index: 0, reverse: true },
-        '/prescrire': { variant: 'content', index: 0, reverse: true },
-        '/dispensing': { variant: 'content', index: 1 },
-        '/dispenser': { variant: 'content', index: 1 },
-        '/supporting%20roles': { variant: 'content', index: 2, reverse: true },
-        '/r%C3%B4les%20de%20soutien': { variant: 'content', index: 2, reverse: true }
-    };
-
-    $: hero = heroConfig[path] || {};
+    $: hero = getHeroConfig(path);
 </script>
+
 {#if hero}
     <Hero {...hero} />
 {/if}
-<slot/>
+<slot />

@@ -1,6 +1,10 @@
 <script lang="ts">
+    import { page } from '$app/stores';
+    import { subpages, resources } from './Outline';
+    
     let isCollapsed = false;
-    let isHidden = true;
+
+    $: current = $page.url.pathname;
 
     const handleCollapse = () => {
         isCollapsed = !isCollapsed;
@@ -12,22 +16,27 @@
     {#if !isCollapsed}
         <h1>Outline</h1>
         <ul>
-            <li><a href="#introduction" class="secondary" on:click={() => isHidden = !isHidden}>About Mifegymiso</a></li>
-            <div class="bulletin" style={isHidden ? 'display: none;' : ''}>
-                <li><a href="#chapter1" class="tertiary">Mechanism of Action</a></li>
-                <li><a href="#chapter2" class="tertiary">Efficacy & Safety</a></li>
-                <li><a href="#chapter3" class="tertiary">Indication & Contraindications</a></li>
-            </div>
-            <li><a href="#chapter1" class="secondary">Patient Counselling</a></li>
-            <li><a href="#chapter2" class="secondary">Pre-abortion Medical Evaluation</a></li>
-            <li><a href="#chapter3" class="secondary">Post-abortion Assessment</a></li>
-            <li><a href="#chapter4" class="secondary">Virtual & Hybrid Care</a></li>
+            {#each Object.keys(subpages) as page}
+                <li><a data-sveltekit-noscroll href={subpages[page].href} class="secondary" class:selected={current === subpages[page].href}>{subpages[page].title}</a></li>
+                <div class="bulletin" style={current === subpages[page].href ? '' : 'display: none;'}>
+                    {#each Object.keys(subpages[page].modules) as module}
+                    <li><a href={'#'+module} class="tertiary">{subpages[page].modules[module]}</a></li>
+                    {/each}
+                </div>
+            {/each}
         </ul>
+        {#if resources}
         <ul>
-            <li><a href="#chapter5" class="secondary">Physician Billing Codes</a></li>
-            <li><a href="#chapter6" class="secondary">Regulations, Insurance & Inclusivity Toolkits</a></li>
-            <li><a href="#chapter7" class="secondary">Guidelines, Checklists & Toolkits</a></li>
+            {#each Object.keys(resources) as resource}
+                <li><a data-sveltekit-noscroll href={resources[resource].href} class="secondary" class:selected={current === resources[resource].href}>{resources[resource].title}</a></li>
+                <div class="bulletin" style={current === resources[resource].href ? '' : 'display: none;'}>
+                    {#each Object.keys(resources[resource].modules) as module}
+                    <li><a href={'#'+module} class="tertiary">{resources[resource].modules[module]}</a></li>
+                    {/each}
+                </div>
+            {/each}
         </ul>
+        {/if}
     {/if}
 </div>
 

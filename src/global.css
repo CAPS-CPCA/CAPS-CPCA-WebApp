@@ -127,7 +127,7 @@ a.secondary:active {
     border: 3px solid var(--Pressed);
     color: var(--Pressed);
 }
-a.secondary:focus {
+a.secondary.selected {
     color: var(--Background);
     background-color: var(--Primary);
     border: 3px solid var(--Primary);
