@@ -23,7 +23,7 @@
             <h1>No Modules Found</h1>
         {:else}
         {#each modules as module}
-            <h1 id={'#'+module.id}>{module.title}</h1>
+            <h1 id={module.id}>{module.title}</h1>
             <div class="module">
                 {@html formatText(module.content)}
                 <img src="https://via.placeholder.com/800x400" alt="Mifegymiso"/>

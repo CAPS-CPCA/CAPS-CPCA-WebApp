@@ -1,9 +1,17 @@
 <script lang='ts'>
-import { page } from '$app/stores';
-import { getModules } from '../../components/content/Modules';
-import Reader from "../../components/content/Reader.svelte";
+    import { onMount } from 'svelte';
+    import { page } from '$app/stores';
+    import { goto } from '$app/navigation';
+    import { getModules } from '../../components/content/Modules';
+    import Reader from "../../components/content/Reader.svelte";
 
-const aboutmifegymiso = getModules(['M1','M2','M3','M4','M5']);
+    $: onMount(() => {
+    if ($page.url.pathname === '/prescribing') {
+            goto('/prescribing/about-mifegymiso');
+        }
+    });
+
+    const aboutmifegymiso = getModules(['M1','M2','M3','M4','M5']);
 </script>
 
 <section class="reader">
