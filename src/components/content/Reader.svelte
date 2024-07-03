@@ -46,6 +46,7 @@
     .pane {
         flex: 1;
         padding: 0 4rem 4rem 4rem;
+        min-height: 50rem;
     }
     h1 {
         font-family: 'Open Sans', sans-serif;
