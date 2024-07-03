@@ -1,9 +1,7 @@
 <script lang="ts">
-    import { getModule } from './Modules';
     import Outline from './Outline.svelte';
 
-    let module: any = getModule('M1');
-    $: content = module.content;
+    export let modules:any = [];
 
     function formatText(text: string[]) {
         if (!text) return '';
@@ -21,11 +19,17 @@
 <div class="reader">
     <Outline/>
     <div class="pane">
-        <h1>{module.title}</h1>
-        <div class="module">
-            {@html formatText(content)}
-            <img src="https://via.placeholder.com/800x400" alt="Mifegymiso"/>
-        </div>
+        {#if modules.length === 0}
+            <h1>No Modules Found</h1>
+        {:else}
+        {#each modules as module}
+            <h1 id={'#'+module.id}>{module.title}</h1>
+            <div class="module">
+                {@html formatText(module.content)}
+                <img src="https://via.placeholder.com/800x400" alt="Mifegymiso"/>
+            </div>
+        {/each}
+        {/if}
     </div>
 </div>
 

@@ -196,6 +196,22 @@ const heros: { [key: string]: Hero } = {
     }
 }
 
+interface HeroConfig {
+    variant: "content" | "home" | "icon";
+    index: number;
+    reverse?: boolean;
+}
+export function getHeroConfig(path: string): HeroConfig {
+    if ((path.startsWith('/prescribing')) || (path.startsWith('/prescrire'))) {
+        return { variant: 'content', index: 0, reverse: true };
+    } else if ((path.startsWith('/dispensing')) || (path.startsWith('/dispenser'))) {
+        return { variant: 'content', index: 1 };
+    } else if ((path.startsWith('/supporting%20roles')) || (path.startsWith('/r%C3%B4les%20de%20soutien'))) {
+        return { variant: 'content', index: 2, reverse: true };
+    }
+    throw new Error('Invalid path');
+}
+
 const cards: { [key: string]: Cards } = {
     en: [
         {

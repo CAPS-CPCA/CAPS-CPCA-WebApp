@@ -41,7 +41,7 @@
                 <li><a href={href} class:selected={href === $page.url.pathname}>{title}</a></li>
                 {:else if type === 'content'}
                     {#each content as {title, href}}
-                    <li><a href={href} class:selected={href === $page.url.pathname}>{title}</a></li>
+                    <li><a href={href} class:selected={($page.url.pathname).includes(href)}>{title}</a></li>
                     {/each}
                 {:else if type === 'exit'}
                 <li><a href={href} target="_self"><span id="exit">{title}</span></a></li>

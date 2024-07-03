@@ -37,6 +37,6 @@ const modules = [
     }
 ];
 
-export function getModule(id: string) {
-    return modules.find(module => module.id === id);
+export function getModules(ids: string | string[]) {
+    return modules.filter(module => ids.includes(module.id));
 }

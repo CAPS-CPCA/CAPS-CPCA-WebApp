@@ -17,7 +17,7 @@
 
 <style>
     .container {
-        background: url(../assets/newsletter.png) no-repeat center center;
+        background: url(../../assets/newsletter.png) no-repeat center center;
         background-size: contain;
     }
     .card {

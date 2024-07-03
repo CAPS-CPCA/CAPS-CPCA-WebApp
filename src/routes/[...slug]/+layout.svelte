@@ -1,25 +1,14 @@
 <script lang="ts">
+    import { page } from '$app/stores';
+    import { goto } from '$app/navigation';
+    import { getHeroConfig } from '$lib/store';
     import Hero from '../../components/Hero.svelte';
-    import {page} from '$app/stores';
 
-    interface HeroConfig {
-        variant: "content" | "home" | "icon";
-        index: number;
-        reverse?: boolean;
+    if ($page.url.pathname === '/prescribing') {
+        goto('/prescribing/about-mifegymiso');
     }
 
-    function getHeroConfig(path: string): HeroConfig | undefined {
-        if ((path.startsWith('/prescribing')) || (path.startsWith('/prescrire'))) {
-            return { variant: 'content', index: 0, reverse: true };
-        } else if ((path.startsWith('/dispensing')) || (path.startsWith('/dispenser'))) {
-            return { variant: 'content', index: 1 };
-        } else if ((path.startsWith('/supporting%20roles')) || (path.startsWith('/r%C3%B4les%20de%20soutien'))) {
-            return { variant: 'content', index: 2, reverse: true };
-        }
-    }
-
-    $: path = $page.url.pathname;
-    $: hero = getHeroConfig(path);
+    $: hero = getHeroConfig($page.url.pathname);
 </script>
 
 {#if hero}

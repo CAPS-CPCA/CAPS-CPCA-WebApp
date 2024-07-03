@@ -1,17 +1,18 @@
 <script lang='ts'>
-import { goto } from '$app/navigation';
 import { page } from '$app/stores';
-import { onMount } from 'svelte';
+import { getModules } from '../../components/content/Modules';
 import Reader from "../../components/content/Reader.svelte";
 
-onMount(() => {
-    $page.url.pathname === '/prescribing' && goto('/prescribing/about-mifegymiso');
-});
+const aboutmifegymiso = getModules(['M1','M2','M3','M4','M5']);
 </script>
 
 <section class="reader">
     <div class="container">
-        <Reader />
+        {#if $page.url.pathname === '/prescribing/about-mifegymiso'}
+            <Reader modules={aboutmifegymiso} />
+        {:else}
+            <Reader/>
+        {/if}
     </div>
 </section>
 

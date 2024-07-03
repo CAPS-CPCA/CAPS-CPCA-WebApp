@@ -1,10 +1,11 @@
 <script lang="ts">
     import { page } from '$app/stores';
-    import { subpages, resources } from './Outline';
-    
+    import { getOutline } from './Outline';
+
     let isCollapsed = false;
 
     $: current = $page.url.pathname;
+    $: outline = getOutline('/prescribing');
 
     const handleCollapse = () => {
         isCollapsed = !isCollapsed;
@@ -15,28 +16,18 @@
     <button class="arrow" on:click={handleCollapse} class:collapsed={isCollapsed} aria-label="Toggle Collapse"></button>
     {#if !isCollapsed}
         <h1>Outline</h1>
-        <ul>
-            {#each Object.keys(subpages) as page}
-                <li><a data-sveltekit-noscroll href={subpages[page].href} class="secondary" class:selected={current === subpages[page].href}>{subpages[page].title}</a></li>
-                <div class="bulletin" style={current === subpages[page].href ? '' : 'display: none;'}>
-                    {#each Object.keys(subpages[page].modules) as module}
-                    <li><a href={'#'+module} class="tertiary">{subpages[page].modules[module]}</a></li>
-                    {/each}
-                </div>
-            {/each}
-        </ul>
-        {#if resources}
-        <ul>
-            {#each Object.keys(resources) as resource}
-                <li><a data-sveltekit-noscroll href={resources[resource].href} class="secondary" class:selected={current === resources[resource].href}>{resources[resource].title}</a></li>
-                <div class="bulletin" style={current === resources[resource].href ? '' : 'display: none;'}>
-                    {#each Object.keys(resources[resource].modules) as module}
-                    <li><a href={'#'+module} class="tertiary">{resources[resource].modules[module]}</a></li>
-                    {/each}
-                </div>
-            {/each}
-        </ul>
-        {/if}
+        {#each Object.keys(outline) as section}
+            <ul>
+                {#each Object.keys(outline[section]) as page}
+                    <li><a data-sveltekit-noscroll href={outline[section][page].href} class="secondary" class:selected={current === outline[section][page].href}>{outline[section][page].title}</a></li>
+                    <div class="bulletin" style={current === outline[section][page].href ? '' : 'display: none;'}>
+                        {#each Object.keys(outline[section][page].modules) as module}
+                        <li><a href={'#'+module} class="tertiary">{outline[section][page].modules[module]}</a></li>
+                        {/each}
+                    </div>
+                {/each}
+            </ul>
+        {/each}
     {/if}
 </div>
 
