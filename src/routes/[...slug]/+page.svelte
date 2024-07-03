@@ -1,15 +1,13 @@
 <script lang='ts'>
-    import { onMount } from 'svelte';
     import { page } from '$app/stores';
     import { goto } from '$app/navigation';
+    import { browser } from '$app/environment';
     import { getModules } from '../../components/content/Modules';
     import Reader from "../../components/content/Reader.svelte";
 
-    $: onMount(() => {
-    if ($page.url.pathname === '/prescribing') {
-            goto('/prescribing/about-mifegymiso');
-        }
-    });
+    $: if (browser) {
+        $page.url.pathname === '/prescribing' ? goto('/prescribing/about-mifegymiso') : null;
+    }
 
     const aboutmifegymiso = getModules(['M1','M2','M3','M4','M5']);
 </script>

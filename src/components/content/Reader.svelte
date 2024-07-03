@@ -35,6 +35,7 @@
 
 <style>
     .reader {
+        position: relative;
         display: flex;
         overflow: hidden;
         margin-bottom: 5rem;
@@ -44,7 +45,7 @@
     }
     .pane {
         flex: 1;
-        padding: 4rem;
+        padding: 0 4rem 4rem 4rem;
     }
     h1 {
         font-family: 'Open Sans', sans-serif;
@@ -54,6 +55,7 @@
         color: var(--Primary);
     }
     .pane h1 {
+        margin-top: 4rem;
         background: var(--Primary);
         color: white;
     }

@@ -1,8 +1,20 @@
 <script lang="ts">
+    import { browser } from '$app/environment';
     import { page } from '$app/stores';
     import { getOutline } from './Outline';
 
     let isCollapsed = false;
+    
+    // This stuff handles sticky class for outline: very hacky solution. To be refactored later.
+    let isSticky = true;
+    $: if (browser) {
+        const scrollY = window.scrollY;
+        isSticky = scrollY >= 600 && scrollY <= 6700;
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            isSticky = scrollY >= 600 && scrollY <= 6700;
+        });
+    }
 
     $: current = $page.url.pathname;
     $: outline = getOutline('/prescribing');
@@ -12,11 +24,12 @@
     }
 </script>
 
-<div class="outline" class:collapsed={isCollapsed}>
+<div class="outline" class:collapsed={isCollapsed} >
     <button class="arrow" on:click={handleCollapse} class:collapsed={isCollapsed} aria-label="Toggle Collapse"></button>
     {#if !isCollapsed}
-        <h1>Outline</h1>
-        {#each Object.keys(outline) as section}
+    <h1>Outline</h1>
+    <div class:sticky={isSticky}>
+    {#each Object.keys(outline) as section}
             <ul>
                 {#each Object.keys(outline[section]) as page}
                     <li><a data-sveltekit-noscroll href={outline[section][page].href} class="secondary" class:selected={current === outline[section][page].href}>{outline[section][page].title}</a></li>
@@ -28,6 +41,7 @@
                 {/each}
             </ul>
         {/each}
+    </div>
     {/if}
 </div>
 
@@ -86,13 +100,16 @@
         align-items: center;
         transition: all 0.1s ease-in-out;
     }
+    .sticky{
+        position: fixed;
+        width: 30rem;
+        top: 6rem;
+    }
     .outline.collapsed {
         width: 5rem;
     }
-    .outline > * {
-        width: 100%;
-    }
     .outline h1 {
+        width: 100%;
         padding: 1.5rem 4.5rem;
         font-family: 'Open Sans', sans-serif;
         font-size: 2rem;
