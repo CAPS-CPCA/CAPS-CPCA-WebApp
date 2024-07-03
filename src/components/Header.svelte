@@ -1,5 +1,5 @@
 <script lang='ts'>
-    import { data, userLang } from '$lib/translations';
+    import { data, userLang } from '$lib/data';
     import { onMount } from 'svelte';
     import { page } from '$app/stores';
 

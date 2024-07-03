@@ -1,6 +1,6 @@
 <script>
   import { images } from '../assets/index';
-  import { data } from '$lib/translations';
+  import { data } from '$lib/data';
   </script>
 
   <footer>

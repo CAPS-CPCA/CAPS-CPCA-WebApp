@@ -1,6 +1,6 @@
 <script lang="ts">
     import Hero from '../../components/Hero.svelte';
-    import { data } from '$lib/translations';
+    import { data } from '$lib/data';
   </script>
   
     <Hero variant="icon" index={1}/>

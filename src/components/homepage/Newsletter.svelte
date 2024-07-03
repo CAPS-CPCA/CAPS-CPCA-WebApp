@@ -1,5 +1,5 @@
 <script lang="ts">
-    import {data} from '$lib/translations'
+    import {data} from '$lib/data'
 </script>
 
 <div class="container">
