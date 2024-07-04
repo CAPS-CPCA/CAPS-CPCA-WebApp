@@ -3,7 +3,7 @@ const modules = [
         id: 'M1',
         title: 'Mechanism of Action',
         content: ['In Canada, the medication abortion pills are packaged and sold as Mifegymiso. Mifegymiso comes in an outer white box, containing two smaller boxes: a green box containing mifepristone 200 mg (MIFE) and an orange box containing misoprostol 800 mcg (MISO) (four small tablets of 200 mcg each)[10].','MIFE is a progesterone receptor modulator. It is a potent anti-progestin that also exhibits strong antiglucocorticoid and weak antiandrogenic properties. It blocks progesterone receptors in early pregnancy, which leads to endometrial degeneration, synthesis of prostaglandins, and decline in beta-human chorionic gonadotropin (βhCG) secretion. These events promote cervical dilation and facilitate the onset of bleeding[10].','MISO is a potent synthetic prostaglandin E1 that induces cervical ripening and uterine contractions, which cause the pregnancy tissues to leave the body[10].','Click here to download the Product monograph.'],
-        images: [{title: 'Mifegymiso', src: 'https://via.placeholder.com/800x400', alt: 'Mifegymiso' }],
+        images: [{title: 'Mifegymiso', src: 'https://caps.sogc.org/wp-content/uploads/2024/01/Mifegysmo-Overview.png', alt: 'Mifegymiso' }],
     },
     {
         id: 'M2',
@@ -21,7 +21,6 @@ const modules = [
             '<li><strong>Uncommon (0.1-1%):</strong> Arrhythmia, hemorrhagic shock, salpingitis, heavy bleeding requiring IV fluids or blood transfusion, infection, hot flushes, hypotension, bronchospasm, skin rash / pruritus.',
             '</ul>'
         ],
-        images: [{title: 'Indications', src: 'https://via.placeholder.com/800x400', alt: 'Indications' }],
     },
     {
         id: 'M3',
@@ -51,11 +50,7 @@ const modules = [
         'The effectiveness decreases as the gestational age approaches 70 days. Prescribers should counsel patients that this is off-label use, that there is a possibility of expelling and seeing an intact fetus, and that there are higher rates of bleeding and incomplete or failed abortion.',
         '<strong>Patients between 15 to 18 years of age</strong>',
         'Data is insufficient to establish efficacy and safety in patients younger than 15 years old. However, in patients aged between 15 and 18 years, safety and efficacy have been demonstrated with vomiting and pain being reported more frequently than in adults[11]. Thus, special considerations for patients in this age range can include counselling to prepare them for vomiting and pain, as well as psychosocial supports through the medication abortion process.',
-
-
-
         ],
-        images: [{title: 'Contraindications', src: 'https://via.placeholder.com/800x400', alt: 'Contraindications' }],
     },
 
     {

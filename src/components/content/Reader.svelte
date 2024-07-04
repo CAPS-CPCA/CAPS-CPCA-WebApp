@@ -26,7 +26,9 @@
             <h1 id={module.id}>{module.title}</h1>
             <div class="module">
                 {@html formatText(module.content)}
-                <img src="https://caps.sogc.org/wp-content/uploads/2024/01/Mifegysmo-Overview.png" alt="Mifegymiso"/>
+                {#if module.images}
+                    <img src={module.images[0].src} alt="Mifegymiso"/>
+                {/if}
             </div>
         {/each}
         {/if}
