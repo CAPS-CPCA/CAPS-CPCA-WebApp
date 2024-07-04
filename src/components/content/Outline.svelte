@@ -6,7 +6,7 @@
     let isCollapsed = false;
     
     // This stuff handles sticky class for outline: very hacky solution. To be refactored later.
-    let isSticky = true;
+    let isSticky = false;
     $: if (browser) {
         const scrollY = window.scrollY;
         isSticky = scrollY >= 600 && scrollY <= 6700;
@@ -17,6 +17,7 @@
     }
 
     $: current = $page.url.pathname;
+    $: hash = $page.url.hash;
     $: outline = getOutline('/prescribing');
 
     const handleCollapse = () => {
@@ -35,7 +36,7 @@
                     <li><a data-sveltekit-noscroll href={outline[section][page].href} class="secondary" class:selected={current === outline[section][page].href}>{outline[section][page].title}</a></li>
                     <div class="bulletin" style={current === outline[section][page].href ? '' : 'display: none;'}>
                         {#each Object.keys(outline[section][page].modules) as module}
-                        <li><a href={'#'+module} class="tertiary">{outline[section][page].modules[module]}</a></li>
+                        <li><a href={'#'+module} class="tertiary" class:selected={hash.includes(module)}>{outline[section][page].modules[module]}</a></li>
                         {/each}
                     </div>
                 {/each}
@@ -56,11 +57,11 @@
     .tertiary:hover {
         color: var(--Highlight);
     }
-    .tertiary:focus {
+    .tertiary.selected {
         font-weight: 500;
         color: var(--Pressed);
     }
-    .tertiary:focus::before {
+    .tertiary.selected::before {
         content: '>';
         margin-right: 0.5rem;
     }
