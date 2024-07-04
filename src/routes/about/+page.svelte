@@ -87,12 +87,6 @@
 </section>
 
 <style>
-  a.ref {
-    color: var(--Primary);
-  }
-  a.ref:hover {
-    color: var(--Highlight);
-  }
   img {
     width: 100%;
     margin-top: 2rem;
@@ -122,13 +116,6 @@
       font-weight: 600;
       padding: 1.5rem 4.5rem;
       color: var(--Primary);
-  }
-  h2 {
-    margin: 0;
-    margin-top: 2rem;
-    color: #3E3E3E;
-    font-family: 'Roboto';
-    font-weight: 600;
   }
   .pane h1 {
       margin-top: 4rem;

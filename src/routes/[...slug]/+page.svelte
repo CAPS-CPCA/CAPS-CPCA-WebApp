@@ -13,9 +13,9 @@
 
     function modulePath(path:string) {
         if (path === '/prescribing/about-mifegymiso') {
-            return getModules(['M1','M2','M3','M4','M5']);
+            return getModules(['M1','M2','M3']);
         } else if (path === '/prescribing/patient-counselling') {
-            return getModules(['M2','M2','M3','M4','M5']);
+            return getModules(['M5','M6','M14','M15','M33','M16']);
         } else if (path === '/prescribing/medical-evaluation') {
             return getModules(['M3','M2','M3','M4','M5']);
         } else if (path === '/prescribing/assessment') {

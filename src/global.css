@@ -82,6 +82,12 @@ a.in {
 a.in:hover {
     color: var(--Highlight);
 }
+a.ex {
+    color: #0E6EB8;
+}
+a.ex:hover {
+    color: #20A4F3;
+}
 .module li {
     list-style-type: disc;
     color: #3E3E3E;
@@ -140,7 +146,19 @@ a.secondary.selected {
     background-color: var(--Primary);
     border: 3px solid var(--Primary);
 }
-
+a.ref {
+    color: var(--Primary);
+}
+a.ref:hover {
+    color: var(--Highlight);
+}
+h2 {
+    margin: 0;
+    margin-top: 2rem;
+    color: #3E3E3E;
+    font-family: 'Roboto';
+    font-weight: 600;
+}
 /* Layout */
 section {
     display: flex;
