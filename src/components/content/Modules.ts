@@ -1,3 +1,5 @@
+import { images } from '../../assets';
+
 const modules = [
     {
         id: 'M1',
@@ -52,19 +54,124 @@ const modules = [
         'Data is insufficient to establish efficacy and safety in patients younger than 15 years old. However, in patients aged between 15 and 18 years, safety and efficacy have been demonstrated with vomiting and pain being reported more frequently than in adults[11]. Thus, special considerations for patients in this age range can include counselling to prepare them for vomiting and pain, as well as psychosocial supports through the medication abortion process.',
         ],
     },
-
     {
         id: 'M5',
-        title: 'Indication & contraindications',
-        content: [''],
-        images: [{title: 'Adverse Effects', src: 'https://via.placeholder.com/800x400', alt: 'Adverse Effects' }],
+        title: 'Pre-abortion Counselling',
+        content: [
+            'Counselling is to ensure patients understand different options, the risks and benefits of each and make informed decisions. Counselling also helps prescribers understand patients’ preferences and circumstances to advise the best course of actions.',
+            '<strong>Key counselling points include</strong>[4,6]:',
+            '<ul>',
+                '<li><strong>Review pregnancy options</strong> when indicated: abortion, becoming a parent or child adoption.',
+                '<li>Tailor the counselling to the needs of the patient (such as counteracting abortion stigma and/or providing emotional support).',
+                '<li>Communicate the risk of advancing gestational age without putting time pressure on the patient.',
+                '<li><strong>Use non-judgmental and inclusive language.</strong>',
+            '</ul>',
+            '(If choosing abortion:)',
+            '<ul>',
+                '<li>Review <a href="https://caps.sogc.org/prescribing/#1" style="color: blue;">abortion options</a>, including risks, efficacy, process and length of time of medication versus procedural abortion.',
+                '<li><strong>Discuss the patient’s eligibility for medication abortion</strong>, including gestational age and medical history.',
+                '<li><strong>Discuss the patient’s access to pharmacies, telephone, transportation, emergency care, and labs and imaging facilities</strong> if needed.',
+                '<li>Discuss <a href="https://caps.sogc.org/prescribing/#1" style="color: blue;">the patient’s preferences and circumstances</a>, such as a safe place in their living situation to complete medication abortion. Share decision tools such as It’s My Choice to help the patient choose the type of abortion that fits them.',
+                '<li>Confirm that the decision is the patient’s own, reached without coercion.',
+                '<li>Confirm the patient’s understanding that <strong>medication abortion is irreversible</strong> and that the patients must take an additional dose of the second medication or undergo procedural abortion in case of ongoing pregnancy.',
+                '<li>Review the timing of examinations (ultrasound, blood tests, if needed), medications and follow-up appointments.',
+                '<li>Discuss <a href="https://caps.sogc.org/prescribing/?heading=Post-abortion%20Assessment&subheading=Post-abortion%20Contraception#4" style="color: blue;">post-abortion contraception options</a>.',
+            '</ul>',
+
+        ],
     },
+
     {
         id: 'M6',
-        title: 'Monitoring and Follow-Up',
-        content: ['Patients should be advised to return to the clinic for a follow-up visit 7 to 14 days after taking MIFE. This visit is important to confirm that the pregnancy has ended and to assess the patient’s health. If the pregnancy has not ended, the patient may require additional doses of MIFE or MISO, or a surgical abortion[10].'],
-        images: [{title: 'Monitoring and Follow-Up', src: 'https://via.placeholder.com/800x400', alt: 'Monitoring and Follow-Up' }],
-    }
+        title: 'Abortion Options',
+        content: [
+            '<strong>Medication abortion</strong> is suitable for patients who[6]:',
+            '<ul>',
+                '<li>Prefer a non-invasive method.',
+                '<li>Prefer to have an abortion in the comfort of their home.',
+                '<li>Have the confidence of being able to manage the process and side effects at home.',
+                '<li>Are able to take 1 to 3 days off work or other responsibilities to undergo the abortion process.',
+                '<li>Lack means of transportation to travel to the clinic for a procedural abortion (but still need access to emergency services in event of complications).',
+            '</ul>',
+            '<strong>Procedural abortion</strong> is suitable for patients who[6]:',
+            '<ul>',
+                '<li>Prefer to have in-person support and monitoring from healthcare professionals at a clinic or hospitals.',
+                '<li>Want to have the abortion completed quickly to return to work or other responsibilities.',
+                '<li>Are comfortable with the use of medical instruments and internal exams.',
+                '<li>Are comfortable undergoing local or general anesthesia to manage pain.',
+                '<li>Do not want to disclose the pregnancy and the abortion to those patients live with (such as partners, roommates, co-workers), as it might be difficult to conceal heavy bleeding and strong cramps.',
+            '</ul>'
+        ],
+        images: [{title: 'Abortion Options', src: images.AbortionOptions, alt: 'Abortion Options' }],
+
+    },
+
+    {
+        id: 'M14',
+        title: 'Informed Consent',
+        content: [
+            'After the patient and the health provider determine that medication abortion (MA) is the right option, the health provider should[2,6,7,10]:',
+            '<ol>',
+                '<li><strong>Obtain written or verbal informed consent</strong> (see examples by <a href="https://caps.sogc.org/wp-content/uploads/2024/01/C78.pdf" style="color: blue;">CAPS-CPCA platform</a> and the <a href="https://caps.sogc.org/wp-content/uploads/2024/01/C83.pdf" style="color: blue;">Bay Center for Birth Control</a>) and document it in the patients’ chart.',
+                '<li><strong>Prescribe:</strong>',
+                '<ul>',
+                    '<li>Mifepristone 200 mg (MIFE) orally and misoprostol 800 mcg (MISO) buccally or vaginally (this combination is packaged and branded as Mifegymiso).',
+                    '<li>Additional dose of MISO buccally or vaginally in case of incomplete or failed abortion.',
+                    '<li>Analgesics and antiemetics as per health provider / facility protocol.',
+                    '<li>Antibiotic prophylaxis, if needed, as per health provider / facility protocol.',
+                '</ul>',
+                '<li>Provide instructions on <a href="https://caps.sogc.org/prescribing/#1" style="color: blue;">how to take the medication</a>.',
+                '<li>Ensure patients know <a href="https://caps.sogc.org/prescribing/#1" style="color: blue;">how to manage side effects</a> and when and where to seek care for complications.',
+                '<li>Consider informing patients if the MA procedure involves off-label, evidence-based practices.',
+                '<ul>',
+                    '<li>Much of the MA off-label practices are based on low-resource availability and require a balance between health providers’ experience, patients’ safety and patients’ needs.',
+                    '<li>It is recommended to inform patients about off-label practices so patients understand the risks involved and understand that off-label practices might vary depending on prescribers’ experience and comfort level.',
+                '</ul>',
+                '<li>Discuss post-abortion contraception options. <strong>Emphasize that patients can quickly return to fertility following the abortion.</strong>',
+                '<li><strong>Set up follow-up appointment(s), either in-person or via phone/video.</strong> Do discuss any safety or privacy plan if needed.',
+                '<li>Provide patients with patient instruction manuals (see an example by the <a href="https://caps.sogc.org/wp-content/uploads/2024/01/C73.pdf" style="color: blue;">SHORE center and the Planned Parenthood Ottawa</a>) and the contact details of healthcare providers and emergency health services.',
+                '<li>Take note of patients’ preferred phone numbers and emergency contacts in case providers are unable to reach patients directly. Be mindful that the emergency contact that the patient gives during their visits for MA may be different from the emergency contact on file. Be sure not to contact any other individuals without the patient’s expressed consent.',
+            
+
+            '</ol>',
+        ],
+    },
+
+    {
+        id: 'M15',
+        title: 'Administration instruction',
+        images: [{title: 'Administration instruction', src: images.AdminInstructions, alt: 'Administration instruction' }],
+    },
+
+    {
+        id: 'M33',
+        title: 'Missed Doses',
+        content: [
+            'Both MIFE and MISO are teratogenic and have been associated with fetal abnormalities. Once the MIFE / MISO treatment has been started, there is a risk of embryotoxicity if the pregnancy is not terminated[10].',
+            'If MISO is forgotten and > 48 hours have passed since MIFE: take MISO right away and inform the prescriber at follow-up[10].',
+            '<strong>Buccal administration of MISO</strong>[10]',
+            '<ul>',
+                '<li>If vomiting occurs < 1 hour after taking MIFE or during buccal absorption of MISO: contact a prescriber / pharmacist for assessment.',
+                '<li>If vomiting occurs > 30 minutes after swallowing MISO fragments: No action is required.',
+            '</ul>',
+            '<strong>Vaginal insertion of MISO</strong>[10]',
+            '<ul>',
+                '<li>If tablets fall out before bleeding starts: Re-insert the tablet or contact a healthcare professional if unable to reinsert.',
+                '<li>If tablets come out while bleeding: No action is required; in most cases, a sufficient portion of the medication will have been absorbed.',
+            '</ul>',
+            'In any case, if bleeding does not start within a few hours, contact a healthcare professional.'
+        ],
+    },
+    
+    {
+        id: 'M16',
+        title: 'Side-effect Management',
+        content: [
+            
+        ],
+        images: [{title: 'Side-effect Management', src: images.SideEffectsManage, alt: 'Side-effect Management' }],
+    },
+
 ];
 
 // this function returns the modules in accending order and doesn't repeat the modules if they are already in the list. Needs to be refactored to be more dynamic.
