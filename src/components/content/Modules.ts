@@ -28,7 +28,7 @@ const modules = [
         id: 'M3',
         title: 'Indication & Contraindications',
         content: ['<h2>Indication</h2>',
-        'MIFE / MISO is indicated by Health Canada for pregnancy termination up to 63 days as counted from the first day of the last menstrual period (LMP) in a presumed 28-day cycle. The Society of Obstetricians and Gynaecologists of Canada indicates safe use up to 70 days after LMP. There is no absolute lower gestational age limit[5].',
+        'MIFE / MISO is indicated by <a class="in" href="https://caps.sogc.org/wp-content/uploads/2024/01/C17-2.pdf">Health Canada</a> for pregnancy termination up to 63 days as counted from the first day of the last menstrual period (LMP) in a presumed 28-day cycle. The Society of Obstetricians and Gynaecologists of Canada indicates safe use up to 70 days after LMP. There is no absolute lower gestational age limit[5].',
         '<h2>Contraindications[6]:</h2>',
         '<ul>',
         '<li>Ectopic pregnancy',
@@ -47,7 +47,7 @@ const modules = [
         '<h2>Breastfeeding / Chestfeeding[6]:</h2>',
         'Oral MISO is excreted into human breast milk in small amounts which are rapidly eliminated. No interruption of breastfeeding or chestfeeding is necessary when misoprostol is given by any route.',
         '<h2>Gestational Age > 63 days</h2>',
-        '<a href="https://caps.sogc.org/wp-content/uploads/2024/01/C31.pdf" style="color: blue;">The Society of Obstetricians and Gynaecologists of Canada</a> and the <a href="https://caps.sogc.org/wp-content/uploads/2024/01/C6.pdf" style="color: blue;">National Abortion Federation</a> both endorse medication abortion (MA) with MIFE / MISO up to 70 days after LMP. They also recommend a second dose of MISO 800mcg four hours after the first dose of MISO 800mcg to increase the effectiveness of MA[5,13].',
+        '<a href="https://caps.sogc.org/wp-content/uploads/2024/01/C31.pdf"  >The Society of Obstetricians and Gynaecologists of Canada</a> and the <a href="https://caps.sogc.org/wp-content/uploads/2024/01/C6.pdf"  >National Abortion Federation</a> both endorse medication abortion (MA) with MIFE / MISO up to 70 days after LMP. They also recommend a second dose of MISO 800mcg four hours after the first dose of MISO 800mcg to increase the effectiveness of MA[5,13].',
         'The Society of Obstetricians and Gynaecologists of Canada also recommends a MIFE / MISO regimen from 70-84 days gestational age, with mifepristone 200mg followed in 24-48 hours with two doses of MISO 800mcg (buccal or vaginal), 4 hours apart.',
         'The effectiveness decreases as the gestational age approaches 70 days. Prescribers should counsel patients that this is off-label use, that there is a possibility of expelling and seeing an intact fetus, and that there are higher rates of bleeding and incomplete or failed abortion.',
         '<h2>Patients between 15 to 18 years of age<h2>',
@@ -68,14 +68,14 @@ const modules = [
             '</ul>',
             '(If choosing abortion:)',
             '<ul>',
-                '<li>Review <a href="https://caps.sogc.org/prescribing/#1" style="color: blue;">abortion options</a>, including risks, efficacy, process and length of time of medication versus procedural abortion.',
+                '<li>Review <a class="in" href="https://caps.sogc.org/prescribing/#1">abortion options</a>, including risks, efficacy, process and length of time of medication versus procedural abortion.',
                 '<li><strong>Discuss the patient’s eligibility for medication abortion</strong>, including gestational age and medical history.',
                 '<li><strong>Discuss the patient’s access to pharmacies, telephone, transportation, emergency care, and labs and imaging facilities</strong> if needed.',
-                '<li>Discuss <a href="https://caps.sogc.org/prescribing/#1" style="color: blue;">the patient’s preferences and circumstances</a>, such as a safe place in their living situation to complete medication abortion. Share decision tools such as It’s My Choice to help the patient choose the type of abortion that fits them.',
+                '<li>Discuss <a class="in" href="https://caps.sogc.org/prescribing/#1">the patient’s preferences and circumstances</a>, such as a safe place in their living situation to complete medication abortion. Share decision tools such as  <strong><a class="ex" href="https://www.sexandu.ca/its-my-choice/">It’s My Choice</a></strong> to help the patient choose the type of abortion that fits them.',
                 '<li>Confirm that the decision is the patient’s own, reached without coercion.',
                 '<li>Confirm the patient’s understanding that <strong>medication abortion is irreversible</strong> and that the patients must take an additional dose of the second medication or undergo procedural abortion in case of ongoing pregnancy.',
                 '<li>Review the timing of examinations (ultrasound, blood tests, if needed), medications and follow-up appointments.',
-                '<li>Discuss <a href="https://caps.sogc.org/prescribing/?heading=Post-abortion%20Assessment&subheading=Post-abortion%20Contraception#4" style="color: blue;">post-abortion contraception options</a>.',
+                '<li>Discuss <a class="in" href="https://caps.sogc.org/prescribing/?heading=Post-abortion%20Assessment&subheading=Post-abortion%20Contraception#4"  >post-abortion contraception options</a>.',
             '</ul>',
 
         ],
@@ -112,7 +112,7 @@ const modules = [
         content: [
             'After the patient and the health provider determine that medication abortion (MA) is the right option, the health provider should[2,6,7,10]:',
             '<ol>',
-                '<li><strong>Obtain written or verbal informed consent</strong> (see examples by <a href="https://caps.sogc.org/wp-content/uploads/2024/01/C78.pdf" style="color: blue;">CAPS-CPCA platform</a> and the <a href="https://caps.sogc.org/wp-content/uploads/2024/01/C83.pdf" style="color: blue;">Bay Center for Birth Control</a>) and document it in the patients’ chart.',
+                '<li><strong>Obtain written or verbal informed consent</strong> (see examples by <a class="in" href="https://caps.sogc.org/wp-content/uploads/2024/01/C78.pdf">CAPS-CPCA platform</a> and the <a class="in" href="https://caps.sogc.org/wp-content/uploads/2024/01/C83.pdf">Bay Center for Birth Control</a>) and document it in the patients’ chart.',
                 '<li><strong>Prescribe:</strong>',
                 '<ul>',
                     '<li>Mifepristone 200 mg (MIFE) orally and misoprostol 800 mcg (MISO) buccally or vaginally (this combination is packaged and branded as Mifegymiso).',
@@ -120,8 +120,8 @@ const modules = [
                     '<li>Analgesics and antiemetics as per health provider / facility protocol.',
                     '<li>Antibiotic prophylaxis, if needed, as per health provider / facility protocol.',
                 '</ul>',
-                '<li>Provide instructions on <a href="https://caps.sogc.org/prescribing/#1" style="color: blue;">how to take the medication</a>.',
-                '<li>Ensure patients know <a href="https://caps.sogc.org/prescribing/#1" style="color: blue;">how to manage side effects</a> and when and where to seek care for complications.',
+                '<li>Provide instructions on <a class="in" href="https://caps.sogc.org/prescribing/#1">how to take the medication</a>.',
+                '<li>Ensure patients know <a class="in" href="https://caps.sogc.org/prescribing/#1">how to manage side effects</a> and when and where to seek care for complications.',
                 '<li>Consider informing patients if the MA procedure involves off-label, evidence-based practices.',
                 '<ul>',
                     '<li>Much of the MA off-label practices are based on low-resource availability and require a balance between health providers’ experience, patients’ safety and patients’ needs.',
@@ -129,7 +129,7 @@ const modules = [
                 '</ul>',
                 '<li>Discuss post-abortion contraception options. <strong>Emphasize that patients can quickly return to fertility following the abortion.</strong>',
                 '<li><strong>Set up follow-up appointment(s), either in-person or via phone/video.</strong> Do discuss any safety or privacy plan if needed.',
-                '<li>Provide patients with patient instruction manuals (see an example by the <a href="https://caps.sogc.org/wp-content/uploads/2024/01/C73.pdf" style="color: blue;">SHORE center and the Planned Parenthood Ottawa</a>) and the contact details of healthcare providers and emergency health services.',
+                '<li>Provide patients with patient instruction manuals (see an example by the <a class="in" href="https://caps.sogc.org/wp-content/uploads/2024/01/C73.pdf">SHORE center and the Planned Parenthood Ottawa</a>) and the contact details of healthcare providers and emergency health services.',
                 '<li>Take note of patients’ preferred phone numbers and emergency contacts in case providers are unable to reach patients directly. Be mindful that the emergency contact that the patient gives during their visits for MA may be different from the emergency contact on file. Be sure not to contact any other individuals without the patient’s expressed consent.',
             
 
@@ -228,8 +228,8 @@ const modules = [
         title: 'Rhesus Screening',
         content: [
         'Guidelines on Rh screening have been updated.',
-        'According to the SOGC’s Guideline on Prevention of RhD Alloimmunization published in 2024, for non-sensitized Rh D-negative individuals who have experienced threatened, spontaneous or induced abortion after <strong>12 weeks gestation</strong>, administration of 300 μg of Rho(D) immune globulin is suggested.',
-        'Prior to that, in 2022, the Society of Family Planning and the World Health Organization also recommends withholding Rh testing and administration prior to 12 weeks gestation for patients undergoing MA, spontaneous abortion or uterine aspiration abortion[8,20].'
+        'According to the <a class ="ex" href="https://www.jogc.com/article/S1701-2163(24)00260-3/abstract">SOGC’s Guideline on Prevention of RhD Alloimmunization</a> published in 2024, for non-sensitized Rh D-negative individuals who have experienced threatened, spontaneous or induced abortion after <strong>12 weeks gestation</strong>, administration of 300 μg of Rho(D) immune globulin is suggested.',
+        'Prior to that, in 2022, <a class="in" href="https://caps.sogc.org/wp-content/uploads/2024/01/SFP1.pdf">the Society of Family Planning</a> and the <a class="in" href="https://caps.sogc.org/wp-content/uploads/2024/01/WHO1.pdf">World Health Organization</a> also recommends withholding Rh testing and administration prior to 12 weeks gestation for patients undergoing MA, spontaneous abortion or uterine aspiration abortion[8,20].'
     ],
     },
 
