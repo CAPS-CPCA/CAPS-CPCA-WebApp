@@ -1,4 +1,5 @@
 // import all images
+import PartnerLogos from './partner-logos.png';
 import BacktoTop from './backtop.png';
 import CAPS from './logo-caps.png';
 import EnSOGC from './logo-sogc-en.png';
@@ -21,6 +22,7 @@ import EnFooter from './logo-footer-en.png'
 import FrFooter from './logo-footer-fr.png'
 
 export const images = {
+    PartnerLogos,
     BacktoTop,
     CAPS,
     EnSOGC,

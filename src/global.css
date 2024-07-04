@@ -82,6 +82,14 @@ a.in {
 a.in:hover {
     color: var(--Highlight);
 }
+.module li {
+    list-style-type: disc;
+    color: #3E3E3E;
+    padding-left: 1.5rem;
+    font-size: 1.25rem;
+    font-family: 'Roboto';
+    line-height: 1.75;
+}
 /* UI */
 button.primary, a.primary {
     color: var(--Background);

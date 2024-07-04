@@ -45,7 +45,7 @@
 </section>
 
 <style>
-    .reader {
+    section.reader {
         display: flex;
         justify-content: center;
         align-items: center;

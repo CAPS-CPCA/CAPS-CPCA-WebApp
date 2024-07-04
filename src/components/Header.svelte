@@ -4,7 +4,6 @@
     import { page } from '$app/stores';
 
     let isSticky = false;
-    $: header = $data.header;
     $: if (browser) {
         data.setLang($userLang);
         isSticky = window.scrollY > 0;
@@ -12,7 +11,8 @@
             isSticky = window.scrollY > 0;
         });
     }
-
+    
+    $: header = $data.header;
 </script>
 
 <header>
