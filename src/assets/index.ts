@@ -14,6 +14,8 @@ import FrSurvey from './survey-fr.png'
 import AbortionOptions from './Abortion-Options.png'
 import AdminInstructions from './administrator-instruction.png'
 import SideEffectsManage from './side-effects-management.png'
+import EctopicPregnancy from './ectopic-pregnancy.png'
+import AnemiaSTIOthers from './anemia-sti-others.png'
 
 import PrescribingIcon from './prescribing-icon.png'
 import DispensingIcon from './dispensing-icon.png'
@@ -49,5 +51,7 @@ export const images = {
     AbortionOptions,
     AdminInstructions,
     SideEffectsManage,
+    EctopicPregnancy,
+    AnemiaSTIOthers
 
 };

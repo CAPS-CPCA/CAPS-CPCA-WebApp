@@ -17,7 +17,7 @@
         } else if (path === '/prescribing/patient-counselling') {
             return getModules(['M5','M6','M14','M15','M33','M16']);
         } else if (path === '/prescribing/medical-evaluation') {
-            return getModules(['M3','M2','M3','M4','M5']);
+            return getModules(['M8','M9','M10','M11','M12','M13']);
         } else if (path === '/prescribing/assessment') {
             return getModules(['M4','M2','M3','M4','M5']);
         } else if (path === '/prescribing/virtual-hybrid-care') {

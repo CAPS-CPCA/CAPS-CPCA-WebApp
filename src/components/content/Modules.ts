@@ -166,13 +166,80 @@ const modules = [
     {
         id: 'M16',
         title: 'Side-effect Management',
-        content: [
-            
-        ],
         images: [{title: 'Side-effect Management', src: images.SideEffectsManage, alt: 'Side-effect Management' }],
     },
 
+    {
+        id: 'M8',
+        title: 'Basic screening',
+        content: ['Medical history must be taken to assess gestational age, evaluate contraindications and identify additional precautions. The history also provides a baseline for follow- up and helps determine suitable contraception options and whether additional tests are needed[6].',
+        'Baseline vital signs and pelvic examination should be performed as directed by history. Practices may vary[6].', 
+        ],
+    },
+
+    {
+        id: 'M9',
+        title: 'Pregnancy & Gestational Age Screening',
+        content: ['A positive urine beta human chorionic gonadotropin test (βhCG) is sufficiently sensitive to confirm a pregnancy[6].',
+        '<strong>Ultrasound</strong>: Ultrasound provides the most accurate measurement of gestational age (GA) but is not a routine requirement unless the patient is uncertain of their last menstrual period (or there are symptoms and risk factors for ectopic pregnancy as explained later). It is recommended to choose an ultrasound clinic whose staff are capable of offering non-judgmental sonography[6].',
+        '<strong>Medical history:</strong If the patient is certain of their last menstrual period and if they were having regular periods without recent use of hormonal contraception, GA estimate that is based on their date would correlate closely with the results from ultrasound[6].',
+        '<strong>Gynaecological examination:</strong> In the first trimester, determination of GA with bimanual exam has been shown to be accurate within 2 weeks of GA determined by ultrasound; however, accuracy varies with the prescriber’s experience and with the amount of adipose tissue and the presence of fibroids[6].',    
+        '<strong>βhCG test:</strong> βhCG level rises linearly during the first 6 weeks of pregnancy but the high variability thereafter limits the utility of βhCG for dating[6].'
+    ],
+    },
+
+    {
+        id: 'M10',
+        title: 'Ectopic Pregnancy',
+        content: [
+        '<strong>Ectopic pregnancy (EP)</strong> is rare. It occurs in 1 or 2 out of 100 pregnancies in the general population, and the rate is consistently lower among those seeking abortion. It is recommended that <strong>patients undergo ultrasound if they have significant medical risk factors, signs or symptoms of EP[6]</strong>.',
+        '<h2>Significant risk factors, signs and symptoms of EP include[6]:</h2>',
+        '<ul>',
+            '<li>Previous ectopic pregnancy.',
+            '<li>IUD in place.',
+            '<li>Pregnancy conceived with assisted reproduction techniques.',
+            '<li>Previous surgery of the fallopian tubes such as tubal ligation.',
+            '<li>History of salpingitis or pelvic inflammatory disease.',
+            '<li>Symptoms of abdominal pain and vaginal bleeding.',
+        '</ul>',
+        '<strong>Multiple pregnancies</strong> is not a contraindication to medication abortion (MA), however the presence of multiples should be communicated to the patient if they agree to obtain information about the pregnancy[6].',
+        '<strong>Missed and incomplete abortion</strong> should also be disclosed to the patients if they agree to obtain information about the ultrasound and should be managed either by MA or procedural abortion[6].'   ,
+        'In case of <strong>molar pregnancy</strong>, procedural abortion with consideration for referral, histological review and follow-up of βhCG is essential, and MA is not appropriate[6].'
+    ],
+        images: [{title: 'Ectopic Pregnancy', src: images.EctopicPregnancy, alt: 'Ectopic Pregnancy' }],
+    },
+
+    {
+        id: 'M11',
+        title: 'Pregnancies of Unknown Location',
+        content: [
+        'Patients who have a <strong>pregnancy of unknown location (PUL)</strong> and request medication abortion (MA) should receive abortion care without delay, provided that they have no clinical symptoms of ectopic pregnancy (EP). Failure to identify a definite intrauterine pregnancy should not delay MA[6].',
+        '<strong>If the serum βhCG is > 2000 IU / L and no intrauterine gestational sac is visualized on ultrasound[6]:</strong>',
+        '<li>Further investigation is required.</li>',
+        '<strong>In the absence of EP risk factors, if βhCG is ≤ 2000 IU / L or a likely gestational sac is present without a yolk sac or fetal pole[6]:</strong>',
+        '<li>Patients with PUL can receive MA.',
+        '<li>When PUL patients receive MA, they should be informed of the risks and symptoms of EP, and who to contact in case of emergency.',
+        '<li>Follow-up βhCG within 7 days is recommended for PUL patients. A decrease of 50% at 3 days after mifepristone administration (or 24-48 hours after misoprostol) or 80% between 7 and 14 days after MIFE / MISO administration is expected; otherwise, EP should be ruled out.',    
+        ],
+    },
+    
+    {
+        id: 'M12',
+        title: 'Rhesus Screening',
+        content: [
+        'Guidelines on Rh screening have been updated.',
+        'According to the SOGC’s Guideline on Prevention of RhD Alloimmunization published in 2024, for non-sensitized Rh D-negative individuals who have experienced threatened, spontaneous or induced abortion after <strong>12 weeks gestation</strong>, administration of 300 μg of Rho(D) immune globulin is suggested.',
+        'Prior to that, in 2022, the Society of Family Planning and the World Health Organization also recommends withholding Rh testing and administration prior to 12 weeks gestation for patients undergoing MA, spontaneous abortion or uterine aspiration abortion[8,20].'
+    ],
+    },
+
+    {
+        id: 'M13',
+        title: 'Anemia, STIs & Others',
+        images: [{title: 'Anemia, STIs & Others', src: images.AnemiaSTIOthers, alt: 'Anemia, STIs & Others' }],
+    },
 ];
+
 
 // this function returns the modules in accending order and doesn't repeat the modules if they are already in the list. Needs to be refactored to be more dynamic.
 export function getModules(ids: string | string[]) {
