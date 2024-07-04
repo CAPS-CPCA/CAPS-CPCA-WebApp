@@ -11,7 +11,6 @@
         $page.url.pathname === '/supporting%20roles' ? goto('/supporting%20roles/medication-abortion') : null;
     }
 
-    // const aboutmifegymiso = getModules(['M1','M2','M3','M4','M5']);
     function modulePath(path:string) {
         if (path === '/prescribing/about-mifegymiso') {
             return getModules(['M1','M2','M3','M4','M5']);
@@ -29,21 +28,19 @@
             return getModules(['M3','M1','M3','M4','M5']);
         } else if (path === '/prescribing/clinical-resources') {
             return getModules(['M4','M1','M3','M4','M5']);
-        }
+        } return getModules(['M1','M2','M3','M4','M5']);
     }
 
-    let path:string;
     $: path = $page.url.pathname;
 </script>
 
 <section class="reader">
     <div class="container">
-        <!-- {#if $page.url.pathname === '/prescribing/about-mifegymiso'}
-            <Reader modules={aboutmifegymiso} />
+        {#if $page.url.pathname === path}
+            <Reader modules={modulePath(path)} />
         {:else}
             <Reader/>
-        {/if} -->
-        <Reader modules={modulePath(path)} />
+        {/if}
     </div>
 </section>
 
