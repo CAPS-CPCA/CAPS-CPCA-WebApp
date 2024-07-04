@@ -11,6 +11,10 @@ import FrBanner from './banner-fr.png'
 import EnSurvey from './survey-en.png'
 import FrSurvey from './survey-fr.png'
 
+import AbortionOptions from './Abortion-Options.png'
+import AdminInstructions from './administrator-instruction.png'
+import SideEffectsManage from './side-effects-management.png'
+
 import PrescribingIcon from './prescribing-icon.png'
 import DispensingIcon from './dispensing-icon.png'
 import SupportingIcon from './supporting-icon.png'
@@ -20,6 +24,7 @@ import SearchIcon from './search-icon.png'
 
 import EnFooter from './logo-footer-en.png'
 import FrFooter from './logo-footer-fr.png'
+
 
 export const images = {
     PartnerLogos,
@@ -41,4 +46,8 @@ export const images = {
     AboutIcon,
     FaqIcon,
     SearchIcon,
+    AbortionOptions,
+    AdminInstructions,
+    SideEffectsManage,
+
 };
