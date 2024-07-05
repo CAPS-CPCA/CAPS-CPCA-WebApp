@@ -21,7 +21,7 @@
         } else if (path === '/prescribing/assessment') {
             return getModules(['M17','M18','M19','M20']);
         } else if (path === '/prescribing/virtual-hybrid-care') {
-            return getModules(['M1','M1','M3','M4','M5']);
+            return getModules(['M21','M22','M3','M4','M5']);
         } else if (path === '/prescribing/billing-codes') {
             return getModules(['M2','M1','M3','M4','M5']);
         } else if (path === '/prescribing/regulations-insurance-inclusivity') {
