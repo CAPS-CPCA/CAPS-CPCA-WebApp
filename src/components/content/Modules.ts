@@ -238,6 +238,88 @@ const modules = [
         title: 'Anemia, STIs & Others',
         images: [{title: 'Anemia, STIs & Others', src: images.AnemiaSTIOthers, alt: 'Anemia, STIs & Others' }],
     },
+
+    {
+        id: 'M17',
+        title: 'Post-abortion Follow-up',
+        images: [{title: 'Post-abortion Follow-up', src: images.PostAbortionFollowUp, alt: 'Post-abortion Follow-up' }],
+        content: [
+        'A follow-up appointment is required to confirm the termination of the pregnancy, manage complications, counsel on contraceptive plans and, if applicable, provide emotional support.',
+        '<h2>Mode of follow-up:</h2>',
+        '<strong>Emotional support[6]:</strong> Emotional response after MA often vary. Some people feel relieved and positive and some have feelings of grief, sadness, or guilt while others have mixed feelings. These emotions are normal, and they may or may not be related to socioeconomic circumstances, the lack of social support, moral discomfort, and family conflict.',
+        'Patients can be supported by understanding that mixed emotions are normal and by exploring coping strategies and support. Useful resources include:',
+        '<li><strong><a class="ex" href="https://exhaleprovoice.org/" >Exhale</a></strong>, a talk-line that provides emotional support, resources and information after abortion.',
+        '<li><strong><a class="ex" href="https://www.all-options.org/" >All-Options</a></strong>, a talk-line to discuss past or current experience with abortion, adoption and parenting for people in Canada and the United States (1-888-493-0092).'
+    ]
+    },
+
+    {
+        id: 'M18',
+        title: 'Abortion Completion Assessment ',
+        content: [
+        'Completion of medication abortion (MA) must be assessed by the provider. Depending on the circumstances, this can be done by obtaining a clinical history, ultrasonography, or urine or serum bhCG testing. This assessment can be done in person, by telephone or electronic communication as per clinical indication and the preferences of the patient and the provider.',
+        '<strong>Clinical history[6]:</strong> The assessment of successful expulsion based on medical history is highly predictive of complete abortion (sensitivity 99.1%, specificity 45.5%). No bleeding or minimal bleeding after MISO, and continuing pregnancy symptoms are suggestive of an ongoing pregnancy.',
+        '<h2>Urine bhCG[7]:</h2>',
+        '<h2>Serum bhCG[3]:</h2>',
+        '<ul>',
+            '<li>A drop by at least 50% from baseline at 3 days after MIFE administration (or 24 and 48 hours after MISO administration) is highly indicative of complete abortion.',
+            '<li>A drop by 80% between 7 and 14 days after MIFE / MISO administration confirms abortion completion.',
+            '<li>If bhCG drops < 80% between day 7 and 14, prescribers may order an ultrasound or repeat the test in a few days. Ultrasound should be ordered if 14 days have passed and a drop by 80% has not been reached.',
+        '</ul>',
+        '<strong>Ultrasonography[6]:</strong> Ultrasound provides definitive evidence of MA completion, but no evidence shows that it is superior to other methods. It is recommended in cases where the outcome is uncertain based on clinical history, or there are symptoms such as unexpected pain, prolonged heavy bleeding or inadequate bleeding.',
+        ],
+        images: [{title: 'Abortion Completion Assessment ', src: images.AbortionComplete, alt: 'Abortion Completion Assessment ' }],
+    },
+
+    {
+        id: 'M19',
+        title: 'Complication Management',
+        content:[
+        '<strong>Ongoing pregnancy[6]:</strong> Ongoing pregnancy after medication abortion is uncommon and can be treated with another dose of MISO or with procedural abortion. Procedural abortion is recommended if cardiac activity is present 14 to 21 days after taking MISO.',
+        '<strong>Retained products of conception[6]:</strong> In the absence of ongoing pregnancy, retained products of conception can be managed by asking patients to wait for bleeding and cramping, offering them another dose of MISO, or providing them with or referring them for procedural abortion. Urgent procedural abortion is indicated in cases of heavy uncontrolled bleeding or retained products of conception associated with endometritis.',
+        'Symptoms of retained products include unexpected heavy/prolonged bleeding or cramping, and failure to have expected bleeding.',
+        '<strong>Post-abortion infections[6]:</strong> Treatment should be individualized and usually consists of broad-spectrum therapy. In mild cases, oral antibiotics can be used, but if infection is severe, patients should be hospitalized for treatment. Once patients start antibiotics, procedural abortion may be necessary to remove significant retained products of contraception.',
+        'Symptoms of Post-Abortion Infections',
+        '<ul>',
+                '<li>Abdominal or pelvic pain',
+                '<li>Foul-smelling vaginal or cervical discharge',
+                '<li>Prolonged vaginal bleeding or spotting',
+                '<li>Fever or chills (more than 24 hours after MISO)',
+                '<li>Uterine or adnexal tenderness',
+                '<li>Elevated white blood cell count (upon lab examination)',
+        '</ul>',
+        '<strong>Toxic shock syndrome[6]:</strong> Toxic shock syndrome is associated with clostridium and Group A streptococcus. The majority of these infections are fulminant and rapidly progress to shock. Standard antibiotic therapy is not sufficient; thus, the treatment consists of supportive care, and empiric antibiotic treatment covering clostridial species and other organisms known to cause toxic shock, and surgical debridement, including possible hysterectomy.',
+        'Symptoms of Toxic Shock Syndrome',
+        '<ul>',
+                '<li>General malaise with nausea, vomiting, and diarrhea',
+                '<li>Absence of fever (or mild fever)',
+                '<li>Minimal abdominal pain',
+                '<li>Weakness',
+                '<li>Flu-like symptoms',
+                '<li>Tachycardia / hypotension',
+                '<li>Edema',
+                '<li>High white blood cell counts or high hemoglobin level (upon lab examination)',
+        '</ul>',
+        '',
+        ],
+    },
+
+    {
+        id: 'M20',
+        title: 'Post-abortion Contraception',
+        content: [
+        'Due to rapid return to fertility following medication abortion (MA), patients should be advised to have a method for contraception at the earlier visits[6].',
+        'Patients seeking <strong>more information about contraception options</strong> can be referred to:',
+        '<ul>',
+            '<li>Sex and U’s <strong><a class="ex" href="https://www.itsaplan.ca/" >It’s a plan</a></strong>, an online health information tool to determine the right contraception method.',
+            '<li><strong><a class="ex" href="https://www.actioncanadashr.org/sexual-health-hub/birth-control" >Action Canada’s Sexual Health Hub</a></strong> on Birth Control, a website that contains information on birth control in Canada.',
+        '</ul>', 
+        'Below is a list of <strong>contraception options and special considerations:</strong>',   
+        ],
+        images: [{title: 'Post-abortion Contraception', src: images.PostAbortionContraception, alt: 'Post-abortion Contraception' }],
+    },
+
+
 ];
 
 

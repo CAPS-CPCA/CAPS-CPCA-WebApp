@@ -19,7 +19,7 @@
         } else if (path === '/prescribing/medical-evaluation') {
             return getModules(['M8','M9','M10','M11','M12','M13']);
         } else if (path === '/prescribing/assessment') {
-            return getModules(['M4','M2','M3','M4','M5']);
+            return getModules(['M17','M18','M19','M20']);
         } else if (path === '/prescribing/virtual-hybrid-care') {
             return getModules(['M1','M1','M3','M4','M5']);
         } else if (path === '/prescribing/billing-codes') {

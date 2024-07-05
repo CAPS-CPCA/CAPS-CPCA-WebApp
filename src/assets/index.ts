@@ -16,6 +16,9 @@ import AdminInstructions from './administrator-instruction.png'
 import SideEffectsManage from './side-effects-management.png'
 import EctopicPregnancy from './ectopic-pregnancy.png'
 import AnemiaSTIOthers from './anemia-sti-others.png'
+import PostAbortionFollowUp from './post-abortion-follow-up.png'
+import AbortionComplete from './abortion-completion-assessment.png'
+import PostAbortionContraception from './post-abortion-contraception.png'
 
 import PrescribingIcon from './prescribing-icon.png'
 import DispensingIcon from './dispensing-icon.png'
@@ -52,6 +55,9 @@ export const images = {
     AdminInstructions,
     SideEffectsManage,
     EctopicPregnancy,
-    AnemiaSTIOthers
+    AnemiaSTIOthers,
+    PostAbortionFollowUp,
+    AbortionComplete,
+    PostAbortionContraception,
 
 };
