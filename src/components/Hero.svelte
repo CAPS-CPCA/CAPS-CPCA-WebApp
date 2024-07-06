@@ -8,6 +8,7 @@
     export let reverse: boolean = false;
 </script>
 
+<!-- TODO: Semi static, needs to be updated later -->
 <section class={variant}>
     {#if variant === 'home'}
     <img src={hero.home.image} alt="Medication Abortion in Canada" />
@@ -87,6 +88,7 @@
         <img src={images.AboutIcon} alt="Logo">
     </div>
 
+    <!-- for faq and search -->
     {:else if variant === 'icon' }
         <img src={hero.icon[index].image} alt="Logo">
         <h1>{hero.icon[index].title}</h1>

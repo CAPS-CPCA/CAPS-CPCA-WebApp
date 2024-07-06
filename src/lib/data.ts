@@ -1,14 +1,14 @@
 import { getTranslation } from './store';
 import { writable } from 'svelte/store';
 import { browser } from '$app/environment';
-import { replaceState } from '$app/navigation';
+import { goto } from '$app/navigation';
 
 export const translations: { [key: string]: any } = {
     en: getTranslation('en'),
     fr: getTranslation('fr')
 };
 
-function updatePath() {
+function togglePath() {
     const path = window.location.pathname;
     const pathMap: { [key: string]: string } = {
         '/prescribing': '/prescrire',
@@ -16,11 +16,16 @@ function updatePath() {
         '/supporting%20roles': '/r%C3%B4les%20de%20soutien',
         '/prescrire': '/prescribing',
         '/dispenser': '/dispensing',
-        '/r%C3%B4les%20de%20soutien': '/supporting%20roles'
+        '/r%C3%B4les%20de%20soutien': '/supporting%20roles',
+        '/about': '/%C3%A0%20propos',
+        '/%C3%A0%20propos': '/about'
     };
 
-    if (pathMap[path]) {
-        replaceState(pathMap[path], {});
+    for (const key in pathMap) {
+        if (path.startsWith(key)) {
+            goto(pathMap[key], { noScroll: true });
+            return;
+        }
     }
 }
 
@@ -38,7 +43,7 @@ function createData(lang :string = 'en') {
         togLang: () => {
             update(data => data === translations.en ? translations.fr : translations.en);
             userLang.update(value => value === 'en' ? 'fr' : 'en');
-            updatePath();
+            togglePath();
         }
     };
 }

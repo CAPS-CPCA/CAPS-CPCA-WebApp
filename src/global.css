@@ -41,6 +41,7 @@ a.in:hover {
     color: var(--Highlight);
 }
 a.ex {
+    font-weight: 600;
     color: #0E6EB8;
 }
 a.ex:hover {

@@ -68,7 +68,7 @@ const headers: { [key: string]: Header } = {
         nav: [
             { type: 'normal', title: 'Home', href: '/' },
             { type: 'content', content: [{ title: 'Prescribing', href: '/prescribing' }, { title: 'Dispensing', href: '/dispensing' }, { title: 'Supporting Roles', href: '/supporting%20roles' }] },
-            { type: 'normal', title: 'FAQs', href: '/faqs' },
+            { type: 'normal', title: 'FAQ', href: '/faq' },
             { type: 'normal', title: 'About us', href: '/about' },
             { type: 'normal', title: '🔍', href: '/search' },
             { type: 'switch', title: 'FR' },
@@ -87,8 +87,8 @@ const headers: { [key: string]: Header } = {
         nav: [
             { type: 'normal', title: 'Accueil', href: '/' },
             { type: 'content', content: [{ title: 'Prescrire', href: '/prescrire' }, { title: 'Dispenser', href: '/dispenser' }, { title: 'Rôles de soutien', href: '/r%C3%B4les%20de%20soutien' }] },
-            { type: 'normal', title: 'FAQs', href: '/faqs' },
-            { type: 'normal', title: 'À propos de nous', href: '/À%20propos' },
+            { type: 'normal', title: 'FAQ', href: '/faq' },
+            { type: 'normal', title: 'À propos de nous', href: '/%C3%A0%20propos' },
             { type: 'normal', title: '🔍', href: '/search' },
             { type: 'switch', title: 'EN' },
             { type: 'exit', title: 'Sortie', href: 'https://www.meteomedia.com/ca' }
