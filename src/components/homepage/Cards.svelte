@@ -1,17 +1,23 @@
 <script lang='ts'>
     import { data } from '$lib/data';
 </script>
-<div class="container">
-    {#each $data.cards as card}
-        <div class="card">
-            <h1>{card.title}</h1>
-            <p>{card.desc}</p>
-            <a class="primary" href={card.link[0]}>{card.link[1]}</a>
-        </div>
-    {/each}
-</div>
+
+<section class="cards">
+    <div class="container">
+        {#each $data.cards as card}
+            <div class="card">
+                <h1>{card.title}</h1>
+                <p>{card.desc}</p>
+                <a class="primary" href={card.link[0]}>{card.link[1]}</a>
+            </div>
+        {/each}
+    </div>
+</section>
 
 <style>
+    .cards {
+        background: radial-gradient(148.27% 200.49% at 44.09% 11.06%, #011627 0%, #4E7385 100%);
+    }
     .card {
         display: flex;
         flex-direction: column;

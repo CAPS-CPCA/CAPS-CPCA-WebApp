@@ -3,7 +3,7 @@
   import Hero from '../../components/Hero.svelte';
 </script>
 
-<Hero variant="content" index={3} reverse/>
+<Hero variant="content" type="About" />
 
 <section class="secreader">
   <div class="container">
@@ -26,7 +26,7 @@
         <div class="module">
           <p>Canadian Abortion Provider Support – Communauté de pratique Canadienne sur l’avortement (CAPS-CPCA) is a web-based resource for clinicians and non-clinicians who are interested in providing and supporting medication abortion. CAPS-CPCA was initiated by the Contraception and Abortion Research Team-Groupe de recherche sur l’avortement et la contraception (CART-GRAC) and funded by Health Canada.</p>
           <p>The content in this website was co-developed by the CAPS-CPCA development team and providers of medication abortion across Canada. Through this co-development process, we attempted to capture the most common guidelines and practices and, whenever possible, explain the variation in these practices. Nevertheless, we acknowledge that the information we present here may differ from your knowledge and experiences.</p>
-          <p>Please write to us at <a href="mailto:ubcfmpr-gcaps@mail.ubc.ca" class="in">ubcfmpr-gcaps@mail.ubc.ca</a> if you have any feedback.</p>
+          <p>Please write to us at <a href="mailto:ubcfmpr-gcaps@mail.ubc.ca" class="ex">ubcfmpr-gcaps@mail.ubc.ca</a> if you have any feedback.</p>
           <p><b>The content presented in this website was updated as of November 2023</b> and developed through the three phases described below:</p>
           <h2>Phase 1: Resource curation</h2>
           <ol>

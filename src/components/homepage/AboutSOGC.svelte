@@ -2,15 +2,17 @@
     import {data} from '$lib/data';
 </script>
 
-<div class="container">
-    <div class="card">
-        <img src={$data.aboutSOGC.image} alt="SOGC Logo">
-        <h2>{$data.aboutSOGC.title}</h2>
-        {#each $data.aboutSOGC.para as para}
-            <p>{para}</p>
-        {/each}
+<section>
+    <div class="container">
+        <div class="card">
+            <img src={$data.aboutSOGC.image} alt="SOGC Logo">
+            <h2>{$data.aboutSOGC.title}</h2>
+            {#each $data.aboutSOGC.para as para}
+                <p>{para}</p>
+            {/each}
+        </div>
     </div>
-</div>
+</section>
 
 <style>
     img {

@@ -2,20 +2,26 @@
     import {data} from '$lib/data'
 </script>
 
-<div class="container">
-    <div class="card">
-        <h1>{$data.newsletter.title}</h1>
-        <p>{$data.newsletter.para}</p>
-    </div>
-    <div class="card">
-        <form class="form">
-            <input type="email" placeholder="john.doe@email.com">
-            <button class="primary" type="submit">{$data.newsletter.button}</button>
-        </form>
-    </div>
-</div>
+<section class="newsletter">
+  <div class="container">
+      <div class="card">
+          <h1>{$data.newsletter.title}</h1>
+          <p>{$data.newsletter.para}</p>
+      </div>
+      <div class="card">
+          <form class="form">
+              <input type="email" placeholder="john.doe@email.com">
+              <button class="primary" type="submit">{$data.newsletter.button}</button>
+          </form>
+      </div>
+  </div>
+</section>
 
 <style>
+    .newsletter {
+        background: radial-gradient(148.27% 200.49% at 44.09% 11.06%, #011627 0%, #4E7385 100%);
+        color: white;
+    }
     .container {
         background: url(../../assets/newsletter.png) no-repeat center center;
         background-size: contain;

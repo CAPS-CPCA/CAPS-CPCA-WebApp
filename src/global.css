@@ -3,18 +3,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-/* Declare variables here */
+/* Main theme colors */
 :root {   
     --Primary: #011627;
     --Primary-stroke: #0F3E65;
     --Highlight: #20A4F3;
     --Pressed: #0E6EB8;
     --Background: #F6F7F8;
-
+/* Content type colors */
     --Prescribing: #FF3366;
     --Dispensing: #2EC4B6;
     --Supporting: #FB9246;
-
+/* Module type colors */
     --MIFE: #2EC4B6;
     --MISO: #FB9246;
 }
@@ -29,27 +29,37 @@ body {
 }
 
 /* Typography */
-li {
-    list-style-type: none;
-}
 a {
     text-decoration: none;
     color: var(--Background);
 }
-h1, p {
+a.in {
+    color: #296ec8;
+    border-bottom: 1px solid;
+}
+a.in:hover {
+    color: var(--Highlight);
+}
+a.ex {
+    color: #0E6EB8;
+}
+a.ex:hover {
+    color: #20A4F3;
+}
+p, h1 {
     margin: 0;
     color: var(--Primary);
-}
-h1 {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    font-size: 2.85rem;
 }
 p {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 1.25rem;
     line-height: 1.5;
+}
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2.85rem;
 }
 span {
     font-weight: 600;
@@ -74,19 +84,6 @@ span {
     font-family: 'Roboto';
     line-height: 1.75;
     transition: 150ms ease-in-out;
-}
-a.in {
-    color: #296ec8;
-    border-bottom: 1px solid;
-}
-a.in:hover {
-    color: var(--Highlight);
-}
-a.ex {
-    color: #0E6EB8;
-}
-a.ex:hover {
-    color: #20A4F3;
 }
 .module li {
     list-style-type: disc;

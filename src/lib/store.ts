@@ -88,7 +88,7 @@ const headers: { [key: string]: Header } = {
             { type: 'normal', title: 'Accueil', href: '/' },
             { type: 'content', content: [{ title: 'Prescrire', href: '/prescrire' }, { title: 'Dispenser', href: '/dispenser' }, { title: 'Rôles de soutien', href: '/r%C3%B4les%20de%20soutien' }] },
             { type: 'normal', title: 'FAQs', href: '/faqs' },
-            { type: 'normal', title: 'À propos de nous', href: '/about' },
+            { type: 'normal', title: 'À propos de nous', href: '/À%20propos' },
             { type: 'normal', title: '🔍', href: '/search' },
             { type: 'switch', title: 'EN' },
             { type: 'exit', title: 'Sortie', href: 'https://www.meteomedia.com/ca' }
@@ -198,16 +198,23 @@ const heros: { [key: string]: Hero } = {
 
 interface HeroConfig {
     variant: "content" | "home" | "icon";
-    index: number;
+    type?: "Prescribing" | "Dispensing" | "Supporting" | "About" | "Prescrire" | "Dispenser" | "Soutenir" | "À propos";
+    index?: number;
     reverse?: boolean;
 }
 export function getHeroConfig(path: string): HeroConfig {
-    if ((path.startsWith('/prescribing')) || (path.startsWith('/prescrire'))) {
-        return { variant: 'content', index: 0, reverse: true };
-    } else if ((path.startsWith('/dispensing')) || (path.startsWith('/dispenser'))) {
-        return { variant: 'content', index: 1 };
-    } else if ((path.startsWith('/supporting%20roles')) || (path.startsWith('/r%C3%B4les%20de%20soutien'))) {
-        return { variant: 'content', index: 2, reverse: true };
+    if (path.startsWith('/prescribing')) {
+        return { variant: 'content', type: 'Prescribing', reverse: true };
+    } else if (path.startsWith('/dispensing')) {
+        return { variant: 'content', type: 'Dispensing' };
+    } else if (path.startsWith('/supporting%20roles')) {
+        return { variant: 'content', type: 'Supporting', reverse: true };
+    } else if (path.startsWith('/prescrire')) {
+        return { variant: 'content', type: 'Prescrire', reverse: true };
+    } else if (path.startsWith('/dispenser')) {
+        return { variant: 'content', type: 'Dispenser' };
+    } else if (path.startsWith('/r%C3%B4les%20de%20soutien')) {
+        return { variant: 'content', type: 'Soutenir', reverse: true };
     }
     throw new Error('Invalid path');
 }
