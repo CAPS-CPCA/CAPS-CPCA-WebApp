@@ -36,7 +36,7 @@
                     <li><a data-sveltekit-noscroll href={outline[section][page].href} class="secondary" class:selected={current === outline[section][page].href}>{outline[section][page].title}</a></li>
                     <div class="bulletin" style={current === outline[section][page].href ? '' : 'display: none;'}>
                         {#each Object.keys(outline[section][page].modules) as module}
-                        <li><a href={'#'+module} class="tertiary" class:selected={hash.includes(module)}>{outline[section][page].modules[module]}</a></li>
+                        <li><a href={'#'+module} class="tertiary" class:selected={('#'+module) === hash}>{outline[section][page].modules[module]}</a></li>
                         {/each}
                     </div>
                 {/each}

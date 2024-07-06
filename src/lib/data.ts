@@ -3,11 +3,13 @@ import { writable } from 'svelte/store';
 import { browser } from '$app/environment';
 import { goto } from '$app/navigation';
 
+// Translation data
 export const translations: { [key: string]: any } = {
     en: getTranslation('en'),
     fr: getTranslation('fr')
 };
 
+// Path handling for language switching (fr/en)
 function togglePath() {
     const path = window.location.pathname;
     const pathMap: { [key: string]: string } = {
@@ -29,9 +31,11 @@ function togglePath() {
     }
 }
 
+// Language store
 export const userLang = writable<string>(browser ? (localStorage.getItem('lang') || 'en') : undefined);
 userLang.subscribe(value => browser && localStorage.setItem('lang', value.toString()));
 
+// Data store for translations and language switching functions (setLang, togLang)
 function createData(lang :string = 'en') {
     const { subscribe, set, update } = writable(translations[lang]);
 

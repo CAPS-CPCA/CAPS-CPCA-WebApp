@@ -205,14 +205,14 @@ interface HeroConfig {
 export function getHeroConfig(path: string): HeroConfig {
     if (path.startsWith('/prescribing')) {
         return { variant: 'content', type: 'Prescribing', reverse: true };
-    } else if (path.startsWith('/dispensing')) {
-        return { variant: 'content', type: 'Dispensing' };
-    } else if (path.startsWith('/supporting%20roles')) {
-        return { variant: 'content', type: 'Supporting', reverse: true };
     } else if (path.startsWith('/prescrire')) {
         return { variant: 'content', type: 'Prescrire', reverse: true };
+    } else if (path.startsWith('/dispensing')) {
+        return { variant: 'content', type: 'Dispensing' };
     } else if (path.startsWith('/dispenser')) {
         return { variant: 'content', type: 'Dispenser' };
+    } else if (path.startsWith('/supporting%20roles')) {
+        return { variant: 'content', type: 'Supporting', reverse: true };
     } else if (path.startsWith('/r%C3%B4les%20de%20soutien')) {
         return { variant: 'content', type: 'Soutenir', reverse: true };
     }

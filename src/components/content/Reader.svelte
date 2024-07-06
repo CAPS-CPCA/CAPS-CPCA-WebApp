@@ -10,6 +10,9 @@
             formattedItem = formattedItem.replace(/(MIFE)/g, '<span style="color: var(--MIFE);">$1</span>');
             formattedItem = formattedItem.replace(/\[(.*?)\]/g, '<sup>[$1]</sup>');
             formattedItem = formattedItem.replace(/(Product monograph)/g, '<a href="/" class="in">$1</a>');
+            if (formattedItem.startsWith('<h2>') || formattedItem.startsWith('<ul>') || formattedItem.startsWith('<ol>') || formattedItem.startsWith('<li>')) {
+                return formattedItem;
+            }
             return `<p>${formattedItem}</p>`;
         });
         return formattedText.join('');
