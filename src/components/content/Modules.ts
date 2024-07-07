@@ -323,6 +323,7 @@ const modules = [
 
 
 // this function returns the modules in accending order and doesn't repeat the modules if they are already in the list. Needs to be refactored to be more dynamic.
-export function getModules(ids: string | string[]) {
-    return modules.filter(module => ids.includes(module.id));
-}
+export const getModules = (ids: string[] = []): any[] => {
+    if (ids.length === 0) return modules;
+    return modules.filter((module) => ids.includes(module.id));
+};

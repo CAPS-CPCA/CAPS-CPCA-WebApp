@@ -1,6 +1,6 @@
 <script lang='ts'>
-    import { page } from '$app/stores';
     import { goto } from '$app/navigation';
+    import { page } from '$app/stores';
     import { browser } from '$app/environment';
     import { getModules } from '../../components/content/Modules';
     import Reader from "../../components/content/Reader.svelte";

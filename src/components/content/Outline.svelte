@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { replaceState } from '$app/navigation';
     import { browser } from '$app/environment';
     import { page } from '$app/stores';
     import { getOutline } from './Outline';
@@ -9,10 +10,10 @@
     let isSticky = false;
     $: if (browser) {
         const scrollY = window.scrollY;
-        isSticky = scrollY >= 600 && scrollY <= 6700;
+        isSticky = scrollY >= 600;
         window.addEventListener('scroll', () => {
             const scrollY = window.scrollY;
-            isSticky = scrollY >= 600 && scrollY <= 6700;
+            isSticky = scrollY >= 600;
         });
     }
 
@@ -22,6 +23,25 @@
 
     const handleCollapse = () => {
         isCollapsed = !isCollapsed;
+    }
+
+    $: if (browser) {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.id;
+                    const a = document.querySelector(`a[href="#${id}"]`);
+                    if (a) {
+                        const selectedlink = document.querySelector('.tertiary.selected');
+                        if (selectedlink) selectedlink.classList.remove('selected');
+                        a.classList.add('selected');
+                        replaceState(current + '#' + id, { replace: true });
+                    }
+                }});
+            }, { rootMargin: '0px 0px -90% 0px' });
+
+        const h1s = document.querySelectorAll('h1[id]');
+        h1s.forEach(h1 => observer.observe(h1));
     }
 </script>
 
@@ -36,7 +56,7 @@
                     <li><a data-sveltekit-noscroll href={outline[section][page].href} class="secondary" class:selected={current === outline[section][page].href}>{outline[section][page].title}</a></li>
                     <div class="bulletin" style={current === outline[section][page].href ? '' : 'display: none;'}>
                         {#each Object.keys(outline[section][page].modules) as module}
-                        <li><a href={'#'+module} class="tertiary" class:selected={('#'+module) === hash}>{outline[section][page].modules[module]}</a></li>
+                        <li><a href={'#'+module} class="tertiary" class:selected={hash === '#'+module}>{outline[section][page].modules[module]}</a></li>
                         {/each}
                     </div>
                 {/each}
@@ -57,7 +77,7 @@
     .tertiary:hover {
         color: var(--Highlight);
     }
-    .tertiary.selected {
+    .tertiary.selected, .tertiary:focus {
         font-weight: 500;
         color: var(--Pressed);
     }
