@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { Bibliography } from '$lib/store';
   import { images } from '../../assets';
   import Hero from '../../components/Hero.svelte';
 </script>
@@ -54,31 +55,9 @@
         <div class="module">
           <p>The content in this website was developed based on the information provided in the following references. Please note that the content in this website was updated as of November 2023 and this reference list may not capture the most recent guidelines, checklists and tools published after this date.</p>
           <ol>
-            <li><a class="ref" href="https://caps.sogc.org/wp-content/uploads/2024/01/WHO1.pdf" target="_blank">
-              Abortion care guideline. Geneva: World Health Organization; 2022.
-            </a></li>
-            <li><a class="ref" href="https://caps.sogc.org/wp-content/uploads/2024/01/VCOP2.pdf" target="_blank">
-              Bancsi A & Grindrod K. Update on medical abortion. Canadian Family Physician; 2020; 66.
-            </a></li>
-            <li>Canada Abortion Providers Support, Planned Parenthood, & the University of British Columbia. Medical abortion prescriber checklist resource guide.</li>
-            <li>Canadian Abortion Providers Support, Planned Parenthood, & the University of British Columbia. Medical abortion prescriber checklist.</li>
-            <li>Costescu D, Guilbert E et al. Induced abortion: updated guidance during pandemics and periods of social disruption.</li>
-            <li>Costescu D, Guilbert E et al. Medical abortion. Journal of Obstetrics and Gynaecology Canada, 2016; Volume 38, Issue 4, 366 – 389.</li>
-            <li>Guilbert E, Costescu D, et al. Canadian protocol for the provision of medical abortion via telemedicine; SOGC 2020.</li>
-            <li>Horvath S, Goyal V, Traxler S, Prager S. Society of Family Planning committee Consensus on Rh testing in early pregnancy. Contraception. 2022 Oct;114:1-5.</li>
-            <li>Judith Soon & Nevena Rebic. Pharmacist checklist for medical abortion. 2018. CART-GRAC 2020.</li>
-            <li>Judith Soon & Nevena Rebic. Pharmacist resource guide for medical abortion. 2018. CART-GRAC 2020.</li>
-            <li>Linepharma International Limited. Health Canada MIFISO Product Monograph. Submission Control No: 265940. December 15, 2022.</li>
-            <li>National Abortion Federation. Checklist for starting medical abortion services.</li>
-            <li>National Abortion Federation. NAF Protocol for early abortion with mifepristone and misoprostol, 2016.</li>
-            <li>Planned Parenthood Ottawa & the SHORE centre. What to expect during a medication abortion; 2017.</li>
-            <li>Reproductive Health Access Project. Early abortion options; 2022.</li>
-            <li>Reproductive Health Access Project. Integrating early abortion services into primary care; 2019.</li>
-            <li>Royal College of Obstetricians and Gynaecologists. Best practice in abortion care; 2022.</li>
-            <li>Wellness Within. Accessing Abortion in Canada.</li>
-            <li>Women’s College Hospital. Client information about evidence-based telemedicine medication abortion. Adapted from Choice in Health clinic; 2020.</li>
-            <li>World Health Organization. Abortion care guideline; 2022.</li>
-            <li>Society of Obstetricians and Gynaecologists of Canada. Guideline No. 448: Prevention of Rh D Alloimmunization; 2024.</li>
+            {#each Bibliography as item}
+              <li><a href={item.href} target="_blank" class="ref">{item.title}</a></li>
+            {/each}
           </ol>
         </div>
       </div>

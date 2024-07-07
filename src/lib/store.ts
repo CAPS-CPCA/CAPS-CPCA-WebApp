@@ -55,6 +55,8 @@ type Search = {
     button: string
 }
 
+type Bibliography = {title: string, href: string}[]
+
 const headers: { [key: string]: Header } = {
     en: {
         logos: [
@@ -309,6 +311,30 @@ const searches:{[key:string]:Search} = {
         button: 'Rechercher'
     }
 }
+
+export const Bibliography = [
+    {title: 'Abortion care guideline. Geneva: World Health Organization; 2022.', href: 'https://caps.sogc.org/wp-content/uploads/2024/01/WHO1.pdf'},
+    {title: 'Bancsi A & Grindrod K. Update on medical abortion. Canadian Family Physician; 2020; 66.', href: 'https://caps.sogc.org/wp-content/uploads/2024/01/VCOP2.pdf'},
+    {title: 'Canada Abortion Providers Support, Planned Parenthood, & the University of British Columbia. Medical abortion prescriber checklist resource guide.', href: 'https://caps.sogc.org/wp-content/uploads/2024/01/C63.pdf'},
+    {title: 'Canadian Abortion Providers Support, Planned Parenthood, & the University of British Columbia. Medical abortion prescriber checklist.', href: 'https://caps.sogc.org/wp-content/uploads/2024/01/C64.pdf'},
+    {title: 'Costescu D, Guilbert E et al. Induced abortion: updated guidance during pandemics and periods of social disruption.', href: 'https://caps.sogc.org/wp-content/uploads/2024/01/C31.pdf'},
+    {title: 'Costescu D, Guilbert E et al. Medical abortion. Journal of Obstetrics and Gynaecology Canada, 2016; Volume 38, Issue 4, 366 – 389.', href: 'https://caps.sogc.org/wp-content/uploads/2024/01/C14.pdf'},
+    {title: 'Guilbert E, Costescu D, et al. Canadian protocol for the provision of medical abortion via telemedicine; SOGC 2020.', href: 'https://caps.sogc.org/wp-content/uploads/2024/01/C29.pdf'},
+    {title: 'Horvath S, Goyal V, Traxler S, Prager S. Society of Family Planning committee Consensus on Rh testing in early pregnancy. Contraception. 2022 Oct;114:1-5.', href: 'https://caps.sogc.org/wp-content/uploads/2024/01/SFP1.pdf'},
+    {title: 'Judith Soon & Nevena Rebic. Pharmacist checklist for medical abortion. 2018. CART-GRAC 2020.', href: 'https://caps.sogc.org/wp-content/uploads/2024/01/C68.pdf'},
+    {title: 'Judith Soon & Nevena Rebic. Pharmacist resource guide for medical abortion. 2018. CART-GRAC 2020.', href: 'https://caps.sogc.org/wp-content/uploads/2024/01/C67.pdf'},
+    {title: 'Linepharma International Limited. Health Canada MIFISO Product Monograph. Submission Control No: 265940. December 15, 2022.', href: 'https://caps.sogc.org/wp-content/uploads/2024/01/C17-2.pdf'},
+    {title: 'National Abortion Federation. Checklist for starting medical abortion services.', href: 'https://caps.sogc.org/wp-content/uploads/2024/01/C43.pdf'},
+    {title: 'National Abortion Federation. NAF Protocol for early abortion with mifepristone and misoprostol, 2016.', href: 'https://caps.sogc.org/wp-content/uploads/2024/01/C6.pdf'},
+    {title: 'Planned Parenthood Ottawa & the SHORE centre. What to expect during a medication abortion; 2017.', href: 'https://caps.sogc.org/wp-content/uploads/2024/01/C74.pdf'},
+    {title: 'Reproductive Health Access Project. Early abortion options; 2022.', href: 'https://caps.sogc.org/wp-content/uploads/2024/01/C58-1.pdf'},
+    {title: 'Reproductive Health Access Project. Integrating early abortion services into primary care; 2019.', href: 'https://caps.sogc.org/wp-content/uploads/2024/01/C58-7.pdf'},
+    {title: 'Royal College of Obstetricians and Gynaecologists. Best practice in abortion care; 2022.', href: 'https://caps.sogc.org/wp-content/uploads/2024/01/RCOG1.pdf'},
+    {title: 'Wellness Within. Accessing Abortion in Canada.', href: 'https://caps.sogc.org/wp-content/uploads/2024/01/C104-2.pdf'},
+    {title: 'Women’s College Hospital. Client information about evidence-based telemedicine medication abortion. Adapted from Choice in Health clinic; 2020.', href: 'https://caps.sogc.org/wp-content/uploads/2024/01/WCH1.pdf'},
+    {title: 'World Health Organization. Abortion care guideline; 2022.', href: 'https://caps.sogc.org/wp-content/uploads/2024/01/WHO1.pdf'},
+    {title: 'Society of Obstetricians and Gynaecologists of Canada. Guideline No. 448: Prevention of Rh D Alloimmunization; 2024.', href: 'https://www.ajog.org/article/S0002-9378(24)00368-5/fulltext?dgcid=raven_jbs_aip_email)'},
+  ]
 
 export function getTranslation(lang: string): { header: Header, footer: Footer, hero: Hero, cards: Cards, survey: Survey, newsletter: Newsletter, aboutSOGC: AboutSOGC, search: Search } {
     return {
