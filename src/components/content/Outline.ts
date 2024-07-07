@@ -15,7 +15,7 @@ const outlines: {[key:string]: Outline} = {
     '/prescribing': {
             subpages: [
                 {
-                    href: '/prescribing/about-mifegymiso',
+                    href: '/prescribing/about-mifegymiso#M1',
                     title: 'About Mifegymiso',
                     modules: {
                         M1: 'Mechanism of Action',
@@ -24,7 +24,7 @@ const outlines: {[key:string]: Outline} = {
                     }
                 },
                 {
-                    href: '/prescribing/patient-counselling',
+                    href: '/prescribing/patient-counselling#M5',
                     title: 'Patient Counselling',
                     modules: {
                         M5: 'Pre-abortion Counselling',
@@ -36,7 +36,7 @@ const outlines: {[key:string]: Outline} = {
                     }
                 },
                 {
-                    href: '/prescribing/medical-evaluation',
+                    href: '/prescribing/medical-evaluation#M8',
                     title: 'Pre-abortion Medical Evaluation',
                     modules: {
                         M8: 'Basic screening',
@@ -48,7 +48,7 @@ const outlines: {[key:string]: Outline} = {
                     }
                 },
                 { 
-                    href: '/prescribing/assessment',
+                    href: '/prescribing/assessment#M17',
                     title: 'Post-abortion Assessment',
                     modules: {
                         M17: 'Post-abortion Follow-up',
@@ -58,7 +58,7 @@ const outlines: {[key:string]: Outline} = {
                     }
                 },
                 {
-                    href: '/prescribing/virtual-hybrid-care',
+                    href: '/prescribing/virtual-hybrid-care#M21',
                     title: 'Virtual & Hybrid Care',
                     modules: {
                         M21: 'Initial Steps',

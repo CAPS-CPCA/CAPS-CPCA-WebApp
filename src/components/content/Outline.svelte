@@ -1,24 +1,31 @@
 <script lang="ts">
-    import { replaceState } from '$app/navigation';
     import { browser } from '$app/environment';
     import { page } from '$app/stores';
     import { getOutline } from './Outline';
 
     let isCollapsed = false;
     
-    // This stuff handles sticky class for outline: very hacky solution. To be refactored later.
-    let isSticky = false;
+    $: outlineClass = 'atTop';
+
+    const handleSticky = () => {
+        const reader = document.querySelector('.reader');
+        if (reader) {
+            const rect = reader.getBoundingClientRect();
+            if (rect.top <= 0) {
+                outlineClass = 'sticky';
+            } else {
+                outlineClass = 'atTop';
+            }
+            if (rect.bottom <= window.innerHeight) {
+                outlineClass = 'atBot';
+            }
+        }
+    }
     $: if (browser) {
-        const scrollY = window.scrollY;
-        isSticky = scrollY >= 600;
-        window.addEventListener('scroll', () => {
-            const scrollY = window.scrollY;
-            isSticky = scrollY >= 600;
-        });
+        window.addEventListener('scroll', handleSticky);
     }
 
     $: current = $page.url.pathname;
-    $: hash = $page.url.hash;
     $: outline = getOutline('/prescribing');
 
     const handleCollapse = () => {
@@ -26,22 +33,29 @@
     }
 
     $: if (browser) {
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const id = entry.target.id;
-                    const a = document.querySelector(`a[href="#${id}"]`);
-                    if (a) {
-                        const selectedlink = document.querySelector('.tertiary.selected');
-                        if (selectedlink) selectedlink.classList.remove('selected');
-                        a.classList.add('selected');
-                        replaceState(current + '#' + id, { replace: true });
-                    }
-                }});
-            }, { rootMargin: '0px 0px -90% 0px' });
-
-        const h1s = document.querySelectorAll('h1[id]');
-        h1s.forEach(h1 => observer.observe(h1));
+        const handleScroll = () => {
+            const h1s = document.querySelectorAll('div[id]');
+            let selectedId = null;
+            h1s.forEach(h1 => {
+                const rect = h1.getBoundingClientRect();
+                if (rect.top <= 100 && rect.bottom >= 0) {
+                    selectedId = h1.id;
+                }
+            });
+            if (selectedId) {
+                const a = document.querySelector(`a[href="#${selectedId}"]`);
+                if (a) {
+                    const selectedlink = document.querySelector('.tertiary.selected');
+                    if (selectedlink) selectedlink.classList.remove('selected');
+                    a.classList.add('selected');
+                    window.removeEventListener('scroll', handleScroll);
+                    setTimeout(() => {
+                        window.addEventListener('scroll', handleScroll);
+                    }, 75);
+                }
+            }
+        };
+        window.addEventListener('scroll', handleScroll);
     }
 </script>
 
@@ -49,14 +63,14 @@
     <button class="arrow" on:click={handleCollapse} class:collapsed={isCollapsed} aria-label="Toggle Collapse"></button>
     {#if !isCollapsed}
     <h1>Outline</h1>
-    <div class:sticky={isSticky}>
+    <div class={outlineClass}>
     {#each Object.keys(outline) as section}
             <ul>
                 {#each Object.keys(outline[section]) as page}
-                    <li><a data-sveltekit-noscroll href={outline[section][page].href} class="secondary" class:selected={current === outline[section][page].href}>{outline[section][page].title}</a></li>
-                    <div class="bulletin" style={current === outline[section][page].href ? '' : 'display: none;'}>
+                    <li><a href={outline[section][page].href} class="secondary" class:selected={(outline[section][page].href).includes(current)}>{outline[section][page].title}</a></li>
+                    <div class="bulletin" style={(outline[section][page].href).includes(current) ? '' : 'display: none;'}>
                         {#each Object.keys(outline[section][page].modules) as module}
-                        <li><a href={'#'+module} class="tertiary" class:selected={hash === '#'+module}>{outline[section][page].modules[module]}</a></li>
+                        <li><a href={'#'+module} class="tertiary" class:selected={false}>{outline[section][page].modules[module]}</a></li>
                         {/each}
                     </div>
                 {/each}
@@ -77,7 +91,7 @@
     .tertiary:hover {
         color: var(--Highlight);
     }
-    .tertiary.selected, .tertiary:focus {
+    .tertiary.selected {
         font-weight: 500;
         color: var(--Pressed);
     }
@@ -120,6 +134,15 @@
         flex-direction: column;
         align-items: center;
         transition: all 0.1s ease-in-out;
+    }
+    .atTop {
+        top: 0;
+        width: 30rem;
+        transition: all 0.1s ease-in-out;
+    }
+    .atBot {
+        position: absolute;
+        bottom: 0;
     }
     .sticky{
         position: fixed;

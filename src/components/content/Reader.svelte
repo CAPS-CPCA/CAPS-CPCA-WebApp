@@ -26,8 +26,9 @@
             <h1>No Modules Found</h1>
         {:else}
         {#each modules as module}
-            <h1 id={module.id}>{module.title}</h1>
-            <div class="module">
+        <h1>{module.title}</h1>
+        <div class="module">
+                <div class="idholder" id={module.id}></div>
                 {@html formatText(module.content)}
                 {#if module.images}
                     <img src={module.images[0].src} alt="Mifegymiso"/>
@@ -64,5 +65,12 @@
         margin-top: 4rem;
         background: var(--Primary);
         color: white;
+    }
+    .idholder {
+        position: absolute;
+        height: 10rem;
+        top: -10rem;
+        left: 0;
+        right: 0;
     }
 </style>
