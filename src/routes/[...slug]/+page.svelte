@@ -26,7 +26,7 @@
         } else if (path === '/prescribing/billing-codes' || path === '/prescrire/codes-de-facturation') {
             return getModules(['B1','B2','B3','B4','B5','B6','B7','B8','B9','B10','B11','B12','B13']);
         } else if (path === '/prescribing/regulations-insurance-inclusivity' || path === '/prescrire/reglementation-assurance-inclusivite') {
-            return getModules(['M26','M27','M28','C1','M36']);
+            return getModules(['M26','M27','M28','C1','M36','M37']);
         } else if (path === '/prescribing/clinical-resources' || path === '/prescrire/ressources-cliniques') {
             return getModules(['M4','M1','M3','M4','M5']);
         } return getModules(['M1','M2','M3','M4','M5']);
