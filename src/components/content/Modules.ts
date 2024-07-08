@@ -681,6 +681,56 @@ const modules = [
         ],
     },
 
+    {
+        id: 'C1',
+        title: 'Federal Insurance Schemes',
+        content: [
+            'Patients who are covered through Federal programs, may request a prescription for Mifegymiso and fill it at a pharmacy of their choice and it will be fully covered when the pharmacy submits the billing to the Federal Plan assuming all other requirements for utilizing Mifegymiso are met.',
+            '<h2>Non-Insured Health Benefits (NIHB) Program</h2>',
+            'Eligible First Nations and Inuit clients are covered fully for the cost of Mifegymiso for medication abortion.',
+            'The claim process follows the normal submission process for other prescription drugs.',
+            'Link:<a class="ex" href="https://nihb-ssna.express-scripts.ca/en/0205140506092019/16/160407"> https://nihb-ssna.express-scripts.ca/en/0205140506092019/16/160407</a>',
+            '<h2>Veterans Affairs Canada</h2>',
+            'Mifegymiso is currently listed as a standard benefit on the Veterans Affairs Canada (VAF) drug benefit list.',
+            'This means that it is readily accessible to eligible clients with a valid prescription.',
+            'VAC clients have a VAC healthcare identification card on which “A” and/or “B” is indicated under the heading “Program number 10”. Group A clients may only use their card to obtain health benefits directly related to the treatment of their VAC pensioned medical condition.',
+            'Group B clients are eligible for approved benefits if they have demonstrated a health need and the benefits are not available to them under a provincial health plan.',
+            'In addition, since veterans are covered for basic healthcare coverage through the provincial or territorial healthcare system, their access to Mifegymiso will follow the same provincial or territorial process as other residents.',
+            'Link: <a class="ex" href="https://www.veterans.gc.ca/en/financial-programs-and-services/medical-costs/coverage-services-prescriptions-and-devices" >https://www.veterans.gc.ca/en/financial-programs-and-services/medical-costs/coverage-services-prescriptions-and-devices</a>',
+            '<h2>Canadian Forces Health Services</h2>',
+            'Mifegymiso is a regular benefit on the Canadian armed forces drug benefit list; no special authorization is required.',
+            'Link: <a class="ex" href="http://www.cmp-cpm.forces.gc.ca/hs/en/drug-benefit-list/index.asp" >http://www.cmp-cpm.forces.gc.ca/hs/en/drug-benefit-list/index.asp</a>',
+            '<h2>Royal Canadian Mounted Police (RCMP) Health Benefits Program</h2>',
+            'RCMP officers are considered insured persons and receive basic healthcare through the healthcare system in the province or territory in which they reside, their access to Mifegymiso will follow the provincial or territorial process as other residents. Additionally, private plans that cover the cost of prescription drugs is also an option.',
+            'Link: <a class="ex" href="https://bc-cb.rcmp-grc.gc.ca/ViewPage.action?siteNodeId=2234&languageId=1&contentId=58416" >https://bc-cb.rcmp-grc.gc.ca/ViewPage.action?siteNodeId=2234&languageId=1&contentId=58416</a>',
+            '<h2>Interim Federal Health Program (IFHP)</h2>',
+            'Coverage for Mifegymiso with IFHP is available in provinces and territories that have the medication listed on their public drug formularies.',
+            'Link: <a class="ex" href="https://www.canada.ca/en/immigration-refugees-citizenship/services/refugees/help-within-canada/health-care/interim-federal-health-program/coverage-summary.html" >https://www.canada.ca/en/immigration-refugees-citizenship/services/refugees/help-within-canada/health-care/interim-federal-health-program/coverage-summary.html</a>',
+            '<h2>Programs from Correctional Services of Canada</h2>',
+            'Service for people incarcerated in federal penitentiaries is provided directly from the pharmacy within the facility.',
+        ],
+    },
+
+    {
+        id: 'M36',
+        title: 'Non-Insured Patients ',
+        content: [
+            'Providers can support non-insured patients by:',
+            '<ul>',
+                '<li>Determining the cost of Mifegymiso and medication abortion (MA) consultations fees as out-of-pocket expenses. Make a list of community health centers and discount reproductive health clinics where patients can get a MA prescription at low or no cost.',
+                '<li>Exploring processes for waiving fees or developing cost-sharing agreements with partner organizations or other service providers.',
+                '<li>Ensuring administrative and supporting staff are aware of the plan.',
+                '<li>Referring patients to the Emergency Fund by National Abortion Federation (NAF) Canada and Action Canada:',
+                '<ul>',
+                    '<li><a class="ex" href="https://prochoice.org/patients/naf-hotline/" >Patient Assistance Fund</a>: To speak with someone about the Dr. Morgentaler Patient Assistance Fund, please call the NAF hotline at 1-800-772-9100.',
+                    '<li><a class="ex" href="https://actioncanadashr.org/" >Norma Scarborough Fund | Action Canada: Visit actioncanadashr.org</a> for more information.',
+            '</ul>',
+        '</ul>',
+
+
+        ],
+    },
+
 ];
 
 
