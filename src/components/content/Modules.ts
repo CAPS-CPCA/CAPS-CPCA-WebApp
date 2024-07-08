@@ -343,7 +343,245 @@ const modules = [
         images: [{title: '', src: images.AbortionComplete, alt: '' }],
     },
 
+    {
+        id: 'B1',
+        title: 'Alberta',
+        content: [
+            '<i>The information below is pending verification.</i>',
+            '<h2>Gynaecology</h2>',
+            'Initial visit: <strong>03.08A</strong> Comprehensive consultation – $111.06',
+            'Follow-up visit: <strong>03.07B</strong> Repeat consultation – $62.24',
+            '<h2>Primary Care</h2>',
+            'Initial visit: <strong>03.04A</strong> Comprehensive visit – $83.37',
+            'Follow-up visit: <strong>03.03A</strong> Office visit – $35.26',
+        ],
+    },
+
+    {
+        id: 'B2',
+        title: 'British Columbia',
+        content: [
+            '<i>The information below is updated as of March 2024.</i>',
+            '<h2>Gynaecology</h2>',
+            'Initial visit: <strong>14545</strong> Medication abortion – $170.95',
+            'Follow-up visit: <strong>4012</strong> Limited consultation – $85.49',
+            '<strong>4007</strong> Follow-up – $53.52',
+            'Telehealth: <strong>14545</strong> Same code for consultation – $170.95',
+            '<strong>4072</strong> Limited consultation – $85.49',
+            '<strong>4077</strong> Follow-up – $53.52',
+            '<h2>Primary Care</h2>',
+            'Initial visit: <strong>14545</strong> Medication abortion – $170.95',
+            'Follow-up visit: <strong>00100</strong> Follow-up – $34.04',
+            'Telehealth: <strong>14545</strong> Same code for consultation – $165.97',
+            '<strong>13437</strong> Follow-up – $31.84',
+            'Notes: For telehealth, methods of virtual care can include phone, video or provincial telehealth platform, all of which are equally billable at the moment. No need to have an ongoing physician-patient relationship for the physician to submit a claim for medication abortion via telehealth',
+        ],
+    },
+
+    {
+        id: 'B3',
+        title: 'Manitoba',
+        content: [
+            '<i>The information below is updated as of March 2024.</i>',
+            '<h2>Gynaecology</h2>',
+            'Initial visit: <strong>8428</strong> Medical management of elective pregnancy termination, including examination, management and monitoring of patient taking misoprostol. – $171.00',
+            '<strong>8499</strong> Complete gynecological exam excluding pap test – $125.61',
+            'Follow-up visit: <strong>8505</strong> Regional history and examination with gynaecological examination excluding pap test',
+            '<h2>Primary Care</h2>',
+            'Initial visit: <strong>8428</strong> Medical management of elective pregnancy termination, including examination, management and monitoring of patient taking misoprostol. – $171.00',
+            '<strong>8499</strong> Complete gynecological exam excluding pap test – $125.61',
+            'Follow-up visit: <strong>8471</strong> Regional intermediate visit or subsequent visit with gynecological exam excluding pap smear – $54.16',
+            'Notes: There are no specifications as to whether the codes are specific to specialists vs primary care in the billing manual for Manitoba. Thus, providers would have to look into the information and apply the rules of their billing codes.',
+        ],
+    },
+
+    {
+        id: 'B4',
+        title: 'New Brunswick',
+        content: [
+            '<i>The information below is pending verification.</i>',
+            '<h2>Gynaecology</h2>',
+            'Initial visit: 54 Major or regional consultation – CA$95.91',
+            '9015 Medical management of non-viable/unwanted pregnancy, including βhCG follow-up, add to initial visit or consultation – $136.22',
+            'Follow-up visit: 49 Regional examination – $52.82',
+            'Telehealth: Same codes, but the site code where the patient is physically located, must be recorded on the claim submission. When submitting claims for telemedicine, the number 8 should be written in front of the site code provided in order to specify that the service was given via telemedicine.',
+            '8717 Attendance – 1st patient seen, first 15 minutes or part thereof 40 units',
+            '8718 Add – per 15 minutes or part thereof 20 units',
+            '<h2>Primary Care</h2>',
+            'Initial visit: 1 Office visit – $23.36',
+            '9142 Medical management of non-viable/unwanted pregnancy, including βhCG follow-up, add to initial visit or consultation – $74.48',
+            'Follow-up visit: 1 Office visit – $23.36',
+            'Telehealth: Same codes, but the site code where the patient is physically located, must be recorded on the claim submission. When submitting claims for telemedicine, the number 8 should be written in front of the site code provided in order to specify that the service was given via telemedicine.',
+            '8717 Attendance – 1st patient seen, first 15 minutes or part thereof 40 units',
+            '8718 Add – per 15 minutes or part thereof 20 units',
+
+
+      ],
+    },
+
+    {
+        id: 'B5',
+        title: 'Newfoundland & Labrador',
+        content: [
+            '<i>The information below is pending verification.</i>',
+            '<h2>Gynaecology</h2>',
+            'Initial visit and follow-up visit: 54607 Medication abortion – $187.46',
+            '<i>Comprehensive fee which includes all services associated with medication abortion including the consultation and/or visit during which the medication is prescribed, counselling, ordering and/or performing and interpreting of laboratory tests and diagnostic imaging, and any follow-up communications or visits.</i>',
+            '<h2>Primary Care</h2>',
+            'Initial visit and follow-up visit: 54607 Medication abortion – $187.49',
+            '<i>Comprehensive fee which includes all services associated with medication abortion including the consultation and/or visit during which the medication is prescribed, counselling, ordering and/or performing and interpreting of laboratory tests and diagnostic imaging, and any follow-up communications or visits.</i>',
+
+     ],
+    },
+
+    {
+        id: 'B6',
+        title: 'Northwest Territories ',
+        content: [
+            '<i>The information below is pending verification.</i>',
+            '<h2>Gynaecology</h2>',
+            'Initial visit and follow-up visit: OB-025 Medical termination for gestation less than 7 weeks – includes all visits, ultrasound examinations and injections – $361.93',
+            'Telehealth: TE-001 Telehealth consultation by consultant using audio-video-data communication – $180.97',
+            'TE-002 Telehealth consultation – per 15 minutes – max of 1.5 hours per session – $54.29',
+            'TE-004 Emergency Department consultation from peripheral communities – CA$18.09',
+            '<i>Does not need to be your own patient.</i>',
+            '<h2>Primary Care</h2>',
+            'Initial visit: GP-001 First visit requiring general assessment for new illness – $102.35',
+            'Follow-up visit: GP-002 Subsequent office visits other than a simple follow-up visit – $45.48',
+            'Telehealth: TE-001 Telehealth consultation by consultant using audio-video-data communication – $180.97',
+            'TE-002 Telehealth consultation – per 15 minutes – max of 1.5 hours per session – $54.29',
+            'TE-004 Emergency Department consultation from peripheral communities – CA$18.09',
+            '<i>Does not need to be your own patient.</i>',
+        ],
+    },
+
+    {
+        id: 'B7',
+        title: 'Nova Scotia',
+        content: [
+            '<i>The information below is pending verification.</i>',
+            '<h2>Gynaecology</h2>',
+            'Initial visit: 3.03V Medication abortion/Termination of early pregnancy – 67.03 units/$185.00',
+            'Follow-up visit: 3.03 Subsequent visit – 13 units/$35.88',
+            'Telehealth: Same as in-person, use AP=PHON for telephone and AP=VIRC for video platform.',
+            '<h2>Primary Care</h2>',
+            'Initial visit: 3.03V Medication abortion/Termination of early pregnancy – 67.03 units/ $185.00',
+            'Follow-up visit: 3.03 Office visit – 13 units/$35.88',
+            'Telehealth: Same as in-person, use AP=PHON for telephone and AP=VIRC for video platform.',
+
+    ],
+    },
+
+    {
+        id: 'B8',
+        title: 'Nunavut',
+        content: ['No content.'],
+    },
+    
+    {
+        id: 'B9',
+        title: 'Ontario',
+        content: [
+            '<i>The information below is updated as of March 2024.</i>',
+            '<h2>In-person</h2>',
+            'Initial visit: A920 Medical management of early pregnancy – initial service – $161.15',
+            'Follow-up visit: A921 Medical management of early pregnancy – follow-up visit (limited to two visit per patient, per pregnancy) – $36.85',
+            '<h2>Telehealth</h2>',
+            'Initial visit: A920 can be billed for telephone and video visits.',
+            'Follow-up visit: A921 – $36.85',
+            'A007 – $37.95',
+            'A102 – $15.00',
+            'Notes: If you have billed A920 for the initial visit, you have established a relationship and for follow-up, you can use A921 (video only) or A007 (telephone). Virtual care services provided in the 24-months subsequent to the medication abortion may be claimed as Comprehensive Virtual Care Services because it implies an existing/ongoing patient-physician relationship. If you do not meet the patients at the initial visit (i.e. you do not bill A920 for the initial visit and thus do not have a pre-established relationship with the patient), you would use A102 for telephone follow-up, which pays $15.',
+
+],
+},
+
+    {
+        id: 'B10',
+        title: 'Prince Edward Island',
+        content: [
+            '<i>The information below is pending verification.</i>',
+            '<h2>Gynaecology</h2>',
+            'Initial visit: 6010 Therapeutic abortion – $181.49',
+            'Follow-up visit: 0762 Repeat consultation – $58.38',
+            '0713 Limited office visit – $42.00',
+            '<h2>Primary Care</h2>',
+            'Initial visit: 0160 Therapeutic abortion – $181.49',
+            'Follow-up visit: 0113 Limited office visit – $42.00',
+            '0163 Complete Re-examination by a medical specialist',
+
+        ],
+    },
+    {
+        id: 'B11',
+        title: 'Quebec',
+        content: [
+            '<i>The information below is updated as of March 2024.</i>',
+            '<h2>Gynaecology</h2>',
+            'Initial visit: 15850 Global evaluation for termination of pregnancy (<63 days) – $168.90',
+            '15852 Ultrasound exam – $60.95',
+            'Follow-up visit: 15854 Follow-up medication abortion – $47.50',
+            '15857 US post medication abortion (<18 days) – $39.80',
+            '<h2>Primary Care</h2>',
+            'Initial visit: Global evaluation for termination of pregnancy',
+            '– 15313 Office – $139.50',
+            '– 15407 CLSC – $20.00',
+            '– 15314 Hospital – $104.60',
+            '<strong>Ultrasound exam</strong>',
+            '– 15315 Office – $38.15',
+            '– 15316 Hospital – $13.10',
+            'Follow-up visit: Follow-up termination of pregnancy',
+            '– 15317 Office – $39.25',
+            '– 15408 CLSC – $1.50',
+            '– 15318 Hospital – $29.45',
+            '<strong>Ultrasound exam</strong>',
+            '– 15319 Office – $33.80',
+            '– 15320 Hospital – $8.75',
+
+    ],
+    },
+    {
+        id: 'B12',
+        title: 'Saskatchewan',
+        content: [
+            '<i>The information below is updated as of March 2024.</i>',
+            '<h2>Gynaecology</h2>',
+            'Initial visit: 150B Medical management of termination of early pregnancy – includes 5 days of ongoing medical management – $170',
+            'Follow-up visit: 11P Repeat consultation – $41.90',
+            '7P Follow-up assessment – $38.20',
+            '<h2>Primary Care</h2>',
+            'Initial visit: 150B Medical management of termination of early pregnancy – includes 5 days of ongoing medical management – $170',
+            'Follow-up visit: 5-B Subsequent visit – $39.80',
+            '<strong>Telehealth</strong>',
+            'Initial visit: 732A for any patient attended to using an approved telemedicine video link – $31.40',
+            '840B and 841B – Counselling – for clinicians who do not have a video link setup such as telephone consultation. 840 is virtual counselling for the first 15 minutes and 841B is for the subsequent 15 minutes – $33.75',
+            'Follow-up visit: 734A for any patient attended to using an approved telemedicine video links (maximum one per day for all patients) – $12.50',
+            '805B – Virtual Partial Assessment – for clinicians who do not have a video link setup such as telephone follow-up – $31.85',
+            'Notes: Saskatchewan has a designated in-person abortion code but not a virtual one, so providers can use the generic codes that are used for regular primary care telemedicine apps.',
+
+        ],
+        },
+
+        {
+        id: 'B13',
+        title: 'Yukon',
+        content: [
+            '<i>The information below is pending verification.</i>',
+            '<h2>Gynaecology</h2>',
+            'Initial visit: 4116 Medication abortion – $223.8',
+            'Follow-up visit: 4012 Limited consultation – $104.40',
+            '4007 Subsequent office visit – $69.60',
+            '<h2>Primary Care</h2>',
+            'Initial visit: 0101 Complete examination – $108.80',
+            'Follow-up visit: 0100 Visit – $49.70',
+    
+    ],
+    },
+
 ];
+
+
+
 
 
 // this function returns the modules in accending order and doesn't repeat the modules if they are already in the list. Needs to be refactored to be more dynamic.

@@ -24,7 +24,7 @@
         } else if (path === '/prescribing/virtual-hybrid-care' || path === '/prescrire/soins-virtuels-hybrides') {
             return getModules(['M21','M22','M14', 'M23']);
         } else if (path === '/prescribing/billing-codes' || path === '/prescrire/codes-de-facturation') {
-            return getModules(['M2','M1','M3','M4','M5']);
+            return getModules(['B1','B2','B3','B4','B5','B6','B7','B8','B9','B10','B11','B12','B13']);
         } else if (path === '/prescribing/regulations-insurance-inclusivity' || path === '/prescrire/reglementation-assurance-inclusivite') {
             return getModules(['M3','M1','M3','M4','M5']);
         } else if (path === '/prescribing/clinical-resources' || path === '/prescrire/ressources-cliniques') {

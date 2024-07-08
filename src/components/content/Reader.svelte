@@ -10,6 +10,8 @@
             formattedItem = formattedItem.replace(/(MIFE | mifepristone )/g, '<span style="color: var(--MIFE);">$1</span>');
             formattedItem = formattedItem.replace(/\[(.*?)\]/g, '<sup>[$1]</sup>');
             formattedItem = formattedItem.replace(/(Product monograph)/g, '<a href="/" class="in">$1</a>');
+            formattedItem = formattedItem.replace(/(Initial visit:|Follow-up visit:|Initial visit and follow-up visit:|Telehealth:)/g, '<span style="color: blue; font-weight: bold;">$1</span>');
+            formattedItem = formattedItem.replace(/(Notes:)/g, '<span font-weight: bold;">$1</span>');
             if (formattedItem.startsWith('<h2>') || formattedItem.startsWith('<ul>') || formattedItem.startsWith('<ol>') || formattedItem.startsWith('<li>')) {
                 return formattedItem;
             }
