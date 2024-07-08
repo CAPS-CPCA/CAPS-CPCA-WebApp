@@ -578,6 +578,29 @@ const modules = [
     ],
     },
 
+    {
+        id: 'M26',
+        title: 'Regulatory Landscape',
+        content: [
+            'Abortion is <strong>legal</strong> in Canada, and patients do not require consent from partners or parents to seek an abortion. It is the <strong>second most common</strong> reproductive health service: one in three Canadian pregnancy-capable persons will seek abortion in their lifetime[1,2].',
+            'Medication abortion uses medication pills to end a pregnancy. In Canada, the medication abortion pills are packaged and sold as Mifegymiso.',
+            '<ul>',
+                '<li>Mifegymiso is approved by Health Canada for gestational age up to 63 days, but has been shown by SOGC to be <strong>safe and effective</strong> for up to 70 days.',
+                '<li>It is provided <strong>free-of-charge</strong> to all patients with provincial health insurance and several categories of <a class="in" href="https://caps.sogc.org/prescribing/?heading=Regulations,%20Insurance%20&%20Inclusivity%20Toolkits&subheading=Federal%20Insurance%20Schemes#1" >federal health insurances</a>.',
+                '<li>Patients eligible for healthcare in one province, who attempt to access Mifegymiso in another province or territory, are eligible for counselling, assessments and follow-up but not for the medication itself.',
+                '<li>It can be prescribed through <strong>in-person visits</strong> or <a class="in" href="https://caps.sogc.org/prescribing/?heading=Virtual%20&%20Hybrid%20Care" >virtual consultations</a>, or a combination of the two.',
+            '</ul>',
+            '<strong>Scope of practice:</strong> At the time of this writing, physicians and nurse practitioners in Canada are authorized to prescribe Mifegymiso. In most cases, pharmacists are in charge of dispensing the medication to patients, but some clinics are also authorized to dispense the medication directly to patients. With the exception of Quebec, midwives are currently not authorized to prescribe Mifegymiso but can provide medication abortion care by working closely with nurse practitioners or physicians.',
+            '<strong>Province-specific requirements:</strong> Healthcare providers should check specific guidelines and scope of practices in their provinces or territories. For example, provinces may differ in their requirements on who can pick up the medication and whether pharmacists have to register with Celopharma, the manufacturer of Mifegymiso. <a class="in" href="https://caps.sogc.org/wp-content/uploads/2024/01/PG1.pdf" >Click here to see the summary</a> of some province-specific regulations for dispensing Mifegymiso.',
+            '<strong>Training requirement:</strong> Completing a training course is no longer required before prescribing or dispensing Mifegymiso, but healthcare providers may find the online courses below useful in learning about MA care.',
+            '<ul>',
+                '<li><a class="ex" href="https://sogc.org/en/rise/Events/event-display.aspx?EventKey=MATP2&WebsiteKey=4d1aa07b-5fc4-4673-9721-b91ff3c0be30" >SOGC’s Medical Abortion Training Program</a>, updated in 2023 and provided at cost.',
+                '<li><a class="ex" href="https://nafcanada.org/medication-abortion-virtual-course/" >NAF Canada’s Medication Abortion Training</a> for Primary Care Providers, updated in 2023 and provided at cost.',
+            '</ul>',        
+        ],
+        
+    },
+
 ];
 
 
