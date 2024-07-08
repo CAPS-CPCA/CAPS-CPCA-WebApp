@@ -26,7 +26,8 @@
     }
 
     $: current = $page.url.pathname;
-    $: outline = getOutline('/prescribing');
+    $: outlineType = '/'+current.split('/')[1];
+    $: outline = getOutline(outlineType) || getOutline('/prescribing');
 
     const handleCollapse = () => {
         isCollapsed = !isCollapsed;
@@ -122,6 +123,9 @@
         padding: 1.5rem 0;
         border-bottom: 1px solid var(--Primary);
     }
+    ul:last-of-type {
+        border-bottom: none;
+    }
     li {
         padding: 0 1.5rem;
     }
@@ -141,6 +145,7 @@
         transition: all 0.1s ease-in-out;
     }
     .atBot {
+        width: 30rem;
         position: absolute;
         bottom: 0;
     }

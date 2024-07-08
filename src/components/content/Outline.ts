@@ -70,7 +70,7 @@ const outlines: {[key:string]: Outline} = {
             ],
             resources:[
                 {
-                    href: '/prescribing/billing-codes',
+                    href: '/prescribing/billing-codes#B1',
                     title: 'Physician Billing Codes',
                     modules: {
                         B1: 'Alberta',
@@ -89,7 +89,7 @@ const outlines: {[key:string]: Outline} = {
                     }
                 },
                 {
-                    href: '/prescribing/regulations-insurance-inclusivity',
+                    href: '/prescribing/regulations-insurance-inclusivity#M26',
                     title: 'Regulations, Insurance & Inclusivity Toolkits',
                     modules: {
                         M26: 'Regulatory landscape',
@@ -102,7 +102,7 @@ const outlines: {[key:string]: Outline} = {
                     }
                 },
                 {
-                    href: '/prescribing/clinical-resources',
+                    href: '/prescribing/clinical-resources#S1',
                     title: 'Guidelines, Checklists & Toolkits',
                     modules: {
                         S1: 'Checklists and Resource Guides',
@@ -119,50 +119,50 @@ const outlines: {[key:string]: Outline} = {
         '/prescrire': {
             subpages: [
                 {
-                    href: '/prescrire/a-propos-de-mifegymiso',
-                    title: 'À propos de Mifegymiso',
+                    href: '/prescrire/a-propos-du-mife-miso#M1',
+                    title: 'À propos du mifé-miso',
                     modules: {
-                        M1: 'Mécanisme d\'action',
-                        M2: 'Efficacité & Sécurité',
-                        M3: 'Indications & Contre-indications'
+                        M1: 'Mécanisme d’action',
+                        M2: 'Efficacité et sécurité',
+                        M3: 'Indications et contre-indications'
                     }
                 },
                 {
-                    href: '/prescrire/conseils-aux-patients',
-                    title: 'Conseils aux patients',
+                    href: '/prescrire/counseling-de-la-personne#M5',
+                    title: 'Counseling de la personne',
                     modules: {
-                        M5: 'Conseils pré-avortement',
-                        M6: 'Options d\'avortement',
+                        M5: 'Counseling pré-avortement',
+                        M6: 'Options d’avortement',
                         M14: 'Consentement éclairé',
-                        M15: 'Instructions d\'administration',
-                        M33: 'Oubli de doses',
+                        M15: 'Instructions d’administration',
+                        M33: 'Doses manquées',
                         M16: 'Gestion des effets secondaires'
                     }
                 },
                 {
-                    href: '/prescrire/evaluation-medicale',
-                    title: 'Évaluation médicale pré-avortement',
+                    href: '/prescrire/evaluation-medicale#M8',
+                    title: 'Évaluation pré-avortement',
                     modules: {
                         M8: 'Dépistage de base',
-                        M9: 'Dépistage de la grossesse et de l\'âge gestationnel',
-                        M10: 'Grossesse extra-utérine',
-                        M11: 'Grossesse de localisation inconnue',
-                        M12: 'Dépistage du Rhésus',
-                        M13: 'Anémie, IST et autres'
+                        M9: 'Détermination de l’âge gestationnel',
+                        M10: 'Grossesse ectopique',
+                        M11: 'Grossesse de localisation indéterminée',
+                        M12: 'Dépistage du statut Rh',
+                        M13: 'Anémie, ITSS et autres'
                     }
                 },
                 { 
-                    href: '/prescrire/evaluation-post-avortement',
+                    href: '/prescrire/evaluation-post-avortement#M17',
                     title: 'Évaluation post-avortement',
                     modules: {
                         M17: 'Suivi post-avortement',
-                        M18: 'Évaluation de l\'achèvement de l\'avortement',
+                        M18: 'Évaluation du succès de l’avortement',
                         M19: 'Gestion des complications',
                         M20: 'Contraception post-avortement',
                     }
                 },
                 {
-                    href: '/prescrire/soins-virtuels-hybrides',
+                    href: '/prescrire/soins-virtuels-hybrides#M21',
                     title: 'Soins virtuels et hybrides',
                     modules: {
                         M21: 'Étapes initiales',
@@ -174,14 +174,14 @@ const outlines: {[key:string]: Outline} = {
             ],
             resources:[
                 {
-                    href: '/prescrire/codes-facturation',
-                    title: 'Codes de facturation des médecins',
+                    href: '/prescrire/codes-de-facturation#B1',
+                    title: 'Codes de facturation',
                     modules: {
                         B1: 'Alberta',
                         B2: 'Colombie-Britannique',
                         B3: 'Manitoba',
-                        B4: 'Nouveau-Brunswick',
-                        B5: 'Terre-Neuve-et-Labrador',
+                        B4: 'Nouveau Brunswick',
+                        B5: 'Terre-Neuve et Labrador',
                         B6: 'Territoires du Nord-Ouest',
                         B7: 'Nouvelle-Écosse',
                         B8: 'Nunavut',
@@ -193,25 +193,29 @@ const outlines: {[key:string]: Outline} = {
                     }
                 },
                 {
-                    href: '/prescrire/reglements-assurance-inclusivite',
-                    title: 'Outils de réglementation, d\'assurance et d\'inclusivité',
+                    href: '/prescrire/reglements-assurance-inclusivite#M26',
+                    title: 'Règlements, assurance et inclusivité',
                     modules: {
-                        M26: 'Paysage réglementaire',
+                        M26: 'Contexte réglementaire',
                         M27: 'Configuration des installations',
-                        M28: 'Répondre aux préoccupations en matière d\'avortement',
+                        M28: 'Répondre aux préoccupations liées à l’avortement',
+                        C1: 'Régimes d’assurance fédéraux',
+                        M36: 'Personnes non-assurées',
+                        M37: 'Personnes 2ELGBTQIA+',
+                        M38: 'Personnes autochtones',
                     }
                 },
                 {
-                    href: '/prescrire/ressources-cliniques',
-                    title: 'Lignes directrices, listes de contrôle et outils',
+                    href: '/prescrire/ressources-cliniques#S1',
+                    title: 'Lignes directrices et autres ressources',
                     modules: {
-                        S1: 'Listes de contrôle et guides de ressources',
-                        S2: 'Formation et webinaires',
-                        S3: 'Monographies de produits, lignes directrices et protocoles',
-                        S4: 'Échantillons de formulaires de consentement',
-                        S5: 'Ressources pour les patients',
-                        S6: 'Outils pour répondre aux préoccupations en matière d\'avortement',
-                        S7: 'Outils pour soutenir les communautés mal desservies'
+                        S1: 'Guides et aides-mémoires',
+                        S2: 'Formations et webinaires',
+                        S3: 'Monographies, lignes directrices et protocoles',
+                        S4: 'Exemples de formulaires de consentement',
+                        S5: 'Instructions pour la patientèle',
+                        S6: 'Boîtes à outils pour répondre aux préoccupations liées à l’avortement',
+                        S7: 'Boîtes à outils pour soutenir les communautés mal desservies'
                     }
                 }
             ]

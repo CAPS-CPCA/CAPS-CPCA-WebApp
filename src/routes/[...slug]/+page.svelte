@@ -6,27 +6,28 @@
     import Reader from "../../components/content/Reader.svelte";
 
     $: if (browser) {
-        $page.url.pathname === '/prescribing' ? goto('/prescribing/about-mifegymiso') : null;
-        $page.url.pathname === '/dispensing' ? goto('/dispensing/coverage-&-insurance') : null;
-        $page.url.pathname === '/supporting%20roles' ? goto('/supporting%20roles/medication-abortion') : null;
+        $page.url.pathname === '/prescribing' ? goto('/prescribing/about-mifegymiso', { noScroll: true }) : null;
+        $page.url.pathname === '/prescrire' ? goto('/prescrire/a-propos-du-mife-miso', { noScroll: true }) : null;
+        $page.url.pathname === '/dispensing' ? goto('/dispensing/coverage-&-insurance', { noScroll: true }) : null;
+        $page.url.pathname === '/supporting%20roles' ? goto('/supporting%20roles/medication-abortion', { noScroll: true }) : null;
     }
 
     function modulePath(path:string) {
-        if (path === '/prescribing/about-mifegymiso') {
+        if (path === '/prescribing/about-mifegymiso' || path === '/prescrire/a-propos-du-mife-miso') {
             return getModules(['M1','M2','M3']);
-        } else if (path === '/prescribing/patient-counselling') {
+        } else if (path === '/prescribing/patient-counselling' || path === '/prescrire/counseling-de-la-personne') {
             return getModules(['M5','M6','M14','M15','M33','M16']);
-        } else if (path === '/prescribing/medical-evaluation') {
+        } else if (path === '/prescribing/medical-evaluation' || path === '/prescrire/evaluation-medicale') {
             return getModules(['M8','M9','M10','M11','M12','M13']);
-        } else if (path === '/prescribing/assessment') {
+        } else if (path === '/prescribing/assessment' || path === '/prescrire/evaluation-post-avortement') {
             return getModules(['M17','M18','M19','M20']);
-        } else if (path === '/prescribing/virtual-hybrid-care') {
+        } else if (path === '/prescribing/virtual-hybrid-care' || path === '/prescrire/soins-virtuels-hybrides') {
             return getModules(['M21','M22','M3','M4','M5']);
-        } else if (path === '/prescribing/billing-codes') {
+        } else if (path === '/prescribing/billing-codes' || path === '/prescrire/codes-de-facturation') {
             return getModules(['M2','M1','M3','M4','M5']);
-        } else if (path === '/prescribing/regulations-insurance-inclusivity') {
+        } else if (path === '/prescribing/regulations-insurance-inclusivity' || path === '/prescrire/reglementation-assurance-inclusivite') {
             return getModules(['M3','M1','M3','M4','M5']);
-        } else if (path === '/prescribing/clinical-resources') {
+        } else if (path === '/prescribing/clinical-resources' || path === '/prescrire/ressources-cliniques') {
             return getModules(['M4','M1','M3','M4','M5']);
         } return getModules(['M1','M2','M3','M4','M5']);
     }
