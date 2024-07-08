@@ -819,6 +819,27 @@ const modules = [
         ],
     },
 
+    {
+        id: 'M38',
+        title: 'Indigenous Patients ',
+        content: [
+            'Below are suggestions to help non-Indigenous healthcare professionals create an inclusive environment for Indigenous patients. These suggestions are not exhaustive and providers are encouraged to consider other manuals and cultural competency training opportunities to provide inclusive care.',
+            'A variety of factors and realities may affect how Indigenous Peoples access health services, including geographical access barriers, the unavailability of language and translation services, a lack of culturally safe health care settings or past experiences of racism, stigma, shame, fear or discrimination. Be mindful that <strong>being Indigenous is not a risk factor in itself</strong>, what actually puts people at risk are systemic issues like racism, colonialism, inter-generational trauma, and a lack of access to culturally safe care, treatment and supports.',
+            '<i>These recommendations were reproduced from <a class="in" href="https://caps.sogc.org/wp-content/uploads/2024/01/VCOP1.pdf"  target="_blank">The Indigenous Ally Toolkit</a> by the Montreal Urban Aboriginal Community Strategy Network, and <a class="in" href="https://caps.sogc.org/wp-content/uploads/2024/01/C104-1.pdf"  target="_blank">the Handbook for Healthcare Providers Working with Clients from Diverse Communities</a> by Action Canada for Sexual Health & Rights.</i>',
+            '<h2>Quick tips for clinicians:</h2>',
+            '<ul>',
+                '<li>Offer <strong>translation services</strong>, and where possible, translated resources.',
+                '<li>Connect with, and advocate for the involvement of, Indigenous patient navigators in your area.',
+                '<li>When hearing about difficult or violent experiences from patients, affirm their experiences and stories. <strong>Avoid shaming them for the feelings they have, or the ways they use to cope.</strong>',
+                '<li><strong>Create and maintain a list of available resources and cultural supports</strong> within your region, including social services.',
+                '<li><strong>Support your patients to participate in the creation of their treatment plans</strong>, including the incorporation of traditional and cultural resources and methods.',
+                '<li>Avoid saying “Canada’s Indigenous Peoples” or “Our Indigenous Peoples” – <strong>The Indigenous Peoples are not owned by Canada or by any individual.</strong>',
+                '<li>Avoid saying “The Indigenous culture” – <strong>this phrase does not recognize that there are hundreds of Indigenous communities, nations, languages and cultures existing in Canada.</strong> Instead of singular, try using plural forms “Indigenous cultures” or even better, being specific about the nation to avoid pan-Indigenizing.',
+            '</ul>',
+        ],
+    },
+
+
 ];
 
 
