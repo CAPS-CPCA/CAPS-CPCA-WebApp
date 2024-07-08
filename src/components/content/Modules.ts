@@ -659,6 +659,28 @@ const modules = [
         ],
     },
 
+    {
+        id: 'M28',
+        title: 'Addressing Abortion Concerns',
+        content: [
+            'Below are suggestions on how to address opposition and concerns about medication abortion (MA) among your staff and colleagues, which will facilitate smooth integration of MA services into your practices[16].',
+            '<ol>',
+                '<li>First, identify providers, administrators and support staff within your setting, who might be interested and committed to offering abortion services.',
+                '<li>Initiate informal discussions with colleagues about offering the service.',
+                '<li>Consider implementing an anonymous staff survey and patient survey to get an idea of people’s thoughts and feelings about MA.',
+                '<li>Consider organizing a workshop to clarify abortion beliefs, address opposition or discomfort, and determine ways for working together to provide MA. Abortion belief clarification workshop can be adapted using:',
+                '<ul>',
+                    '<li><a class="in" href="https://caps.sogc.org/wp-content/uploads/2024/01/C35.pdf" >Values clarification toolkits</a> by National Abortion Federation.',
+                    '<li><a class="in" href="https://caps.sogc.org/wp-content/uploads/2024/01/C58-10.pdf" >Values clarification workshop</a> materials by the Reproductive Health Access Project.',
+                '</ul>',
+                '<li>Consider establishing a planning committee to discuss goals, tasks, timelines, obstacles and solutions.',
+                '<li>Find out about other local health centres or providers who have successfully integrated abortion services into their practice and invite them to meetings, workshops and planning sessions, or invite them to provide feedback and consult on your process.',
+                '<li>Develop a protocol for staff members who feel that they are unable to participate in providing abortion services.',
+                '<li>When interviewing applicants for staff vacancies, discuss the idea of abortion. Include in the job posting that applicant should be open to all aspects of reproductive care including pregnancy termination.',
+            '</ol>',
+        ],
+    },
+
 ];
 
 
