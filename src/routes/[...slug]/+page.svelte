@@ -22,7 +22,7 @@
         } else if (path === '/prescribing/assessment' || path === '/prescrire/evaluation-post-avortement') {
             return getModules(['M17','M18','M19','M20']);
         } else if (path === '/prescribing/virtual-hybrid-care' || path === '/prescrire/soins-virtuels-hybrides') {
-            return getModules(['M21','M22','M3','M4','M5']);
+            return getModules(['M21','M22','M14', 'M23']);
         } else if (path === '/prescribing/billing-codes' || path === '/prescrire/codes-de-facturation') {
             return getModules(['M2','M1','M3','M4','M5']);
         } else if (path === '/prescribing/regulations-insurance-inclusivity' || path === '/prescrire/reglementation-assurance-inclusivite') {

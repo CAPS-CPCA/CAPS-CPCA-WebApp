@@ -319,6 +319,30 @@ const modules = [
                     '<li>Otherwise, evaluate the risk of STIs and consider remote testing if risk factors are present, and discuss the potential need for antibiotic treatment.</ul></ol>',
         ],
     },
+
+    {
+        id: 'M23',
+        title: 'Follow-up',
+        content: [
+            'The follow-up appointment should be scheduled <strong>3 to 7 days after taking</strong> misoprostol (MISO), and more than one follow-up appointment may be needed. The SOGC’s protocol on the provision of medication abortion by telemedicine advises 7 days[7], but some prescribers schedule the follow-up appointment as early as 3 days after MISO administration to avoid loss-of-contact and assess serum bhCG level. The actual practices depend on prescribers’ judgment and experiences.',
+            'During the virtual follow-up, prescribers should[7]:',
+            '<ol>',
+                '<li><strong>Review abortion experience and progress</strong> with patients, including dates of taking medication, side effects, bleeding pattern, pain, occurrence of expulsion, and any current pregnancy symptoms.',
+                '<li>Advise an urgent assessment or emergency visit if signs of ectopic pregnancy, pelvic infection, heavy bleeding, or excessive pain exist.',
+                '<li></strong>If history suggests failed abortion or ongoing pregnancy:</strong> obtain ultrasound and consider an additional dose of MISO or procedural abortion.',
+                '<li><strong>If history suggests successful abortion, no warning signs, and no current symptoms of pregnancy, normal bleeding and pain:</strong> arrange the blood test to confirm serum bhCG level if the appointment is in-person or instruct the patient to perform qualitative urine pregnancy test.',
+                    '<strong>Serum bhCG[4]</strong>: If the serum bhCG level drops by >50% at Day 3 after MISO or 80% at Day 7-14 after MIFE / MISO administration, the successful completion of abortion is confirmed and no further appointment is needed. Ultrasound should be ordered if 14 days have passed and a drop by 80% has not been reached.',
+                    '<strong>Urine bhCG[7]:</strong>',
+                '<li>Offer to discuss <a class="in" href="https://caps.sogc.org/prescribing/?heading=Post-abortion%20Assessment&subheading=Post-abortion%20Contraception#4" >contraception options</a> and provide emotional support if needed. Resources for emotional support include:',
+                '<ul>',
+                '<li><strong><a class="ex" href="https://exhaleprovoice.org/" >Exhale</a></strong>, a talk-line that provides emotional support, resources and information after abortion.',
+                '<li><strong><a class="ex" href="https://www.all-options.org/" >All-Options</a></strong>, a talk-line to discuss past or current experience with abortion, adoption and parenting for people in Canada and the United States (1-888-493-0092).',
+                '</ul>',
+                '</ol>',
+        ],
+        images: [{title: '', src: images.AbortionComplete, alt: '' }],
+    },
+
 ];
 
 

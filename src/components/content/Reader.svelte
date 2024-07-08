@@ -6,8 +6,8 @@
     function formatText(text: string[]) {
         if (!text) return '';
         let formattedText = text.map((item) => {
-            let formattedItem = item.replace(/(MISO)/g, '<span style="color: var(--MISO);">$1</span>');
-            formattedItem = formattedItem.replace(/(MIFE)/g, '<span style="color: var(--MIFE);">$1</span>');
+            let formattedItem = item.replace(/(MISO | misoprostol )/g, '<span style="color: var(--MISO);">$1</span>');
+            formattedItem = formattedItem.replace(/(MIFE | mifepristone )/g, '<span style="color: var(--MIFE);">$1</span>');
             formattedItem = formattedItem.replace(/\[(.*?)\]/g, '<sup>[$1]</sup>');
             formattedItem = formattedItem.replace(/(Product monograph)/g, '<a href="/" class="in">$1</a>');
             if (formattedItem.startsWith('<h2>') || formattedItem.startsWith('<ul>') || formattedItem.startsWith('<ol>') || formattedItem.startsWith('<li>')) {
