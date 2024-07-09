@@ -28,10 +28,21 @@
         } else if (path === '/prescribing/regulations-insurance-inclusivity' || path === '/prescrire/reglementation-assurance-inclusivite') {
             return getModules(['M26','M27','M28','C1','M36','M37','M38']);
         } else if (path === '/prescribing/clinical-resources' || path === '/prescrire/ressources-cliniques') {
-            return getModules(['M4','M1','M3','M4','M5']);
-        } return getModules(['M1','M2','M3','M4','M5']);
+            return getModules(['M4','M1','M3','M4','M5']);    
+        } else if (path === '/dispensing/coverage-&-insurance' || path === '/prescrire/ressources-cliniques') {
+            return getModules(['C1','M36','C2','C3','C4','C5','C6','C7','C8','C9','C10','C11','C12','C13','C14']);
+        } else if (path === '/dispensing/patient-communication' || path === '/prescrire/ressources-cliniques') {
+            return getModules(['C1']);
+        } else if (path === '/dispensing/about-mifegymiso' || path === '/prescrire/ressources-cliniques') {
+            return getModules(['C1']);
+        } else if (path === '/dispensing/regulations-inclusivity' || path === '/prescrire/ressources-cliniques') {
+            return getModules(['C1']);
+        } else if (path === '/dispensing/clinical-resources' || path === '/prescrire/ressources-cliniques') {
+            return getModules(['C1']);
+        }
+        return getModules(['M1','M2','M3','M4','M5']);
     }
-
+    
     $: path = $page.url.pathname;
 </script>
 

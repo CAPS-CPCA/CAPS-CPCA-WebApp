@@ -219,7 +219,86 @@ const outlines: {[key:string]: Outline} = {
                     }
                 }
             ]
-        }
+        },
+        '/dispensing': {
+            subpages: [
+                {
+                    href: '/dispensing/coverage-&-insurance',
+                    title: 'Coverage & Insurance',
+                    modules: {
+                        C1: 'Federal Insurance Schemes',
+                        M36: 'Non-Insured Patients',
+                        C2: 'Alberta',
+                        C3: 'British Columbia',
+                        C4: 'Manitoba',
+                        C5: 'New Brunswick',
+                        C6: 'Newfoundland & Labrador',
+                        C7: 'Northwest Territories',
+                        C8: 'Nova Scotia',
+                        C9: 'Nunavut',
+                        C10: 'Ontario',
+                        C11: 'Prince Edward Island',
+                        C12: 'Quebec',
+                        C13: 'Saskatchewan',
+                        C14: 'Yukon',
+                        
+                    }
+                },
+                {
+                    href: '/dispensing/patient-communication',
+                    title: 'Patient Communication',
+                    modules: {
+                        M32: 'Key counselling points',
+                        M15: 'Administration instructions',
+                        M33: 'Missed doses',
+                        M16: 'Side effect management',
+                        M19: 'Complication management',
+                        M34: 'Optional follow-up',
+                        M20: 'Post-abortion contraception'
+                    }
+                },
+                {
+                    href: '/dispensing/about-mifegymiso',
+                    title: 'About Mifegymiso',
+                    modules: {
+                        M1: 'Mechanism of action',
+                        M29: 'Drug interactions',
+                        M30: 'Pharmacokinetics',
+                        M2: 'Efficacy & safety',
+                        M3: 'Indication & contraindications',
+                        M31: 'Clinical assessments'
+                    }
+                },
+                
+            ],
+            resources:[
+                { 
+                    href: '/dispensing/regulations-inclusivity',
+                    title: 'Regulations & Inclusivity Toolkits',
+                    modules: {
+                        M17: 'Post-abortion Follow-up',
+                        M18: 'Abortion Completion Assessment',
+                        M19: 'Complication Management',
+                        M20: 'Post-abortion Contraception',
+                    }
+                },
+                {
+                    href: '/dispensing/clinical-resources',
+                    title: 'Guidelines, Checklists & Toolkits',
+                    modules: {
+                        S1: 'Checklists and Resource Guides',
+                        S2: 'Training and Webinars',
+                        S3: 'Product Monographs, Guidelines and Protocols',
+                        S4: 'Posters and Patient Materials',      
+                        S6: 'Toolkits for Addressing Abortion Concerns',
+                        S7: 'Toolkits for Supporting Underserved Communities'
+                    }
+                }
+                
+            ]
+        },
+        
+        
     }
 
 export function getOutline(path: string): Outline {   

@@ -839,6 +839,102 @@ const modules = [
         ],
     },
 
+    {
+        id: 'C2',
+        title: 'Alberta',
+        content: [
+            'Since July 24, 2017, Alberta Health, through the Women’s Choice Program, has been providing coverage for Mifegymiso through licensed pharmacies in Alberta to allow women to exercise their choice in sexual health. Alberta Blue Cross is facilitating payment of claims for Mifegymiso under this program. All Albertans with a valid Alberta Health Care Insurance Plan and Personal Health Number (PHN) are eligible for coverage; a pseudo-PHN of WC0000000 is used for Albertans without a valid PHN.',
+            'There is no limit on the number of Mifegymiso prescriptions that a plan member may receive under the Women’s Choice Program; however, pharmacies may only claim one dose at a time for a plan member.',
+            'The program provides for direct bill claims submission only. Plan members are not eligible to claim for reimbursement.',
+            'Link: <a class="ex" href="https://www.ab.bluecross.ca/pdfs/pharmacy-benefacts/pharmacy-benefact-697.pdf" target="_blank" >https://www.ab.bluecross.ca/pdfs/pharmacy-benefacts/pharmacy-benefact-697.pdf</a>',
+        ],
+    },
+
+    {
+        id: 'C3',
+        title: 'British Columbia',
+        content: [
+            'Mifegymiso is covered under the BC Pharmacare Assurance Plan (Plan Z and exceptional Plan Z) which provides 100% coverage. All residents of BC with active Medical Services Plan (MSP) coverage are eligible.',
+            'Link: <a class="ex" href="www2.gov.bc.ca/gov/content/health/practitioner-professional-resources/pharmacare/pharmacies/plan-z" target="_blank" >www2.gov.bc.ca/gov/content/health/practitioner-professional-resources/pharmacare/pharmacies/plan-z</a>',
+        ],
+    },
+
+    {
+        id: 'C4',
+        title: 'Manitoba',
+        content: [
+        'All residents of Manitoba with a valid Manitoba Health Registration Card and a prescription for Mifegymiso are eligible for coverage. Clients presenting with a valid Manitoba Health card and a prescription from an authorized prescriber should not be charged any out-of-pocket costs and even if the client is enrolled in Pharmacare or another provincial drug program (e.g., Family Services/EIA), there is no requirement to meet a deductible or co-pay.',
+        'Link: <a class="ex" href="https://www.gov.mb.ca/health/pharmacare/profdocs/csp_mifegymiso.pdf" target="_blank" >https://www.gov.mb.ca/health/pharmacare/profdocs/csp_mifegymiso.pdf</a>',
+    ]
+    },
+    {
+        id: 'C5',
+        title: 'New Brunswick',
+        content: [
+            'Coverage is available through the Medical Abortion Program. Manual claims will not be accepted, and claims must be submitted online.',
+            'Link: <a class="ex" href="https://www2.gnb.ca/content/gnb/en/departments/health/DrugPlans/NBDrugPlan/ForHealthCareProfessionals/medical_abortion_claims_submission.html" target="_blank" >https://www2.gnb.ca/content/gnb/en/departments/health/DrugPlans/NBDrugPlan/ForHealthCareProfessionals/medical_abortion_claims_submission.html</a>',
+        ],
+    },
+    {
+        id: 'C6',
+        title: 'Newfoundland & Labrador',
+        content: [ 
+            'Coverage is available at no cost to individuals with a valid Medical Care Plan card. Individuals can receive a prescription through their healthcare provider, the regional health authorities, or the Athena Clinic in St. John’s. Those with private insurance will use this first, and then the province will cover any remaining cost as last payer. Claims can be submitted in real time through the Newfoundland and Labrador Prescription Drug Program (NLPDP) adjudication system regardless of eligibility.',
+            'Link: <a class="ex" href="https://www.gov.nl.ca/hcs/files/prescription-provider-guide-program-claiming-policies.pdf" target="_blank" >www.gov.nl.ca/hcs/files/prescription-provider-guide-program-claiming-policies.pdf</a>',
+        ]
+    },
+    {
+        id: 'C7',
+        title: 'Northwest Territories',
+        content: [
+            'Coverage for Mifegymiso in the Northwest Territories is provided through the Northern Options for Women (NOW) Program*. The pharmacist will fill the prescription and bill your government/employer’s insurance (if applicable). The Department of Health and Social Services will be sent an invoice for any outstanding amount that your insurance plan does not cover, or will invoice the entire amount if you do not have any insurance coverage at all.',
+            '*The NOW program is only available in Yellowknife and Inuvik currently. The Department will cover the medical travel costs for residents that live outside of Yellowknife and Inuvik who choose treatment options using Mifegymiso and are referred by a practitioner.',
+            'Link (page 40/41): <a class="ex" href="https://www.hss.gov.nt.ca/en/services/mifegymiso-northwest-territories" target="_blank" >www.hss.gov.nt.ca/en/services/mifegymiso-northwest-territories</a>',
+
+        ],
+    },
+    {
+        id: 'C8',
+        title: 'Nova Scotia',
+        content: [
+            'Effective November 1, 2017, coverage is available for all persons in Nova Scotia with a valid health card number. Any other sources of insurance, such as a private plan, must be billed first. The method for claims submission is outlined below. Should you have any questions, please contact the Pharmacare Office.',
+            'Link (see page 41): <a class="ex" href="https://novascotia.ca/dhw/pharmacare/documents/Pharmacy-Guide.pdf" target="_blank" >novascotia.ca/dhw/pharmacare/documents/Pharmacy-Guide.pdf</a>',
+
+        ],
+    },
+    {
+        id: 'C9',
+        title: 'Nunavut',
+        content: '',
+    },
+    {
+        id: 'C10',
+        title: 'Ontario',
+        content: '',
+    },
+    {
+        id: 'C11',
+        title: 'Prince Edward Island',
+        content: '',
+    },
+    {
+        id: 'C12',
+        title: 'Quebec',
+        content: '',
+    },
+    {
+        id: 'C13',
+        title: 'Saskatchewan',
+        content: '',
+    },
+    {
+        id: 'C14',
+        title: 'Yukon',
+        content: '',
+    }
+
+
+
 
 ];
 
