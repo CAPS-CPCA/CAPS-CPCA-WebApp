@@ -905,32 +905,65 @@ const modules = [
     {
         id: 'C9',
         title: 'Nunavut',
-        content: '',
+        content: [
+            'Abortions in Nunavut are free for First Nations beneficiaries and are covered under Nunavut Healthcare. An estimated 86% of Nunavut residents are eligible for coverage through the Non-Insured Health Benefits Program.',
+            'Link: <a class="ex" href="https://www.pharmacists.ca/cpha-ca/assets/File/cpha-on-the-issues/Mifegymiso_Access_Scan.pdf" target="_blank" >www.pharmacists.ca/cpha-ca/assets/File/cpha-on-the-issues/Mifegymiso_Access_Scan.pdf</a>',
+        ],
     },
     {
         id: 'C10',
         title: 'Ontario',
-        content: '',
+        content: [
+            'Effective August 10, 2017, all Ontarians with a valid Ontario Health Insurance Plan (OHIP) and a valid prescription are eligible for Mifegymiso. This includes both Ontario Drug Benefit (ODB) recipients and non-ODB recipients. Pharmacies must ensure the eligible person’s date of birth, health card number and name (as it appears on the Ontario Health Card) are entered correctly as part of the Health Network Solution (HNS) claims submission. Mifegymiso supplied to patients with a valid prescription will be reimbursed by the ministry.',
+            'Link: <a class="ex" href="https://www.pharmacytechnologysolutions.ca/pharmaclik-rx-doc/Content/Resources/PDFs/ODBMifegymisoClaims.pdf" target="_blank" >https://www.pharmacytechnologysolutions.ca/pharmaclik-rx-doc/Content/Resources/PDFs/ODBMifegymisoClaims.pdf</a>',
+        ],
     },
     {
         id: 'C11',
         title: 'Prince Edward Island',
-        content: '',
+        content: [
+            'Medication abortion Services are offered at no charge through Sexual Health, Options & Reproductive Services (SHORS) and the Women’s Wellness Program. However, a valid PEI Health Card is required.',
+            'Link: <a class="ex" href="https://www.princeedwardisland.ca/en/information/health-pei/abortion-services" target="_blank" >www.princeedwardisland.ca/en/information/health-pei/abortion-services</a>',
+        ],
     },
     {
         id: 'C12',
         title: 'Quebec',
-        content: '',
+        content: [
+            'Anyone who is duly registered with the Régie de l’assurance maladie du Québec (Régie) and, who holds a prescription from a physician or medical resident for the claim slip, or temporary proof of eligibility for medication will have access to the Mife-Miso for abortion without cost. A person at least fourteen (14) years of age, but under eighteen (18) years of age who consents alone to the services provided by the program, in accordance with the provisions of the Civil Code, may benefit from the program even if they do not present a valid health insurance card or claim slip. Anyone eighteen (18) and over who does not present their health insurance card or a valid claim slip must pay the benefit; therefore, they may request reimbursement from the Régie using the form provided for this purpose.',
+            'Any service obtained outside Quebec is not covered by this program. An exception to this principle is when:',
+            '<ul>',
+                '<li>The medication is supplied by a pharmacist, with whom the Régie has a special agreement for this purpose.',
+                '<li>The pharmacy is in a region bordering with Quebec.',
+                '<li>No pharmacy in Quebec serves the population within a radius of 32 kilometers from this pharmacy.',
+            '</ul>',
+            'Link: <a class="ex" href="https://www.ramq.gouv.qc.ca/sites/default/files/documents/liste_med_2022-12-14_en_0.pdf" target="_blank" >https://www.ramq.gouv.qc.ca/sites/default/files/documents/liste_med_2022-12-14_en_0.pdf</a>',
+        ],
     },
     {
         id: 'C13',
         title: 'Saskatchewan',
-        content: '',
+        content: [
+            'Saskatchewan provides 100% coverage for Mifegymiso for residents eligible under the Saskatchewan Drug Plan. Claims may be submitted electronically to the Saskatchewan Drug Plan.',
+            'Link: <a class="ex" href="https://formulary.drugplan.ehealthsask.ca/SearchFormulary" target="_blank" >https://formulary.drugplan.ehealthsask.ca/SearchFormulary</a>',
+        ],
     },
     {
         id: 'C14',
         title: 'Yukon',
-        content: '',
+        content: [
+            'Through a partnership with the Yukon Hospital Corporation, the Government of Yukon is now offering universal coverage of Mifegymiso. This partnership ensures that Yukoners have low-barrier options and more equal access to abortion services.',
+            'Physician Services for Mifegymiso are available in:',
+            '<ul>',
+                '<li>Whitehorse',
+                '<li>Haines Junction',
+                '<li>Dawson City',
+                '<li>Watson Lake',
+            '</ul>',
+            'Yukon residents living in communities without resident physician services that are seeking to use Mifegymiso, will be required to travel to see a physician, who will assist in safely ending a pregnancy with this medication.',
+            'In accordance with the Travel for Medical Treatment Act and Regulations, the Medical Travel Unit will provide a travel subsidy to eligible individuals who are travelling for the purpose of obtaining Mifegymiso outside of their home community.',
+            'Link: <a class="ex" href="https://open.yukon.ca/sites/default/files/mt006-mIfe.pdf" target="_blank" >https://open.yukon.ca/sites/default/files/mt006-mIfe.pdf</a>',
+        ],
     }
 
 
