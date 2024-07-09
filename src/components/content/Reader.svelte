@@ -35,7 +35,7 @@
                 {#if module.images}
                     <img src={module.images[0].src} alt="Mifegymiso"/>
                 {/if}
-            </div>
+        </div>
         {/each}
         {/if}
     </div>

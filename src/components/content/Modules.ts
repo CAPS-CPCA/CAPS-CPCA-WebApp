@@ -872,7 +872,7 @@ const modules = [
         title: 'New Brunswick',
         content: [
             'Coverage is available through the Medical Abortion Program. Manual claims will not be accepted, and claims must be submitted online.',
-            'Link: <a class="ex" href="https://www2.gnb.ca/content/gnb/en/departments/health/DrugPlans/NBDrugPlan/ForHealthCareProfessionals/medical_abortion_claims_submission.html" target="_blank" >https://www2.gnb.ca/content/gnb/en/departments/health/DrugPlans/NBDrugPlan/ForHealthCareProfessionals/medical_abortion_claims_submission.html</a>',
+            'Link: <a class="ex" href="https://www2.gnb.ca/content/gnb/en/departments/health/DrugPlans/NBDrugPlan/ForHealthCareProfessionals/medical_abortion_claims_submission.html" target="_blank" >https://www2.gnb.ca/content/gnb/en/departments/hea.../medical_abortion_claims_submission.html</a>',
         ],
     },
     {
