@@ -1115,6 +1115,87 @@ const modules = [
             ],
             images: [{title: 'Mifegymiso', src: 'https://caps.sogc.org/wp-content/uploads/2024/01/Mifegysmo-Overview.png', alt: 'Mifegymiso' }],
     },
+    
+    {
+        id: 'M40',
+        title: 'Who Can Prescribe ',
+        content: [
+            'At the time of this writing, <strong>physicians and nurse practitioners</strong> in Canada are authorized to prescribe Mifegymiso. Midwives in all provinces and territories, except for Quebec, are not authorized to prescribe Mifegymiso but can provide medication abortion care when working closely with nurse practitioners or physicians.',
+            'Providers of medication abortion can be found through:',
+            '<ul>',
+                '<li><a class="ex" href="https://www.actioncanadashr.org/resources/services" target="_blank" >Find medication abortion services</a> portal by Action Canada for Sexual Health and Rights (please click the hyperlink and then select the option “Medical Abortion”)',
+                '<li><a class="ex" href="https://www.arcc-cdac.ca/media/2020/08/list-abortion-clinics-canada.pdf" target="_blank" >The list of abortion clinics</a> by Action Canada for Sexual Health and Rights.',
+                '<li><a class="ex" href="https://choiceconnect.ca/?gclid=EAIaIQobChMI3MjUqcS86wIVzz2tBh3JmwMFEAAYASAAEgI0cfD_BwE" target="_blank" >The Choice Connect Abortion Referral App.</a>',
+            '</ul>',
+            '<strong>Counselling and clinical assessments are required prior to prescribing Mifegymiso</strong>. Counselling is to help patients make an informed decision by understanding their options (abortion versus term pregnancy, and medication abortion versus procedural abortion). Clinical assessments are to confirm that the gestational age does not exceed the threshold (63 days by Health Canada, 70 days by the Society of Obstetricians and Gynaecologists of Canada), rule out serious conditions such as ectopic pregnancy and anemia, and determine the need for bloodwork such as Rhesus testing[6].',
+            'In cases of <strong>virtual or hybrid provision of medication abortion</strong> (also called no-touch or low-touch medication abortion), the number of visits is minimized by carrying out counselling, screening and follow- up appointments virtually over the phone or through video. The purpose is to <strong>reduce the need for patients to travel long distance or wait for days or weeks to receive abortion</strong>. However, the virtual provision of medication abortion may put patients at risk due to the lack of ultrasound screening that can provide accurate assessment of the gestational age or about the presence of ectopic pregnancy. In addition, virtual medication abortion may involve more frequent (phone) follow- up to monitor the symptoms and risk of ongoing pregnancy and ectopic pregnancy, and thus it often requires more clinical resources. For these reasons, whether virtual provision of medication abortion is possible depends on prescribers’ experiences, clinical resources, patients’ needs and patients’ safety[7].',
+        ],
+    },   
+
+    {
+        id: 'M41',
+        title: 'Where to Get the Medication',
+        content: [
+            'In most cases, <strong>pharmacists</strong> are in charge of dispensing the medication to patients, but some clinics are also authorized to dispense the medication directly to patients. Specific guidelines by the <a class="in" href="https://caps.sogc.org/wp-content/uploads/2024/01/PG1.pdf"  target="_blank">College of Pharmacies</a> may differ between provinces and territories about whether patients need to be present in- person to pick up the medication, or whether the medication can be delivered to patients via postage services.'
+        ],
+    },
+
+    {
+        id: 'M42',
+        title: 'How to Counsel Clients ',
+        content: [
+            'Counselling is important to help clients make informed decisions by understanding their options (abortion versus becoming a parent, and medication abortion versus procedural abortion). During the counselling, it is also important to understand clients’ preferences and circumstances to advise the best course of action.',
+            '<strong>Medication abortion</strong> is suitable for patients who[6]:',
+            '<ul><li>Prefer a non-invasive method.',
+                '<li>Prefer to have an abortion in the comfort of their home.',
+                '<li>Have the confidence of being able to manage the process and side effects at home.',
+                '<li>Are able to take 1 to 3 days off work or other responsibilities to undergo the abortion process.',
+                '<li>Lack means of transportation to travel to the clinic for a procedural abortion (but still need access to emergency services in event of complications).</ul>',
+            '<strong>Procedural abortion</strong> is suitable for patients who[6]:',
+            '<ul><li>Prefer to have in-person support and monitoring from healthcare professionals at a clinic or hospitals.',
+                '<li>Want to have the abortion completed quickly to return to work or other responsibilities.',
+                '<li>Are comfortable with the use of medical instruments and internal exams.',
+                '<li>Are comfortable undergoing local or general anesthesia to manage pain.',
+                '<li>Do not want to disclose the pregnancy and the abortion to those patients live with (such as partners, roommates, co-workers), as it might be difficult to conceal heavy bleeding and strong cramps.</ul>',
+            '</ul>'
+            ],
+    images: [{title: 'Abortion Options', src: images.AbortionOptions, alt: 'Abortion Options' }],
+        },
+
+        {
+            id: 'M43',
+            title: 'How to Prepare for Medication Abortion',
+            content: [
+                'Prior to taking medication abortion, clients should know how to administer the medication, what the side effects are, how to identify the signs of complications, and when to seek emergency care[2].',
+                'Do ensure that clients have the following before they take medication abortion:',
+                '<ul>',
+                    '<li>Sanitary pads and liners.',
+                    '<li>Pain medication and / or anti-nauseants (over-the-counter or prescriptions).',
+                    '<li>Access to emergency care.',
+                    '<li>Support for childcare, transportation, and groceries.',
+                '</ul>',
+            ],
+        },
+    
+        {
+            id: 'M44',
+            title: 'How to Support After Abortion',
+            content: [
+                'Clients who undergo medication abortion are required to have follow-up consultations with their prescribers to confirm the termination of the pregnancy, manage complications, receive counselling on contraception and get emotional support if needed. Clients may also require ultrasound or bloodwork to confirm the completion of the abortion and to rule out the possibility of ectopic pregnancy.',
+                '<strong>Mode of follow-up[6]:</strong>',
+                'In most situations, follow-up consultations are given 7 to 14 days after taking misoprostol (the second medication) but sometimes follow-up can take place as early as 3 days after misoprostol. The consultation can be over the phone or in-person, depending on the circumstances.',
+                '<strong>Emotional support[6]:</strong>',
+                'Emotional response after medication abortion often vary. Some people feel relieved and positive while some feel grief, sadness, or guilt, and have mixed feelings. These emotions are normal, and they may or may not be related to socioeconomic circumstances, the lack of social support, moral discomfort, and family conflict.',
+                'People undergoing medication abortion can be supported by understanding that mixed emotions are normal and by exploring coping strategies and assistance. Useful resources include:',
+                '<ul>',
+                    '<li><strong><a class="ex" href="https://exhaleprovoice.org/" target="_blank" >Exhale</a></strong>, a talk-line that provides emotional support, resources and information after abortion.',
+                    '<li><strong><a class="ex" href="https://www.all-options.org/" target="_blank" >All-Options</a></strong>, a talk-line to discuss past or current experience with abortion, adoption and parenting for people in Canada and the United States (1-888-493-0092).',
+                '</ul>',
+                    '<h2>Post-abortion Contraception:</h2>',
+                'People taking medication abortion can <strong>return to fertility rapidly</strong> and hence should consider taking contraceptives.',
+            ],
+            images: [{title: 'Post-abortion Contraception', src: images.PostAbortionContraception, alt: 'Post-abortion Contraception' }],
+        },
 
 ];
 

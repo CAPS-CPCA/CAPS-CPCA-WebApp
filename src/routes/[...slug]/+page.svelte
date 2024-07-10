@@ -42,9 +42,9 @@
         } else if (path === '/dispensing/clinical-resources' || path === '/dispenser/ressources-cliniques') {
             return getModules(['']);
         } else if (path === '/supporting%20roles/medication-abortion' || path === '/r%C3%B4les%20de%20soutien/avortement-par-medicaments') {
-            return getModules(['M39','M3']);
+            return getModules(['M39','M3','M40','M41']);
         } else if (path === '/supporting%20roles/client-counselling' || path === '/r%C3%B4les%20de%20soutien/counseling-de-la-personne') {
-            return getModules(['']);
+            return getModules(['M42','M43','M15','M33','M16','M44']);
         } else if (path === '/supporting%20roles/resources' || path === '/r%C3%B4les%20de%20soutien/ressources') {
             return getModules(['']);
         }
