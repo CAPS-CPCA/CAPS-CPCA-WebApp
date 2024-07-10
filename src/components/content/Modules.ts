@@ -11,7 +11,7 @@ const modules = [
         id: 'M2',
         title: 'Efficacy & Safety',
         content: ['<h2>Efficacy:</h2>',
-            '<ul><li>MIFE / MISO is highly effective. The risk of ongoing pregnancy is 0.9% for pregnancies up to 49 days of gestation and 3.1% for pregnancies up to 70 days of gestation[10].',
+            '<ul><li>MIFE / MISO is <strong>highly effective</strong>. The risk of ongoing pregnancy is 0.9% for pregnancies up to 49 days of gestation and 3.1% for pregnancies up to 70 days of gestation[10].',
             '<li>According to SOGC’s protocol for the provision of medication abortion via telemedicine, the patient should take a first dose of misoprostol buccally or vaginally 24-48 hours after taking mifepristone[7].',
             '<li>In addition, patients with gestational age 63 days or less should take the second dose of misoprostol if no bleeding occurs within the first 24 hours after the first misoprostol dose or as instructed by the clinician. Patients with a gestational age over 63 days should take a second dose of misoprostol 4 hours after the first dose[7].</li></ul>',
             '<h2>Side Effects and Complications[10]:</h2>',
@@ -964,10 +964,146 @@ const modules = [
             'In accordance with the Travel for Medical Treatment Act and Regulations, the Medical Travel Unit will provide a travel subsidy to eligible individuals who are travelling for the purpose of obtaining Mifegymiso outside of their home community.',
             'Link: <a class="ex" href="https://open.yukon.ca/sites/default/files/mt006-mIfe.pdf" target="_blank" >https://open.yukon.ca/sites/default/files/mt006-mIfe.pdf</a>',
         ],
-    }
+    },
+
+    {
+        id: 'M32',
+        title: 'Key Counselling Points',
+        content: [
+            'Prior to arriving at the pharmacy for MIFE / MISO, people seeking abortion, hereinafter called “patients”, will already have had a conversation with prescribers about medication abortion (MA) such as pregnancy options, eligibility, risks and efficacy[10].',
+            'When counselling patients, dispensers should provide a <strong>private space for counselling</strong>, ensure confidentiality and go over the key points below using an <strong>inclusive language</strong>[10]:',
+            '<ul>',
+                '<li>Confirm that the decision is the patients’ own, reached without coercion.',
+                '<li>Verify the written date of the prescription; if the prescription was written 7 or more days from when the prescription was brought to the pharmacy, the pharmacist may want to follow-up with the prescriber.',
+                '<li>Emphasize that in the event of an ongoing pregnancy post-MA, another dose of MISO or procedural abortion is recommended as both MIFE and MISO are teratogenic.',
+                '<li>Exclude contraindications.',
+                '<li>Review the date and time patients plan to take MIFE / MISO.',
+                '<li>Review the date that patients have a follow up with their prescriber.',
+            '</ul>',
+            '<strong>Ensure patients have the following before leaving[10]:</strong>',
+            '<ul>',
+                '<li>Sanitary pads and liners.',
+                '<li>Pain medication and/or anti-nauseants (Over-the-counter or prescription).',
+                '<li>Access to emergency care.',
+                '<li>Support for childcare, transportation, and groceries.',
+            '</ul>',
+            '<strong>Ensure patients understand how to administer MIFE / MISO, how to manage side effects, and know when and how to seek care </strong>(see below).'
+        ],
+    },
+
+    {
+        id: 'M34',
+        title: 'Optional Follow-Up',
+        content: [
+            'Patients are <strong>required</strong> to have a follow-up consultation with prescribers.',
+            'A follow-up with dispensers is optional and can take place 2 – 3 days after MISO administration. During the follow-up, dispensers can do the following[9,10]:',
+            '<ul>',
+                '<li>Verify appropriate administration',
+                '<li>Review side effect management',
+                '<li>Review contraception options',
+                '<li>Reinforce prescriber follow-up',
+                '<li>Provide emotional support',
+            '</ul>',
+            'Emotional response after MA often vary. Some people feel relieved and positive and some have feelings of grief, sadness, or guilt while others have mixed feelings. These emotions are normal, and they may or may not be related to socioeconomic circumstances, the lack of social support, moral discomfort, and family conflict.',
+            'Patients can be supported by understanding that mixed emotions are normal and by exploring coping strategies and support. Useful resources include:',
+            '<ul>',
+            '<li><strong><a class="ex" href="https://exhaleprovoice.org/" target="_blank" >Exhale</a></strong>, a talk-line that provides emotional support, resources and information after abortion.',
+            '<li><strong><a class="ex" href="https://www.all-options.org/" target="_blank" >All-Options</a></strong>, a talk-line to discuss past or current experience with abortion, adoption and parenting for people in Canada and the United States (1-888-493-0092).',
+            '</ul>',
+        ],
+    }, 
+
+    {
+        id: 'M29',
+        title: 'Drug Interactions',
+        content: [
+            'MIFE is metabolized by CYP3A4 and is also an irreversible competitive inhibitor of CYP3A4 and, to a lesser extent, of CYPs 1A, 2B, 2D6 and 2E1. As MIFE binds CYP irreversibly and is slowly eliminated from the body, caution should be taken when MIFE is administered with drugs that are CYP3A4 substrates and have narrow therapeutic range[10].',
+            'Drug interactions of importance in the clinical setting that may alter the metabolism of MIFE include[10]:',
+            '<ul>',
+                '<li>CYP3A4 inducers (glucocorticoids, macrolide antibiotics, rifampicin, carbamazepine, benzodiazepines, barbiturates, St. John’s wort).',
+                '<li>CYP3A4 inhibitors (cimetidine, ketoconazole, erythromycin, chloramphenicol, spironolactone, secobarbital, grapefruit juice).',
+            '</ul>',
+            'MIFE has antiglucocorticoid activity; it may temporarily decrease the efficacy of corticosteroid therapy, including inhaled corticosteroids[10].',
+            'As for MISO, there is no known drug interactions. Oral ingestion with food or antacids may decrease oral bioavailability[10].',
+        ],
+    },
+
+    {
+        id: 'M30',
+        title: 'Pharmacokinetics',
+        content: [
+            'MIFE taken orally shows non-linear pharmacokinetics. It is rapidly absorbed and distributed, reaching peak concentrations after 0.75 hours. It is 94-99% plasma-bound and is metabolized by CYP enzymes, mainly CYP3A4. Elimination is relatively slow with a half-life ranging between 83 and 90 hours[10].',
+            'MISO‘s pharmacokinetic profile varies substantially depending on the route of administration[10]:',
+            '<ul>',
+                '<li><strong>Buccal</strong>: time to first uterine contraction is 67 minutes, sustained for about 90 minutes and begins to decline at 5 hours after administration. The uterine response appears similar to that of vaginal administration, with less inter-individual variability.',
+                '<li><strong>Vaginal</strong>: time to first uterine contraction is 82 minutes for dry tablets and 98 minutes for moistened tablets, sustained activity is attained at 106 minutes and 128 minutes, respectively, and uterine activity begins to decline at five hours after administration.',
+                '<li><strong>Sublingual</strong>: tablets are absorbed through the mucosa within 20 minutes and MISO reaches peak serum concentration at 30 minutes. First-pass metabolism is avoided.',
+            '</ul>',
+        ],
+    },
+
+    {
+        id: 'M31',
+        title: 'Clinical Assessments',
+        content: [
+            'Prescribers will provide clinical assessments prior to prescribing MIFE / MISO. With the new guideline by SOGC for the provision of medical abortion via telemedicine (MA), prescribers may eliminate blood work or ultrasound, or both, to ensure timely provision of MA[7].',
+            '<ul>',
+                '<li><strong>Gestational age</strong> is determined using medical history, urine or serum βhCG test, or ultrasound. Ultrasound is not required to determine gestational age, unless people seeking abortion are uncertain of their last menstrual period[6,7].',
+                '<li><strong>Ectopic pregnancy</strong> is ruled out using medical history to screen for risk factors and symptoms. Ultrasound is recommended if there are significant risk factors or symptoms suggestive of ectopic pregnancy[6,7].',
+                '<li>Guideline on <strong>Rhesus testing and administration</strong> varies:',
+                '<ul>',
+                    '<li>SOGC’s Guideline on Prevention of RhD Alloimmunization: Rh administration is suggested for non-sensitized Rh D-negative individuals who have experienced threatened, spontaneous, or induced abortion after 12 weeks gestation[21].',
+                    '<li>The Society of Family Planning: Rh testing is not recommended prior to 12 weeks gestations for spontaneous, medications, or uterine aspiration abortion[8].',
+                '</ul>',
+                '<li><strong>Complete blood count</strong> to measure hemoglobin level is indicated if there is an increased risk of anemia; otherwise, it is unnecessary[7].',
+                '<li>Routine <strong>prophylactic antibiotics</strong> are not required; screen-and-treat is the preferred management strategy and it is performed by the prescriber[6].',
+            '</ul>',
 
 
+        ]
+    },
 
+    {
+        id: 'M35',
+        title: 'Facility Setup',
+        content: [
+            'Below is a general guide of the steps to be taken when initiating medication abortion (MA) services at your pharmacy. Some of these may not apply and some other considerations not listed below may be needed, depending on your pharmacy.',
+            '<ul>',
+                '<li>Review product monographs and protocols to dispense Mifegymiso.',
+                '<li>Review clinical guidelines to prescribe medication abortion if needed.',
+                '<li>Get familiar with regulations by your provincial College of Pharmacists. This <a class="in" href="https://caps.sogc.org/wp-content/uploads/2024/01/PG1.pdf"  target="_blank">summary</a> contains some but not all province-specific regulations.',
+                '<li>Prepare your own protocol, and invite other staff to review and give feedback.',
+                '<li>Become familiar with provincial insurance schemes and coverage of Mifegymiso.',
+                '<li>Explore the willingness to dispense Mifegymiso among all staff, including pharmacy assistants, technicians and administrators, address their concerns and stigma, and determine how to best initiate abortion services at your pharmacy.',
+                '<li>Review current pharmacy staffing to determine the capacity to provide MA.',
+                '<li>Determine a key person or team to be primarily responsible for MA patients.',
+                '<li>Develop, print and distribute posters to let clients and other healthcare providers know that you dispense Mifegymiso.',
+            '</ul>',
+            'Adapted from the <a class="in" href="https://caps.sogc.org/wp-content/uploads/2024/01/C43.pdf"  target="_blank">Checklist for starting medical abortion services</a> by National Abortion Federation.',
+        ],
+    },
+
+    {
+        id: 'M299',
+        title: 'Addressing Abortion Concerns',
+        content: [
+            'Below are suggestions on how to address opposition and concerns about medication abortion (MA) among your staff and colleagues, which will facilitate smooth integration of MA services into your practices[4].',
+            '<ol>',
+                '<li>First, identify providers, administrators and support staff within your setting, who might be interested and committed to offering abortion services.',
+                '<li>Initiate informal discussions with colleagues about offering the service.',
+                '<li>Consider implementing an anonymous staff survey and patient survey to get an idea of people’s thoughts and feelings about MA.',
+                '<li>Consider organizing a workshop to clarify abortion beliefs, address opposition or discomfort, and determine ways for working together to provide MA. Abortion belief clarification workshop can be adapted using:',
+                '<ul>',    
+                    '<li><a class="in" href="https://caps.sogc.org/wp-content/uploads/2024/01/C35.pdf"  target="_blank">Values clarification toolkits</a> by National Abortion Federation.',
+                    '<li><a class="in" href="https://caps.sogc.org/wp-content/uploads/2024/01/C58-10.pdf"  target="_blank">Values clarification workshop</a> materials by the Reproductive Health Access Project.',
+                '</ul>',
+                '<li>Consider establishing a planning committee to discuss goals, tasks, timelines, obstacles and solutions.',
+                '<li>Find out about other local health centres or providers who have successfully integrated abortion services into their practice and invite them to meetings, workshops and planning sessions, or invite them to provide feedback and consult on your process.',
+                '<li>Develop a protocol for staff members who feel that they are unable to participate in providing abortion services.',
+                '<li>When interviewing applicants for staff vacancies, discuss the idea of abortion. Include in the job posting that applicant should be open to all aspects of reproductive care including pregnancy termination.',
+            '</ol>',
+        ],
+    },
 
 ];
 
