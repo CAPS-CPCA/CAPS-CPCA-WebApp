@@ -4,171 +4,178 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 /* Main theme colors */
-:root {   
-    --Primary: #011627;
-    --Primary-stroke: #0F3E65;
-    --Highlight: #20A4F3;
-    --Pressed: #0E6EB8;
-    --Background: #F6F7F8;
-/* Content type colors */
-    --Prescribing: #FF3366;
-    --Dispensing: #2EC4B6;
-    --Supporting: #FB9246;
-/* Module type colors */
-    --MIFE: #2EC4B6;
-    --MISO: #FB9246;
+:root {
+  --Primary: #011627;
+  --Primary-stroke: #0f3e65;
+  --Highlight: #20a4f3;
+  --Pressed: #0e6eb8;
+  --Background: #f6f7f8;
+  /* Content type colors */
+  --Prescribing: #ff3366;
+  --Dispensing: #2ec4b6;
+  --Supporting: #fb9246;
+  /* Module type colors */
+  --MIFE: #2ec4b6;
+  --MISO: #fb9246;
 }
 
 /* Reset CSS */
-html { font-size: 14px; scroll-behavior: smooth; }
+html {
+  font-size: 14px;
+  scroll-behavior: smooth;
+}
 body {
-    margin: 0;
-    padding-top: 132px;
-    box-sizing: border-box;
-    background: var(--Background);
+  margin: 0;
+  padding-top: 132px;
+  box-sizing: border-box;
+  background: var(--Background);
 }
 
 /* Typography */
 a {
-    text-decoration: none;
-    color: var(--Background);
+  text-decoration: none;
+  color: var(--Background);
 }
 a.in {
-    color: #296ec8;
-    border-bottom: 1px solid;
+  color: #296ec8;
+  border-bottom: 1px solid;
 }
 a.in:hover {
-    color: var(--Highlight);
+  color: var(--Highlight);
 }
 a.ex {
-    font-weight: 600;
-    color: #0E6EB8;
+  font-weight: 600;
+  color: #0e6eb8;
 }
 a.ex:hover {
-    color: #20A4F3;
+  color: #20a4f3;
 }
-p, h1 {
-    margin: 0;
-    color: var(--Primary);
+p,
+h1 {
+  margin: 0;
+  color: var(--Primary);
 }
 p {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 1.25rem;
-    line-height: 1.5;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.5;
 }
 h1 {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    font-size: 2.85rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 2.85rem;
 }
 h2 {
-    margin: 0;
-    color: #3E3E3E;
-    font-family: 'Roboto';
-    font-weight: 600;
+  margin: 0;
+  color: #3e3e3e;
+  font-family: 'Roboto';
+  font-weight: 600;
 }
 span {
-    font-weight: 600;
+  font-weight: 600;
 }
 .module {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    padding: 3.5rem 4.5rem;
-    border: 1px solid #545454;
-    background: #F6F7F8;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 3.5rem 4.5rem;
+  border: 1px solid #545454;
+  background: #f6f7f8;
 }
 .module p {
-    color: var(--Primary);
-    font-size: 1.25rem;
-    font-family: 'Roboto';
-    background: none;
-    line-height: 1.75;
+  color: var(--Primary);
+  font-size: 1.25rem;
+  font-family: 'Roboto';
+  background: none;
+  line-height: 1.75;
 }
 .module a {
-    font-size: 1.25rem;
-    font-family: 'Roboto';
-    line-height: 1.75;
-    transition: 150ms ease-in-out;
+  font-size: 1.25rem;
+  font-family: 'Roboto';
+  line-height: 1.75;
+  transition: 150ms ease-in-out;
 }
 .module li {
-    list-style-type: disc;
-    color: #3E3E3E;
-    padding-left: 1.5rem;
-    font-size: 1.25rem;
-    font-family: 'Roboto';
-    line-height: 1.75;
+  list-style-type: disc;
+  color: #3e3e3e;
+  padding-left: 1.5rem;
+  font-size: 1.25rem;
+  font-family: 'Roboto';
+  line-height: 1.75;
 }
 /* UI */
-button.primary, a.primary {
-    color: var(--Background);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: fit-content;
-    font-family: "Roboto", Sans-serif;
-    font-size: 1.5rem;
-    font-weight: 400;
-    letter-spacing: 1px;
-    background-color: var(--Primary);
-    border: none;
-    border-radius: 1rem;
-    padding: 0.75rem 3.5rem;
-    transition: all 0.3s ease;
+button.primary,
+a.primary {
+  color: var(--Background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: fit-content;
+  font-family: 'Roboto', Sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  background-color: var(--Primary);
+  border: none;
+  border-radius: 1rem;
+  padding: 0.75rem 3.5rem;
+  transition: all 0.3s ease;
 }
-button.primary:hover, a.primary:hover {
-    background-color: var(--Highlight);
+button.primary:hover,
+a.primary:hover {
+  background-color: var(--Highlight);
 }
-button.primary:active, a.primary:active {
-    background-color: var(--Pressed);
+button.primary:active,
+a.primary:active {
+  background-color: var(--Pressed);
 }
 a.secondary {
-    color: var(--Primary);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Roboto", Sans-serif;
-    font-size: 1.25rem;
-    font-weight: 400;
-    border: 3px solid var(--Primary);
-    transition: all 0.3s ease;
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    text-decoration: none;
+  color: var(--Primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', Sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  border: 3px solid var(--Primary);
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
 }
 a.secondary:hover {
-    border: 3px solid var(--Highlight);
-    color: var(--Highlight);
+  border: 3px solid var(--Highlight);
+  color: var(--Highlight);
 }
 a.secondary:active {
-    border: 3px solid var(--Pressed);
-    color: var(--Pressed);
+  border: 3px solid var(--Pressed);
+  color: var(--Pressed);
 }
 a.secondary.selected {
-    color: var(--Background);
-    background-color: var(--Primary);
-    border: 3px solid var(--Primary);
+  color: var(--Background);
+  background-color: var(--Primary);
+  border: 3px solid var(--Primary);
 }
 a.ref {
-    color: var(--Primary);
+  color: var(--Primary);
 }
 a.ref:hover {
-    color: var(--Highlight);
+  color: var(--Highlight);
 }
 
 /* Layout */
 section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 div.container {
-    display: flex;
-    width: 100%;
-    max-width: 1600px;
+  display: flex;
+  width: 100%;
+  max-width: 1600px;
 }
 div.container > * {
-    flex: 1;
+  flex: 1;
 }

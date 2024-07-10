@@ -9,7 +9,9 @@
         $page.url.pathname === '/prescribing' ? goto('/prescribing/about-mifegymiso', { noScroll: true }) : null;
         $page.url.pathname === '/prescrire' ? goto('/prescrire/a-propos-du-mife-miso', { noScroll: true }) : null;
         $page.url.pathname === '/dispensing' ? goto('/dispensing/coverage-&-insurance', { noScroll: true }) : null;
+        $page.url.pathname === '/dispenser' ? goto('/dispenser/couverture-et-assurance', { noScroll: true }) : null;
         $page.url.pathname === '/supporting%20roles' ? goto('/supporting%20roles/medication-abortion', { noScroll: true }) : null;
+        $page.url.pathname === '/r%C3%B4les%20de%20soutien' ? goto('/r%C3%B4les%20de%20soutien/avortement-par-medicaments', { noScroll: true }) : null;
     }
 
     function modulePath(path:string) {
