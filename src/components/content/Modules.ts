@@ -1105,6 +1105,17 @@ const modules = [
         ],
     },
 
+    {
+        id: 'M39',
+        title: 'What is Medication Abortion',
+        content: [
+            'Abortion is <strong>legal</strong> in Canada, and patients do not require consent from partners or parents to seek an abortion. It is the <strong>second most common</strong> reproductive health service: one in three Canadian pregnancy-capable persons will seek abortion in their lifetime[2,14,15,18].',
+            'Medication abortion uses medication pills to end a pregnancy. In Canada, the medication abortion pills are packaged and sold as Mifegymiso. It is approved by <a class="in" href="https://caps.sogc.org/wp-content/uploads/2024/01/C17-2.pdf"  target="_blank">Health Canada</a> for gestational age up to 63 days, but has been shown to be <strong>safe and effective</strong> up to 70 days by the Society of Obstetricians and Gynaecologists of Canada and 77 days by the World Health Organization. The counselling and the medication are provided <strong>free-of-charge</strong> to all patients with provincial health insurance and several categories of <a class="in" href="https://caps.sogc.org/dispensing/#1"  target="_blank">federal health insurances</a>. However, it is important to note that patients eligible for healthcare in one province, who attempt to get medication abortion in another province or territory, are covered for counselling but not for the medication itself.',
+            '<strong>Mifegymiso</strong> typically comes in two boxes: a green box containing mifepristone 200 mg (MIFE) and an orange box containing misoprostol 800 mcg (MISO). MIFE helps stop a pregnancy from growing and prepares the body to empty the uterus by softening the cervix and helping the lining of the uterus to break down. MISO causes the cervix to dilate and the uterus to contract, which makes the pregnancy tissues leave the body. It is also used for abortion and for other conditions (e.g., miscarriage, postpartum hemorrhage)[14].',
+            ],
+            images: [{title: 'Mifegymiso', src: 'https://caps.sogc.org/wp-content/uploads/2024/01/Mifegysmo-Overview.png', alt: 'Mifegymiso' }],
+    },
+
 ];
 
 
