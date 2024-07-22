@@ -19,6 +19,14 @@ import AnemiaSTIOthers from './anemia-sti-others.png'
 import PostAbortionFollowUp from './post-abortion-follow-up.png'
 import AbortionComplete from './abortion-completion-assessment.png'
 import PostAbortionContraception from './post-abortion-contraception.png'
+import MifegysmoOverviewFr from './mifegysmo-overview-fr.png'
+import AbortionOptionsFr from './abortion-options-fr.png'
+import AdminInstructionsFr from './administrator-instruction-fr.png'
+import SideEffectsManageFr from './side-effects-management-fr.png'
+import AnemiaSTIOthersFr from './anemia-sti-others-fr.png'
+import PostAbortionFollowUpFr from './post-abortion-follow-up-fr.png'
+import AbortionCompleteFr from './abortion-completion-assessment-fr.png'
+import PostAbortionContraceptionFr from './post-abortion-contraception-fr.png'
 
 import PrescribingIcon from './prescribing-icon.png'
 import DispensingIcon from './dispensing-icon.png'
@@ -58,4 +66,12 @@ export const images = {
   PostAbortionFollowUp,
   AbortionComplete,
   PostAbortionContraception,
+  MifegysmoOverviewFr,
+  AbortionOptionsFr,
+  AdminInstructionsFr,
+  SideEffectsManageFr,
+  AnemiaSTIOthersFr,
+  PostAbortionFollowUpFr,
+  AbortionCompleteFr,
+  PostAbortionContraceptionFr,
 }
