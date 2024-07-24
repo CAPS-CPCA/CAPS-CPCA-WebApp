@@ -2368,12 +2368,57 @@ const modules = [
         },
 
         {
+            id: 'M39',
+            title: 'À propos du MIFÉ-MISO',
+            content: [
+            'L’avortement est <strong>légal</strong> au Canada et les personnes n’ont pas besoin du consentement de leur partenaire ou d’un parent pour avorter. Il s’agit du <strong>deuxième service de santé reproductive le plus répandu</strong> au Canada: le tiers des personnes ayant la capacité d’être enceinte auront recours à un avortement au cours de leur vie.[2,14,15,18].',
+            'L’avortement par médicaments utilise des pilules médicamenteuses pour mettre fin à une grossesse. Au Canada, les pilules abortives médicamenteuses sont combinées et vendues sous le nom de Mifegymiso. Le médicament est approuvé par Santé Canada jusqu’à 63 jours d’âge gestationnel, mais s’est avéré <strong>sécuritaire et efficace</strong> jusqu’à 70 jours par La SOGC du Canada et 77 jours par l’Organisation mondiale de la santé (OMS). Le counselling et les médicaments sont fournis <strong>gratuitement</strong> à toutes les personnes bénéficiant d’une assurance maladie provinciale et de plusieurs catégories <a class="in" href="https://caps.sogc.org/dispensing/#1"  target="_blank">d’assurance maladie fédérale</a>. Cependant, il est important de noter que les personnes admissibles aux soins de santé dans une province, qui tentent d’accéder à un avortement par médicaments dans une autre province ou territoire, sont admissibles au counseling, mais pas aux médicaments eux-mêmes.',
+            'Mifegymiso se présente généralement en deux boîtes: une boîte verte contenant 200 mg de mifépristone (MIFÉ) et une boîte orange contenant 800 mcg de misoprostol (MISO). Le MISO est utilisé pour l’avortement et pour d’autres conditions (par exemple, fausse couche, hémorragie post-partum). La MIFÉ aide à arrêter la croissance d’une grossesse et prépare le corps à vider l’utérus en ramollissant le col et en aidant la muqueuse de l’utérus à se décomposer. Le MISO provoque la dilatation du col et la contraction de l’utérus, provoquant ainsi la sortie des tissus issus de la grossesse du corps[14].',
+        ],
+            images: [{title: 'Mifegymiso', src: images.MifegysmoOverviewFr, alt: 'Mifegymiso' }],
+        },
+
+        {
+            id: 'M40',
+            title: 'Qui peut prescrire',
+            content: [
+            'Au moment d’écrire ces lignes, <strong>les médecins et les infirmières praticiennes spécialisées</strong> au Canada sont autorisés à prescrire Mifegymiso. <strong>Les sages-femmes</strong> de toutes les provinces et territoires, à l’exception du Québec, ne sont pas autorisées à prescrire Mifegymiso, mais elles peuvent prodiguer des soins d’avortement par médicaments lorsqu’elles travaillent en étroite collaboration avec des infirmières praticiennes spécialisées ou des médecins.',
+            'Les prestataires d’avortement par médicaments peuvent être trouvés via:',
+            '<ul>',
+                '<li><a class="ex" href="https://www.actioncanadashr.org/resources/services" target="_blank" >Le portail des services d’avortement par médicaments</a> d’Action Canada pour la santé et les droits sexuels (cliquer sur l’hyperlien puis sélectionner l’option “Avortement par médicaments”)',
+                '<li><a class="ex" href="https://www.arcc-cdac.ca/media/2020/08/list-abortion-clinics-canada.pdf" target="_blank" >La liste des cliniques</a> d’Action Canada pour la santé et les droits sexuels.',
+                '<li><a class="ex" href="https://choiceconnect.ca/?gclid=EAIaIQobChMI3MjUqcS86wIVzz2tBh3JmwMFEAAYASAAEgI0cfD_BwE" target="_blank" >Application de référence à l’avortement de Choice Connect.</a>',
+            '</ul>',
+            '<strong>Le counseling et l’évaluation clinique sont nécessaires avant de prescrire Mifegymiso.</strong> Le counseling vise à aider les personnes à prendre une décision éclairée en comprenant leurs options (avortement versus poursuivre la grossesse, et avortement par médicaments versus avortement par instruments). Les évaluations cliniques visent à confirmer que l’âge gestationnel ne dépasse pas le seuil (63 jours selon Santé Canada, 70 jours selon la Société des obstétriciens et gynécologues du Canada), pour exclure des conditions graves telles que la grossesse ectopique et l’anémie, et pour déterminer la nécessité d’analyses sanguines telles que le test du facteur Rh[6].',
+            'Dans les cas de <strong>soins virtuels ou hybride d’avortement par médicaments</strong> (également appelé avortement sans contact ou à faible contact), le nombre de visites est minimisé en effectuant des rendez-vous de counseling, de dépistage et de suivi virtuellement par téléphone ou par vidéo. L’objectif est de <strong>réduire la nécessité de parcourir de longues distances ou des délais pour avorter</strong>. Cependant, les soins virtuels de l’avortement par médicaments peuvent mettre les personnes à risque en l’absence d’échographie, qui permet une évaluation précise de l’âge gestationnel ou de la présence d’une grossesse ectopique. De plus, l’avortement par médicaments virtuel peut nécessiter un suivi (téléphonique) plus fréquent pour surveiller les symptômes et le risque de grossesse évolutive et de grossesse ectopique, nécessitant ainsi souvent davantage de ressources cliniques. Pour ces raisons, la possibilité de proposer un avortement par médicaments via télémédecine dépend de l’expérience des prescripteurs, des ressources cliniques, des besoins des personnes et de leur sécurité[7].',
+          ],
+        },
+
+        {
+            id: 'M41',
+            title: 'Où obtenir le médicament',
+            content: [
+            'Dans la plupart des cas, <strong>les pharmaciens</strong> sont responsables de la délivrance des médicaments aux personnes, mais certaines cliniques sont également autorisées à délivrer les médicaments directement. Les lignes directrices des <a class="in" href="https://caps.sogc.org/wp-content/uploads/2024/01/PG1.pdf"  target="_blank">Ordres professionnels des pharmaciens</a> de chaque province ou territoire peuvent varier quant à savoir si les personnes doivent récupérer leurs médicaments en personne ou si les médicaments peuvent être livrés aux personnes par des services postaux.', 
+          ],
+        },
+
+        {
             id: '',
             title: '',
             content: [
                     '',
           ],
         },
+
+
+        {
+            id: '',
+            title: '',
+            content: [
+                    '',
+          ],
+        },
+
 
 
         
