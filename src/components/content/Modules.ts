@@ -2403,23 +2403,66 @@ const modules = [
         },
 
         {
-            id: '',
-            title: '',
+            id: 'M42',
+            title: 'Comment conseiller la personne',
             content: [
-                    '',
+            'Le counseling est important pour aider les personnes à prendre des décisions éclairées en comprenant leurs options (avortement versus parentalité, et avortement par médicaments versus par instruments). Lors du counseling, il est également important de comprendre les préférences et les circonstances des personnes afin de les conseiller sur la meilleure marche à suivre.',
+            '<strong>L’avortement par médicaments</strong> convient aux personnes qui[6]:',
+            '<ul>',
+                '<li>Préfèrent une méthode non-invasive.',
+                '<li>Préfèrent être dans le confort de leur foyer.',
+                '<li>Ont la confiance de pouvoir gérer le processus et les effets secondaires à la maison.',
+                '<li>Sont en mesure de prendre 1 à 3 jours de congé ou d’autres responsabilités pour procéder à l’avortement.',
+                '<li>Manquent de transport pour se rendre à la clinique pour un avortement par instruments (mais nécessite néanmoins l’accès aux services d’urgence en cas de complications).',
+            '</ul>',
+            '<strong>L’avortement par instruments</strong> convient aux personnes qui[6]:',
+            '<ul>',
+                '<li>Préfèrent bénéficier du soutien en personne ainsi qu’une surveillance par des professionnels de la santé en clinique ou à l’hôpital.',
+                '<li>Souhaitent que l’avortement soit fourni rapidement afin de pouvoir reprendre le travail ou d’autres responsabilités.',
+                '<li>Se sentent à l’aise avec l’examen gynécologique et l’utilisation d’instruments médicaux.',
+                '<li>Sont confortable avec une anesthésie locale ou générale pour gérer la douleur.',
+                '<li>Ne veulent pas divulguer la grossesse et l’avortement aux personnes avec qui elles vivent (comme les partenaires, les colocataires, les collègues de travail), car il pourrait être difficile de cacher des saignements abondants et des crampes fortes.',
+            '</ul>',
           ],
+          images: [{title: 'Options d’avortement', src: images.AbortionOptionsFr, alt: 'Options d’avortement' }],
         },
 
 
         {
-            id: '',
-            title: '',
+            id: 'M43',
+            title: 'Se préparer à l’avortement par médicaments',
             content: [
-                    '',
+            'Avant de procéder à un avortement par médicaments, la personne doit savoir comment administrer le médicament, quels sont les effets secondaires, comment identifier les signes de complications et quand demander des soins d’urgence[2].',
+            'S’assurer que la personne dispose des éléments suivants avant de procéder à un avortement par médicaments:',
+            '<ul>',
+                '<li>Serviettes et protections hygiéniques.',
+                '<li>Médicaments contre la douleur et/ou contre les nausées (en vente libre ou sur ordonnance).',
+                '<li>Accès aux soins d’urgence.',
+                '<li>Aide à la garde d’enfants, au transport et à l’épicerie.',
+            '</ul>',
+
           ],
         },
 
-
+        {
+            id: 'M44',
+            title: 'Offrir du soutien post-avortement',
+            content: [
+            'Les personnes qui choisissent un avortement par médicaments devraient avoir un suivi avec leur professionnel de la santé pour confirmer la complétion de l’avortement, gérer les complications, recevoir du counseling en matière de contraception et obtenir un soutien émotionnel si nécessaire. Les personnes peuvent également avoir besoin d’une échographie ou d’analyses sanguines pour confirmer que l’avortement est complet et exclure la possibilité d’une grossesse ectopique.',
+            '<h2>Mode de suivi[6]:</h2>',
+            'Dans la plupart des situations, les suivis sont prévus 7 à 14 jours après la prise du misoprostol (le deuxième médicament), mais parfois le suivi peut avoir lieu dès 3 jours après le misoprostol. Le suivi peut se faire par téléphone ou en personne, selon les circonstances.',
+            '<h2>Soutien émotionnel[6]:</h2>',
+            'Les réactions émotionnelles après un avortement par médicaments varient souvent. Certaines personnes se sentent soulagées et positives, tandis que d’autres éprouvent des sentiments de deuil, de tristesse ou de culpabilité, et d’autres encore éprouvent des sentiments mitigés. Ces émotions sont normales et peuvent être liées ou non aux circonstances socio-économiques, au manque de soutien social, au malaise moral et aux conflits familiaux.',
+            'Les personnes qui choisissent un avortement par médicaments peuvent être soutenues en affirmant que les émotions mitigées sont normales et en explorant des stratégies d’adaptation et du soutien. Les ressources utiles incluent:',
+            '<ul>',
+                '<li><strong><a class="ex" href="https://exhaleprovoice.org/" target="_blank" >Exhale</a></strong>, une ligne téléphonique qui fournit un soutien émotionnel, des ressources et des informations après un avortement.',
+                '<li><strong><a class="ex" href="https://www.all-options.org/" target="_blank" >All-Options</a></strong>, une ligne de discussion pour discuter des expériences passées ou actuelles en matière d’avortement, d’adoption et de parentalité pour les personnes au Canada et aux États-Unis (1-888-493-0092).',
+            '</ul>',
+            '<h2>Contraception post-avortement:</h2>',
+            'Les personnes qui subissent un avortement par médicaments peuvent retrouver rapidement leur fertilité et devraient donc envisager de prendre une contraception.',
+          ],
+          images: [{title: 'Contraception post-avortement', src: images.PostAbortionContraceptionFr, alt: 'Contraception post-avortement' }],
+        },
 
         
 
