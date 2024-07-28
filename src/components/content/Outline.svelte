@@ -3,6 +3,7 @@
     import { page } from '$app/stores';
     import { getOutline } from './Outline';
 
+    let outlineVariant: 'content' | 'faq' = 'content';
     let isCollapsed = false;
     
     $: outlineClass = 'atTop';
@@ -28,6 +29,7 @@
     $: current = $page.url.pathname;
     $: outlineType = '/'+current.split('/')[1];
     $: outline = getOutline(outlineType) || getOutline('/prescribing');
+    $: if (outlineType === '/faq') outlineVariant = 'faq';
 
     const handleCollapse = () => {
         isCollapsed = !isCollapsed;
@@ -60,26 +62,44 @@
     }
 </script>
 
-<div class="outline" class:collapsed={isCollapsed} >
-    <button class="arrow" on:click={handleCollapse} class:collapsed={isCollapsed} aria-label="Toggle Collapse"></button>
-    {#if !isCollapsed}
-    <h1>Outline</h1>
-    <div class={outlineClass}>
-    {#each Object.keys(outline) as section}
-            <ul>
-                {#each Object.keys(outline[section]) as page}
-                    <li><a href={outline[section][page].href} class="secondary" class:selected={(outline[section][page].href).includes(current)}>{outline[section][page].title}</a></li>
-                    <div class="bulletin" style={(outline[section][page].href).includes(current) ? '' : 'display: none;'}>
-                        {#each Object.keys(outline[section][page].modules) as module}
-                        <li><a href={'#'+module} class="tertiary" class:selected={false}>{outline[section][page].modules[module]}</a></li>
-                        {/each}
-                    </div>
-                {/each}
-            </ul>
-        {/each}
+{#if outlineVariant === 'content'}
+    <div class="outline" class:collapsed={isCollapsed}>
+        <button class="arrow" on:click={handleCollapse} class:collapsed={isCollapsed} aria-label="Toggle Collapse"></button>
+        {#if !isCollapsed}
+        <h1>Outline</h1>
+        <div class={outlineClass}>
+        {#each Object.keys(outline) as section}
+                <ul>
+                    {#each Object.keys(outline[section]) as page}
+                        <li><a href={outline[section][page].href} class="secondary" class:selected={(outline[section][page].href).includes(current)}>{outline[section][page].title}</a></li>
+                        <div class="bulletin" style={(outline[section][page].href).includes(current) ? '' : 'display: none;'}>
+                            {#each Object.keys(outline[section][page].modules) as module}
+                            <li><a href={'#'+module} class="tertiary" class:selected={false}>{outline[section][page].modules[module]}</a></li>
+                            {/each}
+                        </div>
+                    {/each}
+                </ul>
+            {/each}
+        </div>
+        {/if}
     </div>
-    {/if}
-</div>
+{:else if outlineVariant === 'faq'}
+    <div class="outline" class:collapsed={isCollapsed}>
+        <button class="arrow" on:click={handleCollapse} class:collapsed={isCollapsed} aria-label="Toggle Collapse"></button>
+        {#if !isCollapsed}
+        <h1>Outline</h1>
+        <div class={outlineClass}>
+        {#each Object.keys(outline) as section}
+                <ul>
+                    {#each Object.keys(outline[section]) as page}
+                        <li><a href={outline[section][page].href} class="secondary">{outline[section][page].title}</a></li>
+                    {/each}
+                </ul>
+            {/each}
+        </div>
+        {/if}
+    </div>
+{/if}
 
 <style>
     .tertiary {

@@ -1,8 +1,8 @@
 <script lang='ts'>
+    import { data } from '$lib/data';
     import { goto } from '$app/navigation';
     import { page } from '$app/stores';
     import { browser } from '$app/environment';
-    import { getModules } from '../../components/content/Modules';
     import Reader from "../../components/content/Reader.svelte";
 
     $: if (browser) {
@@ -14,41 +14,45 @@
         $page.url.pathname === '/r%C3%B4les%20de%20soutien' ? goto('/r%C3%B4les%20de%20soutien/avortement-par-medicaments', { noScroll: true }) : null;
     }
 
+    function getModules(ids: string[], modules: any) {
+        return modules.filter((module: any) => ids.includes(module.id));
+    }
+
     function modulePath(path:string) {
         if (path === '/prescribing/about-mifegymiso' || path === '/prescrire/a-propos-du-mife-miso') {
-            return getModules(['M1','M2','M3']);
+            return getModules(['M1', 'M2', 'M3'], $data.modules);
         } else if (path === '/prescribing/patient-counselling' || path === '/prescrire/counseling-de-la-personne') {
-            return getModules(['M5','M6','M14','M15','M33','M16']);
+            return getModules(['M5','M6','M14','M15','M33','M16'], $data.modules);
         } else if (path === '/prescribing/medical-evaluation' || path === '/prescrire/evaluation-medicale') {
-            return getModules(['M8','M9','M10','M11','M12','M13']);
+            return getModules(['M8','M9','M10','M11','M12','M13'], $data.modules);
         } else if (path === '/prescribing/assessment' || path === '/prescrire/evaluation-post-avortement') {
-            return getModules(['M17','M18','M19','M20']);
+            return getModules(['M17','M18','M19','M20'], $data.modules);
         } else if (path === '/prescribing/virtual-hybrid-care' || path === '/prescrire/soins-virtuels-hybrides') {
-            return getModules(['M21','M22','M14', 'M23']);
+            return getModules(['M21','M22','M14', 'M23'], $data.modules);
         } else if (path === '/prescribing/billing-codes' || path === '/prescrire/codes-de-facturation') {
-            return getModules(['B1','B2','B3','B4','B5','B6','B7','B8','B9','B10','B11','B12','B13']);
+            return getModules(['B1','B2','B3','B4','B5','B6','B7','B8','B9','B10','B11','B12','B13'], $data.modules);
         } else if (path === '/prescribing/regulations-insurance-inclusivity' || path === '/prescrire/reglementation-assurance-inclusivite') {
-            return getModules(['M26','M27','M28','C1','M36','M37','M38']);
+            return getModules(['M26','M27','M28','C1','M36','M37','M38'], $data.modules);
         } else if (path === '/prescribing/clinical-resources' || path === '/prescrire/ressources-cliniques') {
-            return getModules(['M4','M1','M3','M4','M5']);    
+            return getModules(['M4','M1','M3','M4','M5'], $data.modules);
         } else if (path === '/dispensing/coverage-&-insurance' || path === '/dispenser/couverture-et-assurance') {
-            return getModules(['C1','M36','C2','C3','C4','C5','C6','C7','C8','C9','C10','C11','C12','C13','C14']);
+            return getModules(['C1','M36','C2','C3','C4','C5','C6','C7','C8','C9','C10','C11','C12','C13','C14'], $data.modules);
         } else if (path === '/dispensing/patient-communication' || path === '/dispenser/communication') {
-            return getModules(['M32','M15','M33','M16','M19','M34','M20']);
+            return getModules(['M32','M15','M33','M16','M19','M34','M20'], $data.modules);
         } else if (path === '/dispensing/about-mifegymiso' || path === '/dispenser/a-propos-du-mife-miso') {
-            return getModules(['M1','M29','M30','M2','M3','M31']);
+            return getModules(['M1','M29','M30','M2','M3','M31'], $data.modules);
         } else if (path === '/dispensing/regulations-inclusivity' || path === '/dispenser/reglements-inclusivite') {
-            return getModules(['M26','M35','M299','M37','M38']);
+            return getModules(['M26','M35','M299','M37','M38'], $data.modules);
         } else if (path === '/dispensing/clinical-resources' || path === '/dispenser/ressources-cliniques') {
-            return getModules(['']);
+            return getModules([''], $data.modules);
         } else if (path === '/supporting%20roles/medication-abortion' || path === '/r%C3%B4les%20de%20soutien/avortement-par-medicaments') {
-            return getModules(['M39','M3','M40','M41']);
+            return getModules(['M39','M3','M40','M41'], $data.modules);
         } else if (path === '/supporting%20roles/client-counselling' || path === '/r%C3%B4les%20de%20soutien/counseling-de-la-personne') {
-            return getModules(['M42','M43','M15','M33','M16','M44']);
+            return getModules(['M42','M43','M15','M33','M16','M44'], $data.modules);
         } else if (path === '/supporting%20roles/resources' || path === '/r%C3%B4les%20de%20soutien/ressources') {
-            return getModules(['']);
+            return getModules([''], $data.modules);
         }
-        return getModules(['M1','M2','M3','M4','M5']);
+        return getModules(['M1','M2','M3','M4','M5'], $data.modules);
     }
     
     $: path = $page.url.pathname;

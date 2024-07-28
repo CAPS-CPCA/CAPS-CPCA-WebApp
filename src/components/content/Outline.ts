@@ -450,6 +450,41 @@ const outlines: { [key: string]: Outline } = {
       },
     ],
   },
+  '/faq': {
+    subpages: [
+      {
+        href: '/faq',
+        title: 'Medication',
+        modules: {},
+      },
+      {
+        href: '/faq',
+        title: 'Patient Counselling',
+        modules: {},
+      },
+      {
+        href: '/faq',
+        title: 'Side effects & Complications',
+        modules: {},
+      },
+      {
+        href: '/faq',
+        title: 'Breastfeeding',
+        modules: {},
+      },
+      {
+        href: '/faq',
+        title: 'Multiple Gestation',
+        modules: {},
+      },
+      {
+        href: '/faq',
+        title: 'Methadone',
+        modules: {},
+      },
+    ],
+    resources: [],
+  },
 }
 
 export function getOutline(path: string): Outline {
