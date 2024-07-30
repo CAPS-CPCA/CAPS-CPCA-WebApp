@@ -17,9 +17,9 @@ export function redirect(url: string) {
       '/prescrire': '/prescrire/a-propos-du-mife-miso',
       '/dispensing': '/dispensing/coverage-&-insurance',
       '/dispenser': '/dispenser/couverture-et-assurance',
-      '/supporting%20roles': '/supporting%20roles/medication-abortion',
-      '/r%C3%B4les%20de%20soutien':
-        '/r%C3%B4les%20de%20soutien/avortement-par-medicaments',
+      '/supporting-roles': '/supporting-roles/medication-abortion',
+      '/r%C3%B4les-de-soutien':
+        '/r%C3%B4les-de-soutien/avortement-par-medicaments',
     }
     const newPath = pathMap[url]
     if (newPath) {
@@ -36,10 +36,10 @@ function togglePath() {
     '/prescrire': '/prescribing',
     '/dispensing': '/dispenser',
     '/dispenser': '/dispensing',
-    '/supporting%20roles': '/r%C3%B4les%20de%20soutien',
-    '/r%C3%B4les%20de%20soutien': '/supporting%20roles',
-    '/about': '/%C3%A0%20propos',
-    '/%C3%A0%20propos': '/about',
+    '/supporting-roles': '/r%C3%B4les-de-soutien',
+    '/r%C3%B4les-de-soutien': '/supporting-roles',
+    '/about': '/%C3%A0-propos',
+    '/%C3%A0-propos': '/about',
   }
 
   for (const key in pathMap) {

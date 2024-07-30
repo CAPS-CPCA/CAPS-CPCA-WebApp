@@ -1,5 +1,5 @@
 <script lang='ts'>
-  import { images } from '../assets';
+    import { images } from '../assets'
     import { data } from '../lib/data'
     $: hero = $data.hero;
     export let variant: 'home' | 'content' | 'icon';

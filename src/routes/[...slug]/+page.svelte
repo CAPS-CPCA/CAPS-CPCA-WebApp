@@ -39,12 +39,12 @@
             '/dispenser/reglements-inclusivite': ['M26', 'M35', 'M299', 'M37', 'M38'],
             '/dispensing/clinical-resources': [''],
             '/dispenser/ressources-cliniques': [''],
-            '/supporting%20roles/medication-abortion': ['M39', 'M3', 'M40', 'M41'],
-            '/r%C3%B4les%20de%20soutien/avortement-par-medicaments': ['M39', 'M3', 'M40', 'M41'],
-            '/supporting%20roles/client-counselling': ['M42', 'M43', 'M15', 'M33', 'M16', 'M44'],
-            '/r%C3%B4les%20de%20soutien/counseling-de-la-personne': ['M42', 'M43', 'M15', 'M33', 'M16', 'M44'],
-            '/supporting%20roles/resources': [''],
-            '/r%C3%B4les%20de%20soutien/ressources': ['']
+            '/supporting-roles/medication-abortion': ['M39', 'M3', 'M40', 'M41'],
+            '/r%C3%B4les-de-soutien/avortement-par-medicaments': ['M39', 'M3', 'M40', 'M41'],
+            '/supporting-roles/client-counselling': ['M42', 'M43', 'M15', 'M33', 'M16', 'M44'],
+            '/r%C3%B4les-de-soutien/counseling-de-la-personne': ['M42', 'M43', 'M15', 'M33', 'M16', 'M44'],
+            '/supporting-roles/resources': [''],
+            '/r%C3%B4les-de-soutien/ressources': ['']
         };
 
         return getModules(modulePaths[path] || [''], $data.modules);

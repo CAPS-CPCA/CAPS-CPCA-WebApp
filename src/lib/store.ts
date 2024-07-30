@@ -155,7 +155,7 @@ const modules: { [key: string]: Modules } = {
         '<li>Confirm that the decision is the patient’s own, reached without coercion.',
         '<li>Confirm the patient’s understanding that <strong>medication abortion is irreversible</strong> and that the patients must take an additional dose of the second medication or undergo procedural abortion in case of ongoing pregnancy.',
         '<li>Review the timing of examinations (ultrasound, blood tests, if needed), medications and follow-up appointments.',
-        '<li>Discuss <a class="in" href="https://caps.sogc.org/prescribing/?heading=Post-abortion%20Assessment&subheading=Post-abortion%20Contraception#4" target="_blank">post-abortion contraception options</a>.</ul>',
+        '<li>Discuss <a class="in" href="https://caps.sogc.org/prescribing/?heading=Post-abortion-Assessment&subheading=Post-abortion-Contraception#4" target="_blank">post-abortion contraception options</a>.</ul>',
       ],
     },
 
@@ -440,19 +440,19 @@ const modules: { [key: string]: Modules } = {
         'The following assessments should be carried out[7,19]:',
         '<ol><li><strong>Review pregnancy options counselling.</strong>',
         '<li><strong>Establish pregnancy and gestational age.</strong>',
-        '<li><strong>Exclude </strong><a class="in" href="https://caps.sogc.org/prescribing/?heading=About%20Mifegymiso&subheading=Indication%20&%20Contraindications#3" target="_blank" >contraindications</a>.',
+        '<li><strong>Exclude </strong><a class="in" href="https://caps.sogc.org/prescribing/?heading=About-Mifegymiso&subheading=Indication-&-Contraindications#3" target="_blank" >contraindications</a>.',
         '<li><strong>Assess the need for an ultrasound to determine gestational age and the location of pregnancy[5]:</strong>',
         '<ul><li>According to <a class="in" href="https://caps.sogc.org/wp-content/uploads/2024/01/C14.pdf" target="_blank" >SOGC’s protocol on medication abortion</a> via telemedicine, ultrasound should be obtained if LMP is uncertain, LMP is over 70 days, and the signs, symptoms and risk factors of ectopic pregnancy (EP) are present.',
-        '<li>Medication abortion performed without ultrasound is, by definition, <a class="in" href="https://caps.sogc.org/prescribing/?heading=Pre-abortion%20Medical%20Evaluation&subheading=Pregnancies%20of%20Unknown%20Location" target="_blank">pregnancy of unknown location</a> and should be managed accordingly. Though the risk of unrecognized EP is low, close follow-up is required to ensure completion of the medication abortion.</ul>',
+        '<li>Medication abortion performed without ultrasound is, by definition, <a class="in" href="https://caps.sogc.org/prescribing/?heading=Pre-abortion-Medical-Evaluation&subheading=Pregnancies-of-Unknown-Location" target="_blank">pregnancy of unknown location</a> and should be managed accordingly. Though the risk of unrecognized EP is low, close follow-up is required to ensure completion of the medication abortion.</ul>',
         '<li><strong>Assess the need for blood work to measure hemoglobin[7]:</strong>',
         '<ul><li>According to Health Canada, hemoglobin should be over 9.5 g / dL before starting MA.',
         '<li>Screen patients for increased risk of anemia through a detailed medical history.',
         '<li>If patients are suspected to have an increased risk of anemia, complete blood count is indicated. Otherwise, measuring hemoglobin is unnecessary.</ul>',
-        '<li><strong>Assess the need for blood work to determine </strong><a class="in" href="https://caps.sogc.org/prescribing/?heading=Pre-abortion%20Medical%20Evaluation&subheading=Rhesus%20Screening#5" target="_blank" >Rhesus status (Rh)</a>[7]:',
+        '<li><strong>Assess the need for blood work to determine </strong><a class="in" href="https://caps.sogc.org/prescribing/?heading=Pre-abortion-Medical-Evaluation&subheading=Rhesus-Screening#5" target="_blank" >Rhesus status (Rh)</a>[7]:',
         '<ul><li>As explained elsewhere, guidelines on Rh status have been updated and vary between organizations.',
         '<li>According to the <strong><a class="ex" href="https://www.jogc.com/article/S1701-2163(24)00260-3/abstract" >SOGC’s Guideline on Prevention of RhD Alloimmunization</a></strong> published in 2024, for non-sensitized Rh D-negative individuals who have experienced threatened, spontaneous or induced abortion after 12 weeks gestation, administration of 300 μg of Rho(D) immune globulin is suggested.',
         '<li><a class="in" href="https://caps.sogc.org/wp-content/uploads/2024/01/C6.pdf" target="_blank" >The National Abortion Federation</a>, the <a class="in" href="https://caps.sogc.org/wp-content/uploads/2024/01/SFP1.pdf" target="_blank" >Society of Family Planning</a> and the <a class="in" href="https://caps.sogc.org/wp-content/uploads/2024/01/WHO1.pdf" target="_blank" >World Health Organization</a> all recommend Rh testing and administration for patients who are 12 weeks gestation or beyond, but not for patients who are under 12 weeks LMP.</ul>',
-        '<li><strong>Assess the need for</strong> <a class="in" href="https://caps.sogc.org/prescribing/?heading=Pre-abortion%20Medical%20Evaluation&subheading=Anemia,%20STIs%20&%20Others" target="_blank">STI testing</a>[7]:',
+        '<li><strong>Assess the need for</strong> <a class="in" href="https://caps.sogc.org/prescribing/?heading=Pre-abortion-Medical-Evaluation&subheading=Anemia,-STIs-&-Others" target="_blank">STI testing</a>[7]:',
         '<ul><li>Offer testing for chlamydia and gonorrhea if patients come to office.',
         '<li>Otherwise, evaluate the risk of STIs and consider remote testing if risk factors are present, and discuss the potential need for antibiotic treatment.</ul></ol>',
       ],
@@ -471,7 +471,7 @@ const modules: { [key: string]: Modules } = {
         '<li><strong>If history suggests successful abortion, no warning signs, and no current symptoms of pregnancy, normal bleeding and pain:</strong> arrange the blood test to confirm serum bhCG level if the appointment is in-person or instruct the patient to perform qualitative urine pregnancy test.',
         '<strong>Serum bhCG[4]</strong>: If the serum bhCG level drops by >50% at Day 3 after MISO or 80% at Day 7-14 after MIFE / MISO administration, the successful completion of abortion is confirmed and no further appointment is needed. Ultrasound should be ordered if 14 days have passed and a drop by 80% has not been reached.',
         '<strong>Urine bhCG[7]:</strong>',
-        '<li>Offer to discuss <a class="in" href="https://caps.sogc.org/prescribing/?heading=Post-abortion%20Assessment&subheading=Post-abortion%20Contraception#4" target="_blank" >contraception options</a> and provide emotional support if needed. Resources for emotional support include:',
+        '<li>Offer to discuss <a class="in" href="https://caps.sogc.org/prescribing/?heading=Post-abortion-Assessment&subheading=Post-abortion-Contraception#4" target="_blank" >contraception options</a> and provide emotional support if needed. Resources for emotional support include:',
         '<ul>',
         '<li><strong><a class="ex" href="https://exhaleprovoice.org/" target="_blank">Exhale</a></strong>, a talk-line that provides emotional support, resources and information after abortion.',
         '<li><strong><a class="ex" href="https://www.all-options.org/" target="_blank">All-Options</a></strong>, a talk-line to discuss past or current experience with abortion, adoption and parenting for people in Canada and the United States (1-888-493-0092).',
@@ -715,9 +715,9 @@ const modules: { [key: string]: Modules } = {
         'Medication abortion uses medication pills to end a pregnancy. In Canada, the medication abortion pills are packaged and sold as Mifegymiso.',
         '<ul>',
         '<li>Mifegymiso is approved by Health Canada for gestational age up to 63 days, but has been shown by SOGC to be <strong>safe and effective</strong> for up to 70 days.',
-        '<li>It is provided <strong>free-of-charge</strong> to all patients with provincial health insurance and several categories of <a class="in" href="https://caps.sogc.org/prescribing/?heading=Regulations,%20Insurance%20&%20Inclusivity%20Toolkits&subheading=Federal%20Insurance%20Schemes#1" target="_blank">federal health insurances</a>.',
+        '<li>It is provided <strong>free-of-charge</strong> to all patients with provincial health insurance and several categories of <a class="in" href="https://caps.sogc.org/prescribing/?heading=Regulations,-Insurance-&-Inclusivity-Toolkits&subheading=Federal-Insurance-Schemes#1" target="_blank">federal health insurances</a>.',
         '<li>Patients eligible for healthcare in one province, who attempt to access Mifegymiso in another province or territory, are eligible for counselling, assessments and follow-up but not for the medication itself.',
-        '<li>It can be prescribed through <strong>in-person visits</strong> or <a class="in" href="https://caps.sogc.org/prescribing/?heading=Virtual%20&%20Hybrid%20Care" target="_blank">virtual consultations</a>, or a combination of the two.',
+        '<li>It can be prescribed through <strong>in-person visits</strong> or <a class="in" href="https://caps.sogc.org/prescribing/?heading=Virtual-&-Hybrid-Care" target="_blank">virtual consultations</a>, or a combination of the two.',
         '</ul>',
         '<strong>Scope of practice:</strong> At the time of this writing, physicians and nurse practitioners in Canada are authorized to prescribe Mifegymiso. In most cases, pharmacists are in charge of dispensing the medication to patients, but some clinics are also authorized to dispense the medication directly to patients. With the exception of Quebec, midwives are currently not authorized to prescribe Mifegymiso but can provide medication abortion care by working closely with nurse practitioners or physicians.',
         '<strong>Province-specific requirements:</strong> Healthcare providers should check specific guidelines and scope of practices in their provinces or territories. For example, provinces may differ in their requirements on who can pick up the medication and whether pharmacists have to register with Celopharma, the manufacturer of Mifegymiso. <a class="in" href="https://caps.sogc.org/wp-content/uploads/2024/01/PG1.pdf" target="_blank">Click here to see the summary</a> of some province-specific regulations for dispensing Mifegymiso.',
@@ -1428,7 +1428,7 @@ const modules: { [key: string]: Modules } = {
         '<li>Confirmer que la décision appartient à la personne, prise librement.',
         '<li>Confirmer que la personne comprend que <strong>l’avortement par médicaments est irréversible</strong> et qu’elle devra prendre une dose supplémentaire du deuxième médicament ou procéder à un avortement par instruments en cas d’échec (poursuite de la grossesse).',
         '<li>Revoir le calendrier des examens (échographie, prises de sang, si nécessaire), des médicaments et des rendez-vous de suivi.',
-        '<li>Discuter des <a class="in" href="https://caps.sogc.org/prescribing/?heading=Post-abortion%20Assessment&subheading=Post-abortion%20Contraception#4"  target="_blank">options de contraception post-avortement</a>.',
+        '<li>Discuter des <a class="in" href="https://caps.sogc.org/prescribing/?heading=Post-abortion-Assessment&subheading=Post-abortion-Contraception#4"  target="_blank">options de contraception post-avortement</a>.',
         '</ul>',
       ],
     },
@@ -1783,7 +1783,7 @@ const modules: { [key: string]: Modules } = {
         '<li><strong>Si l’histoire suggère un avortement réussi sans signe d’alerte ni symptôme de grossesse évolutive ainsi que des saignements et des douleurs normaux:</strong>',
         'organiser les analyses de sang pour confirmer le taux de βhCG sérique si le rendez-vous est en personne, sinon demander à la personne d’effectuer un test de grossesse urinaire qualitatif.',
         'βhCG sérique[4]: Si le taux de βhCG sérique chute de > 50 % au jour 3 après la mifépristone ou de 80 % aux jours 7 à 14 après l’administration de la mifépristone / misoprostol, l’avortement est complet et aucun autre rendez-vous n’est nécessaire. Une échographie devrait être demandée si 14 jours se sont écoulés et qu’une diminution de 80 % n’a pas été atteinte.',
-        '<li>Proposer de discuter des <a class="in" href="https://caps.sogc.org/prescribing/?heading=Post-abortion%20Assessment#1"  target="_blank">options de contraception</a> et de fournir un soutien émotionnel si nécessaire. Les ressources de soutien émotionnel comprennent:',
+        '<li>Proposer de discuter des <a class="in" href="https://caps.sogc.org/prescribing/?heading=Post-abortion-Assessment#1"  target="_blank">options de contraception</a> et de fournir un soutien émotionnel si nécessaire. Les ressources de soutien émotionnel comprennent:',
         '<ul>',
         '<li><strong><a class="ex" href="https://exhaleprovoice.org/" target="_blank" >Exhale</a></strong>, une ligne téléphonique qui fournit un soutien émotionnel, des ressources et des informations après un avortement.',
         '<li><strong><a class="ex" href="https://www.all-options.org/" target="_blank" >All-Options</a></strong>, une ligne de discussion pour discuter des expériences passées ou actuelles en matière d’avortement, d’adoption et de parentalité pour les personnes au Canada et aux États-Unis (1-888-493-0092).',
@@ -2884,7 +2884,7 @@ const headers: { [key: string]: Header } = {
         content: [
           { title: 'Prescribing', href: '/prescribing' },
           { title: 'Dispensing', href: '/dispensing' },
-          { title: 'Supporting Roles', href: '/supporting%20roles' },
+          { title: 'Supporting Roles', href: '/supporting-roles' },
         ],
       },
       { type: 'normal', title: 'FAQ', href: '/faq' },
@@ -2914,11 +2914,11 @@ const headers: { [key: string]: Header } = {
         content: [
           { title: 'Prescrire', href: '/prescrire' },
           { title: 'Dispenser', href: '/dispenser' },
-          { title: 'Rôles de soutien', href: '/r%C3%B4les%20de%20soutien' },
+          { title: 'Rôles de soutien', href: '/r%C3%B4les-de-soutien' },
         ],
       },
       { type: 'normal', title: 'FAQ', href: '/faq' },
-      { type: 'normal', title: 'À propos de nous', href: '/%C3%A0%20propos' },
+      { type: 'normal', title: 'À propos de nous', href: '/%C3%A0-propos' },
       { type: 'normal', title: '🔍', href: '/search' },
       { type: 'switch', title: 'EN' },
       { type: 'exit', title: 'Sortie', href: 'https://www.meteomedia.com/ca' },
@@ -3074,9 +3074,9 @@ export function getHeroConfig(path: string): HeroConfig {
     return { variant: 'content', type: 'Dispensing' }
   } else if (path.startsWith('/dispenser')) {
     return { variant: 'content', type: 'Dispenser' }
-  } else if (path.startsWith('/supporting%20roles')) {
+  } else if (path.startsWith('/supporting-roles')) {
     return { variant: 'content', type: 'Supporting', reverse: true }
-  } else if (path.startsWith('/r%C3%B4les%20de%20soutien')) {
+  } else if (path.startsWith('/r%C3%B4les-de-soutien')) {
     return { variant: 'content', type: 'Soutenir', reverse: true }
   }
   throw new Error('Invalid path')
@@ -3097,7 +3097,7 @@ const cards: { [key: string]: Cards } = {
     {
       title: 'Supporting',
       desc: 'Go here if you are a community worker, a social worker or a counsellor, or if you are supporting your colleagues and friends in taking medication abortion.',
-      link: ['/supporting%20roles', 'View'],
+      link: ['/supporting-roles', 'View'],
     },
   ],
   fr: [
@@ -3114,7 +3114,7 @@ const cards: { [key: string]: Cards } = {
     {
       title: 'Rôles de soutien',
       desc: 'Cliquez ici si vous êtes travailleurs communautaires, travailleurs sociaux ou conseillers, des personnes à recourir à l’avortement par médicaments.',
-      link: ['/rôles%20de%20soutien', 'Voir'],
+      link: ['/rôles-de-soutien', 'Voir'],
     },
   ],
 }

@@ -370,10 +370,10 @@ const outlines: { [key: string]: Outline } = {
       },
     ],
   },
-  '/supporting%20roles': {
+  '/supporting-roles': {
     subpages: [
       {
-        href: '/supporting%20roles/medication-abortion#M1',
+        href: '/supporting-roles/medication-abortion#M1',
         title: 'Medication Abortion',
         modules: {
           M39: 'What is Medication Abortion',
@@ -383,7 +383,7 @@ const outlines: { [key: string]: Outline } = {
         },
       },
       {
-        href: '/supporting%20roles/client-counselling#M42',
+        href: '/supporting-roles/client-counselling#M42',
         title: 'Client Counselling',
         modules: {
           M42: 'How to Counsel Clients',
@@ -397,7 +397,7 @@ const outlines: { [key: string]: Outline } = {
     ],
     resources: [
       {
-        href: '/supporting%20roles/resources#S14',
+        href: '/supporting-roles/resources#S14',
         title: 'Guides, Talklines, Toolkits',
         modules: {
           S14: 'About Medication Abortion',
@@ -410,10 +410,10 @@ const outlines: { [key: string]: Outline } = {
       },
     ],
   },
-  '/r%C3%B4les%20de%20soutien': {
+  '/r%C3%B4les-de-soutien': {
     subpages: [
       {
-        href: '/r%C3%B4les%20de%20soutien/avortement-par-medicaments#M1',
+        href: '/r%C3%B4les-de-soutien/avortement-par-medicaments#M1',
         title: 'Avortement par medicaments',
         modules: {
           M39: 'À propos du MIFÉ-MISO',
@@ -423,7 +423,7 @@ const outlines: { [key: string]: Outline } = {
         },
       },
       {
-        href: '/r%C3%B4les%20de%20soutien/counseling-de-la-personne#M42',
+        href: '/r%C3%B4les-de-soutien/counseling-de-la-personne#M42',
         title: 'Counseling de la personne',
         modules: {
           M42: 'Comment conseiller la personne',
@@ -437,7 +437,7 @@ const outlines: { [key: string]: Outline } = {
     ],
     resources: [
       {
-        href: '/r%C3%B4les%20de%20soutien/ressources#S14',
+        href: '/r%C3%B4les-de-soutien/ressources#S14',
         title: 'Lignes directrices et autres ressources',
         modules: {
           S14: 'À propos de l’avortement par medicaments',
