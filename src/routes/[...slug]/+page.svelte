@@ -6,15 +6,12 @@
     import Reader from "../../components/content/Reader.svelte";
 
     $: redirect($page.url.pathname);
+    $: modules = $data.modules;
 </script>
 
 <section class="reader">
     <div class="container">
-        {#if $page.url.pathname === $page.url.pathname}
-            <Reader modules={modulePath($page.url.pathname, $data.modules)} />
-        {:else}
-            <Reader/>
-        {/if}
+            <Reader modules={modulePath($page.url.pathname, modules)} />
     </div>
 </section>
 
