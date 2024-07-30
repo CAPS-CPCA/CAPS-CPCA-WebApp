@@ -9,15 +9,34 @@ export const translations: { [key: string]: any } = {
   fr: getTranslation('fr'),
 }
 
+// Redirect function for content path changes
+export function redirect(url: string) {
+  if (browser) {
+    const pathMap: { [key: string]: string } = {
+      '/prescribing': '/prescribing/about-mifegymiso',
+      '/prescrire': '/prescrire/a-propos-du-mife-miso',
+      '/dispensing': '/dispensing/coverage-&-insurance',
+      '/dispenser': '/dispenser/couverture-et-assurance',
+      '/supporting%20roles': '/supporting%20roles/medication-abortion',
+      '/r%C3%B4les%20de%20soutien':
+        '/r%C3%B4les%20de%20soutien/avortement-par-medicaments',
+    }
+    const newPath = pathMap[url]
+    if (newPath) {
+      goto(newPath, { noScroll: true })
+    }
+  }
+}
+
 // Path handling for language switching (fr/en)
 function togglePath() {
   const path = window.location.pathname
   const pathMap: { [key: string]: string } = {
     '/prescribing': '/prescrire',
-    '/dispensing': '/dispenser',
-    '/supporting%20roles': '/r%C3%B4les%20de%20soutien',
     '/prescrire': '/prescribing',
+    '/dispensing': '/dispenser',
     '/dispenser': '/dispensing',
+    '/supporting%20roles': '/r%C3%B4les%20de%20soutien',
     '/r%C3%B4les%20de%20soutien': '/supporting%20roles',
     '/about': '/%C3%A0%20propos',
     '/%C3%A0%20propos': '/about',

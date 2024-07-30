@@ -7,7 +7,7 @@
         if (!text) return '';
         let formattedText = text.map((item) => {
             let formattedItem = item.replace(/(MISO | misoprostol )/g, '<span style="color: var(--MISO);">$1</span>');
-            formattedItem = formattedItem.replace(/(MIFE | mifepristone )/g, '<span style="color: var(--MIFE);">$1</span>');
+            formattedItem = formattedItem.replace(/(MIFE | MIFÉ | mifepristone )/g, '<span style="color: var(--MIFE);">$1</span>');
             formattedItem = formattedItem.replace(/\[(.*?)\]/g, '<sup>[$1]</sup>');
             formattedItem = formattedItem.replace(/(Product monograph)/g, '<a href="/" class="in">$1</a>');
             formattedItem = formattedItem.replace(/(Initial visit:|Follow-up visit:|Initial visit and follow-up visit:|Telehealth: |Première visite: |Visite de suivi: )/g, '<span style="color: blue; font-weight: bold;">$1</span>');
