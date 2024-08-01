@@ -6,7 +6,7 @@
     import AboutSogc from '../components/homepage/AboutSOGC.svelte';
 </script>
 
-<Hero variant="home"/>
+<Hero type="banner" id="home"/>
 <Cards />
 <Survey />
 <Newsletter />

@@ -8,7 +8,8 @@
     $: modules = $data.modules;
 </script>
 
-<Hero variant="icon" index={0}/>
+<Hero type="icon" id="FAQ"/>
+
 <section class="reader">
     <div class="container">
         <Reader modules={modulePath($page.url.pathname, modules)} />

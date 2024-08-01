@@ -11,7 +11,7 @@
 
 <section class="reader">
     <div class="container">
-            <Reader modules={modulePath($page.url.pathname, modules)} />
+            <Reader modules={modulePath($page.url.pathname, modules)}/>
     </div>
 </section>
 

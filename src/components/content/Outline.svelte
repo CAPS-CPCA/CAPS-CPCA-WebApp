@@ -1,12 +1,8 @@
 <script lang="ts">
+    import { data } from '$lib/data';
     import { browser } from '$app/environment';
     import { page } from '$app/stores';
-    import { getOutline } from './Outline';
-
-    let outlineVariant: 'content' | 'faq' = 'content';
-    let isCollapsed = false;
-    
-    $: outlineClass = 'atTop';
+    import { onDestroy } from 'svelte'
 
     const handleSticky = () => {
         const reader = document.querySelector('.reader');
@@ -22,21 +18,10 @@
             }
         }
     }
-    $: if (browser) {
-        window.addEventListener('scroll', handleSticky);
-    }
-
-    $: current = $page.url.pathname;
-    $: outlineType = '/'+current.split('/')[1];
-    $: outline = getOutline(outlineType) || getOutline('/prescribing');
-    $: if (outlineType === '/faq') outlineVariant = 'faq';
-
     const handleCollapse = () => {
         isCollapsed = !isCollapsed;
     }
-
-    $: if (browser) {
-        const handleScroll = () => {
+    const handleScroll = () => {
             const h1s = document.querySelectorAll('div[id]');
             let selectedId = null;
             h1s.forEach(h1 => {
@@ -58,11 +43,28 @@
                 }
             }
         };
+    
+    let isCollapsed = false;
+    let outlineClass = 'atTop';
+
+    $: current = $page.url.pathname;
+    $: outlineType = '/'+current.split('/')[1];
+    $: outline = $data.outline[outlineType] || {};
+    
+    $: if (browser) {
+        window.addEventListener('scroll', handleSticky);
         window.addEventListener('scroll', handleScroll);
     }
+
+    onDestroy(() => {
+        if (browser) {
+            window.removeEventListener('scroll', handleSticky);
+            window.removeEventListener('scroll', handleScroll);
+        }
+    });
 </script>
 
-{#if outlineVariant === 'content'}
+{#if current !== '/faq'}
     <div class="outline" class:collapsed={isCollapsed}>
         <button class="arrow" on:click={handleCollapse} class:collapsed={isCollapsed} aria-label="Toggle Collapse"></button>
         {#if !isCollapsed}
@@ -83,22 +85,22 @@
         </div>
         {/if}
     </div>
-{:else if outlineVariant === 'faq'}
-    <div class="outline" class:collapsed={isCollapsed}>
-        <button class="arrow" on:click={handleCollapse} class:collapsed={isCollapsed} aria-label="Toggle Collapse"></button>
-        {#if !isCollapsed}
-        <h1>Outline</h1>
-        <div class={outlineClass}>
+{:else}
+<div class="outline" class:collapsed={isCollapsed}>
+    <button class="arrow" on:click={handleCollapse} class:collapsed={isCollapsed} aria-label="Toggle Collapse"></button>
+    {#if !isCollapsed}
+    <h1>Outline</h1>
+    <div class={outlineClass}>
         {#each Object.keys(outline) as section}
-                <ul>
-                    {#each Object.keys(outline[section]) as page}
-                        <li><a href={outline[section][page].href} class="secondary">{outline[section][page].title}</a></li>
-                    {/each}
-                </ul>
-            {/each}
-        </div>
-        {/if}
+            <ul>
+                {#each Object.keys(outline[section]) as page}
+                    <li><a href={outline[section][page].href} class="secondary">{outline[section][page].title}</a></li>
+                {/each}
+            </ul>
+        {/each}
     </div>
+    {/if}
+</div>
 {/if}
 
 <style>

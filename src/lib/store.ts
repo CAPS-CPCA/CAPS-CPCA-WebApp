@@ -1,5 +1,6 @@
 import { images } from '../assets'
 import { modules } from './modules'
+import { outlines } from '../components/content/Outline'
 import type { Modules } from './modules'
 
 type Header = {
@@ -20,20 +21,44 @@ type Footer = {
   copyright: string
 }
 
-type Hero = {
-  home: { image: string }
-  content: {
-    id: string
-    title: string | { text: string; span: string }
-    paragraphs: string | string[]
-    image: string
-  }[]
-  icon: {
-    title: string
-    image: string
-    form?: { input: string; button: string }
-  }[]
+interface ImageData {
+  src: string
+  alt: string
 }
+
+interface HeroText {
+  f1: string
+  f2?: string
+  f3?: string
+  f4?: string
+}
+
+interface HeroContentData {
+  title: string | HeroText
+  paragraphs: HeroText[]
+  image: ImageData
+}
+
+type HeroBanner = {
+  type: 'banner'
+  id: 'home'
+  data: { image: ImageData }
+}
+
+type HeroContent = {
+  type: 'content'
+  reverse: boolean
+  id: 'P' | 'D' | 'S' | 'A'
+  data: HeroContentData
+}
+
+type HeroIcon = {
+  type: 'icon'
+  id: 'FAQ' | 'Search'
+  data: { title: string; image: ImageData }
+}
+
+type HeroType = HeroBanner | HeroContent | HeroIcon
 
 type Cards = {
   title: string
@@ -157,130 +182,277 @@ const footers: { [key: string]: Footer } = {
   },
 }
 
-const heros: { [key: string]: Hero } = {
-  en: {
-    home: { image: images.EnBanner },
-    content: [
-      {
-        id: 'Prescribing',
-        title:
-          'Medication Abortion <span style="color: var(--Prescribing)">Prescribing</span> Resources',
+const heros: { [key: string]: HeroType[] } = {
+  en: [
+    {
+      type: 'banner',
+      id: 'home',
+      data: {
+        image: {
+          src: images.EnBanner,
+          alt: 'Hero banner image',
+        },
+      },
+    },
+    {
+      type: 'content',
+      reverse: true,
+      id: 'P',
+      data: {
+        title: {
+          f1: 'Medication Abortion ',
+          f2: 'Prescribing',
+          f3: ' Resources',
+        },
         paragraphs: [
-          'If you are a <span style="color: #0074e4; font-weight: 700;">physician, a nurse practitioner or a midwife</span> who is currently prescribing or plans to prescribe Mifegymiso, please scroll down for information about the <i>medication, abortion counselling, clinical processes, virtual care, billing codes and inclusivity toolkits.</i>',
-          'If you are a <span style="color: #0074e4; font-weight: 700;">midwife, a nurse or a medical officer</span> who is looking for information on prescribing Mifegymiso to support your team, you are also in the right place.',
+          {
+            f1: 'If you are a ',
+            f2: 'physician, a nurse practitioner or a midwife',
+            f3: ', who is currently prescribing or plans to prescribe Mifegymiso, please scroll down for information about ',
+            f4: 'the medication, abortion counselling, clinical processes, virtual care, billing codes and inclusivity toolkits.',
+          },
+          {
+            f1: 'If you are a ',
+            f2: 'midwife, a nurse or a medical officer',
+            f3: ' who is looking for information on prescribing Mifegymiso to support your team, you are also in the right place.',
+          },
         ],
-        image: images.PrescribingIcon,
+        image: {
+          src: images.PrescribingIcon,
+          alt: 'Prescribing icon image',
+        },
       },
-      {
-        id: 'Dispensing',
-        title:
-          'Medication Abortion <span style="color: var(--Dispensing)">Dispensing</span> Resources',
-        paragraphs:
-          'If you are a <span style="color: #0074e4; font-weight: 700;">pharmacist or any other clinician</span> who is currently dispensing or plans to dispense Mifegymiso, please scroll down for information about the <i>medication, administration instructions, missed doses, side-effect management, insurance and inclusivity toolkits.</i>',
-        image: images.DispensingIcon,
+    },
+    {
+      type: 'content',
+      reverse: false,
+      id: 'D',
+      data: {
+        title: {
+          f1: 'Medication Abortion ',
+          f2: 'Dispensing',
+          f3: ' Resources',
+        },
+        paragraphs: [
+          {
+            f1: 'If you are a ',
+            f2: 'pharmacist or any other clinician who is currently dispensing or plans to dispense Mifegymiso',
+            f3: ' please scroll down for information about ',
+            f4: 'the medication, administration instructions, missed doses, side-effect management, insurance and inclusivity toolkits.',
+          },
+        ],
+        image: {
+          src: images.DispensingIcon,
+          alt: 'Dispensing icon image',
+        },
       },
-      {
-        id: 'Supporting',
-        title:
-          'Medication Abortion <span style="color: var(--Supporting)">Supporting</span> Resources',
-        paragraphs:
-          'If you are a <span style="color: #0074e4; font-weight: 700;">community worker, a social worker or a counsellor, or if you are supporting your colleagues and friends</span> in taking medication abortion, please scroll down for information about <i>the medication, the consideration of different options and the process of medication abortion.</i>',
-        image: images.SupportingIcon,
+    },
+    {
+      type: 'content',
+      reverse: true,
+      id: 'S',
+      data: {
+        title: {
+          f1: 'Medication Abortion ',
+          f2: 'Supporting',
+          f3: ' Resources',
+        },
+        paragraphs: [
+          {
+            f1: 'If you are a ',
+            f2: 'community worker, a social worker or a counsellor, or if you are supporting your colleagues and friends',
+            f3: ' in taking medication abortion, please scroll down for information about ',
+            f4: 'the medication, the consideration of different options and the process of medication abortion.',
+          },
+        ],
+        image: {
+          src: images.SupportingIcon,
+          alt: 'Supporting icon image',
+        },
       },
-      {
-        id: 'About',
+    },
+    {
+      type: 'content',
+      reverse: false,
+      id: 'A',
+      data: {
         title: 'About Us',
-        paragraphs:
-          'Scroll down to learn more about <span style="color: #0074e4; font-weight: 700;">Canadian Abortion Provider Support – Communauté de pratique Canadienne sur l’avortement (CAPS-CPCA)</span>, our collaborating partners and the process we undertook to develop this website.',
-        image: images.AboutIcon,
-      },
-    ],
-    icon: [
-      { title: 'Frequently Asked Questions', image: images.FaqIcon },
-      {
-        title: 'Search the CAPS Platform',
-        form: { input: 'Type here...', button: 'Search' },
-        image: images.SearchIcon,
-      },
-    ],
-  },
-  fr: {
-    home: { image: images.FrBanner },
-    content: [
-      {
-        id: 'Prescrire',
-        title:
-          'Ressources pour <span style="color: var(--Prescribing)">prescrire</span> l\'avortement par médicaments',
         paragraphs: [
-          'Si vous êtes <span style="color: #0074e4; font-weight: 700;">médecins, infirmières praticiennes spécialisées et sages-femmes</span> et que vous prescrivez actuellement ou envisagez de prescrire le Mifé-Miso, veuillez faire défiler vers le bas pour obtenir des informations sur <i> les médicaments, les conseils en matière d\'avortement, les processus cliniques, les soins virtuels, les codes de facturation et les boîtes à outils d\'inclusivité.</i>',
-          'Si vous êtes <span style="color: #0074e4; font-weight: 700;">sages-femmes, infirmières autorisées et médecins</span> et que vous recherchez des informations sur la prescription du Mifé-Miso pour soutenir votre équipe, vous êtes également au bon endroit.',
+          {
+            f1: 'Scroll down to learn more about ',
+            f2: 'Canadian Abortion Provider Support – Communauté de pratique Canadienne sur l’avortement (CAPS-CPCA)',
+            f3: ', our collaborating partners and the process we undertook to develop this website.',
+          },
         ],
-        image: images.PrescribingIcon,
+        image: {
+          src: images.AboutIcon,
+          alt: 'About icon image',
+        },
       },
-      {
-        id: 'Dispenser',
-        title:
-          'Ressources pour <span style="color: var(--Dispensing)">dispenser</span> l\'avortement par médicaments',
-        paragraphs:
-          "Si vous êtes <span style=\"color: #0074e4; font-weight: 700;\">pharmaciens ou tout autre clinicien qui dispense actuellement ou prévoyez de distribuer du Mifegymiso</span> veuillez faire défiler vers le bas pour obtenir des informations sur <i>les médicaments, les instructions d'administration, les doses oubliées, la gestion des effets secondaires, l'assurance et les boîtes à outils d'inclusivité.</i>",
-        image: images.DispensingIcon,
+    },
+    {
+      type: 'icon',
+      id: 'FAQ',
+      data: {
+        title: 'Frequently Asked Questions',
+        image: {
+          src: images.FaqIcon,
+          alt: 'Frequently Asked Questions icon image',
+        },
       },
-      {
-        id: 'Soutenir',
-        title:
-          'Ressources pour <span style="color: var(--Supporting)">soutenir</span> l’avortement par médicaments',
-        paragraphs:
-          "Si vous êtes des <span style=\"color: #0074e4; font-weight: 700;\">travailleurs communautaires, des travailleurs sociaux ou des conseillers, ou si vous aidez vos collègues et amis</span> à recourir à l'avortement par médicaments, veuillez faire défiler vers le bas pour obtenir des informations sur les médicaments, l'examen des différentes options et le processus d'avortement par médicaments.</i>",
-        image: images.SupportingIcon,
+    },
+    {
+      type: 'icon',
+      id: 'Search',
+      data: {
+        title: 'Search the CAPS Platform',
+        image: {
+          src: images.SearchIcon,
+          alt: 'Search icon image',
+        },
       },
-      {
-        id: 'À propos',
+    },
+  ],
+  fr: [
+    {
+      type: 'banner',
+      id: 'home',
+      data: {
+        image: {
+          src: images.FrBanner,
+          alt: 'Hero banner image',
+        },
+      },
+    },
+    {
+      type: 'content',
+      reverse: true,
+      id: 'P',
+      data: {
+        title: {
+          f1: 'Ressources pour ',
+          f2: 'prescrire',
+          f3: " l'avortement par médicaments",
+        },
+        paragraphs: [
+          {
+            f1: 'Si vous êtes ',
+            f2: 'médecins, infirmières praticiennes spécialisées et sages-femmes',
+            f3: ' et que vous prescrivez actuellement ou envisagez de prescrire le Mifé-Miso, veuillez faire défiler vers le bas pour obtenir des informations sur ',
+            f4: "les médicaments, les conseils en matière d'avortement, les processus cliniques, les soins virtuels, les codes de facturation et les boîtes à outils d'inclusivité.",
+          },
+          {
+            f1: 'Si vous êtes ',
+            f2: 'sages-femmes, infirmières autorisées et médecins',
+            f3: ' et que vous recherchez des informations sur la prescription du Mifé-Miso pour soutenir votre équipe, vous êtes également au bon endroit.',
+          },
+        ],
+        image: {
+          src: images.PrescribingIcon,
+          alt: 'Prescrire icon image',
+        },
+      },
+    },
+    {
+      type: 'content',
+      reverse: false,
+      id: 'D',
+      data: {
+        title: {
+          f1: 'Ressources pour ',
+          f2: 'dispenser',
+          f3: "l'avortement par médicaments",
+        },
+        paragraphs: [
+          {
+            f1: 'Si vous êtes ',
+            f2: 'pharmaciens ou tout autre clinicien qui dispense actuellement ou prévoyez de distribuer du Mifé-Miso',
+            f3: ' veuillez faire défiler vers le bas pour obtenir des informations sur ',
+            f4: "les médicaments, les instructions d'administration, les doses oubliées, la gestion des effets secondaires, l'assurance et les boîtes à outils d'inclusivité.",
+          },
+          {
+            f1: 'Si vous êtes ',
+            f2: 'sages-femmes, infirmières autorisées et médecins',
+            f3: ' et que vous recherchez des informations sur la prescription du Mifé-Miso pour soutenir votre équipe, vous êtes également au bon endroit.',
+          },
+        ],
+        image: {
+          src: images.DispensingIcon,
+          alt: 'Dispenser icon image',
+        },
+      },
+    },
+    {
+      type: 'content',
+      reverse: true,
+      id: 'S',
+      data: {
+        title: {
+          f1: 'Ressources pour ',
+          f2: 'soutenir',
+          f3: ' l’avortement par médicaments',
+        },
+        paragraphs: [
+          {
+            f1: 'Si vous êtes des ',
+            f2: 'travailleurs communautaires, des travailleurs sociaux ou des conseillers, ou si vous aidez vos collègues et amis',
+            f3: ' à recourir à l’avortement par médicaments, veuillez faire défiler vers le bas pour obtenir des informations sur ',
+            f4: 'les médicaments, l’examen des différentes options et le processus d’avortement par médicaments.',
+          },
+          {
+            f1: 'Si vous êtes ',
+            f2: 'sages-femmes, infirmières autorisées et médecins',
+            f3: ' et que vous recherchez des informations sur la prescription du Mifé-Miso pour soutenir votre équipe, vous êtes également au bon endroit.',
+          },
+        ],
+        image: {
+          src: images.SupportingIcon,
+          alt: 'Soutenir icon image',
+        },
+      },
+    },
+    {
+      type: 'content',
+      reverse: false,
+      id: 'A',
+      data: {
         title: 'À propos de nous',
-        paragraphs:
-          'Faites défiler vers le bas pour en savoir plus sur <span style="color: #0074e4; font-weight: 700;">Canadian Abortion Provider Support – Communauté de pratique Canadienne sur l’avortement (CAPS-CPCA)</span>, nos partenaires collaborateurs, et le processus que nous avons entrepris pour développer ce site web.',
-        image: images.AboutIcon,
+        paragraphs: [
+          {
+            f1: 'Faites défiler vers le bas pour en savoir plus sur ',
+            f2: 'Canadian Abortion Provider Support – Communauté de pratique Canadienne sur l’avortement (CAPS-CPCA)',
+            f3: ', nos partenaires collaborateurs, et le processus que nous avons entrepris pour développer ce site web.',
+          },
+        ],
+        image: {
+          src: images.AboutIcon,
+          alt: 'À propos icon image',
+        },
       },
-    ],
-    icon: [
-      { title: 'Questions fréquentes', image: images.FaqIcon },
-      {
+    },
+    {
+      type: 'icon',
+      id: 'FAQ',
+      data: {
+        title: 'Questions fréquentes',
+        image: {
+          src: images.FaqIcon,
+          alt: 'Questions fréquentes icon image',
+        },
+      },
+    },
+    {
+      type: 'icon',
+      id: 'Search',
+      data: {
         title: 'Rechercher sur la plateforme CPCA',
-        form: { input: 'Écrivez ici...', button: 'Rechercher' },
-        image: images.SearchIcon,
+        image: {
+          src: images.SearchIcon,
+          alt: 'Rechercher icon image',
+        },
       },
-    ],
-  },
-}
-
-interface HeroConfig {
-  variant: 'content' | 'home' | 'icon'
-  type?:
-    | 'Prescribing'
-    | 'Dispensing'
-    | 'Supporting'
-    | 'About'
-    | 'Prescrire'
-    | 'Dispenser'
-    | 'Soutenir'
-    | 'À propos'
-  index?: number
-  reverse?: boolean
-}
-export function getHeroConfig(path: string): HeroConfig {
-  if (path.startsWith('/prescribing')) {
-    return { variant: 'content', type: 'Prescribing', reverse: true }
-  } else if (path.startsWith('/prescrire')) {
-    return { variant: 'content', type: 'Prescrire', reverse: true }
-  } else if (path.startsWith('/dispensing')) {
-    return { variant: 'content', type: 'Dispensing' }
-  } else if (path.startsWith('/dispenser')) {
-    return { variant: 'content', type: 'Dispenser' }
-  } else if (path.startsWith('/supporting-roles')) {
-    return { variant: 'content', type: 'Supporting', reverse: true }
-  } else if (path.startsWith('/r%C3%B4les-de-soutien')) {
-    return { variant: 'content', type: 'Soutenir', reverse: true }
-  }
-  throw new Error('Invalid path')
+    },
+  ],
 }
 
 const cards: { [key: string]: Cards } = {
@@ -493,10 +665,11 @@ export const Bibliography = [
 ]
 
 export function getTranslation(lang: string): {
+  outline: any
   modules: Modules
   header: Header
   footer: Footer
-  hero: Hero
+  hero: HeroType[]
   cards: Cards
   survey: Survey
   newsletter: Newsletter
@@ -504,6 +677,7 @@ export function getTranslation(lang: string): {
   search: Search
 } {
   return {
+    outline: outlines[lang],
     modules: modules[lang],
     header: headers[lang],
     footer: footers[lang],

@@ -1,12 +1,17 @@
 <script lang="ts">
     import { page } from '$app/stores';
-    import { getHeroConfig } from '$lib/store';
     import Hero from '../../components/Hero.svelte';
+    
+    function setID(url: string) {
+        return url.includes('prescribing') || url.includes('prescrire') ? 'P' :
+            url.includes('dispensing') || url.includes('dispenser') ? 'D' :
+            url.includes('supporting') || url.includes('soutien') ? 'S' :
+            url.includes('about') || url.includes('a-propos') ? 'A' :
+            'P';
+    }
+    $: id = setID($page.url.pathname);
 
-    $: hero = getHeroConfig($page.url.pathname);
 </script>
 
-{#if hero}
-    <Hero {...hero} />
-{/if}
+<Hero type="content" id={id} />
 <slot />

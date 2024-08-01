@@ -4,7 +4,7 @@
   import Hero from '../../components/Hero.svelte';
 </script>
 
-<Hero variant="content" type="About" />
+<Hero type="content" id="A" />
 
 <section class="secreader">
   <div class="container">

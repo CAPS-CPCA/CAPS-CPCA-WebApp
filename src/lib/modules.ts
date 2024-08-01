@@ -2139,7 +2139,7 @@ export const modules: { [key: string]: Modules } = {
     },
 
     {
-      id: '',
+      id: 'M36',
       title: 'Personnes non-assurées',
       content: [
         'Les professionnels de la santé peuvent soutenir les personnes non assurées en:',
@@ -2847,7 +2847,7 @@ export function modulePath(path: string, modules: Modules) {
       'M37',
       'M38',
     ],
-    '/prescrire/reglementation-assurance-inclusivite': [
+    '/prescrire/reglements-assurance-inclusivite': [
       'M26',
       'M27',
       'M28',
