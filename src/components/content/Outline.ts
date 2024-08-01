@@ -195,7 +195,7 @@ export const outlines: { [key: string]: any } = {
     '/supporting-roles': {
       subpages: [
         {
-          href: '/supporting-roles/medication-abortion#M1',
+          href: '/supporting-roles/medication-abortion#M39',
           title: 'Medication Abortion',
           modules: {
             M39: 'What is Medication Abortion',
@@ -450,7 +450,7 @@ export const outlines: { [key: string]: any } = {
     '/r%C3%B4les-de-soutien': {
       subpages: [
         {
-          href: '/r%C3%B4les-de-soutien/avortement-par-medicaments#M1',
+          href: '/r%C3%B4les-de-soutien/avortement-par-medicaments#M39',
           title: 'Avortement par medicaments',
           modules: {
             M39: 'À propos du MIFÉ-MISO',

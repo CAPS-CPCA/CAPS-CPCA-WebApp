@@ -1,24 +1,8 @@
 <script lang="ts">
+    import { formatText } from '$lib/modules';
     import Outline from './Outline.svelte';
 
     export let modules:any = [];
-
-    function formatText(text: string[]) {
-        if (!text) return '';
-        let formattedText = text.map((item) => {
-            let formattedItem = item.replace(/(MISO | misoprostol )/g, '<span style="color: var(--MISO);">$1</span>');
-            formattedItem = formattedItem.replace(/(MIFE | MIFÉ | mifepristone )/g, '<span style="color: var(--MIFE);">$1</span>');
-            formattedItem = formattedItem.replace(/\[(.*?)\]/g, '<sup>[$1]</sup>');
-            formattedItem = formattedItem.replace(/(Product monograph)/g, '<a href="/" class="in">$1</a>');
-            formattedItem = formattedItem.replace(/(Initial visit:|Follow-up visit:|Initial visit and follow-up visit:|Telehealth: |Première visite: |Visite de suivi: )/g, '<span style="color: blue; font-weight: bold;">$1</span>');
-            formattedItem = formattedItem.replace(/(Notes:)/g, '<span font-weight: bold;">$1</span>');
-            if (formattedItem.startsWith('<h2>') || formattedItem.startsWith('<ul>') || formattedItem.startsWith('<ol>') || formattedItem.startsWith('<li>')) {
-                return formattedItem;
-            }
-            return `<p>${formattedItem}</p>`;
-        });
-        return formattedText.join('');
-    }
 </script>
 
 <div class="reader">
@@ -31,10 +15,29 @@
         <h1>{module.title}</h1>
         <div class="module">
                 <div class="idholder" id={module.id}></div>
-                {@html formatText(module.content)}
-                {#if module.images}
-                    <img src={module.images[0].src} alt="Mifegymiso"/>
-                {/if}
+                {#each module.content as content}
+                    {#if content.type === 'p'}
+                        {#each content.data as para}
+                            <p>{@html formatText(para)}</p>
+                        {/each}
+                    {:else if content.type === 'h2'}
+                        <h2>{content.data}</h2>
+                    {:else if content.type === 'ul'}
+                        <ul>
+                            {#each content.data as item}
+                                <li>{@html formatText(item)}</li>
+                            {/each}
+                        </ul>
+                    {:else if content.type === 'ol'}
+                        <ol>
+                            {#each content.data as item}
+                                <li>{item}</li>
+                            {/each}
+                        </ol>
+                    {:else if content.type === 'img'}
+                        <img src={content.data.src} alt={content.data.alt}/>
+                    {/if}
+                {/each}
             </div>
         {/each}
         {/if}

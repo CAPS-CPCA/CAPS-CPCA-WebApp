@@ -1,9 +1,41 @@
 import { images } from '../assets'
 
+interface ContentParagraph {
+  type: 'p'
+  data: string[]
+}
+
+interface ContentList {
+  type: 'ul' | 'ol'
+  data: string[]
+}
+
+interface ContentH2 {
+  type: 'h2'
+  data: string
+}
+
+interface ContentImage {
+  type: 'img' | 'left' | 'right'
+  data: { src: string; alt: string }
+}
+
+interface ContentTable {
+  type: 'table'
+  data: string[][]
+}
+
+type ContentType =
+  | ContentParagraph
+  | ContentList
+  | ContentH2
+  | ContentImage
+  | ContentTable
+
 type Module = {
   id: string
   title: string
-  content?: string[]
+  content?: ContentType[] | string[]
   images?: { title: string; src: string; alt: string }[]
 }
 
@@ -15,16 +47,21 @@ export const modules: { [key: string]: Modules } = {
       id: 'M1',
       title: 'Mechanism of Action',
       content: [
-        'In Canada, the medication abortion pills are packaged and sold as Mifegymiso. Mifegymiso comes in an outer white box, containing two smaller boxes: a green box containing mifepristone 200 mg (MIFE) and an orange box containing misoprostol 800 mcg (MISO) (four small tablets of 200 mcg each)[10].',
-        'MIFE is a progesterone receptor modulator. It is a potent anti-progestin that also exhibits b antiglucocorticoid and weak antiandrogenic properties. It blocks progesterone receptors in early pregnancy, which leads to endometrial degeneration, synthesis of prostaglandins, and decline in beta-human chorionic gonadotropin (βhCG) secretion. These events promote cervical dilation and facilitate the onset of bleeding[10].',
-        'MISO is a potent synthetic prostaglandin E1 that induces cervical ripening and uterine contractions, which cause the pregnancy tissues to leave the body[10].',
-        'Click here to download the Product monograph.',
-      ],
-      images: [
         {
-          title: 'Mifegymiso',
-          src: 'https://caps.sogc.org/wp-content/uploads/2024/01/Mifegysmo-Overview.png',
-          alt: 'Mifegymiso',
+          type: 'p',
+          data: [
+            'In Canada, the medication abortion pills are packaged and sold as Mifegymiso. Mifegymiso comes in an outer white box, containing two smaller boxes: a green box containing mifepristone 200 mg (MIFE) and an orange box containing misoprostol 800 mcg (MISO) (four small tablets of 200 mcg each)[10].',
+            'MIFE is a progesterone receptor modulator. It is a potent anti-progestin that also exhibits b antiglucocorticoid and weak antiandrogenic properties. It blocks progesterone receptors in early pregnancy, which leads to endometrial degeneration, synthesis of prostaglandins, and decline in beta-human chorionic gonadotropin (βhCG) secretion. These events promote cervical dilation and facilitate the onset of bleeding[10].',
+            'MISO is a potent synthetic prostaglandin E1 that induces cervical ripening and uterine contractions, which cause the pregnancy tissues to leave the body[10].',
+            'Click here to download the Product monograph.',
+          ],
+        },
+        {
+          type: 'img',
+          data: {
+            src: images.MifegysmoOverview,
+            alt: 'Mifegymiso',
+          },
         },
       ],
     },
@@ -32,43 +69,99 @@ export const modules: { [key: string]: Modules } = {
       id: 'M2',
       title: 'Efficacy & Safety',
       content: [
-        '<h2>Efficacy:</h2>',
-        '<ul><li>MIFE / MISO is <b>highly effective</b>. The risk of ongoing pregnancy is 0.9% for pregnancies up to 49 days of gestation and 3.1% for pregnancies up to 70 days of gestation[10].',
-        '<li>According to SOGC’s protocol for the provision of medication abortion via telemedicine, the patient should take a first dose of misoprostol buccally or vaginally 24-48 hours after taking mifepristone[7].',
-        '<li>In addition, patients with gestational age 63 days or less should take the second dose of misoprostol if no bleeding occurs within the first 24 hours after the first misoprostol dose or as instructed by the clinician. Patients with a gestational age over 63 days should take a second dose of misoprostol 4 hours after the first dose[7].</li></ul>',
-        '<h2>Side Effects and Complications[10]:</h2>',
-        '<ul><li><b>Very common (≥ 10%):</b> Nausea, vomiting, diarrhea, dizziness, headache, chills / fever, weakness, fatigue, gastric discomfort, abdominal pain, vaginal bleeding, spotting, uterine contractions or cramping.',
-        '<li><b>Common (1-10%):</b> Fainting, light or moderate gastrointestinal cramping, prolonged post-abortion bleeding, endometritis, breast tenderness, heavy bleeding (may or may not require surgical termination of pregnancy).',
-        '<li><b>Uncommon (0.1-1%):</b> Arrhythmia, hemorrhagic shock, salpingitis, heavy bleeding requiring IV fluids or blood transfusion, infection, hot flushes, hypotension, bronchospasm, skin rash / pruritus.</ul>',
+        {
+          type: 'h2',
+          data: 'Efficacy:',
+        },
+        {
+          type: 'ul',
+          data: [
+            'MIFE / MISO is highly effective. The risk of ongoing pregnancy is 0.9% for pregnancies up to 49 days of gestation and 3.1% for pregnancies up to 70 days of gestation[10].',
+            'According to SOGC’s protocol for the provision of medication abortion via telemedicine, the patient should take a first dose of misoprostol buccally or vaginally 24-48 hours after taking mifepristone[7].',
+            'In addition, patients with gestational age 63 days or less should take the second dose of misoprostol if no bleeding occurs within the first 24 hours after the first misoprostol dose or as instructed by the clinician. Patients with a gestational age over 63 days should take a second dose of misoprostol 4 hours after the first dose[7].',
+          ],
+        },
+        {
+          type: 'h2',
+          data: 'Side Effects and Complications[10]:',
+        },
+        {
+          type: 'ul',
+          data: [
+            'Very common (≥ 10%): Nausea, vomiting, diarrhea, dizziness, headache, chills / fever, weakness, fatigue, gastric discomfort, abdominal pain, vaginal bleeding, spotting, uterine contractions or cramping.',
+            'Common (1-10%): Fainting, light or moderate gastrointestinal cramping, prolonged post-abortion bleeding, endometritis, breast tenderness, heavy bleeding (may or may not require surgical termination of pregnancy).',
+            'Uncommon (0.1-1%): Arrhythmia, hemorrhagic shock, salpingitis, heavy bleeding requiring IV fluids or blood transfusion, infection, hot flushes, hypotension, bronchospasm, skin rash / pruritus.',
+          ],
+        },
       ],
     },
     {
       id: 'M3',
       title: 'Indication & Contraindications',
       content: [
-        '<h2>Indication</h2>',
-        'MIFE / MISO is indicated by <a class="in" href="https://caps.sogc.org/wp-content/uploads/2024/01/C17-2.pdf" target="_blank">Health Canada</a> for pregnancy termination up to 63 days as counted from the first day of the last menstrual period (LMP) in a presumed 28-day cycle. The Society of Obstetricians and Gynaecologists of Canada indicates safe use up to 70 days after LMP. There is no absolute lower gestational age limit[5].',
-        '<h2>Contraindications[6]:</h2>',
-        '<ul><li>Ectopic pregnancy</li>',
-        '<li>Chronic adrenal failure</li>',
-        '<li>Inherited porphyria</li>',
-        '<li>Uncontrolled asthma</li>',
-        '<li>Hemorrhagic disorder or concurrent anticoagulant therapy</li>',
-        '<li>Anemia (Hb level < 9.5 g/dL)</li>',
-        '<li>Long-term systemic corticosteroid therapy</li>',
-        '<li>Allergy or hypersensitivity to product ingredients</li>',
-        '<li>IUD in situ (no longer a contraindication once removed)</li>',
-        '<li>Serious systemic illnesses such as liver disease, cardiac disease, renal failure and seizure disorders (these illnesses should be evaluated individually)</li>',
-        '<li>Uncertain gestational age</li>',
-        '<li>Decisional uncertainty</li></ul>',
-        '<h2>Breastfeeding / Chestfeeding[6]:</h2>',
-        'Oral MISO is excreted into human breast milk in small amounts which are rapidly eliminated. No interruption of breastfeeding or chestfeeding is necessary when misoprostol is given by any route.',
-        '<h2>Gestational Age > 63 days</h2>',
-        '<a class="in" href="https://caps.sogc.org/wp-content/uploads/2024/01/C31.pdf" target="_blank">The Society of Obstetricians and Gynaecologists of Canada</a> and the <a class="in" href="https://caps.sogc.org/wp-content/uploads/2024/01/C6.pdf" target="_blank">National Abortion Federation</a> both endorse medication abortion (MA) with MIFE / MISO up to 70 days after LMP. They also recommend a second dose of MISO 800mcg four hours after the first dose of MISO 800mcg to increase the effectiveness of MA[5,13].',
-        'The Society of Obstetricians and Gynaecologists of Canada also recommends a MIFE / MISO regimen from 70-84 days gestational age, with mifepristone 200mg followed in 24-48 hours with two doses of MISO 800mcg (buccal or vaginal), 4 hours apart.',
-        'The effectiveness decreases as the gestational age approaches 70 days. Prescribers should counsel patients that this is off-label use, that there is a possibility of expelling and seeing an intact fetus, and that there are higher rates of bleeding and incomplete or failed abortion.',
-        '<h2>Patients between 15 to 18 years of age<h2>',
-        'Data is insufficient to establish efficacy and safety in patients younger than 15 years old. However, in patients aged between 15 and 18 years, safety and efficacy have been demonstrated with vomiting and pain being reported more frequently than in adults[11]. Thus, special considerations for patients in this age range can include counselling to prepare them for vomiting and pain, as well as psychosocial supports through the medication abortion process.',
+        {
+          type: 'h2',
+          data: 'Indication',
+        },
+        {
+          type: 'p',
+          data: [
+            'MIFE / MISO is indicated by Health Canada for pregnancy termination up to 63 days as counted from the first day of the last menstrual period (LMP) in a presumed 28-day cycle. The Society of Obstetricians and Gynaecologists of Canada indicates safe use up to 70 days after LMP. There is no absolute lower gestational age limit[5].',
+          ],
+        },
+        {
+          type: 'h2',
+          data: 'Contraindications[6]:',
+        },
+        {
+          type: 'ul',
+          data: [
+            'Ectopic pregnancy',
+            'Chronic adrenal failure',
+            'Inherited porphyria',
+            'Uncontrolled asthma',
+            'Hemorrhagic disorder or concurrent anticoagulant therapy',
+            'Anemia (Hb level < 9.5 g/dL)',
+            'Long-term systemic corticosteroid therapy',
+            'Allergy or hypersensitivity to product ingredients',
+            'IUD in situ (no longer a contraindication once removed)',
+            'Serious systemic illnesses such as liver disease, cardiac disease, renal failure and seizure disorders (these illnesses should be evaluated individually)',
+            'Uncertain gestational age',
+            'Decisional uncertainty',
+          ],
+        },
+        {
+          type: 'h2',
+          data: 'Breastfeeding / Chestfeeding[6]:',
+        },
+        {
+          type: 'p',
+          data: [
+            'Oral MISO is excreted into human breast milk in small amounts which are rapidly eliminated. No interruption of breastfeeding or chestfeeding is necessary when misoprostol is given by any route.',
+          ],
+        },
+        {
+          type: 'h2',
+          data: 'Gestational Age > 63 days',
+        },
+        {
+          type: 'p',
+          data: [
+            'The Society of Obstetricians and Gynaecologists of Canada and the National Abortion Federation both endorse medication abortion (MA) with MIFE / MISO up to 70 days after LMP. They also recommend a second dose of MISO 800mcg four hours after the first dose of MISO 800mcg to increase the effectiveness of MA[5,13].',
+            'The Society of Obstetricians and Gynaecologists of Canada also recommends a MIFE / MISO regimen from 70-84 days gestational age, with mifepristone 200mg followed in 24-48 hours with two doses of MISO 800mcg (buccal or vaginal), 4 hours apart.',
+            'The effectiveness decreases as the gestational age approaches 70 days. Prescribers should counsel patients that this is off-label use, that there is a possibility of expelling and seeing an intact fetus, and that there are higher rates of bleeding and incomplete or failed abortion.',
+          ],
+        },
+        {
+          type: 'h2',
+          data: 'Patients between 15 to 18 years of age',
+        },
+        {
+          type: 'p',
+          data: [
+            'Data is insufficient to establish efficacy and safety in patients younger than 15 years old. However, in patients aged between 15 and 18 years, safety and efficacy have been demonstrated with vomiting and pain being reported more frequently than in adults[11]. Thus, special considerations for patients in this age range can include counselling to prepare them for vomiting and pain, as well as psychosocial supports through the medication abortion process.',
+          ],
+        },
       ],
     },
     {
@@ -2782,134 +2875,29 @@ function getModules(ids: string[], modules: Modules) {
   return ids.map((id) => moduleMap.get(id)).filter(Boolean)
 }
 
+// prettier-ignore
 export function modulePath(path: string, modules: Modules) {
   const modulePaths: { [key: string]: string[] } = {
     '/prescribing/about-mifegymiso': ['M1', 'M2', 'M3'],
     '/prescrire/a-propos-du-mife-miso': ['M1', 'M2', 'M3'],
-    '/prescribing/patient-counselling': [
-      'M5',
-      'M6',
-      'M14',
-      'M15',
-      'M33',
-      'M16',
-    ],
-    '/prescrire/counseling-de-la-personne': [
-      'M5',
-      'M6',
-      'M14',
-      'M15',
-      'M33',
-      'M16',
-    ],
+    '/prescribing/patient-counselling': ['M5', 'M6', 'M14', 'M15', 'M33', 'M16'],
+    '/prescrire/counseling-de-la-personne': ['M5', 'M6', 'M14', 'M15', 'M33', 'M16'],
     '/prescribing/medical-evaluation': ['M8', 'M9', 'M10', 'M11', 'M12', 'M13'],
     '/prescrire/evaluation-medicale': ['M8', 'M9', 'M10', 'M11', 'M12', 'M13'],
     '/prescribing/assessment': ['M17', 'M18', 'M19', 'M20'],
     '/prescrire/evaluation-post-avortement': ['M17', 'M18', 'M19', 'M20'],
     '/prescribing/virtual-hybrid-care': ['M21', 'M22', 'M14', 'M23'],
     '/prescrire/soins-virtuels-hybrides': ['M21', 'M22', 'M14', 'M23'],
-    '/prescribing/billing-codes': [
-      'B1',
-      'B2',
-      'B3',
-      'B4',
-      'B5',
-      'B6',
-      'B7',
-      'B8',
-      'B9',
-      'B10',
-      'B11',
-      'B12',
-      'B13',
-    ],
-    '/prescrire/codes-de-facturation': [
-      'B1',
-      'B2',
-      'B3',
-      'B4',
-      'B5',
-      'B6',
-      'B7',
-      'B8',
-      'B9',
-      'B10',
-      'B11',
-      'B12',
-      'B13',
-    ],
-    '/prescribing/regulations-insurance-inclusivity': [
-      'M26',
-      'M27',
-      'M28',
-      'C1',
-      'M36',
-      'M37',
-      'M38',
-    ],
-    '/prescrire/reglements-assurance-inclusivite': [
-      'M26',
-      'M27',
-      'M28',
-      'C1',
-      'M36',
-      'M37',
-      'M38',
-    ],
+    '/prescribing/billing-codes': ['B1', 'B2', 'B3', 'B4', 'B5', 'B6', 'B7', 'B8', 'B9', 'B10', 'B11', 'B12', 'B13'],
+    '/prescrire/codes-de-facturation': ['B1', 'B2', 'B3', 'B4', 'B5', 'B6', 'B7', 'B8', 'B9', 'B10', 'B11', 'B12', 'B13'],
+    '/prescribing/regulations-insurance-inclusivity': ['M26', 'M27', 'M28', 'C1', 'M36', 'M37', 'M38'],
+    '/prescrire/reglements-assurance-inclusivite': ['M26', 'M27', 'M28', 'C1', 'M36', 'M37', 'M38'],
     '/prescribing/clinical-resources': [''],
     '/prescrire/ressources-cliniques': [''],
-    '/dispensing/coverage-&-insurance': [
-      'C1',
-      'M36',
-      'C2',
-      'C3',
-      'C4',
-      'C5',
-      'C6',
-      'C7',
-      'C8',
-      'C9',
-      'C10',
-      'C11',
-      'C12',
-      'C13',
-      'C14',
-    ],
-    '/dispenser/couverture-et-assurance': [
-      'C1',
-      'M36',
-      'C2',
-      'C3',
-      'C4',
-      'C5',
-      'C6',
-      'C7',
-      'C8',
-      'C9',
-      'C10',
-      'C11',
-      'C12',
-      'C13',
-      'C14',
-    ],
-    '/dispensing/patient-communication': [
-      'M32',
-      'M15',
-      'M33',
-      'M16',
-      'M19',
-      'M34',
-      'M20',
-    ],
-    '/dispenser/communication': [
-      'M32',
-      'M15',
-      'M33',
-      'M16',
-      'M19',
-      'M34',
-      'M20',
-    ],
+    '/dispensing/coverage-&-insurance': ['C1', 'M36', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10', 'C11', 'C12', 'C13', 'C14'],
+    '/dispenser/couverture-et-assurance': ['C1', 'M36', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10', 'C11', 'C12', 'C13', 'C14'],
+    '/dispensing/patient-communication': ['M32', 'M15', 'M33', 'M16', 'M19', 'M34', 'M20'],
+    '/dispenser/communication': ['M32', 'M15', 'M33', 'M16', 'M19', 'M34', 'M20'],
     '/dispensing/about-mifegymiso': ['M1', 'M29', 'M30', 'M2', 'M3', 'M31'],
     '/dispenser/a-propos-du-mife-miso': ['M1', 'M29', 'M30', 'M2', 'M3', 'M31'],
     '/dispensing/regulations-inclusivity': ['M26', 'M35', 'M299', 'M37', 'M38'],
@@ -2917,32 +2905,35 @@ export function modulePath(path: string, modules: Modules) {
     '/dispensing/clinical-resources': [''],
     '/dispenser/ressources-cliniques': [''],
     '/supporting-roles/medication-abortion': ['M39', 'M3', 'M40', 'M41'],
-    '/r%C3%B4les-de-soutien/avortement-par-medicaments': [
-      'M39',
-      'M3',
-      'M40',
-      'M41',
-    ],
-    '/supporting-roles/client-counselling': [
-      'M42',
-      'M43',
-      'M15',
-      'M33',
-      'M16',
-      'M44',
-    ],
-    '/r%C3%B4les-de-soutien/counseling-de-la-personne': [
-      'M42',
-      'M43',
-      'M15',
-      'M33',
-      'M16',
-      'M44',
-    ],
+    '/r%C3%B4les-de-soutien/avortement-par-medicaments': ['M39', 'M3', 'M40', 'M41'],
+    '/supporting-roles/client-counselling': ['M42', 'M43', 'M15', 'M33', 'M16', 'M44'],
+    '/r%C3%B4les-de-soutien/counseling-de-la-personne': ['M42', 'M43', 'M15', 'M33', 'M16', 'M44'],
     '/supporting-roles/resources': [''],
     '/r%C3%B4les-de-soutien/ressources': [''],
     '/faq': ['F1', 'F2', 'F3', 'F4', 'F5', 'F6'],
-  }
+  };
 
   return getModules(modulePaths[path] || [''], modules)
+}
+
+// prettier-ignore
+const replacementMap = [
+  { regex: /(highly effective|24-48 hours|the second dose of|Very common \(≥ 10%\)|Common \(1-10%\)|Uncommon \(0.1-1%\)|63 days|70 days)/g, replacement: '<b>$1</b>' },
+  { regex: /(MISO | misoprostol 800 mcg \(MISO\) | misoprostol)/g, replacement: '<span style="color: var(--MISO);">$1</span>' },
+  { regex: /(MIFE | MIFÉ | mifepristone 200 mg \(MIFE\) | mifepristone | mifépristone )/g, replacement: '<span style="color: var(--MIFE);">$1</span>' },
+  { regex: /\[(.*?)\]/g, replacement: '<sup>[$1]</sup>' },
+  
+  { regex: /(Product monograph)/g, replacement: '<a href="/" class="in">$1</a>' },
+  { regex: /(Health Canada)/g, replacement: '<a class="in" href="https://caps.sogc.org/wp-content/uploads/2024/01/C17-2.pdf" target="_blank">$1</a>' },
+  { regex: /(The Society of Obstetricians and Gynaecologists of Canada)/g, replacement: '<a class="in" href="https://caps.sogc.org/wp-content/uploads/2024/01/C31.pdf" target="_blank">$1</a>' },
+  { regex: /(National Abortion Federation)/g, replacement: '<a class="in" href="https://caps.sogc.org/wp-content/uploads/2024/01/C6.pdf" target="_blank">$1</a>' },
+
+  { regex: /(Initial visit:|Follow-up visit:|Initial visit and follow-up visit:|Telehealth:|Première visite:|Visite de suivi:)/g, replacement: '<span style="color: #0074e4; font-weight: bold;">$1</span>' },
+];
+
+export function formatText(content: string) {
+  return replacementMap.reduce(
+    (acc, { regex, replacement }) => acc.replace(regex, replacement),
+    content
+  )
 }

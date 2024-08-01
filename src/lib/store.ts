@@ -361,7 +361,7 @@ const heros: { [key: string]: HeroType[] } = {
         title: {
           f1: 'Ressources pour ',
           f2: 'dispenser',
-          f3: "l'avortement par médicaments",
+          f3: " l'avortement par médicaments",
         },
         paragraphs: [
           {

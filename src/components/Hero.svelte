@@ -1,8 +1,8 @@
 <script lang="ts">
     import {data} from '$lib/data';
-
     export let type: string;
     export let id: string;
+
     $: hero = $data.hero.find((hero: any) => hero.type === type && hero.id === id);
 </script>
   
@@ -16,7 +16,7 @@
                     {#if typeof hero.data.title === 'string'}
                         <h1>{hero.data.title}</h1>
                     {:else}
-                        <h1>{hero.data.title.f1}<span style="color: var(--{hero.data.title.f2}); font-weight: 700;">{hero.data.title.f2}</span>{hero.data.title.f3}</h1>
+                        <h1>{hero.data.title.f1}<span class={hero.id}>{hero.data.title.f2}</span>{hero.data.title.f3}</h1>
                     {/if}
                     {#each hero.data.paragraphs as paragraph}
                         <p>
@@ -37,14 +37,17 @@
 </main>
 
 <style>
-    .Prescribing {
+    .P {
         color: var(--Prescribing);
+        font-weight: 700;
     }
-    .Dispensing {
+    .D {
         color: var(--Dispensing);
+        font-weight: 700;
     }
-    .Supporting {
+    .S {
         color: var(--Supporting);
+        font-weight: 700;
     }
     /* variant: home */
     .banner {

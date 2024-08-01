@@ -19,6 +19,7 @@ import AnemiaSTIOthers from './anemia-sti-others.png'
 import PostAbortionFollowUp from './post-abortion-follow-up.png'
 import AbortionComplete from './abortion-completion-assessment.png'
 import PostAbortionContraception from './post-abortion-contraception.png'
+import MifegysmoOverview from './mifegysmo-overview.png'
 import MifegysmoOverviewFr from './mifegysmo-overview-fr.png'
 import AbortionOptionsFr from './abortion-options-fr.png'
 import AdminInstructionsFr from './administrator-instruction-fr.png'
@@ -66,6 +67,7 @@ export const images = {
   PostAbortionFollowUp,
   AbortionComplete,
   PostAbortionContraception,
+  MifegysmoOverview,
   MifegysmoOverviewFr,
   AbortionOptionsFr,
   AdminInstructionsFr,
