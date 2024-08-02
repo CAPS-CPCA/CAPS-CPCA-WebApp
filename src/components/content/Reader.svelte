@@ -1,6 +1,6 @@
 <script lang="ts">
-    import { formatText } from '$lib/modules';
-    import Outline from './Outline.svelte';
+import { formatText } from '$lib/modules';
+import Outline from './Outline.svelte';
 
     export let modules:any = [];
 </script>
@@ -13,29 +13,41 @@
         {:else}
         {#each modules as module}
         <h1>{module.title}</h1>
-        <div class="module">
+            <div class="module">
                 <div class="idholder" id={module.id}></div>
-                {#each module.content as content}
-                    {#if content.type === 'p'}
-                        {#each content.data as para}
-                            <p>{@html formatText(para)}</p>
-                        {/each}
-                    {:else if content.type === 'h2'}
-                        <h2>{content.data}</h2>
-                    {:else if content.type === 'ul'}
-                        <ul>
-                            {#each content.data as item}
-                                <li>{@html formatText(item)}</li>
-                            {/each}
-                        </ul>
-                    {:else if content.type === 'ol'}
-                        <ol>
-                            {#each content.data as item}
-                                <li>{item}</li>
-                            {/each}
-                        </ol>
-                    {:else if content.type === 'img'}
-                        <img src={content.data.src} alt={content.data.alt}/>
+                {#each module.content as obj}
+                    {#if obj.type === 'p'  || obj.type === 'h2' || obj.type === 'ul' || obj.type === 'ol'}
+                        {@html '<'+ obj.type + '>' + formatText(obj.data, obj.type) + '</'+ obj.type + '>'}
+                    {:else if obj.type === 'img'}
+                        <img src={obj.data.src} alt={obj.data.alt} />
+                    {:else if obj.type === 'ol-2'}
+                        <ol>{#each obj.data as item}
+                            {#if typeof item === 'string'}
+                                <li>{item}</li> 
+                            {:else if item.type === 'ul'}
+                                <ul>{#each item.data as subitem}
+                                    <li>{subitem}</li>
+                                {/each}</ul>
+                            {:else if item.type === 'p'}
+                                <li><p>{@html formatText(item.data, item.type)}</p></li>
+                            {:else if item.type === 'img'}
+                                <li class="no-count"><img src={item.data.src} alt={item.data.alt} /></li>
+                            {/if}
+                        {/each}</ol>
+                    {:else if obj.type === 'ul-2'}
+                        <ul>{#each obj.data as item}
+                            {#if typeof item === 'string'}
+                                <li>{item}</li> 
+                            {:else if item.type === 'ul'}
+                                <ul>{#each item.data as subitem}
+                                    <li>{subitem}</li>
+                                {/each}</ul>
+                            {:else if item.type === 'p'}
+                                <li><p>{@html formatText(item.data, item.type)}</p></li>
+                            {:else if item.type === 'img'}
+                                <li class="no-count"><img src={item.data.src} alt={item.data.alt} /></li>
+                            {/if}
+                        {/each}</ul>
                     {/if}
                 {/each}
             </div>

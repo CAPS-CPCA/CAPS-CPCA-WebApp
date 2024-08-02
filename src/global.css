@@ -82,7 +82,7 @@ span {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  /* gap: 1.5rem; */
   padding: 3.5rem 4.5rem;
   border: 1px solid #545454;
   background: #f6f7f8;
@@ -101,12 +101,18 @@ span {
   transition: 150ms ease-in-out;
 }
 .module li {
-  list-style-type: disc;
   color: #3e3e3e;
   padding-left: 1.5rem;
   font-size: 1.25rem;
   font-family: 'Roboto';
   line-height: 1.75;
+}
+.module ul li {
+  list-style: disc;
+}
+.no-count {
+  list-style-type: none;
+  counter-increment: list-item 0;
 }
 /* UI */
 button.primary,
