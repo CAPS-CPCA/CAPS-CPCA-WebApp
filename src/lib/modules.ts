@@ -17,7 +17,7 @@ export const modules: { [key: string]: Modules } = {
   en: [
     {
       id: 'M1',
-      title: 'Mifegymiso Overview',
+      title: 'Mechanism of Action',
       content: {
         type: ['p', 'i-full'],
         data: [
@@ -1203,20 +1203,18 @@ Schedule a first virtual visit via telephone or video.`,
       id: 'M31',
       title: 'Clinical assessments',
       content: {
-        type: ['p', 'ul', 'p'],
+        type: ['p', 'ulul'],
         data: [
-          `Prescribers will provide clinical assessments prior to prescribing MIFE / MISO. With the new guideline by SOGC for the provision of medical abortion via telemedicine (MA), prescribers may eliminate blood work or ultrasound, or both, to ensure timely provision of MA[7].
-
-        Gestational age is determined using medical history, urine or serum βhCG test, or ultrasound. Ultrasound is not required to determine gestational age, unless people seeking abortion are uncertain of their last menstrual period[6,7].
-
+          `Prescribers will provide clinical assessments prior to prescribing MIFE / MISO. With the new guideline by SOGC for the provision of medical abortion via telemedicine (MA), prescribers may eliminate blood work or ultrasound, or both, to ensure timely provision of MA[7].`,
+          [
+            `Gestational age is determined using medical history, urine or serum βhCG test, or ultrasound. Ultrasound is not required to determine gestational age, unless people seeking abortion are uncertain of their last menstrual period[6,7].
         Ectopic pregnancy is ruled out using medical history to screen for risk factors and symptoms. Ultrasound is recommended if there are significant risk factors or symptoms suggestive of ectopic pregnancy[6,7].
-
         Guideline on Rhesus testing and administration varies:`,
-          `SOGC’s Guideline on Prevention of RhD Alloimmunization: Rh administration is suggested for non-sensitized Rh D-negative individuals who have experienced threatened, spontaneous, or induced abortion after 12 weeks gestation[21].
+            `SOGC’s Guideline on Prevention of RhD Alloimmunization: Rh administration is suggested for non-sensitized Rh D-negative individuals who have experienced threatened, spontaneous, or induced abortion after 12 weeks gestation[21].
         The Society of Family Planning: Rh testing is not recommended prior to 12 weeks gestations for spontaneous, medications, or uterine aspiration abortion[8].`,
-          `Complete blood count to measure hemoglobin level is indicated if there is an increased risk of anemia; otherwise, it is unnecessary[7].
-
+            `Complete blood count to measure hemoglobin level is indicated if there is an increased risk of anemia; otherwise, it is unnecessary[7].
         Routine prophylactic antibiotics are not required; screen-and-treat is the preferred management strategy and it is performed by the prescriber[6].`,
+          ],
         ],
       },
     },
@@ -1417,7 +1415,7 @@ Schedule a first virtual visit via telephone or video.`,
   fr: [
     {
       id: 'M1',
-      title: 'Mifegymiso Overview',
+      title: 'Mécanisme d’action',
       content: {
         type: ['p', 'i-full'],
         data: [
@@ -1429,6 +1427,1383 @@ Schedule a first virtual visit via telephone or video.`,
 
           Cliquez ici pour télécharger la monographie du produit.`,
           images.MifegysmoOverviewFr,
+        ],
+      },
+    },
+    {
+      id: 'M2',
+      title: 'Efficacité et sécurité',
+      content: {
+        type: ['h2', 'ul', 'h2', 'ul'],
+        data: [
+          'Efficacité:',
+          `Le MIFÉ / MISO est très efficace. Le risque de poursuite de la grossesse est de 0,9 % pour les grossesses jusqu’à 49 jours d’âge gestationnel et de 3,1 % pour les grossesses jusqu’à 70 jours d’âge gestationnel[10].
+          Selon le protocole de la SOGC pour l’avortement médicamenteux par télémédecine, la personne doit prendre une première dose de MISO par voie buccale ou vaginale 24 à 48 heures après avoir pris de la MIFÉ[7].
+          De plus, les personnes dont l’âge gestationnel est de 63 jours ou moins doivent prendre la deuxième dose de MISO si aucun saignement ne survient dans les 24 heures suivant la première dose de MISO ou selon les instructions du clinicien. Les personnes dont l’âge gestationnel est supérieur à 63 jours doivent prendre une deuxième dose de MISO 4 heures après la première dose[7].`,
+          'Effets secondaires et complications[10]:',
+          `Très fréquent (≥ 10 %): nausées, vomissements, diarrhée, étourdissements, maux de tête, frissons/fièvre, faiblesse, fatigue, inconfort gastrique, douleurs abdominales, saignements vaginaux, microrragies, contractions ou crampes utérines.
+          Fréquent (1-10 %): évanouissement, crampes gastro-intestinales légères ou modérées, saignements post-avortement prolongés, endométrite, sensibilité des seins, saignements abondants (pouvant ou non nécessiter un avortement par instruments).
+          Peu fréquent (0,1-1 %): arythmie, choc hémorragique, salpingite, saignements abondants nécessitant des liquides IV ou une transfusion sanguine, infection, bouffées de chaleur, hypotension, bronchospasme, éruption cutanée / prurit.`,
+        ],
+      },
+    },
+    {
+      id: 'M3',
+      title: 'Indications et contre-indications',
+      content: {
+        type: ['h2', 'p', 'h2', 'ul', 'h2', 'p', 'h2', 'p', 'h2', 'p'],
+        data: [
+          'Indication:',
+          `MIFE / MISO est indiqué par Santé Canada pour l’interruption de grossesse jusqu’à 63 jours à compter de la date de début des dernières menstruations (DDM) dans un cycle présumé de 28 jours. La SOGC indique une utilisation sécuritaire jusqu’à 70 jours des DDM. Il n’y a pas de limite inférieure absolue d’âge gestationnel[5].`,
+          'Contre-indications[6]:',
+          `Grossesse ectopique
+          Insuffisance surrénalienne chronique
+          Porphyrie héréditaire
+          Asthme incontrôlé
+          Trouble hémorragique ou traitement anticoagulant concomitant
+          Anémie (taux d’Hb < 95 g/L)
+          Corticothérapie systémique au long cours
+          Allergies ou hypersensibilité aux ingrédients du produit
+          DIU in situ (n’est plus une contre-indication une fois retiré)
+          Maladies systémiques graves telles que maladies du foie, maladies cardiaques, insuffisance rénale et troubles épileptiques (ces maladies doivent être évaluées individuellement)
+          Âge gestationnel incertain
+          Incertitude décisionnelle`,
+          'Allaitement[6]:',
+          `Le MISO oral est excrété dans le lait maternel en petites quantités qui sont rapidement éliminées. Aucune interruption de l’allaitement n’est nécessaire lorsque le MISO est administré par quelque voie que ce soit.`,
+          'Âge gestationnel > 63 jours',
+          `La Société des Obstétriciens et Gynécologues du Canada et la National Abortion Federation (NAF) approuvent toutes deux l’avortement par médicaments (AM) avec MIFÉ / MISO jusqu’à 70 jours après la LMP. Elles recommandent également une deuxième dose de MISO 800mcg quatre heures après la première dose de MISO 800mcg pour augmenter l’efficacité de l’AM.[5,13].
+
+          La Société des Obstétriciens et Gynécologues du Canada recommande également un régime MIFÉ / MISO à partir de 70 à 84 jours d’âge gestationnel, avec 200 mg de mifépristone suivi dans 24 à 48 heures de deux doses de 800 mcg de MISO (buccale ou vaginale), à 4 heures d’intervalle.
+
+          L’efficacité diminue à mesure que l’âge gestationnel approche 70 jours. Les prescripteurs doivent informer les personnes qu’il s’agit d’une utilisation non conforme, qu’il existe une possibilité d’expulsion et d’observation un fœtus intact et qu’il existe des taux plus élevés de saignements et d’avortement incomplet ou échoué.`,
+          'Personnes âgées de 15 à 18 ans',
+          `Les données sont insuffisantes pour établir l’efficacité et la sécurité chez les personnes de moins de 15 ans. Cependant, chez les personnes âgées de 15 à 18 ans, la sécurité et l’efficacité ont été démontrées avec des vomissements et des douleurs étant rapportés plus fréquemment que chez les adultes.[11]. Ainsi, les considérations particulières pour les personnes de cette tranche d’âge peuvent inclure du counseling pour les préparer aux vomissements et à la douleur, ainsi qu’un soutien psychosocial tout au long du processus d’avortement par médicaments.`,
+        ],
+      },
+    },
+    {
+      id: 'M5',
+      title: 'Counseling pré-avortement',
+      content: {
+        type: ['p', 'h2', 'ul', 'p', 'ul'],
+        data: [
+          `Le counseling est important pour s’assurer que les personnes comprennent leurs options, les risques et les avantages de chacune, et pour prendre des décisions éclairées. Le counseling aide également les prescripteurs à comprendre les préférences et les circonstances des personnes afin de recommander la meilleure démarche à suivre.`,
+          'Les points clés du counseling comprennent[4,6]:',
+          `<b>Examiner les options de grossesse</b>  lorsque cela est indiqué: avortement, devenir parent ou confier l’enfant en adoption.
+        Adapter le counseling aux besoins de la personne (par exemple contrer la stigmatisation de l’avortement et/ou fournir un soutien émotionnel).
+        Communiquer les risques liés à la progression de la grossesse sans exercer de pression temporelle à la personne.
+        <b>Utilisez un langage sans jugement et inclusif</b>.`,
+          '<i>(Si le choix est l’avortement:)</i>',
+          `Examiner les options d’avortement, y compris les risques, l’efficacité, le processus et la durée du traitement par médicaments par rapport à l’avortement par instruments.
+          <b>Discuter de l’éligibilité de la personne à l’avortement par médicaments</b>, y compris l’âge gestationnel et les antécédents médicaux.
+          <b>Discuter de l’accès de la personne aux pharmacies, au téléphone, aux transports, aux soins d’urgence, ainsi qu’aux installations de laboratoires et d’imagerie</b> si nécessaire.
+          Discuter des préférences et des circonstances de la personne, comme par exemple un endroit sécuritaire à leur domicile pour réaliser l’avortement par médicaments.
+          Confirmer que la décision appartient à la personne, prise librement.
+          Confirmer que la personne comprend que <b>l’avortement par médicaments est irréversible</b> et qu’elle devra prendre une dose supplémentaire du deuxième médicament ou procéder à un avortement par instruments en cas d’échec (poursuite de la grossesse).
+          Revoir le calendrier des examens (échographie, prises de sang, si nécessaire), des médicaments et des rendez-vous de suivi.
+          Discuter des options de contraception post-avortement.`,
+        ],
+      },
+    },
+    {
+      id: 'M6',
+      title: 'Options d’avortement',
+      content: {
+        type: ['p', 'ul', 'p', 'ul', 'i-full'],
+        data: [
+          '<b>L’avortement par médicaments</b> convient aux personnes qui[6]:',
+          `Préfèrent une méthode non-invasive.
+          Préfèrent être dans le confort de leur foyer.
+          Ont la confiance de pouvoir gérer le processus et les effets secondaires à la maison.
+          Sont en mesure de prendre 1 à 3 jours de congé ou d’autres responsabilités pour procéder à l’avortement.
+          Manquent de transport pour se rendre à la clinique pour un avortement par instruments (mais ont néanmoins accès aux services d’urgence en cas de complications).`,
+          '<b>L’avortement par instruments</b> convient aux personnes qui[6]:',
+          `Préfèrent bénéficier du soutien en personne ainsi qu’une surveillance par des professionnels de la santé en clinique ou à l’hôpital.
+          Souhaitent que l’avortement soit fourni rapidement afin de pouvoir reprendre le travail ou d’autres responsabilités.
+          Se sentent à l’aise avec l’examen gynécologique et l’utilisation d’instruments médicaux.
+          Sont confortables avec une anesthésie locale ou générale pour gérer la douleur.
+          Ne veulent pas divulguer la grossesse et l’avortement aux personnes avec qui elles vivent (comme les partenaires, les colocataires, les collègues de travail), car il pourrait être difficile de cacher des saignements abondants et des crampes fortes.`,
+          images.AbortionOptionsFr,
+        ],
+      },
+    },
+    {
+      id: 'M14',
+      title: 'Consentement éclairé',
+      content: {
+        type: ['p', 'olul'],
+        data: [
+          'Une fois que la personne et le professionnel de la santé ont déterminé que l’avortement par médicaments (AM) est la bonne option, le professionnel de la santé devrait[2,6,7,10]:',
+          [
+            `<b>Obtenir un consentement éclairé écrit ou verbal</b> (voir exemples sur la plateforme CAPS-CPCA et le Bay Center for Birth Control) et le documenter dans le dossier de la personne.
+          <b>Prescrire:</b>`,
+            `Mifépristone 200 mg (MIFÉ) par voie orale et misoprostol 800 mcg (MISO) par voie buccale ou vaginale (cette combinaison est commercialisée et marquée sous le nom de Mifé-Miso).
+          Dose supplémentaire de MISO par voie buccale ou vaginale en cas d’avortement incomplet.
+          Analgésiques et antiémétiques selon le protocole du professionnel de la santé ou de l’établissement.
+          Antibioprophylaxie, si nécessaire, selon le protocole du professionnel de la santé ou de l’établissement.`,
+            `Fournir des instructions sur la façon de prendre le médicament.
+          S’assurer que les personnes savent comment gérer les effets secondaires ainsi que quand et où consulter en cas de complications.
+          Envisager d’informer les personnes si la procédure d’AM implique des pratiques hors normes mais fondées sur des preuves.`,
+            `Une grande partie des pratiques hors normes d’AM sont basées sur une faible quantité de ressources et nécessite un équilibre entre l’expérience des professionnels de la santé et la sécurité et les besoins des personnes qui ont recours à un avortement.
+          Il est recommandé d’informer les personnes des pratiques hors normes afin de comprendre les risques associés et savoir que ces pratiques hors normes peuvent varier en fonction de l’expérience et du niveau de confort des prescripteurs.`,
+            `Discuter des options de contraception après un avortement. <b>Souligner le fait que les personnes peuvent rapidement retrouver leur fertilité après un avortement</b>.
+          <b>Planifier des rendez-vous de suivi, soit en personne, soit par téléphone/vidéo</b>. Discuter d’un plan de sécurité ou de confidentialité si nécessaire.
+          Fournir aux personnes des manuels d’instructions (voir des exemples: SHORE center et Planned Parenthood Ottawa) ainsi que les coordonnées des professionnels de santé et des services de santé d’urgence.
+          Prendre note des numéros de téléphone et des contacts d’urgence fournis en lien avec l’AM par la personne au cas où les professionnels de la santé ne seraient pas en mesure de la joindre directement. Se rappeler que les contacts d’urgence fournis par les personnes lors de leurs visites d’AM peuvent être différents des contacts d’urgence figurant dans le dossier. Veiller à ne contacter aucune autre personne sans son consentement explicite en lien avec l’AM.`,
+          ],
+        ],
+      },
+    },
+    {
+      id: 'M15',
+      title: 'Instructions d’administration',
+      content: {
+        type: ['i-full'],
+        data: [images.AdminInstructionsFr],
+      },
+    },
+    {
+      id: 'M33',
+      title: 'Doses manquées',
+      content: {
+        type: ['p', 'h2', 'ul', 'h2', 'ul', 'p'],
+        data: [
+          `La MIFÉ et le MISO sont tous deux tératogènes et ont été associés à des anomalies fœtales. Une fois le traitement MIFÉ / MISO débuté, il existe un risque d’embryotoxicité si la grossesse n’est pas interrompue[10].
+
+          Si le MISO est oublié et que > 48 heures se sont écoulées depuis la MIFÉ: prendre immédiatement le MISO et informer le professionnel de la santé lors du suivi[10].`,
+          'Administration buccale de MISO[10]',
+          `Si des vomissements surviennent < 1 heure après la prise de MIFÉ ou lors de l’absorption buccale du MISO: Contacter un professionnel de la santé / pharmacien pour une évaluation.
+          Si des vomissements surviennent > 30 minutes après l’ingestion de fragments de MISO: Aucune action n’est requise.`,
+          'Insertion vaginale de MISO[10]',
+          `Si les comprimés tombent avant le début des saignements: Réinsérer le comprimé ou contacter un professionnel de la santé, s’il est impossible de le réinsérer.
+          Si les comprimés sortent lors des saignements: Aucune action n’est nécessaire ; dans la plupart des cas, une portion suffisante du médicament aura été absorbée.`,
+          'Dans tous les cas, si les saignements ne démarrent pas au bout de quelques heures, contacter un professionnel de la santé.',
+        ],
+      },
+    },
+    {
+      id: 'M16',
+      title: 'Gestion des effets secondaires',
+      content: {
+        type: ['i-full'],
+        data: [images.SideEffectsManageFr],
+      },
+    },
+    {
+      id: 'M8',
+      title: 'Dépistage de base',
+      content: {
+        type: ['p'],
+        data: [
+          `Les antécédents médicaux doivent être évalués pour déterminer l’âge gestationnel, évaluer les contre-indications et identifier les précautions supplémentaires. Les antécédents fournissent également une base de référence pour le suivi et aident à déterminer les options de contraception appropriées et si des tests supplémentaires sont nécessaires[6].
+
+          Les signes vitaux de base et l’examen pelvien devraient être effectués en fonction des antécédents. Les pratiques peuvent varier[6].`,
+        ],
+      },
+    },
+    {
+      id: 'M9',
+      title: 'Détermination de l’âge gestationnel',
+      content: {
+        type: ['p'],
+        data: [
+          `Un test urinaire positif à la bêta-gonadotrophine chorionique humaine (βhCG) est suffisamment sensible pour confirmer une grossesse[6].
+
+        <b>Échographie:</b> L’échographie est la mesure la plus précise de l’âge gestationnel (AG), mais ne constitue pas une exigence de routine, sauf si la personne n’est pas certaine de la date de ses dernières menstruations (DDM) (ou s’il existe des symptômes et des facteurs de risque de grossesse ectopique, comme expliqué, ci-dessous). Il est recommandé de choisir une clinique d’échographie dont le personnel offre des échographies sans jugement[6].
+
+        <b>Antécédents médicaux:</b> Si la personne est certaine de la date de ses dernières menstruations (DDM) et si elle a eu des menstruations régulières sans utilisation récente de contraception hormonale, l’estimation de l’AG en fonction de sa date serait étroitement corrélée aux résultats de l’échographie[6].
+
+        <b>Examen gynécologique:</b> Au premier trimestre, la détermination de l’AG par un examen bimanuel a été démontrée comme précise à deux semaines près de l’AG déterminée par échographie; cependant, la précision varie en fonction de l’expérience du technicien, de la quantité de tissu adipeux et de la présence de fibromes[6].
+
+        <b>Test βhCG:</b> Le taux de βhCG augmente de manière linéaire au cours des 6 premières semaines de grossesse mais varie fortement par la suite et limite son utilité pour la datation[6].`,
+        ],
+      },
+    },
+    {
+      id: 'M10',
+      title: 'Grossesse ectopique',
+      content: {
+        type: ['left', 'p', 'ul', 'p'],
+        data: [
+          images.EctopicPregnancy,
+          `<b>La grossesse ectopique (GE)</b> est rare. Elle survient dans 1 ou 2 grossesses sur 100 dans la population générale et le taux est systématiquement plus faible chez les personnes qui ont reours à l’avortement. Il est recommandé de prescrire une échographie aux personnes qui présentent des facteurs de risque, des signes ou des symptômes de GE.[6].
+
+
+        <b>Les principaux facteurs de risque, signes et symptômes de la GE comprennent</b>[6]:`,
+          `Grossesse ectopique (GE) antérieure.
+          Dispositif intra-utérin (DIU) en place.
+          Recours à des techniques de procréation assistée.
+          Chirurgie antérieure des trompes de Fallope telle que ligature des trompes.
+          Antécédents de salpingite ou de maladie inflammatoire pelvienne.
+          Symptômes de douleurs abdominales et de saignements vaginaux.`,
+          `<b>Les grossesses multiples</b> ne constituent pas une contre-indication à l’avortement par médicaments (AM), cependant la présence d’une grossesse multiple doit être communiquée à la personne si elle accepte d’obtenir des informations sur la grossesse[6].
+
+        <b>Les avortements manqués et incomplets</b> doivent également être divulgués aux personnes si elles acceptent d’obtenir des informations échographiques et doivent être gérés soit par AM, soit par avortement par instruments[6].
+
+        En cas de <b>grossesse môlaire</b>, une consultation, une analyse histologique des produits de conception et une surveillance des niveaux de βhCG sont essentiels avant l’avortement par instruments. L’AM n’est pas appropriée.[6].`,
+        ],
+      },
+    },
+    {
+      id: 'M11',
+      title: 'Grossesse de localisation indéterminée',
+      content: {
+        type: ['p', 'ul', 'p', 'ul'],
+        data: [
+          `Les personnes qui ont une grossesse de localisation indéterminée (GLI) et demandent un avortement par médicaments (AM) doivent bénéficier d’un avortement sans délai, à condition qu’elles ne présentent aucun symptôme clinique de grossesse ectopique (GE). L’incapacité d’identifier une grossesse intra-utérine ne devrait pas retarder l’AM[6].
+
+          Si le taux de βhCG sérique est > 2000 UI/L et qu’aucun sac gestationnel intra-utérin n’est visualisé à l’échographie[6]:`,
+          `Une évaluation plus approfondie est nécessaire.`,
+          `En l’absence de facteurs de risque de GE, si le taux de βhCG est ≤ 2 000 UI/L ou si un sac gestationnel probable est présent sans vésicule vitelline ni pôle fœtal[6]:`,
+          `Les personnes peuvent recevoir un AM.
+          Lorsque ces personnes reçoivent un AM, elles doivent être informées des risques et des symptômes de GE, ainsi que la personne à contacter en cas d’urgence.
+          Un suivi de la βhCG dans les 7 jours est recommandée en cas de GLI. Une réduction de 50 % est attendue 3 jours après l’administration de MIFÉ (ou 24 à 48 heures après le MISO) ou de 80 % entre 7 et 14 jours après l’administration de MIFÉ / MISO; sinon, la possibilité d’une GE doit être éliminée.`,
+        ],
+      },
+    },
+    {
+      id: 'M12',
+      title: 'Dépistage du statut Rh',
+      content: {
+        type: ['p'],
+        data: [
+          `Les lignes directrices sur le dépistage du Rh ont été mises à jour.
+
+          Selon les lignes directrices de la SOGC sur la prévention de l’allo-immunisation RhD publiées en 2024, l’administration de 300 μg d’immunoglobuline Rho(D) est suggérée aux personnes Rh D-négatives non sensibilisées qui ont subi une menace d’avortement, un avortement spontané ou provoqué après 12 semaines de gestation.
+
+          Auparavant, en 2022, la Society of Family Planning et l’Organisation mondiale de la santé (OMS) ont également recommandé de suspendre le test et l’administration du Rh avant 12 semaines de gestation pour les personnes subissant un avortement par médicaments (AM), un avortement spontané ou un avortement par aspiration utérine[8,20].`,
+        ],
+      },
+    },
+    {
+      id: 'M13',
+      title: 'Anémie, ITSS et autres',
+      content: {
+        type: ['i-full'],
+        data: [images.AnemiaSTIOthersFr],
+      },
+    },
+    {
+      id: 'M17',
+      title: 'Suivi post-avortement',
+      content: {
+        type: ['p', 'h2', 'i-full', 'p', 'ul'],
+        data: [
+          `Un rendez-vous de suivi est nécessaire pour confirmer la fin de la grossesse, gérer les complications, discuter de la contraception et et offrir un soutien émotif, si requis.`,
+          '<b>Mode de suivi:</b>',
+          images.PostAbortionFollowUpFr,
+          `<b>Soutien émotionnel</b>[6]:  Les réponses émotionnelles après l’AM varient. Certaines personnes se sentent soulagées et positives, tandis que d’autres éprouvent des sentiments de chagrin, de tristesse ou de culpabilité, et d’autres encore ont des sentiments mitigés. Ces émotions sont normales et peuvent ou non être liées aux circonstances socio-économiques, au manque de soutien social, au malaise moral et aux conflits familiaux.
+
+          Les personnes peuvent être soutenus en affirmant que les émotions mitigées sont normales et en explorant des stratégies d’adaptation et de soutien. Les ressources utiles comprennent:`,
+          `Exhale, une ligne téléphonique qui fournit un soutien émotionnel, des ressources et des informations après un avortement.
+          All-Options, une ligne de discussion pour discuter des expériences passées ou actuelles en matière d’avortement, d’adoption et de parentalité pour les personnes au Canada et aux États-Unis (1-888-493-0092).`,
+        ],
+      },
+    },
+    {
+      id: 'M18',
+      title: 'Évaluation du succès de l’avortement',
+      content: {
+        type: ['p', 'i-full', 'p', 'ul', 'p'],
+        data: [
+          `La complétion d’un avortement par médicaments (AM) doit être évaluée par le professionnel de la santé. Selon les circonstances, cela peut être fait en obtenant les antécédents cliniques, une échographie ou un test urinaire ou de βhCG sérique. Cette évaluation peut être effectuée en personne, par téléphone ou par communication électronique en fonction de l’indication clinique et des préférences de la personne et du professionnel de la santé.
+
+        <b>Histoire clinique</b>[6]: L’évaluation de l’expulsion complète basée sur l’histoire médicale est fortement prédictive d’un avortement complet (sensibilité 99,1 %, spécificité 45,5 %). L’absence ou un saignement minime après la prise de MISO, ainsi que la persistance des symptômes de grossesse, suggèrent la poursuite de la grossesse.
+
+        <b>βhCG urinaire</b>[7]:`,
+          images.AbortionCompleteFr,
+          `<b>βhCG sérique</b>[3]:`,
+          `Une baisse d’au moins 50 % par rapport à la valeur initiale 3 jours après l’administration de MIFÉ (ou 24 et 48 heures après l’administration de MISO) est fortement indicative d’un avortement complet.
+          Une baisse de 80% entre 7 et 14 jours après l’administration de MIFÉ / MISO confirme un avortement complet.
+          Si la βhCG chute < 80 % entre le jour 7 et le jour 14, on peut prescrire une échographie ou répéter le test dans quelques jours. Une échographie doit être prescrite si 14 jours se sont écoulés et qu'une diminution de 80 % n'a pas été atteinte.`,
+          `<b>Échographie</b>[6]: L’échographie fournit une preuve définitive d’un AM complet, mais rien ne prouve que cette technique est supérieure aux autres méthodes. L’échographie est recommandée dans les cas où le résultat est incertain en fonction de l’histoire clinique ou en cas de symptômes tels qu’une douleur inattendue, des saignements abondants prolongés ou insuffisants.`,
+        ],
+      },
+    },
+    {
+      id: 'M19',
+      title: 'Gestion des complications',
+      content: {
+        type: ['p', 'ul', 'p', 'ul'],
+        data: [
+          `<b>Poursuite de la grossesse[</b>[6]: La poursuite de la grossesse après un avortement par médicaments (AM) est rare et peut être traitée par une dose répétée de MISO ou par un avortement par instruments. Un avortement par instruments est recommandé si une activité cardiaque est présente de 14 à 21 jours après la prise du MISO.
+
+        <b>Retention des produits de conception</b>[6]: En l’absence d’une grossesse évolutive, la rétention des produits de conception peut être gérée de façon conservatrice (attendre les saignements et les crampes spontanées), par une dose additionnelle de MISO, ou via une aspiration uterine. L’avortement par instruments d’urgence est indiqué en cas de saignements abondants incontrôlés ou d’une infection (endométrite).
+
+        Les symptômes comprennent des saignements abondants ou prolongés, des crampes inattendues, ou des saignements insuffisants suite au MISO.
+
+        <b>Infections post-avortement</b>[6]: Le traitement devrait être individualisé et consiste généralement en une thérapie à large spectre. Dans les cas bénins, des antibiotiques oraux peuvent être utilisés, mais dans le cas d’infection grave, les personnes doivent être hospitalisées pour traitement intraveineux. Une fois que les personnes commencent à prendre des antibiotiques, un avortement par instruments peut être nécessaire pour éliminer les produits de conception retenus.
+
+        Les symptômes des infections post-avortement comprennent`,
+          `Douleurs abdominales ou pelviennes
+          Pertes vaginales ou cervicales nauséabondes
+          Saignements vaginaux prolongés ou microrragie
+          Fièvre ou frissons (plus de 24 heures après le MISO
+          Sensibilité utérine ou annexielle
+          Leucocytose (élévation des globules blans lors d’un examen de laboratoire)`,
+          `<b>Syndrome de choc toxique</b>[6]: Le syndrome de choc toxique est associé à Clostridium et au streptocoque du groupe A. La majorité de ces infections sont fulminantes et évoluent rapidement vers le choc. L’antibiothérapie standard n’est pas suffisante. Le traitement consiste en des soins de soutien et un traitement antibiotique empirique couvrant les espèces de Clostridium et d’autres organismes connus pour provoquer un choc toxique, ainsi qu’un débridement chirurgical, y compris une éventuelle hystérectomie.
+
+          Les symptômes du syndrome de choc toxique comprennent`,
+          `Malaise général avec nausées, vomissements et diarrhée
+          Absence de fièvre (ou fièvre légère)
+          Douleurs abdominales minimes
+          Faiblesse
+          Symptômes pseudo-grippaux
+          Tachycardie/hypotension
+          Œdème
+          Nombre élevé de globules blancs ou taux d’hémoglobine élevé (lors d’un examen en laboratoire)`,
+        ],
+      },
+    },
+    {
+      id: 'M20',
+      title: 'Contraception post-avortement',
+      content: {
+        type: ['p', 'ul', 'p', 'i-full'],
+        data: [
+          `En raison du retour rapide à la fertilité après l’avortement par médicaments (AM), il est conseillé de choisir une méthode contraceptive dès les premières visites[6].
+
+        Les personnes recherchant plus d’informations sur les options de contraception peuvent être orientées vers :`,
+          `Ça se planifie du site Le Sexe et moi, un outil d’information santé en ligne pour déterminer la méthode contraceptive appropriée.
+          Contraception d’Action Canada pour la santé et les droits sexuels, un site Web des informations sur la contraception au Canada.`,
+          `Les options de contraception et les considérations particulières comprennent:`,
+          images.PostAbortionContraceptionFr,
+        ],
+      },
+    },
+    {
+      id: 'M21',
+      title: 'Étapes initiales',
+      content: {
+        type: ['p', 'ol'],
+        data: [
+          `<b>L’avortement par médicaments</b> (AM) virtuel ou hybride, également appelé sans contact ou à faible contact, est une formule dans laquelle certains ou tous les rendez-vous sont effectués virtuellement par téléphone et/ou vidéo en réduisant ou en éliminant les analyses sanguines et les échographies. L’objectif est de réduire le risque pour les personnes de contracter des infections transmissibles (comme dans le cas du COVID-19) ou de réduire la distance à parcourir ou des délais avant d’avoir accès à l’avortement.
+
+          Comme expliqué précédement, les soins virtuels et hybrides de l’AM peuvent être offerts dans <b>un contexte de ressources limitées et nécessitent un équilibre entre l’expérience du prescripteur, la sécurité de la personne et ses besoins</b>.
+
+          Lorsqu’ils reçoivent des demandes d’avortement par médicaments virtuel ou hybride, les prescripteurs doivent[7]:`,
+          `Confirmer l’identité de la personne et s’assurer qu’elle peut discuter de façon confidentielle et en sécurité.
+          Fournir des informations écrites sur l’avortement par médicaments et l’avortement par instruments avant la consultation.
+          Demander de passer un test de grossesse urinaire de pharmacie.
+          Planifier une première visite virtuelle par téléphone ou vidéo.`,
+        ],
+      },
+    },
+    {
+      id: 'M22',
+      title: 'Évaluation virtuelle',
+      content: {
+        type: ['p', 'olul'],
+        data: [
+          'Les évaluations suivantes doivent être réalisées[7,19]:',
+          [
+            `<b>Revoir le counseling sur les options de grossesse.</b>
+        <b>Confirmer la grossesse et établir l’âge gestationnel.</b>`,
+            `Questionner la date des dernières menstruations (DDM) et la date du test de grossesse qualitatif positif.
+            Questionner les antécédents médicaux pertinents, y compris la contraception hormonale récente et les facteurs de risque et signes de grossesse ectopique.`,
+            `<b>Exclure les contre-indications</b>.
+        <b>Évaluer la nécessité d’une échographie pour déterminer l’âge gestationnel et la localisation de la grossesse</b>[5]:`,
+            `Selon le protocole de la SOGC sur l’avortement par médicaments via télémédecine, une échographie doit être obtenue si la date des dernières menstruations (DDM) est incertaine, si la DDM dépasse 70 jours et si les signes, symptômes ou facteurs de risque de grossesse ectopique (GE) sont présents.
+            L’avortement par médicaments réalisé en l’absence d’échographie est, par définition, une grossesse de localisation indéterminée (GLI) et doit être géré en conséquence. Bien que le risque de GE non détectée soit faible, une surveillance étroite est nécessaire pour s’assurer que l’avortement est complet.`,
+            `<b>Déterminer la nécessité d’analyses sanguines pour mesurer l’hémoglobine</b>[7]:`,
+            `Selon Santé Canada, l’hémoglobine doit être supérieure à 9,5 g / dL avant de commencer l’AM.
+            Dépister les personnes à risque accru d’anémie via les antécédents médicaux détaillés.
+            Si l’on soupçonne un risque accru d’anémie, une formule sanguine complète est indiquée. Sinon, la mesure de l’hémoglobine n’est pas nécessaire.`,
+            `<b>Évaluer la nécessité d’analyses sanguines pour déterminer le facteur Rhésus (Rh)</b>[7]:`,
+            `Comme expliqué précédement, les lignes directrices sur le facteur Rh ont été mises à jour et varient d’une organisation à l’autre.
+            La SOGC recommande la vérification et l’administration des immunoglobulines humaines anti-Rho pour les personnes dont la DDM dépasse 7 semaines. La SOGC conseille également de réserver l’administration lorsque la DDM dépassait 10 semaines pendant la pandémie de COVID-19.
+            La Fédération Nationale de l’Avortement (NAF), Society of Family Planning et l’Organisation mondiale de la santé (OMS) recommandent toutes le dépistage et l’administration des immunoglobulines humaines anti-Rho lorsque la DDM dépasse 12 semaines de gestation.`,
+            `<b>Évaluer la nécessité de tester les ITSS</b>`,
+            `Proposer un dépistage de la chlamydia et de la gonorrhée lorsque la visite est en présentiel.
+            Sinon, évaluer le risque d’ITSS et envisager un test à distance si des facteurs de risque sont présents, et discuter de la nécessité potentielle d’un traitement antibiotique.`,
+          ],
+        ],
+      },
+    },
+    {
+      id: 'M23',
+      title: 'Suivi',
+      content: {
+        type: ['p', 'olul'],
+        data: [
+          `Le rendez-vous de suivi devrait être planifié de 3 à 7 jours après la prise du misoprostol (MISO), et il peut être nécessaire de prévoir plusieurs rendez-vous de suivi. Le protocole de La SOGC pour l’avortement par médicaments via télémédecine recommande 7 jours[7], mais certains prescripteurs fixent le rendez-vous de suivi dès 3 jours après l’administration du MISO), afin d’éviter toute perte de contact et d’évaluer le taux de βhCG sérique. Les pratiques réelles dépendent du jugement et de l’expérience des prescripteurs.
+
+          Lors du suivi virtuel, les prescripteurs doivent[7]:`,
+          [
+            `<b>Questionner le déroulement de l’avortement</b> y compris les dates de prise des médicaments, les effets secondaires, la description des saignements, la douleur, le moment d’expulsion des produits de conception, et tout symptôme indiquant une grossesse évolutive.
+          Recommander une visite d’urgence en cas de signes de grossesse ectopique, d’infection pelvienne, de saignements abondants ou de douleur excessive.
+          <b>Si l’histoire suggère un échec d’avortement ou une grossesse évolutive</b>: envisager une dose supplémentaire de MISO ou un avortement par instruments: obtenir une échographie.
+          <b>Si l’histoire suggère un avortement réussi sans signe d’alerte ni symptôme de grossesse évolutive ainsi que des saignements et des douleurs normaux</b>: organiser les analyses de sang pour confirmer le taux de βhCG sérique si le rendez-vous est en personne, sinon demander à la personne d’effectuer un test de grossesse urinaire qualitatif.<br><br><b>βhCG sérique</b>[4]: Si le taux de βhCG sérique chute de > 50 % au jour 3 après la mifépristone ou de 80 % aux jours 7 à 14 après l’administration de la mifépristone / misoprostol, l’avortement est complet et aucun autre rendez-vous n’est nécessaire. Une échographie devrait être demandée si 14 jours se sont écoulés et qu’une diminution de 80 % n’a pas été atteinte.<br><br><b>βhCG urinaire</b>[7]:`,
+            images.AbortionCompleteFr,
+            `Proposer de discuter des options de contraception et de fournir un soutien émotionnel si nécessaire. Les ressources de soutien émotionnel comprennent:`,
+            `Exhale, une ligne téléphonique qui fournit un soutien émotionnel, des ressources et de l’information après un avortement.
+            All-Options, une ligne de discussion des expériences passées ou actuelles en matière d’avortement, d’adoption et de parentalité pour les personnes au Canada et aux États-Unis (1-888-493-0092).`,
+          ],
+        ],
+      },
+    },
+    {
+      id: 'B1',
+      title: 'Alberta',
+      content: {
+        type: ['p', 'h2', 'p', 'h2', 'p'],
+        data: [
+          `Les informations ci-dessous sont en attente de vérification.`,
+          'Gynécologie',
+          `Première visite: 03.08A Consultation complète – $111.06
+            Visite de suivi: 03.07B Consultation de suivi – $62.24`,
+          'Premiers soins',
+          `Première visite: 03.04A Visite complète – $83.37
+            Visite de suivi: 03.03A Visite de bureau – $35.26`,
+        ],
+      },
+    },
+    {
+      id: 'B2',
+      title: 'Colombie-Britannique',
+      content: {
+        type: ['p', 'h2', 'p', 'h2', 'p'],
+        data: [
+          `Les informations ci-dessous sont mises à jour en mars 2024.`,
+          'Gynécologie',
+          `Première visite: 14545 Avortement par médicaments – $170.95
+          Visite de suivi: 4012 Consultation limitée – $85.49
+          4007 Suivi – $53.52`,
+          'Premiers soins',
+          `Première visite: 14545 Avortement par médicaments – $170.95
+          Visite de suivi: 00100 Suivi – $34.04
+          Télésanté: 14545 Même code pour la consultation – $165.97
+          13437 Suivi – $31.84
+
+        Remarque: Pour la télésanté, les méthodes de soins virtuels peuvent inclure le téléphone, la vidéo ou la plateforme provinciale de télésanté, qui sont toutes également facturables pour le moment. Il n’est pas nécessaire d’avoir une relation médecin-patient continue pour que le médecin puisse soumettre une demande d’avortement par médicaments par télésanté.`,
+        ],
+      },
+    },
+    {
+      id: 'B3',
+      title: 'Manitoba',
+      content: {
+        type: ['p', 'h2', 'p', 'h2', 'p'],
+        data: [
+          `Les informations ci-dessous sont mises à jour en mars 2024.`,
+          'Gynécologie',
+          `Première visite: 8428 Gestion médicale de l’interruption volontaire de grossesse, comprenant l’examen, la gestion et le suivi de la personne prenant du misoprostol. – $171.00
+8499 Examen gynécologique complet excluant le test Pap – $125.61
+Visite de suivi: 8505 Antécédents et examen régionaux avec examen gynécologique excluant le test Pap.`,
+          'Premiers soins',
+          `Première visite: 8428 Gestion médicale de l’interruption volontaire de grossesse, comprenant l’examen, la gestion et le suivi de la personne prenant du misoprostol. – $171.00
+8499 Examen gynécologique complet excluant le test Pap – $125.61
+Visite de suivi: 8471 Visite intermédiaire régionale ou visite suivante avec examen gynécologique excluant le test Pap – $54.16
+
+        Remarque: Il n’y a aucune précision quant à savoir si les codes sont spécifiques aux spécialistes ou aux soins primaires dans le manuel de facturation du Manitoba. Ainsi, les fournisseurs devraient examiner les informations et appliquer les règles de leurs codes de facturation.`,
+        ],
+      },
+    },
+    {
+      id: 'B4',
+      title: 'New Brunswick',
+      content: {
+        type: ['p', 'h2', 'p', 'h2', 'p'],
+        data: [
+          `Les informations ci-dessous sont en attente de vérification.`,
+          'Gynécologie',
+          `Première visite: 54 Consultation majeure ou régionale – CA$95.91
+          9015 Gestion médicale d’une grossesse non-viable/non désirée, y compris le suivi de la βhCG, à ajouter à la visite ou à la consultation initiale – $136.22
+          Visite de suivi: 49 Examen régional – $52.82
+          Télésanté: Les mêmes codes, mais la code du site où se trouve physiquement le patient, doivent être enregistrés sur la soumission de la demande de règlement. Lors de la soumission d’une demande de télémédecine, le chiffre 8 doit être écrit devant le code du site fourni afin de préciser que le service a été rendu par télémédecine.
+          8717 Présence – 1ère personne vue, premières 15 minutes ou partie de, 40 unités.
+          8718 Ajouter – par 15 minutes ou partie de, 20 unités.`,
+          'Premiers soins',
+          `Première visite: 1 visite du bureau – $23.36
+          9142 Gestion médicale d’une grossesse non-viable/non désirée, y compris le suivi de la βhCG, à ajouter à la visite ou à la consultation initiale – $74.48
+          Visite de suivi: 1 visite du bureau – $23.36
+          Télésanté: Les mêmes codes, ainsi que le code du site où se trouve physiquement le patient, doivent être enregistrés sur la soumission de la demande de règlement. Lors de la soumission d’une demande de télémédecine, le chiffre 8 doit être écrit devant le code du site.
+          8717 Présence – 1ère personne vue, premières 15 minutes ou partie de, 40 unités.
+          8718 Ajouter – par 15 minutes ou partie de, 20 unités.`,
+        ],
+      },
+    },
+    {
+      id: 'B5',
+      title: 'Terre-Neuve et Labrador',
+      content: {
+        type: ['p', 'h2', 'p', 'h2', 'p'],
+        data: [
+          `Les informations ci-dessous sont mises à jour en mars 2024.`,
+          'Gynécologie',
+          `Visite initiale et visite de suivi: 54607 Avortement par médicaments – $187.49
+          Frais complet incluant tous les services liés à l’avortement par médicaments, y compris la consultation et/ou la visite au cours de laquelle le médicament est prescrit, le counseling, la commande et/ou la réalisation et l’interprétation d’analyses de laboratoire et d’imagerie diagnostique, ainsi que toute communication ou visite de suivi.`,
+          'Premiers soins',
+          `Visite initiale et visite de suivi: 54607 Avortement par médicaments – $187.49
+          Frais complet incluant tous les services liés à l’avortement par médicaments, y compris la consultation et/ou la visite au cours de laquelle le médicament est prescrit, le counseling, la commande et/ou la réalisation et l’interprétation d’analyses de laboratoire et d’imagerie diagnostique, ainsi que toute communication ou visite de suivi.`,
+        ],
+      },
+    },
+    {
+      id: 'B6',
+      title: 'Territoires du Nord-Ouest',
+      content: {
+        type: ['p', 'h2', 'p', 'h2', 'p'],
+        data: [
+          `Les informations ci-dessous sont en attente de vérification.`,
+          'Gynécologie',
+          `Visite initiale et visite de suivi: OB-025 Avortement par médicaments de gestation de moins de 7 semaines – comprend toutes les visites, échographies et injections – $361.93
+          Télésanté: TE-001 Consultation de télésanté par un consultant utilisant la communication audio-vidéo-données – $180.97
+          TE-002 Consultation en télésanté – par 15 minutes – maximum de 1,5 heures par séance – $54.29
+          TE-004 Consultation au service des urgences des communautés périphériques – CA$18.09
+          N’a pas besoin d’être votre propre client.`,
+          'Premiers soins',
+          `Première visite: GP-001 Première visite nécessitant une évaluation générale pour une nouvelle maladie – $102.35
+          Visite de suivi: GP-002 Visites suivantes du bureau autre qu’une simple visite – $45.48
+          Télésanté: TE-001 Consultation de télésanté par un consultant utilisant la communication audio-vidéo-donnée – $180.97
+          TE-002 Consultation en télésanté – par 15 minutes – maximum de 1,5 heures par séance – $54.29
+          TE-004 Consultation au service des urgences des communautés périphériques – CA$18.09
+          N’a pas besoin d’être votre propre client.`,
+        ],
+      },
+    },
+    {
+      id: 'B7',
+      title: 'Nouvelle-Écosse',
+      content: {
+        type: ['p', 'h2', 'p', 'h2', 'p'],
+        data: [
+          `Les informations ci-dessous sont mises à jour en mars 2024.`,
+          'Gynécologie',
+          `Première visite: 3.03V Avortement par médicaments / Interruption de grossesse précoce – 67.03 unités / $185.00
+          Visite de suivi: 3.03 Visites suivantes – 13 unités / $35.88
+          Télésanté: Comme en personne, utiliser AP=PHON pour le téléphone et AP=VIRC pour la plateforme vidéo`,
+          'Premiers soins',
+          `Première visite: 3.03V Avortement par médicaments / Interruption de grossesse précoce – 67.03 unités / $185.00
+          Visite de suivi: 3.03 Visites suivantes – 13 unités / $35.88
+          Télésanté: Comme en personne, utiliser AP=PHON pour le téléphone et AP=VIRC pour la plateforme vidéo`,
+        ],
+      },
+    },
+    {
+      id: 'B8',
+      title: 'Nunavut',
+      content: {
+        type: ['p'],
+        data: [`Pas de contenu.`],
+      },
+    },
+    {
+      id: 'B9',
+      title: 'Ontario',
+      content: {
+        type: ['p', 'h2', 'p', 'h2', 'p'],
+        data: [
+          `Les informations ci-dessous sont mises à jour en mars 2024.`,
+          'En personne:',
+          `Première visite: A920 Gestion médicale de la grossesse précoce – service initial – $161.15
+          Visite de suivi: A921 Gestion médicale de la grossesse précoce – Visite de suivi (limitée à deux par personne par grossesse) – $36.85`,
+          'Télésanté:',
+          `Première visite: A920 peut être facturé pour les visites téléphoniques et vidéo.
+          Visite de suivi: A921 – $36.85
+          A007 – $37.95
+          A102 – $15.00
+
+          Remarques: Si vous avez facturé le A920 pour la visite initiale, vous avez établi une relation et pour le suivi, vous pouvez utiliser le A921 (vidéo seulement) ou le A007 (téléphone). Les services de soins virtuels fournis dans les 24 mois suivant l’avortement par médicaments peuvent être considérés comme des services de soins virtuels complets car ils impliquent une relation patient-médecin existante/continue. Si vous ne rencontrez pas les patients lors de la première visite (c’est-à-dire que vous ne facturez pas le A920 pour la première visite et que vous n’avez donc pas de relation préétablie avec le patient), vous utiliserez le A102 pour un suivi téléphonique, qui rapporte $15.00.`,
+        ],
+      },
+    },
+    {
+      id: 'B10',
+      title: 'Île-du-Prince-Édouard',
+      content: {
+        type: ['p', 'h2', 'p', 'h2', 'p'],
+        data: [
+          `Les informations ci-dessous sont en attente de vérification.`,
+          'Gynécologie',
+          `Première visite: 6010 Avortement thérapeutique – $181.49
+          Visite de suivi: 0762 Consultation de suivi – $58.38
+          0713 Visite limitée du bureau – $42.00`,
+          'Premiers soins',
+          `Première visite: 6010 Avortement thérapeutique – $181.49
+          Visite de suivi: 0113 Visite limitée du bureau – $42.00
+          0163 Réexamen complet par un médecin spécialiste`,
+        ],
+      },
+    },
+    {
+      id: 'B11',
+      title: 'Quebec',
+      content: {
+        type: ['p', 'h2', 'p', 'h2', 'p'],
+        data: [
+          `Les informations ci-dessous sont mises à jour en mars 2024.`,
+          'Gynécologie',
+          `Première visite: 15850 Évaluation globale pour interruption d’une grossesse (< 63 jours) – $168.90
+          15852 Examen d’ultrasonographie – $60.95
+          Visite de suivi: 15854 Suivi d’un avortement par médicaments – $47.50
+          15857 Échographie après avortement par médicaments (<18 jours) – $39.80`,
+          'Premiers soins',
+          `Première visite: Évaluation globale pour interruption d’une grossesse
+          – 15313 Bureau – $139.50
+          – 15407 CLSC – $20.00
+          – 15314 Hôpital – $104.60
+          Examen d’ultrasonographie
+          – 15315 Bureau – $38.15
+          – 15316 Hôpital – $13.10
+          Visite de suivi: Suivi interruption de grossesse
+          – 15317 Bureau – $39.25
+          – 15408 CLSC – $1.50
+          – 15318 Hôpital – $29.45
+          Examen d’ultrasonographie
+          – 15319 Bureau – $33.80
+          – 15320 Hôpital – $8.75`,
+        ],
+      },
+    },
+    {
+      id: 'B12',
+      title: 'Saskatchewan',
+      content: {
+        type: ['p', 'h2', 'p', 'h2', 'p', 'h2', 'p'],
+        data: [
+          `Les informations ci-dessous sont mises à jour en mars 2024.`,
+          'Gynécologie',
+          `Première visite: 150B Gestion médicale de l’interruption de grossesse précoce – comprend 5 jours de gestion médicale continue – $170
+          Visite de suivi: 11P Consultation de suivi – $41.90
+          7P Évaluation de suivi – $38.20`,
+          'Premiers soins',
+          `Première visite: 150B Gestion médicale de l’interruption de grossesse précoce – comprend 5 jours de gestion médicale continue – $170
+          Visite de suivi: 5-B Consultation de suivi – $39.80`,
+          'Telehealth',
+          `Première visite: 732A pour tout patient soigné via une liaison vidéo de télémédecine agréée – $31.40
+          840B et 841B – Counseling – pour les cliniciens qui ne disposent pas d’une configuration de liaison vidéo telle qu’une consultation téléphonique.
+          840 est un conseil virtuel pendant les 15 premières minutes et 841B est pour les 15 minutes suivantes – $33.75
+          Visite de suivi: 734A pour tout patient soigné à l’aide d’une liaison vidéo de télémédecine approuvée (maximum une par jour pour tous les patients) – $12.50
+          805B – Évaluation partielle virtuelle – pour les cliniciens qui ne disposent pas d’une configuration de liaison vidéo telle qu’un suivi téléphonique – $31.85
+
+          Remarques: La Saskatchewan dispose d’un code désigné pour l’avortement en personne, mais pas d’un code virtuel, de sorte que les prestataires peuvent utiliser les codes génériques utilisés pour les applications régulières de télémédecine pour les soins primaires.`,
+        ],
+      },
+    },
+    {
+      id: 'B13',
+      title: 'Yukon',
+      content: {
+        type: ['p', 'h2', 'p', 'h2', 'p'],
+        data: [
+          `Les informations ci-dessous sont en attente de vérification.`,
+          'Gynécologie',
+          `Première visite: 4116 Avortement par médicaments – $223.80
+          Visite de suivi: 4012 Consultation limitée – $104.40
+          4007 Visite suivant du bureau – $69.60`,
+          'Premiers soins',
+          `Première visite: 0101 Examen complet – $108.80
+          Visite de suivi: 0100 Visite – $49.70`,
+        ],
+      },
+    },
+    {
+      id: 'M26',
+      title: 'Contexte réglementaire',
+      content: {
+        type: ['p', 'ul', 'p', 'ul'],
+        data: [
+          `L’avortement est légal au Canada et personne n’a besoin du consentement de son partenaire ou d’un parent pour avorter. Il s’agit du deuxième service de santé reproductive le plus répandu au Canada: le tiers des personnes ayant la capacité d’être enceinte auront recours à un avortement au cours de leur vie.[1,2].
+
+          L’avortement par médicaments utilise des pilules médicamenteuses pour mettre fin à une grossesse. Au Canada, les pilules abortives sont commercialisées et vendues sous le nom de Mifé-Miso.`,
+          `Le Mifé-Miso est approuvé par Santé Canada pour l’âge gestationnel jusqu’à 63 jours, mais La SOGC a démontré qu’il est sécuritaire et efficace jusqu’à 70 jours.
+          Il est fourni gratuitement à toutes les personnes bénéficiant d’une assurance maladie provinciale et de plusieurs catégories d’assurance maladie fédérale.
+          Les personnes admissibles aux soins de santé dans une province qui tentent d’accéder au Mifé-Miso dans une autre province ou territoire sont admissibles au counseling, aux évaluations et au suivi, mais pas au médicament lui-même.
+          Il peut être prescrit lors de visites en personne ou virtuelles, ou d’une combinaison des deux.`,
+          `Champ de pratique: Au moment de rédiger ces lignes, les médecins et les infirmières praticiennes spécialisées au Canada sont autorisées à prescrire le Mifé-Miso. Dans la plupart des cas, les pharmaciens sont responsables de la distribution des médicaments, mais certaines cliniques sont également autorisées à les fournir directement. À l’exception du Québec, les sages-femmes ne sont actuellement pas autorisées à prescrire du Mifé-Miso, mais elles peuvent fournir des soins d’avortement par médicaments en étroite collaboration avec des infirmières praticiennes spécialisées ou des médecins.
+
+          Exigences spécifiques à la province: Les professionnels de la santé devraient vérifier les lignes directrices spécifiques et le champ d’exercise de leur province ou territoire. Par exemple, les exigences des provinces peuvent différer quant à savoir qui peut récupérer le médicament et si les pharmaciens doivent s’inscrire auprès de Celopharma, le fabricant du Mifé-Miso. Cliquez ici pour voir le résumé de certains règlements spécifiques à la province pour la distribution du Mifé-Miso.
+
+          Exigence de formation: Il n’est plus nécessaire de suivre une formation avant de prescrire ou de délivrer le Mifé-Miso, mais les professionnels de la santé peuvent trouver utiles les cours en ligne ci-dessous pour en savoir plus sur les soins d’avortement par médicaments.`,
+          `Programme de formation sur l’avortement par médicaments, de La SOGC, mis à jour en 2023 et offert au prix coûtant.
+          Medication Abortion Training for Primary Care Providers de la Fédération Nationale de l’Avortement, mis à jour en 2023 et offert au prix coûtant.`,
+        ],
+      },
+    },
+    {
+      id: 'M27',
+      title: 'Configuration des installations',
+      content: {
+        type: [
+          'p',
+          'h2',
+          'right',
+          'ul',
+          'h2',
+          'right',
+          'ul',
+          'h2',
+          'right',
+          'ul',
+          'h2',
+          'right',
+          'ul',
+          'h2',
+          'right',
+          'ul',
+          'h2',
+          'right',
+          'ul',
+          'h2',
+          'right',
+          'ul',
+          'h2',
+          'right',
+          'ul',
+        ],
+        data: [
+          `Voici un guide général des étapes à suivre lors du lancement de services d’avortement par médicaments (AM) dans votre établissement. Certaines de ces étapes peuvent ne pas s’appliquer, selon votre établissement[12].`,
+          'Réviser les protocoles:',
+          images.FaSetup1,
+          `Examiner les directives pour l’AM.
+          Préparer votre protocole et inviter l’équipe clinique à l’examiner et à fournir ses commentaires.
+          Déterminer si l’objectif d’offrir l’AM est d’ajouter ce service aux soins primaires déjà offerts ou s’il sera un service rendu à l’ensemble de la communauté.
+          Évaluer les protocoles associés, notamment la contraception, le dépistage et le traitement des ITSS, ainsi que d’autres services de santé sexuelle et reproductive, et les intégrer aux protocoles d’avortement, le cas échéant.`,
+          'Examiner les réglements et la rémunération:',
+          images.FaSetup2,
+          `Examiner les règlements provinciaux et territoriaux et le champ d’exercice des médecins et des infirmières praticiennes spécialisées, et évaluer la participation potentielle des sages-femmes autorisées à fournir un AM.
+          Pour les médecins, se familiariser avec les codes de facturation provinciaux pour la fourniture d’AM, y compris les codes pour tous les tests qui seraient effectués sur place.
+          Pour les infirmières praticiennes et les sages-femmes autorisées, examiner les processus de rémunération des associations professionnelles de votre juridiction.`,
+          'Répondre aux préoccupations liées à l’avortement au sein de votre équipe:',
+          images.FaSetup3,
+          `Explorer la volonté de fournir un AM parmi tout le personnel, répondre à leurs préoccupations et déterminer la meilleure façon d’intégrer les services d’avortement dans votre pratique (voir le module suivant).`,
+          'Préparer des plans pour soutenir les populations mal desservies:',
+          images.FaSetup4,
+          `Évaluer la capacité de vos services à servir des populations mal desservies telles que les personnes non assurées, les personnes issues des communautés autochtones et les personnes identifiées comme 2ELGBTQIA+.
+          Envisager d’intégrer des soins tenant compte des traumatismes et des approaches de réduction des méfaits dans vos services.
+          Planifier des services d’AM en réduisant les barrières pour les populations mal desservies et examiner ces plans avec votre personnel.`,
+          'Examiner la capacité du personnel et de l’administration:',
+          images.FaSetup5,
+          `Examiner la capacité actuelle de la clinique à fournir un AM.
+          Déterminer la personne ou l’équipe clé qui sera principalement responsable des personnes ayant recours à l’AM.
+          Évaluer les meilleurs moments pour planifier des rendez-vous pour les personnes ayant recours à l’AM.
+          Consulter l’horaire de garde de votre clinique ou le service d’appel de votre hôpital local pour contacter les gynécologues-obstétriciens le cas échéant.
+          Pour le personnel clinique, organiser une formation approfondie sur le counseling, la fourniture de Mifé-Miso et la gestion des complications.
+          Pour le personnel de soutien, préparer des réponses téléphoniques et d’autres ressources pour leur faire référence et leur utilisation.`,
+          'Configurer votre établissement:',
+          images.FaSetup6,
+          `Évaluer la conception des salles d’attente, des zones de réception et des salles de counseling pour s’assurer qu’elles favorisent la confidentialité et l’intimité.
+          Examiner les ententes avec un laboratoire ou la capacité intra-établissement pour le test quantitatif de βhCG ainsi que des tests et de l’administration du facteur Rhésus.
+          Identifier les cliniques ou départements d’échographie dans votre communauté, si elles ne sont pas disponibles sur place.
+          Déterminer les fournitures ou équipements supplémentaires nécessaires.`,
+          'Identifier les cliniques de référence:',
+          images.FaSetup7,
+          `Trouver des cliniques d’avortement par instruments, si vous n’offrez pas ce service.
+          Identifier les cliniques d’avortement dans votre région qui peuvent accepter des références rapides, si votre emploi du temps ne peut pas accueillir les personnes en temps opportun, afin de garantir que ces personnes ne manquent pas la fenêtre pour un AM.
+          Trouver des pharmacies qui stockent régulièrement du Mifé-Miso et établir des relations avec des pharmacies locales qui pourraient stocker Mifé-Miso.`,
+          'Préparer les documents de communication:',
+          images.FaSetup8,
+          `Obtenir ou développer du matériel éducatif, des formulaires de consentement et d’autres formulaires de suivi.
+          Concevoir, imprimer et distribuer des affiches pour informer la population que vous prescrivez l’AM.`,
+        ],
+      },
+    },
+    {
+      id: 'M28',
+      title: 'Répondre aux préoccupations liées à l’avortement',
+      content: {
+        type: ['p', 'olul'],
+        data: [
+          `La liste ci-dessous suggère des façons de répondre à l’opposition et aux préoccupations concernant l’avortement par médicaments (AM) parmi votre personnel et vos collègues, ce qui facilitera l’intégration harmonieuse des services d’AM dans vos pratiques[16].`,
+          [
+            `Tout d’abord, identifier les professionnels de la santé, les administrateurs et le personnel de soutien au sein de votre environnement, qui sont intéressés et engagés à fournir des services d’avortement.
+            Initier des discussions informelles avec vos collègues sur l’offre de services.
+            Envisager de mener une enquête anonyme auprès du personnel et des clients pour avoir une idée de leurs opinions et de leurs sentiments à l’égard de l’AM.
+            Envisager d’organiser un atelier pour clarifier les valeurs sur l’avortement, aborder l’opposition ou l’inconfort et déterminer les moyens de travailler ensemble pour fournir l’AM. Un atelier de clarification des valeurs liées à l’avortement peut être adapté en utilisant:`,
+            `Values clarification toolkits de la Fédération Nationale de l’Avortement.
+            Matériel sur le Values clarification workshop du Reproductive Health Access Project.`,
+            `Envisager de créer un comité de planification pour discuter des objectifs, des tâches, des échéanciers, des obstacles et des solutions.
+            Se renseigner sur d’autres centres de santé ou professionnels de la santé locaux qui ont intégré avec succès les services d’avortement dans leur pratique. Les inviter à des réunions, des ateliers et des séances de planification, ou solliciter leurs commentaires et conseils sur votre processus.
+            Élaborer un protocole pour les membres du personnel qui se sentent incapables de participer aux soins d’avortement.
+            Lors des entrevues d’embauche, discuter de l’avortement. Indiquer dans l’offre d’emploi que le candidat doit être ouvert à tous les aspects des soins reproductifs, y compris l’avortement.`,
+          ],
+        ],
+      },
+    },
+    {
+      id: 'C1',
+      title: 'Régimes d’assurance fédéraux',
+      content: {
+        type: [
+          'p',
+          'h2',
+          'p',
+          'h2',
+          'p',
+          'h2',
+          'p',
+          'h2',
+          'p',
+          'h2',
+          'p',
+          'h2',
+          'p',
+        ],
+        data: [
+          `Les personnes couvertes par les programmes fédéraux peuvent demander une ordonnance de Mifegymiso et la faire exécuter dans la pharmacie de leur choix. L’ordonnance sera entièrement couverte lorsque la pharmacie soumettra sa facturation au régime fédéral, en supposant que toutes les autres conditions d’utilisation de Mifegymiso soient remplies.`,
+          'Programme des services de santé non assurés (SSNA)',
+          `Les personnes admissibles des Premières Nations et des Inuits sont entièrement couvertes pour le coût de Mifegymiso dans le context de l’avortement par médicaments. Le processus de réclamation suit le processus de soumission normal pour les autres médicaments sur ordonnance.
+
+          Lien: https://nihb-ssna.express-scripts.ca/en/0205140506092019/16/160407`,
+          'Anciens Combattants Canada (ACC)',
+          `Le Mifegymiso figure actuellement comme médicament standard sur la liste des médicaments d’Anciens Combattants Canada. Cela signifie que le Mifegymiso est facilement accessible aux clients éligibles disposant d’une ordonnance valide.
+
+          Les clients d’ACC ont une carte d’identité de soins de santé d’ACC marqué “A” et/ou “B” sous “Programme numéro 10”. Les clients du groupe A ne peuvent utiliser leur carte que pour obtenir des soins de santé directement liées au traitement de leur maladie ouvrant droit à pension par ACC.
+
+          Les clients du groupe B sont admissibles aux prestations approuvées s’ils ont démontré un besoin en matière de santé et que les prestations ne leur sont pas accessibles en vertu d’un régime de santé provincial.
+
+          De plus, puisque les clients sont couverts par le système de santé provincial ou territorial, leur accès au Mifegymiso suivra le processus provincial ou territorial comme les autres résidents.
+
+          Lien: https://www.veterans.gc.ca/eng/financial-support/medical-costs/coverage-services-prescriptions-devices#toc10`,
+          'Services de santé des Forces canadiennes',
+          `Le Mifegymiso est un médicament régulier figurant sur la liste des médicaments des Forces armées canadiennes; aucune autorisation spéciale n’est requise.
+
+          Lien: http://www.cmp-cpm.forces.gc.ca/hs/en/drug-benefit-list/index.asp`,
+          'Programme de soins de santé de la Gendarmerie royale du Canada (GRC)',
+          `Les agents de la GRC sont considérés comme des personnes assurées et recoivent des soins de santé de base par l’intermédiaire du système de santé de la province ou du territoire où ils résident. L’accès des agents de la GRC au Mifegymiso suit le processus provincial ou territorial comme pour les autres résidents. De plus, des régimes privés couvrant les coûts des médicaments sur ordonnance sont également une option.
+
+          Lien: https://bc-cb.rcmp-grc.gc.ca/ViewPage.action?siteNodeId=2234&languageId=1&contentId=58416`,
+          'Programme fédéral de santé intérimaire (PFSI)',
+          `La couverture du PFSI pour Mifegymiso est disponible dans les provinces et territoires où le médicament est inscrit sur leur liste de medicaments publique.
+
+          Lien: https://www.canada.ca/en/immigration-refugees-citizenship/services/refugees/help-within-canada/health-care/interim-federal-health-program/coverage-summary.html`,
+          'Programmes du Service correctionnel du Canada (SCC)',
+          `Les services aux personnes incarcérées dans les pénitenciers fédéraux sont fournis directement par la pharmacie au sein de l’établissement.`,
+        ],
+      },
+    },
+    {
+      id: 'M36',
+      title: 'Personnes non-assurées',
+      content: {
+        type: ['p', 'ulul'],
+        data: [
+          `Les professionnels de la santé peuvent soutenir les personnes non assurées en:`,
+          [
+            `Déterminant le coût du Mifé-Miso et des frais de consultation pour l’avortement par médicaments (AM) en tant que dépenses directes. Élaborer une liste de centres de santé communautaires et de cliniques de santé reproductive gérés par la ville où les personnes peuvent obtenir une prescription d’AM à faible coût ou sans frais.
+            Explorant les processus permettant de renoncer aux frais ou d’élaborer des accords de partage des coûts avec des organisations partenaires ou d’autres prestataires de services.
+            S’assurant que le personnel administratif et de soutien est au courant du plan.
+            Référant les personnes vers le fonds d’urgence de la Fédération Nationale de l’Avortement et d’Action Canada pour la santé et les droits sexuels:`,
+            `Patient Assistance Fund: Pour parler avec quelqu’un du Dr. Morgentaler Patient Assistance Fund, veuillez appeler la ligne téléphonique sans frais NAF au 1-800-772-9100.
+            Norma Scarborough Fund | Action Canada pour la santé et les droits sexuels (actioncanadashr.org)`,
+          ],
+        ],
+      },
+    },
+    {
+      id: 'M37',
+      title: 'Personnes 2ELGBTQIA+',
+      content: {
+        type: ['p', 'h2', 'ul', 'h2'],
+        data: [
+          `Voici quelques suggestions pour aider les cliniciens à créer un environnement inclusif qui répond aux besoins des personnes 2ELGBTQIA+. Ces suggestions ne sont pas exhaustives et il est recommandé aux professionnels de la santé de consulter d’autres manuels et opportunités de formation en compétence culturelle pour fournir des soins inclusifs.
+
+          Ces suggestions ont été reproduites à partir de Gender Inclusive Language de Trans Care BC, The Trans-inclusive Abortion Services du SHORE Centre et la Fédération du Québec pour le planning des naissances, et du Handbook for Healthcare Providers Working with Clients from Diverse Communities d’Action Canada pour la santé et les droits sexuels. Pour plus d’informations sur les mythes concernant la reproduction des personnes 2ELGBTQIA+, le vocabulaire et le glossaire à utiliser et à éviter, ainsi que des études de cas et des recommandations pour surmonter les obstacles, veuillez vous référer à ces manuels.`,
+          'À faire et à ne pas faire:',
+          `Rendre des toilettes non genrées en supprimant les panneaux “Hommes” et “Femmes” des toilettes, ou en les remplaçant par un panneau “Toilettes tous genres”.
+          Publier des affiches, des dépliants et d’autres documents 2ELGBTQIA+ inclusifs pour faire savoir à tous qu’ils sont les bienvenus.
+          Utiliser des formulaires cliniques inclusifs (par exemple, des formulaires d’admission) qui tiennent compte de toutes les orientations sexuelles et identités de genre. Déterminer si les questions posées sont nécessaires à des fins cliniques ou si elles sont posées par curiosité.
+          Demander quels pronoms les personnes préfèrent et utiliser-les de manière cohérente tout au long de leurs soins.
+          Interroger les personnes et observez les mots qu’ils utilisent pour parler de leurs parties du corps et utiliser leur langage.
+          Respecter le droit des personnes trans de fournir de l’information sur les problèmes ou besoins de la communauté trans ou de parler au nom de la communauté trans.
+          Chercher à éliminer les barrières pour les personnes 2ELGBTQIA+.
+          N’utiliser PAS d’étiquettes et de termes dérivés d’anciennes versions du DSM et de la CIM, tels que transsexuel, transsexualité et trouble de l’identité de genre.
+          N’utiliser PAS de termes et expressions péjoratives même si la personne le fait.`,
+          'Gender-inclusive language:',
+        ],
+      },
+    },
+    {
+      id: 'M38',
+      title: 'Personnes autochtones',
+      content: {
+        type: ['p', 'h2', 'ul'],
+        data: [
+          `Voici des suggestions pour aider les professionnels de la santé non autochtones à créer un environnement inclusif pour les personnes autochtones. Ces suggestions ne sont pas exhaustives et il est recommandé aux professionnels de la santé d’envisager d’autres manuels et opportunités de formation aux compétences culturelles pour fournir des soins inclusifs.
+
+          Divers facteurs et réalités peuvent affecter la façon dont les peuples autochtones accèdent aux services de santé, notamment les obstacles liés à l’accès géographique, l’indisponibilité de services linguistiques et de traduction, le manque de soins de santé culturellement sécuritaires ou les expériences passées de racisme, de stigmatisation, de honte, de peur ou de discrimination. Gardez à l’esprit qu’être autochtone n’est pas en soi un facteur de risque ; ce qui met réellement les gens en danger, ce sont des problèmes systémiques comme le racisme, le colonialisme, les traumatismes intergénérationnels et le manque d’accès à des soins, des traitements et des soutiens culturellement sécuritaires.
+
+          Ces recommandations sont tirées de la Trousse d’outils pour les allié-es aux luttes autochtones du Réseau stratégique urbain de la communauté autochtone de Montréal et du Guide pour les professionnels de la santé qui travaillent avec des client(e)s provenant de différentes communautés d’Action Canada pour la santé et les droits sexuels.`,
+          'Conseils rapides pour les cliniciens:',
+          `Proposer des services de traduction et, si possible, des ressources traduites.
+          Établir des liens et revendiquer pour l’accès à des membres de la communauté autochtone de votre région qui peuvent agir en tant que navigateurs dans le système de santé.
+          Lorsqu’on entend parler d’expériences difficiles ou violentes de la part des personnes, affirmer leurs expériences et leur vécu. Éviter de les stigmatiser pour leurs sentiments ou la façon dont ils gèrent leurs émotions.
+          Créer et maintenir une liste des ressources disponibles et de soutien culturel dans votre région, y compris les services sociaux.
+          Les soutenir dans la création de leur propre plan de traitement, y compris l’intégration de ressources culturellement sécurisantes et méthodes de guérison traditionnelles.
+          Éviter de dire “Les peuples autochtones du Canada” ou “Nos peuples autochtones.” – Les peuples autochtones n’appartiennent pas au Canada ni à aucun individu.
+          Éviter de dire “La culture autochtone.” – Cette phrase ne reconnaît pas qu’il existe des centaines de communautés, nations, langues et cultures autochtones au Canada. Au lieu du singulier, essayer d’utiliser des formes plurielles comme “Les cultures autochtones” ou mieux encore, être précis sur la nation pour éviter la pan-indigénisation.`,
+        ],
+      },
+    },
+    {
+      id: 'C2',
+      title: 'Alberta',
+      content: {
+        type: ['p'],
+        data: [
+          `Depuis le 24 juillet 2017, Alberta Health, par l’intermédiaire du programme Women’s Choice, offre une couverture pour le Mifegymiso via des pharmacies agréées en Alberta, afin de permettre aux personnes d’exercer leur choix en matière de santé sexuelle. La Croix Bleue de l’Alberta facilite le paiement des réclamations du Mifegymiso dans le cadre de ce programme. Tous les Albertains disposant d’un régime d’assurance-maladie de l’Alberta valide et d’un numéro d’assurance-maladie personnel (NAM) sont admissibles à la couverture ; un pseudo-NAM de WC0000000 est utilisé pour les Albertains sans NAM valide.
+
+          Il n’y a aucune limite quant au nombre d’ordonnances de Mifegymiso qu’un membre du régime peut recevoir dans le cadre du programme Women’s Choice ; cependant, les pharmacies ne peuvent réclamer qu’une seule dose à la fois pour une personne participant au régime.
+
+          Le programme prévoit uniquement la soumission de demandes de facturation directe. Les personnes participant au régime ne sont pas admissibles à un remboursement.
+
+          Lien: https://www.ab.bluecross.ca/pdfs/pharmacy-benefacts/pharmacy-benefact-697.pdf`,
+        ],
+      },
+    },
+    {
+      id: 'C3',
+      title: 'Colombie-Britannique',
+      content: {
+        type: ['p'],
+        data: [
+          `Le Mifegymiso est couvert par le BC Pharmacare Assurance Plan (Plan Z et Exceptionnel Plan Z) qui offre une couverture à 100 %. Toutes les personnes résidant en Colombie-Britannique et bénéficiant d’une couverture active du Medical Services Plan (MSP) sont éligibles.
+
+          Lien: https://www2.gov.bc.ca/gov/content/health/practitioner-professional-resources/pharmacare/pharmacies/plan-z`,
+        ],
+      },
+    },
+    {
+      id: 'C4',
+      title: 'Manitoba',
+      content: {
+        type: ['p'],
+        data: [
+          `Toute personne résidant au Manitoba et possédant une carte d’immatriculation Santé Manitoba valide et une ordonnance de Mifegymiso est admissible à la couverture.
+
+          Les personnes possédant une carte Santé Manitoba valide et une ordonnance d’un prescripteur autorisé ne devraient pas avoir à payer de frais. Même si la personne est inscrite à un régime d’assurance médicaments ou à un autre programme de soins de santé provincial de médicaments (par exemple, Familles/AER), elle n’a aucune obligation de payer une franchise ou une quote-part.
+
+          Lien: https://www.gov.mb.ca/health/pharmacare/profdocs/csp_mifegymiso.pdf`,
+        ],
+      },
+    },
+    {
+      id: 'C5',
+      title: 'Nouveau Brunswick',
+      content: {
+        type: ['p'],
+        data: [
+          `La couverture est disponible via le Programme d’avortement par médicaments. Les réclamations manuscrites ne seront pas acceptées et les réclamations doivent être soumises en ligne.
+
+          Lien: https://www2.gnb.ca/content/gnb/en/departments/health/prescription-drug-plan/NBDrugPlan/ForHealthCareProfessionals/medical_abortion_claims_submission.html`,
+        ],
+      },
+    },
+    {
+      id: 'C6',
+      title: 'Terre neuve & Labrador',
+      content: {
+        type: ['p'],
+        data: [
+          `La couverture est offerte sans frais aux personnes détentant une carte d’assurance maladie valide. Les personnes peuvent recevoir une ordonnance auprès de leur professionnel de la santé, des régies régionales de la santé ou de l’Athena Health Centre à St. John’s. Les personnes bénéficiant d’une assurance privée l’utiliseront en premier, puis la province couvrira tous les coûts restants en tant que payeur final. Les réclamations peuvent être soumises en temps réel via le système d’évaluation du Programme de médicaments sur ordonnance de Terre-Neuve-et-Labrador (NLPDP), quelle que soit l’admissibilité.
+
+Lien: https://www.gov.nl.ca/hcs/files/prescription-provider-guide-program-claiming-policies.pdf`,
+        ],
+      },
+    },
+    {
+      id: 'C7',
+      title: 'Territoires du Nord-Ouest',
+      content: {
+        type: ['p'],
+        data: [
+          `La couverture du Mifegymiso dans les Territoires du Nord-Ouest est assurée par le programme Northern Options for Women (NOW)*. Le pharmacien exécutera l’ordonnance et facturera l’assurance gouvernementale/employeur (le cas échéant). Health and Social Services recevra une facture pour tout montant impayé non couvert par le régime d’assurance, ou facturera le montant s’il n’y a pas de couverture d’assurance.
+
+*Le programme NOW n’est actuellement disponible qu’à Yellowknife et Inuvik. Health and Social Services couvrira les frais de déplacement médical des résidents vivant à l’extérieur de Yellowknife et d’Inuvik qui choisissent des options de traitement utilisant Mifegymiso et qui sont recommandées par un professionnel de la santé.
+
+Lien (voir pages 40/41): https://www.hss.gov.nt.ca/en/services/mifegymiso-northwest-territories`,
+        ],
+      },
+    },
+    {
+      id: 'C8',
+      title: 'Nouvelle-Écosse',
+      content: {
+        type: ['p'],
+        data: [
+          `En vigueur depuis le 1er novembre 2017, la couverture est offerte à toute personne en Nouvelle-Écosse possédant une carte d’assurance maladie valide. Toutes autres sources d’assurance, comme un régime privé, doivent être facturées en premier. La procédure à suivre pour soumettre une demande de remboursement est expliquée ci-dessous. Si vous avez des questions, veuillez contacter Nova Scotia Pharmacare.
+
+Lien (voir page 41): https://novascotia.ca/dhw/pharmacare/documents/Pharmacy-Guide.pdf`,
+        ],
+      },
+    },
+    {
+      id: 'C9',
+      title: 'Nunavut',
+      content: {
+        type: ['p'],
+        data: [
+          `Au Nunavut, les avortements sont gratuits pour les bénéficiaires des Premières Nations et sont couverts par le Régime de l’assurance maladie du Nunavut. Environ 86 % des résidents du Nunavut sont admissibles à la couverture du Programme des services de santé non assurés (SSNA).
+
+Lien: https://www.pharmacists.ca/cpha-ca/assets/File/cpha-on-the-issues/Mifegymiso_Access_Scan.pdf`,
+        ],
+      },
+    },
+    {
+      id: 'C10',
+      title: 'Ontario',
+      content: {
+        type: ['p'],
+        data: [
+          `Depuis le 10 août 2017, toutes personnes possédant une carte d’Assurance-santé de l’Ontario (OHIP) valide ainsi qu’une ordonnance valide sont admissibles au Mifegymiso. Cela comprend à la fois les bénéficiaires du Programme de médicaments de l’Ontario (PMO) et les non-bénéficiaires du PMO. Les pharmaciens doivent s’assurer que la date de naissance, le numéro de carte Santé et le nom de la personne admissible (tel qu’il apparaît sur la carte Santé de l’Ontario) sont correctement saisis lors de la soumission des demandes via le Système du réseau de santé (SRS). Le Mifegymiso, fourni aux personnes munies d’une ordonnance valide, sera remboursé par le ministère.
+
+Lien: https://www.pharmacytechnologysolutions.ca/pharmaclik-rx-doc/Content/Resources/PDFs/ODBMifegymisoClaims.pdf`,
+        ],
+      },
+    },
+    {
+      id: 'C11',
+      title: 'Île-du-Prince Édouard',
+      content: {
+        type: ['p'],
+        data: [
+          `L’avortement par médicaments est offert gratuitement par le biais des Services de santé sexuelle et reproductive en matière d’options (SHORS) et du Women’s Wellness Program. Cependant, une carte santé de l’Î.-P.-É. valide est requise.
+
+Lien: https://www.princeedwardisland.ca/en/information/health-pei/abortion-services`,
+        ],
+      },
+    },
+    {
+      id: 'C12',
+      title: 'Québec',
+      content: {
+        type: ['p', 'ul', 'p'],
+        data: [
+          `Toute personne dûment inscrite à la Régie de l’assurance maladie du Québec (RAMQ) et munie d’une ordonnance d’un médecin ou infirmière praticienne spécialisée (IPS), d’un carnet de réclamation ou d’une preuve temporaire d’admissibilité aux médicaments, peut bénéficier du programme de gratuité. Une personne âgée d’au moins quatorze (14) ans, mais de moins de dix-huit (18) ans, qui consent seule aux services fournis par le programme, conformément aux dispositions du Code civil, peut bénéficier du programme même si elle ne présente pas de carte d’assurance maladie ou de carnet de réclamation valide. Toute personne de dix-huit (18) ans et plus qui ne présente pas sa carte d’assurance maladie ou un carnet de réclamation valide doit payer le service ; ils peuvent donc demander un remboursement à la Régie en utilisant le formulaire prévu à cet effet.
+
+Tout service obtenu hors du Québec n’est pas couvert par ce programme. Une exception à ce principe se produit lorsque:`,
+          `Le médicament est fourni par un pharmacien qui a une entente particulière avec la Régie à cet effet.
+La pharmacie est située dans une région frontalière au Québec.
+Aucune pharmacie au Québec ne dessert la population dans un rayon de 32 kilomètres.`,
+          `Lien: https://www.ramq.gouv.qc.ca/sites/default/files/documents/liste_med_2022-12-14_en_0.pdf`,
+        ],
+      },
+    },
+    {
+      id: 'C13',
+      title: 'Saskatchewan',
+      content: {
+        type: ['p'],
+        data: [
+          `La Saskatchewan couvre le Mifegymiso à 100 % ayx personnes éligibles dans le cadre du régime d’assurance médicaments de la Saskatchewan. Les réclamations peuvent être soumises par voie électronique au régime d’assurance médicaments de la Saskatchewan.
+
+Lien: https://formulary.drugplan.ehealthsask.ca/SearchFormulary`,
+        ],
+      },
+    },
+    {
+      id: 'C14',
+      title: 'Yukon',
+      content: {
+        type: ['p', 'ul', 'p'],
+        data: [
+          `Grâce à un partenariat avec la Yukon Hospital Corporation, le gouvernement du Yukon offre désormais une couverture universelle du Mifegymiso. Ce partenariat facilite l’accès aux options disponibles au Yukon et garantit un accès plus équitable aux services d’avortement.
+
+Les services médicaux pour le Mifegymiso sont disponibles à:`,
+          `Whitehorse
+Haines Junction
+Dawson City
+Watson Lake`,
+          `Les personnes résidant au Yukon et vivant dans des communautés sans service médical local devront se déplacer pour consulter un médecin qui les aidera à mettre fin à une grossesse en toute sécurité avec le Mifegymiso.
+
+Conformément à la Loi sur les frais de déplacement liés aux soins médicaux et à ses règlements, le service des déplacements pour soins médicaux fournira une subvention de voyage aux personnes éligibles qui voyagent dans le but d’obtenir le Mifegymiso en dehors de leur communauté d’origine.
+
+Lien: https://open.yukon.ca/sites/default/files/mt006-mIfe.pdf`,
+        ],
+      },
+    },
+    {
+      id: 'M32',
+      title: 'Points clés du counseling',
+      content: {
+        type: ['p', 'ul', 'p', 'ul', 'p'],
+        data: [
+          `Avant de se rendre à la pharmacie pour obtenir le MIFÉ / MISO, les personnes souhaitant avorter, ci-après dénommés “les personnes”, auront déjà eu une conversation avec les prescripteurs sur l’avortement par médicaments (AM), tels que les options de grossesse, l’éligibilité, les risques et l’efficacité[10].
+
+Lorsqu’ils conseillent les personnes, les prescripteurs doivent fournir un espace privé pour le couseling, afin de garantir la confidentialité et de revoir les points clés ci-dessous en utilisant un langage inclusif[10]:`,
+          // 'Counselling Points:',
+          `Confirmer que la décision appartient à la personne, prise sans contrainte.
+          Vérifier la date inscrite sur l’ordonnance ; si l’ordonnance a été rédigée 7 jours ou plus avant d’être apportée à la pharmacie, le pharmacien souhaitera peut-être faire un suivi auprès du prescripteur.
+          Souligner qu’en cas de grossesse évolutive après l’AM, une nouvelle dose de MISO ou un avortement par instruments est recommandé car la MIFÉ et le MISO sont tératogènes.
+          Exclure les contre-indications.
+          Examiner la date et l’heure auxquelles les personnes prévoient prendre le MIFÉ / MISO.
+          Revoir la date à laquelle la personne a un suivi avec leur prescripteur.`,
+          'S’assurer que la personne dispose des éléments suivants avant de partir[10]:',
+          `Serviettes et protections hygiéniques.
+          Médicaments contre la douleur et/ou contre la nausée (en vente libre ou sur ordonnance).
+          Accès aux soins d’urgence.
+          Aide à la garde d’enfants, au transport et à l’épicerie.`,
+          `S’assurer que les personnes comprennent comment administrer MIFÉ / MISO, comment gérer les effets secondaires, et savent quand et comment demander des soins (voir ci-dessous).`,
+        ],
+      },
+    },
+    {
+      id: 'M34',
+      title: 'Suivi facultatif',
+      content: {
+        type: ['p', 'ul', 'p', 'ul'],
+        data: [
+          `Les personnes doivent avoir un suivi avec un professionnel de la santé
+
+Un suivi auprès des pharmaciens est facultatif et peut avoir lieu 2 à 3 jours après l’administration du MISO. Au cours du suivi, les pharmaciens peuvent effectuer les opérations suivantes[9,10]:`,
+          `Vérifier la bonne administration
+Examiner la gestion des effets secondaires
+Examiner les options de contraception
+Renforcer le suivi des professionnels de la santé
+Apporter un soutien émotionnel`,
+          `Les réponses émotionnelles après un avortement par médicaments (AM) varient souvent. Certaines personnes se sentent soulagées et positives, tandis que d’autres éprouvent des sentiments de chagrin, de tristesse ou de culpabilité. D’autres peuvent avoir des sentiments mitigés. Ces émotions sont normales et peuvent ou non être liées aux circonstances socio-économiques, au manque de soutien social, à l’inconfort moral et aux conflits familiaux.
+
+          Les personnes peuvent être soutenus en affirmant que les émotions mitigées sont normales et en explorant des stratégies d’adaptation et du soutien. Les ressources utiles incluent:`,
+          `Exhale, une ligne téléphonique qui fournit un soutien émotionnel, des ressources et des informations après un avortement.
+All-Options, une ligne pour discuter des expériences passées ou actuelles en matière d’avortement, d’adoption et de parentalité pour les personnes au Canada et aux États-Unis (1-888-493-0092).`,
+        ],
+      },
+    },
+    {
+      id: 'M29',
+      title: 'Interactions médicamenteuses',
+      content: {
+        type: ['p', 'ul', 'p'],
+        data: [
+          `La MIFÉ est métabolisée par le CYP3A4 et est également un inhibiteur compétitif irréversible du CYP3A4 et, dans une moindre mesure, des CYP 1A, 2B, 2D6 et 2E1. Étant donné que la MIFÉ se lie de manière irréversible au CYP et est lentement éliminée de l’organisme, des précautions doivent être prise lors de l’administration de la MIFÉ avec des médicaments qui sont des substrats du CYP3A4 et ont une marge thérapeutique étroite[10].
+
+Les interactions médicamenteuses qui peuvent modifier le métabolisme de la MIFÉ comprennent[10]:`,
+          `Inducteurs du CYP3A4 (glucocorticoïdes, antibiotiques macrolides, rifampicine, carbamazépine, benzodiazépines, barbituriques, millepertuis)
+Inhibiteurs du CYP3A4 (cimétidine, kétoconazole, érythromycine, chloramphénicol, spironolactone, sécobarbital, jus de pamplemousse).`,
+          `La MIFÉ a une activité antiglucocorticoïde ; cela peut diminuer temporairement l’efficacité de la corticothérapie, y compris les corticostéroïdes inhalés.[10].
+
+Quant au MISO, il n’y a aucune interaction médicamenteuse connue. L’ingestion orale avec de la nourriture ou des antiacides peut réduire la biodisponibilité orale[10].`,
+        ],
+      },
+    },
+    {
+      id: 'M30',
+      title: 'Pharmacocinétique',
+      content: {
+        type: ['p', 'ul'],
+        data: [
+          `La MIFÉ pris par voie orale présente une pharmacocinétique non linéaire. Elle est rapidement absorbée et distribuée, atteignant des concentrations maximales après 0,75 heure. Elle est liée au plasma à 94-99 % et est métabolisée par les enzymes CYP, principalement le CYP3A4. L’élimination est relativement lente avec une demi-vie comprise entre 83 et 90 heures[10].
+
+Le profil pharmacocinétique du MISO varie considérablement selon la voie d’administration[10]:`,
+          `Buccale: le délai jusqu’à la première contraction utérine est de 67 minutes, soutenu pendant environ 90 minutes et commence à diminuer 5 heures suivant l’administration. La réponse utérine semble similaire à celle de l’administration vaginale, avec moins de variabilité interindividuelle.
+Vaginale: le délai jusqu’à la première contraction utérine est de 82 minutes pour les comprimés secs et de 98 minutes pour les comprimés humidifiés, une activité soutenue est atteinte à 106 minutes et 128 minutes, respectivement. L’activité utérine commence à diminuer cinq heures après l’administration.
+Sublinguale: les comprimés sont absorbés par la muqueuse en 20 minutes et le MISO atteint sa concentration sérique maximale à 30 minutes. Le métabolisme de premier passage est évité.`,
+        ],
+      },
+    },
+    {
+      id: 'M31',
+      title: 'Évaluation clinique',
+      content: {
+        type: ['p', 'ulul'],
+        data: [
+          `Les prescripteurs fourniront des évaluations cliniques avant de prescrire le MIFÉ / MISO. Grâce aux nouvelles lignes directrices de La SOGC concernant l’avortement par médicaments (AM) via télémédecine, les prescripteurs peuvent éviter les analyses sanguines et/ou l’échographie, pour assurer la prestation rapide de l’AM[7].`,
+          [
+            `L’âge gestationnel est déterminé à l’aide des antécédents médicaux, d’un test urinaire ou βhCG sérique, ou d’une échographie. L’échographie n’est pas nécessaire pour déterminer l’âge gestationnel, sauf en cas d’incertiture de la date des dernières menstruations (DDM).[6,7].
+            Une grossesse ectopique est exclue en utilisant les antécédents médicaux pour dépister les facteurs de risque et les symptômes. L’échographie est recommandée s’il existe des facteurs de risque importants ou des symptômes évocateurs d’une grossesse ectopique.[6,7].
+            Les ligne directrices pour le test et l’administration du facteur Rhésus (Rh) varient:`,
+            `Ligne directrice clinique de La SOGC sur l’AM : le test Rh est recommandé lorsque l’âge gestationnel est supérieur à 47 jours[6].
+            Ligne directrice de télémédecine de La SOGC sur l’AM: le test Rh peut être suspendu jusqu’à 70 jours d’âge gestationnel[7].
+            Society of Family Planning: le test Rh n’est pas recommandé avant 12 semaines de gestation en cas d’avortement spontané, par médicaments ou par instruments[8].`,
+            `Une formule sanguine complète pour mesurer le taux d’hémoglobine est indiquée en cas de risque accru d’anémie ; sinon c’est inutile[7].
+            Une antibioprophylaxie de routine n’est pas nécessaire; le dépistage et le traitement au besoin constituent la stratégie de prise en charge privilégiée et est effectué par le prescripteur[6].`,
+          ],
+        ],
+      },
+    },
+    {
+      id: 'M35',
+      title: 'Configuration des installations',
+      content: {
+        type: ['p', 'ul', 'p'],
+        data: [
+          `Voici un guide général des étapes à suivre pour initier les services d’avortement par médicaments (AM) dans votre pharmacie. Certaines de ces étapes peuvent ne pas s’appliquer et d’autres considérations non répertoriées ci-dessous peuvent être nécessaires, en fonction de votre pharmacie.`,
+          `Examiner les monographies de produit et les protocoles de délivrance de Mifégymiso.
+            Consulter les directives cliniques pour prescrire l’avortement par médicaments au besoin.
+            Se familiariser avec les règlements de votre ordre des pharmaciens provincial. Ce résumé contient certains règlements spécifiques aux provinces, mais pas tous.
+            Préparer votre propre protocole et inviter d’autres membres du personnel à l’examiner et à fournir les commentaires.
+            Se familiariser avec les régimes d’assurance provinciaux et la couverture de Mifégymiso.
+            Explorer la volonté de délivrer le Mifégymiso parmi tout le personnel, y compris les assistants en pharmacie, les techniciens et les administrateurs de pharmacie, répondre à leurs préoccupations et à leurs possibles perceptions négatives, et déterminer la meilleure façon de lancer des services d’avortement dans votre pharmacie.
+            Examiner le personnel actuel de la pharmacie pour déterminer la capacité à fournir un AM.
+            Déterminer une personne ou une équipe clé qui aura la responsabilité principale des personnes ayant subi un AM.
+            Développer, imprimer et distribuer des affiches pour faire savoir aux clients et aux autres professionnels de la santé que vous distribuez Mifégymiso.`,
+          'Adapté de la Checklist for starting medical abortion services de la Fédération Nationale de l’Avortement.',
+        ],
+      },
+    },
+    {
+      id: 'M39',
+      title: 'À propos du MIFÉ-MISO',
+      content: {
+        type: ['p', 'i-full'],
+        data: [
+          `L’avortement est légal au Canada et les personnes n’ont pas besoin du consentement de leur partenaire ou d’un parent pour avorter. Il s’agit du deuxième service de santé reproductive le plus répandu au Canada: le tiers des personnes ayant la capacité d’être enceinte auront recours à un avortement au cours de leur vie.[2,14,15,18].
+
+        L’avortement par médicaments utilise des pilules médicamenteuses pour mettre fin à une grossesse. Au Canada, les pilules abortives médicamenteuses sont combinées et vendues sous le nom de Mifegymiso. Le médicament est approuvé par Santé Canada jusqu’à 63 jours d’âge gestationnel, mais s’est avéré sécuritaire et efficace jusqu’à 70 jours par La SOGC du Canada et 77 jours par l’Organisation mondiale de la santé (OMS). Le counselling et les médicaments sont fournis gratuitement à toutes les personnes bénéficiant d’une assurance maladie provinciale et de plusieurs catégories d’assurance maladie fédérale. Cependant, il est important de noter que les personnes admissibles aux soins de santé dans une province, qui tentent d’accéder à un avortement par médicaments dans une autre province ou territoire, sont admissibles au counseling, mais pas aux médicaments eux-mêmes.
+
+        Mifegymiso se présente généralement en deux boîtes: une boîte verte contenant 200 mg de mifépristone (MIFÉ) et une boîte orange contenant 800 mcg de misoprostol (MISO). Le MISO est utilisé pour l’avortement et pour d’autres conditions (par exemple, fausse couche, hémorragie post-partum). La MIFÉ aide à arrêter la croissance d’une grossesse et prépare le corps à vider l’utérus en ramollissant le col et en aidant la muqueuse de l’utérus à se décomposer. Le MISO provoque la dilatation du col et la contraction de l’utérus, provoquant ainsi la sortie des tissus issus de la grossesse du corps[14].`,
+          images.MifegysmoOverviewFr,
+        ],
+      },
+    },
+    {
+      id: 'M40',
+      title: 'Qui peut prescrire',
+      content: {
+        type: ['p', 'ul', 'p'],
+        data: [
+          `Au moment d’écrire ces lignes, les médecins et les infirmières praticiennes spécialisées au Canada sont autorisés à prescrire Mifegymiso. Les sages-femmes de toutes les provinces et territoires, à l’exception du Québec, ne sont pas autorisées à prescrire Mifegymiso, mais elles peuvent prodiguer des soins d’avortement par médicaments lorsqu’elles travaillent en étroite collaboration avec des infirmières praticiennes spécialisées ou des médecins.
+
+          Les prestataires d’avortement par médicaments peuvent être trouvés via:`,
+          `Le portail des services d’avortement par médicaments d’Action Canada pour la santé et les droits sexuels (cliquer sur l’hyperlien puis sélectionner l’option “Avortement par médicaments”)
+          La liste des cliniques d’Action Canada pour la santé et les droits sexuels.
+          Application de référence à l’avortement de Choice Connect.`,
+          `Le counseling et l’évaluation clinique sont nécessaires avant de prescrire Mifegymiso. Le counseling vise à aider les personnes à prendre une décision éclairée en comprenant leurs options (avortement versus poursuivre la grossesse, et avortement par médicaments versus avortement par instruments). Les évaluations cliniques visent à confirmer que l’âge gestationnel ne dépasse pas le seuil (63 jours selon Santé Canada, 70 jours selon la Société des obstétriciens et gynécologues du Canada), pour exclure des conditions graves telles que la grossesse ectopique et l’anémie, et pour déterminer la nécessité d’analyses sanguines telles que le test du facteur Rh[6].
+
+          Dans les cas de soins virtuels ou hybride d’avortement par médicaments (également appelé avortement sans contact ou à faible contact), le nombre de visites est minimisé en effectuant des rendez-vous de counseling, de dépistage et de suivi virtuellement par téléphone ou par vidéo. L’objectif est de réduire la nécessité de parcourir de longues distances ou des délais pour avorter. Cependant, les soins virtuels de l’avortement par médicaments peuvent mettre les personnes à risque en l’absence d’échographie, qui permet une évaluation précise de l’âge gestationnel ou de la présence d’une grossesse ectopique. De plus, l’avortement par médicaments virtuel peut nécessiter un suivi (téléphonique) plus fréquent pour surveiller les symptômes et le risque de grossesse évolutive et de grossesse ectopique, nécessitant ainsi souvent davantage de ressources cliniques. Pour ces raisons, la possibilité de proposer un avortement par médicaments via télémédecine dépend de l’expérience des prescripteurs, des ressources cliniques, des besoins des personnes et de leur sécurité[7].`,
+        ],
+      },
+    },
+    {
+      id: 'M41',
+      title: 'Où obtenir le médicament',
+      content: {
+        type: ['p'],
+        data: [
+          `Dans la plupart des cas, les pharmaciens sont responsables de la délivrance des médicaments aux personnes, mais certaines cliniques sont également autorisées à délivrer les médicaments directement. Les lignes directrices des Ordres professionnels des pharmaciens de chaque province ou territoire peuvent varier quant à savoir si les personnes doivent récupérer leurs médicaments en personne ou si les médicaments peuvent être livrés aux personnes par des services postaux.`,
+        ],
+      },
+    },
+    {
+      id: 'F1',
+      title: 'Médicaments',
+      content: {
+        type: ['p'],
+        data: [
+          `Q: Quand le régime mifépristone (RU-486) / misoprostol a-t-il été approuvé pour la première fois au Canada? Dans d’autres pays?
+R: Le Mifé-Miso a été approuvé par Santé Canada en juillet 2015.1 Il a été approuvé pour la première fois en France et en Chine en 1988, et son utilisation est maintenant approuvée dans plus de 60 pays[2].
+
+        Q: Quel est le schéma posologique approuvé pour MIFE 200 / MISO 800 au Canada?
+R: 200 mg de mifépristone (orale) suivi de 800 μg de misoprostol 24 à 48 heures après la dose de mifépristone (buccale, vaginale ou sublinguale).
+
+Q: Si la personne souhaitant un avortement par médicaments a une contre-indication absolue à l’utilisation de MIFE200 / MISO800, quelles sont les autres options d’avortement?
+R: Pour les grossesses jusqu’à 63 jours, vous pouvez proposer à la personne 50 mg de méthotrexate (oral ou intramusculaire) suivi de 800 μg de misoprostol (vaginal ou buccal) 3 à 5 jours plus tard, s’il n’y a pas de contre-indications.3 L’utilisation de schémas thérapeutiques contenant uniquement du misoprostol peut également être utilisée pour les grossesses allant jusqu’à 63 jours, bien que cela soit moins efficace que d’autres schémas thérapeutiques[4-6]. Vous pouvez également proposer un avortement par instruments.
+
+Q: L’avortement par médicaments affecte-t-il la fertilité de la personne ou l’issue des grossesses futures?
+R: Non. La fertilité est rapidement rétablie après un avortement par médicaments. Les personnes ayant un antécédant d’avortement par médicaments ne présentent pas de risque accru d’accouchement prématuré ou de petit poids de naissance par rapport aux personnes n’ayant jamais eu d’avortement[7].`,
+        ],
+      },
+    },
+    {
+      id: 'F2',
+      title: 'Counseling',
+      content: {
+        type: ['p', 'ul'],
+        data: [
+          `Q: Quels sujets devrais-je aborder lors de la séance initiale de counseling sur les options de grossesse avec la personne souhaitant avorter?
+R: Ces séances comprennent généralement une discussion sur: (a) les options de grossesse (avortement, parentalité, adoption); (b) les méthodes d’avortement; (c) les risques et les avantages de chaque méthode d’avortement; (d) la confirmation que la décision est volontaire et que le soutien est présent; (e) les besoins émotionnels, les capacités d’adaptation et les valeurs; (f) les options de contraception.
+
+Q: Comment puis-je soutenir émotionnellement la personne après l’avortement?
+A: La réaction émotionnelle à l’avortement peut varier considérablement d’une personne à l’autre. Cependant, tous bénéficieront d’un environnement propice à la divulgation et sans jugement, la normalisation des réactions courantes et l’exploration de stratégies de soutien et d’adaptation. Certaines personnes peuvent bénéficier de counseling supplémentaire et avoir besoin d’être orientées vers des ressources additionnelles[7-15].`,
+          `Exhale, une ligne téléphonique qui fournit un soutien émotionnel, des ressources et des informations après un avortement.
+All-Options, une ligne d’assistance téléphonique pour discuter des expériences passées ou actuelles en matière d’avortement, d’adoption et de parentalité pour les personnes au Canada et aux États-Unis (1-888-493-0092).`,
+        ],
+      },
+    },
+    {
+      id: 'F3',
+      title: 'Effets secondaires et complications',
+      content: {
+        type: ['p', 'ul', 'p'],
+        data: [
+          `Q: Que ressentira une personne lors d’un avortement par médicaments avec Mifé-Miso?
+R: Quelques heures après l’administration du misoprostol, la personne doit s’attendre à des saignements plus abondants que d’habitude avec des caillots pendant 2 à 4 heures. Si la grossesse est inférieure à 56 jours d’âge gestationnel, les tissus peuvent passer sans qu’il y ait évidence d’un fœtus. Après 56 jours d’âge gestationnel, les tissus fœtaux peuvent se dissimuler lors de l’expulsion16. Le misoprostol peut provoquer de la diarrhée, des frissons et de la fièvre, des nausées, des vomissements, des maux de tête et des étourdissements[17-20].
+
+Q: Quels facteurs influencent la douleur qu’une personne ressent lors d’un avortement par médicaments?
+R: Les personnes de moins de 18 ans signalent plus fréquemment des douleurs que les adultes lorsqu’elles utilisent MIFE200 / MISO800[19]. Des doses plus élevées de misoprostol et un âge gestationnel plus avancé sont également associés à davantage de douleur.7 Moins de douleur est signalée par les personnes ayant déjà accouché[21].
+
+Q: Quels conseils pour la gestion des symptômes puis-je proposer à la personne qui subit un avortement par médicaments MIFE200 / MISO800?
+R: Les AINS peuvent être utilisés pour le contrôle de la douleur dans la plupart des cas, tels que l’ibuprofène 200 à 400 mg toutes les 8 heures ou le naproxen 250 à 500 mg toutes les 12 heures au besoin[21]. Une prescription d’analgésiques opioïdes légers (par exemple, codéine ou oxycodone) peuvent également être proposés au besoin pour traiter des crampes ou des douleurs intenses[21]. Le dimenhydrinate, l’ondansétron ou le diclectin peuvent être proposés pour gérer les nausées
+
+Q: Comment définit-on « trop de saignements » pour une personne qui a recours à un avortement par médicaments?
+R: Si, après l’avortement, deux serviettes hygiéniques maxi sont trempées par heure pendant plus de deux (2) heures consécutives et/ou si la personne ressent des étourdissements, des vertiges ou un rythme cardiaque accéléré, il s’agit de “trop de saignements.”1 Vous devez diriger la personne vers des soins médicaux d’urgence[22].
+
+Q: Un pharmacien devrait-il obtenir une nouvelle prescription du médecin ou de l’infirmière praticienne spécialisée qui a prescrit le Mifé-Miso, si des vomissements surviennent dans les 30 minutes suivant la prise de la dose de MISO?
+R : Le misoprostol est rapidement absorbé lorsqu’il est administré par voie buccale. Le consensus suggère que la plupart des prescripteurs observeraient l’effet du misoprostol absorbé pendant 48 heures. Si le pharmacien est certain que la dose a été vomie en moins de 30 minutes, il peut faire un suivi directement auprès du prescripteur pour le tenir informé de la situation.
+
+Le Guide de ressources du pharmacien pour la distribution de Mifé-Miso de la CPCA indique:`,
+          `En cas de vomissements lors de l’absorption buccale de MISO, contacter le prescripteur pour une évaluation. Si aucun saignement n’apparaît dans les 48 heures suivant l’administration de MISO, une autre dose peut être nécessaire.
+Si vomissement des fragments de MISO 30 minutes après l’administration buccale : aucune action requise ; le médicament a déjà été absorbé.`,
+          `Q: Comment savoir si une personne subit un choc toxique dû à une infection à Clostridium?
+R: Les symptômes sont vagues et comprennent un malaise général avec des nausées, des vomissements et de la diarrhée, une faiblesse, une absence de fièvre (ou une légère fièvre), des douleurs abdominales minimes, des symptômes pseudo-grippaux, une hypotension, une tachycardie, un œdème, un taux élevé d’hémoglobine (hémoconcentration), et un nombre élevé de globules blancs[23-25].`,
+        ],
+      },
+    },
+    {
+      id: 'F4',
+      title: 'Allaitement',
+      content: {
+        type: ['p'],
+        data: [
+          `Q: Le Mifé-Miso peut-il être administré à une femme qui allaite?
+R: Les données actuellement disponibles suggèrent qu’avec la dose actuelle de Mifé-Miso, l’allaitement n’a pas besoin d’être interrompu.
+
+L’information provient de la National Library of Medicine LactMed database et de la National Abortion Federation Protocol for Mifepristone / misoprosol for Early Medical Abortion.
+
+Résumé de l’utilisation de la mifépristone pendant l’allaitement (NLM):
+
+Des informations limitées indiquent qu’il n’est pas nécessaire d’interrompre l’allaitement après une dose unique de mifépristone. Une dose de 200 mg pourrait être préférable à une dose de 600 mg chez les mères qui allaitent.
+
+Niveaux de médicaments:
+
+Niveaux maternels. Douze femmes (la plupart entre 6 à 12 mois après l’accouchement), ayant eu recours à un avortement par médicaments avec mifépristone et misoprostol, ont fourni des échantillons de lait jusqu’à 5 jours après la procédure pour mesurer la mifépristone.
+
+Chez les 2 femmes ayant reçu une dose unique de 200 mg par voie orale, la mifépristone était à tout moment indétectable (<5,6 mcg/L) dans le lait maternel. Parmi les 10 femmes ayant reçu une seule dose orale de 600 mg, les taux moyens de mifépristone dans le lait maternel étaient de 172 mcg/L le jour 1 (n = 9) ; 66 mcg/L le jour 2 (n = 9) ; 31 mcg/L le jour 3 (n = 10) ; 24 mcg/L le jour 4 (n = 4) ; et 25 mcg/L le jour 5 (n = 3).
+
+Les taux de mifépristone dans le lait maternel étaient les plus élevés dans les échantillons prélevés entre 6 et 9 heures après l’administration du médicament. Les échantillons prélevés entre 9 et 15 heures après la dose présentaient des taux de mifépristone beaucoup plus faibles. Les auteurs ont estimé qu’un nourrisson entièrement allaité recevrait une dose ajustée en fonction du poids de 0,5 % de la dose maternelle. Les auteurs ont suggéré qu’il n’était pas nécessaire d’interrompre l’allaitement après une dose unique de mifépristone et qu’une dose de 200 mg pourrait être préférable à une dose de 600 mg chez les mères qui allaitent[26].
+
+Résumé du misoprostol: Le misoprostol est un analogue de la prostaglandine E1. La prostaglandine E1 et d’autres prostaglandines apparaissent normalement dans le colostrum et le lait[27-29]. En raison des faibles niveaux de misoprostol dans le lait maternel, les quantités ingérées par le nourrisson sont faibles et ne devraient pas provoquer d’effets indésirables chez les nourrissons allaités. Aucune précaution particulière n’est requise.
+
+Aucune preuve ne soutient la nécessité de tirer et jeter sonlait lors d’un avortement par médicaments lorsqu’une personne allaite. Les niveaux de mifépristone dans le lait maternel après qu’une personne ait reçu 600 mg de mifépristone sont faibles et indétectables après une dose de 200 mg. Les niveaux de misoprostol dans le lait maternel sont également faibles et les petites quantités ingérées par les nourrissons ne devraient pas provoquer d’effets indésirables[26]. (Fédération Nationale de l’Avortement, révisé en avril 2016).`,
+        ],
+      },
+    },
+    {
+      id: 'F5',
+      title: 'Grossesse multiple',
+      content: {
+        type: ['p', 'ul', 'p'],
+        data: [
+          `Q: Mifé-Miso peut-il être utilisé pour interrompre une grossesse multiple (c’est-à-dire une grossesse gémellaire)? Quelles sont les preuves / le taux de réussite?
+R: Bien qu’un rapport de cas ait révélé un échec de l’utilisation de la mifépristone pour l’avortement par médicaments chez une personne ayant une grossesse gémellaire, Hayes, J.L. et al. a effectué une analyse secondaire de l’efficacité du traitement et des effets secondaires sur une population recevant 200 mg de mifépristone par voie orale et 800 mcg de misoprostol par voie vaginale pour un avortement par médicaments jusqu’à 63 jours et ont montré[30]:`,
+          `Sur 2 208 sujets, 24 (1,1 %) femmes ont eu des jumeaux.
+Le succès du traitement n’était pas statistiquement différent pour les grossesses gémellaires et uniques (91 % contre 97 %, p = 0,19).
+Les effets secondaires perçus, les saignements et la douleur n’étaient pas statistiquement différents entre les groupes.`,
+          `Dans une étude de cas d’un échec d’avortement médical, Sorensen, E.C. et al. ont émis l’hypothèse que les grossesses gémellaires pourraient nécessiter une dose de mifépristone plus élevée que les grossesses uniques[31]. Mais aucun essai n’a été réalisé pour tester cette hypothèse et cet article a été fortement critiqué par Hausknecht, R. en réponse à l’auteur. Compte tenu de ces résultats, il est raisonnable de pratiquer un avortement par médicaments avec de la mifépristone et du misoprostol en présence d’une grossesse gémellaire jusqu’à 63 jours.`,
+        ],
+      },
+    },
+    {
+      id: 'F6',
+      title: 'Methadone',
+      content: {
+        type: ['p'],
+        data: [
+          `Q: Y a-t-il une interaction entre la méthadone et la mifépristone?
+        R: Conclusion:
+
+La surveillance post-commercialisation de l’utilisation de la mifépristone dans de nombreux pays au cours des 25 dernières années n’a pas soulevé de préoccupations quant à cette interaction. Bien qu’il existe peu d’essais et de littérature publiés sur cette interaction médicamenteuse, le principe de précaution stipule que les personnes utilisant les deux médicaments simultanément soient correctement informées, accompagnées pendant le processus d’avortement et suivies pour la survenue d’événements indésirables et l’achèvement de l’avortement. Même si l’arythmie n’était pas un effet secondaire potentiel basé sur la pharmacodynamie, elle pourrait apparaître comme un effet indésirable du médicament dans la mesure où la mifépristone pénètre plus largement dans certaines populations, y compris chez les personnes dépendantes aux opioïdes/aux opiacés.
+
+Vous trouverez ci-dessous l’opinion d’un professeur de pharmacologie à l’Université de la Colombie-Britannique (UBC). De plus, trois leaders très expérimentés dans la fourniture de mifépristone aux États-Unis ont exprimé leur opinion selon laquelle ils n’ont vu aucune preuve d’une quelconque interaction ou effets indésirables. La réponse, du point de vue du métabolisme/pharmacocinétique des médicaments, est: probablement pas.
+
+L’explication (légèrement plus longue) est la suivante : La méthadone se lie principalement au récepteur opioïde “mu” de manière similaire à d’autres opioïdes, c’est pourquoi il s’agit d’une thérapie de remplacement pour les personnes ayant des problèmes de dépendance et de tolérance. La méthadone a effectivement certains effets hors cible au niveau du récepteur N-méthyl-D-aspartate (NMDA), qui est un récepteur du glutamate ou un récepteur excitateur dans le cerveau. En termes de métabolisme et d’excrétion, la méthadone est également soumise à un métabolisme assez important du CYP (enzymes du cytochrome P450) provenant du CYP3A4, du CYP2D6 et du CYP2B6. De plus, l’un des problèmes de la méthadone est qu’elle est facilement transportée par le transporteur P-gp (P-glycoprotéine 1). Cette protéine de transport se trouve dans le sang humain: la barrière cérébrale (peu d’autres le sont) et chez la minorité significative de personnes qui expriment une P-gp élevée, elle fait de la méthadone un médicament “moins efficace.”
+
+En revanche, la mifépristone (RU486) est un liant extrêmement puissant du récepteur de la progestérone (IC50 = 0,025 nM pour le récepteur de la progestérone selon Katzung). Lors d’un avortement, le trophoblaste (precurseur du placenta) se détache de la paroi utérine (ce qui nécessite une signalisation de la progestérone) – c’est le mécanisme d’action de la mifépristone. La mifépristone elle-même agit en tant qu’inhibiteur modéré du métabolisme par le CYP3A4 et peut ainsi modifier les concentrations d’autres médicaments. En raison de sa demi-vie prolongée et de sa liaison irréversible au CYP, les interactions potentielles de la mifépristone doivent être vérifiées, en particulier, pour les médicaments ayant un index thérapeutique étroit. Les exemples incluent: les immunosuppresseurs (par ex. la cyclosporine, le sirolimus, le tacrolimus); les médicaments cardiovasculaires (par ex. les bloqueurs des canaux calciques, les antiarythmiques, autres); les agents analgésiques/anesthésiques (par ex. le fentanyl, la kétamine, la méthadone, autres). L’effet d’une dose unique de mifépristone sur le métabolisme et l’effet d’autres médicaments fortement dépendants du CYP3A4 pour leur métabolisme ou leur activation peuvent persister jusqu’à deux semaines. Les interactions avec ces médicaments doivent être vérifiées avant l’administration de la mifépristone.
+
+Il n’y a actuellement aucune littérature indiquant que les personnes sous méthadone ont des expériences meilleures ou pires avec la RU486 comme abortif, à l’exception des deux points suivants : (1) elles peuvent être plus susceptibles d’être exposés à des difficultés à suivre le traitement tel qu’indiqué et pourraient donc déclarer avoir pris le médicament sans l’avoir fait, et (2) il existe des rapports contradictoires concernant les effets de la méthadone sur le rythme cardiaque (fait étrange) et qu’associée à la mifépristone pourrait provoquer des arythmies graves.
+
+En résumé, il semble que Mifé-Miso pourrait ralentir le métabolisme de la méthadone pendant un certain temps, ce qui pourrait entraîner des niveaux légèrement plus élevés de méthadone.`,
         ],
       },
     },
