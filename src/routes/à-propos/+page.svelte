@@ -51,7 +51,7 @@
           </ol>
         </div>
         
-        <h1>Bibliographie</h1>
+        <h1 id="ref">Bibliographie</h1>
         <div class="module">
           <p>Le contenu de ce site web a été développé sur la base des informations fournies dans les références suivantes. Il est à noter que le contenu de ce site web a été mis à jour en novembre 2023 et que cette liste de référence peut ne pas refléter les lignes directrices, listes de contrôle et outils les plus récents publiés après cette date.</p>
           <ol>

@@ -84,7 +84,7 @@ span {
   border: 1px solid #545454;
   background: #f6f7f8;
 }
-.module > *:not(li):not(:last-child) {
+.module > *:not(li):not(:last-child):not(.left) {
   margin-bottom: 2rem;
 }
 .module p {
@@ -121,7 +121,13 @@ span {
   float: left;
   padding-right: 2.5rem;
 }
-.left img {
+.right {
+  width: 8rem;
+  float: right;
+  padding-left: 8rem;
+}
+.left img,
+.right img {
   max-width: 100%;
 }
 /* UI */

@@ -29,6 +29,15 @@ import PostAbortionFollowUpFr from './post-abortion-follow-up-fr.png'
 import AbortionCompleteFr from './abortion-completion-assessment-fr.png'
 import PostAbortionContraceptionFr from './post-abortion-contraception-fr.png'
 
+import FaSetup1 from './1-REVIEW-PROTOCOL.png'
+import FaSetup2 from './2-REVIEW-REGULATIONS-AND-COMPENSATION-PROCESSES.png'
+import FaSetup3 from './3-ADDRESS-ABORTION-CONCERNS-AMONG-YOUR-TEAM.png'
+import FaSetup4 from './4-PREPARE-PLANS-TO-SUPPORT-UNDERSERVED-POPULATIONS.png'
+import FaSetup5 from './5-REVIEW-STAFFING-AND-ADMINISTRATIVE-CAPACITY.png'
+import FaSetup6 from './6-SET-UP-YOUR-FACILITY.png'
+import FaSetup7 from './7-IDENTIFY-CLINICS-FOR-REFERRAL.png'
+import FaSetup8 from './8-PREPARE-COMMUNICATION-MATERIALS.png'
+
 import PrescribingIcon from './prescribing-icon.png'
 import DispensingIcon from './dispensing-icon.png'
 import SupportingIcon from './supporting-icon.png'
@@ -76,4 +85,12 @@ export const images = {
   PostAbortionFollowUpFr,
   AbortionCompleteFr,
   PostAbortionContraceptionFr,
+  FaSetup1,
+  FaSetup2,
+  FaSetup3,
+  FaSetup4,
+  FaSetup5,
+  FaSetup6,
+  FaSetup7,
+  FaSetup8,
 }

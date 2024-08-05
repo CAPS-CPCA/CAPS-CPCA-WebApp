@@ -23,11 +23,11 @@ export const modules: { [key: string]: Modules } = {
         data: [
           `In Canada, the medication abortion pills are packaged and sold as Mifegymiso. Mifegymiso comes in an outer white box, containing two smaller boxes: a green box containing mifepristone 200 mg (MIFE) and an orange box containing misoprostol 800 mcg (MISO) (four small tablets of 200 mcg each)[10].
 
-        MIFE is a progesterone receptor modulator. It is a potent anti-progestin that also exhibits b antiglucocorticoid and weak antiandrogenic properties. It blocks progesterone receptors in early pregnancy, which leads to endometrial degeneration, synthesis of prostaglandins, and decline in beta-human chorionic gonadotropin (βhCG) secretion. These events promote cervical dilation and facilitate the onset of bleeding[10].
+          MIFE is a progesterone receptor modulator. It is a potent anti-progestin that also exhibits strong antiglucocorticoid and weak antiandrogenic properties. It blocks progesterone receptors in early pregnancy, which leads to endometrial degeneration, synthesis of prostaglandins, and decline in beta-human chorionic gonadotropin (βhCG) secretion. These events promote cervical dilation and facilitate the onset of bleeding[10].
 
-        MISO is a potent synthetic prostaglandin E1 that induces cervical ripening and uterine contractions, which cause the pregnancy tissues to leave the body[10].
+          MISO is a potent synthetic prostaglandin E1 that induces cervical ripening and uterine contractions, which cause the pregnancy tissues to leave the body[10].
 
-        Click here to download the Product monograph.`,
+          Click here to download the Product monograph.`,
           images.MifegysmoOverview,
         ],
       },
@@ -39,13 +39,13 @@ export const modules: { [key: string]: Modules } = {
         type: ['h2', 'ul', 'h2', 'ul'],
         data: [
           'Efficacy:',
-          `MIFE / MISO is highly effective. The risk of ongoing pregnancy is 0.9% for pregnancies up to 49 days of gestation and 3.1% for pregnancies up to 70 days of gestation[10].
-        According to SOGC’s protocol for the provision of medication abortion via telemedicine, the patient should take a first dose of misoprostol buccally or vaginally 24-48 hours after taking mifepristone[7].
-        In addition, patients with gestational age 63 days or less should take the second dose of misoprostol if no bleeding occurs within the first 24 hours after the first misoprostol dose or as instructed by the clinician. Patients with a gestational age over 63 days should take a second dose of misoprostol 4 hours after the first dose[7].`,
+          `MIFE / MISO is <b>highly effective</b>. The risk of ongoing pregnancy is 0.9% for pregnancies up to 49 days of gestation and 3.1% for pregnancies up to 70 days of gestation[10].
+        According to SOGC’s protocol for the provision of medication abortion via telemedicine, the patient should take a first dose of misoprostol buccally or vaginally <b>24-48</b> hours after taking mifepristone[7].
+        In addition, patients with gestational age 63 days or less should take <b>the second dose</b> of misoprostol if no bleeding occurs within the first 24 hours after the first misoprostol dose or as instructed by the clinician. Patients with a gestational age over 63 days should take a second dose of misoprostol 4 hours after the first dose[7].`,
           'Side Effects and Complications[10]:',
-          `Very common (≥ 10%): Nausea, vomiting, diarrhea, dizziness, headache, chills / fever, weakness, fatigue, gastric discomfort, abdominal pain, vaginal bleeding, spotting, uterine contractions or cramping.
-        Common (1-10%): Fainting, light or moderate gastrointestinal cramping, prolonged post-abortion bleeding, endometritis, breast tenderness, heavy bleeding (may or may not require surgical termination of pregnancy).
-        Uncommon (0.1-1%): Arrhythmia, hemorrhagic shock, salpingitis, heavy bleeding requiring IV fluids or blood transfusion, infection, hot flushes, hypotension, bronchospasm, skin rash / pruritus.`,
+          `<b>Very common (≥ 10%):</b> Nausea, vomiting, diarrhea, dizziness, headache, chills / fever, weakness, fatigue, gastric discomfort, abdominal pain, vaginal bleeding, spotting, uterine contractions or cramping.
+        <b>Common (1-10%):</b> Fainting, light or moderate gastrointestinal cramping, prolonged post-abortion bleeding, endometritis, breast tenderness, heavy bleeding (may or may not require surgical termination of pregnancy).
+        <b>Uncommon (0.1-1%):</b> Arrhythmia, hemorrhagic shock, salpingitis, heavy bleeding requiring IV fluids or blood transfusion, infection, hot flushes, hypotension, bronchospasm, skin rash / pruritus.`,
         ],
       },
     },
@@ -56,7 +56,7 @@ export const modules: { [key: string]: Modules } = {
         type: ['h2', 'p', 'h2', 'ul', 'h2', 'p', 'h2', 'p', 'h2', 'p'],
         data: [
           'Indication',
-          `MIFE / MISO is indicated by Health Canada for pregnancy termination up to 63 days as counted from the first day of the last menstrual period (LMP) in a presumed 28-day cycle. The Society of Obstetricians and Gynaecologists of Canada indicates safe use up to 70 days after LMP. There is no absolute lower gestational age limit[5].`,
+          `MIFE / MISO is indicated by Health Canada for pregnancy termination up to <b>63 days</b> as counted from the first day of the last menstrual period (LMP) in a presumed 28-day cycle. The Society of Obstetricians and Gynaecologists of Canada indicates safe use up to <b>70 days</b> after LMP. There is no absolute lower gestational age limit[5].`,
           'Contraindications[6]:',
           `Ectopic pregnancy
         Chronic adrenal failure
@@ -87,21 +87,21 @@ export const modules: { [key: string]: Modules } = {
       id: 'M5',
       title: 'Pre-abortion Counselling',
       content: {
-        type: ['p', 'h2', 'ul', 'h2', 'ul'],
+        type: ['p', 'h2', 'ul', 'p', 'ul'],
         data: [
           `Counselling is to ensure patients understand different options, the risks and benefits of each and make informed decisions. Counselling also helps prescribers understand patients’ preferences and circumstances to advise the best course of actions.`,
           'Key counselling points include[4,6]:',
-          `Review pregnancy options when indicated: abortion, becoming a parent or child adoption.
+          `<b>Review pregnancy options</b> when indicated: abortion, becoming a parent or child adoption.
         Tailor the counselling to the needs of the patient (such as counteracting abortion stigma and / or providing emotional support).
         Communicate the risk of advancing gestational age without putting time pressure on the patient.
-        Use non-judgmental and inclusive language.`,
-          '(If choosing abortion:)',
+        <b>Use non-judgmental and inclusive language</b>.`,
+          '<i>(If choosing abortion:)</i>',
           `Review abortion options, including risks, efficacy, process and length of time of medication versus procedural abortion.
-        Discuss the patient’s eligibility for medication abortion, including gestational age and medical history.
-        Discuss the patient’s access to pharmacies, telephone, transportation, emergency care, and labs and imaging facilities if needed.
+        <b>Discuss the patient’s eligibility for medication abortion</b>, including gestational age and medical history.
+        <b>Discuss the patient’s access to pharmacies, telephone, transportation, emergency care, and labs and imaging facilities</b> if needed.
         Discuss the patient’s preferences and circumstances, such as a safe place in their living situation to complete medication abortion. Share decision tools such as It’s My Choice to help the patient choose the type of abortion that fits them.
         Confirm that the decision is the patient’s own, reached without coercion.
-        Confirm the patient’s understanding that medication abortion is irreversible and that the patients must take an additional dose of the second medication or undergo procedural abortion in case of ongoing pregnancy.
+        Confirm the patient’s understanding that <b>medication abortion is irreversible</b> and that the patients must take an additional dose of the second medication or undergo procedural abortion in case of ongoing pregnancy.
         Review the timing of examinations (ultrasound, blood tests, if needed), medications and follow-up appointments.
         Discuss post-abortion contraception options.`,
         ],
@@ -113,13 +113,13 @@ export const modules: { [key: string]: Modules } = {
       content: {
         type: ['p', 'ul', 'p', 'ul', 'i-full'],
         data: [
-          'Medication abortion is suitable for patients who[6]:',
+          '<b>Medication abortion</b> is suitable for patients who[6]:',
           `Prefer a non-invasive method.
         Prefer to have an abortion in the comfort of their home.
         Have the confidence of being able to manage the process and side effects at home.
         Are able to take 1 to 3 days off work or other responsibilities to undergo the abortion process.
         Lack means of transportation to travel to the clinic for a procedural abortion (but still need access to emergency services in event of complications).`,
-          'Procedural abortion is suitable for patients who[6]:',
+          '<b>Procedural abortion</b> is suitable for patients who[6]:',
           `Prefer to have in-person support and monitoring from healthcare professionals at a clinic or hospitals.
         Want to have the abortion completed quickly to return to work or other responsibilities.
         Are comfortable with the use of medical instruments and internal exams.
@@ -137,8 +137,8 @@ export const modules: { [key: string]: Modules } = {
         data: [
           'After the patient and the health provider determine that medication abortion (MA) is the right option, the health provider should[2,6,7,10]:',
           [
-            `Obtain written or verbal informed consent (see examples by CAPS-CPCA platform and the Bay Center for Birth Control) and document it in the patients’ chart.
-          Prescribe:`,
+            `<b>Obtain written or verbal informed consent</b> (see examples by CAPS-CPCA platform and the Bay Center for Birth Control) and document it in the patients’ chart.
+          <b>Prescribe:</b>`,
             `Mifepristone 200 mg (MIFE) orally and misoprostol 800 mcg (MISO) buccally or vaginally (this combination is packaged and branded as Mifegymiso).
           Additional dose of MISO buccally or vaginally in case of incomplete or failed abortion.
           Analgesics and antiemetics as per health provider / facility protocol.
@@ -148,8 +148,8 @@ export const modules: { [key: string]: Modules } = {
           Consider informing patients if the MA procedure involves off-label, evidence-based practices.`,
             `Much of the MA off-label practices are based on low-resource availability and require a balance between health providers’ experience, patients’ safety and patients’ needs.
           It is recommended to inform patients about off-label practices so patients understand the risks involved and understand that off-label practices might vary depending on prescribers’ experience and comfort level.`,
-            `Discuss post-abortion contraception options. Emphasize that patients can quickly return to fertility following the abortion.
-          Set up follow-up appointment(s), either in-person or via phone/video. Do discuss any safety or privacy plan if needed.
+            `Discuss post-abortion contraception options. <b>Emphasize that patients can quickly return to fertility following the abortion</b>.
+          <b>Set up follow-up appointment(s), either in-person or via phone/video</b>. Do discuss any safety or privacy plan if needed.
           Provide patients with patient instruction manuals (see an example by the SHORE center and the Planned Parenthood Ottawa) and the contact details of healthcare providers and emergency health services.
           Take note of patients’ preferred phone numbers and emergency contacts in case providers are unable to reach patients directly. Be mindful that the emergency contact that the patient gives during their visits for MA may be different from the emergency contact on file. Be sure not to contact any other individuals without the patient’s expressed consent.`,
           ],
@@ -211,13 +211,13 @@ export const modules: { [key: string]: Modules } = {
         data: [
           `A positive urine beta human chorionic gonadotropin test (βhCG) is sufficiently sensitive to confirm a pregnancy[6].
 
-        Ultrasound: Ultrasound provides the most accurate measurement of gestational age (GA) but is not a routine requirement unless the patient is uncertain of their last menstrual period (or there are symptoms and risk factors for ectopic pregnancy as explained later). It is recommended to choose an ultrasound clinic whose staff are capable of offering non-judgmental sonography[6].
+        <b>Ultrasound:</b> Ultrasound provides the most accurate measurement of gestational age (GA) but is not a routine requirement unless the patient is uncertain of their last menstrual period (or there are symptoms and risk factors for ectopic pregnancy as explained later). It is recommended to choose an ultrasound clinic whose staff are capable of offering non-judgmental sonography[6].
 
-        Medical history: If the patient is certain of their last menstrual period and if they were having regular periods without recent use of hormonal contraception, GA estimate that is based on their date would correlate closely with the results from ultrasound[6].
+        <b>Medical history:</b> If the patient is certain of their last menstrual period and if they were having regular periods without recent use of hormonal contraception, GA estimate that is based on their date would correlate closely with the results from ultrasound[6].
 
-        Gynaecological examination: In the first trimester, determination of GA with bimanual exam has been shown to be accurate within 2 weeks of GA determined by ultrasound; however, accuracy varies with the prescriber’s experience and with the amount of adipose tissue and the presence of fibroids[6].
+        <b>Gynaecological examination:</b> In the first trimester, determination of GA with bimanual exam has been shown to be accurate within 2 weeks of GA determined by ultrasound; however, accuracy varies with the prescriber’s experience and with the amount of adipose tissue and the presence of fibroids[6].
 
-        βhCG test: βhCG level rises linearly during the first 6 weeks of pregnancy but the high variability thereafter limits the utility of βhCG for dating[6].`,
+        <b>βhCG test:</b> βhCG level rises linearly during the first 6 weeks of pregnancy but the high variability thereafter limits the utility of βhCG for dating[6].`,
         ],
       },
     },
@@ -228,7 +228,7 @@ export const modules: { [key: string]: Modules } = {
         type: ['left', 'p', 'ul', 'p'],
         data: [
           images.EctopicPregnancy,
-          `Ectopic pregnancy (EP) is rare. It occurs in 1 or 2 out of 100 pregnancies in the general population, and the rate is consistently lower among those seeking abortion. It is recommended that patients undergo ultrasound if they have significant medical risk factors, signs or symptoms of EP[6].
+          `<b>Ectopic pregnancy (EP)</b> is rare. It occurs in 1 or 2 out of 100 pregnancies in the general population, and the rate is consistently lower among those seeking abortion. It is recommended that <b>patients undergo ultrasound if they have significant medical risk factors, signs or symptoms of EP</b>[6].
 
 
         Significant risk factors, signs and symptoms of EP include[6]:`,
@@ -238,11 +238,11 @@ export const modules: { [key: string]: Modules } = {
         Previous surgery of the fallopian tubes such as tubal ligation.
         History of salpingitis or pelvic inflammatory disease.
         Symptoms of abdominal pain and vaginal bleeding.`,
-          `Multiple pregnancies is not a contraindication to medication abortion (MA), however the presence of multiples should be communicated to the patient if they agree to obtain information about the pregnancy[6].
+          `<b>Multiple pregnancies</b> is not a contraindication to medication abortion (MA), however the presence of multiples should be communicated to the patient if they agree to obtain information about the pregnancy[6].
 
-        Missed and incomplete abortion should also be disclosed to the patients if they agree to obtain information about the ultrasound and should be managed either by MA or procedural abortion[6].
+        <b>Missed and incomplete abortion</b> should also be disclosed to the patients if they agree to obtain information about the ultrasound and should be managed either by MA or procedural abortion[6].
 
-        In case of molar pregnancy, procedural abortion with consideration for referral, histological review and follow-up of βhCG is essential, and MA is not appropriate[6].`,
+        In case of <b>molar pregnancy</b>, procedural abortion with consideration for referral, histological review and follow-up of βhCG is essential, and MA is not appropriate[6].`,
         ],
       },
     },
@@ -252,7 +252,7 @@ export const modules: { [key: string]: Modules } = {
       content: {
         type: ['p', 'ul', 'p', 'ul'],
         data: [
-          `Patients who have a pregnancy of unknown location (PUL) and request medication abortion (MA) should receive abortion care without delay, provided that they have no clinical symptoms of ectopic pregnancy (EP). Failure to identify a definite intrauterine pregnancy should not delay MA[6].
+          `Patients who have a <b>pregnancy of unknown location (PUL)</b> and request medication abortion (MA) should receive abortion care without delay, provided that they have no clinical symptoms of ectopic pregnancy (EP). Failure to identify a definite intrauterine pregnancy should not delay MA[6].
 
         If the serum βhCG is > 2000 IU / L and no intrauterine gestational sac is visualized on ultrasound[6]:`,
           `Further investigation is required.`,
@@ -273,7 +273,7 @@ export const modules: { [key: string]: Modules } = {
 
         According to the SOGC’s Guideline on Prevention of RhD Alloimmunization published in 2024, for non-sensitized Rh D-negative individuals who have experienced threatened, spontaneous or induced abortion after 12 weeks gestation, administration of 300 μg of Rho(D) immune globulin is suggested.
 
-        Prior to that, in 2022, the Society of Family Planning and the World Health Organization also recommends withholding Rh testing and administration prior to 12 weeks gestation for patients undergoing MA, spontaneous abortion or uterine aspiration abortion[8,20].`,
+        Prior to that, in 2022, the Society of Family Planning and the World Health Organization also recommends withholding Rh testing and administration prior to <b>12 weeks gestation</b> for patients undergoing MA, spontaneous abortion or uterine aspiration abortion[8,20].`,
         ],
       },
     },
@@ -292,9 +292,9 @@ export const modules: { [key: string]: Modules } = {
         type: ['p', 'h2', 'i-full', 'p', 'ul'],
         data: [
           `A follow-up appointment is required to confirm the termination of the pregnancy, manage complications, counsel on contraceptive plans and, if applicable, provide emotional support.`,
-          'Mode of follow-up:',
+          '<b>Mode of follow-up:</b>',
           images.PostAbortionFollowUp,
-          `Emotional support[6]: Emotional response after MA often vary. Some people feel relieved and positive and some have feelings of grief, sadness, or guilt while others have mixed feelings. These emotions are normal, and they may or may not be related to socioeconomic circumstances, the lack of social support, moral discomfort, and family conflict.
+          `<b>Emotional support</b>[6]: Emotional response after MA often vary. Some people feel relieved and positive and some have feelings of grief, sadness, or guilt while others have mixed feelings. These emotions are normal, and they may or may not be related to socioeconomic circumstances, the lack of social support, moral discomfort, and family conflict.
 
         Patients can be supported by understanding that mixed emotions are normal and by exploring coping strategies and support. Useful resources include:`,
           `Exhale, a talk-line that provides emotional support, resources and information after abortion.
@@ -310,15 +310,15 @@ export const modules: { [key: string]: Modules } = {
         data: [
           `Completion of medication abortion (MA) must be assessed by the provider. Depending on the circumstances, this can be done by obtaining a clinical history, ultrasonography, or urine or serum bhCG testing. This assessment can be done in person, by telephone or electronic communication as per clinical indication and the preferences of the patient and the provider.
 
-        Clinical history[6]: The assessment of successful expulsion based on medical history is highly predictive of complete abortion (sensitivity 99.1%, specificity 45.5%). No bleeding or minimal bleeding after MISO, and continuing pregnancy symptoms are suggestive of an ongoing pregnancy.
+        <b>Clinical history</b>[6]: The assessment of successful expulsion based on medical history is highly predictive of complete abortion (sensitivity 99.1%, specificity 45.5%). No bleeding or minimal bleeding after MISO, and continuing pregnancy symptoms are suggestive of an ongoing pregnancy.
 
-        Urine bhCG[7]:`,
+        <b>Urine bhCG</b>[7]:`,
           images.AbortionComplete,
-          `Serum bhCG[3]:`,
+          `<b>Serum bhCG</b>[3]:`,
           `A drop by at least 50% from baseline at 3 days after MIFE administration (or 24 and 48 hours after MISO administration) is highly indicative of complete abortion.
         A drop by 80% between 7 and 14 days after MIFE / MISO administration confirms abortion completion.
         If bhCG drops < 80% between day 7 and 14, prescribers may order an ultrasound or repeat the test in a few days. Ultrasound should be ordered if 14 days have passed and a drop by 80% has not been reached.`,
-          `Ultrasound[6]: Ultrasound provides definitive evidence of MA completion, but no evidence shows that it is superior to other methods. It is recommended in cases where the outcome is uncertain based on clinical history, or there are symptoms such as unexpected pain, prolonged heavy bleeding or inadequate bleeding.`,
+          `<b>Ultrasonography</b>[6]: Ultrasound provides definitive evidence of MA completion, but no evidence shows that it is superior to other methods. It is recommended in cases where the outcome is uncertain based on clinical history, or there are symptoms such as unexpected pain, prolonged heavy bleeding or inadequate bleeding.`,
         ],
       },
     },
@@ -328,13 +328,13 @@ export const modules: { [key: string]: Modules } = {
       content: {
         type: ['p', 'ul', 'p', 'ul'],
         data: [
-          `Ongoing pregnancy[6]: Ongoing pregnancy after medication abortion is uncommon and can be treated with another dose of MISO or with procedural abortion. Procedural abortion is recommended if cardiac activity is present 14 to 21 days after taking MISO.
+          `<b>Ongoing pregnancy</b>[6]: Ongoing pregnancy after medication abortion is uncommon and can be treated with another dose of MISO or with procedural abortion. Procedural abortion is recommended if cardiac activity is present 14 to 21 days after taking MISO.
 
-        Retained products of conception[6]: In the absence of ongoing pregnancy, retained products of conception can be managed by asking patients to wait for bleeding and cramping, offering them another dose of MISO, or providing them with or referring them for procedural abortion. Urgent procedural abortion is indicated in cases of heavy uncontrolled bleeding or retained products of conception associated with endometritis.
+        <b>Retained products of conception</b>[6]: In the absence of ongoing pregnancy, retained products of conception can be managed by asking patients to wait for bleeding and cramping, offering them another dose of MISO, or providing them with or referring them for procedural abortion. Urgent procedural abortion is indicated in cases of heavy uncontrolled bleeding or retained products of conception associated with endometritis.
 
         Symptoms of retained products include unexpected heavy/prolonged bleeding or cramping, and failure to have expected bleeding.
 
-        Post-abortion infections[6]: Treatment should be individualized and usually consists of broad-spectrum therapy. In mild cases, oral antibiotics can be used, but if infection is severe, patients should be hospitalized for treatment. Once patients start antibiotics, procedural abortion may be necessary to remove significant retained products of contraception.
+        <b>Post-abortion infections</b>[6]: Treatment should be individualized and usually consists of broad-spectrum therapy. In mild cases, oral antibiotics can be used, but if infection is severe, patients should be hospitalized for treatment. Once patients start antibiotics, procedural abortion may be necessary to remove significant retained products of contraception.
 
         Symptoms of Post-Abortion Infections`,
           `Abdominal or pelvic pain
@@ -343,7 +343,7 @@ export const modules: { [key: string]: Modules } = {
         Fever or chills (more than 24 hours after MISO)
         Uterine or adnexal tenderness
         Elevated white blood cell count (upon lab examination)`,
-          `Toxic shock syndrome[6]: Toxic shock syndrome is associated with clostridium and Group A streptococcus. The majority of these infections are fulminant and rapidly progress to shock. Standard antibiotic therapy is not sufficient; thus, the treatment consists of supportive care, and empiric antibiotic treatment covering clostridial species and other organisms known to cause toxic shock, and surgical debridement, including possible hysterectomy.
+          `<b>Toxic shock syndrome</b>[6]: Toxic shock syndrome is associated with clostridium and Group A streptococcus. The majority of these infections are fulminant and rapidly progress to shock. Standard antibiotic therapy is not sufficient; thus, the treatment consists of supportive care, and empiric antibiotic treatment covering clostridial species and other organisms known to cause toxic shock, and surgical debridement, including possible hysterectomy.
         
         Symptoms of Toxic Shock Syndrome`,
           `General malaise with nausea, vomiting, and diarrhea
@@ -365,10 +365,10 @@ export const modules: { [key: string]: Modules } = {
         data: [
           `Due to rapid return to fertility following medication abortion (MA), patients should be advised to have a method for contraception at the earlier visits[6].
 
-        Patients seeking more information about contraception options can be referred to:`,
+        Patients seeking <b>more information about contraception options</b> can be referred to:`,
           `Sex and U’s It’s a plan, an online health information tool to determine the right contraception method.
         Action Canada’s Sexual Health Hub on Birth Control, a website that contains information on birth control in Canada.`,
-          `Below is a list of contraception options and special considerations:`,
+          `Below is a list of <b>contraception options and special considerations:</b>`,
           images.PostAbortionContraception,
         ],
       },
@@ -379,9 +379,9 @@ export const modules: { [key: string]: Modules } = {
       content: {
         type: ['p', 'ol'],
         data: [
-          `Virtual or hybrid provision of medication abortion (MA), which is also called no-touch or low-touch medication abortion, is one where some or all of the appointments are carried out virtually over phone and / or video by reducing or eliminating blood work and ultrasound. The purpose is to reduce patients’ risk of contracting transmissible infections (as in the case of COVID-19) or reduce the need for patients to travel long distances or wait for days or weeks to receive abortion.
+          `<b>Virtual or hybrid provision of medication abortion</b> (MA), which is also called no-touch or low-touch medication abortion, is one where some or all of the appointments are carried out virtually over phone and / or video by reducing or eliminating blood work and ultrasound. The purpose is to reduce patients’ risk of contracting transmissible infections (as in the case of COVID-19) or reduce the need for patients to travel long distances or wait for days or weeks to receive abortion.
 
-As explained elsewhere, virtual and hybrid provision of MA is based on low resource availability and requires a balance between prescribers’ experience, patients’ safety and patients’ needs.
+As explained elsewhere, virtual and hybrid provision of MA is based on low resource availability and requires <b>a balance between prescribers’ experience, patients’ safety and patients’ needs</b>.
 
 When receiving requests for virtual or hybrid medication abortion, prescribers should[7]:
 `,
@@ -400,23 +400,23 @@ Schedule a first virtual visit via telephone or video.`,
         data: [
           'The following assessments should be carried out[7,19]:',
           [
-            `Review pregnancy options counselling.
-        Establish pregnancy and gestational age.`,
+            `<b>Review pregnancy options counselling.</b>
+        <b>Establish pregnancy and gestational age.</b>`,
             `Review date of last menstrual period (LMP) and date of positive qualitative pregnancy test.
             Review relevant medical history, including recent hormonal contraception and risk factors and signs of ectopic pregnancy.`,
-            `Exclude contraindications.
-        Assess the need for an ultrasound to determine gestational age and the location of pregnancy[5]:`,
+            `<b>Exclude</b> contraindications.
+        <b>Assess the need for an ultrasound to determine gestational age and the location of pregnancy</b>[5]:`,
             `According to SOGC’s protocol on medication abortion via telemedicine, ultrasound should be obtained if LMP is uncertain, LMP is over 70 days, and the signs, symptoms and risk factors of ectopic pregnancy (EP) are present.
             Medication abortion performed without ultrasound is, by definition, pregnancy of unknown location and should be managed accordingly. Though the risk of unrecognized EP is low, close follow-up is required to ensure completion of the medication abortion.`,
-            `Assess the need for blood work to measure hemoglobin[7]:`,
+            `<b>Assess the need for blood work to measure hemoglobin</b>[7]:`,
             `According to Health Canada, hemoglobin should be over 9.5 g / dL before starting MA.
             Screen patients for increased risk of anemia through a detailed medical history.
             If patients are suspected to have an increased risk of anemia, complete blood count is indicated. Otherwise, measuring hemoglobin is unnecessary.`,
-            `Assess the need for blood work to determine Rh status (Rh)[7]:`,
+            `<b>Assess the need for blood work to determine</b> Rh status (Rh)[7]:`,
             `As explained elsewhere, guidelines on Rh status have been updated and vary between organizations.
             According to the SOGC’s Guideline on Prevention of RhD Alloimmunization published in 2024, for non-sensitized Rh D-negative individuals who have experienced threatened, spontaneous or induced abortion after 12 weeks gestation, administration of 300 μg of Rho(D) immune globulin is suggested.
             The National Abortion Federation, the Society of Family Planning and the World Health Organization all recommend Rh testing and administration for patients who are 12 weeks gestation or beyond, but not for patients who are under 12 weeks LMP.`,
-            `Assess the need for STI testing[7]:`,
+            `<b>Assess the need for</b> STI testing[7]:`,
             `Offer testing for chlamydia and gonorrhea if patients come to office.
             Otherwise, evaluate the risk of STIs and consider remote testing if risk factors are present, and discuss the potential need for antibiotic treatment.`,
           ],
@@ -429,14 +429,14 @@ Schedule a first virtual visit via telephone or video.`,
       content: {
         type: ['p', 'olul'],
         data: [
-          `The follow-up appointment should be scheduled 3 to 7 days after taking misoprostol (MISO), and more than one follow-up appointment may be needed. The SOGC’s protocol on the provision of medication abortion by telemedicine advises 7 days[7], but some prescribers schedule the follow-up appointment as early as 3 days after MISO administration to avoid loss-of-contact and assess serum bhCG level. The actual practices depend on prescribers’ judgment and experiences.
+          `The follow-up appointment should be scheduled <b>3 to 7 days</b> after taking misoprostol (MISO), and more than one follow-up appointment may be needed. The SOGC’s protocol on the provision of medication abortion by telemedicine advises 7 days[7], but some prescribers schedule the follow-up appointment as early as 3 days after MISO administration to avoid loss-of-contact and assess serum bhCG level. The actual practices depend on prescribers’ judgment and experiences.
 
         During the virtual follow-up, prescribers should[7]:`,
           [
-            `Review abortion experience and progress with patients, including dates of taking medication, side effects, bleeding pattern, pain, occurrence of expulsion, and any current pregnancy symptoms.
+            `<b>Review abortion experience and progress</b> with patients, including dates of taking medication, side effects, bleeding pattern, pain, occurrence of expulsion, and any current pregnancy symptoms.
           Advise an urgent assessment or emergency visit if signs of ectopic pregnancy, pelvic infection, heavy bleeding, or excessive pain exist.
-          If history suggests failed abortion or ongoing pregnancy: obtain ultrasound and consider an additional dose of MISO or procedural abortion.
-          If history suggests successful abortion, no warning signs, and no current symptoms of pregnancy, normal bleeding and pain: arrange the blood test to confirm serum bhCG level if the appointment is in-person or instruct the patient to perform qualitative urine pregnancy test.<br><br>Serum bhCG[4]: If the serum bhCG level drops by >50% at Day 3 after MISO or 80% at Day 7-14 after MIFE / MISO administration, the successful completion of abortion is confirmed and no further appointment is needed. Ultrasound should be ordered if 14 days have passed and a drop by 80% has not been reached.<br><br>Urine bhCG[7]:`,
+          <b>If history suggests failed abortion or ongoing pregnancy</b>: obtain ultrasound and consider an additional dose of MISO or procedural abortion.
+          <b>If history suggests successful abortion, no warning signs, and no current symptoms of pregnancy, normal bleeding and pain</b>: arrange the blood test to confirm serum bhCG level if the appointment is in-person or instruct the patient to perform qualitative urine pregnancy test.<br><br><b>Serum bhCG</b>[4]: If the serum bhCG level drops by >50% at Day 3 after MISO or 80% at Day 7-14 after MIFE / MISO administration, the successful completion of abortion is confirmed and no further appointment is needed. Ultrasound should be ordered if 14 days have passed and a drop by 80% has not been reached.<br><br><b>Urine bhCG</b>[7]:`,
             images.AbortionComplete,
             `Offer to discuss contraception options and provide emotional support if needed. Resources for emotional support include:`,
             `Exhale, a talk-line that provides emotional support, resources and information after abortion.
@@ -737,40 +737,53 @@ Schedule a first virtual visit via telephone or video.`,
         type: [
           'p',
           'h2',
+          'right',
           'ul',
           'h2',
+          'right',
           'ul',
           'h2',
+          'right',
           'ul',
           'h2',
+          'right',
           'ul',
           'h2',
+          'right',
           'ul',
           'h2',
+          'right',
           'ul',
           'h2',
+          'right',
           'ul',
           'h2',
+          'right',
           'ul',
         ],
         data: [
           `Below is a general guide of the steps to be taken when initiating medication abortion (MA) services in your facility. Some of these may not apply, depending on your facility[12].`,
           'Review protocol:',
+          images.FaSetup1,
           `Review guidelines for MA.
         Prepare your protocol and invite the clinical team to review and give feedback on the protocol.
         Determine if purpose of offering MA is for occasional support for current primary care caseload or if it will be made available as a service in the community.
         Evaluate related protocols including contraception, STI testing and treatment and other sexual and reproductive healthcare services, and integrate them with the abortion protocols if appropriate.`,
           'Review regulations and compensation processes:',
+          images.FaSetup2,
           `Review provincial and territorial regulations and scope of practice for physicians and nurse practitioners, and assess the potential involvement of registered midwives in providing MA.
         For physicians, get familiar with provincial billing codes for provision of MA, including codes for any testing that you would be doing on-site.
         For nurse practitioners and registered midwives, review the compensation processes from the professional associations in your jurisdiction.`,
           'Address abortion concerns among your team:',
+          images.FaSetup3,
           `Explore the willingness to provide MA among all staff, address their concerns and determine how to best incorporate abortion services into your practice (see the next module).`,
           'Prepare plans to support underserved populations:',
+          images.FaSetup4,
           `Evaluate your services for its ability to serve underserved population such as non-insured patients, patients from Indigenous communities and patients identified as 2SLGBTQI+.
         Consider incorporating trauma-informed care and harm-reduction approaches in your services.
         Prepare plans to provide low-barrier MA services for underserved populations, and review these plans with your staff.`,
           'Review staffing and administrative capacity:',
+          images.FaSetup5,
           `Review current clinic capacity to provide MA.
         Determine key person or team to be primarily responsible for MA patients.
         Assess best times for scheduling MA patients.
@@ -778,15 +791,18 @@ Schedule a first virtual visit via telephone or video.`,
         For clinical staff, arrange in-depth training on counselling, provision of Mifegymiso, and complication management.
         For support staff, prepare phone scripts and other resources for them to review and use.`,
           'Set up your facility:',
+          images.FaSetup6,
           `Assess the design of waiting rooms, reception areas and counselling rooms to ensure they promote patient privacy.
         Review arrangements with a lab or in-house capacity for a quantitative βhCG test and Rhesus testing and administration.
         Identify ultrasound facilities in your community, if not available on-site.
         Determine what additional supplies or equipment are needed.`,
           'Identify clinics for referral:',
+          images.FaSetup7,
           `Find procedural abortion clinics if you do not provide procedural abortion service.
         Identify abortion clinics in your area who can accept prompt referrals if your schedule cannot accommodate patients in a timely manner to ensure that your patients do not miss the window for MA.
         Find pharmacies that regularly stock Mifegymiso and develop relationships with local pharmacies who could stock Mifegymiso.`,
           'Prepare communication materials:',
+          images.FaSetup8,
           `Obtain or develop patient education materials, consent forms and other charting forms.
         Develop, print and distribute posters to let your clients know that you prescribe MA.`,
         ],
@@ -1398,7 +1414,25 @@ Schedule a first virtual visit via telephone or video.`,
       },
     },
   ],
-  fr: [],
+  fr: [
+    {
+      id: 'M1',
+      title: 'Mifegymiso Overview',
+      content: {
+        type: ['p', 'i-full'],
+        data: [
+          `Au Canada, la pilule abortive est emballée et vendue sous le nom de Mifé-Miso. Le Mifé-Miso est présenté comme une boîte extérieure blanche contenant deux plus petites boîtes: une boîte verte contenant 200 mg de mifépristone (MIFE) et une boîte orange contenant 800 mcg de misoprostol (MISO) (quatre petits comprimés de 200 mcg chacun)[10].
+
+          La MIFÉ est un modulateur des récepteurs de la progestérone. C’est un puissant antiprogestatif qui présente également de fortes propriétés antiglucocorticoïdes et de faibles propriétés anti-androgènes. Il bloque les récepteurs de la progestérone en début de grossesse, entraînant une dégénérescence de l’endomètre, la synthèse de prostaglandines et une diminution de la sécrétion de bêta-gonadotrophine chorionique humaine (βhCG). Ces événements favorisent la dilatation cervicale et facilitent le début des saignements.[10].
+
+          Le MISO est un puissant analogue synthétique de la prostaglandine E1 qui induit la maturation cervicale et les contractions utérines, provoquant l’expulsion des produits de conception.[10].
+
+          Cliquez ici pour télécharger la monographie du produit.`,
+          images.MifegysmoOverviewFr,
+        ],
+      },
+    },
+  ],
 }
 
 function getModules(ids: string[], modules: Modules) {

@@ -1,5 +1,6 @@
 <script lang="ts">
 import Outline from './Outline.svelte';
+// import {Bibliography} from '$lib/store';
 
 export let modules:any = [];
 
@@ -11,6 +12,9 @@ function handleImg(data: string) {
 }
 function handleLeft(data: string){
     return `<div class="left"><img src="${data}" alt="" /></div>`;
+}
+function handleRight(data: string){
+    return `<div class="right"><img src="${data}" alt="" /></div>`;
 }
 function handleH2(data: string) {
     return `<h2>${data}</h2>`;
@@ -38,20 +42,50 @@ function handleList(data: string | string[], type: string) {
 }
 
 const regex = (content: any) => {
+    const replacementMap = [
+        { regex: /\[(.*?)\]/g, replacement: '<a href="../about#ref" class="ref" target="_blank"><sup>[$1]</sup></a>' },
+        { regex: /(Initial visit:|Follow-up visit:|Initial visit and follow-up visit:|Telehealth:|Première visite:|Visite de suivi:)/g, replacement: '<span style="color: #0074e4; font-weight: bold;">$1</span>' },
+        { regex: /Q: (.*?)<br>/g, replacement: '<b>Q: $1</b><br>' },
+        { regex: /(MISO |misoprostol|\(MISO\))/g, replacement: '<span style="color: var(--MISO);">$1</span>' },
+        { regex: /(MIFE|MIFÉ|mifepristone|\(MIFE\)|(MIFÉ)|mifépristone)/g, replacement: '<span style="color: var(--MIFE);">$1</span>' },
+        // External Links:
+        { regex: /Exhale/g, replacement: '<a class="ex" href="https://exhaleprovoice.org/" target="_blank">Exhale</a>' },
+        { regex: /All-Options/g, replacement: '<a class="ex" href="https://www.all-options.org/" target="_blank">All-Options</a>' },
+        { regex: /It’s a plan/g, replacement: '<a class="ex" href="https://www.itsaplan.ca/" target="_blank">It’s a plan</a>' },
+        { regex: /Action Canada’s Sexual Health Hub/g, replacement: '<a class="ex" href="https://www.actioncanadashr.org/sexual-health-hub/birth-control" target="_blank">Action Canada’s Sexual Health Hub</a>' },
+        { regex: /SOGC’s Medical Abortion Training Program/g, replacement: '<a class="ex" href="https://sogc.org/en/rise/Events/event-display.aspx?EventKey=MATP2&WebsiteKey=4d1aa07b-5fc4-4673-9721-b91ff3c0be30" target="_blank">SOGC’s Medical Abortion Training Program</a>' },
+        { regex: /NAF Canada’s Medication Abortion Training/g, replacement: '<a class="ex" href="https://nafcanada.org/medication-abortion-virtual-course/" target="_blank">NAF Canada’s Medication Abortion Training</a>' },
+        { regex: /It’s My Choice/g, replacement: '<a class="ex" href="https://www.sexandu.ca/its-my-choice/" target="_blank">It’s My Choice</a>' },
+        { regex: /SOGC’s Guideline on Prevention of RhD Alloimmunization/g, replacement: '<a class="ex" href="https://www.jogc.com/article/S1701-2163(24)00260-3/abstract" target="_blank">SOGC’s Guideline on Prevention of RhD Alloimmunization</a>'}
+]
     let html = '';
     for (let i = 0; i < content.type.length; i++) {
-        if (content.type[i] === 'p') {
-            html += handleP(content.data[i]);
-        } else if (content.type[i] === 'i-full') {
-            html += handleImg(content.data[i]);
-        } else if (content.type[i] === 'h2') {
-            html += handleH2(content.data[i]);
-        } else if (content.type[i].startsWith('ul') || content.type[i].startsWith('ol')) {
-            html += handleList(content.data[i], content.type[i]);
-        } else if (content.type[i] === 'left') {
-            html += handleLeft(content.data[i]);
+        switch (content.type[i]) {
+            case 'p':
+                html += handleP(content.data[i]);
+                break;
+            case 'i-full':
+                html += handleImg(content.data[i]);
+                break;
+            case 'h2':
+                html += handleH2(content.data[i]);
+                break;
+            case 'left':
+                html += handleLeft(content.data[i]);
+                break;
+            case 'right':
+                html += handleRight(content.data[i]);
+                break;
+            default:
+                if (content.type[i].startsWith('ul') || content.type[i].startsWith('ol')) {
+                    html += handleList(content.data[i], content.type[i]);
+                }
+                break;
         }
     }
+    replacementMap.forEach((item) => {
+        html = html.replace(item.regex, item.replacement);
+    });
     return html;
 }
 </script>
