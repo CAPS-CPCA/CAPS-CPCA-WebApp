@@ -1,6 +1,5 @@
 <script lang="ts">
 import Outline from './Outline.svelte';
-// import {Bibliography} from '$lib/store';
 
 export let modules:any = [];
 
@@ -47,7 +46,7 @@ const regex = (content: any) => {
         { regex: /(Initial visit:|Follow-up visit:|Initial visit and follow-up visit:|Telehealth:|Première visite:|Visite de suivi:)/g, replacement: '<span style="color: #0074e4; font-weight: bold;">$1</span>' },
         { regex: /Q: (.*?)<br>/g, replacement: '<b>Q: $1</b><br>' },
         { regex: /(MISO |misoprostol|\(MISO\))/g, replacement: '<span style="color: var(--MISO);">$1</span>' },
-        { regex: /(MIFE|MIFÉ|mifepristone|\(MIFE\)|(MIFÉ)|mifépristone)/g, replacement: '<span style="color: var(--MIFE);">$1</span>' },
+        { regex: /(MIFE |MIFÉ |mifepristone|\(MIFE\)|(MIFÉ)|mifépristone)/g, replacement: '<span style="color: var(--MIFE);">$1</span>' },
         // External Links:
         { regex: /Exhale/g, replacement: '<a class="ex" href="https://exhaleprovoice.org/" target="_blank">Exhale</a>' },
         { regex: /All-Options/g, replacement: '<a class="ex" href="https://www.all-options.org/" target="_blank">All-Options</a>' },

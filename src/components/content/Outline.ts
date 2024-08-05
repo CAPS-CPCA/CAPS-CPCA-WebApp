@@ -173,7 +173,7 @@ export const outlines: { [key: string]: any } = {
           modules: {
             M26: 'Regulatory Landscape',
             M35: 'Facility Setup',
-            M29: 'Addressing Abortion Concerns',
+            M28: 'Addressing Abortion Concerns',
             M37: '2SLGBTQIA+ Patients',
             M38: 'Indigenous Patients',
           },
@@ -428,7 +428,7 @@ export const outlines: { [key: string]: any } = {
           modules: {
             M26: 'Contexte réglementaire',
             M35: 'Configuration des installations',
-            M29: 'Répondre aux préoccupations liées à l’avortement',
+            M28: 'Répondre aux préoccupations liées à l’avortement',
             M37: 'Personnes 2ELGBTQIA+',
             M38: 'Personnes autochtones',
           },

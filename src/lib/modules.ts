@@ -1282,6 +1282,71 @@ Schedule a first virtual visit via telephone or video.`,
       },
     },
     {
+      id: 'M42',
+      title: 'How to Counsel Clients',
+      content: {
+        type: ['p', 'ul', 'p', 'ul', 'i-full'],
+        data: [
+          `Counselling is important to help clients make informed decisions by understanding their options (abortion versus becoming a parent, and medication abortion versus procedural abortion). During the counselling, it is also important to understand clients’ preferences and circumstances to advise the best course of action.
+
+            Medication abortion is suitable for patients who[6]:`,
+          `Prefer a non-invasive method.
+            Prefer to have an abortion in the comfort of their home.
+            Have the confidence of being able to manage the process and side effects at home.
+            Are able to take 1 to 3 days off work or other responsibilities to undergo the abortion process.
+            Lack means of transportation to travel to the clinic for a procedural abortion (but still have access to emergency services in event of complications).`,
+          'Procedural abortion is suitable for patients who[6]:',
+          `Prefer to have in-person support and monitoring from healthcare professionals at a clinic or hospital.
+            Want to have the abortion completed quickly to return to work or other responsibilities.
+            Are comfortable with the use of medical instruments and internal exams.
+            Are comfortable undergoing local or general anesthesia to manage pain.
+            Do not want to disclose the pregnancy and the abortion to those patients live with (such as partners, roommates, co-workers), as it might be difficult to conceal heavy bleeding and strong cramps.`,
+          images.AbortionOptions,
+        ],
+      },
+    },
+    {
+      id: 'M43',
+      title: 'How to Prepare for Medication Abortion',
+      content: {
+        type: ['p', 'ul'],
+        data: [
+          `Prior to taking medication abortion, clients should know how to administer the medication, what the side effects are, how to identify the signs of complications, and when to seek emergency care[2].
+
+          Do ensure that clients have the following before they take medication abortion:`,
+          `Sanitary pads and liners.
+          Pain medication and / or anti-nauseants (over-the-counter or prescriptions).
+          Access to emergency care.
+          Support for childcare, transportation, and groceries.`,
+        ],
+      },
+    },
+    {
+      id: 'M44',
+      title: 'How to Support After Abortion',
+      content: {
+        type: ['p', 'ul', 'h2', 'p', 'i-full'],
+        data: [
+          `Clients who undergo medication abortion are required to have follow-up consultations with their prescribers to confirm the termination of the pregnancy, manage complications, receive counselling on contraception and get emotional support if needed. Clients may also require ultrasound or bloodwork to confirm the completion of the abortion and to rule out the possibility of ectopic pregnancy.
+
+          Mode of follow-up[6]:
+
+          In most situations, follow-up consultations are given 7 to 14 days after taking misoprostol (the second medication) but sometimes follow-up can take place as early as 3 days after misoprostol. The consultation can be over the phone or in-person, depending on the circumstances.
+
+          Emotional support[6]:
+
+          Emotional response after medication abortion often vary. Some people feel relieved and positive while some feel grief, sadness, or guilt, and have mixed feelings. These emotions are normal, and they may or may not be related to socioeconomic circumstances, the lack of social support, moral discomfort, and family conflict.
+
+          People undergoing medication abortion can be supported by understanding that mixed emotions are normal and by exploring coping strategies and assistance. Useful resources include:`,
+          `Exhale, a talk-line that provides emotional support, resources and information after abortion.
+          All-Options, a talk-line to discuss past or current experience with abortion, adoption and parenting for people in Canada and the United States (1-888-493-0092).`,
+          'Post-abortion Contraception:',
+          `People taking medication abortion can return to fertility rapidly and hence should consider taking contraceptives.`,
+          images.PostAbortionContraception,
+        ],
+      },
+    },
+    {
       id: 'F1',
       title: 'Medication',
       content: {
@@ -2676,6 +2741,71 @@ Sublinguale: les comprimés sont absorbés par la muqueuse en 20 minutes et le M
       },
     },
     {
+      id: 'M42',
+      title: 'Comment conseiller la personne',
+      content: {
+        type: ['p', 'ul', 'p', 'ul', 'i-full'],
+        data: [
+          `Le counseling est important pour aider les personnes à prendre des décisions éclairées en comprenant leurs options (avortement versus parentalité, et avortement par médicaments versus par instruments). Lors du counseling, il est également important de comprendre les préférences et les circonstances des personnes afin de les conseiller sur la meilleure marche à suivre.
+
+          L’avortement par médicaments convient aux personnes qui[6]:`,
+          `Préfèrent une méthode non-invasive.
+          Préfèrent être dans le confort de leur foyer.
+          Ont la confiance de pouvoir gérer le processus et les effets secondaires à la maison.
+          Sont en mesure de prendre 1 à 3 jours de congé ou d’autres responsabilités pour procéder à l’avortement.
+          Manquent de transport pour se rendre à la clinique pour un avortement par instruments (mais nécessite néanmoins l’accès aux services d’urgence en cas de complications).`,
+          'L’avortement par instruments convient aux personnes qui[6]:',
+          `Préfèrent bénéficier du soutien en personne ainsi qu’une surveillance par des professionnels de la santé en clinique ou à l’hôpital.
+          Souhaitent que l’avortement soit fourni rapidement afin de pouvoir reprendre le travail ou d’autres responsabilités.
+          Se sentent à l’aise avec l’examen gynécologique et l’utilisation d’instruments médicaux.
+          Sont confortable avec une anesthésie locale ou générale pour gérer la douleur.
+          Ne veulent pas divulguer la grossesse et l’avortement aux personnes avec qui elles vivent (comme les partenaires, les colocataires, les collègues de travail), car il pourrait être difficile de cacher des saignements abondants et des crampes fortes.`,
+          images.AbortionOptionsFr,
+        ],
+      },
+    },
+    {
+      id: 'M43',
+      title: 'Se préparer à l’avortement par médicaments',
+      content: {
+        type: ['p', 'ul'],
+        data: [
+          `Avant de procéder à un avortement par médicaments, la personne doit savoir comment administrer le médicament, quels sont les effets secondaires, comment identifier les signes de complications et quand demander des soins d’urgence[2].
+
+          S’assurer que la personne dispose des éléments suivants avant de procéder à un avortement par médicaments:`,
+          `Serviettes et protections hygiéniques.
+          Médicaments contre la douleur et/ou contre les nausées (en vente libre ou sur ordonnance).
+          Accès aux soins d’urgence.
+          Aide à la garde d’enfants, au transport et à l’épicerie.`,
+        ],
+      },
+    },
+    {
+      id: 'M44',
+      title: 'Offrir du soutien post-avortement',
+      content: {
+        type: ['p', 'ul', 'h2', 'p', 'i-full'],
+        data: [
+          `Les personnes qui choisissent un avortement par médicaments devraient avoir un suivi avec leur professionnel de la santé pour confirmer la complétion de l’avortement, gérer les complications, recevoir du counseling en matière de contraception et obtenir un soutien émotionnel si nécessaire. Les personnes peuvent également avoir besoin d’une échographie ou d’analyses sanguines pour confirmer que l’avortement est complet et exclure la possibilité d’une grossesse ectopique.
+
+            Mode de suivi[6]:
+
+            Dans la plupart des situations, les suivis sont prévus 7 à 14 jours après la prise du misoprostol (le deuxième médicament), mais parfois le suivi peut avoir lieu dès 3 jours après le misoprostol. Le suivi peut se faire par téléphone ou en personne, selon les circonstances.
+
+            Soutien émotionnel[6]:
+
+            Les réactions émotionnelles après un avortement par médicaments varient souvent. Certaines personnes se sentent soulagées et positives, tandis que d’autres éprouvent des sentiments de deuil, de tristesse ou de culpabilité, et d’autres encore éprouvent des sentiments mitigés. Ces émotions sont normales et peuvent être liées ou non aux circonstances socio-économiques, au manque de soutien social, au malaise moral et aux conflits familiaux.
+
+            Les personnes qui choisissent un avortement par médicaments peuvent être soutenues en affirmant que les émotions mitigées sont normales et en explorant des stratégies d’adaptation et du soutien. Les ressources utiles incluent:`,
+          `Exhale, une ligne téléphonique qui fournit un soutien émotionnel, des ressources et des informations après un avortement.
+            All-Options, une ligne téléphonique pour discuter des expériences passées ou actuelles en matière d’avortement, d’adoption et de parentalité pour les personnes au Canada et aux États-Unis (1-888-493-0092).`,
+          'Contraception post-avortement:',
+          `Les personnes qui subissent un avortement par médicaments peuvent retrouver rapidement leur fertilité et devraient donc envisager de prendre une contraception.`,
+          images.PostAbortionContraceptionFr,
+        ],
+      },
+    },
+    {
       id: 'F1',
       title: 'Médicaments',
       content: {
@@ -2840,8 +2970,8 @@ export function modulePath(path: string, modules: Modules) {
     '/dispenser/communication': ['M32', 'M15', 'M33', 'M16', 'M19', 'M34', 'M20'],
     '/dispensing/about-mifegymiso': ['M1', 'M29', 'M30', 'M2', 'M3', 'M31'],
     '/dispenser/a-propos-du-mife-miso': ['M1', 'M29', 'M30', 'M2', 'M3', 'M31'],
-    '/dispensing/regulations-inclusivity': ['M26', 'M35', 'M299', 'M37', 'M38'],
-    '/dispenser/reglements-inclusivite': ['M26', 'M35', 'M299', 'M37', 'M38'],
+    '/dispensing/regulations-inclusivity': ['M26', 'M35', 'M28', 'M37', 'M38'],
+    '/dispenser/reglements-inclusivite': ['M26', 'M35', 'M28', 'M37', 'M38'],
     '/dispensing/clinical-resources': [''],
     '/dispenser/ressources-cliniques': [''],
     '/supporting-roles/medication-abortion': ['M39', 'M3', 'M40', 'M41'],
@@ -2854,4 +2984,4 @@ export function modulePath(path: string, modules: Modules) {
   };
 
   return getModules(modulePaths[path] || [''], modules)
-}
+  }
