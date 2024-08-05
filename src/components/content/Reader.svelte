@@ -1,8 +1,59 @@
 <script lang="ts">
-import { formatText } from '$lib/modules';
 import Outline from './Outline.svelte';
 
-    export let modules:any = [];
+export let modules:any = [];
+
+function handleP(data: string) {
+    return `<p>${data.replace(/\n/g, '<br>')}</p>`;
+}
+function handleImg(data: string) {
+    return `<div class="img"><img src="${data}" alt="" /></div>`;
+}
+function handleLeft(data: string){
+    return `<div class="left"><img src="${data}" alt="" /></div>`;
+}
+function handleH2(data: string) {
+    return `<h2>${data}</h2>`;
+}
+function handleList(data: string | string[], type: string) {
+    let html = '';
+    if (Array.isArray(data)) {
+        const ptype = type.slice(0, 2);
+        const ctype = type.slice(2);
+        for (let i = 0; i < data.length; i++) {
+            if (i % 2 === 0) {
+                html += `${data[i].split('\n').map((item: string) => `<li>${item}</li>`).join('')}`;
+            } else {
+                if (data[i].startsWith('/')) {
+                    html += '<li class="no-count">' + handleImg(data[i]) + '</li>';
+                } else {
+                    html += handleList(data[i], ctype);
+                }
+            }
+        }
+        return `<${ptype}>${html}</${ptype}>`;
+    } else {
+        return `<${type}>${data.split('\n').map((item: string) => `<li>${item}</li>`).join('')}</${type}>`;
+    }
+}
+
+const regex = (content: any) => {
+    let html = '';
+    for (let i = 0; i < content.type.length; i++) {
+        if (content.type[i] === 'p') {
+            html += handleP(content.data[i]);
+        } else if (content.type[i] === 'i-full') {
+            html += handleImg(content.data[i]);
+        } else if (content.type[i] === 'h2') {
+            html += handleH2(content.data[i]);
+        } else if (content.type[i].startsWith('ul') || content.type[i].startsWith('ol')) {
+            html += handleList(content.data[i], content.type[i]);
+        } else if (content.type[i] === 'left') {
+            html += handleLeft(content.data[i]);
+        }
+    }
+    return html;
+}
 </script>
 
 <div class="reader">
@@ -12,44 +63,10 @@ import Outline from './Outline.svelte';
             <h1>No Modules Found</h1>
         {:else}
         {#each modules as module}
-        <h1>{module.title}</h1>
+            <h1>{module.title}</h1>
             <div class="module">
                 <div class="idholder" id={module.id}></div>
-                {#each module.content as obj}
-                    {#if obj.type === 'p'  || obj.type === 'h2' || obj.type === 'ul' || obj.type === 'ol'}
-                        {@html '<'+ obj.type + '>' + formatText(obj.data, obj.type) + '</'+ obj.type + '>'}
-                    {:else if obj.type === 'img'}
-                        <img src={obj.data.src} alt={obj.data.alt} />
-                    {:else if obj.type === 'ol-2'}
-                        <ol>{#each obj.data as item}
-                            {#if typeof item === 'string'}
-                                <li>{item}</li> 
-                            {:else if item.type === 'ul'}
-                                <ul>{#each item.data as subitem}
-                                    <li>{subitem}</li>
-                                {/each}</ul>
-                            {:else if item.type === 'p'}
-                                <li><p>{@html formatText(item.data, item.type)}</p></li>
-                            {:else if item.type === 'img'}
-                                <li class="no-count"><img src={item.data.src} alt={item.data.alt} /></li>
-                            {/if}
-                        {/each}</ol>
-                    {:else if obj.type === 'ul-2'}
-                        <ul>{#each obj.data as item}
-                            {#if typeof item === 'string'}
-                                <li>{item}</li> 
-                            {:else if item.type === 'ul'}
-                                <ul>{#each item.data as subitem}
-                                    <li>{subitem}</li>
-                                {/each}</ul>
-                            {:else if item.type === 'p'}
-                                <li><p>{@html formatText(item.data, item.type)}</p></li>
-                            {:else if item.type === 'img'}
-                                <li class="no-count"><img src={item.data.src} alt={item.data.alt} /></li>
-                            {/if}
-                        {/each}</ul>
-                    {/if}
-                {/each}
+                {@html regex(module.content)}
             </div>
         {/each}
         {/if}

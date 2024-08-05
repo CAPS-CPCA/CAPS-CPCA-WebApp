@@ -10,7 +10,7 @@
     <section class={hero.type}>
         {#if hero.id === 'home'}
             <img src={hero.data.image.src} alt={hero.data.image.alt} />
-        {:else if hero.id === 'P' || hero.id === 'D' || hero.id === 'S' || hero.id === 'A'}
+        {:else if ['P', 'D', 'S', 'A'].includes(hero.id)}
             <div class="container base" class:reverse={hero.reverse}>
                 <div>
                     {#if typeof hero.data.title === 'string'}
@@ -29,7 +29,7 @@
                 </div>
                 <img src={hero.data.image.src} alt={hero.data.image.alt} />
             </div>
-        {:else if hero.id === 'FAQ' || hero.id === 'Search'}
+        {:else if ['FAQ', 'Search'].includes(hero.id)}
             <img src={hero.data.image.src} alt={hero.data.image.alt} />
             <h1>{hero.data.title}</h1>
         {/if}

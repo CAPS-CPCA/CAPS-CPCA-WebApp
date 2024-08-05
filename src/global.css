@@ -80,12 +80,12 @@ span {
 }
 .module {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  /* gap: 1.5rem; */
   padding: 3.5rem 4.5rem;
   border: 1px solid #545454;
   background: #f6f7f8;
+}
+.module > *:not(li):not(:last-child) {
+  margin-bottom: 2rem;
 }
 .module p {
   color: var(--Primary);
@@ -111,10 +111,26 @@ span {
   list-style: disc;
 }
 .no-count {
+  margin-top: 2rem;
   list-style-type: none;
   counter-increment: list-item 0;
 }
+
+.left {
+  width: 9rem;
+  float: left;
+  padding-right: 2.5rem;
+}
+.left img {
+  max-width: 100%;
+}
 /* UI */
+.img {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 button.primary,
 a.primary {
   color: var(--Background);

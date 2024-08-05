@@ -1,7 +1,7 @@
 import { images } from '../assets'
 import { modules } from './modules'
-import { outlines } from '../components/content/Outline'
 import type { Modules } from './modules'
+import { outlines } from '../components/content/Outline'
 
 type Header = {
   logos: { src: string; href: string }[]
