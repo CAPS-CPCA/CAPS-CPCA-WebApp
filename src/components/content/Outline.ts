@@ -460,7 +460,7 @@ export const outlines: { [key: string]: any } = {
           },
         },
         {
-          href: '/r%C3%B4les-de-soutien/counseling-de-la-personne#M42',
+          href: '/r%C3%B4les-de-soutien/counseling-de-la-client#M42',
           title: 'Counseling de la personne',
           modules: {
             M42: 'Comment conseiller la personne',

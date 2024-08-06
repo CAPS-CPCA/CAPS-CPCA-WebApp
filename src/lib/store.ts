@@ -562,102 +562,123 @@ const searches: { [key: string]: Search } = {
 
 export const Bibliography = [
   {
+    index: 1,
     title: 'Abortion care guideline. Geneva: World Health Organization; 2022.',
     href: 'https://caps.sogc.org/wp-content/uploads/2024/01/WHO1.pdf',
   },
   {
+    index: 2,
     title:
       'Bancsi A & Grindrod K. Update on medical abortion. Canadian Family Physician; 2020; 66.',
     href: 'https://caps.sogc.org/wp-content/uploads/2024/01/VCOP2.pdf',
   },
   {
+    index: 3,
     title:
       'Canada Abortion Providers Support, Planned Parenthood, & the University of British Columbia. Medical abortion prescriber checklist resource guide.',
     href: 'https://caps.sogc.org/wp-content/uploads/2024/01/C63.pdf',
   },
   {
+    index: 4,
     title:
       'Canadian Abortion Providers Support, Planned Parenthood, & the University of British Columbia. Medical abortion prescriber checklist.',
     href: 'https://caps.sogc.org/wp-content/uploads/2024/01/C64.pdf',
   },
   {
+    index: 5,
     title:
       'Costescu D, Guilbert E et al. Induced abortion: updated guidance during pandemics and periods of social disruption.',
     href: 'https://caps.sogc.org/wp-content/uploads/2024/01/C31.pdf',
   },
   {
+    index: 6,
     title:
       'Costescu D, Guilbert E et al. Medical abortion. Journal of Obstetrics and Gynaecology Canada, 2016; Volume 38, Issue 4, 366 – 389.',
     href: 'https://caps.sogc.org/wp-content/uploads/2024/01/C14.pdf',
   },
   {
+    index: 7,
     title:
       'Guilbert E, Costescu D, et al. Canadian protocol for the provision of medical abortion via telemedicine; SOGC 2020.',
     href: 'https://caps.sogc.org/wp-content/uploads/2024/01/C29.pdf',
   },
   {
+    index: 8,
     title:
       'Horvath S, Goyal V, Traxler S, Prager S. Society of Family Planning committee Consensus on Rh testing in early pregnancy. Contraception. 2022 Oct;114:1-5.',
     href: 'https://caps.sogc.org/wp-content/uploads/2024/01/SFP1.pdf',
   },
   {
+    index: 9,
     title:
       'Judith Soon & Nevena Rebic. Pharmacist checklist for medical abortion. 2018. CART-GRAC 2020.',
     href: 'https://caps.sogc.org/wp-content/uploads/2024/01/C68.pdf',
   },
   {
+    index: 10,
     title:
       'Judith Soon & Nevena Rebic. Pharmacist resource guide for medical abortion. 2018. CART-GRAC 2020.',
     href: 'https://caps.sogc.org/wp-content/uploads/2024/01/C67.pdf',
   },
   {
+    index: 11,
     title:
       'Linepharma International Limited. Health Canada MIFISO Product Monograph. Submission Control No: 265940. December 15, 2022.',
     href: 'https://caps.sogc.org/wp-content/uploads/2024/01/C17-2.pdf',
   },
   {
+    index: 12,
     title:
       'National Abortion Federation. Checklist for starting medical abortion services.',
     href: 'https://caps.sogc.org/wp-content/uploads/2024/01/C43.pdf',
   },
   {
+    index: 13,
     title:
       'National Abortion Federation. NAF Protocol for early abortion with mifepristone and misoprostol, 2016.',
     href: 'https://caps.sogc.org/wp-content/uploads/2024/01/C6.pdf',
   },
   {
+    index: 14,
     title:
       'Planned Parenthood Ottawa & the SHORE centre. What to expect during a medication abortion; 2017.',
     href: 'https://caps.sogc.org/wp-content/uploads/2024/01/C74.pdf',
   },
   {
+    index: 15,
     title: 'Reproductive Health Access Project. Early abortion options; 2022.',
     href: 'https://caps.sogc.org/wp-content/uploads/2024/01/C58-1.pdf',
   },
   {
+    index: 16,
     title:
       'Reproductive Health Access Project. Integrating early abortion services into primary care; 2019.',
     href: 'https://caps.sogc.org/wp-content/uploads/2024/01/C58-7.pdf',
   },
   {
+    index: 17,
     title:
       'Royal College of Obstetricians and Gynaecologists. Best practice in abortion care; 2022.',
     href: 'https://caps.sogc.org/wp-content/uploads/2024/01/RCOG1.pdf',
   },
   {
+    index: 18,
     title: 'Wellness Within. Accessing Abortion in Canada.',
     href: 'https://caps.sogc.org/wp-content/uploads/2024/01/C104-2.pdf',
   },
   {
+    index: 19,
     title:
       'Women’s College Hospital. Client information about evidence-based telemedicine medication abortion. Adapted from Choice in Health clinic; 2020.',
     href: 'https://caps.sogc.org/wp-content/uploads/2024/01/WCH1.pdf',
   },
   {
+    index: 20,
     title: 'World Health Organization. Abortion care guideline; 2022.',
     href: 'https://caps.sogc.org/wp-content/uploads/2024/01/WHO1.pdf',
   },
   {
+    index: 21,
     title:
       'Society of Obstetricians and Gynaecologists of Canada. Guideline No. 448: Prevention of Rh D Alloimmunization; 2024.',
     href: 'https://www.ajog.org/article/S0002-9378(24)00368-5/fulltext?dgcid=raven_jbs_aip_email)',

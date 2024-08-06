@@ -2,7 +2,7 @@ import { images } from '../assets'
 
 type ContentType = {
   type: string[]
-  data: (string | string[])[]
+  data: (string | string[] | string[][])[]
 }
 
 type ModuleType = {
@@ -855,7 +855,8 @@ Schedule a first virtual visit via telephone or video.`,
           `Eligible First Nations and Inuit clients are covered fully for the cost of Mifegymiso for medication abortion.
         The claim process follows the normal submission process for other prescription drugs.
 
-        Link: https://nihb-ssna.express-scripts.ca/en/0205140506092019/16/160407`,
+        Link: nihb-ssna.express-scripts.ca(https://nihb-ssna.express-scripts.ca/en/0205140506092019/16/160407)
+        `,
           'Veterans Affairs Canada',
           `Mifegymiso is currently listed as a standard benefit on the Veterans Affairs Canada (VAF) drug benefit list.
         This means that it is readily accessible to eligible clients with a valid prescription.
@@ -866,19 +867,23 @@ Schedule a first virtual visit via telephone or video.`,
 
         In addition, since veterans are covered for basic healthcare coverage through the provincial or territorial healthcare system, their access to Mifegymiso will follow the same provincial or territorial process as other residents.
 
-        Link: https://www.veterans.gc.ca/en/financial-programs-and-services/medical-costs/coverage-services-prescriptions-and-devices`,
+        Link: www.veterans.gc.ca(https://www.veterans.gc.ca/en/financial-programs-and-services/medical-costs/coverage-services-prescriptions-and-devices)
+        `,
           'Canadian Forces Health Services',
           `Mifegymiso is a regular benefit on the Canadian armed forces drug benefit list; no special authorization is required.
 
-        Link: http://www.cmp-cpm.forces.gc.ca/hs/en/drug-benefit-list/index.asp`,
+        Link: www.cmp-cpm.forces.gc.ca(http://www.cmp-cpm.forces.gc.ca/hs/en/drug-benefit-list/index.asp)
+        `,
           'Royal Canadian Mounted Police (RCMP) Health Benefits Program',
           `RCMP officers are considered insured persons and receive basic healthcare through the healthcare system in the province or territory in which they reside, their access to Mifegymiso will follow the provincial or territorial process as other residents. Additionally, private plans that cover the cost of prescription drugs is also an option.
 
-        Link: https://bc-cb.rcmp-grc.gc.ca/ViewPage.action?siteNodeId=2234&languageId=1&contentId=58416`,
+        Link: bc-cb.rcmp-grc.gc.ca(https://bc-cb.rcmp-grc.gc.ca/ViewPage.action?siteNodeId=2234&languageId=1&contentId=58416)
+        `,
           'Interim Federal Health Program (IFHP)',
           `Coverage for Mifegymiso with IFHP is available in provinces and territories that have the medication listed on their public drug formularies.
 
-        Link: https://www.canada.ca/en/immigration-refugees-citizenship/services/refugees/help-within-canada/health-care/interim-federal-health-program/coverage-summary.html`,
+        Link: www.canada.ca(https://www.canada.ca/en/immigration-refugees-citizenship/services/refugees/help-within-canada/health-care/interim-federal-health-program/coverage-summary.html)
+        `,
           'Programs from Correctional Services of Canada',
           `Service for people incarcerated in federal penitentiaries is provided directly from the pharmacy within the facility.`,
         ],
@@ -906,7 +911,7 @@ Schedule a first virtual visit via telephone or video.`,
       id: 'M37',
       title: '2SLGBTQIA+ patients',
       content: {
-        type: ['p', 'h2', 'ul'],
+        type: ['p', 'h2', 'ul', 'h2', 'table'],
         data: [
           `Below are some suggestions to help clinicians create an inclusive environment where the needs of 2SLGBTQIA+ patients can be met. These suggestions are not exhaustive and providers are encouraged to consider other manuals and cultural competency training opportunities to provide inclusive care.
 
@@ -922,6 +927,36 @@ Schedule a first virtual visit via telephone or video.`,
         Do NOT use labels and terms derived from older versions of DSM and ICD such such as transgenderism, transsexualism and gender identity disorder.
         Do NOT use derogatory terms and expressions even if your patient does.`,
           'Gender-inclusive language:',
+          [
+            ['Say this', 'Instead of'],
+            [
+              'Person (person in the pink shirt, pregnant person)',
+              'Man, woman, girl, boy, ladies, gentlemen, sir, ma’am (pregnant women, guy in pink shirt)',
+            ],
+            ['Parenthood', 'Motherhood, fatherhood'],
+            [
+              'Assigned female, assigned male',
+              'Biological female, biological male',
+            ],
+            ['Cisgender', 'Not trans, normal, real'],
+            ['Chestfeeding', 'Breastfeeding'],
+            [
+              'Transgender men, transgender women',
+              'A transgender, transgenders',
+            ],
+            ['External condom, internal condom', 'Male condom, female condom'],
+            ['Receptive intercourse, insertive intercourse', 'Vaginal sex'],
+            ['Monthly bleeding', 'Period, menses'],
+            [
+              'Sexual health screening, internal exam, cervical screening',
+              'Pelvic exam, woman’s exam',
+            ],
+            ['Internal reproductive organs', 'Female reproductive organs'],
+            ['Internal gonads', 'Ovaries'],
+            ['External gonads', 'Testes, testicles'],
+            ['Internal genitals, genitals', 'Vagina'],
+            ['External genitals, erectile tissue, genitals', 'Penis'],
+          ],
         ],
       },
     },
@@ -959,7 +994,8 @@ Schedule a first virtual visit via telephone or video.`,
 
         The program provides for direct bill claims submission only. Plan members are not eligible to claim for reimbursement.
 
-        Link: https://www.ab.bluecross.ca/pdfs/pharmacy-benefacts/pharmacy-benefact-697.pdf`,
+        Link: www.ab.bluecross.ca(https://www.ab.bluecross.ca/pdfs/pharmacy-benefacts/pharmacy-benefact-697.pdf)
+        `,
         ],
       },
     },
@@ -971,7 +1007,8 @@ Schedule a first virtual visit via telephone or video.`,
         data: [
           `Mifegymiso is covered under the BC Pharmacare Assurance Plan (Plan Z and exceptional Plan Z) which provides 100% coverage. All residents of BC with active Medical Services Plan (MSP) coverage are eligible.
 
-        Link: www2.gov.bc.ca/gov/content/health/practitioner-professional-resources/pharmacare/pharmacies/plan-z`,
+        Link: www2.gov.bc.ca(www2.gov.bc.ca/gov/content/health/practitioner-professional-resources/pharmacare/pharmacies/plan-z)
+        `,
         ],
       },
     },
@@ -983,7 +1020,8 @@ Schedule a first virtual visit via telephone or video.`,
         data: [
           `All residents of Manitoba with a valid Manitoba Health Registration Card and a prescription for Mifegymiso are eligible for coverage. Clients presenting with a valid Manitoba Health card and a prescription from an authorized prescriber should not be charged any out-of-pocket costs and even if the client is enrolled in Pharmacare or another provincial drug program (e.g., Family Services/EIA), there is no requirement to meet a deductible or co-pay.
 
-        Link: https://www.gov.mb.ca/health/pharmacare/profdocs/csp_mifegymiso.pdf`,
+        Link: www.gov.mb.ca(https://www.gov.mb.ca/health/pharmacare/profdocs/csp_mifegymiso.pdf)
+        `,
         ],
       },
     },
@@ -995,7 +1033,8 @@ Schedule a first virtual visit via telephone or video.`,
         data: [
           `Coverage is available through the Medical Abortion Program. Manual claims will not be accepted, and claims must be submitted online.
 
-        Link: https://www2.gnb.ca/content/gnb/en/departments/hea.../medical_abortion_claims_submission.html`,
+        Link: www2.gnb.ca(https://www2.gnb.ca/content/gnb/en/departments/health/DrugPlans/NBDrugPlan/ForHealthCareProfessionals/medical_abortion_claims_submission.html)
+        `,
         ],
       },
     },
@@ -1007,7 +1046,8 @@ Schedule a first virtual visit via telephone or video.`,
         data: [
           `Coverage is available at no cost to individuals with a valid Medical Care Plan card. Individuals can receive a prescription through their healthcare provider, the regional health authorities, or the Athena Clinic in St. John’s. Those with private insurance will use this first, and then the province will cover any remaining cost as last payer. Claims can be submitted in real time through the Newfoundland and Labrador Prescription Drug Program (NLPDP) adjudication system regardless of eligibility.
 
-        Link: www.gov.nl.ca/hcs/files/prescription-provider-guide-program-claiming-policies.pdf`,
+        Link: www.gov.nl.ca(https://www.gov.nl.ca/hcs/files/prescription-provider-guide-program-claiming-policies.pdf)
+        `,
         ],
       },
     },
@@ -1021,7 +1061,8 @@ Schedule a first virtual visit via telephone or video.`,
 
         *The NOW program is only available in Yellowknife and Inuvik currently. The Department will cover the medical travel costs for residents that live outside of Yellowknife and Inuvik who choose treatment options using Mifegymiso and are referred by a practitioner.
 
-        Link (page 40/41): www.hss.gov.nt.ca/en/services/mifegymiso-northwest-territories`,
+        Link: www.hss.gov.nt.ca(https://www.hss.gov.nt.ca/en/services/mifegymiso-northwest-territories) (see page 40/41)
+        `,
         ],
       },
     },
@@ -1033,7 +1074,8 @@ Schedule a first virtual visit via telephone or video.`,
         data: [
           `Effective November 1, 2017, coverage is available for all persons in Nova Scotia with a valid health card number. Any other sources of insurance, such as a private plan, must be billed first. The method for claims submission is outlined below. Should you have any questions, please contact the Pharmacare Office.
 
-        Link (see page 41): novascotia.ca/dhw/pharmacare/documents/Pharmacy-Guide.pdf`,
+        Link: novascotia.ca(https://novascotia.ca/dhw/pharmacare/documents/Pharmacy-Guide.pdf) (see page 41)
+        `,
         ],
       },
     },
@@ -1045,7 +1087,8 @@ Schedule a first virtual visit via telephone or video.`,
         data: [
           `Abortions in Nunavut are free for First Nations beneficiaries and are covered under Nunavut Healthcare. An estimated 86% of Nunavut residents are eligible for coverage through the Non-Insured Health Benefits Program.
 
-        Link: www.pharmacists.ca/cpha-ca/assets/File/cpha-on-the-issues/Mifegymiso_Access_Scan.pdf`,
+        Link: www.pharmacists.ca(https://www.pharmacists.ca/cpha-ca/assets/File/cpha-on-the-issues/Mifegymiso_Access_Scan.pdf)
+        `,
         ],
       },
     },
@@ -1057,7 +1100,8 @@ Schedule a first virtual visit via telephone or video.`,
         data: [
           `Effective August 10, 2017, all Ontarians with a valid Ontario Health Insurance Plan (OHIP) and a valid prescription are eligible for Mifegymiso. This includes both Ontario Drug Benefit (ODB) recipients and non-ODB recipients. Pharmacies must ensure the eligible person’s date of birth, health card number and name (as it appears on the Ontario Health Card) are entered correctly as part of the Health Network Solution (HNS) claims submission. Mifegymiso supplied to patients with a valid prescription will be reimbursed by the ministry.
 
-        Link: https://www.pharmacytechnologysolutions.ca/pharmaclik-rx-doc/Content/Resources/PDFs/ODBMifegymisoClaims.pdf`,
+        Link: www.pharmacytechnologysolutions.ca(https://www.pharmacytechnologysolutions.ca/pharmaclik-rx-doc/Content/Resources/PDFs/ODBMifegymisoClaims.pdf)
+        `,
         ],
       },
     },
@@ -1069,7 +1113,8 @@ Schedule a first virtual visit via telephone or video.`,
         data: [
           `Medication abortion Services are offered at no charge through Sexual Health, Options & Reproductive Services (SHORS) and the Women’s Wellness Program. However, a valid PEI Health Card is required.
 
-        Link: www.princeedwardisland.ca/en/information/health-pei/abortion-services`,
+        Link: www.princeedwardisland.ca(https://www.princeedwardisland.ca/en/information/health-pei/abortion-services)
+        `,
         ],
       },
     },
@@ -1085,7 +1130,8 @@ Schedule a first virtual visit via telephone or video.`,
           `The medication is supplied by a pharmacist, with whom the Régie has a special agreement for this purpose.
         The pharmacy is in a region bordering with Quebec.
         No pharmacy in Quebec serves the population within a radius of 32 kilometers from this pharmacy.`,
-          `Link: https://www.ramq.gouv.qc.ca/sites/default/files/documents/liste_med_2022-12-14_en_0.pdf`,
+          `Link: www.ramq.gouv.qc.ca(https://www.ramq.gouv.qc.ca/sites/default/files/documents/liste_med_2022-12-14_en_0.pdf)
+          `,
         ],
       },
     },
@@ -1097,7 +1143,8 @@ Schedule a first virtual visit via telephone or video.`,
         data: [
           `Saskatchewan provides 100% coverage for Mifegymiso for residents eligible under the Saskatchewan Drug Plan. Claims may be submitted electronically to the Saskatchewan Drug Plan.
 
-        Link: https://formulary.drugplan.ehealthsask.ca/SearchFormulary`,
+        Link: formulary.drugplan.ehealthsask.ca(https://formulary.drugplan.ehealthsask.ca/SearchFormulary)
+        `,
         ],
       },
     },
@@ -1118,7 +1165,8 @@ Schedule a first virtual visit via telephone or video.`,
 
         In accordance with the Travel for Medical Treatment Act and Regulations, the Medical Travel Unit will provide a travel subsidy to eligible individuals who are travelling for the purpose of obtaining Mifegymiso outside of their home community.
 
-        Link: https://open.yukon.ca/sites/default/files/mt006-mIfe.pdf`,
+        Link: open.yukon.ca(https://open.yukon.ca/sites/default/files/mt006-mIfe.pdf)
+        `,
         ],
       },
     },
@@ -1791,7 +1839,7 @@ Schedule a first virtual visit via telephone or video.`,
       content: {
         type: ['p', 'ul', 'p', 'ul'],
         data: [
-          `<b>Poursuite de la grossesse[</b>[6]: La poursuite de la grossesse après un avortement par médicaments (AM) est rare et peut être traitée par une dose répétée de MISO ou par un avortement par instruments. Un avortement par instruments est recommandé si une activité cardiaque est présente de 14 à 21 jours après la prise du MISO.
+          `<b>Poursuite de la grossesse</b>[6]: La poursuite de la grossesse après un avortement par médicaments (AM) est rare et peut être traitée par une dose répétée de MISO ou par un avortement par instruments. Un avortement par instruments est recommandé si une activité cardiaque est présente de 14 à 21 jours après la prise du MISO.
 
         <b>Retention des produits de conception</b>[6]: En l’absence d’une grossesse évolutive, la rétention des produits de conception peut être gérée de façon conservatrice (attendre les saignements et les crampes spontanées), par une dose additionnelle de MISO, ou via une aspiration uterine. L’avortement par instruments d’urgence est indiqué en cas de saignements abondants incontrôlés ou d’une infection (endométrite).
 
@@ -2310,7 +2358,8 @@ Visite de suivi: 8471 Visite intermédiaire régionale ou visite suivante avec e
           'Programme des services de santé non assurés (SSNA)',
           `Les personnes admissibles des Premières Nations et des Inuits sont entièrement couvertes pour le coût de Mifegymiso dans le context de l’avortement par médicaments. Le processus de réclamation suit le processus de soumission normal pour les autres médicaments sur ordonnance.
 
-          Lien: https://nihb-ssna.express-scripts.ca/en/0205140506092019/16/160407`,
+          Lien: nihb-ssna.express-scripts.ca(https://nihb-ssna.express-scripts.ca/en/0205140506092019/16/160407)
+          `,
           'Anciens Combattants Canada (ACC)',
           `Le Mifegymiso figure actuellement comme médicament standard sur la liste des médicaments d’Anciens Combattants Canada. Cela signifie que le Mifegymiso est facilement accessible aux clients éligibles disposant d’une ordonnance valide.
 
@@ -2320,19 +2369,23 @@ Visite de suivi: 8471 Visite intermédiaire régionale ou visite suivante avec e
 
           De plus, puisque les clients sont couverts par le système de santé provincial ou territorial, leur accès au Mifegymiso suivra le processus provincial ou territorial comme les autres résidents.
 
-          Lien: https://www.veterans.gc.ca/eng/financial-support/medical-costs/coverage-services-prescriptions-devices#toc10`,
+          Lien: www.veterans.gc.ca(https://www.veterans.gc.ca/eng/financial-support/medical-costs/coverage-services-prescriptions-devices#toc10)
+          `,
           'Services de santé des Forces canadiennes',
           `Le Mifegymiso est un médicament régulier figurant sur la liste des médicaments des Forces armées canadiennes; aucune autorisation spéciale n’est requise.
 
-          Lien: http://www.cmp-cpm.forces.gc.ca/hs/en/drug-benefit-list/index.asp`,
+          Lien: www.cmp-cpm.forces.gc.ca(http://www.cmp-cpm.forces.gc.ca/hs/en/drug-benefit-list/index.asp)
+          `,
           'Programme de soins de santé de la Gendarmerie royale du Canada (GRC)',
           `Les agents de la GRC sont considérés comme des personnes assurées et recoivent des soins de santé de base par l’intermédiaire du système de santé de la province ou du territoire où ils résident. L’accès des agents de la GRC au Mifegymiso suit le processus provincial ou territorial comme pour les autres résidents. De plus, des régimes privés couvrant les coûts des médicaments sur ordonnance sont également une option.
 
-          Lien: https://bc-cb.rcmp-grc.gc.ca/ViewPage.action?siteNodeId=2234&languageId=1&contentId=58416`,
+          Lien: bc-cb.rcmp-grc.gc.ca(https://bc-cb.rcmp-grc.gc.ca/ViewPage.action?siteNodeId=2234&languageId=1&contentId=58416)
+          `,
           'Programme fédéral de santé intérimaire (PFSI)',
           `La couverture du PFSI pour Mifegymiso est disponible dans les provinces et territoires où le médicament est inscrit sur leur liste de medicaments publique.
 
-          Lien: https://www.canada.ca/en/immigration-refugees-citizenship/services/refugees/help-within-canada/health-care/interim-federal-health-program/coverage-summary.html`,
+          Lien: www.canada.ca(https://www.canada.ca/en/immigration-refugees-citizenship/services/refugees/help-within-canada/health-care/interim-federal-health-program/coverage-summary.html)
+          `,
           'Programmes du Service correctionnel du Canada (SCC)',
           `Les services aux personnes incarcérées dans les pénitenciers fédéraux sont fournis directement par la pharmacie au sein de l’établissement.`,
         ],
@@ -2360,7 +2413,7 @@ Visite de suivi: 8471 Visite intermédiaire régionale ou visite suivante avec e
       id: 'M37',
       title: 'Personnes 2ELGBTQIA+',
       content: {
-        type: ['p', 'h2', 'ul', 'h2'],
+        type: ['p', 'h2', 'ul', 'h2', 'table'],
         data: [
           `Voici quelques suggestions pour aider les cliniciens à créer un environnement inclusif qui répond aux besoins des personnes 2ELGBTQIA+. Ces suggestions ne sont pas exhaustives et il est recommandé aux professionnels de la santé de consulter d’autres manuels et opportunités de formation en compétence culturelle pour fournir des soins inclusifs.
 
@@ -2375,7 +2428,43 @@ Visite de suivi: 8471 Visite intermédiaire régionale ou visite suivante avec e
           Chercher à éliminer les barrières pour les personnes 2ELGBTQIA+.
           N’utiliser PAS d’étiquettes et de termes dérivés d’anciennes versions du DSM et de la CIM, tels que transsexuel, transsexualité et trouble de l’identité de genre.
           N’utiliser PAS de termes et expressions péjoratives même si la personne le fait.`,
-          'Gender-inclusive language:',
+          'Vocabulaire inclusif:',
+          [
+            ['Dire', 'Au lieu de'],
+            [
+              'Personne (personne en chemise rose, personne enceinte)',
+              'Homme, femme, fille, garçon, dames, messieurs, monsieur, madame (femmes enceintes, gars en chemise rose)',
+            ],
+            ['La parentalité', 'Maternité, paternité'],
+            [
+              'Femme assignée, homme assigné',
+              'Femelle biologique, mâle biologique',
+            ],
+            ['Cisgenre', 'Non trans, normal, ou vrai'],
+            ['Allaitement', 'Allaitement maternel'],
+            ['Hommes transgenres, femmes transgenres', 'Un transexuel'],
+            [
+              'Préservatif externe, préservatif interne',
+              'Préservatif masculin, préservatif féminin',
+            ],
+            ['Sexe réceptif, sexe insertif', 'Sexe vaginal'],
+            ['Saignements mensuels', 'Période, règles, menstruations'],
+            [
+              'Dépistage de santé sexuelle, examen interne, dépistage cervical',
+              'Examen pelvien, examen de la femme, examen gynécologique',
+            ],
+            [
+              'Organes reproducteurs internes',
+              'Organes reproducteurs féminins',
+            ],
+            ['Gonades internes', 'Ovaires'],
+            ['Gonades externes', 'Testules, testicules'],
+            ['Organes génitaux internes, organes génitaux', 'Vagin, vulve'],
+            [
+              'Organes génitaux externes, tissu érectile, organes génitaux',
+              'Pénis',
+            ],
+          ],
         ],
       },
     },
@@ -2413,7 +2502,8 @@ Visite de suivi: 8471 Visite intermédiaire régionale ou visite suivante avec e
 
           Le programme prévoit uniquement la soumission de demandes de facturation directe. Les personnes participant au régime ne sont pas admissibles à un remboursement.
 
-          Lien: https://www.ab.bluecross.ca/pdfs/pharmacy-benefacts/pharmacy-benefact-697.pdf`,
+          Lien: www.ab.bluecross.ca(https://www.ab.bluecross.ca/pdfs/pharmacy-benefacts/pharmacy-benefact-697.pdf)
+          `,
         ],
       },
     },
@@ -2425,7 +2515,8 @@ Visite de suivi: 8471 Visite intermédiaire régionale ou visite suivante avec e
         data: [
           `Le Mifegymiso est couvert par le BC Pharmacare Assurance Plan (Plan Z et Exceptionnel Plan Z) qui offre une couverture à 100 %. Toutes les personnes résidant en Colombie-Britannique et bénéficiant d’une couverture active du Medical Services Plan (MSP) sont éligibles.
 
-          Lien: https://www2.gov.bc.ca/gov/content/health/practitioner-professional-resources/pharmacare/pharmacies/plan-z`,
+          Lien: www2.gov.bc.ca(https://www2.gov.bc.ca/gov/content/health/practitioner-professional-resources/pharmacare/pharmacies/plan-z)
+          `,
         ],
       },
     },
@@ -2439,7 +2530,8 @@ Visite de suivi: 8471 Visite intermédiaire régionale ou visite suivante avec e
 
           Les personnes possédant une carte Santé Manitoba valide et une ordonnance d’un prescripteur autorisé ne devraient pas avoir à payer de frais. Même si la personne est inscrite à un régime d’assurance médicaments ou à un autre programme de soins de santé provincial de médicaments (par exemple, Familles/AER), elle n’a aucune obligation de payer une franchise ou une quote-part.
 
-          Lien: https://www.gov.mb.ca/health/pharmacare/profdocs/csp_mifegymiso.pdf`,
+          Lien: www.gov.mb.ca(https://www.gov.mb.ca/health/pharmacare/profdocs/csp_mifegymiso.pdf)
+          `,
         ],
       },
     },
@@ -2451,7 +2543,8 @@ Visite de suivi: 8471 Visite intermédiaire régionale ou visite suivante avec e
         data: [
           `La couverture est disponible via le Programme d’avortement par médicaments. Les réclamations manuscrites ne seront pas acceptées et les réclamations doivent être soumises en ligne.
 
-          Lien: https://www2.gnb.ca/content/gnb/en/departments/health/prescription-drug-plan/NBDrugPlan/ForHealthCareProfessionals/medical_abortion_claims_submission.html`,
+          Lien: www2.gnb.ca(https://www2.gnb.ca/content/gnb/en/departments/health/prescription-drug-plan/NBDrugPlan/ForHealthCareProfessionals/medical_abortion_claims_submission.html)
+          `,
         ],
       },
     },
@@ -2463,7 +2556,8 @@ Visite de suivi: 8471 Visite intermédiaire régionale ou visite suivante avec e
         data: [
           `La couverture est offerte sans frais aux personnes détentant une carte d’assurance maladie valide. Les personnes peuvent recevoir une ordonnance auprès de leur professionnel de la santé, des régies régionales de la santé ou de l’Athena Health Centre à St. John’s. Les personnes bénéficiant d’une assurance privée l’utiliseront en premier, puis la province couvrira tous les coûts restants en tant que payeur final. Les réclamations peuvent être soumises en temps réel via le système d’évaluation du Programme de médicaments sur ordonnance de Terre-Neuve-et-Labrador (NLPDP), quelle que soit l’admissibilité.
 
-Lien: https://www.gov.nl.ca/hcs/files/prescription-provider-guide-program-claiming-policies.pdf`,
+Lien: www.gov.nl.ca(https://www.gov.nl.ca/hcs/files/prescription-provider-guide-program-claiming-policies.pdf)
+`,
         ],
       },
     },
@@ -2477,7 +2571,8 @@ Lien: https://www.gov.nl.ca/hcs/files/prescription-provider-guide-program-claimi
 
 *Le programme NOW n’est actuellement disponible qu’à Yellowknife et Inuvik. Health and Social Services couvrira les frais de déplacement médical des résidents vivant à l’extérieur de Yellowknife et d’Inuvik qui choisissent des options de traitement utilisant Mifegymiso et qui sont recommandées par un professionnel de la santé.
 
-Lien (voir pages 40/41): https://www.hss.gov.nt.ca/en/services/mifegymiso-northwest-territories`,
+Lien: www.hss.gov.nt.ca(https://www.hss.gov.nt.ca/en/services/mifegymiso-northwest-territories) (voir pages 40/41)
+`,
         ],
       },
     },
@@ -2489,7 +2584,8 @@ Lien (voir pages 40/41): https://www.hss.gov.nt.ca/en/services/mifegymiso-northw
         data: [
           `En vigueur depuis le 1er novembre 2017, la couverture est offerte à toute personne en Nouvelle-Écosse possédant une carte d’assurance maladie valide. Toutes autres sources d’assurance, comme un régime privé, doivent être facturées en premier. La procédure à suivre pour soumettre une demande de remboursement est expliquée ci-dessous. Si vous avez des questions, veuillez contacter Nova Scotia Pharmacare.
 
-Lien (voir page 41): https://novascotia.ca/dhw/pharmacare/documents/Pharmacy-Guide.pdf`,
+Lien: novascotia.ca(https://novascotia.ca/dhw/pharmacare/documents/Pharmacy-Guide.pdf) (voir page 41)
+`,
         ],
       },
     },
@@ -2501,7 +2597,8 @@ Lien (voir page 41): https://novascotia.ca/dhw/pharmacare/documents/Pharmacy-Gui
         data: [
           `Au Nunavut, les avortements sont gratuits pour les bénéficiaires des Premières Nations et sont couverts par le Régime de l’assurance maladie du Nunavut. Environ 86 % des résidents du Nunavut sont admissibles à la couverture du Programme des services de santé non assurés (SSNA).
 
-Lien: https://www.pharmacists.ca/cpha-ca/assets/File/cpha-on-the-issues/Mifegymiso_Access_Scan.pdf`,
+Lien: www.pharmacists.ca(https://www.pharmacists.ca/cpha-ca/assets/File/cpha-on-the-issues/Mifegymiso_Access_Scan.pdf)
+`,
         ],
       },
     },
@@ -2513,7 +2610,8 @@ Lien: https://www.pharmacists.ca/cpha-ca/assets/File/cpha-on-the-issues/Mifegymi
         data: [
           `Depuis le 10 août 2017, toutes personnes possédant une carte d’Assurance-santé de l’Ontario (OHIP) valide ainsi qu’une ordonnance valide sont admissibles au Mifegymiso. Cela comprend à la fois les bénéficiaires du Programme de médicaments de l’Ontario (PMO) et les non-bénéficiaires du PMO. Les pharmaciens doivent s’assurer que la date de naissance, le numéro de carte Santé et le nom de la personne admissible (tel qu’il apparaît sur la carte Santé de l’Ontario) sont correctement saisis lors de la soumission des demandes via le Système du réseau de santé (SRS). Le Mifegymiso, fourni aux personnes munies d’une ordonnance valide, sera remboursé par le ministère.
 
-Lien: https://www.pharmacytechnologysolutions.ca/pharmaclik-rx-doc/Content/Resources/PDFs/ODBMifegymisoClaims.pdf`,
+Lien: www.pharmacytechnologysolutions.ca(https://www.pharmacytechnologysolutions.ca/pharmaclik-rx-doc/Content/Resources/PDFs/ODBMifegymisoClaims.pdf)
+`,
         ],
       },
     },
@@ -2525,7 +2623,8 @@ Lien: https://www.pharmacytechnologysolutions.ca/pharmaclik-rx-doc/Content/Resou
         data: [
           `L’avortement par médicaments est offert gratuitement par le biais des Services de santé sexuelle et reproductive en matière d’options (SHORS) et du Women’s Wellness Program. Cependant, une carte santé de l’Î.-P.-É. valide est requise.
 
-Lien: https://www.princeedwardisland.ca/en/information/health-pei/abortion-services`,
+Lien: www.princeedwardisland.ca(https://www.princeedwardisland.ca/en/information/health-pei/abortion-services)
+`,
         ],
       },
     },
@@ -2541,7 +2640,8 @@ Tout service obtenu hors du Québec n’est pas couvert par ce programme. Une ex
           `Le médicament est fourni par un pharmacien qui a une entente particulière avec la Régie à cet effet.
 La pharmacie est située dans une région frontalière au Québec.
 Aucune pharmacie au Québec ne dessert la population dans un rayon de 32 kilomètres.`,
-          `Lien: https://www.ramq.gouv.qc.ca/sites/default/files/documents/liste_med_2022-12-14_en_0.pdf`,
+          `Lien: www.ramq.gouv.qc.ca(https://www.ramq.gouv.qc.ca/sites/default/files/documents/liste_med_2022-12-14_en_0.pdf)
+          `,
         ],
       },
     },
@@ -2553,7 +2653,8 @@ Aucune pharmacie au Québec ne dessert la population dans un rayon de 32 kilomè
         data: [
           `La Saskatchewan couvre le Mifegymiso à 100 % ayx personnes éligibles dans le cadre du régime d’assurance médicaments de la Saskatchewan. Les réclamations peuvent être soumises par voie électronique au régime d’assurance médicaments de la Saskatchewan.
 
-Lien: https://formulary.drugplan.ehealthsask.ca/SearchFormulary`,
+Lien: formulary.drugplan.ehealthsask.ca(https://formulary.drugplan.ehealthsask.ca/SearchFormulary)
+`,
         ],
       },
     },
@@ -2574,7 +2675,8 @@ Watson Lake`,
 
 Conformément à la Loi sur les frais de déplacement liés aux soins médicaux et à ses règlements, le service des déplacements pour soins médicaux fournira une subvention de voyage aux personnes éligibles qui voyagent dans le but d’obtenir le Mifegymiso en dehors de leur communauté d’origine.
 
-Lien: https://open.yukon.ca/sites/default/files/mt006-mIfe.pdf`,
+Lien: open.yukon.ca(https://open.yukon.ca/sites/default/files/mt006-mIfe.pdf)
+`,
         ],
       },
     },
@@ -2977,7 +3079,7 @@ export function modulePath(path: string, modules: Modules) {
     '/supporting-roles/medication-abortion': ['M39', 'M3', 'M40', 'M41'],
     '/r%C3%B4les-de-soutien/avortement-par-medicaments': ['M39', 'M3', 'M40', 'M41'],
     '/supporting-roles/client-counselling': ['M42', 'M43', 'M15', 'M33', 'M16', 'M44'],
-    '/r%C3%B4les-de-soutien/counseling-de-la-personne': ['M42', 'M43', 'M15', 'M33', 'M16', 'M44'],
+    '/r%C3%B4les-de-soutien/counseling-de-la-client': ['M42', 'M43', 'M15', 'M33', 'M16', 'M44'],
     '/supporting-roles/resources': [''],
     '/r%C3%B4les-de-soutien/ressources': [''],
     '/faq': ['F1', 'F2', 'F3', 'F4', 'F5', 'F6'],
