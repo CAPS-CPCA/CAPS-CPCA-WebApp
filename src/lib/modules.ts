@@ -5,7 +5,7 @@ type ContentType = {
   data: (string | string[] | string[][])[]
 }
 
-type ModuleType = {
+export type ModuleType = {
   id: string
   title: string
   content: ContentType

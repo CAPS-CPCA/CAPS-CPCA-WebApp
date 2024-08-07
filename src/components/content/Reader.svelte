@@ -2,6 +2,7 @@
 import Outline from './Outline.svelte';
 
 export let modules:any = [];
+export let outline = true;
 
 function handleP(data: string) {
     return `<p>${data.replace(/\n/g, '<br>')}</p>`;
@@ -109,7 +110,9 @@ const regex = (content: any) => {
 </script>
 
 <div class="reader">
-    <Outline/>
+    {#if outline}
+        <Outline/>
+    {/if}
     <div class="pane">
         {#if modules.length === 0}
             <h1>No Modules Found</h1>

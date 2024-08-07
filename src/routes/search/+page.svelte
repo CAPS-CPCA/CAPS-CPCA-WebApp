@@ -1,13 +1,36 @@
 <script lang="ts">
+  import Reader from '../../components/content/Reader.svelte';
+  import type { ModuleType } from '$lib/modules';
   import { data } from '$lib/data';
+  import { createSearch, searchHandler } from '$lib/search'
+  import { onDestroy } from 'svelte'
   import Hero from '../../components/Hero.svelte';
+
+  const searchModules: ModuleType[] = $data.modules.map((module: ModuleType) => ({
+      ...module,
+      searchTerms: `${module.title} ${module.content.data}`
+    }));
+
+  const searchStore = createSearch(searchModules);
+  const unsubscribe = searchStore.subscribe((model) => searchHandler(model));
+
+  onDestroy(() => {
+    unsubscribe();
+  });
 </script>
 
 <Hero type="icon" id="Search"/>
 <form class="form">
-  <input type="search" placeholder={$data.search.placeholder}>
-  <button class="primary" type="submit">{$data.search.button}</button>
+  <input type="search" placeholder={$data.search.placeholder} bind:value={$searchStore.search}>
+  <!-- <button class="primary" type="submit">{$data.search.button}</button> -->
 </form>
+<br><br>
+<section class="reader">
+  <div class="container">
+    <Reader modules={$searchStore.filtered} outline={false}/>
+  </div>
+</section>
+
 
 <style>
 .form {
@@ -36,11 +59,11 @@ input:focus {
   border: 2px solid var(--Highlight);
 }
 input:first-of-type {
-  border-radius: 1rem 0 0 1rem;
+  border-radius: 1rem;
 }
-button:last-of-type {
+/* button:last-of-type {
   border-radius: 0 1rem 1rem 0;
-}
+} */
 </style>
 
 
