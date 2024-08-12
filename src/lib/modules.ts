@@ -40,7 +40,7 @@ export const modules: { [key: string]: Modules } = {
 				data: [
 					'Efficacy:',
 					`MIFE / MISO is <b>highly effective</b>. The risk of ongoing pregnancy is 0.9% for pregnancies up to 49 days of gestation and 3.1% for pregnancies up to 70 days of gestation[10].
-        According to SOGC’s protocol for the provision of medication abortion via telemedicine, the patient should take a first dose of misoprostol buccally or vaginally <b>24-48</b> hours after taking mifepristone[7].
+        According to SOGC’s protocol for the provision of medication abortion via telemedicine, the patient should take a first dose of misoprostol buccally or vaginally <b>24-48 hours</b> after taking mifepristone[7].
         In addition, patients with gestational age 63 days or less should take <b>the second dose</b> of misoprostol if no bleeding occurs within the first 24 hours after the first misoprostol dose or as instructed by the clinician. Patients with a gestational age over 63 days should take a second dose of misoprostol 4 hours after the first dose[7].`,
 					'Side Effects and Complications[10]:',
 					`<b>Very common (≥ 10%):</b> Nausea, vomiting, diarrhea, dizziness, headache, chills / fever, weakness, fatigue, gastric discomfort, abdominal pain, vaginal bleeding, spotting, uterine contractions or cramping.
@@ -231,7 +231,7 @@ export const modules: { [key: string]: Modules } = {
 					`<b>Ectopic pregnancy (EP)</b> is rare. It occurs in 1 or 2 out of 100 pregnancies in the general population, and the rate is consistently lower among those seeking abortion. It is recommended that <b>patients undergo ultrasound if they have significant medical risk factors, signs or symptoms of EP</b>[6].
 
 
-        Significant risk factors, signs and symptoms of EP include[6]:`,
+        <b>Significant risk factors, signs and symptoms of EP include[6]:</b>`,
 					`Previous ectopic pregnancy.
         IUD in place.
         Pregnancy conceived with assisted reproduction techniques.
@@ -254,9 +254,9 @@ export const modules: { [key: string]: Modules } = {
 				data: [
 					`Patients who have a <b>pregnancy of unknown location (PUL)</b> and request medication abortion (MA) should receive abortion care without delay, provided that they have no clinical symptoms of ectopic pregnancy (EP). Failure to identify a definite intrauterine pregnancy should not delay MA[6].
 
-        If the serum βhCG is > 2000 IU / L and no intrauterine gestational sac is visualized on ultrasound[6]:`,
+        <b>If the serum βhCG is > 2000 IU / L and no intrauterine gestational sac is visualized on ultrasound[6]:</b>`,
 					`Further investigation is required.`,
-					`In the absence of EP risk factors, if βhCG is ≤ 2000 IU / L or a likely gestational sac is present without a yolk sac or fetal pole[6]:`,
+					`<b>In the absence of EP risk factors, if βhCG is ≤ 2000 IU / L or a likely gestational sac is present without a yolk sac or fetal pole[6]:</b>`,
 					`Patients with PUL can receive MA.
         When PUL patients receive MA, they should be informed of the risks and symptoms of EP, and who to contact in case of emergency.
         Follow-up βhCG within 7 days is recommended for PUL patients. A decrease of 50% at 3 days after mifepristone administration (or 24-48 hours after misoprostol) or 80% between 7 and 14 days after MIFE / MISO administration is expected; otherwise, EP should be ruled out.`
@@ -271,9 +271,9 @@ export const modules: { [key: string]: Modules } = {
 				data: [
 					`Guidelines on Rh screening have been updated.
 
-        According to the SOGC’s Guideline on Prevention of RhD Alloimmunization published in 2024, for non-sensitized Rh D-negative individuals who have experienced threatened, spontaneous or induced abortion after 12 weeks gestation, administration of 300 μg of Rho(D) immune globulin is suggested.
+        According to the SOGC’s Guideline on Prevention of RhD Alloimmunization published in 2024, for non-sensitized Rh D-negative individuals who have experienced threatened, spontaneous or induced abortion after <b>12 weeks gestation</b>, administration of 300 μg of Rho(D) immune globulin is suggested.
 
-        Prior to that, in 2022, the Society of Family Planning and the World Health Organization also recommends withholding Rh testing and administration prior to <b>12 weeks gestation</b> for patients undergoing MA, spontaneous abortion or uterine aspiration abortion[8,20].`
+        Prior to that, in 2022, the Society of Family Planning and the World Health Organization also recommends withholding Rh testing and administration prior to 12 weeks gestation for patients undergoing MA, spontaneous abortion or uterine aspiration abortion[8,20].`
 				]
 			}
 		},
@@ -481,7 +481,7 @@ Schedule a first virtual visit via telephone or video.`
         Telehealth: 14545 Same code for consultation – $165.97
         13437 Follow-up – $31.84
 
-        Notes: For telehealth, methods of virtual care can include phone, video or provincial telehealth platform, all of which are equally billable at the moment. No need to have an ongoing physician-patient relationship for the physician to submit a claim for medication abortion via telehealth`
+        <b>Notes:</b> For telehealth, methods of virtual care can include phone, video or provincial telehealth platform, all of which are equally billable at the moment. No need to have an ongoing physician-patient relationship for the physician to submit a claim for medication abortion via telehealth`
 				]
 			}
 		},
@@ -491,7 +491,7 @@ Schedule a first virtual visit via telephone or video.`
 			content: {
 				type: ['p', 'h2', 'p', 'h2', 'p'],
 				data: [
-					`The information below is updated as of March 2024.`,
+					`<i>The information below is updated as of March 2024.</i>`,
 					'Gynaecology',
 					`Initial visit: 8428 Medical management of elective pregnancy termination, including examination, management and monitoring of patient taking misoprostol. – $171.00
         8499 Complete gynecological exam excluding pap test – $125.61
@@ -501,7 +501,7 @@ Schedule a first virtual visit via telephone or video.`
         8499 Complete gynecological exam excluding pap test – $125.61
         Follow-up visit: 8471 Regional intermediate visit or subsequent visit with gynecological exam excluding pap smear – $54.16
 
-        Notes: There are no specifications as to whether the codes are specific to specialists vs primary care in the billing manual for Manitoba. Thus, providers would have to look into the information and apply the rules of their billing codes.`
+        <b>Notes:</b> There are no specifications as to whether the codes are specific to specialists vs primary care in the billing manual for Manitoba. Thus, providers would have to look into the information and apply the rules of their billing codes.`
 				]
 			}
 		},
@@ -511,19 +511,19 @@ Schedule a first virtual visit via telephone or video.`
 			content: {
 				type: ['p', 'h2', 'p', 'h2', 'p'],
 				data: [
-					`The information below is pending verification.`,
+					`<i>The information below is pending verification.</i>`,
 					'Gynaecology',
 					`Initial visit: 54 Major or regional consultation – CA$95.91
         9015 Medical management of non-viable/unwanted pregnancy, including βhCG follow-up, add to initial visit or consultation – $136.22
         Follow-up visit: 49 Regional examination – $52.82
-        Telehealth: Same codes, but the site code where the patient is physically located, must be recorded on the claim submission. When submitting claims for telemedicine, the number 8 should be written in front of the site code provided in order to specify that the service was given via telemedicine.
+        Telehealth: <b>Same codes</b>, but the site code where the patient is physically located, must be recorded on the claim submission. When submitting claims for telemedicine, the number 8 should be written in front of the site code provided in order to specify that the service was given via telemedicine.
         8717 Attendance – 1st patient seen, first 15 minutes or part thereof 40 units
         8718 Add – per 15 minutes or part thereof 20 units`,
 					'Primary Care',
 					`Initial visit: 1 Office visit – $23.36
         9142 Medical management of non-viable/unwanted pregnancy, including βhCG follow-up, add to initial visit or consultation – $74.48
         Follow-up visit: 1 Office visit – $23.36
-        Telehealth: Same codes, but the site code where the patient is physically located, must be recorded on the claim submission. When submitting claims for telemedicine, the number 8 should be written in front of the site code provided in order to specify that the service was given via telemedicine.
+        Telehealth: <b>Same codes</b>, but the site code where the patient is physically located, must be recorded on the claim submission. When submitting claims for telemedicine, the number 8 should be written in front of the site code provided in order to specify that the service was given via telemedicine.
         8717 Attendance – 1st patient seen, first 15 minutes or part thereof 40 units
         8718 Add – per 15 minutes or part thereof 20 units`
 				]
@@ -535,15 +535,15 @@ Schedule a first virtual visit via telephone or video.`
 			content: {
 				type: ['p', 'h2', 'p', 'h2', 'p'],
 				data: [
-					`The information below is pending verification.`,
+					`<i>The information below is updated as of March 2024.</i>`,
 					'Gynaecology',
 					`Initial visit and follow-up visit: 54607 Medication abortion – $187.46
 
-        Comprehensive fee which includes all services associated with medication abortion including the consultation and/or visit during which the medication is prescribed, counselling, ordering and/or performing and interpreting of laboratory tests and diagnostic imaging, and any follow-up communications or visits.`,
+        <i>Comprehensive fee which includes all services associated with medication abortion including the consultation and/or visit during which the medication is prescribed, counselling, ordering and/or performing and interpreting of laboratory tests and diagnostic imaging, and any follow-up communications or visits.</i>`,
 					'Primary Care',
 					`Initial visit and follow-up visit: 54607 Medication abortion – $187.49
 
-        Comprehensive fee which includes all services associated with medication abortion including the consultation and/or visit during which the medication is prescribed, counselling, ordering and/or performing and interpreting of laboratory tests and diagnostic imaging, and any follow-up communications or visits.`
+        <i>Comprehensive fee which includes all services associated with medication abortion including the consultation and/or visit during which the medication is prescribed, counselling, ordering and/or performing and interpreting of laboratory tests and diagnostic imaging, and any follow-up communications or visits.</i>`
 				]
 			}
 		},
@@ -553,22 +553,20 @@ Schedule a first virtual visit via telephone or video.`
 			content: {
 				type: ['p', 'h2', 'p', 'h2', 'p'],
 				data: [
-					`The information below is pending verification.`,
+					`<i>The information below is pending verification.</i>`,
 					'Gynaecology',
 					`Initial visit and follow-up visit: OB-025 Medical termination for gestation less than 7 weeks – includes all visits, ultrasound examinations and injections – $361.93
         Telehealth: TE-001 Telehealth consultation by consultant using audio-video-data communication – $180.97
         TE-002 Telehealth consultation – per 15 minutes – max of 1.5 hours per session – $54.29
         TE-004 Emergency Department consultation from peripheral communities – CA$18.09
-        
-        Does not need to be your own patient.`,
+        <i>Does not need to be your own patient.</i>`,
 					'Primary Care',
 					`Initial visit: GP-001 First visit requiring general assessment for new illness – $102.35
         Follow-up visit: GP-002 Subsequent office visits other than a simple follow-up visit – $45.48
         Telehealth: TE-001 Telehealth consultation by consultant using audio-video-data communication – $180.97
         TE-002 Telehealth consultation – per 15 minutes – max of 1.5 hours per session – $54.29
         TE-004 Emergency Department consultation from peripheral communities – CA$18.09
-
-        Does not need to be your own patient.`
+        <i>Does not need to be your own patient.</i>`
 				]
 			}
 		},
@@ -578,7 +576,7 @@ Schedule a first virtual visit via telephone or video.`
 			content: {
 				type: ['p', 'h2', 'p', 'h2', 'p'],
 				data: [
-					`The information below is pending verification.`,
+					`<i>The information below is updated as of March 2024.</i>`,
 					'Gynaecology',
 					`Initial visit: 3.03V Medication abortion/Termination of early pregnancy – 67.03 units/$185.00
         Follow-up visit: 3.03 Subsequent visit – 13 units/$35.88
@@ -604,7 +602,7 @@ Schedule a first virtual visit via telephone or video.`
 			content: {
 				type: ['p', 'h2', 'p', 'h2', 'p'],
 				data: [
-					`The information below is updated as of March 2024.`,
+					`<i>The information below is updated as of March 2024.</i>`,
 					'In-person',
 					`Initial visit: A920 Medical management of early pregnancy – initial service – $161.15
         Follow-up visit: A921 Medical management of early pregnancy – follow-up visit (limited to two visit per patient, per pregnancy) – $36.85`,
@@ -614,7 +612,7 @@ Schedule a first virtual visit via telephone or video.`
         A007 – $37.95
         A102 – $15.00
 
-        Notes: If you have billed A920 for the initial visit, you have established a relationship and for follow-up, you can use A921 (video only) or A007 (telephone). Virtual care services provided in the 24-months subsequent to the medication abortion may be claimed as Comprehensive Virtual Care Services because it implies an existing/ongoing patient-physician relationship. If you do not meet the patients at the initial visit (i.e. you do not bill A920 for the initial visit and thus do not have a pre-established relationship with the patient), you would use A102 for telephone follow-up, which pays $15.`
+        <b>Notes:</b> If you have billed A920 for the initial visit, you have established a relationship and for follow-up, you can use A921 (video only) or A007 (telephone). Virtual care services provided in the 24-months subsequent to the medication abortion may be claimed as Comprehensive Virtual Care Services because it implies an existing/ongoing patient-physician relationship. If you do not meet the patients at the initial visit (i.e. you do not bill A920 for the initial visit and thus do not have a pre-established relationship with the patient), you would use A102 for telephone follow-up, which pays $15.`
 				]
 			}
 		},
@@ -624,7 +622,7 @@ Schedule a first virtual visit via telephone or video.`
 			content: {
 				type: ['p', 'h2', 'p', 'h2', 'p'],
 				data: [
-					`The information below is pending verification.`,
+					`<i>The information below is pending verification.</i>`,
 					'Gynaecology',
 					`Initial visit: 6010 Therapeutic abortion – $181.49
         Follow-up visit: 0762 Repeat consultation – $58.38
@@ -642,10 +640,10 @@ Schedule a first virtual visit via telephone or video.`
 			content: {
 				type: ['p', 'h2', 'p', 'h2', 'p'],
 				data: [
-					`The information below is pending verification.`,
+					`<i>The information below is updated as of March 2024.</i>`,
 					'Gynaecology',
 					`Initial visit: 15850 Global evaluation for termination of pregnancy (<63 days) – $168.90
-        15852 Ultrasound exam – $60.95
+        15852 <b>Ultrasound exam</b> – $60.95
         Follow-up visit: 15854 Follow-up medication abortion – $47.50
         15857 US post medication abortion (<18 days) – $39.80`,
 					'Primary Care',
@@ -653,14 +651,14 @@ Schedule a first virtual visit via telephone or video.`
         – 15313 Office – $139.50
         – 15407 CLSC – $20.00
         – 15314 Hospital – $104.60
-        Ultrasound exam
+        <b>Ultrasound exam</b>
         – 15315 Office – $38.15
         – 15316 Hospital – $13.10
         Follow-up visit: Follow-up termination of pregnancy
         – 15317 Office – $39.25
         – 15408 CLSC – $1.50
         – 15318 Hospital – $29.45
-        Ultrasound exam
+        <b>Ultrasound exam</b>
         – 15319 Office – $33.80
         – 15320 Hospital – $8.75`
 				]
@@ -672,7 +670,7 @@ Schedule a first virtual visit via telephone or video.`
 			content: {
 				type: ['p', 'h2', 'p', 'h2', 'p', 'h2', 'p'],
 				data: [
-					`The information below is updated as of March 2024.`,
+					`<i>The information below is updated as of March 2024.</i>`,
 					'Gynaecology',
 					`Initial visit: 150B Medical management of termination of early pregnancy – includes 5 days of ongoing medical management – $170
         Follow-up visit: 11P Repeat consultation – $41.90
@@ -686,7 +684,7 @@ Schedule a first virtual visit via telephone or video.`
         Follow-up visit: 734A for any patient attended to using an approved telemedicine video links (maximum one per day for all patients) – $12.50
         805B – Virtual Partial Assessment – for clinicians who do not have a video link setup such as telephone follow-up – $31.85
 
-        Notes: Saskatchewan has a designated in-person abortion code but not a virtual one, so providers can use the generic codes that are used for regular primary care telemedicine apps.`
+        <b>Notes:</b> Saskatchewan has a designated in-person abortion code but not a virtual one, so providers can use the generic codes that are used for regular primary care telemedicine apps.`
 				]
 			}
 		},
@@ -696,7 +694,7 @@ Schedule a first virtual visit via telephone or video.`
 			content: {
 				type: ['p', 'h2', 'p', 'h2', 'p'],
 				data: [
-					`The information below is pending verification.`,
+					`<i>The information below is pending verification.</i>`,
 					'Gynaecology',
 					`Initial visit: 4116 Medication abortion – $223.8
         Follow-up visit: 4012 Limited consultation – $104.40
@@ -713,18 +711,18 @@ Schedule a first virtual visit via telephone or video.`
 			content: {
 				type: ['p', 'ul', 'p', 'ul'],
 				data: [
-					`Abortion is legal in Canada, and patients do not require consent from partners or parents to seek an abortion. It is the second most common reproductive health service: one in three Canadian pregnancy-capable persons will seek abortion in their lifetime[1,2].
+					`Abortion is <b>legal</b> in Canada, and patients do not require consent from partners or parents to seek an abortion. It is the second most common reproductive health service: one in three Canadian pregnancy-capable persons will seek abortion in their lifetime[1,2].
 
         Medication abortion uses medication pills to end a pregnancy. In Canada, the medication abortion pills are packaged and sold as Mifegymiso.`,
-					`Mifegymiso is approved by Health Canada for gestational age up to 63 days, but has been shown by SOGC to be safe and effective for up to 70 days.
-        It is provided free-of-charge to all patients with provincial health insurance and several categories of federal health insurances.
+					`Mifegymiso is approved by Health Canada for gestational age up to 63 days, but has been shown by SOGC to be <b>safe and effective</b> for up to 70 days.
+        It is provided <b>free-of-charge</b> to all patients with provincial health insurance and several categories of federal health insurances.
         Patients eligible for healthcare in one province, who attempt to access Mifegymiso in another province or territory, are eligible for counselling, assessments and follow-up but not for the medication itself.
-        It can be prescribed through in-person visits or virtual consultations, or a combination of the two.`,
-					`Scope of practice: At the time of this writing, physicians and nurse practitioners in Canada are authorized to prescribe Mifegymiso. In most cases, pharmacists are in charge of dispensing the medication to patients, but some clinics are also authorized to dispense the medication directly to patients. With the exception of Quebec, midwives are currently not authorized to prescribe Mifegymiso but can provide medication abortion care by working closely with nurse practitioners or physicians.
+        It can be prescribed through <b>in-person visits</b> or virtual consultations, or a combination of the two.`,
+					`<b>Scope of practice:</b> At the time of this writing, physicians and nurse practitioners in Canada are authorized to prescribe Mifegymiso. In most cases, pharmacists are in charge of dispensing the medication to patients, but some clinics are also authorized to dispense the medication directly to patients. With the exception of Quebec, midwives are currently not authorized to prescribe Mifegymiso but can provide medication abortion care by working closely with nurse practitioners or physicians.
 
-        Province-specific requirements: Healthcare providers should check specific guidelines and scope of practices in their provinces or territories. For example, provinces may differ in their requirements on who can pick up the medication and whether pharmacists have to register with Celopharma, the manufacturer of Mifegymiso. Click here to see the summary of some province-specific regulations for dispensing Mifegymiso.
+        <b>Province-specific requirements:</b> Healthcare providers should check specific guidelines and scope of practices in their provinces or territories. For example, provinces may differ in their requirements on who can pick up the medication and whether pharmacists have to register with Celopharma, the manufacturer of Mifegymiso. Click here to see the summary of some province-specific regulations for dispensing Mifegymiso.
 
-        Training requirement: Completing a training course is no longer required before prescribing or dispensing Mifegymiso, but healthcare providers may find the online courses below useful in learning about MA care.`,
+        <b>Training requirement:</b> Completing a training course is no longer required before prescribing or dispensing Mifegymiso, but healthcare providers may find the online courses below useful in learning about MA care.`,
 					`SOGC’s Medical Abortion Training Program, updated in 2023 and provided at cost.
         NAF Canada’s Medication Abortion Training for Primary Care Providers, updated in 2023 and provided at cost.`
 				]
@@ -901,16 +899,16 @@ Schedule a first virtual visit via telephone or video.`
 				data: [
 					`Below are some suggestions to help clinicians create an inclusive environment where the needs of 2SLGBTQIA+ patients can be met. These suggestions are not exhaustive and providers are encouraged to consider other manuals and cultural competency training opportunities to provide inclusive care.
 
-        These suggestions were reproduced from Gender Inclusive Language by Trans Care BC, The Trans-inclusive Abortion Services by the SHORE Centre and Fédération du Québec pour le planning des naissances, and the Handbook for Healthcare Providers Working with Clients from Diverse Communities by Action Canada for Sexual Health & Rights. For more information on the myths about reproduction of LGBTQ2S+, the vocabulary and glossary to use and avoid, and case studies and recommendations to overcome obstacles, please refer to these manuals.`,
+        <i>These suggestions were reproduced from Gender Inclusive Language by Trans Care BC, The Trans-inclusive Abortion Services by the SHORE Centre and Fédération du Québec pour le planning des naissances, and the Handbook for Healthcare Providers Working with Clients from Diverse Communities by Action Canada for Sexual Health & Rights. For more information on the myths about reproduction of LGBTQ2S+, the vocabulary and glossary to use and avoid, and case studies and recommendations to overcome obstacles, <b>please refer to these manuals.</b></i>`,
 					'Do’s and Don’ts:',
-					`Do have accessible bathrooms for multiple genders by removing “Male” and “Female” signs from washrooms, or replacing them with an “All Gender Bathroom” sign.
-        Do display 2SLGBTQIA+ inclusive posters, pamphlets, and other materials to let your patients know that they are welcome.
-        Do use inclusive clinical forms (e.g., intake forms) that are inclusive of all sexual orientations and gender identities. Consider whether the questions you are asking are necessary to ask for clinical purposes, or if they are asked out of curiosity only.
-        Do ask which pronouns patients prefer and use them consistently throughout their care.
-        Do ask patients and observe what words they use to refer to their body parts, and mirror their language.
-        Do respect trans patients’ rights to educate on trans issues or speak on behalf of the needs of trans patients.
+					`Do have <b>accessible bathrooms for multiple genders</b> by removing “Male” and “Female” signs from washrooms, or replacing them with an “All Gender Bathroom” sign.
+        Do display <b>2SLGBTQIA+ inclusive posters, pamphlets, and other materials</b> to let your patients know that they are welcome.
+        Do use <b>inclusive clinical forms</b> (e.g., intake forms) that are inclusive of all sexual orientations and gender identities. Consider whether the questions you are asking are necessary to ask for clinical purposes, or if they are asked out of curiosity only.
+        Do <b>ask which pronouns patients prefer</b> and use them consistently throughout their care.
+        Do ask patients and observe what <b>words they use to refer to their body parts</b>, and mirror their language.
+        Do respect trans <b>patients’ rights to educate</b> on trans issues or speak on behalf of the needs of trans patients.
         Do seek to remove barriers for 2SLGBTQIA+ patients.
-        Do NOT use labels and terms derived from older versions of DSM and ICD such such as transgenderism, transsexualism and gender identity disorder.
+        Do NOT use labels and terms derived from older versions of DSM and ICD such as transgenderism, transsexualism and gender identity disorder.
         Do NOT use derogatory terms and expressions even if your patient does.`,
 					'Gender-inclusive language:',
 					[
@@ -948,17 +946,17 @@ Schedule a first virtual visit via telephone or video.`
 				data: [
 					`Below are suggestions to help non-Indigenous healthcare professionals create an inclusive environment for Indigenous patients. These suggestions are not exhaustive and providers are encouraged to consider other manuals and cultural competency training opportunities to provide inclusive care.
 
-        A variety of factors and realities may affect how Indigenous Peoples access health services, including geographical access barriers, the unavailability of language and translation services, a lack of culturally safe health care settings or past experiences of racism, stigma, shame, fear or discrimination. Be mindful that being Indigenous is not a risk factor in itself, what actually puts people at risk are systemic issues like racism, colonialism, inter-generational trauma, and a lack of access to culturally safe care, treatment and supports.
+        A variety of factors and realities may affect how Indigenous Peoples access health services, including geographical access barriers, the unavailability of language and translation services, a lack of culturally safe health care settings or past experiences of racism, stigma, shame, fear or discrimination. Be mindful that <b>being Indigenous is not a risk factor in itself</b>, what actually puts people at risk are systemic issues like racism, colonialism, inter-generational trauma, and a lack of access to culturally safe care, treatment and supports.
 
         These recommendations were reproduced from The Indigenous Ally Toolkit by the Montreal Urban Aboriginal Community Strategy Network, and the Handbook for Healthcare Providers Working with Clients from Diverse Communities by Action Canada for Sexual Health & Rights.`,
 					'Quick tips for clinicians:',
-					`Offer translation services, and where possible, translated resources.
+					`Offer <b>translation services</b>, and where possible, translated resources.
         Connect with, and advocate for the involvement of, Indigenous patient navigators in your area.
-        When hearing about difficult or violent experiences from patients, affirm their experiences and stories. Avoid shaming them for the feelings they have, or the ways they use to cope.
-        Create and maintain a list of available resources and cultural supports within your region, including social services.
-        Support your patients to participate in the creation of their treatment plans, including the incorporation of traditional and cultural resources and methods.
-        Avoid saying “Canada’s Indigenous Peoples” or “Our Indigenous Peoples” – The Indigenous Peoples are not owned by Canada or by any individual.
-        Avoid saying “The Indigenous culture” – this phrase does not recognize that there are hundreds of Indigenous communities, nations, languages and cultures existing in Canada. Instead of singular, try using plural forms “Indigenous cultures” or even better, being specific about the nation to avoid pan-Indigenizing.`
+        When hearing about difficult or violent experiences from patients, affirm their experiences and stories. <b>Avoid shaming them for the feelings they have, or the ways they use to cope.</b>
+        <b>Create and maintain a list of available resources and cultural supports</b> within your region, including social services.
+        <b>Support your patients to participate in the creation of their treatment plans</b>, including the incorporation of traditional and cultural resources and methods.
+        Avoid saying “Canada’s Indigenous Peoples” or “Our Indigenous Peoples” – <b>The Indigenous Peoples are not owned by Canada or by any individual.</b>
+        Avoid saying “The Indigenous culture” – <b>this phrase does not recognize that there are hundreds of Indigenous communities, nations, languages and cultures existing in Canada.</b> Instead of singular, try using plural forms “Indigenous cultures” or even better, being specific about the nation to avoid pan-Indigenizing.`
 				]
 			}
 		},
