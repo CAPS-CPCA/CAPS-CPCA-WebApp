@@ -711,7 +711,7 @@ Schedule a first virtual visit via telephone or video.`
 			content: {
 				type: ['p', 'ul', 'p', 'ul'],
 				data: [
-					`Abortion is <b>legal</b> in Canada, and patients do not require consent from partners or parents to seek an abortion. It is the second most common reproductive health service: one in three Canadian pregnancy-capable persons will seek abortion in their lifetime[1,2].
+					`Abortion is <b>legal</b> in Canada, and patients do not require consent from partners or parents to seek an abortion. It is the <b>second most common</b> reproductive health service: one in three Canadian pregnancy-capable persons will seek abortion in their lifetime[1,2].
 
         Medication abortion uses medication pills to end a pregnancy. In Canada, the medication abortion pills are packaged and sold as Mifegymiso.`,
 					`Mifegymiso is approved by Health Canada for gestational age up to 63 days, but has been shown by SOGC to be <b>safe and effective</b> for up to 70 days.
@@ -1162,12 +1162,12 @@ Schedule a first virtual visit via telephone or video.`
         Exclude contraindications.
         Review the date and time patients plan to take MIFE / MISO.
         Review the date that patients have a follow up with their prescriber.`,
-					'Ensure patients have the following before leaving[10]:',
+					'<b>Ensure patients have the following before leaving[10]:</b>',
 					`Sanitary pads and liners.
         Pain medication and/or anti-nauseants (Over-the-counter or prescription).
         Access to emergency care.
         Support for childcare, transportation, and groceries.`,
-					`Ensure patients understand how to administer MIFE / MISO, how to manage side effects, and know when and how to seek care.`
+					`<b>Ensure patients understand how to administer MIFE / MISO, how to manage side effects, and know when and how to seek care</b> (see below).`
 				]
 			}
 		},
@@ -1219,9 +1219,9 @@ Schedule a first virtual visit via telephone or video.`
 					`MIFE taken orally shows non-linear pharmacokinetics. It is rapidly absorbed and distributed, reaching peak concentrations after 0.75 hours. It is 94-99% plasma-bound and is metabolized by CYP enzymes, mainly CYP3A4. Elimination is relatively slow with a half-life ranging between 83 and 90 hours[10].
 
         MISO‘s pharmacokinetic profile varies substantially depending on the route of administration[10]:`,
-					`Buccal: time to first uterine contraction is 67 minutes, sustained for about 90 minutes and begins to decline at 5 hours after administration. The uterine response appears similar to that of vaginal administration, with less inter-individual variability.
-        Vaginal: time to first uterine contraction is 82 minutes for dry tablets and 98 minutes for moistened tablets, sustained activity is attained at 106 minutes and 128 minutes, respectively, and uterine activity begins to decline at five hours after administration.
-        Sublingual: tablets are absorbed through the mucosa within 20 minutes and MISO reaches peak serum concentration at 30 minutes. First-pass metabolism is avoided.`
+					`<b>Buccal</b>: time to first uterine contraction is 67 minutes, sustained for about 90 minutes and begins to decline at 5 hours after administration. The uterine response appears similar to that of vaginal administration, with less inter-individual variability.
+        <b>Vaginal</b>: time to first uterine contraction is 82 minutes for dry tablets and 98 minutes for moistened tablets, sustained activity is attained at 106 minutes and 128 minutes, respectively, and uterine activity begins to decline at five hours after administration.
+        <b>Sublingual</b>: tablets are absorbed through the mucosa within 20 minutes and MISO reaches peak serum concentration at 30 minutes. First-pass metabolism is avoided.`
 				]
 			}
 		},
@@ -1233,13 +1233,13 @@ Schedule a first virtual visit via telephone or video.`
 				data: [
 					`Prescribers will provide clinical assessments prior to prescribing MIFE / MISO. With the new guideline by SOGC for the provision of medical abortion via telemedicine (MA), prescribers may eliminate blood work or ultrasound, or both, to ensure timely provision of MA[7].`,
 					[
-						`Gestational age is determined using medical history, urine or serum βhCG test, or ultrasound. Ultrasound is not required to determine gestational age, unless people seeking abortion are uncertain of their last menstrual period[6,7].
-        Ectopic pregnancy is ruled out using medical history to screen for risk factors and symptoms. Ultrasound is recommended if there are significant risk factors or symptoms suggestive of ectopic pregnancy[6,7].
-        Guideline on Rhesus testing and administration varies:`,
+						`<b>Gestational age</b> is determined using medical history, urine or serum βhCG test, or ultrasound. Ultrasound is not required to determine gestational age, unless people seeking abortion are uncertain of their last menstrual period[6,7].
+        <b>Ectopic pregnancy</b> is ruled out using medical history to screen for risk factors and symptoms. Ultrasound is recommended if there are significant risk factors or symptoms suggestive of ectopic pregnancy[6,7].
+        Guideline on <b>Rhesus testing and administration</b> varies:`,
 						`SOGC’s Guideline on Prevention of RhD Alloimmunization: Rh administration is suggested for non-sensitized Rh D-negative individuals who have experienced threatened, spontaneous, or induced abortion after 12 weeks gestation[21].
         The Society of Family Planning: Rh testing is not recommended prior to 12 weeks gestations for spontaneous, medications, or uterine aspiration abortion[8].`,
-						`Complete blood count to measure hemoglobin level is indicated if there is an increased risk of anemia; otherwise, it is unnecessary[7].
-        Routine prophylactic antibiotics are not required; screen-and-treat is the preferred management strategy and it is performed by the prescriber[6].`
+						`<b>Complete blood count</b> to measure hemoglobin level is indicated if there is an increased risk of anemia; otherwise, it is unnecessary[7].
+        Routine <b>prophylactic antibiotics</b> are not required; screen-and-treat is the preferred management strategy and it is performed by the prescriber[6].`
 					]
 				]
 			}
@@ -1270,11 +1270,11 @@ Schedule a first virtual visit via telephone or video.`
 			content: {
 				type: ['p', 'i-full'],
 				data: [
-					`Abortion is legal in Canada, and patients do not require consent from partners or parents to seek an abortion. It is the second most common reproductive health service: one in three Canadian pregnancy-capable persons will seek abortion in their lifetime[2,14,15,18].
+					`Abortion is <b>legal</b> in Canada, and patients do not require consent from partners or parents to seek an abortion. It is the <b>second most common</b> reproductive health service: one in three Canadian pregnancy-capable persons will seek abortion in their lifetime[2,14,15,18].
 
-        Medication abortion uses medication pills to end a pregnancy. In Canada, the medication abortion pills are packaged and sold as Mifegymiso. It is approved by Health Canada for gestational age up to 63 days, but has been shown to be safe and effective up to 70 days by the Society of Obstetricians and Gynaecologists of Canada and 77 days by the World Health Organization. The counselling and the medication are provided free-of-charge to all patients with provincial health insurance and several categories of federal health insurances. However, it is important to note that patients eligible for healthcare in one province, who attempt to get medication abortion in another province or territory, are covered for counselling but not for the medication itself.
+        Medication abortion uses medication pills to end a pregnancy. In Canada, the medication abortion pills are packaged and sold as Mifegymiso. It is approved by Health Canada for gestational age up to 63 days, but has been shown to be <b>safe and effective</b> up to 70 days by the Society of Obstetricians and Gynaecologists of Canada and 77 days by the World Health Organization. The counselling and the medication are provided <b>free-of-charge</b> to all patients with provincial health insurance and several categories of federal health insurances. However, it is important to note that patients eligible for healthcare in one province, who attempt to get medication abortion in another province or territory, are covered for counselling but not for the medication itself.
 
-        Mifegymiso typically comes in two boxes: a green box containing mifepristone 200 mg (MIFE) and an orange box containing misoprostol 800 mcg (MISO). MIFE helps stop a pregnancy from growing and prepares the body to empty the uterus by softening the cervix and helping the lining of the uterus to break down. MISO causes the cervix to dilate and the uterus to contract, which makes the pregnancy tissues leave the body. It is also used for abortion and for other conditions (e.g., miscarriage, postpartum hemorrhage)[14].`,
+        <b>Mifegymiso</b> typically comes in two boxes: a green box containing mifepristone 200 mg (MIFE) and an orange box containing misoprostol 800 mcg (MISO). MIFE helps stop a pregnancy from growing and prepares the body to empty the uterus by softening the cervix and helping the lining of the uterus to break down. MISO causes the cervix to dilate and the uterus to contract, which makes the pregnancy tissues leave the body. It is also used for abortion and for other conditions (e.g., miscarriage, postpartum hemorrhage)[14].`,
 					assets.EnMifegymisoOverview
 				]
 			}
@@ -1285,15 +1285,15 @@ Schedule a first virtual visit via telephone or video.`
 			content: {
 				type: ['p', 'ul', 'p'],
 				data: [
-					`At the time of this writing, physicians and nurse practitioners in Canada are authorized to prescribe Mifegymiso. Midwives in all provinces and territories, except for Quebec, are not authorized to prescribe Mifegymiso but can provide medication abortion care when working closely with nurse practitioners or physicians.
+					`At the time of this writing, <b>physicians and nurse practitioners</b> in Canada are authorized to prescribe Mifegymiso. <b>Midwives</b> in all provinces and territories, except for Quebec, are not authorized to prescribe Mifegymiso but can provide medication abortion care when working closely with nurse practitioners or physicians.
 
         Providers of medication abortion can be found through:`,
 					`Find medication abortion services portal by Action Canada for Sexual Health and Rights (please click the hyperlink and then select the option “Medical Abortion”)
         The list of abortion clinics by Action Canada for Sexual Health and Rights.
         The Choice Connect Abortion Referral App.`,
-					`Counselling and clinical assessments are required prior to prescribing Mifegymiso. Counselling is to help patients make an informed decision by understanding their options (abortion versus term pregnancy, and medication abortion versus procedural abortion). Clinical assessments are to confirm that the gestational age does not exceed the threshold (63 days by Health Canada, 70 days by the Society of Obstetricians and Gynaecologists of Canada), rule out serious conditions such as ectopic pregnancy and anemia, and determine the need for bloodwork such as Rhesus testing[6].
+					`<b>Counselling and clinical assessments are required prior to prescribing Mifegymiso.</b> Counselling is to help patients make an informed decision by understanding their options (abortion versus term pregnancy, and medication abortion versus procedural abortion). Clinical assessments are to confirm that the gestational age does not exceed the threshold (63 days by Health Canada, 70 days by the Society of Obstetricians and Gynaecologists of Canada), rule out serious conditions such as ectopic pregnancy and anemia, and determine the need for bloodwork such as Rhesus testing[6].
 
-        In cases of virtual or hybrid provision of medication abortion (also called no-touch or low-touch medication abortion), the number of visits is minimized by carrying out counselling, screening and follow- up appointments virtually over the phone or through video. The purpose is to reduce the need for patients to travel long distance or wait for days or weeks to receive abortion. However, the virtual provision of medication abortion may put patients at risk due to the lack of ultrasound screening that can provide accurate assessment of the gestational age or about the presence of ectopic pregnancy. In addition, virtual medication abortion may involve more frequent (phone) follow- up to monitor the symptoms and risk of ongoing pregnancy and ectopic pregnancy, and thus it often requires more clinical resources. For these reasons, whether virtual provision of medication abortion is possible depends on prescribers’ experiences, clinical resources, patients’ needs and patients’ safety[7].`
+        In cases of <b>virtual or hybrid provision of medication abortion</b> (also called no-touch or low-touch medication abortion), the number of visits is minimized by carrying out counselling, screening and follow- up appointments virtually over the phone or through video. The purpose is to <b>reduce the need for patients to travel long distance or wait for days or weeks to receive abortion</b>. However, the virtual provision of medication abortion may put patients at risk due to the lack of ultrasound screening that can provide accurate assessment of the gestational age or about the presence of ectopic pregnancy. In addition, virtual medication abortion may involve more frequent (phone) follow- up to monitor the symptoms and risk of ongoing pregnancy and ectopic pregnancy, and thus it often requires more clinical resources. For these reasons, whether virtual provision of medication abortion is possible depends on prescribers’ experiences, clinical resources, patients’ needs and patients’ safety[7].`
 				]
 			}
 		},
@@ -1303,7 +1303,7 @@ Schedule a first virtual visit via telephone or video.`
 			content: {
 				type: ['p'],
 				data: [
-					`In most cases, pharmacists are in charge of dispensing the medication to patients, but some clinics are also authorized to dispense the medication directly to patients. Specific guidelines by the College of Pharmacies may differ between provinces and territories about whether patients need to be present in- person to pick up the medication, or whether the medication can be delivered to patients via postage services.`
+					`In most cases, <b>pharmacists</b> are in charge of dispensing the medication to patients, but some clinics are also authorized to dispense the medication directly to patients. Specific guidelines by the College of Pharmacies may differ between provinces and territories about whether patients need to be present in- person to pick up the medication, or whether the medication can be delivered to patients via postage services.`
 				]
 			}
 		},
@@ -1315,13 +1315,13 @@ Schedule a first virtual visit via telephone or video.`
 				data: [
 					`Counselling is important to help clients make informed decisions by understanding their options (abortion versus becoming a parent, and medication abortion versus procedural abortion). During the counselling, it is also important to understand clients’ preferences and circumstances to advise the best course of action.
 
-            Medication abortion is suitable for patients who[6]:`,
+            <b>Medication abortion</b> is suitable for patients who[6]:`,
 					`Prefer a non-invasive method.
             Prefer to have an abortion in the comfort of their home.
             Have the confidence of being able to manage the process and side effects at home.
             Are able to take 1 to 3 days off work or other responsibilities to undergo the abortion process.
             Lack means of transportation to travel to the clinic for a procedural abortion (but still have access to emergency services in event of complications).`,
-					'Procedural abortion is suitable for patients who[6]:',
+					'<b>Procedural abortion</b> is suitable for patients who[6]:',
 					`Prefer to have in-person support and monitoring from healthcare professionals at a clinic or hospital.
             Want to have the abortion completed quickly to return to work or other responsibilities.
             Are comfortable with the use of medical instruments and internal exams.
@@ -1355,11 +1355,11 @@ Schedule a first virtual visit via telephone or video.`
 				data: [
 					`Clients who undergo medication abortion are required to have follow-up consultations with their prescribers to confirm the termination of the pregnancy, manage complications, receive counselling on contraception and get emotional support if needed. Clients may also require ultrasound or bloodwork to confirm the completion of the abortion and to rule out the possibility of ectopic pregnancy.
 
-          Mode of follow-up[6]:
+          <b>Mode of follow-up</b>[6]:
 
           In most situations, follow-up consultations are given 7 to 14 days after taking misoprostol (the second medication) but sometimes follow-up can take place as early as 3 days after misoprostol. The consultation can be over the phone or in-person, depending on the circumstances.
 
-          Emotional support[6]:
+          <b>Emotional support[6]</b>:
 
           Emotional response after medication abortion often vary. Some people feel relieved and positive while some feel grief, sadness, or guilt, and have mixed feelings. These emotions are normal, and they may or may not be related to socioeconomic circumstances, the lack of social support, moral discomfort, and family conflict.
 
@@ -1367,7 +1367,7 @@ Schedule a first virtual visit via telephone or video.`
 					`Exhale, a talk-line that provides emotional support, resources and information after abortion.
           All-Options, a talk-line to discuss past or current experience with abortion, adoption and parenting for people in Canada and the United States (1-888-493-0092).`,
 					'Post-abortion Contraception:',
-					`People taking medication abortion can return to fertility rapidly and hence should consider taking contraceptives.`,
+					`People taking medication abortion can <b>return to fertility</b> rapidly and hence should consider taking contraceptives.`,
 					assets.EnPostabortionContraception
 				]
 			}
@@ -1448,15 +1448,15 @@ Schedule a first virtual visit via telephone or video.`
 
         The background information is from the National Library of Medicine LactMed database and from the National Abortion Federation Protocol for Mifepristone / misoprostol for Early Medical Abortion, in case you want the details. Hope this is helpful. Sheila Dunn.
 
-        Mifepristone Summary of Use during Lactation (NLM):
+        <b><i>Mifepristone Summary of Use during Lactation (NLM):</b></i>
 
         Limited information indicates that breastfeeding need not be interrupted after a single dose of mifepristone. A dose of 200 mg might be preferable to a 600 mg dose in nursing mothers
 
-        Drug Levels:
+        <b>Drug Levels:</b>
 
         Maternal Levels. Twelve women (most 6 to 12 months postpartum) who had undergone a medical abortion using mifepristone and misoprostol provided milk samples for up to 5 days after the procedure for measurement of mifepristone. In the 2 women who received a single dose of 200 mg orally, mifepristone was undetectable (<5.6 mcg/L) in breastmilk at all times. Among the 10 women who received a single oral dose of 600 mg, average mifepristone breastmilk levels were 172 mcg/L on day 1 (n = 9); 66 mcg/L on day 2 (n = 9); 31 mcg/L on day 3 (n = 10); 24 mcg/L on day 4 (n = 4); and, 25 mcg/L on day 5 (n = 3). Breastmilk levels of mifepristone were highest in the samples collected between 6 and 9 hours after drug administration. Samples collected between 9 and 15 hours after the dose had much lower mifepristone levels. The authors estimated that a fully breastfed infant would receive a weight-adjusted dosage of 0.5% of the maternal dosage. They suggested that breastfeeding need not be interrupted after a single dose of mifepristone and that a dose of 200 mg might be preferable to a 600 mg dose in nursing mothers[26].
 
-        Misoprostol Summary:
+        <b><i>Misoprostol Summary:</b></i>
 
         Misoprostol is a prostaglandin E1 analogue. Prostaglandin E1 and other prostaglandins appear normally in colostrum and milk[27-29]. Because of the low levels of misoprostol in breastmilk, amounts ingested by the infant are small and would not be expected to cause any adverse effects in breastfed infants. No special precautions are required.
 
@@ -1487,7 +1487,8 @@ Schedule a first virtual visit via telephone or video.`
 				type: ['p'],
 				data: [
 					`Q: Is there an interaction between methadone and mifepristone?
-        A: Bottom Line:
+					
+        <i>A: Bottom Line:</i>
 
         Post-marketing surveillance of mifepristone use in numerous countries for the past 25 years has not raised concerns about this interaction. Although there are limited trials and published literature on this drug interaction, the precautionary principle states that women using both drugs simultaneously be adequately informed, accompanied during the abortion process and followed for the occurrence of adverse events and completion of the abortion. Even if arrhythmia were not a potential side effect based on pharmacodynamics, it may emerge as an adverse drug reaction as mifepristone penetrates the population more widely including opioid/opiate dependent women.
 
