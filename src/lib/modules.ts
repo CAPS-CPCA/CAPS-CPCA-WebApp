@@ -1487,7 +1487,7 @@ Schedule a first virtual visit via telephone or video.`
 				type: ['p'],
 				data: [
 					`Q: Is there an interaction between methadone and mifepristone?
-					
+
         <i>A: Bottom Line:</i>
 
         Post-marketing surveillance of mifepristone use in numerous countries for the past 25 years has not raised concerns about this interaction. Although there are limited trials and published literature on this drug interaction, the precautionary principle states that women using both drugs simultaneously be adequately informed, accompanied during the abortion process and followed for the occurrence of adverse events and completion of the abortion. Even if arrhythmia were not a potential side effect based on pharmacodynamics, it may emerge as an adverse drug reaction as mifepristone penetrates the population more widely including opioid/opiate dependent women.
@@ -1529,13 +1529,13 @@ Schedule a first virtual visit via telephone or video.`
 				type: ['h2', 'ul', 'h2', 'ul'],
 				data: [
 					'Efficacité:',
-					`Le MIFÉ / MISO est très efficace. Le risque de poursuite de la grossesse est de 0,9 % pour les grossesses jusqu’à 49 jours d’âge gestationnel et de 3,1 % pour les grossesses jusqu’à 70 jours d’âge gestationnel[10].
-          Selon le protocole de la SOGC pour l’avortement médicamenteux par télémédecine, la personne doit prendre une première dose de MISO par voie buccale ou vaginale 24 à 48 heures après avoir pris de la MIFÉ[7].
-          De plus, les personnes dont l’âge gestationnel est de 63 jours ou moins doivent prendre la deuxième dose de MISO si aucun saignement ne survient dans les 24 heures suivant la première dose de MISO ou selon les instructions du clinicien. Les personnes dont l’âge gestationnel est supérieur à 63 jours doivent prendre une deuxième dose de MISO 4 heures après la première dose[7].`,
+					`Le MIFÉ / MISO est <b>très efficace</b>. Le risque de poursuite de la grossesse est de 0,9 % pour les grossesses jusqu’à 49 jours d’âge gestationnel et de 3,1 % pour les grossesses jusqu’à 70 jours d’âge gestationnel[10].
+          Selon le protocole de la SOGC pour l’avortement médicamenteux par télémédecine, la personne doit prendre une première dose de MISO par voie buccale ou vaginale <b>24 à 48 heures</b> après avoir pris de la MIFÉ[7].
+          De plus, les personnes dont l’âge gestationnel est de 63 jours ou moins doivent prendre <b>la deuxième dose de</b> MISO si aucun saignement ne survient dans les 24 heures suivant la première dose de MISO ou selon les instructions du clinicien. Les personnes dont l’âge gestationnel est supérieur à 63 jours doivent prendre une deuxième dose de MISO 4 heures après la première dose[7].`,
 					'Effets secondaires et complications[10]:',
-					`Très fréquent (≥ 10 %): nausées, vomissements, diarrhée, étourdissements, maux de tête, frissons/fièvre, faiblesse, fatigue, inconfort gastrique, douleurs abdominales, saignements vaginaux, microrragies, contractions ou crampes utérines.
-          Fréquent (1-10 %): évanouissement, crampes gastro-intestinales légères ou modérées, saignements post-avortement prolongés, endométrite, sensibilité des seins, saignements abondants (pouvant ou non nécessiter un avortement par instruments).
-          Peu fréquent (0,1-1 %): arythmie, choc hémorragique, salpingite, saignements abondants nécessitant des liquides IV ou une transfusion sanguine, infection, bouffées de chaleur, hypotension, bronchospasme, éruption cutanée / prurit.`
+					`<b>Très fréquent (≥ 10 %):</b> nausées, vomissements, diarrhée, étourdissements, maux de tête, frissons/fièvre, faiblesse, fatigue, inconfort gastrique, douleurs abdominales, saignements vaginaux, microrragies, contractions ou crampes utérines.
+          <b>Fréquent (1-10 %):</b> évanouissement, crampes gastro-intestinales légères ou modérées, saignements post-avortement prolongés, endométrite, sensibilité des seins, saignements abondants (pouvant ou non nécessiter un avortement par instruments).
+          <b>Peu fréquent (0,1-1 %):</b> arythmie, choc hémorragique, salpingite, saignements abondants nécessitant des liquides IV ou une transfusion sanguine, infection, bouffées de chaleur, hypotension, bronchospasme, éruption cutanée / prurit.`
 				]
 			}
 		},
@@ -1546,7 +1546,7 @@ Schedule a first virtual visit via telephone or video.`
 				type: ['h2', 'p', 'h2', 'ul', 'h2', 'p', 'h2', 'p', 'h2', 'p'],
 				data: [
 					'Indication:',
-					`MIFE / MISO est indiqué par Santé Canada pour l’interruption de grossesse jusqu’à 63 jours à compter de la date de début des dernières menstruations (DDM) dans un cycle présumé de 28 jours. La SOGC indique une utilisation sécuritaire jusqu’à 70 jours des DDM. Il n’y a pas de limite inférieure absolue d’âge gestationnel[5].`,
+					`MIFE / MISO est indiqué par Santé Canada pour l’interruption de grossesse jusqu’à 63 jours à compter de la date de début des dernières menstruations (DDM) dans un cycle présumé de 28 jours. La SOGC indique une utilisation sécuritaire jusqu’à <b>70 jours</b> des DDM. Il n’y a pas de limite inférieure absolue d’âge gestationnel[5].`,
 					'Contre-indications[6]:',
 					`Grossesse ectopique
           Insuffisance surrénalienne chronique
@@ -1718,7 +1718,7 @@ Schedule a first virtual visit via telephone or video.`
 				type: ['left', 'p', 'ul', 'p'],
 				data: [
 					assets.Ectopic,
-					`<b>La grossesse ectopique (GE)</b> est rare. Elle survient dans 1 ou 2 grossesses sur 100 dans la population générale et le taux est systématiquement plus faible chez les personnes qui ont reours à l’avortement. Il est recommandé de prescrire une échographie aux personnes qui présentent des facteurs de risque, des signes ou des symptômes de GE.[6].
+					`<b>La grossesse ectopique (GE) est rare. Elle survient dans 1 ou 2 grossesses sur 100 dans la population générale et le taux est systématiquement plus faible chez les personnes qui ont reours à l’avortement. Il est recommandé de prescrire une échographie aux personnes qui présentent des facteurs de risque, des signes ou des symptômes de GE.[6].</b>
 
 
         <b>Les principaux facteurs de risque, signes et symptômes de la GE comprennent</b>[6]:`,
@@ -1744,9 +1744,9 @@ Schedule a first virtual visit via telephone or video.`
 				data: [
 					`Les personnes qui ont une grossesse de localisation indéterminée (GLI) et demandent un avortement par médicaments (AM) doivent bénéficier d’un avortement sans délai, à condition qu’elles ne présentent aucun symptôme clinique de grossesse ectopique (GE). L’incapacité d’identifier une grossesse intra-utérine ne devrait pas retarder l’AM[6].
 
-          Si le taux de βhCG sérique est > 2000 UI/L et qu’aucun sac gestationnel intra-utérin n’est visualisé à l’échographie[6]:`,
+          <b>Si le taux de βhCG sérique est > 2000 UI/L et qu’aucun sac gestationnel intra-utérin n’est visualisé à l’échographie</b>[6]:`,
 					`Une évaluation plus approfondie est nécessaire.`,
-					`En l’absence de facteurs de risque de GE, si le taux de βhCG est ≤ 2 000 UI/L ou si un sac gestationnel probable est présent sans vésicule vitelline ni pôle fœtal[6]:`,
+					`<b>En l’absence de facteurs de risque de GE, si le taux de βhCG est ≤ 2 000 UI/L ou si un sac gestationnel probable est présent sans vésicule vitelline ni pôle fœtal</b>[6]:`,
 					`Les personnes peuvent recevoir un AM.
           Lorsque ces personnes reçoivent un AM, elles doivent être informées des risques et des symptômes de GE, ainsi que la personne à contacter en cas d’urgence.
           Un suivi de la βhCG dans les 7 jours est recommandée en cas de GLI. Une réduction de 50 % est attendue 3 jours après l’administration de MIFÉ (ou 24 à 48 heures après le MISO) ou de 80 % entre 7 et 14 jours après l’administration de MIFÉ / MISO; sinon, la possibilité d’une GE doit être éliminée.`
@@ -1761,7 +1761,7 @@ Schedule a first virtual visit via telephone or video.`
 				data: [
 					`Les lignes directrices sur le dépistage du Rh ont été mises à jour.
 
-          Selon les lignes directrices de la SOGC sur la prévention de l’allo-immunisation RhD publiées en 2024, l’administration de 300 μg d’immunoglobuline Rho(D) est suggérée aux personnes Rh D-négatives non sensibilisées qui ont subi une menace d’avortement, un avortement spontané ou provoqué après 12 semaines de gestation.
+          Selon les lignes directrices de la SOGC sur la prévention de l’allo-immunisation RhD publiées en 2024, l’administration de 300 μg d’immunoglobuline Rho(D) est suggérée aux personnes Rh D-négatives non sensibilisées qui ont subi une menace d’avortement, un avortement spontané ou provoqué <b>après 12 semaines de gestation</b>.
 
           Auparavant, en 2022, la Society of Family Planning et l’Organisation mondiale de la santé (OMS) ont également recommandé de suspendre le test et l’administration du Rh avant 12 semaines de gestation pour les personnes subissant un avortement par médicaments (AM), un avortement spontané ou un avortement par aspiration utérine[8,20].`
 				]
@@ -1808,7 +1808,7 @@ Schedule a first virtual visit via telephone or video.`
 					`Une baisse d’au moins 50 % par rapport à la valeur initiale 3 jours après l’administration de MIFÉ (ou 24 et 48 heures après l’administration de MISO) est fortement indicative d’un avortement complet.
           Une baisse de 80% entre 7 et 14 jours après l’administration de MIFÉ / MISO confirme un avortement complet.
           Si la βhCG chute < 80 % entre le jour 7 et le jour 14, on peut prescrire une échographie ou répéter le test dans quelques jours. Une échographie doit être prescrite si 14 jours se sont écoulés et qu'une diminution de 80 % n'a pas été atteinte.`,
-					`<b>Échographie</b>[6]: L’échographie fournit une preuve définitive d’un AM complet, mais rien ne prouve que cette technique est supérieure aux autres méthodes. L’échographie est recommandée dans les cas où le résultat est incertain en fonction de l’histoire clinique ou en cas de symptômes tels qu’une douleur inattendue, des saignements abondants prolongés ou insuffisants.`
+					`<b>Échographie</b>[6]: L’échographie fournit une preuve définitive d’un AM complet, <b>mais rien ne prouve que cette technique est supérieure aux autres méthodes.</b> L’échographie est recommandée dans les cas où le résultat est incertain en fonction de l’histoire clinique ou en cas de symptômes tels qu’une douleur inattendue, des saignements abondants prolongés ou insuffisants.`
 				]
 			}
 		},
@@ -1855,7 +1855,7 @@ Schedule a first virtual visit via telephone or video.`
 				data: [
 					`En raison du retour rapide à la fertilité après l’avortement par médicaments (AM), il est conseillé de choisir une méthode contraceptive dès les premières visites[6].
 
-        Les personnes recherchant plus d’informations sur les options de contraception peuvent être orientées vers :`,
+        Les personnes recherchant <b>plus d’informations sur les options de contraception</b> peuvent être orientées vers :`,
 					`Ça se planifie du site Le Sexe et moi, un outil d’information santé en ligne pour déterminer la méthode contraceptive appropriée.
           Contraception d’Action Canada pour la santé et les droits sexuels, un site Web des informations sur la contraception au Canada.`,
 					`Les options de contraception et les considérations particulières comprennent:`,
@@ -1871,7 +1871,7 @@ Schedule a first virtual visit via telephone or video.`
 				data: [
 					`<b>L’avortement par médicaments</b> (AM) virtuel ou hybride, également appelé sans contact ou à faible contact, est une formule dans laquelle certains ou tous les rendez-vous sont effectués virtuellement par téléphone et/ou vidéo en réduisant ou en éliminant les analyses sanguines et les échographies. L’objectif est de réduire le risque pour les personnes de contracter des infections transmissibles (comme dans le cas du COVID-19) ou de réduire la distance à parcourir ou des délais avant d’avoir accès à l’avortement.
 
-          Comme expliqué précédement, les soins virtuels et hybrides de l’AM peuvent être offerts dans <b>un contexte de ressources limitées et nécessitent un équilibre entre l’expérience du prescripteur, la sécurité de la personne et ses besoins</b>.
+          Comme expliqué précédement, les soins virtuels et hybrides de l’AM peuvent être offerts dans un contexte de ressources limitées et nécessitent <b>un équilibre entre l’expérience du prescripteur, la sécurité de la personne et ses besoins</b>.
 
           Lorsqu’ils reçoivent des demandes d’avortement par médicaments virtuel ou hybride, les prescripteurs doivent[7]:`,
 					`Confirmer l’identité de la personne et s’assurer qu’elle peut discuter de façon confidentielle et en sécurité.
@@ -1940,7 +1940,7 @@ Schedule a first virtual visit via telephone or video.`
 			content: {
 				type: ['p', 'h2', 'p', 'h2', 'p'],
 				data: [
-					`Les informations ci-dessous sont en attente de vérification.`,
+					`<i>Les informations ci-dessous sont en attente de vérification.</i>`,
 					'Gynécologie',
 					`Première visite: 03.08A Consultation complète – $111.06
             Visite de suivi: 03.07B Consultation de suivi – $62.24`,
@@ -1956,7 +1956,7 @@ Schedule a first virtual visit via telephone or video.`
 			content: {
 				type: ['p', 'h2', 'p', 'h2', 'p'],
 				data: [
-					`Les informations ci-dessous sont mises à jour en mars 2024.`,
+					`<i>Les informations ci-dessous sont mises à jour en mars 2024.</i>`,
 					'Gynécologie',
 					`Première visite: 14545 Avortement par médicaments – $170.95
           Visite de suivi: 4012 Consultation limitée – $85.49
@@ -1967,7 +1967,7 @@ Schedule a first virtual visit via telephone or video.`
           Télésanté: 14545 Même code pour la consultation – $165.97
           13437 Suivi – $31.84
 
-        Remarque: Pour la télésanté, les méthodes de soins virtuels peuvent inclure le téléphone, la vidéo ou la plateforme provinciale de télésanté, qui sont toutes également facturables pour le moment. Il n’est pas nécessaire d’avoir une relation médecin-patient continue pour que le médecin puisse soumettre une demande d’avortement par médicaments par télésanté.`
+        <b>Remarque:</b> Pour la télésanté, les méthodes de soins virtuels peuvent inclure le téléphone, la vidéo ou la plateforme provinciale de télésanté, qui sont toutes également facturables pour le moment. Il n’est pas nécessaire d’avoir une relation médecin-patient continue pour que le médecin puisse soumettre une demande d’avortement par médicaments par télésanté.`
 				]
 			}
 		},
@@ -1977,7 +1977,7 @@ Schedule a first virtual visit via telephone or video.`
 			content: {
 				type: ['p', 'h2', 'p', 'h2', 'p'],
 				data: [
-					`Les informations ci-dessous sont mises à jour en mars 2024.`,
+					`<i>Les informations ci-dessous sont mises à jour en mars 2024.</i>`,
 					'Gynécologie',
 					`Première visite: 8428 Gestion médicale de l’interruption volontaire de grossesse, comprenant l’examen, la gestion et le suivi de la personne prenant du misoprostol. – $171.00
 8499 Examen gynécologique complet excluant le test Pap – $125.61
@@ -1987,29 +1987,29 @@ Visite de suivi: 8505 Antécédents et examen régionaux avec examen gynécologi
 8499 Examen gynécologique complet excluant le test Pap – $125.61
 Visite de suivi: 8471 Visite intermédiaire régionale ou visite suivante avec examen gynécologique excluant le test Pap – $54.16
 
-        Remarque: Il n’y a aucune précision quant à savoir si les codes sont spécifiques aux spécialistes ou aux soins primaires dans le manuel de facturation du Manitoba. Ainsi, les fournisseurs devraient examiner les informations et appliquer les règles de leurs codes de facturation.`
+        <b>Remarque:</b> Il n’y a aucune précision quant à savoir si les codes sont spécifiques aux spécialistes ou aux soins primaires dans le manuel de facturation du Manitoba. Ainsi, les fournisseurs devraient examiner les informations et appliquer les règles de leurs codes de facturation.`
 				]
 			}
 		},
 		{
 			id: 'B4',
-			title: 'New Brunswick',
+			title: 'Nouveau Brunswick',
 			content: {
 				type: ['p', 'h2', 'p', 'h2', 'p'],
 				data: [
-					`Les informations ci-dessous sont en attente de vérification.`,
+					`<i>Les informations ci-dessous sont en attente de vérification.</i>`,
 					'Gynécologie',
 					`Première visite: 54 Consultation majeure ou régionale – CA$95.91
           9015 Gestion médicale d’une grossesse non-viable/non désirée, y compris le suivi de la βhCG, à ajouter à la visite ou à la consultation initiale – $136.22
           Visite de suivi: 49 Examen régional – $52.82
-          Télésanté: Les mêmes codes, mais la code du site où se trouve physiquement le patient, doivent être enregistrés sur la soumission de la demande de règlement. Lors de la soumission d’une demande de télémédecine, le chiffre 8 doit être écrit devant le code du site fourni afin de préciser que le service a été rendu par télémédecine.
+          Télésanté: <b>Les mêmes codes</b>, mais la code du site où se trouve physiquement le patient, doivent être enregistrés sur la soumission de la demande de règlement. Lors de la soumission d’une demande de télémédecine, le chiffre 8 doit être écrit devant le code du site fourni afin de préciser que le service a été rendu par télémédecine.
           8717 Présence – 1ère personne vue, premières 15 minutes ou partie de, 40 unités.
           8718 Ajouter – par 15 minutes ou partie de, 20 unités.`,
 					'Premiers soins',
 					`Première visite: 1 visite du bureau – $23.36
           9142 Gestion médicale d’une grossesse non-viable/non désirée, y compris le suivi de la βhCG, à ajouter à la visite ou à la consultation initiale – $74.48
           Visite de suivi: 1 visite du bureau – $23.36
-          Télésanté: Les mêmes codes, ainsi que le code du site où se trouve physiquement le patient, doivent être enregistrés sur la soumission de la demande de règlement. Lors de la soumission d’une demande de télémédecine, le chiffre 8 doit être écrit devant le code du site.
+          Télésanté: <b>Les mêmes codes</b>, ainsi que le code du site où se trouve physiquement le patient, doivent être enregistrés sur la soumission de la demande de règlement. Lors de la soumission d’une demande de télémédecine, le chiffre 8 doit être écrit devant le code du site.
           8717 Présence – 1ère personne vue, premières 15 minutes ou partie de, 40 unités.
           8718 Ajouter – par 15 minutes ou partie de, 20 unités.`
 				]
@@ -2021,13 +2021,13 @@ Visite de suivi: 8471 Visite intermédiaire régionale ou visite suivante avec e
 			content: {
 				type: ['p', 'h2', 'p', 'h2', 'p'],
 				data: [
-					`Les informations ci-dessous sont mises à jour en mars 2024.`,
+					`<i>Les informations ci-dessous sont mises à jour en mars 2024.</i>`,
 					'Gynécologie',
 					`Visite initiale et visite de suivi: 54607 Avortement par médicaments – $187.49
-          Frais complet incluant tous les services liés à l’avortement par médicaments, y compris la consultation et/ou la visite au cours de laquelle le médicament est prescrit, le counseling, la commande et/ou la réalisation et l’interprétation d’analyses de laboratoire et d’imagerie diagnostique, ainsi que toute communication ou visite de suivi.`,
+          <i>Frais complet incluant tous les services liés à l’avortement par médicaments, y compris la consultation et/ou la visite au cours de laquelle le médicament est prescrit, le counseling, la commande et/ou la réalisation et l’interprétation d’analyses de laboratoire et d’imagerie diagnostique, ainsi que toute communication ou visite de suivi.</i>`,
 					'Premiers soins',
 					`Visite initiale et visite de suivi: 54607 Avortement par médicaments – $187.49
-          Frais complet incluant tous les services liés à l’avortement par médicaments, y compris la consultation et/ou la visite au cours de laquelle le médicament est prescrit, le counseling, la commande et/ou la réalisation et l’interprétation d’analyses de laboratoire et d’imagerie diagnostique, ainsi que toute communication ou visite de suivi.`
+          <i>Frais complet incluant tous les services liés à l’avortement par médicaments, y compris la consultation et/ou la visite au cours de laquelle le médicament est prescrit, le counseling, la commande et/ou la réalisation et l’interprétation d’analyses de laboratoire et d’imagerie diagnostique, ainsi que toute communication ou visite de suivi.</i>`
 				]
 			}
 		},
@@ -2037,20 +2037,20 @@ Visite de suivi: 8471 Visite intermédiaire régionale ou visite suivante avec e
 			content: {
 				type: ['p', 'h2', 'p', 'h2', 'p'],
 				data: [
-					`Les informations ci-dessous sont en attente de vérification.`,
+					`<i>Les informations ci-dessous sont en attente de vérification.</i>`,
 					'Gynécologie',
 					`Visite initiale et visite de suivi: OB-025 Avortement par médicaments de gestation de moins de 7 semaines – comprend toutes les visites, échographies et injections – $361.93
           Télésanté: TE-001 Consultation de télésanté par un consultant utilisant la communication audio-vidéo-données – $180.97
           TE-002 Consultation en télésanté – par 15 minutes – maximum de 1,5 heures par séance – $54.29
           TE-004 Consultation au service des urgences des communautés périphériques – CA$18.09
-          N’a pas besoin d’être votre propre client.`,
+          <i>N’a pas besoin d’être votre propre client.</i>`,
 					'Premiers soins',
 					`Première visite: GP-001 Première visite nécessitant une évaluation générale pour une nouvelle maladie – $102.35
           Visite de suivi: GP-002 Visites suivantes du bureau autre qu’une simple visite – $45.48
           Télésanté: TE-001 Consultation de télésanté par un consultant utilisant la communication audio-vidéo-donnée – $180.97
           TE-002 Consultation en télésanté – par 15 minutes – maximum de 1,5 heures par séance – $54.29
           TE-004 Consultation au service des urgences des communautés périphériques – CA$18.09
-          N’a pas besoin d’être votre propre client.`
+          <i>N’a pas besoin d’être votre propre client.</i>`
 				]
 			}
 		},
@@ -2060,7 +2060,7 @@ Visite de suivi: 8471 Visite intermédiaire régionale ou visite suivante avec e
 			content: {
 				type: ['p', 'h2', 'p', 'h2', 'p'],
 				data: [
-					`Les informations ci-dessous sont mises à jour en mars 2024.`,
+					`<i>Les informations ci-dessous sont mises à jour en mars 2024.</i>`,
 					'Gynécologie',
 					`Première visite: 3.03V Avortement par médicaments / Interruption de grossesse précoce – 67.03 unités / $185.00
           Visite de suivi: 3.03 Visites suivantes – 13 unités / $35.88
@@ -2086,7 +2086,7 @@ Visite de suivi: 8471 Visite intermédiaire régionale ou visite suivante avec e
 			content: {
 				type: ['p', 'h2', 'p', 'h2', 'p'],
 				data: [
-					`Les informations ci-dessous sont mises à jour en mars 2024.`,
+					`<i>Les informations ci-dessous sont mises à jour en mars 2024.</i>`,
 					'En personne:',
 					`Première visite: A920 Gestion médicale de la grossesse précoce – service initial – $161.15
           Visite de suivi: A921 Gestion médicale de la grossesse précoce – Visite de suivi (limitée à deux par personne par grossesse) – $36.85`,
@@ -2096,7 +2096,7 @@ Visite de suivi: 8471 Visite intermédiaire régionale ou visite suivante avec e
           A007 – $37.95
           A102 – $15.00
 
-          Remarques: Si vous avez facturé le A920 pour la visite initiale, vous avez établi une relation et pour le suivi, vous pouvez utiliser le A921 (vidéo seulement) ou le A007 (téléphone). Les services de soins virtuels fournis dans les 24 mois suivant l’avortement par médicaments peuvent être considérés comme des services de soins virtuels complets car ils impliquent une relation patient-médecin existante/continue. Si vous ne rencontrez pas les patients lors de la première visite (c’est-à-dire que vous ne facturez pas le A920 pour la première visite et que vous n’avez donc pas de relation préétablie avec le patient), vous utiliserez le A102 pour un suivi téléphonique, qui rapporte $15.00.`
+          <b>Remarques:</b> Si vous avez facturé le A920 pour la visite initiale, vous avez établi une relation et pour le suivi, vous pouvez utiliser le A921 (vidéo seulement) ou le A007 (téléphone). Les services de soins virtuels fournis dans les 24 mois suivant l’avortement par médicaments peuvent être considérés comme des services de soins virtuels complets car ils impliquent une relation patient-médecin existante/continue. Si vous ne rencontrez pas les patients lors de la première visite (c’est-à-dire que vous ne facturez pas le A920 pour la première visite et que vous n’avez donc pas de relation préétablie avec le patient), vous utiliserez le A102 pour un suivi téléphonique, qui rapporte $15.00.`
 				]
 			}
 		},
@@ -2106,7 +2106,7 @@ Visite de suivi: 8471 Visite intermédiaire régionale ou visite suivante avec e
 			content: {
 				type: ['p', 'h2', 'p', 'h2', 'p'],
 				data: [
-					`Les informations ci-dessous sont en attente de vérification.`,
+					`<i>Les informations ci-dessous sont en attente de vérification.</i>`,
 					'Gynécologie',
 					`Première visite: 6010 Avortement thérapeutique – $181.49
           Visite de suivi: 0762 Consultation de suivi – $58.38
@@ -2124,7 +2124,7 @@ Visite de suivi: 8471 Visite intermédiaire régionale ou visite suivante avec e
 			content: {
 				type: ['p', 'h2', 'p', 'h2', 'p'],
 				data: [
-					`Les informations ci-dessous sont mises à jour en mars 2024.`,
+					`<i>Les informations ci-dessous sont mises à jour en mars 2024.</i>`,
 					'Gynécologie',
 					`Première visite: 15850 Évaluation globale pour interruption d’une grossesse (< 63 jours) – $168.90
           15852 Examen d’ultrasonographie – $60.95
@@ -2135,14 +2135,14 @@ Visite de suivi: 8471 Visite intermédiaire régionale ou visite suivante avec e
           – 15313 Bureau – $139.50
           – 15407 CLSC – $20.00
           – 15314 Hôpital – $104.60
-          Examen d’ultrasonographie
+          <b>Examen d’ultrasonographie</b>
           – 15315 Bureau – $38.15
           – 15316 Hôpital – $13.10
           Visite de suivi: Suivi interruption de grossesse
           – 15317 Bureau – $39.25
           – 15408 CLSC – $1.50
           – 15318 Hôpital – $29.45
-          Examen d’ultrasonographie
+          <b>Examen d’ultrasonographie</b>
           – 15319 Bureau – $33.80
           – 15320 Hôpital – $8.75`
 				]
@@ -2154,7 +2154,7 @@ Visite de suivi: 8471 Visite intermédiaire régionale ou visite suivante avec e
 			content: {
 				type: ['p', 'h2', 'p', 'h2', 'p', 'h2', 'p'],
 				data: [
-					`Les informations ci-dessous sont mises à jour en mars 2024.`,
+					`<i>Les informations ci-dessous sont mises à jour en mars 2024.</i>`,
 					'Gynécologie',
 					`Première visite: 150B Gestion médicale de l’interruption de grossesse précoce – comprend 5 jours de gestion médicale continue – $170
           Visite de suivi: 11P Consultation de suivi – $41.90
@@ -2162,14 +2162,14 @@ Visite de suivi: 8471 Visite intermédiaire régionale ou visite suivante avec e
 					'Premiers soins',
 					`Première visite: 150B Gestion médicale de l’interruption de grossesse précoce – comprend 5 jours de gestion médicale continue – $170
           Visite de suivi: 5-B Consultation de suivi – $39.80`,
-					'Telehealth',
+					'Télésanté',
 					`Première visite: 732A pour tout patient soigné via une liaison vidéo de télémédecine agréée – $31.40
           840B et 841B – Counseling – pour les cliniciens qui ne disposent pas d’une configuration de liaison vidéo telle qu’une consultation téléphonique.
           840 est un conseil virtuel pendant les 15 premières minutes et 841B est pour les 15 minutes suivantes – $33.75
           Visite de suivi: 734A pour tout patient soigné à l’aide d’une liaison vidéo de télémédecine approuvée (maximum une par jour pour tous les patients) – $12.50
           805B – Évaluation partielle virtuelle – pour les cliniciens qui ne disposent pas d’une configuration de liaison vidéo telle qu’un suivi téléphonique – $31.85
 
-          Remarques: La Saskatchewan dispose d’un code désigné pour l’avortement en personne, mais pas d’un code virtuel, de sorte que les prestataires peuvent utiliser les codes génériques utilisés pour les applications régulières de télémédecine pour les soins primaires.`
+          <b>Remarques:</b> La Saskatchewan dispose d’un code désigné pour l’avortement en personne, mais pas d’un code virtuel, de sorte que les prestataires peuvent utiliser les codes génériques utilisés pour les applications régulières de télémédecine pour les soins primaires.`
 				]
 			}
 		},
@@ -2179,7 +2179,7 @@ Visite de suivi: 8471 Visite intermédiaire régionale ou visite suivante avec e
 			content: {
 				type: ['p', 'h2', 'p', 'h2', 'p'],
 				data: [
-					`Les informations ci-dessous sont en attente de vérification.`,
+					`<i>Les informations ci-dessous sont en attente de vérification.</i>`,
 					'Gynécologie',
 					`Première visite: 4116 Avortement par médicaments – $223.80
           Visite de suivi: 4012 Consultation limitée – $104.40
@@ -2196,18 +2196,18 @@ Visite de suivi: 8471 Visite intermédiaire régionale ou visite suivante avec e
 			content: {
 				type: ['p', 'ul', 'p', 'ul'],
 				data: [
-					`L’avortement est légal au Canada et personne n’a besoin du consentement de son partenaire ou d’un parent pour avorter. Il s’agit du deuxième service de santé reproductive le plus répandu au Canada: le tiers des personnes ayant la capacité d’être enceinte auront recours à un avortement au cours de leur vie.[1,2].
+					`L’avortement est <b>légal</b> au Canada et personne n’a besoin du consentement de son partenaire ou d’un parent pour avorter. Il s’agit du <b>deuxième service de santé reproductive le plus répandu</b> au Canada: le tiers des personnes ayant la capacité d’être enceinte auront recours à un avortement au cours de leur vie.[1,2].
 
           L’avortement par médicaments utilise des pilules médicamenteuses pour mettre fin à une grossesse. Au Canada, les pilules abortives sont commercialisées et vendues sous le nom de Mifé-Miso.`,
-					`Le Mifé-Miso est approuvé par Santé Canada pour l’âge gestationnel jusqu’à 63 jours, mais La SOGC a démontré qu’il est sécuritaire et efficace jusqu’à 70 jours.
-          Il est fourni gratuitement à toutes les personnes bénéficiant d’une assurance maladie provinciale et de plusieurs catégories d’assurance maladie fédérale.
+					`Le Mifé-Miso est approuvé par Santé Canada pour l’âge gestationnel jusqu’à 63 jours, mais La SOGC a démontré qu’il est <b>sécuritaire et efficace</b> jusqu’à 70 jours.
+          Il est fourni <b>gratuitement</b> à toutes les personnes bénéficiant d’une assurance maladie provinciale et de plusieurs catégories d’assurance maladie fédérale.
           Les personnes admissibles aux soins de santé dans une province qui tentent d’accéder au Mifé-Miso dans une autre province ou territoire sont admissibles au counseling, aux évaluations et au suivi, mais pas au médicament lui-même.
-          Il peut être prescrit lors de visites en personne ou virtuelles, ou d’une combinaison des deux.`,
-					`Champ de pratique: Au moment de rédiger ces lignes, les médecins et les infirmières praticiennes spécialisées au Canada sont autorisées à prescrire le Mifé-Miso. Dans la plupart des cas, les pharmaciens sont responsables de la distribution des médicaments, mais certaines cliniques sont également autorisées à les fournir directement. À l’exception du Québec, les sages-femmes ne sont actuellement pas autorisées à prescrire du Mifé-Miso, mais elles peuvent fournir des soins d’avortement par médicaments en étroite collaboration avec des infirmières praticiennes spécialisées ou des médecins.
+          Il peut être prescrit lors de <b>visites en personne</b> ou <b>virtuelles</b>, ou d’une combinaison des deux.`,
+					`<b>Champ de pratique:</b> Au moment de rédiger ces lignes, les médecins et les infirmières praticiennes spécialisées au Canada sont autorisées à prescrire le Mifé-Miso. Dans la plupart des cas, les pharmaciens sont responsables de la distribution des médicaments, mais certaines cliniques sont également autorisées à les fournir directement. À l’exception du Québec, les sages-femmes ne sont actuellement pas autorisées à prescrire du Mifé-Miso, mais elles peuvent fournir des soins d’avortement par médicaments en étroite collaboration avec des infirmières praticiennes spécialisées ou des médecins.
 
-          Exigences spécifiques à la province: Les professionnels de la santé devraient vérifier les lignes directrices spécifiques et le champ d’exercise de leur province ou territoire. Par exemple, les exigences des provinces peuvent différer quant à savoir qui peut récupérer le médicament et si les pharmaciens doivent s’inscrire auprès de Celopharma, le fabricant du Mifé-Miso. Cliquez ici pour voir le résumé de certains règlements spécifiques à la province pour la distribution du Mifé-Miso.
+          <b>Exigences spécifiques à la province:</b> Les professionnels de la santé devraient vérifier les lignes directrices spécifiques et le champ d’exercise de leur province ou territoire. Par exemple, les exigences des provinces peuvent différer quant à savoir qui peut récupérer le médicament et si les pharmaciens doivent s’inscrire auprès de Celopharma, le fabricant du Mifé-Miso. Cliquez ici pour voir le résumé de certains règlements spécifiques à la province pour la distribution du Mifé-Miso.
 
-          Exigence de formation: Il n’est plus nécessaire de suivre une formation avant de prescrire ou de délivrer le Mifé-Miso, mais les professionnels de la santé peuvent trouver utiles les cours en ligne ci-dessous pour en savoir plus sur les soins d’avortement par médicaments.`,
+          <b>Exigence de formation:</b> Il n’est plus nécessaire de suivre une formation avant de prescrire ou de délivrer le Mifé-Miso, mais les professionnels de la santé peuvent trouver utiles les cours en ligne ci-dessous pour en savoir plus sur les soins d’avortement par médicaments.`,
 					`Programme de formation sur l’avortement par médicaments, de La SOGC, mis à jour en 2023 et offert au prix coûtant.
           Medication Abortion Training for Primary Care Providers de la Fédération Nationale de l’Avortement, mis à jour en 2023 et offert au prix coûtant.`
 				]
@@ -2382,12 +2382,12 @@ Visite de suivi: 8471 Visite intermédiaire régionale ou visite suivante avec e
 				data: [
 					`Voici quelques suggestions pour aider les cliniciens à créer un environnement inclusif qui répond aux besoins des personnes 2ELGBTQIA+. Ces suggestions ne sont pas exhaustives et il est recommandé aux professionnels de la santé de consulter d’autres manuels et opportunités de formation en compétence culturelle pour fournir des soins inclusifs.
 
-          Ces suggestions ont été reproduites à partir de Gender Inclusive Language de Trans Care BC, The Trans-inclusive Abortion Services du SHORE Centre et la Fédération du Québec pour le planning des naissances, et du Handbook for Healthcare Providers Working with Clients from Diverse Communities d’Action Canada pour la santé et les droits sexuels. Pour plus d’informations sur les mythes concernant la reproduction des personnes 2ELGBTQIA+, le vocabulaire et le glossaire à utiliser et à éviter, ainsi que des études de cas et des recommandations pour surmonter les obstacles, veuillez vous référer à ces manuels.`,
+          <i>Ces suggestions ont été reproduites à partir de Gender Inclusive Language de Trans Care BC, The Trans-inclusive Abortion Services du SHORE Centre et la Fédération du Québec pour le planning des naissances, et du Handbook for Healthcare Providers Working with Clients from Diverse Communities d’Action Canada pour la santé et les droits sexuels. Pour plus d’informations sur les mythes concernant la reproduction des personnes 2ELGBTQIA+, le vocabulaire et le glossaire à utiliser et à éviter, ainsi que des études de cas et des recommandations pour surmonter les obstacles, veuillez vous référer à ces manuels.</i>`,
 					'À faire et à ne pas faire:',
-					`Rendre des toilettes non genrées en supprimant les panneaux “Hommes” et “Femmes” des toilettes, ou en les remplaçant par un panneau “Toilettes tous genres”.
-          Publier des affiches, des dépliants et d’autres documents 2ELGBTQIA+ inclusifs pour faire savoir à tous qu’ils sont les bienvenus.
-          Utiliser des formulaires cliniques inclusifs (par exemple, des formulaires d’admission) qui tiennent compte de toutes les orientations sexuelles et identités de genre. Déterminer si les questions posées sont nécessaires à des fins cliniques ou si elles sont posées par curiosité.
-          Demander quels pronoms les personnes préfèrent et utiliser-les de manière cohérente tout au long de leurs soins.
+					`Rendre des <b>toilettes non genrées</b> en supprimant les panneaux “Hommes” et “Femmes” des toilettes, ou en les remplaçant par un panneau “Toilettes tous genres”.
+          Publier <b>des affiches, des dépliants et d’autres documents 2ELGBTQIA+ inclusifs</b> pour faire savoir à tous qu’ils sont les bienvenus.
+          Utiliser des <b>formulaires cliniques inclusifs</b> (par exemple, des formulaires d’admission) qui tiennent compte de toutes les orientations sexuelles et identités de genre. Déterminer si les questions posées sont nécessaires à des fins cliniques ou si elles sont posées par curiosité.
+          Demander <b>quels pronoms les personnes préfèrent</b> et utiliser-les de manière cohérente tout au long de leurs soins.
           Interroger les personnes et observez les mots qu’ils utilisent pour parler de leurs parties du corps et utiliser leur langage.
           Respecter le droit des personnes trans de fournir de l’information sur les problèmes ou besoins de la communauté trans ou de parler au nom de la communauté trans.
           Chercher à éliminer les barrières pour les personnes 2ELGBTQIA+.
@@ -2434,15 +2434,15 @@ Visite de suivi: 8471 Visite intermédiaire régionale ou visite suivante avec e
 
           Divers facteurs et réalités peuvent affecter la façon dont les peuples autochtones accèdent aux services de santé, notamment les obstacles liés à l’accès géographique, l’indisponibilité de services linguistiques et de traduction, le manque de soins de santé culturellement sécuritaires ou les expériences passées de racisme, de stigmatisation, de honte, de peur ou de discrimination. Gardez à l’esprit qu’être autochtone n’est pas en soi un facteur de risque ; ce qui met réellement les gens en danger, ce sont des problèmes systémiques comme le racisme, le colonialisme, les traumatismes intergénérationnels et le manque d’accès à des soins, des traitements et des soutiens culturellement sécuritaires.
 
-          Ces recommandations sont tirées de la Trousse d’outils pour les allié-es aux luttes autochtones du Réseau stratégique urbain de la communauté autochtone de Montréal et du Guide pour les professionnels de la santé qui travaillent avec des client(e)s provenant de différentes communautés d’Action Canada pour la santé et les droits sexuels.`,
+          <i>Ces recommandations sont tirées de la Trousse d’outils pour les allié-es aux luttes autochtones du Réseau stratégique urbain de la communauté autochtone de Montréal et du Guide pour les professionnels de la santé qui travaillent avec des client(e)s provenant de différentes communautés d’Action Canada pour la santé et les droits sexuels.</i>`,
 					'Conseils rapides pour les cliniciens:',
-					`Proposer des services de traduction et, si possible, des ressources traduites.
+					`Proposer des <b>services de traduction</b> et, si possible, des ressources traduites.
           Établir des liens et revendiquer pour l’accès à des membres de la communauté autochtone de votre région qui peuvent agir en tant que navigateurs dans le système de santé.
-          Lorsqu’on entend parler d’expériences difficiles ou violentes de la part des personnes, affirmer leurs expériences et leur vécu. Éviter de les stigmatiser pour leurs sentiments ou la façon dont ils gèrent leurs émotions.
-          Créer et maintenir une liste des ressources disponibles et de soutien culturel dans votre région, y compris les services sociaux.
-          Les soutenir dans la création de leur propre plan de traitement, y compris l’intégration de ressources culturellement sécurisantes et méthodes de guérison traditionnelles.
-          Éviter de dire “Les peuples autochtones du Canada” ou “Nos peuples autochtones.” – Les peuples autochtones n’appartiennent pas au Canada ni à aucun individu.
-          Éviter de dire “La culture autochtone.” – Cette phrase ne reconnaît pas qu’il existe des centaines de communautés, nations, langues et cultures autochtones au Canada. Au lieu du singulier, essayer d’utiliser des formes plurielles comme “Les cultures autochtones” ou mieux encore, être précis sur la nation pour éviter la pan-indigénisation.`
+          Lorsqu’on entend parler d’expériences difficiles ou violentes de la part des personnes, affirmer leurs expériences et leur vécu. <b>Éviter de les stigmatiser pour leurs sentiments ou la façon dont ils gèrent leurs émotions.</b>
+          <b>Créer et maintenir une liste des ressources disponibles et de soutien culturel</b> dans votre région, y compris les services sociaux.
+          <b>Les soutenir dans la création de leur propre plan de traitement</b>, y compris l’intégration de ressources culturellement sécurisantes et méthodes de guérison traditionnelles.
+          Éviter de dire “Les peuples autochtones du Canada” ou “Nos peuples autochtones.” – <b>Les peuples autochtones n’appartiennent pas au Canada ni à aucun individu.</b>
+          Éviter de dire “La culture autochtone.” – <b>Cette phrase ne reconnaît pas qu’il existe des centaines de communautés, nations, langues et cultures autochtones au Canada. Au lieu du singulier, essayer d’utiliser des formes plurielles comme “Les cultures autochtones” ou mieux encore, être précis sur la nation pour éviter la pan-indigénisation.</b>`
 				]
 			}
 		},
@@ -2652,12 +2652,12 @@ Lorsqu’ils conseillent les personnes, les prescripteurs doivent fournir un esp
           Exclure les contre-indications.
           Examiner la date et l’heure auxquelles les personnes prévoient prendre le MIFÉ / MISO.
           Revoir la date à laquelle la personne a un suivi avec leur prescripteur.`,
-					'S’assurer que la personne dispose des éléments suivants avant de partir[10]:',
+					'<b>S’assurer que la personne dispose des éléments suivants avant de partir</b>[10]:',
 					`Serviettes et protections hygiéniques.
           Médicaments contre la douleur et/ou contre la nausée (en vente libre ou sur ordonnance).
           Accès aux soins d’urgence.
           Aide à la garde d’enfants, au transport et à l’épicerie.`,
-					`S’assurer que les personnes comprennent comment administrer MIFÉ / MISO, comment gérer les effets secondaires, et savent quand et comment demander des soins (voir ci-dessous).`
+					`<b>S’assurer que les personnes comprennent comment administrer MIFÉ / MISO, comment gérer les effets secondaires, et savent quand et comment demander des soins (voir ci-dessous)</b>.`
 				]
 			}
 		},
@@ -2667,7 +2667,7 @@ Lorsqu’ils conseillent les personnes, les prescripteurs doivent fournir un esp
 			content: {
 				type: ['p', 'ul', 'p', 'ul'],
 				data: [
-					`Les personnes doivent avoir un suivi avec un professionnel de la santé
+					`Les personnes <b>doivent avoir</b> un suivi avec un professionnel de la santé
 
 Un suivi auprès des pharmaciens est facultatif et peut avoir lieu 2 à 3 jours après l’administration du MISO. Au cours du suivi, les pharmaciens peuvent effectuer les opérations suivantes[9,10]:`,
 					`Vérifier la bonne administration
@@ -2709,9 +2709,9 @@ Quant au MISO, il n’y a aucune interaction médicamenteuse connue. L’ingesti
 					`La MIFÉ pris par voie orale présente une pharmacocinétique non linéaire. Elle est rapidement absorbée et distribuée, atteignant des concentrations maximales après 0,75 heure. Elle est liée au plasma à 94-99 % et est métabolisée par les enzymes CYP, principalement le CYP3A4. L’élimination est relativement lente avec une demi-vie comprise entre 83 et 90 heures[10].
 
 Le profil pharmacocinétique du MISO varie considérablement selon la voie d’administration[10]:`,
-					`Buccale: le délai jusqu’à la première contraction utérine est de 67 minutes, soutenu pendant environ 90 minutes et commence à diminuer 5 heures suivant l’administration. La réponse utérine semble similaire à celle de l’administration vaginale, avec moins de variabilité interindividuelle.
-Vaginale: le délai jusqu’à la première contraction utérine est de 82 minutes pour les comprimés secs et de 98 minutes pour les comprimés humidifiés, une activité soutenue est atteinte à 106 minutes et 128 minutes, respectivement. L’activité utérine commence à diminuer cinq heures après l’administration.
-Sublinguale: les comprimés sont absorbés par la muqueuse en 20 minutes et le MISO atteint sa concentration sérique maximale à 30 minutes. Le métabolisme de premier passage est évité.`
+					`<b>Buccale</b>: le délai jusqu’à la première contraction utérine est de 67 minutes, soutenu pendant environ 90 minutes et commence à diminuer 5 heures suivant l’administration. La réponse utérine semble similaire à celle de l’administration vaginale, avec moins de variabilité interindividuelle.
+<b>Vaginale</b>: le délai jusqu’à la première contraction utérine est de 82 minutes pour les comprimés secs et de 98 minutes pour les comprimés humidifiés, une activité soutenue est atteinte à 106 minutes et 128 minutes, respectivement. L’activité utérine commence à diminuer cinq heures après l’administration.
+<b>Sublinguale</b>: les comprimés sont absorbés par la muqueuse en 20 minutes et le MISO atteint sa concentration sérique maximale à 30 minutes. Le métabolisme de premier passage est évité.`
 				]
 			}
 		},
@@ -2723,14 +2723,14 @@ Sublinguale: les comprimés sont absorbés par la muqueuse en 20 minutes et le M
 				data: [
 					`Les prescripteurs fourniront des évaluations cliniques avant de prescrire le MIFÉ / MISO. Grâce aux nouvelles lignes directrices de La SOGC concernant l’avortement par médicaments (AM) via télémédecine, les prescripteurs peuvent éviter les analyses sanguines et/ou l’échographie, pour assurer la prestation rapide de l’AM[7].`,
 					[
-						`L’âge gestationnel est déterminé à l’aide des antécédents médicaux, d’un test urinaire ou βhCG sérique, ou d’une échographie. L’échographie n’est pas nécessaire pour déterminer l’âge gestationnel, sauf en cas d’incertiture de la date des dernières menstruations (DDM).[6,7].
-            Une grossesse ectopique est exclue en utilisant les antécédents médicaux pour dépister les facteurs de risque et les symptômes. L’échographie est recommandée s’il existe des facteurs de risque importants ou des symptômes évocateurs d’une grossesse ectopique.[6,7].
-            Les ligne directrices pour le test et l’administration du facteur Rhésus (Rh) varient:`,
+						`<b>L’âge gestationnel</b> est déterminé à l’aide des antécédents médicaux, d’un test urinaire ou βhCG sérique, ou d’une échographie. L’échographie n’est pas nécessaire pour déterminer l’âge gestationnel, sauf en cas d’incertiture de la date des dernières menstruations (DDM).[6,7].
+            <b>Une grossesse ectopique</b> est exclue en utilisant les antécédents médicaux pour dépister les facteurs de risque et les symptômes. L’échographie est recommandée s’il existe des facteurs de risque importants ou des symptômes évocateurs d’une grossesse ectopique.[6,7].
+            Les ligne directrices pour <b>le test et l’administration du facteur Rhésus (Rh)</b> varient:`,
 						`Ligne directrice clinique de La SOGC sur l’AM : le test Rh est recommandé lorsque l’âge gestationnel est supérieur à 47 jours[6].
             Ligne directrice de télémédecine de La SOGC sur l’AM: le test Rh peut être suspendu jusqu’à 70 jours d’âge gestationnel[7].
             Society of Family Planning: le test Rh n’est pas recommandé avant 12 semaines de gestation en cas d’avortement spontané, par médicaments ou par instruments[8].`,
-						`Une formule sanguine complète pour mesurer le taux d’hémoglobine est indiquée en cas de risque accru d’anémie ; sinon c’est inutile[7].
-            Une antibioprophylaxie de routine n’est pas nécessaire; le dépistage et le traitement au besoin constituent la stratégie de prise en charge privilégiée et est effectué par le prescripteur[6].`
+						`<b>Une formule sanguine complète</b> pour mesurer le taux d’hémoglobine est indiquée en cas de risque accru d’anémie ; sinon c’est inutile[7].
+            Une <b>antibioprophylaxie</b> de routine n’est pas nécessaire; le dépistage et le traitement au besoin constituent la stratégie de prise en charge privilégiée et est effectué par le prescripteur[6].`
 					]
 				]
 			}
@@ -2761,11 +2761,11 @@ Sublinguale: les comprimés sont absorbés par la muqueuse en 20 minutes et le M
 			content: {
 				type: ['p', 'i-full'],
 				data: [
-					`L’avortement est légal au Canada et les personnes n’ont pas besoin du consentement de leur partenaire ou d’un parent pour avorter. Il s’agit du deuxième service de santé reproductive le plus répandu au Canada: le tiers des personnes ayant la capacité d’être enceinte auront recours à un avortement au cours de leur vie.[2,14,15,18].
+					`L’avortement est <b>légal</b> au Canada et les personnes n’ont pas besoin du consentement de leur partenaire ou d’un parent pour avorter. Il s’agit du <b>deuxième service de santé reproductive le plus répandu</b> au Canada: le tiers des personnes ayant la capacité d’être enceinte auront recours à un avortement au cours de leur vie.[2,14,15,18].
 
-        L’avortement par médicaments utilise des pilules médicamenteuses pour mettre fin à une grossesse. Au Canada, les pilules abortives médicamenteuses sont combinées et vendues sous le nom de Mifegymiso. Le médicament est approuvé par Santé Canada jusqu’à 63 jours d’âge gestationnel, mais s’est avéré sécuritaire et efficace jusqu’à 70 jours par La SOGC du Canada et 77 jours par l’Organisation mondiale de la santé (OMS). Le counselling et les médicaments sont fournis gratuitement à toutes les personnes bénéficiant d’une assurance maladie provinciale et de plusieurs catégories d’assurance maladie fédérale. Cependant, il est important de noter que les personnes admissibles aux soins de santé dans une province, qui tentent d’accéder à un avortement par médicaments dans une autre province ou territoire, sont admissibles au counseling, mais pas aux médicaments eux-mêmes.
+        L’avortement par médicaments utilise des pilules médicamenteuses pour mettre fin à une grossesse. Au Canada, les pilules abortives médicamenteuses sont combinées et vendues sous le nom de Mifegymiso. Le médicament est approuvé par Santé Canada jusqu’à 63 jours d’âge gestationnel, mais s’est avéré <b>sécuritaire et efficace</b> jusqu’à 70 jours par La SOGC du Canada et 77 jours par l’Organisation mondiale de la santé (OMS). Le counselling et les médicaments sont fournis <b>gratuitement</b> à toutes les personnes bénéficiant d’une assurance maladie provinciale et de plusieurs catégories d’assurance maladie fédérale. Cependant, il est important de noter que les personnes admissibles aux soins de santé dans une province, qui tentent d’accéder à un avortement par médicaments dans une autre province ou territoire, sont admissibles au counseling, mais pas aux médicaments eux-mêmes.
 
-        Mifegymiso se présente généralement en deux boîtes: une boîte verte contenant 200 mg de mifépristone (MIFÉ) et une boîte orange contenant 800 mcg de misoprostol (MISO). Le MISO est utilisé pour l’avortement et pour d’autres conditions (par exemple, fausse couche, hémorragie post-partum). La MIFÉ aide à arrêter la croissance d’une grossesse et prépare le corps à vider l’utérus en ramollissant le col et en aidant la muqueuse de l’utérus à se décomposer. Le MISO provoque la dilatation du col et la contraction de l’utérus, provoquant ainsi la sortie des tissus issus de la grossesse du corps[14].`,
+        <b>Mifegymiso</b> se présente généralement en deux boîtes: une boîte verte contenant 200 mg de mifépristone (MIFÉ) et une boîte orange contenant 800 mcg de misoprostol (MISO). Le MISO est utilisé pour l’avortement et pour d’autres conditions (par exemple, fausse couche, hémorragie post-partum). La MIFÉ aide à arrêter la croissance d’une grossesse et prépare le corps à vider l’utérus en ramollissant le col et en aidant la muqueuse de l’utérus à se décomposer. Le MISO provoque la dilatation du col et la contraction de l’utérus, provoquant ainsi la sortie des tissus issus de la grossesse du corps[14].`,
 					assets.FrMifegymisoOverview
 				]
 			}
@@ -2776,15 +2776,15 @@ Sublinguale: les comprimés sont absorbés par la muqueuse en 20 minutes et le M
 			content: {
 				type: ['p', 'ul', 'p'],
 				data: [
-					`Au moment d’écrire ces lignes, les médecins et les infirmières praticiennes spécialisées au Canada sont autorisés à prescrire Mifegymiso. Les sages-femmes de toutes les provinces et territoires, à l’exception du Québec, ne sont pas autorisées à prescrire Mifegymiso, mais elles peuvent prodiguer des soins d’avortement par médicaments lorsqu’elles travaillent en étroite collaboration avec des infirmières praticiennes spécialisées ou des médecins.
+					`Au moment d’écrire ces lignes, <b>les médecins et les infirmières praticiennes spécialisées</b> au Canada sont autorisés à prescrire Mifegymiso. <b>Les sages-femmes</b> de toutes les provinces et territoires, à l’exception du Québec, ne sont pas autorisées à prescrire Mifegymiso, mais elles peuvent prodiguer des soins d’avortement par médicaments lorsqu’elles travaillent en étroite collaboration avec des infirmières praticiennes spécialisées ou des médecins.
 
           Les prestataires d’avortement par médicaments peuvent être trouvés via:`,
 					`Le portail des services d’avortement par médicaments d’Action Canada pour la santé et les droits sexuels (cliquer sur l’hyperlien puis sélectionner l’option “Avortement par médicaments”)
           La liste des cliniques d’Action Canada pour la santé et les droits sexuels.
           Application de référence à l’avortement de Choice Connect.`,
-					`Le counseling et l’évaluation clinique sont nécessaires avant de prescrire Mifegymiso. Le counseling vise à aider les personnes à prendre une décision éclairée en comprenant leurs options (avortement versus poursuivre la grossesse, et avortement par médicaments versus avortement par instruments). Les évaluations cliniques visent à confirmer que l’âge gestationnel ne dépasse pas le seuil (63 jours selon Santé Canada, 70 jours selon la Société des obstétriciens et gynécologues du Canada), pour exclure des conditions graves telles que la grossesse ectopique et l’anémie, et pour déterminer la nécessité d’analyses sanguines telles que le test du facteur Rh[6].
+					`<b>Le counseling et l’évaluation clinique sont nécessaires avant de prescrire Mifegymiso.</b> Le counseling vise à aider les personnes à prendre une décision éclairée en comprenant leurs options (avortement versus poursuivre la grossesse, et avortement par médicaments versus avortement par instruments). Les évaluations cliniques visent à confirmer que l’âge gestationnel ne dépasse pas le seuil (63 jours selon Santé Canada, 70 jours selon la Société des obstétriciens et gynécologues du Canada), pour exclure des conditions graves telles que la grossesse ectopique et l’anémie, et pour déterminer la nécessité d’analyses sanguines telles que le test du facteur Rh[6].
 
-          Dans les cas de soins virtuels ou hybride d’avortement par médicaments (également appelé avortement sans contact ou à faible contact), le nombre de visites est minimisé en effectuant des rendez-vous de counseling, de dépistage et de suivi virtuellement par téléphone ou par vidéo. L’objectif est de réduire la nécessité de parcourir de longues distances ou des délais pour avorter. Cependant, les soins virtuels de l’avortement par médicaments peuvent mettre les personnes à risque en l’absence d’échographie, qui permet une évaluation précise de l’âge gestationnel ou de la présence d’une grossesse ectopique. De plus, l’avortement par médicaments virtuel peut nécessiter un suivi (téléphonique) plus fréquent pour surveiller les symptômes et le risque de grossesse évolutive et de grossesse ectopique, nécessitant ainsi souvent davantage de ressources cliniques. Pour ces raisons, la possibilité de proposer un avortement par médicaments via télémédecine dépend de l’expérience des prescripteurs, des ressources cliniques, des besoins des personnes et de leur sécurité[7].`
+          Dans les cas de <b>soins virtuels ou hybride d’avortement par médicaments</b> (également appelé avortement sans contact ou à faible contact), le nombre de visites est minimisé en effectuant des rendez-vous de counseling, de dépistage et de suivi virtuellement par téléphone ou par vidéo. L’objectif est de <b>réduire la nécessité de parcourir de longues distances ou des délais pour avorter</b>. Cependant, les soins virtuels de l’avortement par médicaments peuvent mettre les personnes à risque en l’absence d’échographie, qui permet une évaluation précise de l’âge gestationnel ou de la présence d’une grossesse ectopique. De plus, l’avortement par médicaments virtuel peut nécessiter un suivi (téléphonique) plus fréquent pour surveiller les symptômes et le risque de grossesse évolutive et de grossesse ectopique, nécessitant ainsi souvent davantage de ressources cliniques. Pour ces raisons, la possibilité de proposer un avortement par médicaments via télémédecine dépend de l’expérience des prescripteurs, des ressources cliniques, des besoins des personnes et de leur sécurité[7].`
 				]
 			}
 		},
@@ -2794,7 +2794,7 @@ Sublinguale: les comprimés sont absorbés par la muqueuse en 20 minutes et le M
 			content: {
 				type: ['p'],
 				data: [
-					`Dans la plupart des cas, les pharmaciens sont responsables de la délivrance des médicaments aux personnes, mais certaines cliniques sont également autorisées à délivrer les médicaments directement. Les lignes directrices des Ordres professionnels des pharmaciens de chaque province ou territoire peuvent varier quant à savoir si les personnes doivent récupérer leurs médicaments en personne ou si les médicaments peuvent être livrés aux personnes par des services postaux.`
+					`Dans la plupart des cas, <b>les pharmaciens</b> sont responsables de la délivrance des médicaments aux personnes, mais certaines cliniques sont également autorisées à délivrer les médicaments directement. Les lignes directrices des Ordres professionnels des pharmaciens de chaque province ou territoire peuvent varier quant à savoir si les personnes doivent récupérer leurs médicaments en personne ou si les médicaments peuvent être livrés aux personnes par des services postaux.`
 				]
 			}
 		},
@@ -2806,13 +2806,13 @@ Sublinguale: les comprimés sont absorbés par la muqueuse en 20 minutes et le M
 				data: [
 					`Le counseling est important pour aider les personnes à prendre des décisions éclairées en comprenant leurs options (avortement versus parentalité, et avortement par médicaments versus par instruments). Lors du counseling, il est également important de comprendre les préférences et les circonstances des personnes afin de les conseiller sur la meilleure marche à suivre.
 
-          L’avortement par médicaments convient aux personnes qui[6]:`,
+          <b>L’avortement par médicaments</b> convient aux personnes qui[6]:`,
 					`Préfèrent une méthode non-invasive.
           Préfèrent être dans le confort de leur foyer.
           Ont la confiance de pouvoir gérer le processus et les effets secondaires à la maison.
           Sont en mesure de prendre 1 à 3 jours de congé ou d’autres responsabilités pour procéder à l’avortement.
           Manquent de transport pour se rendre à la clinique pour un avortement par instruments (mais nécessite néanmoins l’accès aux services d’urgence en cas de complications).`,
-					'L’avortement par instruments convient aux personnes qui[6]:',
+					'<b>L’avortement par instruments</b> convient aux personnes qui[6]:',
 					`Préfèrent bénéficier du soutien en personne ainsi qu’une surveillance par des professionnels de la santé en clinique ou à l’hôpital.
           Souhaitent que l’avortement soit fourni rapidement afin de pouvoir reprendre le travail ou d’autres responsabilités.
           Se sentent à l’aise avec l’examen gynécologique et l’utilisation d’instruments médicaux.
@@ -2846,11 +2846,11 @@ Sublinguale: les comprimés sont absorbés par la muqueuse en 20 minutes et le M
 				data: [
 					`Les personnes qui choisissent un avortement par médicaments devraient avoir un suivi avec leur professionnel de la santé pour confirmer la complétion de l’avortement, gérer les complications, recevoir du counseling en matière de contraception et obtenir un soutien émotionnel si nécessaire. Les personnes peuvent également avoir besoin d’une échographie ou d’analyses sanguines pour confirmer que l’avortement est complet et exclure la possibilité d’une grossesse ectopique.
 
-            Mode de suivi[6]:
+            <b>Mode de suivi</b>[6]:
 
             Dans la plupart des situations, les suivis sont prévus 7 à 14 jours après la prise du misoprostol (le deuxième médicament), mais parfois le suivi peut avoir lieu dès 3 jours après le misoprostol. Le suivi peut se faire par téléphone ou en personne, selon les circonstances.
 
-            Soutien émotionnel[6]:
+            <b>Soutien émotionnel</b>[6]:
 
             Les réactions émotionnelles après un avortement par médicaments varient souvent. Certaines personnes se sentent soulagées et positives, tandis que d’autres éprouvent des sentiments de deuil, de tristesse ou de culpabilité, et d’autres encore éprouvent des sentiments mitigés. Ces émotions sont normales et peuvent être liées ou non aux circonstances socio-économiques, au manque de soutien social, au malaise moral et aux conflits familiaux.
 

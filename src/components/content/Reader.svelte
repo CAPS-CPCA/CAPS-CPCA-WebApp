@@ -59,7 +59,7 @@ function handleTable(data: string[][], type: string) {
 const regex = (content: any) => {
     const replacementMap = [
         { regex: /\[(.*?)\]/g, replacement: '<a href="#ref" class="ref"><sup>[$1]</sup></a>' },
-        { regex: /(Initial visit:|Follow-up visit:|Initial visit and follow-up visit:|Telehealth:|Première visite:|Visite de suivi:)/g, replacement: '<span style="color: #0074e4; font-weight: bold;">$1</span>' },
+        { regex: /(Initial visit:|Follow-up visit:|Initial visit and follow-up visit:|Telehealth:|Première visite:|Visite de suivi: | Télésanté: | Visite initiale et visite de suivi: )/g, replacement: '<span style="color: #0074e4; font-weight: bold;">$1</span>' },
         { regex: /Q: (.*?)<br>/g, replacement: '<b>Q: $1</b><br>' },
         { regex: /(MISO |misoprostol|\(MISO\))/g, replacement: '<span style="color: var(--MISO);">$1</span>' },
         { regex: /(MIFE |MIFÉ |mifepristone|\(MIFE\)|(MIFÉ)|mifépristone)/g, replacement: '<span style="color: var(--MIFE);">$1</span>' },
