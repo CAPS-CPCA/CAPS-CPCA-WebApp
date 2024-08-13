@@ -248,7 +248,7 @@ export const modules: { [key: string]: Modules } = {
 		},
 		{
 			id: 'M11',
-			title: 'Pregnancy of unknown locations',
+			title: 'Pregnancies of Unknown Location',
 			content: {
 				type: ['p', 'ul', 'p', 'ul'],
 				data: [
@@ -2939,11 +2939,11 @@ R: Les données actuellement disponibles suggèrent qu’avec la dose actuelle d
 
 L’information provient de la National Library of Medicine LactMed database et de la National Abortion Federation Protocol for Mifepristone / misoprosol for Early Medical Abortion.
 
-Résumé de l’utilisation de la mifépristone pendant l’allaitement (NLM):
+<b><i>Résumé de l’utilisation de la mifépristone pendant l’allaitement (NLM):</i></b>
 
 Des informations limitées indiquent qu’il n’est pas nécessaire d’interrompre l’allaitement après une dose unique de mifépristone. Une dose de 200 mg pourrait être préférable à une dose de 600 mg chez les mères qui allaitent.
 
-Niveaux de médicaments:
+<b>Niveaux de médicaments:</b>
 
 Niveaux maternels. Douze femmes (la plupart entre 6 à 12 mois après l’accouchement), ayant eu recours à un avortement par médicaments avec mifépristone et misoprostol, ont fourni des échantillons de lait jusqu’à 5 jours après la procédure pour mesurer la mifépristone.
 

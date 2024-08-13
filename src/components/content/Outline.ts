@@ -43,7 +43,7 @@ export const outlines: { [key: string]: any } = {
             M8: 'Basic screening',
             M9: 'Pregnancy & Gestational Age screening',
             M10: 'Ectopic Pregnancy',
-            M11: 'Pregnancy of unknown locations',
+            M11: 'Pregnancies of Unknown Location',
             M12: 'Rhesus screening',
             M13: 'Anemia, STIs & others',
           },
