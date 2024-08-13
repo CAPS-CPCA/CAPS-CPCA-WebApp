@@ -453,11 +453,11 @@ Schedule a first virtual visit via telephone or video.`
 				data: [
 					`Alberta Health Services (AHS) has a billing manual that provides the most current information on billing codes for healthcare services in Alberta. The manual is updated regularly and is available online for healthcare providers to access.`,
 					'Gynaecology',
-					`Initial visit: 03.08A Comprehensive consultation – $111.06
-        Follow-up visit: 03.07B Repeat consultation – $62.24`,
+					`Initial visit: <b>03.08A</b> Comprehensive consultation – $111.06
+        Follow-up visit: <b>03.07B</b> Repeat consultation – $62.24`,
 					'Primary Care',
-					`Initial visit: 03.04A Comprehensive visit – $83.37
-        Follow-up visit: 03.03A Office visit – $35.26`
+					`Initial visit: <b>03.04A</b> Comprehensive visit – $83.37
+        Follow-up visit: <b>03.03A</b> Office visit – $35.26`
 				]
 			}
 		},
@@ -469,17 +469,17 @@ Schedule a first virtual visit via telephone or video.`
 				data: [
 					`The information below is updated as of March 2024.`,
 					'Gynaecology',
-					`Initial visit: 14545 Medication abortion – $170.95
-        Follow-up visit: 4012 Limited consultation – $85.49
-        4007 Follow-up – $53.52
-        Telehealth: 14545 Same code for consultation – $170.95
-        4072 Limited consultation – $85.49
-        4077 Follow-up – $53.52`,
+					`Initial visit: <b>14545</b> Medication abortion – $170.95
+        Follow-up visit: <b>4012</b> Limited consultation – $85.49
+        <b>4007</b> Follow-up – $53.52
+        Telehealth: <b>14545</b> Same code for consultation – $170.95
+        <b>4072</b> Limited consultation – $85.49
+        <b>4077</b> Follow-up – $53.52`,
 					'Primary Care',
-					`Initial visit: 14545 Medication abortion – $170.95
-        Follow-up visit: 00100 Follow-up – $34.04
-        Telehealth: 14545 Same code for consultation – $165.97
-        13437 Follow-up – $31.84
+					`Initial visit: <b>14545</b> Medication abortion – $170.95
+        Follow-up visit: <b>00100</b> Follow-up – $34.04
+        Telehealth: <b>14545</b> Same code for consultation – $165.97
+        <b>13437</b> Follow-up – $31.84
 
         <b>Notes:</b> For telehealth, methods of virtual care can include phone, video or provincial telehealth platform, all of which are equally billable at the moment. No need to have an ongoing physician-patient relationship for the physician to submit a claim for medication abortion via telehealth`
 				]
@@ -493,13 +493,13 @@ Schedule a first virtual visit via telephone or video.`
 				data: [
 					`<i>The information below is updated as of March 2024.</i>`,
 					'Gynaecology',
-					`Initial visit: 8428 Medical management of elective pregnancy termination, including examination, management and monitoring of patient taking misoprostol. – $171.00
-        8499 Complete gynecological exam excluding pap test – $125.61
-        Follow-up visit: 8505 Regional history and examination with gynaecological examination excluding pap test`,
+					`Initial visit: <b>8428</b> Medical management of elective pregnancy termination, including examination, management and monitoring of patient taking misoprostol. – $171.00
+					<b>8499</b> Complete gynecological exam excluding pap test – $125.61
+        Follow-up visit: <b>8505</b> Regional history and examination with gynaecological examination excluding pap test`,
 					'Primary Care',
-					`Initial visit: 8428 Medical management of elective pregnancy termination, including examination, management and monitoring of patient taking misoprostol. – $171.00
-        8499 Complete gynecological exam excluding pap test – $125.61
-        Follow-up visit: 8471 Regional intermediate visit or subsequent visit with gynecological exam excluding pap smear – $54.16
+					`Initial visit: <b>8428</b> Medical management of elective pregnancy termination, including examination, management and monitoring of patient taking misoprostol. – $171.00
+					<b>8499</b> Complete gynecological exam excluding pap test – $125.61
+        Follow-up visit: <b>8471</b> Regional intermediate visit or subsequent visit with gynecological exam excluding pap smear – $54.16
 
         <b>Notes:</b> There are no specifications as to whether the codes are specific to specialists vs primary care in the billing manual for Manitoba. Thus, providers would have to look into the information and apply the rules of their billing codes.`
 				]
@@ -513,19 +513,19 @@ Schedule a first virtual visit via telephone or video.`
 				data: [
 					`<i>The information below is pending verification.</i>`,
 					'Gynaecology',
-					`Initial visit: 54 Major or regional consultation – CA$95.91
-        9015 Medical management of non-viable/unwanted pregnancy, including βhCG follow-up, add to initial visit or consultation – $136.22
-        Follow-up visit: 49 Regional examination – $52.82
+					`Initial visit: <b>54</b> Major or regional consultation – CA$95.91
+        <b>9015</b> Medical management of non-viable/unwanted pregnancy, including βhCG follow-up, add to initial visit or consultation – $136.22
+        Follow-up visit: <b>49</b> Regional examination – $52.82
         Telehealth: <b>Same codes</b>, but the site code where the patient is physically located, must be recorded on the claim submission. When submitting claims for telemedicine, the number 8 should be written in front of the site code provided in order to specify that the service was given via telemedicine.
-        8717 Attendance – 1st patient seen, first 15 minutes or part thereof 40 units
-        8718 Add – per 15 minutes or part thereof 20 units`,
+        <b>8717</b> Attendance – 1st patient seen, first 15 minutes or part thereof 40 units
+        <b>8718</b> Add – per 15 minutes or part thereof 20 units`,
 					'Primary Care',
-					`Initial visit: 1 Office visit – $23.36
-        9142 Medical management of non-viable/unwanted pregnancy, including βhCG follow-up, add to initial visit or consultation – $74.48
+					`Initial visit: <b>1</b> Office visit – $23.36
+        <b>9142</b> Medical management of non-viable/unwanted pregnancy, including βhCG follow-up, add to initial visit or consultation – $74.48
         Follow-up visit: 1 Office visit – $23.36
         Telehealth: <b>Same codes</b>, but the site code where the patient is physically located, must be recorded on the claim submission. When submitting claims for telemedicine, the number 8 should be written in front of the site code provided in order to specify that the service was given via telemedicine.
-        8717 Attendance – 1st patient seen, first 15 minutes or part thereof 40 units
-        8718 Add – per 15 minutes or part thereof 20 units`
+        <b>8717</b> Attendance – 1st patient seen, first 15 minutes or part thereof 40 units
+        <b>8718</b> Add – per 15 minutes or part thereof 20 units`
 				]
 			}
 		},
@@ -537,11 +537,11 @@ Schedule a first virtual visit via telephone or video.`
 				data: [
 					`<i>The information below is updated as of March 2024.</i>`,
 					'Gynaecology',
-					`Initial visit and follow-up visit: 54607 Medication abortion – $187.46
+					`Initial visit and follow-up visit: <b>54607</b> Medication abortion – $187.46
 
         <i>Comprehensive fee which includes all services associated with medication abortion including the consultation and/or visit during which the medication is prescribed, counselling, ordering and/or performing and interpreting of laboratory tests and diagnostic imaging, and any follow-up communications or visits.</i>`,
 					'Primary Care',
-					`Initial visit and follow-up visit: 54607 Medication abortion – $187.49
+					`Initial visit and follow-up visit: <b>54607</b> Medication abortion – $187.49
 
         <i>Comprehensive fee which includes all services associated with medication abortion including the consultation and/or visit during which the medication is prescribed, counselling, ordering and/or performing and interpreting of laboratory tests and diagnostic imaging, and any follow-up communications or visits.</i>`
 				]
@@ -555,17 +555,17 @@ Schedule a first virtual visit via telephone or video.`
 				data: [
 					`<i>The information below is pending verification.</i>`,
 					'Gynaecology',
-					`Initial visit and follow-up visit: OB-025 Medical termination for gestation less than 7 weeks – includes all visits, ultrasound examinations and injections – $361.93
-        Telehealth: TE-001 Telehealth consultation by consultant using audio-video-data communication – $180.97
-        TE-002 Telehealth consultation – per 15 minutes – max of 1.5 hours per session – $54.29
-        TE-004 Emergency Department consultation from peripheral communities – CA$18.09
+					`Initial visit and follow-up visit: <b>OB-025</b> Medical termination for gestation less than 7 weeks – includes all visits, ultrasound examinations and injections – $361.93
+        Telehealth: <b>TE-001</b> Telehealth consultation by consultant using audio-video-data communication – $180.97
+        <b>TE-002</b> Telehealth consultation – per 15 minutes – max of 1.5 hours per session – $54.29
+        <b>TE-004</b> Emergency Department consultation from peripheral communities – CA$18.09
         <i>Does not need to be your own patient.</i>`,
 					'Primary Care',
-					`Initial visit: GP-001 First visit requiring general assessment for new illness – $102.35
-        Follow-up visit: GP-002 Subsequent office visits other than a simple follow-up visit – $45.48
-        Telehealth: TE-001 Telehealth consultation by consultant using audio-video-data communication – $180.97
-        TE-002 Telehealth consultation – per 15 minutes – max of 1.5 hours per session – $54.29
-        TE-004 Emergency Department consultation from peripheral communities – CA$18.09
+					`Initial visit: <b>GP-001</b> First visit requiring general assessment for new illness – $102.35
+        Follow-up visit: <b>GP-002</b> Subsequent office visits other than a simple follow-up visit – $45.48
+        Telehealth: <b>TE-001</b> Telehealth consultation by consultant using audio-video-data communication – $180.97
+        <b>TE-002</b> Telehealth consultation – per 15 minutes – max of 1.5 hours per session – $54.29
+        <b>TE-004</b> Emergency Department consultation from peripheral communities – CA$18.09
         <i>Does not need to be your own patient.</i>`
 				]
 			}
@@ -578,13 +578,13 @@ Schedule a first virtual visit via telephone or video.`
 				data: [
 					`<i>The information below is updated as of March 2024.</i>`,
 					'Gynaecology',
-					`Initial visit: 3.03V Medication abortion/Termination of early pregnancy – 67.03 units/$185.00
-        Follow-up visit: 3.03 Subsequent visit – 13 units/$35.88
-        Telehealth: Same as in-person, use AP=PHON for telephone and AP=VIRC for video platform.`,
+					`Initial visit: <b>3.03V</b> Medication abortion/Termination of early pregnancy – 67.03 units/$185.00
+        Follow-up visit: <b>3.03</b> Subsequent visit – 13 units/$35.88
+        Telehealth: Same as in-person, use <b>AP=PHON</b> for telephone and <b>AP=VIRC</b> for video platform.`,
 					'Primary Care',
-					`Initial visit: 3.03V Medication abortion/Termination of early pregnancy – 67.03 units/ $185.00
-        Follow-up visit: 3.03 Office visit – 13 units/$35.88
-        Telehealth: Same as in-person, use AP=PHON for telephone and AP=VIRC for video platform.`
+					`Initial visit: <b>3.03V</b> Medication abortion/Termination of early pregnancy – 67.03 units/ $185.00
+        Follow-up visit: <b>3.03</b> Office visit – 13 units/$35.88
+        Telehealth: Same as in-person, use <b>AP=PHON</b> for telephone and <b>AP=VIRC</b> for video platform.`
 				]
 			}
 		},
@@ -604,13 +604,13 @@ Schedule a first virtual visit via telephone or video.`
 				data: [
 					`<i>The information below is updated as of March 2024.</i>`,
 					'In-person',
-					`Initial visit: A920 Medical management of early pregnancy – initial service – $161.15
-        Follow-up visit: A921 Medical management of early pregnancy – follow-up visit (limited to two visit per patient, per pregnancy) – $36.85`,
+					`Initial visit: <b>A920</b> Medical management of early pregnancy – initial service – $161.15
+        Follow-up visit: <b>A921</b> Medical management of early pregnancy – follow-up visit (limited to two visit per patient, per pregnancy) – $36.85`,
 					'Telehealth',
-					`Initial visit: A920 can be billed for telephone and video visits.
-        Follow-up visit: A921 – $36.85
-        A007 – $37.95
-        A102 – $15.00
+					`Initial visit: <b>A920</b> can be billed for telephone and video visits.
+        Follow-up visit: <b>A921</b> – $36.85
+        <b>A007</b> – $37.95
+        <b>A102</b> – $15.00
 
         <b>Notes:</b> If you have billed A920 for the initial visit, you have established a relationship and for follow-up, you can use A921 (video only) or A007 (telephone). Virtual care services provided in the 24-months subsequent to the medication abortion may be claimed as Comprehensive Virtual Care Services because it implies an existing/ongoing patient-physician relationship. If you do not meet the patients at the initial visit (i.e. you do not bill A920 for the initial visit and thus do not have a pre-established relationship with the patient), you would use A102 for telephone follow-up, which pays $15.`
 				]
@@ -624,13 +624,13 @@ Schedule a first virtual visit via telephone or video.`
 				data: [
 					`<i>The information below is pending verification.</i>`,
 					'Gynaecology',
-					`Initial visit: 6010 Therapeutic abortion – $181.49
-        Follow-up visit: 0762 Repeat consultation – $58.38
-        0713 Limited office visit – $42.00`,
+					`Initial visit: <b>6010</b> Therapeutic abortion – $181.49
+        Follow-up visit: <b>0762</b> Repeat consultation – $58.38
+        <b>0713</b> Limited office visit – $42.00`,
 					'Primary Care',
-					`Initial visit: 0160 Therapeutic abortion – $181.49
-        Follow-up visit: 0113 Limited office visit – $42.00
-        0163 Complete Re-examination by a medical specialist`
+					`Initial visit: <b>0160</b> Therapeutic abortion – $181.49
+        Follow-up visit: <b>0113</b> Limited office visit – $42.00
+        <b>0163</b> Complete Re-examination by a medical specialist`
 				]
 			}
 		},
@@ -642,25 +642,25 @@ Schedule a first virtual visit via telephone or video.`
 				data: [
 					`<i>The information below is updated as of March 2024.</i>`,
 					'Gynaecology',
-					`Initial visit: 15850 Global evaluation for termination of pregnancy (<63 days) – $168.90
-        15852 <b>Ultrasound exam</b> – $60.95
-        Follow-up visit: 15854 Follow-up medication abortion – $47.50
-        15857 US post medication abortion (<18 days) – $39.80`,
+					`Initial visit: <b>15850</b> Global evaluation for termination of pregnancy (<63 days) – $168.90
+        <b>15852</b> <b>Ultrasound exam</b> – $60.95
+        Follow-up visit: <b>15854</b> Follow-up medication abortion – $47.50
+        <b>15857</b> US post medication abortion (<18 days) – $39.80`,
 					'Primary Care',
 					`Initial visit: Global evaluation for termination of pregnancy
-        – 15313 Office – $139.50
-        – 15407 CLSC – $20.00
-        – 15314 Hospital – $104.60
+        – <b>15313</b> Office – $139.50
+        – <b>15407</b> CLSC – $20.00
+        – <b>15314</b> Hospital – $104.60
         <b>Ultrasound exam</b>
-        – 15315 Office – $38.15
-        – 15316 Hospital – $13.10
+        – <b>15315</b> Office – $38.15
+        – <b>15316</b> Hospital – $13.10
         Follow-up visit: Follow-up termination of pregnancy
-        – 15317 Office – $39.25
-        – 15408 CLSC – $1.50
-        – 15318 Hospital – $29.45
+        – <b>15317</b> Office – $39.25
+        – <b>15408</b> CLSC – $1.50
+        – <b>15318</b> Hospital – $29.45
         <b>Ultrasound exam</b>
-        – 15319 Office – $33.80
-        – 15320 Hospital – $8.75`
+        – <b>15319</b> Office – $33.80
+        – <b>15320</b> Hospital – $8.75`
 				]
 			}
 		},
@@ -672,17 +672,17 @@ Schedule a first virtual visit via telephone or video.`
 				data: [
 					`<i>The information below is updated as of March 2024.</i>`,
 					'Gynaecology',
-					`Initial visit: 150B Medical management of termination of early pregnancy – includes 5 days of ongoing medical management – $170
-        Follow-up visit: 11P Repeat consultation – $41.90
-        7P Follow-up assessment – $38.20`,
+					`Initial visit: <b>150B</b> Medical management of termination of early pregnancy – includes 5 days of ongoing medical management – $170
+        Follow-up visit: <b>11P</b> Repeat consultation – $41.90
+        <b>7P</b> Follow-up assessment – $38.20`,
 					'Primary Care',
-					`Initial visit: 150B Medical management of termination of early pregnancy – includes 5 days of ongoing medical management – $170
-        Follow-up visit: 5-B Subsequent visit – $39.80`,
+					`Initial visit: <b>150B</b> Medical management of termination of early pregnancy – includes 5 days of ongoing medical management – $170
+        Follow-up visit: <b>5-B</b> Subsequent visit – $39.80`,
 					'Telehealth',
-					`Initial visit: 732A for any patient attended to using an approved telemedicine video link – $31.40
-        840B and 841B – Counselling – for clinicians who do not have a video link setup such as telephone consultation. 840 is virtual counselling for the first 15 minutes and 841B is for the subsequent 15 minutes – $33.75
-        Follow-up visit: 734A for any patient attended to using an approved telemedicine video links (maximum one per day for all patients) – $12.50
-        805B – Virtual Partial Assessment – for clinicians who do not have a video link setup such as telephone follow-up – $31.85
+					`Initial visit: <b>732A</b> for any patient attended to using an approved telemedicine video link – $31.40
+        <b>840B and 841B</b> – Counselling – for clinicians who do not have a video link setup such as telephone consultation. <b>840</b> is virtual counselling for the first 15 minutes and <b>841B</b> is for the subsequent 15 minutes – $33.75
+        Follow-up visit: <b>734A</b> for any patient attended to using an approved telemedicine video links (maximum one per day for all patients) – $12.50
+        <b>805B</b> – Virtual Partial Assessment – for clinicians who do not have a video link setup such as telephone follow-up – $31.85
 
         <b>Notes:</b> Saskatchewan has a designated in-person abortion code but not a virtual one, so providers can use the generic codes that are used for regular primary care telemedicine apps.`
 				]
@@ -696,12 +696,12 @@ Schedule a first virtual visit via telephone or video.`
 				data: [
 					`<i>The information below is pending verification.</i>`,
 					'Gynaecology',
-					`Initial visit: 4116 Medication abortion – $223.8
-        Follow-up visit: 4012 Limited consultation – $104.40
-        4007 Subsequent office visit – $69.60`,
+					`Initial visit: <b>4116</b> Medication abortion – $223.8
+        Follow-up visit: <b>4012</b> Limited consultation – $104.40
+        <b>4007</b> Subsequent office visit – $69.60`,
 					'Primary Care',
-					`Initial visit: 0101 Complete examination – $108.80
-        Follow-up visit: 0100 Visit – $49.70`
+					`Initial visit: <b>0101</b> Complete examination – $108.80
+        Follow-up visit: <b>0100</b> Visit – $49.70`
 				]
 			}
 		},
@@ -1942,11 +1942,11 @@ Schedule a first virtual visit via telephone or video.`
 				data: [
 					`<i>Les informations ci-dessous sont en attente de vérification.</i>`,
 					'Gynécologie',
-					`Première visite: 03.08A Consultation complète – $111.06
-            Visite de suivi: 03.07B Consultation de suivi – $62.24`,
+					`Première visite: <b>03.08A</b> Consultation complète – $111.06
+            Visite de suivi: 03.07B</b> Consultation de suivi – $62.24`,
 					'Premiers soins',
-					`Première visite: 03.04A Visite complète – $83.37
-            Visite de suivi: 03.03A Visite de bureau – $35.26`
+					`Première visite: <b>03.04A</b> Visite complète – $83.37
+            Visite de suivi: <b>03.03A</b> Visite de bureau – $35.26`
 				]
 			}
 		},
@@ -1958,14 +1958,14 @@ Schedule a first virtual visit via telephone or video.`
 				data: [
 					`<i>Les informations ci-dessous sont mises à jour en mars 2024.</i>`,
 					'Gynécologie',
-					`Première visite: 14545 Avortement par médicaments – $170.95
-          Visite de suivi: 4012 Consultation limitée – $85.49
-          4007 Suivi – $53.52`,
+					`Première visite: <b>14545</b> Avortement par médicaments – $170.95
+          Visite de suivi: <b>4012</b> Consultation limitée – $85.49
+          <b>4007</b> Suivi – $53.52`,
 					'Premiers soins',
-					`Première visite: 14545 Avortement par médicaments – $170.95
-          Visite de suivi: 00100 Suivi – $34.04
-          Télésanté: 14545 Même code pour la consultation – $165.97
-          13437 Suivi – $31.84
+					`Première visite: <b>14545</b> Avortement par médicaments – $170.95
+          Visite de suivi: <b>00100</b> Suivi – $34.04
+          Télésanté: <b>14545</b> Même code pour la consultation – $165.97
+          <b>13437</b> Suivi – $31.84
 
         <b>Remarque:</b> Pour la télésanté, les méthodes de soins virtuels peuvent inclure le téléphone, la vidéo ou la plateforme provinciale de télésanté, qui sont toutes également facturables pour le moment. Il n’est pas nécessaire d’avoir une relation médecin-patient continue pour que le médecin puisse soumettre une demande d’avortement par médicaments par télésanté.`
 				]
@@ -1979,13 +1979,13 @@ Schedule a first virtual visit via telephone or video.`
 				data: [
 					`<i>Les informations ci-dessous sont mises à jour en mars 2024.</i>`,
 					'Gynécologie',
-					`Première visite: 8428 Gestion médicale de l’interruption volontaire de grossesse, comprenant l’examen, la gestion et le suivi de la personne prenant du misoprostol. – $171.00
-8499 Examen gynécologique complet excluant le test Pap – $125.61
-Visite de suivi: 8505 Antécédents et examen régionaux avec examen gynécologique excluant le test Pap.`,
+					`Première visite: <b>8428</b> Gestion médicale de l’interruption volontaire de grossesse, comprenant l’examen, la gestion et le suivi de la personne prenant du misoprostol. – $171.00
+<b>8499</b> Examen gynécologique complet excluant le test Pap – $125.61
+Visite de suivi: <b>8505</b> Antécédents et examen régionaux avec examen gynécologique excluant le test Pap.`,
 					'Premiers soins',
-					`Première visite: 8428 Gestion médicale de l’interruption volontaire de grossesse, comprenant l’examen, la gestion et le suivi de la personne prenant du misoprostol. – $171.00
-8499 Examen gynécologique complet excluant le test Pap – $125.61
-Visite de suivi: 8471 Visite intermédiaire régionale ou visite suivante avec examen gynécologique excluant le test Pap – $54.16
+					`Première visite: <b>8428</b> Gestion médicale de l’interruption volontaire de grossesse, comprenant l’examen, la gestion et le suivi de la personne prenant du misoprostol. – $171.00
+<b>8499</b> Examen gynécologique complet excluant le test Pap – $125.61
+Visite de suivi: <b>8471</b> Visite intermédiaire régionale ou visite suivante avec examen gynécologique excluant le test Pap – $54.16
 
         <b>Remarque:</b> Il n’y a aucune précision quant à savoir si les codes sont spécifiques aux spécialistes ou aux soins primaires dans le manuel de facturation du Manitoba. Ainsi, les fournisseurs devraient examiner les informations et appliquer les règles de leurs codes de facturation.`
 				]
@@ -1999,19 +1999,19 @@ Visite de suivi: 8471 Visite intermédiaire régionale ou visite suivante avec e
 				data: [
 					`<i>Les informations ci-dessous sont en attente de vérification.</i>`,
 					'Gynécologie',
-					`Première visite: 54 Consultation majeure ou régionale – CA$95.91
-          9015 Gestion médicale d’une grossesse non-viable/non désirée, y compris le suivi de la βhCG, à ajouter à la visite ou à la consultation initiale – $136.22
-          Visite de suivi: 49 Examen régional – $52.82
+					`Première visite: <b>54</b> Consultation majeure ou régionale – CA$95.91
+          <b>9015</b> Gestion médicale d’une grossesse non-viable/non désirée, y compris le suivi de la βhCG, à ajouter à la visite ou à la consultation initiale – $136.22
+          Visite de suivi: <b>49</b> Examen régional – $52.82
           Télésanté: <b>Les mêmes codes</b>, mais la code du site où se trouve physiquement le patient, doivent être enregistrés sur la soumission de la demande de règlement. Lors de la soumission d’une demande de télémédecine, le chiffre 8 doit être écrit devant le code du site fourni afin de préciser que le service a été rendu par télémédecine.
-          8717 Présence – 1ère personne vue, premières 15 minutes ou partie de, 40 unités.
-          8718 Ajouter – par 15 minutes ou partie de, 20 unités.`,
+          <b>8717</b> Présence – 1ère personne vue, premières 15 minutes ou partie de, 40 unités.
+          <b>8718</b> Ajouter – par 15 minutes ou partie de, 20 unités.`,
 					'Premiers soins',
 					`Première visite: 1 visite du bureau – $23.36
-          9142 Gestion médicale d’une grossesse non-viable/non désirée, y compris le suivi de la βhCG, à ajouter à la visite ou à la consultation initiale – $74.48
+          <b>9142</b> Gestion médicale d’une grossesse non-viable/non désirée, y compris le suivi de la βhCG, à ajouter à la visite ou à la consultation initiale – $74.48
           Visite de suivi: 1 visite du bureau – $23.36
           Télésanté: <b>Les mêmes codes</b>, ainsi que le code du site où se trouve physiquement le patient, doivent être enregistrés sur la soumission de la demande de règlement. Lors de la soumission d’une demande de télémédecine, le chiffre 8 doit être écrit devant le code du site.
-          8717 Présence – 1ère personne vue, premières 15 minutes ou partie de, 40 unités.
-          8718 Ajouter – par 15 minutes ou partie de, 20 unités.`
+          <b>8717</b> Présence – 1ère personne vue, premières 15 minutes ou partie de, 40 unités.
+          <b>8718</b> Ajouter – par 15 minutes ou partie de, 20 unités.`
 				]
 			}
 		},
@@ -2023,10 +2023,10 @@ Visite de suivi: 8471 Visite intermédiaire régionale ou visite suivante avec e
 				data: [
 					`<i>Les informations ci-dessous sont mises à jour en mars 2024.</i>`,
 					'Gynécologie',
-					`Visite initiale et visite de suivi: 54607 Avortement par médicaments – $187.49
+					`Visite initiale et visite de suivi: <b>54607</b> Avortement par médicaments – $187.49
           <i>Frais complet incluant tous les services liés à l’avortement par médicaments, y compris la consultation et/ou la visite au cours de laquelle le médicament est prescrit, le counseling, la commande et/ou la réalisation et l’interprétation d’analyses de laboratoire et d’imagerie diagnostique, ainsi que toute communication ou visite de suivi.</i>`,
 					'Premiers soins',
-					`Visite initiale et visite de suivi: 54607 Avortement par médicaments – $187.49
+					`Visite initiale et visite de suivi: <b>54607</b> Avortement par médicaments – $187.49
           <i>Frais complet incluant tous les services liés à l’avortement par médicaments, y compris la consultation et/ou la visite au cours de laquelle le médicament est prescrit, le counseling, la commande et/ou la réalisation et l’interprétation d’analyses de laboratoire et d’imagerie diagnostique, ainsi que toute communication ou visite de suivi.</i>`
 				]
 			}
@@ -2039,17 +2039,17 @@ Visite de suivi: 8471 Visite intermédiaire régionale ou visite suivante avec e
 				data: [
 					`<i>Les informations ci-dessous sont en attente de vérification.</i>`,
 					'Gynécologie',
-					`Visite initiale et visite de suivi: OB-025 Avortement par médicaments de gestation de moins de 7 semaines – comprend toutes les visites, échographies et injections – $361.93
-          Télésanté: TE-001 Consultation de télésanté par un consultant utilisant la communication audio-vidéo-données – $180.97
-          TE-002 Consultation en télésanté – par 15 minutes – maximum de 1,5 heures par séance – $54.29
-          TE-004 Consultation au service des urgences des communautés périphériques – CA$18.09
+					`Visite initiale et visite de suivi: <b>OB-025</b> Avortement par médicaments de gestation de moins de 7 semaines – comprend toutes les visites, échographies et injections – $361.93
+          Télésanté: <b>TE-001</b> Consultation de télésanté par un consultant utilisant la communication audio-vidéo-données – $180.97
+          <b>TE-002</b> Consultation en télésanté – par 15 minutes – maximum de 1,5 heures par séance – $54.29
+          <b>TE-004</b> Consultation au service des urgences des communautés périphériques – CA$18.09
           <i>N’a pas besoin d’être votre propre client.</i>`,
 					'Premiers soins',
-					`Première visite: GP-001 Première visite nécessitant une évaluation générale pour une nouvelle maladie – $102.35
-          Visite de suivi: GP-002 Visites suivantes du bureau autre qu’une simple visite – $45.48
-          Télésanté: TE-001 Consultation de télésanté par un consultant utilisant la communication audio-vidéo-donnée – $180.97
-          TE-002 Consultation en télésanté – par 15 minutes – maximum de 1,5 heures par séance – $54.29
-          TE-004 Consultation au service des urgences des communautés périphériques – CA$18.09
+					`Première visite: <b>GP-001</b> Première visite nécessitant une évaluation générale pour une nouvelle maladie – $102.35
+          Visite de suivi: <b>GP-002</b> Visites suivantes du bureau autre qu’une simple visite – $45.48
+          Télésanté: <b>TE-001</b> Consultation de télésanté par un consultant utilisant la communication audio-vidéo-donnée – $180.97
+          <b>TE-002</b> Consultation en télésanté – par 15 minutes – maximum de 1,5 heures par séance – $54.29
+          <b>TE-004</b> Consultation au service des urgences des communautés périphériques – CA$18.09
           <i>N’a pas besoin d’être votre propre client.</i>`
 				]
 			}
@@ -2062,13 +2062,13 @@ Visite de suivi: 8471 Visite intermédiaire régionale ou visite suivante avec e
 				data: [
 					`<i>Les informations ci-dessous sont mises à jour en mars 2024.</i>`,
 					'Gynécologie',
-					`Première visite: 3.03V Avortement par médicaments / Interruption de grossesse précoce – 67.03 unités / $185.00
-          Visite de suivi: 3.03 Visites suivantes – 13 unités / $35.88
-          Télésanté: Comme en personne, utiliser AP=PHON pour le téléphone et AP=VIRC pour la plateforme vidéo`,
+					`Première visite: <b>3.03V</b> Avortement par médicaments / Interruption de grossesse précoce – 67.03 unités / $185.00
+          Visite de suivi: <b>.03</b> Visites suivantes – 13 unités / $35.88
+          Télésanté: Comme en personne, utiliser <b>AP=PHON</b> pour le téléphone et <b>AP=VIRC</b> pour la plateforme vidéo`,
 					'Premiers soins',
-					`Première visite: 3.03V Avortement par médicaments / Interruption de grossesse précoce – 67.03 unités / $185.00
-          Visite de suivi: 3.03 Visites suivantes – 13 unités / $35.88
-          Télésanté: Comme en personne, utiliser AP=PHON pour le téléphone et AP=VIRC pour la plateforme vidéo`
+					`Première visite: <b>3.03V</b> Avortement par médicaments / Interruption de grossesse précoce – 67.03 unités / $185.00
+          Visite de suivi: <b>3.03</b> Visites suivantes – 13 unités / $35.88
+          Télésanté: Comme en personne, utiliser <b>AP=PHON</b> pour le téléphone et <b>AP=VIRC</b> pour la plateforme vidéo`
 				]
 			}
 		},
@@ -2088,13 +2088,13 @@ Visite de suivi: 8471 Visite intermédiaire régionale ou visite suivante avec e
 				data: [
 					`<i>Les informations ci-dessous sont mises à jour en mars 2024.</i>`,
 					'En personne:',
-					`Première visite: A920 Gestion médicale de la grossesse précoce – service initial – $161.15
-          Visite de suivi: A921 Gestion médicale de la grossesse précoce – Visite de suivi (limitée à deux par personne par grossesse) – $36.85`,
+					`Première visite: <b>A920</b> Gestion médicale de la grossesse précoce – service initial – $161.15
+          Visite de suivi: <b>A921</b> Gestion médicale de la grossesse précoce – Visite de suivi (limitée à deux par personne par grossesse) – $36.85`,
 					'Télésanté:',
 					`Première visite: A920 peut être facturé pour les visites téléphoniques et vidéo.
-          Visite de suivi: A921 – $36.85
-          A007 – $37.95
-          A102 – $15.00
+          Visite de suivi: <b>A921</b> – $36.85
+          <b>A007</b> – $37.95
+          <b>A102</b> – $15.00
 
           <b>Remarques:</b> Si vous avez facturé le A920 pour la visite initiale, vous avez établi une relation et pour le suivi, vous pouvez utiliser le A921 (vidéo seulement) ou le A007 (téléphone). Les services de soins virtuels fournis dans les 24 mois suivant l’avortement par médicaments peuvent être considérés comme des services de soins virtuels complets car ils impliquent une relation patient-médecin existante/continue. Si vous ne rencontrez pas les patients lors de la première visite (c’est-à-dire que vous ne facturez pas le A920 pour la première visite et que vous n’avez donc pas de relation préétablie avec le patient), vous utiliserez le A102 pour un suivi téléphonique, qui rapporte $15.00.`
 				]
@@ -2108,13 +2108,13 @@ Visite de suivi: 8471 Visite intermédiaire régionale ou visite suivante avec e
 				data: [
 					`<i>Les informations ci-dessous sont en attente de vérification.</i>`,
 					'Gynécologie',
-					`Première visite: 6010 Avortement thérapeutique – $181.49
-          Visite de suivi: 0762 Consultation de suivi – $58.38
-          0713 Visite limitée du bureau – $42.00`,
+					`Première visite: <b>6010</b> Avortement thérapeutique – $181.49
+          Visite de suivi: <b>0762</b> Consultation de suivi – $58.38
+          <b>0713</b> Visite limitée du bureau – $42.00`,
 					'Premiers soins',
-					`Première visite: 6010 Avortement thérapeutique – $181.49
-          Visite de suivi: 0113 Visite limitée du bureau – $42.00
-          0163 Réexamen complet par un médecin spécialiste`
+					`Première visite: <b>6010</b> Avortement thérapeutique – $181.49
+          Visite de suivi: <b>0113</b> Visite limitée du bureau – $42.00
+          <b>0163</b> Réexamen complet par un médecin spécialiste`
 				]
 			}
 		},
@@ -2126,25 +2126,25 @@ Visite de suivi: 8471 Visite intermédiaire régionale ou visite suivante avec e
 				data: [
 					`<i>Les informations ci-dessous sont mises à jour en mars 2024.</i>`,
 					'Gynécologie',
-					`Première visite: 15850 Évaluation globale pour interruption d’une grossesse (< 63 jours) – $168.90
-          15852 Examen d’ultrasonographie – $60.95
-          Visite de suivi: 15854 Suivi d’un avortement par médicaments – $47.50
-          15857 Échographie après avortement par médicaments (<18 jours) – $39.80`,
+					`Première visite: <b>15850</b> Évaluation globale pour interruption d’une grossesse (< 63 jours) – $168.90
+          <b>15852</b> Examen d’ultrasonographie – $60.95
+          Visite de suivi: <b>15854</b> Suivi d’un avortement par médicaments – $47.50
+          <b>15857</b> Échographie après avortement par médicaments (<18 jours) – $39.80`,
 					'Premiers soins',
 					`Première visite: Évaluation globale pour interruption d’une grossesse
-          – 15313 Bureau – $139.50
-          – 15407 CLSC – $20.00
-          – 15314 Hôpital – $104.60
+          – <b>15313</b> Bureau – $139.50
+          – <b>15407</b> CLSC – $20.00
+          – <b>15314</b> Hôpital – $104.60
           <b>Examen d’ultrasonographie</b>
-          – 15315 Bureau – $38.15
-          – 15316 Hôpital – $13.10
+          – <b>15315</b> Bureau – $38.15
+          – <b>15316</b> Hôpital – $13.10
           Visite de suivi: Suivi interruption de grossesse
-          – 15317 Bureau – $39.25
-          – 15408 CLSC – $1.50
-          – 15318 Hôpital – $29.45
+          – <b>15317</b> Bureau – $39.25
+          – <b>15408</b> CLSC – $1.50
+          – <b>15318</b> Hôpital – $29.45
           <b>Examen d’ultrasonographie</b>
-          – 15319 Bureau – $33.80
-          – 15320 Hôpital – $8.75`
+          – <b>15319</b> Bureau – $33.80
+          – <b>15320</b> Hôpital – $8.75`
 				]
 			}
 		},
@@ -2156,18 +2156,18 @@ Visite de suivi: 8471 Visite intermédiaire régionale ou visite suivante avec e
 				data: [
 					`<i>Les informations ci-dessous sont mises à jour en mars 2024.</i>`,
 					'Gynécologie',
-					`Première visite: 150B Gestion médicale de l’interruption de grossesse précoce – comprend 5 jours de gestion médicale continue – $170
-          Visite de suivi: 11P Consultation de suivi – $41.90
-          7P Évaluation de suivi – $38.20`,
+					`Première visite: <b>150B</b> Gestion médicale de l’interruption de grossesse précoce – comprend 5 jours de gestion médicale continue – $170
+          Visite de suivi: <b>11P</b> Consultation de suivi – $41.90
+          <b>7P</b> Évaluation de suivi – $38.20`,
 					'Premiers soins',
-					`Première visite: 150B Gestion médicale de l’interruption de grossesse précoce – comprend 5 jours de gestion médicale continue – $170
-          Visite de suivi: 5-B Consultation de suivi – $39.80`,
+					`Première visite: <b>150B</b> Gestion médicale de l’interruption de grossesse précoce – comprend 5 jours de gestion médicale continue – $170
+          Visite de suivi: <b>5-B</b> Consultation de suivi – $39.80`,
 					'Télésanté',
-					`Première visite: 732A pour tout patient soigné via une liaison vidéo de télémédecine agréée – $31.40
-          840B et 841B – Counseling – pour les cliniciens qui ne disposent pas d’une configuration de liaison vidéo telle qu’une consultation téléphonique.
-          840 est un conseil virtuel pendant les 15 premières minutes et 841B est pour les 15 minutes suivantes – $33.75
-          Visite de suivi: 734A pour tout patient soigné à l’aide d’une liaison vidéo de télémédecine approuvée (maximum une par jour pour tous les patients) – $12.50
-          805B – Évaluation partielle virtuelle – pour les cliniciens qui ne disposent pas d’une configuration de liaison vidéo telle qu’un suivi téléphonique – $31.85
+					`Première visite: <b>732A</b> pour tout patient soigné via une liaison vidéo de télémédecine agréée – $31.40
+         <b>840B</b> et <b>841B</b> – Counseling – pour les cliniciens qui ne disposent pas d’une configuration de liaison vidéo telle qu’une consultation téléphonique.
+		 <b>840</b> est un conseil virtuel pendant les 15 premières minutes et <b>841B</b> est pour les 15 minutes suivantes – $33.75
+          Visite de suivi: <b>734A</b> pour tout patient soigné à l’aide d’une liaison vidéo de télémédecine approuvée (maximum une par jour pour tous les patients) – $12.50
+          <b>805B</b> – Évaluation partielle virtuelle – pour les cliniciens qui ne disposent pas d’une configuration de liaison vidéo telle qu’un suivi téléphonique – $31.85
 
           <b>Remarques:</b> La Saskatchewan dispose d’un code désigné pour l’avortement en personne, mais pas d’un code virtuel, de sorte que les prestataires peuvent utiliser les codes génériques utilisés pour les applications régulières de télémédecine pour les soins primaires.`
 				]
@@ -2181,12 +2181,12 @@ Visite de suivi: 8471 Visite intermédiaire régionale ou visite suivante avec e
 				data: [
 					`<i>Les informations ci-dessous sont en attente de vérification.</i>`,
 					'Gynécologie',
-					`Première visite: 4116 Avortement par médicaments – $223.80
-          Visite de suivi: 4012 Consultation limitée – $104.40
-          4007 Visite suivant du bureau – $69.60`,
+					`Première visite: <b>4116</b> Avortement par médicaments – $223.80
+          Visite de suivi: <b>4012</b> Consultation limitée – $104.40
+          <b>4007</b> Visite suivant du bureau – $69.60`,
 					'Premiers soins',
-					`Première visite: 0101 Examen complet – $108.80
-          Visite de suivi: 0100 Visite – $49.70`
+					`Première visite: <b>0101</b> Examen complet – $108.80
+          Visite de suivi: <b>0100</b> Visite – $49.70`
 				]
 			}
 		},
