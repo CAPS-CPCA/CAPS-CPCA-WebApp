@@ -106,27 +106,27 @@
 		display: block;
 		width: 100%;
 		height: 100%;
-		-webkit-mask: url(../assets/ico-share.svg) no-repeat center / 100%;
-		mask: url(../assets/ico-share.svg) no-repeat center / 100%;
+		-webkit-mask: url(../lib/assets/ico-share.svg) no-repeat center / 100%;
+		mask: url(../lib/assets/ico-share.svg) no-repeat center / 100%;
 		background-color: #ffffff;
 		transform: scale(0.5);
 		transition: all 0.3s ease-in-out;
 	}
 	.social li:nth-child(2)::before {
-		-webkit-mask: url(../assets/ico-print.svg) no-repeat center / 100%;
-		mask: url(../assets/ico-print.svg) no-repeat center / 100%;
+		-webkit-mask: url(../lib/assets/ico-print.svg) no-repeat center / 100%;
+		mask: url(../lib/assets/ico-print.svg) no-repeat center / 100%;
 	}
 	.social li:nth-child(3)::before {
-		-webkit-mask: url(../assets/ico-facebook.svg) no-repeat center / 100%;
-		mask: url(../assets/ico-facebook.svg) no-repeat center / 100%;
+		-webkit-mask: url(../lib/assets/ico-facebook.svg) no-repeat center / 100%;
+		mask: url(../lib/assets/ico-facebook.svg) no-repeat center / 100%;
 	}
 	.social li:nth-child(4)::before {
-		-webkit-mask: url(../assets/ico-twitter.svg) no-repeat center / 100%;
-		mask: url(../assets/ico-twitter.svg) no-repeat center / 100%;
+		-webkit-mask: url(../lib/assets/ico-twitter.svg) no-repeat center / 100%;
+		mask: url(../lib/assets/ico-twitter.svg) no-repeat center / 100%;
 	}
 	.social li:nth-child(5)::before {
-		-webkit-mask: url(../assets/ico-youtube.svg) no-repeat center / 100%;
-		mask: url(../assets/ico-youtube.svg) no-repeat center / 100%;
+		-webkit-mask: url(../lib/assets/ico-youtube.svg) no-repeat center / 100%;
+		mask: url(../lib/assets/ico-youtube.svg) no-repeat center / 100%;
 	}
 	.social li:hover {
 		border-color: #4e7385;
