@@ -985,7 +985,7 @@ Schedule a first virtual visit via telephone or video.`
 				data: [
 					`Mifegymiso is covered under the BC Pharmacare Assurance Plan (Plan Z and exceptional Plan Z) which provides 100% coverage. All residents of BC with active Medical Services Plan (MSP) coverage are eligible.
 
-        Link: www2.gov.bc.ca(www2.gov.bc.ca/gov/content/health/practitioner-professional-resources/pharmacare/pharmacies/plan-z)
+        Link: www2.gov.bc.ca(https://www2.gov.bc.ca/gov/content/health/practitioner-professional-resources/pharmacare/pharmacies/plan-z)
         `
 				]
 			}
