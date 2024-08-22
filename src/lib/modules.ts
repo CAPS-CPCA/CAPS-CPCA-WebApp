@@ -1152,10 +1152,11 @@ Schedule a first virtual visit via telephone or video.`
 			id: 'M32',
 			title: 'Key counselling points',
 			content: {
-				type: ['p', 'h2', 'ul', 'p', 'ul', 'p'],
+				type: ['p', 'ul', 'p', 'ul', 'p'],
 				data: [
-					`Prior to arriving at the pharmacy for MIFE / MISO, people seeking abortion, hereinafter called “patients”, will already have had a conversation with prescribers about medication abortion (MA) such as pregnancy options, eligibility, risks and efficacy[10].`,
-					'Counselling Points:',
+					`Prior to arriving at the pharmacy for MIFE / MISO, people seeking abortion, hereinafter called “patients”, will already have had a conversation with prescribers about medication abortion (MA) such as pregnancy options, eligibility, risks and efficacy[10].
+
+					When counselling patients, dispensers should provide a <b>private space for counselling</b>, ensure confidentiality and go over the key points below using an <b>inclusive language</b>[10]:`,
 					`Confirm that the decision is the patients’ own, reached without coercion.
         Verify the written date of the prescription; if the prescription was written 7 or more days from when the prescription was brought to the pharmacy, the pharmacist may want to follow-up with the prescriber.
         Emphasize that in the event of an ongoing pregnancy post-MA, another dose of MISO or procedural abortion is recommended as both MIFE and MISO are teratogenic.
@@ -2087,10 +2088,10 @@ Visite de suivi: <b>8471</b> Visite intermédiaire régionale ou visite suivante
 				type: ['p', 'h2', 'p', 'h2', 'p'],
 				data: [
 					`<i>Les informations ci-dessous sont mises à jour en mars 2024.</i>`,
-					'En personne:',
+					'En personne',
 					`Première visite: <b>A920</b> Gestion médicale de la grossesse précoce – service initial – $161.15
           Visite de suivi: <b>A921</b> Gestion médicale de la grossesse précoce – Visite de suivi (limitée à deux par personne par grossesse) – $36.85`,
-					'Télésanté:',
+					'Télésanté',
 					`Première visite: A920 peut être facturé pour les visites téléphoniques et vidéo.
           Visite de suivi: <b>A921</b> – $36.85
           <b>A007</b> – $37.95
