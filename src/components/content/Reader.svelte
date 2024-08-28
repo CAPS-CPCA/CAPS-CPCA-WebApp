@@ -124,6 +124,16 @@
 			{
 				regex: /Lien: (.*?)\((.*?)\)/g,
 				replacement: 'Lien: <a class="ex" href="$2" target="_blank">$1</a>'
+			},
+			{
+				regex: /Patient Assistance Fund:/g,
+				replacement:
+					'<a class="ex" href="https://prochoice.org/patients/naf-hotline/" target="_blank">Patient Assistance Fund:</a>'
+			},
+			{
+				regex: /Norma Scarborough Fund \| Action Canada: Visit actioncanadashr.org/g,
+				replacement:
+					'<a class="ex" href="https://actioncanadashr.org/" target="_blank">Norma Scarborough Fund | Action Canada: Visit actioncanadashr.org</a>'
 			}
 		];
 		let html = '';

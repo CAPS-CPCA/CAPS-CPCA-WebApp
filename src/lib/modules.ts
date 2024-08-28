@@ -27,7 +27,7 @@ export const modules: { [key: string]: Modules } = {
 
           MISO is a potent synthetic prostaglandin E1 that induces cervical ripening and uterine contractions, which cause the pregnancy tissues to leave the body[10].
 
-          Click here to download the Product monograph.`,
+          Click here to download the <a href="" class="in" target="_blank">Product monograph</a>.`,
 					assets.EnMifegymisoOverview
 				]
 			}
@@ -56,7 +56,7 @@ export const modules: { [key: string]: Modules } = {
 				type: ['h2', 'p', 'h2', 'ul', 'h2', 'p', 'h2', 'p', 'h2', 'p'],
 				data: [
 					'Indication',
-					`MIFE / MISO is indicated by Health Canada for pregnancy termination up to <b>63 days</b> as counted from the first day of the last menstrual period (LMP) in a presumed 28-day cycle. The Society of Obstetricians and Gynaecologists of Canada indicates safe use up to <b>70 days</b> after LMP. There is no absolute lower gestational age limit[5].`,
+					`MIFE / MISO is indicated by <a href="" class="in" target="_blank">Health Canada</a> for pregnancy termination up to <b>63 days</b> as counted from the first day of the last menstrual period (LMP) in a presumed 28-day cycle. The Society of Obstetricians and Gynaecologists of Canada indicates safe use up to <b>70 days</b> after LMP. There is no absolute lower gestational age limit[5].`,
 					'Contraindications[6]:',
 					`Ectopic pregnancy
         Chronic adrenal failure
@@ -73,7 +73,7 @@ export const modules: { [key: string]: Modules } = {
 					'Breastfeeding / Chestfeeding[6]:',
 					`Oral MISO is excreted into human breast milk in small amounts which are rapidly eliminated. No interruption of breastfeeding or chestfeeding is necessary when misoprostol is given by any route.`,
 					'Gestational Age > 63 days',
-					`The Society of Obstetricians and Gynaecologists of Canada and the National Abortion Federation both endorse medication abortion (MA) with MIFE / MISO up to 70 days after LMP. They also recommend a second dose of MISO 800mcg four hours after the first dose of MISO 800mcg to increase the effectiveness of MA[5,13].
+					`<a href="" class="in" target="_blank">The Society of Obstetricians and Gynaecologists of Canada</a> and the <a href="" class="in" target="_blank">National Abortion Federation</a> both endorse medication abortion (MA) with MIFE / MISO up to 70 days after LMP. They also recommend a second dose of MISO 800mcg four hours after the first dose of MISO 800mcg to increase the effectiveness of MA[5,13].
 
         The Society of Obstetricians and Gynaecologists of Canada also recommends a MIFE / MISO regimen from 70-84 days gestational age, with mifepristone 200mg followed in 24-48 hours with two doses of MISO 800mcg (buccal or vaginal), 4 hours apart.
         
@@ -96,14 +96,14 @@ export const modules: { [key: string]: Modules } = {
         Communicate the risk of advancing gestational age without putting time pressure on the patient.
         <b>Use non-judgmental and inclusive language</b>.`,
 					'<i>(If choosing abortion:)</i>',
-					`Review abortion options, including risks, efficacy, process and length of time of medication versus procedural abortion.
+					`Review <a href="" class="in" target="_blank">abortion options</a>, including risks, efficacy, process and length of time of medication versus procedural abortion.
         <b>Discuss the patient’s eligibility for medication abortion</b>, including gestational age and medical history.
         <b>Discuss the patient’s access to pharmacies, telephone, transportation, emergency care, and labs and imaging facilities</b> if needed.
-        Discuss the patient’s preferences and circumstances, such as a safe place in their living situation to complete medication abortion. Share decision tools such as It’s My Choice to help the patient choose the type of abortion that fits them.
+        Discuss the patient’s <a href="" class="in" target="_blank">preferences and circumstances</a>, such as a safe place in their living situation to complete medication abortion. Share decision tools such as It’s My Choice to help the patient choose the type of abortion that fits them.
         Confirm that the decision is the patient’s own, reached without coercion.
         Confirm the patient’s understanding that <b>medication abortion is irreversible</b> and that the patients must take an additional dose of the second medication or undergo procedural abortion in case of ongoing pregnancy.
         Review the timing of examinations (ultrasound, blood tests, if needed), medications and follow-up appointments.
-        Discuss post-abortion contraception options.`
+        Discuss <a href="" class="in" target="_blank">post-abortion contraception options</a>.`
 				]
 			}
 		},
@@ -137,20 +137,20 @@ export const modules: { [key: string]: Modules } = {
 				data: [
 					'After the patient and the health provider determine that medication abortion (MA) is the right option, the health provider should[2,6,7,10]:',
 					[
-						`<b>Obtain written or verbal informed consent</b> (see examples by CAPS-CPCA platform and the Bay Center for Birth Control) and document it in the patients’ chart.
+						`<b>Obtain written or verbal informed consent</b> (see examples by <a href="" class="in" target="_blank">CAPS-CPCA platform</a> and the <a href="" class="in" target="_blank">Bay Center for Birth Control</a>) and document it in the patients’ chart.
           <b>Prescribe:</b>`,
 						`Mifepristone 200 mg (MIFE) orally and misoprostol 800 mcg (MISO) buccally or vaginally (this combination is packaged and branded as Mifegymiso).
           Additional dose of MISO buccally or vaginally in case of incomplete or failed abortion.
           Analgesics and antiemetics as per health provider / facility protocol.
           Antibiotic prophylaxis, if needed, as per health provider / facility protocol.`,
-						`Provide instructions on how to take the medication.
-          Ensure patients know how to manage side effects and when and where to seek care for complications.
+						`Provide instructions on <a href="" class="in" target="_blank">how to take the medication</a>.
+          Ensure patients know <a href="" class="in" target="_blank">how to manage side effects</a> and when and where to seek care for complications.
           Consider informing patients if the MA procedure involves off-label, evidence-based practices.`,
 						`Much of the MA off-label practices are based on low-resource availability and require a balance between health providers’ experience, patients’ safety and patients’ needs.
           It is recommended to inform patients about off-label practices so patients understand the risks involved and understand that off-label practices might vary depending on prescribers’ experience and comfort level.`,
 						`Discuss post-abortion contraception options. <b>Emphasize that patients can quickly return to fertility following the abortion</b>.
           <b>Set up follow-up appointment(s), either in-person or via phone/video</b>. Do discuss any safety or privacy plan if needed.
-          Provide patients with patient instruction manuals (see an example by the SHORE center and the Planned Parenthood Ottawa) and the contact details of healthcare providers and emergency health services.
+          Provide patients with patient instruction manuals (see an example by the <a href="" class="in" target="_blank">SHORE center and the Planned Parenthood Ottawa</a>) and the contact details of healthcare providers and emergency health services.
           Take note of patients’ preferred phone numbers and emergency contacts in case providers are unable to reach patients directly. Be mindful that the emergency contact that the patient gives during their visits for MA may be different from the emergency contact on file. Be sure not to contact any other individuals without the patient’s expressed consent.`
 					]
 				]
@@ -273,7 +273,7 @@ export const modules: { [key: string]: Modules } = {
 
         According to the SOGC’s Guideline on Prevention of RhD Alloimmunization published in 2024, for non-sensitized Rh D-negative individuals who have experienced threatened, spontaneous or induced abortion after <b>12 weeks gestation</b>, administration of 300 μg of Rho(D) immune globulin is suggested.
 
-        Prior to that, in 2022, the Society of Family Planning and the World Health Organization also recommends withholding Rh testing and administration prior to 12 weeks gestation for patients undergoing MA, spontaneous abortion or uterine aspiration abortion[8,20].`
+        Prior to that, in 2022, the <a href="" class="in" target="_blank">Society of Family Planning</a> and the <a href="" class="in" target="_blank">World Health Organization</a> also recommends withholding Rh testing and administration prior to 12 weeks gestation for patients undergoing MA, spontaneous abortion or uterine aspiration abortion[8,20].`
 				]
 			}
 		},
@@ -404,19 +404,19 @@ Schedule a first virtual visit via telephone or video.`
         <b>Establish pregnancy and gestational age.</b>`,
 						`Review date of last menstrual period (LMP) and date of positive qualitative pregnancy test.
             Review relevant medical history, including recent hormonal contraception and risk factors and signs of ectopic pregnancy.`,
-						`<b>Exclude</b> contraindications.
+						`<b>Exclude</b> <a href="" class="in" target="_blank">contraindications</a>.
         <b>Assess the need for an ultrasound to determine gestational age and the location of pregnancy</b>[5]:`,
-						`According to SOGC’s protocol on medication abortion via telemedicine, ultrasound should be obtained if LMP is uncertain, LMP is over 70 days, and the signs, symptoms and risk factors of ectopic pregnancy (EP) are present.
-            Medication abortion performed without ultrasound is, by definition, pregnancy of unknown location and should be managed accordingly. Though the risk of unrecognized EP is low, close follow-up is required to ensure completion of the medication abortion.`,
+						`According to <a href="" class="in" target="_blank">SOGC’s protocol on medication abortion</a> via telemedicine, ultrasound should be obtained if LMP is uncertain, LMP is over 70 days, and the signs, symptoms and risk factors of ectopic pregnancy (EP) are present.
+            Medication abortion performed without ultrasound is, by definition, <a href="" class="in" target="_blank">pregnancy of unknown location</a> and should be managed accordingly. Though the risk of unrecognized EP is low, close follow-up is required to ensure completion of the medication abortion.`,
 						`<b>Assess the need for blood work to measure hemoglobin</b>[7]:`,
 						`According to Health Canada, hemoglobin should be over 9.5 g / dL before starting MA.
             Screen patients for increased risk of anemia through a detailed medical history.
             If patients are suspected to have an increased risk of anemia, complete blood count is indicated. Otherwise, measuring hemoglobin is unnecessary.`,
-						`<b>Assess the need for blood work to determine</b> Rh status (Rh)[7]:`,
+						`<b>Assess the need for blood work to determine</b> <a href="" class="in" target="_blank">Rh status (Rh)</a>[7]:`,
 						`As explained elsewhere, guidelines on Rh status have been updated and vary between organizations.
             According to the SOGC’s Guideline on Prevention of RhD Alloimmunization published in 2024, for non-sensitized Rh D-negative individuals who have experienced threatened, spontaneous or induced abortion after 12 weeks gestation, administration of 300 μg of Rho(D) immune globulin is suggested.
-            The National Abortion Federation, the Society of Family Planning and the World Health Organization all recommend Rh testing and administration for patients who are 12 weeks gestation or beyond, but not for patients who are under 12 weeks LMP.`,
-						`<b>Assess the need for</b> STI testing[7]:`,
+            The <a href="" class="in" target="_blank">National Abortion Federation</a>, the <a href="" class="in" target="_blank">Society of Family Planning</a> and the <a href="" class="in" target="_blank">World Health Organization</a> all recommend Rh testing and administration for patients who are 12 weeks gestation or beyond, but not for patients who are under 12 weeks LMP.`,
+						`<b>Assess the need for</b> <a href="" class="in" target="_blank">STI testing</a>[7]:`,
 						`Offer testing for chlamydia and gonorrhea if patients come to office.
             Otherwise, evaluate the risk of STIs and consider remote testing if risk factors are present, and discuss the potential need for antibiotic treatment.`
 					]
@@ -438,7 +438,7 @@ Schedule a first virtual visit via telephone or video.`
           <b>If history suggests failed abortion or ongoing pregnancy</b>: obtain ultrasound and consider an additional dose of MISO or procedural abortion.
           <b>If history suggests successful abortion, no warning signs, and no current symptoms of pregnancy, normal bleeding and pain</b>: arrange the blood test to confirm serum bhCG level if the appointment is in-person or instruct the patient to perform qualitative urine pregnancy test.<br><br><b>Serum bhCG</b>[4]: If the serum bhCG level drops by >50% at Day 3 after MISO or 80% at Day 7-14 after MIFE / MISO administration, the successful completion of abortion is confirmed and no further appointment is needed. Ultrasound should be ordered if 14 days have passed and a drop by 80% has not been reached.<br><br><b>Urine bhCG</b>[7]:`,
 						assets.EnAbortionCompletion,
-						`Offer to discuss contraception options and provide emotional support if needed. Resources for emotional support include:`,
+						`Offer to discuss <a href="" class="in" target="_blank">contraception options</a> and provide emotional support if needed. Resources for emotional support include:`,
 						`Exhale, a talk-line that provides emotional support, resources and information after abortion.
           All-Options, a talk-line to discuss past or current experience with abortion, adoption and parenting for people in Canada and the United States (1-888-493-0092).`
 					]
@@ -715,12 +715,12 @@ Schedule a first virtual visit via telephone or video.`
 
         Medication abortion uses medication pills to end a pregnancy. In Canada, the medication abortion pills are packaged and sold as Mifegymiso.`,
 					`Mifegymiso is approved by Health Canada for gestational age up to 63 days, but has been shown by SOGC to be <b>safe and effective</b> for up to 70 days.
-        It is provided <b>free-of-charge</b> to all patients with provincial health insurance and several categories of federal health insurances.
+        It is provided <b>free-of-charge</b> to all patients with provincial health insurance and several categories of <a href="" class="in" target="_blank">federal health insurances</a>.
         Patients eligible for healthcare in one province, who attempt to access Mifegymiso in another province or territory, are eligible for counselling, assessments and follow-up but not for the medication itself.
-        It can be prescribed through <b>in-person visits</b> or virtual consultations, or a combination of the two.`,
+        It can be prescribed through <b>in-person visits</b> or <a href="" class="in" target="_blank">virtual consultations</a>, or a combination of the two.`,
 					`<b>Scope of practice:</b> At the time of this writing, physicians and nurse practitioners in Canada are authorized to prescribe Mifegymiso. In most cases, pharmacists are in charge of dispensing the medication to patients, but some clinics are also authorized to dispense the medication directly to patients. With the exception of Quebec, midwives are currently not authorized to prescribe Mifegymiso but can provide medication abortion care by working closely with nurse practitioners or physicians.
 
-        <b>Province-specific requirements:</b> Healthcare providers should check specific guidelines and scope of practices in their provinces or territories. For example, provinces may differ in their requirements on who can pick up the medication and whether pharmacists have to register with Celopharma, the manufacturer of Mifegymiso. Click here to see the summary of some province-specific regulations for dispensing Mifegymiso.
+        <b>Province-specific requirements:</b> Healthcare providers should check specific guidelines and scope of practices in their provinces or territories. For example, provinces may differ in their requirements on who can pick up the medication and whether pharmacists have to register with Celopharma, the manufacturer of Mifegymiso. <a href="" class="in" target="_blank">Click here to see the summary</a> of some province-specific regulations for dispensing Mifegymiso.
 
         <b>Training requirement:</b> Completing a training course is no longer required before prescribing or dispensing Mifegymiso, but healthcare providers may find the online courses below useful in learning about MA care.`,
 					`SOGC’s Medical Abortion Training Program, updated in 2023 and provided at cost.
@@ -774,7 +774,7 @@ Schedule a first virtual visit via telephone or video.`
         For nurse practitioners and registered midwives, review the compensation processes from the professional associations in your jurisdiction.`,
 					'Address abortion concerns among your team:',
 					assets.FaSetup3,
-					`Explore the willingness to provide MA among all staff, address their concerns and determine how to best incorporate abortion services into your practice (see the next module).`,
+					`Explore the willingness to provide MA among all staff, address their concerns and determine how to best incorporate abortion services into your practice (see the <a href="" class="in" target="_blank">next module</a>).`,
 					'Prepare plans to support underserved populations:',
 					assets.FaSetup4,
 					`Evaluate your services for its ability to serve underserved population such as non-insured patients, patients from Indigenous communities and patients identified as 2SLGBTQI+.
@@ -818,8 +818,8 @@ Schedule a first virtual visit via telephone or video.`
           Initiate informal discussions with colleagues about offering the service.
           Consider implementing an anonymous staff survey and patient survey to get an idea of people’s thoughts and feelings about MA.
           Consider organizing a workshop to clarify abortion beliefs, address opposition or discomfort, and determine ways for working together to provide MA. Abortion belief clarification workshop can be adapted using:`,
-						`Values clarification toolkits by National Abortion Federation.
-          Values clarification workshop materials by the Reproductive Health Access Project.`,
+						`<a href="" class="in" target="_blank">Values clarification toolkits</a> by National Abortion Federation.
+          <a href="" class="in" target="_blank">Values clarification workshop</a> materials by the Reproductive Health Access Project.`,
 						`Consider establishing a planning committee to discuss goals, tasks, timelines, obstacles and solutions.
           Find out about other local health centres or providers who have successfully integrated abortion services into their practice and invite them to meetings, workshops and planning sessions, or invite them to provide feedback and consult on your process.
           Develop a protocol for staff members who feel that they are unable to participate in providing abortion services.
@@ -899,7 +899,7 @@ Schedule a first virtual visit via telephone or video.`
 				data: [
 					`Below are some suggestions to help clinicians create an inclusive environment where the needs of 2SLGBTQIA+ patients can be met. These suggestions are not exhaustive and providers are encouraged to consider other manuals and cultural competency training opportunities to provide inclusive care.
 
-        <i>These suggestions were reproduced from Gender Inclusive Language by Trans Care BC, The Trans-inclusive Abortion Services by the SHORE Centre and Fédération du Québec pour le planning des naissances, and the Handbook for Healthcare Providers Working with Clients from Diverse Communities by Action Canada for Sexual Health & Rights. For more information on the myths about reproduction of LGBTQ2S+, the vocabulary and glossary to use and avoid, and case studies and recommendations to overcome obstacles, <b>please refer to these manuals.</b></i>`,
+        <i>These suggestions were reproduced from <a href="" class="in" target="_blank">Gender Inclusive Language</a> by Trans Care BC, <a href="" class="in" target="_blank">The Trans-inclusive Abortion Services</a> by the SHORE Centre and Fédération du Québec pour le planning des naissances, and the <a href="" class="in" target="_blank">Handbook for Healthcare Providers Working with Clients from Diverse Communities</a> by Action Canada for Sexual Health & Rights. For more information on the myths about reproduction of LGBTQ2S+, the vocabulary and glossary to use and avoid, and case studies and recommendations to overcome obstacles, <b>please refer to these manuals.</b></i>`,
 					'Do’s and Don’ts:',
 					`Do have <b>accessible bathrooms for multiple genders</b> by removing “Male” and “Female” signs from washrooms, or replacing them with an “All Gender Bathroom” sign.
         Do display <b>2SLGBTQIA+ inclusive posters, pamphlets, and other materials</b> to let your patients know that they are welcome.
@@ -948,7 +948,7 @@ Schedule a first virtual visit via telephone or video.`
 
         A variety of factors and realities may affect how Indigenous Peoples access health services, including geographical access barriers, the unavailability of language and translation services, a lack of culturally safe health care settings or past experiences of racism, stigma, shame, fear or discrimination. Be mindful that <b>being Indigenous is not a risk factor in itself</b>, what actually puts people at risk are systemic issues like racism, colonialism, inter-generational trauma, and a lack of access to culturally safe care, treatment and supports.
 
-        These recommendations were reproduced from The Indigenous Ally Toolkit by the Montreal Urban Aboriginal Community Strategy Network, and the Handbook for Healthcare Providers Working with Clients from Diverse Communities by Action Canada for Sexual Health & Rights.`,
+        These recommendations were reproduced from <a href="" class="in" target="_blank">The Indigenous Ally Toolkit</a> by the Montreal Urban Aboriginal Community Strategy Network, and <a href="" class="in" target="_blank">the Handbook for Healthcare Providers Working with Clients from Diverse Communities</a> by Action Canada for Sexual Health & Rights.`,
 					'Quick tips for clinicians:',
 					`Offer <b>translation services</b>, and where possible, translated resources.
         Connect with, and advocate for the involvement of, Indigenous patient navigators in your area.
@@ -1261,7 +1261,7 @@ Schedule a first virtual visit via telephone or video.`
         Review current pharmacy staffing to determine the capacity to provide MA.
         Determine a key person or team to be primarily responsible for MA patients.
         Develop, print and distribute posters to let clients and other healthcare providers know that you dispense Mifegymiso.`,
-					'Adapted from the Checklist for starting medical abortion services by National Abortion Federation.'
+					'Adapted from the <a class="in" href="" target="_blank">Checklist for starting medical abortion services</a> by National Abortion Federation.'
 				]
 			}
 		},
@@ -1273,7 +1273,7 @@ Schedule a first virtual visit via telephone or video.`
 				data: [
 					`Abortion is <b>legal</b> in Canada, and patients do not require consent from partners or parents to seek an abortion. It is the <b>second most common</b> reproductive health service: one in three Canadian pregnancy-capable persons will seek abortion in their lifetime[2,14,15,18].
 
-        Medication abortion uses medication pills to end a pregnancy. In Canada, the medication abortion pills are packaged and sold as Mifegymiso. It is approved by Health Canada for gestational age up to 63 days, but has been shown to be <b>safe and effective</b> up to 70 days by the Society of Obstetricians and Gynaecologists of Canada and 77 days by the World Health Organization. The counselling and the medication are provided <b>free-of-charge</b> to all patients with provincial health insurance and several categories of federal health insurances. However, it is important to note that patients eligible for healthcare in one province, who attempt to get medication abortion in another province or territory, are covered for counselling but not for the medication itself.
+        Medication abortion uses medication pills to end a pregnancy. In Canada, the medication abortion pills are packaged and sold as Mifegymiso. It is approved by <a href="" class="in" target="_blank">Health Canada</a> for gestational age up to 63 days, but has been shown to be <b>safe and effective</b> up to 70 days by the Society of Obstetricians and Gynaecologists of Canada and 77 days by the World Health Organization. The counselling and the medication are provided <b>free-of-charge</b> to all patients with provincial health insurance and several categories of <a href="" class="in" target="_blank">federal health insurances</a>. However, it is important to note that patients eligible for healthcare in one province, who attempt to get medication abortion in another province or territory, are covered for counselling but not for the medication itself.
 
         <b>Mifegymiso</b> typically comes in two boxes: a green box containing mifepristone 200 mg (MIFE) and an orange box containing misoprostol 800 mcg (MISO). MIFE helps stop a pregnancy from growing and prepares the body to empty the uterus by softening the cervix and helping the lining of the uterus to break down. MISO causes the cervix to dilate and the uterus to contract, which makes the pregnancy tissues leave the body. It is also used for abortion and for other conditions (e.g., miscarriage, postpartum hemorrhage)[14].`,
 					assets.EnMifegymisoOverview
@@ -1304,7 +1304,7 @@ Schedule a first virtual visit via telephone or video.`
 			content: {
 				type: ['p'],
 				data: [
-					`In most cases, <b>pharmacists</b> are in charge of dispensing the medication to patients, but some clinics are also authorized to dispense the medication directly to patients. Specific guidelines by the College of Pharmacies may differ between provinces and territories about whether patients need to be present in- person to pick up the medication, or whether the medication can be delivered to patients via postage services.`
+					`In most cases, <b>pharmacists</b> are in charge of dispensing the medication to patients, but some clinics are also authorized to dispense the medication directly to patients. Specific guidelines by the <a href="" class="in" target="_blank">College of Pharmacies</a> may differ between provinces and territories about whether patients need to be present in- person to pick up the medication, or whether the medication can be delivered to patients via postage services.`
 				]
 			}
 		},
@@ -1518,7 +1518,7 @@ Schedule a first virtual visit via telephone or video.`
 
           Le MISO est un puissant analogue synthétique de la prostaglandine E1 qui induit la maturation cervicale et les contractions utérines, provoquant l’expulsion des produits de conception.[10].
 
-          Cliquez ici pour télécharger la monographie du produit.`,
+          Cliquez ici pour télécharger la <a href="" class="in" target="_blank">monographie du produit</a>.`,
 					assets.FrMifegymisoOverview
 				]
 			}
@@ -1564,7 +1564,7 @@ Schedule a first virtual visit via telephone or video.`
 					'Allaitement[6]:',
 					`Le MISO oral est excrété dans le lait maternel en petites quantités qui sont rapidement éliminées. Aucune interruption de l’allaitement n’est nécessaire lorsque le MISO est administré par quelque voie que ce soit.`,
 					'Âge gestationnel > 63 jours',
-					`La Société des Obstétriciens et Gynécologues du Canada et la National Abortion Federation (NAF) approuvent toutes deux l’avortement par médicaments (AM) avec MIFÉ / MISO jusqu’à 70 jours après la LMP. Elles recommandent également une deuxième dose de MISO 800mcg quatre heures après la première dose de MISO 800mcg pour augmenter l’efficacité de l’AM.[5,13].
+					`La <a href="" class="in" target="_blank">Société des Obstétriciens et Gynécologues du Canada</a> et la <a href="" class="in" target="_blank">National Abortion Federation (NAF)</a> approuvent toutes deux l’avortement par médicaments (AM) avec MIFÉ / MISO jusqu’à 70 jours après la LMP. Elles recommandent également une deuxième dose de MISO 800mcg quatre heures après la première dose de MISO 800mcg pour augmenter l’efficacité de l’AM.[5,13].
 
           La Société des Obstétriciens et Gynécologues du Canada recommande également un régime MIFÉ / MISO à partir de 70 à 84 jours d’âge gestationnel, avec 200 mg de mifépristone suivi dans 24 à 48 heures de deux doses de 800 mcg de MISO (buccale ou vaginale), à 4 heures d’intervalle.
 
@@ -1587,14 +1587,14 @@ Schedule a first virtual visit via telephone or video.`
         Communiquer les risques liés à la progression de la grossesse sans exercer de pression temporelle à la personne.
         <b>Utilisez un langage sans jugement et inclusif</b>.`,
 					'<i>(Si le choix est l’avortement:)</i>',
-					`Examiner les options d’avortement, y compris les risques, l’efficacité, le processus et la durée du traitement par médicaments par rapport à l’avortement par instruments.
+					`Examiner les <a href="" class="in" target="_blank">options d’avortement</a>, y compris les risques, l’efficacité, le processus et la durée du traitement par médicaments par rapport à l’avortement par instruments.
           <b>Discuter de l’éligibilité de la personne à l’avortement par médicaments</b>, y compris l’âge gestationnel et les antécédents médicaux.
           <b>Discuter de l’accès de la personne aux pharmacies, au téléphone, aux transports, aux soins d’urgence, ainsi qu’aux installations de laboratoires et d’imagerie</b> si nécessaire.
-          Discuter des préférences et des circonstances de la personne, comme par exemple un endroit sécuritaire à leur domicile pour réaliser l’avortement par médicaments.
+          Discuter des <a href="" class="in" target="_blank">préférences et des circonstances de la personne</a>, comme par exemple un endroit sécuritaire à leur domicile pour réaliser l’avortement par médicaments.
           Confirmer que la décision appartient à la personne, prise librement.
           Confirmer que la personne comprend que <b>l’avortement par médicaments est irréversible</b> et qu’elle devra prendre une dose supplémentaire du deuxième médicament ou procéder à un avortement par instruments en cas d’échec (poursuite de la grossesse).
           Revoir le calendrier des examens (échographie, prises de sang, si nécessaire), des médicaments et des rendez-vous de suivi.
-          Discuter des options de contraception post-avortement.`
+          Discuter des <a href="" class="in" target="_blank">options de contraception post-avortement</a>.`
 				]
 			}
 		},
@@ -1628,20 +1628,20 @@ Schedule a first virtual visit via telephone or video.`
 				data: [
 					'Une fois que la personne et le professionnel de la santé ont déterminé que l’avortement par médicaments (AM) est la bonne option, le professionnel de la santé devrait[2,6,7,10]:',
 					[
-						`<b>Obtenir un consentement éclairé écrit ou verbal</b> (voir exemples sur la plateforme CAPS-CPCA et le Bay Center for Birth Control) et le documenter dans le dossier de la personne.
+						`<b>Obtenir un consentement éclairé écrit ou verbal</b> (voir exemples sur <a href="" class="in" target="_blank">la plateforme CAPS-CPCA</a> et le <a href="" class="in" target="_blank">Bay Center for Birth Control</a>) et le documenter dans le dossier de la personne.
           <b>Prescrire:</b>`,
 						`Mifépristone 200 mg (MIFÉ) par voie orale et misoprostol 800 mcg (MISO) par voie buccale ou vaginale (cette combinaison est commercialisée et marquée sous le nom de Mifé-Miso).
           Dose supplémentaire de MISO par voie buccale ou vaginale en cas d’avortement incomplet.
           Analgésiques et antiémétiques selon le protocole du professionnel de la santé ou de l’établissement.
           Antibioprophylaxie, si nécessaire, selon le protocole du professionnel de la santé ou de l’établissement.`,
-						`Fournir des instructions sur la façon de prendre le médicament.
-          S’assurer que les personnes savent comment gérer les effets secondaires ainsi que quand et où consulter en cas de complications.
+						`Fournir des instructions sur <a href="" class="in" target="_blank">la façon de prendre le médicament</a>.
+          S’assurer que les personnes savent <a href="" class="in" target="_blank">comment gérer les effets secondaires</a> ainsi que quand et où consulter en cas de complications.
           Envisager d’informer les personnes si la procédure d’AM implique des pratiques hors normes mais fondées sur des preuves.`,
 						`Une grande partie des pratiques hors normes d’AM sont basées sur une faible quantité de ressources et nécessite un équilibre entre l’expérience des professionnels de la santé et la sécurité et les besoins des personnes qui ont recours à un avortement.
           Il est recommandé d’informer les personnes des pratiques hors normes afin de comprendre les risques associés et savoir que ces pratiques hors normes peuvent varier en fonction de l’expérience et du niveau de confort des prescripteurs.`,
 						`Discuter des options de contraception après un avortement. <b>Souligner le fait que les personnes peuvent rapidement retrouver leur fertilité après un avortement</b>.
           <b>Planifier des rendez-vous de suivi, soit en personne, soit par téléphone/vidéo</b>. Discuter d’un plan de sécurité ou de confidentialité si nécessaire.
-          Fournir aux personnes des manuels d’instructions (voir des exemples: SHORE center et Planned Parenthood Ottawa) ainsi que les coordonnées des professionnels de santé et des services de santé d’urgence.
+          Fournir aux personnes des manuels d’instructions (voir des exemples: <a href="" class="in" target="_blank">SHORE center et Planned Parenthood Ottawa</a>) ainsi que les coordonnées des professionnels de santé et des services de santé d’urgence.
           Prendre note des numéros de téléphone et des contacts d’urgence fournis en lien avec l’AM par la personne au cas où les professionnels de la santé ne seraient pas en mesure de la joindre directement. Se rappeler que les contacts d’urgence fournis par les personnes lors de leurs visites d’AM peuvent être différents des contacts d’urgence figurant dans le dossier. Veiller à ne contacter aucune autre personne sans son consentement explicite en lien avec l’AM.`
 					]
 				]
@@ -1764,7 +1764,7 @@ Schedule a first virtual visit via telephone or video.`
 
           Selon les lignes directrices de la SOGC sur la prévention de l’allo-immunisation RhD publiées en 2024, l’administration de 300 μg d’immunoglobuline Rho(D) est suggérée aux personnes Rh D-négatives non sensibilisées qui ont subi une menace d’avortement, un avortement spontané ou provoqué <b>après 12 semaines de gestation</b>.
 
-          Auparavant, en 2022, la Society of Family Planning et l’Organisation mondiale de la santé (OMS) ont également recommandé de suspendre le test et l’administration du Rh avant 12 semaines de gestation pour les personnes subissant un avortement par médicaments (AM), un avortement spontané ou un avortement par aspiration utérine[8,20].`
+          Auparavant, en 2022, la <a href="" class="in" target="_blank">Society of Family Planning</a> et <a href="" class="in" target="_blank">l’Organisation mondiale de la santé (OMS)</a> ont également recommandé de suspendre le test et l’administration du Rh avant 12 semaines de gestation pour les personnes subissant un avortement par médicaments (AM), un avortement spontané ou un avortement par aspiration utérine[8,20].`
 				]
 			}
 		},
@@ -1928,7 +1928,7 @@ Schedule a first virtual visit via telephone or video.`
           <b>Si l’histoire suggère un échec d’avortement ou une grossesse évolutive</b>: envisager une dose supplémentaire de MISO ou un avortement par instruments: obtenir une échographie.
           <b>Si l’histoire suggère un avortement réussi sans signe d’alerte ni symptôme de grossesse évolutive ainsi que des saignements et des douleurs normaux</b>: organiser les analyses de sang pour confirmer le taux de βhCG sérique si le rendez-vous est en personne, sinon demander à la personne d’effectuer un test de grossesse urinaire qualitatif.<br><br><b>βhCG sérique</b>[4]: Si le taux de βhCG sérique chute de > 50 % au jour 3 après la mifépristone ou de 80 % aux jours 7 à 14 après l’administration de la mifépristone / misoprostol, l’avortement est complet et aucun autre rendez-vous n’est nécessaire. Une échographie devrait être demandée si 14 jours se sont écoulés et qu’une diminution de 80 % n’a pas été atteinte.<br><br><b>βhCG urinaire</b>[7]:`,
 						assets.FrAbortionCompletion,
-						`Proposer de discuter des options de contraception et de fournir un soutien émotionnel si nécessaire. Les ressources de soutien émotionnel comprennent:`,
+						`Proposer de discuter des <a href="" class="in" target="_blank">options de contraception</a> et de fournir un soutien émotionnel si nécessaire. Les ressources de soutien émotionnel comprennent:`,
 						`Exhale, une ligne téléphonique qui fournit un soutien émotionnel, des ressources et de l’information après un avortement.
             All-Options, une ligne de discussion des expériences passées ou actuelles en matière d’avortement, d’adoption et de parentalité pour les personnes au Canada et aux États-Unis (1-888-493-0092).`
 					]
@@ -2206,7 +2206,7 @@ Visite de suivi: <b>8471</b> Visite intermédiaire régionale ou visite suivante
           Il peut être prescrit lors de <b>visites en personne</b> ou <b>virtuelles</b>, ou d’une combinaison des deux.`,
 					`<b>Champ de pratique:</b> Au moment de rédiger ces lignes, les médecins et les infirmières praticiennes spécialisées au Canada sont autorisées à prescrire le Mifé-Miso. Dans la plupart des cas, les pharmaciens sont responsables de la distribution des médicaments, mais certaines cliniques sont également autorisées à les fournir directement. À l’exception du Québec, les sages-femmes ne sont actuellement pas autorisées à prescrire du Mifé-Miso, mais elles peuvent fournir des soins d’avortement par médicaments en étroite collaboration avec des infirmières praticiennes spécialisées ou des médecins.
 
-          <b>Exigences spécifiques à la province:</b> Les professionnels de la santé devraient vérifier les lignes directrices spécifiques et le champ d’exercise de leur province ou territoire. Par exemple, les exigences des provinces peuvent différer quant à savoir qui peut récupérer le médicament et si les pharmaciens doivent s’inscrire auprès de Celopharma, le fabricant du Mifé-Miso. Cliquez ici pour voir le résumé de certains règlements spécifiques à la province pour la distribution du Mifé-Miso.
+          <b>Exigences spécifiques à la province:</b> Les professionnels de la santé devraient vérifier les lignes directrices spécifiques et le champ d’exercise de leur province ou territoire. Par exemple, les exigences des provinces peuvent différer quant à savoir qui peut récupérer le médicament et si les pharmaciens doivent s’inscrire auprès de Celopharma, le fabricant du Mifé-Miso. <a href="" class="in" target="_blank">Cliquez ici pour voir le résumé</a> de certains règlements spécifiques à la province pour la distribution du Mifé-Miso.
 
           <b>Exigence de formation:</b> Il n’est plus nécessaire de suivre une formation avant de prescrire ou de délivrer le Mifé-Miso, mais les professionnels de la santé peuvent trouver utiles les cours en ligne ci-dessous pour en savoir plus sur les soins d’avortement par médicaments.`,
 					`Programme de formation sur l’avortement par médicaments, de La SOGC, mis à jour en 2023 et offert au prix coûtant.
@@ -2304,8 +2304,8 @@ Visite de suivi: <b>8471</b> Visite intermédiaire régionale ou visite suivante
             Initier des discussions informelles avec vos collègues sur l’offre de services.
             Envisager de mener une enquête anonyme auprès du personnel et des clients pour avoir une idée de leurs opinions et de leurs sentiments à l’égard de l’AM.
             Envisager d’organiser un atelier pour clarifier les valeurs sur l’avortement, aborder l’opposition ou l’inconfort et déterminer les moyens de travailler ensemble pour fournir l’AM. Un atelier de clarification des valeurs liées à l’avortement peut être adapté en utilisant:`,
-						`Values clarification toolkits de la Fédération Nationale de l’Avortement.
-            Matériel sur le Values clarification workshop du Reproductive Health Access Project.`,
+						`<a href="" class="in" target="_blank">Values clarification toolkits</a> de la Fédération Nationale de l’Avortement.
+            Matériel sur le <a href="" class="in" target="_blank">Values clarification workshop</a> du Reproductive Health Access Project.`,
 						`Envisager de créer un comité de planification pour discuter des objectifs, des tâches, des échéanciers, des obstacles et des solutions.
             Se renseigner sur d’autres centres de santé ou professionnels de la santé locaux qui ont intégré avec succès les services d’avortement dans leur pratique. Les inviter à des réunions, des ateliers et des séances de planification, ou solliciter leurs commentaires et conseils sur votre processus.
             Élaborer un protocole pour les membres du personnel qui se sentent incapables de participer aux soins d’avortement.
@@ -2383,7 +2383,7 @@ Visite de suivi: <b>8471</b> Visite intermédiaire régionale ou visite suivante
 				data: [
 					`Voici quelques suggestions pour aider les cliniciens à créer un environnement inclusif qui répond aux besoins des personnes 2ELGBTQIA+. Ces suggestions ne sont pas exhaustives et il est recommandé aux professionnels de la santé de consulter d’autres manuels et opportunités de formation en compétence culturelle pour fournir des soins inclusifs.
 
-          <i>Ces suggestions ont été reproduites à partir de Gender Inclusive Language de Trans Care BC, The Trans-inclusive Abortion Services du SHORE Centre et la Fédération du Québec pour le planning des naissances, et du Handbook for Healthcare Providers Working with Clients from Diverse Communities d’Action Canada pour la santé et les droits sexuels. Pour plus d’informations sur les mythes concernant la reproduction des personnes 2ELGBTQIA+, le vocabulaire et le glossaire à utiliser et à éviter, ainsi que des études de cas et des recommandations pour surmonter les obstacles, veuillez vous référer à ces manuels.</i>`,
+          <i>Ces suggestions ont été reproduites à partir de <a href="" class="in" target="_blank">Gender Inclusive Language</a> de Trans Care BC, <a href="" class="in" target="_blank">The Trans-inclusive Abortion Services</a> du SHORE Centre et la Fédération du Québec pour le planning des naissances, et du <a href="" class="in" target="_blank">Handbook for Healthcare Providers Working with Clients from Diverse Communities</a> d’Action Canada pour la santé et les droits sexuels. Pour plus d’informations sur les mythes concernant la reproduction des personnes 2ELGBTQIA+, le vocabulaire et le glossaire à utiliser et à éviter, ainsi que des études de cas et des recommandations pour surmonter les obstacles, veuillez vous référer à ces manuels.</i>`,
 					'À faire et à ne pas faire:',
 					`Rendre des <b>toilettes non genrées</b> en supprimant les panneaux “Hommes” et “Femmes” des toilettes, ou en les remplaçant par un panneau “Toilettes tous genres”.
           Publier <b>des affiches, des dépliants et d’autres documents 2ELGBTQIA+ inclusifs</b> pour faire savoir à tous qu’ils sont les bienvenus.
@@ -2435,7 +2435,7 @@ Visite de suivi: <b>8471</b> Visite intermédiaire régionale ou visite suivante
 
           Divers facteurs et réalités peuvent affecter la façon dont les peuples autochtones accèdent aux services de santé, notamment les obstacles liés à l’accès géographique, l’indisponibilité de services linguistiques et de traduction, le manque de soins de santé culturellement sécuritaires ou les expériences passées de racisme, de stigmatisation, de honte, de peur ou de discrimination. Gardez à l’esprit qu’être autochtone n’est pas en soi un facteur de risque ; ce qui met réellement les gens en danger, ce sont des problèmes systémiques comme le racisme, le colonialisme, les traumatismes intergénérationnels et le manque d’accès à des soins, des traitements et des soutiens culturellement sécuritaires.
 
-          <i>Ces recommandations sont tirées de la Trousse d’outils pour les allié-es aux luttes autochtones du Réseau stratégique urbain de la communauté autochtone de Montréal et du Guide pour les professionnels de la santé qui travaillent avec des client(e)s provenant de différentes communautés d’Action Canada pour la santé et les droits sexuels.</i>`,
+          <i>Ces recommandations sont tirées de la <a href="" class="in" target="_blank">Trousse d’outils pour les allié-es aux luttes autochtones</a> du Réseau stratégique urbain de la communauté autochtone de Montréal et du <a href="" class="in" target="_blank">Guide pour les professionnels de la santé qui travaillent avec des client(e)s provenant de différentes communautés</a> d’Action Canada pour la santé et les droits sexuels.</i>`,
 					'Conseils rapides pour les cliniciens:',
 					`Proposer des <b>services de traduction</b> et, si possible, des ressources traduites.
           Établir des liens et revendiquer pour l’accès à des membres de la communauté autochtone de votre région qui peuvent agir en tant que navigateurs dans le système de santé.
@@ -2745,14 +2745,14 @@ Le profil pharmacocinétique du MISO varie considérablement selon la voie d’a
 					`Voici un guide général des étapes à suivre pour initier les services d’avortement par médicaments (AM) dans votre pharmacie. Certaines de ces étapes peuvent ne pas s’appliquer et d’autres considérations non répertoriées ci-dessous peuvent être nécessaires, en fonction de votre pharmacie.`,
 					`Examiner les monographies de produit et les protocoles de délivrance de Mifégymiso.
             Consulter les directives cliniques pour prescrire l’avortement par médicaments au besoin.
-            Se familiariser avec les règlements de votre ordre des pharmaciens provincial. Ce résumé contient certains règlements spécifiques aux provinces, mais pas tous.
+            Se familiariser avec les règlements de votre ordre des pharmaciens provincial. Ce <a href="" class="in" target="_blank">résumé</a> contient certains règlements spécifiques aux provinces, mais pas tous.
             Préparer votre propre protocole et inviter d’autres membres du personnel à l’examiner et à fournir les commentaires.
             Se familiariser avec les régimes d’assurance provinciaux et la couverture de Mifégymiso.
             Explorer la volonté de délivrer le Mifégymiso parmi tout le personnel, y compris les assistants en pharmacie, les techniciens et les administrateurs de pharmacie, répondre à leurs préoccupations et à leurs possibles perceptions négatives, et déterminer la meilleure façon de lancer des services d’avortement dans votre pharmacie.
             Examiner le personnel actuel de la pharmacie pour déterminer la capacité à fournir un AM.
             Déterminer une personne ou une équipe clé qui aura la responsabilité principale des personnes ayant subi un AM.
             Développer, imprimer et distribuer des affiches pour faire savoir aux clients et aux autres professionnels de la santé que vous distribuez Mifégymiso.`,
-					'Adapté de la Checklist for starting medical abortion services de la Fédération Nationale de l’Avortement.'
+					'Adapté de la <a href="" class="in" target="_blank">Checklist for starting medical abortion services</a> de la Fédération Nationale de l’Avortement.'
 				]
 			}
 		},
@@ -2764,7 +2764,7 @@ Le profil pharmacocinétique du MISO varie considérablement selon la voie d’a
 				data: [
 					`L’avortement est <b>légal</b> au Canada et les personnes n’ont pas besoin du consentement de leur partenaire ou d’un parent pour avorter. Il s’agit du <b>deuxième service de santé reproductive le plus répandu</b> au Canada: le tiers des personnes ayant la capacité d’être enceinte auront recours à un avortement au cours de leur vie.[2,14,15,18].
 
-        L’avortement par médicaments utilise des pilules médicamenteuses pour mettre fin à une grossesse. Au Canada, les pilules abortives médicamenteuses sont combinées et vendues sous le nom de Mifegymiso. Le médicament est approuvé par Santé Canada jusqu’à 63 jours d’âge gestationnel, mais s’est avéré <b>sécuritaire et efficace</b> jusqu’à 70 jours par La SOGC du Canada et 77 jours par l’Organisation mondiale de la santé (OMS). Le counselling et les médicaments sont fournis <b>gratuitement</b> à toutes les personnes bénéficiant d’une assurance maladie provinciale et de plusieurs catégories d’assurance maladie fédérale. Cependant, il est important de noter que les personnes admissibles aux soins de santé dans une province, qui tentent d’accéder à un avortement par médicaments dans une autre province ou territoire, sont admissibles au counseling, mais pas aux médicaments eux-mêmes.
+        L’avortement par médicaments utilise des pilules médicamenteuses pour mettre fin à une grossesse. Au Canada, les pilules abortives médicamenteuses sont combinées et vendues sous le nom de Mifegymiso. Le médicament est approuvé par Santé Canada jusqu’à 63 jours d’âge gestationnel, mais s’est avéré <b>sécuritaire et efficace</b> jusqu’à 70 jours par La SOGC du Canada et 77 jours par l’Organisation mondiale de la santé (OMS). Le counselling et les médicaments sont fournis <b>gratuitement</b> à toutes les personnes bénéficiant d’une assurance maladie provinciale et de plusieurs catégories <a href="" class="in" target="_blank">d’assurance maladie fédérale</a>. Cependant, il est important de noter que les personnes admissibles aux soins de santé dans une province, qui tentent d’accéder à un avortement par médicaments dans une autre province ou territoire, sont admissibles au counseling, mais pas aux médicaments eux-mêmes.
 
         <b>Mifegymiso</b> se présente généralement en deux boîtes: une boîte verte contenant 200 mg de mifépristone (MIFÉ) et une boîte orange contenant 800 mcg de misoprostol (MISO). Le MISO est utilisé pour l’avortement et pour d’autres conditions (par exemple, fausse couche, hémorragie post-partum). La MIFÉ aide à arrêter la croissance d’une grossesse et prépare le corps à vider l’utérus en ramollissant le col et en aidant la muqueuse de l’utérus à se décomposer. Le MISO provoque la dilatation du col et la contraction de l’utérus, provoquant ainsi la sortie des tissus issus de la grossesse du corps[14].`,
 					assets.FrMifegymisoOverview
@@ -2795,7 +2795,7 @@ Le profil pharmacocinétique du MISO varie considérablement selon la voie d’a
 			content: {
 				type: ['p'],
 				data: [
-					`Dans la plupart des cas, <b>les pharmaciens</b> sont responsables de la délivrance des médicaments aux personnes, mais certaines cliniques sont également autorisées à délivrer les médicaments directement. Les lignes directrices des Ordres professionnels des pharmaciens de chaque province ou territoire peuvent varier quant à savoir si les personnes doivent récupérer leurs médicaments en personne ou si les médicaments peuvent être livrés aux personnes par des services postaux.`
+					`Dans la plupart des cas, <b>les pharmaciens</b> sont responsables de la délivrance des médicaments aux personnes, mais certaines cliniques sont également autorisées à délivrer les médicaments directement. Les lignes directrices des <a href="" class="in" target="_blank">Ordres professionnels des pharmaciens</a> de chaque province ou territoire peuvent varier quant à savoir si les personnes doivent récupérer leurs médicaments en personne ou si les médicaments peuvent être livrés aux personnes par des services postaux.`
 				]
 			}
 		},
