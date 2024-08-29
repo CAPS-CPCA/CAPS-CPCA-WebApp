@@ -1675,6 +1675,161 @@ Schedule a first virtual visit via telephone or video.`
 						Link: patient-assistance-fund-naf(https://nafcanada.org/about/contact-us/)`
 				]
 			}
+		},
+		{
+			id: 'S8',
+			title: 'Checklists and Resource Guides',
+			content: {
+				type: ['p'],
+				data: [
+					`<b>A road map for all pharmacists</b>, 2023
+					Canadian Pharmacists Association & The CART Access Project
+					Link: cpha-roadmap()
+
+					<b>Pharmacist resource guide for medical abortion</b>, 2018
+					Judith Soon & Nevena Rebic; The CART Access Project
+					Link: cart-resourceguide()
+
+					<b>Pharmacist checklist for medical abortion</b>, 2018
+					Judith Soon & Nevena Rebic; The CART Access Project
+					Link: cart-checklist()`
+				]
+			}
+		},
+		{
+			id: 'S9',
+			title: 'Training and Webinars',
+			content: {
+				type: ['p'],
+				data: [
+					`<b>SOGC’s medical abortion training program</b>, 2024
+					Link: sogc-training()
+
+					<b>NAF Canada’s medication abortion training for primary care providers</b>, 2023
+					Link: nafc-training()
+
+					<b>Case-based quizzes on medication abortion for pharmacists</b>
+					Link: pharmacy5in5()`
+				]
+			}
+		},
+		{
+			id: 'S10',
+			title: 'Product Monographs, Guidelines and Protocols',
+			content: {
+				type: ['p'],
+				data: [
+					`<b>Health Canada MIFISO product monograph</b>, 2022
+					Linepharma International Limited
+					Link: hres.ca()
+
+					<b>Medical abortion</b>, 2016
+					Journal of Obstetrics and Gynaecology Canada
+					Link: sogc-ma()
+
+					<b>Canadian protocol for the provision of medical abortion via telemedicine</b>, 2020
+					Society of Obstetrics and Gynaecology Canada
+					Link: sogc-telemedicine()
+
+					<b>Induced abortion: updated guidance during pandemics and periods of social disruption</b>, 2020
+					Society of Obstetrics and Gynaecology Canada
+					Link: sogc-guidance()
+
+					<b>NAF Protocol for early abortion with mifepristone and misoprostol</b>, 2016
+					National Abortion Federation Canada
+					Link: nafc-protocol()
+
+					<b>Abortion care guideline</b>, 2022
+					World Health Organization
+					Link: who-guideline()`
+				]
+			}
+		},
+		{
+			id: 'S11',
+			title: 'Posters and Patient Materials',
+			content: {
+				type: ['p'],
+				data: [
+					`<b>Posters for pharmacies</b>, 2023
+					Canadian Pharmacists Association & The CART Access Project
+					Link: cpha-poster()
+
+					<b>What to expect when ending a pregnancy at home</b>, 2023
+					Canadian Pharmacists Association & The CART Access Project
+					Link: cpha-what-to-expect()
+
+					<b>How to decide between medication and procedural Abortion</b>, 2024
+					CART-GRAC and the Society of Obstetricians and Gynaecologists of Canada
+
+					<b>Administration instruction</b>, 2024
+					CART-GRAC and the Society of Obstetricians and Gynaecologists of Canada
+
+					<b>How to manage side effects of medication abortion</b>, 2024
+					CART-GRAC and the Society of Obstetricians and Gynaecologists of Canada
+
+					<b>Post-abortion contraception options</b>, 2024
+					CART-GRAC and the Society of Obstetricians and Gynaecologists of Canada
+
+					<b>What to expect during a medical abortion</b>, 2017
+					Planned Parenthood Ottawa and the SHORE Centre
+					Link: ppo-what-to-expect()
+
+					<b>Medical abortion instruction</b>, 2017
+					Planned Parenthood Ottawa and the SHORE Centre
+					Link: ppo-ma-instruction()
+
+					<b>Mifegymiso medication guide</b>
+					Celopharma
+					Link: medication-guide()`
+				]
+			}
+		},
+		{
+			id: 'S12',
+			title: 'Toolkits for Addressing Abortion Concerns',
+			content: {
+				type: ['p'],
+				data: [
+					`<b>Debunking medication abortion myths</b>, 2023
+					Canadian Pharmacists Association & The CART Access Project
+					Link: cpha-debunking-myth()
+
+					<b>The Abortion options: A value clarification guide for health care professionals</b>, 2005
+					National Abortion Federation
+					Link: naf-value-clarification()
+
+					<b>Integrating early abortion services into primary care</b>, 2019
+					Reproductive Health Access Project
+					Link: rhap-abortion()
+
+					<b>Value clarification workshop</b>, 2022
+					Reproductive Health Access Project
+					Link: rhap-workshop()`
+				]
+			}
+		},
+		{
+			id: 'S13',
+			title: 'Toolkits for Supporting Underserved Communities',
+			content: {
+				type: ['p'],
+				data: [
+					`<b>A handbook for healthcare providers working with clients from diverse communities</b>, 2019
+					Action Canada for Sexual Health & Rights
+					Link: action-canada-handbook()
+
+					<b>The Indigenous ally toolkit</b>, 2018
+					Montreal Urban Aboriginal Community Strategy Network
+					Link: ally-toolkit()
+
+					<b>Norma Scarborough Fund, a travel fund for those who need access to abortion</b>
+					Link: norma-scarborough-action-canada()
+
+					<b>Patient Assistance Fund for those who need access to abortion</b> (1-800-722-9100)
+					Link: patient-assistance-fund-naf()`
+				]
+			}
 		}
 	],
 	fr: [
@@ -3167,6 +3322,333 @@ Il n’y a actuellement aucune littérature indiquant que les personnes sous mé
 En résumé, il semble que Mifé-Miso pourrait ralentir le métabolisme de la méthadone pendant un certain temps, ce qui pourrait entraîner des niveaux légèrement plus élevés de méthadone.`
 				]
 			}
+		},
+		{
+			id: 'S1',
+			title: 'Guides et aides-mémoires',
+			content: {
+				type: ['p'],
+				data: [
+					`<b>Checklist for starting medical abortion services</b>, 
+					National Abortion Federation.
+					Link: naf-checklist(https://www.prochoice.org/pubs_research/publications/downloads/professional_education/medical_abortion/checklist_starting_services.pdf)
+					
+					<b>Medical abortion prescriber checklist resource guide</b>, 
+					Planned Parenthood, the University of British Columbia & CART Access Project.
+					Link: ma-resource-guide(https://caps-cpca.ubc.ca/AnnokiUploadAuth.php/8/8b/Medical_Abortion_Prescriber_Checklist_Resource_Guide.pdf)
+					
+					<b>Medical abortion prescriber checklist</b>, 
+					Planned Parenthood, the University of British Columbia & CART Access Project.
+					Link: ma-checklist(https://caps-cpca.ubc.ca/AnnokiUploadAuth.php/a/af/Medical_Abortion_Prescriber_Checklist.pdf)`
+				]
+			}
+		},
+		{
+			id: 'S2',
+			title: 'Formations et webinaires',
+			content: {
+				type: ['p'],
+				data: [
+					`<b>SOGC’s medical abortion training program</b>, 2024
+					Link: sogc-training(https://www.sogc.org/en/rise/Events/event-display.aspx?EventKey=MATP2)
+					
+					<b>NAF Canada’s medication abortion training for primary care providers</b>, 2023
+					Link: nafc-training(https://nafcanada.org/medication-abortion-virtual-course/)`
+				]
+			}
+		},
+		{
+			id: 'S3',
+			title: 'Monographies, lignes directrices et protocoles',
+			content: {
+				type: ['p'],
+				data: [
+					`<b>Health Canada MIFISO product monograph</b>, 2022
+					Linepharma International Limited
+					Link: hres.ca()
+
+					<b>Medical abortion</b>, 2016
+					Journal of Obstetrics and Gynaecology Canada
+					Link: sogc-ma()
+
+					<b>Canadian protocol for the provision of medical abortion via telemedicine</b>, 2020
+					Society of Obstetrics and Gynaecology Canada
+					Link: sogc-telemedicine()
+
+					<b>Induced abortion: updated guidance during pandemics and periods of social disruption</b>, 2020
+					Society of Obstetrics and Gynaecology Canada
+					Link: sogc-guidance()
+
+					<b>NAF Protocol for early abortion with mifepristone and misoprostol</b>, 2016
+					National Abortion Federation Canada
+					Link: nafc-protocol()
+
+					<b>Society of Family Planning committee – Consensus on Rh testing in early pregnancy</b>, 2022
+					Horvath S, Goyal V, Traxler S, Prager S. Contraception. 2022 Oct;114:1-5
+					Link: sfp-guideline()
+
+					<b>Client information about evidence-based telemedicine medication abortion</b>, 2020
+					Women’s College Hospital
+					Link: wch()
+
+					<b>Abortion care guideline</b>, 2022
+					World Health Organization
+					Link: who-guideline()`
+				]
+			}
+		},
+		{
+			id: 'S4',
+			title: 'Exemples de formulaires de consentement',
+			content: {
+				type: ['p'],
+				data: [
+					`<b>Informed consent for mifepristone / misoprostol abortion in Canada</b>
+					The CART Access Project
+					
+					<b>Consent to medical abortion</b>, 2017
+					Planned Parenthood Ottawa and the SHORE Centre`
+				]
+			}
+		},
+		{
+			id: 'S5',
+			title: 'Instructions pour la patientèle',
+			content: {
+				type: ['p'],
+				data: [
+					`<b>It’s My Choice</b>, 2024
+					An interactive tool to help people choose between medication and procedural abortion
+					Link: its-my-choice(https://www.sexandu.ca/its-my-choice/)
+
+					<b>How to decide between medication and procedural Abortion</b>, 2024
+					CART-GRAC and the Society of Obstetricians and Gynaecologists of Canada
+
+					<b>Administration instruction</b>, 2024
+					CART-GRAC and the Society of Obstetricians and Gynaecologists of Canada
+
+					<b>How to manage side effects of medication abortion</b>, 2024
+					CART-GRAC and the Society of Obstetricians and Gynaecologists of Canada
+
+					<b>Post-abortion contraception options</b>, 2024
+					CART-GRAC and the Society of Obstetricians and Gynaecologists of Canada
+
+					<b>What to expect when ending a pregnancy at home</b>, 2023
+					Canadian Pharmacists Association & The CART Access Project
+					Link: cpha-what-to-expect(https://www.pharmacists.ca/cpha-ca/assets/File/education-practice-resources/SRH/SRH_OnePager_MedicationAbortion_EN.pdf)
+
+					<b>What to expect during a medical abortion</b>, 2017
+					Planned Parenthood Ottawa and the SHORE Centre
+
+					<b>Medication abortion instruction</b>, 2017
+					Planned Parenthood Ottawa and the SHORE Centre
+
+					<b>Mifegymiso medication guide</b>
+					Celopharma`
+				]
+			}
+		},
+		{
+			id: 'S6',
+			title: "Boîtes à outils pour répondre aux préoccupations liées à l'avortement",
+			content: {
+				type: ['p'],
+				data: [
+					`<b>Debunking medication abortion myths</b>, 2023
+					Canadian Pharmacists Association & The CART Access Project
+					Link: cpha-debunking-myth(https://www.pharmacists.ca/cpha-ca/assets/File/education-practice-resources/SRH/SRH_Myths_and_Facts_EN.pdf)
+
+					<b>The abortion options: A value clarification guide for health care professionals</b>, 2005
+					National Abortion Federation
+					Link: naf-value-clarification(https://prochoice.org/store/the-abortion-option-a-values-clarification-guide-for-health-professionals/)
+
+					<b>Integrating early abortion services into primary care</b>, 2019
+					Reproductive Health Access Project
+					Link: rhap-abortion(https://www.reproductiveaccess.org/wp-content/uploads/2014/12/integrating_abortion.pdf)
+
+					<b>Value clarification workshop</b>, 2022
+					Reproductive Health Access Project
+					Link: rhap-workshop(https://www.reproductiveaccess.org/resource/values-clarification-workshop/)`
+				]
+			}
+		},
+		{
+			id: 'S7',
+			title: 'Boîtes à outils pour soutenir les communautés mal desservies',
+			content: {
+				type: ['p'],
+				data: [
+					`
+						<b>A handbook for healthcare providers working with clients from diverse communities</b>, 2019
+						Action Canada for Sexual Health & Rights
+						Link: action-canada-handbook(https://www.actioncanadashr.org/sites/default/files/2019-04/ActionCanadaSHR-SRH2017-Handbook-EN.pdf)
+
+						<b>The Indigenous ally toolkit</b>, 2018
+						Montreal Urban Aboriginal Community Strategy Network
+						Link: ally-toolkit(https://www.segalcentre.org/common/sitemedia/201819_Shows/ENG_AllyTookit.pdf)
+
+						<b>Norma Scarborough Fund, a travel fund for those who need access to abortion</b>
+						Link: norma-scarborough-action-canada(https://secure.actioncanadashr.org/en/form/norma-scarborough-fund)
+
+						<b>Patient Assistance Fund for those who need access to abortion</b> (1-800-722-9100)
+						Link: patient-assistance-fund-naf(https://nafcanada.org/about/contact-us/)`
+				]
+			}
+		},
+		{
+			id: 'S8',
+			title: 'Guides et aides-mémoires',
+			content: {
+				type: ['p'],
+				data: [
+					`<b>A road map for all pharmacists</b>, 2023
+					Canadian Pharmacists Association & The CART Access Project
+					Link: cpha-roadmap()
+
+					<b>Pharmacist resource guide for medical abortion</b>, 2018
+					Judith Soon & Nevena Rebic; The CART Access Project
+					Link: cart-resourceguide()
+
+					<b>Pharmacist checklist for medical abortion</b>, 2018
+					Judith Soon & Nevena Rebic; The CART Access Project
+					Link: cart-checklist()`
+				]
+			}
+		},
+		{
+			id: 'S9',
+			title: 'Formations et webinaires',
+			content: {
+				type: ['p'],
+				data: [
+					`<b>SOGC’s medical abortion training program</b>, 2024
+					Link: sogc-training()
+
+					<b>NAF Canada’s medication abortion training for primary care providers</b>, 2023
+					Link: nafc-training()
+
+					<b>Case-based quizzes on medication abortion for pharmacists</b>
+					Link: pharmacy5in5()`
+				]
+			}
+		},
+		{
+			id: 'S10',
+			title: 'Monographies, lignes directrices et protocoles',
+			content: {
+				type: ['p'],
+				data: [
+					`<b>Health Canada MIFISO product monograph</b>, 2022
+					Linepharma International Limited
+					Link: hres.ca()
+
+					<b>Medical abortion</b>, 2016
+					Journal of Obstetrics and Gynaecology Canada
+					Link: sogc-ma()
+
+					<b>Canadian protocol for the provision of medical abortion via telemedicine</b>, 2020
+					Society of Obstetrics and Gynaecology Canada
+					Link: sogc-telemedicine()
+
+					<b>Induced abortion: updated guidance during pandemics and periods of social disruption</b>, 2020
+					Society of Obstetrics and Gynaecology Canada
+					Link: sogc-guidance()
+
+					<b>NAF Protocol for early abortion with mifepristone and misoprostol</b>, 2016
+					National Abortion Federation Canada
+					Link: nafc-protocol()
+
+					<b>Abortion care guideline</b>, 2022
+					World Health Organization
+					Link: who-guideline()`
+				]
+			}
+		},
+		{
+			id: 'S11',
+			title: 'Affiches et documents pour la patientèle',
+			content: {
+				type: ['p'],
+				data: [
+					`<b>Posters for pharmacies</b>, 2023
+					Canadian Pharmacists Association & The CART Access Project
+					Link: cpha-poster()
+
+					<b>What to expect when ending a pregnancy at home</b>, 2023
+					Canadian Pharmacists Association & The CART Access Project
+					Link: cpha-what-to-expect()
+
+					<b>How to decide between medication and procedural Abortion</b>, 2024
+					CART-GRAC and the Society of Obstetricians and Gynaecologists of Canada
+
+					<b>Administration instruction</b>, 2024
+					CART-GRAC and the Society of Obstetricians and Gynaecologists of Canada
+
+					<b>How to manage side effects of medication abortion</b>, 2024
+					CART-GRAC and the Society of Obstetricians and Gynaecologists of Canada
+
+					<b>Post-abortion contraception options</b>, 2024
+					CART-GRAC and the Society of Obstetricians and Gynaecologists of Canada
+
+					<b>What to expect during a medical abortion</b>, 2017
+					Planned Parenthood Ottawa and the SHORE Centre
+					Link: ppo-what-to-expect()
+
+					<b>Medical abortion instruction</b>, 2017
+					Planned Parenthood Ottawa and the SHORE Centre
+					Link: ppo-ma-instruction()
+
+					<b>Mifegymiso medication guide</b>
+					Celopharma
+					Link: medication-guide()`
+				]
+			}
+		},
+		{
+			id: 'S12',
+			title: 'Boîtes à outils pour répondre aux préoccupations liées à l’avortement',
+			content: {
+				type: ['p'],
+				data: [
+					`<b>Debunking medication abortion myths</b>, 2023
+					Canadian Pharmacists Association & The CART Access Project
+					Link: cpha-debunking-myth()
+
+					<b>The Abortion options: A value clarification guide for health care professionals</b>, 2005
+					National Abortion Federation
+					Link: naf-value-clarification()
+
+					<b>Integrating early abortion services into primary care</b>, 2019
+					Reproductive Health Access Project
+					Link: rhap-abortion()
+
+					<b>Value clarification workshop</b>, 2022
+					Reproductive Health Access Project
+					Link: rhap-workshop()`
+				]
+			}
+		},
+		{
+			id: 'S13',
+			title: 'Boîtes à outils pour soutenir les communautés mal desservies',
+			content: {
+				type: ['p'],
+				data: [
+					`<b>A handbook for healthcare providers working with clients from diverse communities</b>, 2019
+					Action Canada for Sexual Health & Rights
+					Link: action-canada-handbook()
+
+					<b>The Indigenous ally toolkit</b>, 2018
+					Montreal Urban Aboriginal Community Strategy Network
+					Link: ally-toolkit()
+
+					<b>Norma Scarborough Fund, a travel fund for those who need access to abortion</b>
+					Link: norma-scarborough-action-canada()
+
+					<b>Patient Assistance Fund for those who need access to abortion</b> (1-800-722-9100)
+					Link: patient-assistance-fund-naf()`
+				]
+			}
 		}
 	]
 };
@@ -3194,7 +3676,7 @@ export function modulePath(path: string, modules: Modules) {
     '/prescribing/regulations-insurance-inclusivity': ['M26', 'M27', 'M28', 'C1', 'M36', 'M37', 'M38'],
     '/prescrire/reglements-assurance-inclusivite': ['M26', 'M27', 'M28', 'C1', 'M36', 'M37', 'M38'],
     '/prescribing/clinical-resources': ['S1','S2','S3','S4','S5','S6','S7'],
-    '/prescrire/ressources-cliniques': [''],
+    '/prescrire/ressources-cliniques': ['S1','S2','S3','S4','S5','S6','S7'],
     '/dispensing/coverage-&-insurance': ['C1', 'M36', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10', 'C11', 'C12', 'C13', 'C14'],
     '/dispenser/couverture-et-assurance': ['C1', 'M36', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10', 'C11', 'C12', 'C13', 'C14'],
     '/dispensing/patient-communication': ['M32', 'M15', 'M33', 'M16', 'M19', 'M34', 'M20'],
@@ -3203,14 +3685,14 @@ export function modulePath(path: string, modules: Modules) {
     '/dispenser/a-propos-du-mife-miso': ['M1', 'M29', 'M30', 'M2', 'M3', 'M31'],
     '/dispensing/regulations-inclusivity': ['M26', 'M35', 'M28', 'M37', 'M38'],
     '/dispenser/reglements-inclusivite': ['M26', 'M35', 'M28', 'M37', 'M38'],
-    '/dispensing/clinical-resources': [''],
-    '/dispenser/ressources-cliniques': [''],
+    '/dispensing/clinical-resources': ['S8','S9','S10','S11','S12','S13'],
+    '/dispenser/ressources-cliniques': ['S8','S9','S10','S11','S12','S13'],
     '/supporting-roles/medication-abortion': ['M39', 'M3', 'M40', 'M41'],
     '/r%C3%B4les-de-soutien/avortement-par-medicaments': ['M39', 'M3', 'M40', 'M41'],
     '/supporting-roles/client-counselling': ['M42', 'M43', 'M15', 'M33', 'M16', 'M44'],
     '/r%C3%B4les-de-soutien/counseling-de-la-client': ['M42', 'M43', 'M15', 'M33', 'M16', 'M44'],
-    '/supporting-roles/resources': [''],
-    '/r%C3%B4les-de-soutien/ressources': [''],
+    '/supporting-roles/resources': ['S14','S15','S16','S17','S18','S19'],
+    '/r%C3%B4les-de-soutien/ressources': ['S14','S15','S16','S17','S18','S19'],
     '/faq': ['F1', 'F2', 'F3', 'F4', 'F5', 'F6'],
   };
 
