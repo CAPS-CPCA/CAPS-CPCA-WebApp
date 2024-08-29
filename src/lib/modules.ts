@@ -1830,6 +1830,135 @@ Schedule a first virtual visit via telephone or video.`
 					Link: patient-assistance-fund-naf()`
 				]
 			}
+		},
+		{
+			id: 'S14',
+			title: 'About Medication Abortion',
+			content: {
+				type: ['p'],
+				data: [
+					`<b>Update on medical abortion</b>, 2020
+					Bancsi A & Grindrod K; Canadian Family Physician
+					Link: cfp-ma()
+
+					<b>Early abortion options</b>, 2022
+					Reproductive Health Access Project
+					Link: rhap-abortion-options()
+
+					<b>Accessing abortion in Canada</b>
+					Wellness Within
+					Link: wellness-within()`
+				]
+			}
+		},
+		{
+			id: 'S15',
+			title: 'Locating Providers of Medication Abortion',
+			content: {
+				type: ['p'],
+				data: [
+					`<b>Find medication abortion services portal</b>
+					Action Canada for Sexual Health and Rights
+					Link: find-services()
+
+					<b>List of abortion clinics</b>
+					Action Canada for Sexual Health and Rights
+					Link: arcc-abortion-clinics()
+
+					<b>Choice Connect Abortion Referral App</b>
+					Link: choice-connect()`
+				]
+			}
+		},
+		{
+			id: 'S16',
+			title: 'Guides for Managing Medication Abortion at Home',
+			content: {
+				type: ['p'],
+				data: [
+					`<b>What to expect when ending a pregnancy at home</b>, 2023
+					Canadian Pharmacists Association & The CART Access Project
+					Link: cpha-what-to-expect()
+
+					<b>What to expect during a medical abortion</b>, 2017 
+					Planned Parenthood Ottawa and the SHORE Centre
+					Link: ppo-what-to-expect()
+
+					<b>Medical abortion instruction</b>, 2017 
+					Planned Parenthood Ottawa and the SHORE Centre
+					Link: ppo-ma-instruction()
+
+					<b>Mifegymiso medication guide</b>
+					Celopharma
+					Link: medication-guide()`
+				]
+			}
+		},
+		{
+			id: 'S17',
+			title: 'Talk-lines for Post-Abortion Emotional Support',
+			content: {
+				type: ['p'],
+				data: [
+					`<b>Norma Scarborough Fund, a travel fund for those who need access to abortion</b>
+					Link: norma-scarborough-action-canada()
+
+					<b>Patient Assistance Fund for those who need access to abortion</b> (1-800-722-9100)
+					Link: patient-assistance-fund-naf()
+					
+					<b>Exhale, a talk-line that provides emotional support, resources and information after abortion</b>
+					Link: exhale()
+
+					<b>All-Options</b>, a talk-line to discuss past or current experience with abortion, adoption and parenting for people in Canada and the United States</b> (1-888-493-0092).
+					Link: all-options()
+
+					<b>Regina Abortion Support Network (RASN) for abortion access in southern Saskatchewan</b> (1-306-517-2558)
+					Link: rasn()
+
+					<b>Saskatoon Abortion Support Network by abortion doulas</b>
+					Link: sasn()`
+				]
+			}
+		},
+		{
+			id: 'S18',
+			title: 'Toolkits for Addressing Abortion Concerns',
+			content: {
+				type: ['p'],
+				data: [
+					`<b>Debunking medication abortion myths</b>, 2023
+					Canadian Pharmacists Association & The CART Access Project
+					Link: cpha-debunking-myth()
+
+					<b>The Abortion options: A value clarification guide for health care professionals</b>, 2005
+					National Abortion Federation
+					Link: naf-value-clarification()
+
+					<b>Integrating early abortion services into primary care</b>, 2019
+					Reproductive Health Access Project
+					Link: rhap-abortion()
+
+					<b>Value clarification workshop</b>, 2022
+					Reproductive Health Access Project
+					Link: rhap-workshop()`
+				]
+			}
+		},
+		{
+			id: 'S19',
+			title: 'Toolkits for Supporting Underserved Communities',
+			content: {
+				type: ['p'],
+				data: [
+					`<b>A handbook for healthcare providers working with clients from diverse communities</b>, 2019
+					Action Canada for Sexual Health & Rights
+					Link: action-canada-handbook()
+
+					<b>The Indigenous ally toolkit</b>, 2018
+					Montreal Urban Aboriginal Community Strategy Network
+					Link: ally-toolkit()`
+				]
+			}
 		}
 	],
 	fr: [
@@ -3647,6 +3776,135 @@ En résumé, il semble que Mifé-Miso pourrait ralentir le métabolisme de la m�
 
 					<b>Patient Assistance Fund for those who need access to abortion</b> (1-800-722-9100)
 					Link: patient-assistance-fund-naf()`
+				]
+			}
+		},
+		{
+			id: 'S14',
+			title: 'À propos de l’avortement par medicaments',
+			content: {
+				type: ['p'],
+				data: [
+					`<b>Update on medical abortion</b>, 2020
+					Bancsi A & Grindrod K; Canadian Family Physician
+					Link: cfp-ma()
+
+					<b>Early abortion options</b>, 2022
+					Reproductive Health Access Project
+					Link: rhap-abortion-options()
+
+					<b>Accessing abortion in Canada</b>
+					Wellness Within
+					Link: wellness-within()`
+				]
+			}
+		},
+		{
+			id: 'S15',
+			title: 'Trouver des prestataires d’avortement par medicaments',
+			content: {
+				type: ['p'],
+				data: [
+					`<b>Find medication abortion services portal</b>
+					Action Canada for Sexual Health and Rights
+					Link: find-services()
+
+					<b>List of abortion clinics</b>
+					Action Canada for Sexual Health and Rights
+					Link: arcc-abortion-clinics()
+
+					<b>Choice Connect Abortion Referral App</b>
+					Link: choice-connect()`
+				]
+			}
+		},
+		{
+			id: 'S16',
+			title: 'Guides pour gérer l’avortement par médicaments à domicile',
+			content: {
+				type: ['p'],
+				data: [
+					`<b>What to expect when ending a pregnancy at home</b>, 2023
+					Canadian Pharmacists Association & The CART Access Project
+					Link: cpha-what-to-expect()
+
+					<b>What to expect during a medical abortion</b>, 2017 
+					Planned Parenthood Ottawa and the SHORE Centre
+					Link: ppo-what-to-expect()
+
+					<b>Medical abortion instruction</b>, 2017 
+					Planned Parenthood Ottawa and the SHORE Centre
+					Link: ppo-ma-instruction()
+
+					<b>Mifegymiso medication guide</b>
+					Celopharma
+					Link: medication-guide()`
+				]
+			}
+		},
+		{
+			id: 'S17',
+			title: 'Lignes d’écoute pour le soutien émotionnel',
+			content: {
+				type: ['p'],
+				data: [
+					`<b>Norma Scarborough Fund, a travel fund for those who need access to abortion</b>
+					Link: norma-scarborough-action-canada()
+
+					<b>Patient Assistance Fund for those who need access to abortion</b> (1-800-722-9100)
+					Link: patient-assistance-fund-naf()
+					
+					<b>Exhale, a talk-line that provides emotional support, resources and information after abortion</b>
+					Link: exhale()
+
+					<b>All-Options</b>, a talk-line to discuss past or current experience with abortion, adoption and parenting for people in Canada and the United States</b> (1-888-493-0092).
+					Link: all-options()
+
+					<b>Regina Abortion Support Network (RASN) for abortion access in southern Saskatchewan</b> (1-306-517-2558)
+					Link: rasn()
+
+					<b>Saskatoon Abortion Support Network by abortion doulas</b>
+					Link: sasn()`
+				]
+			}
+		},
+		{
+			id: 'S18',
+			title: 'Boîtes à outils pour répondre aux préoccupations liées à l’avortement',
+			content: {
+				type: ['p'],
+				data: [
+					`<b>Debunking medication abortion myths</b>, 2023
+					Canadian Pharmacists Association & The CART Access Project
+					Link: cpha-debunking-myth()
+
+					<b>The Abortion options: A value clarification guide for health care professionals</b>, 2005
+					National Abortion Federation
+					Link: naf-value-clarification()
+
+					<b>Integrating early abortion services into primary care</b>, 2019
+					Reproductive Health Access Project
+					Link: rhap-abortion()
+
+					<b>Value clarification workshop</b>, 2022
+					Reproductive Health Access Project
+					Link: rhap-workshop()`
+				]
+			}
+		},
+		{
+			id: 'S19',
+			title: 'Boîtes à outils pour soutenir les communautés mal desservies',
+			content: {
+				type: ['p'],
+				data: [
+					`<b>A handbook for healthcare providers working with clients from diverse communities</b>, 2019
+					Action Canada for Sexual Health & Rights
+					Link: action-canada-handbook()
+
+					<b>The Indigenous ally toolkit</b>, 2018
+					Montreal Urban Aboriginal Community Strategy Network
+					Link: ally-toolkit()`
 				]
 			}
 		}
