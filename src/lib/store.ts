@@ -465,123 +465,123 @@ export const Bibliography = [
 	{
 		index: 1,
 		title: 'Abortion care guideline. Geneva: World Health Organization; 2022.',
-		href: '/src/lib/resources/WHO1.pdf'
+		href: '/resources/WHO1.pdf'
 	},
 	{
 		index: 2,
 		title:
 			'Bancsi A & Grindrod K. Update on medical abortion. Canadian Family Physician; 2020; 66.',
-		href: 'http://localhost:5173/src/lib/resources/VCOP2.pdf'
+		href: '/resources/VCOP2.pdf'
 	},
 	{
 		index: 3,
 		title:
 			'Canada Abortion Providers Support, Planned Parenthood, & the University of British Columbia. Medical abortion prescriber checklist resource guide.',
-		href: 'http://localhost:5173/src/lib/resources/C63.pdf'
+		href: '/resources/C63.pdf'
 	},
 	{
 		index: 4,
 		title:
 			'Canadian Abortion Providers Support, Planned Parenthood, & the University of British Columbia. Medical abortion prescriber checklist.',
-		href: 'http://localhost:5173/src/lib/resources/C64.pdf'
+		href: '/resources/C64.pdf'
 	},
 	{
 		index: 5,
 		title:
 			'Costescu D, Guilbert E et al. Induced abortion: updated guidance during pandemics and periods of social disruption.',
-		href: 'http://localhost:5173/src/lib/resources/C31.pdf'
+		href: '/resources/C31.pdf'
 	},
 	{
 		index: 6,
 		title:
 			'Costescu D, Guilbert E et al. Medical abortion. Journal of Obstetrics and Gynaecology Canada, 2016; Volume 38, Issue 4, 366 – 389.',
-		href: 'http://localhost:5173/src/lib/resources/C14.pdf'
+		href: '/resources/C14.pdf'
 	},
 	{
 		index: 7,
 		title:
 			'Guilbert E, Costescu D, et al. Canadian protocol for the provision of medical abortion via telemedicine; SOGC 2020.',
-		href: 'http://localhost:5173/src/lib/resources/C29.pdf'
+		href: '/resources/C29.pdf'
 	},
 	{
 		index: 8,
 		title:
 			'Horvath S, Goyal V, Traxler S, Prager S. Society of Family Planning committee Consensus on Rh testing in early pregnancy. Contraception. 2022 Oct;114:1-5.',
-		href: 'http://localhost:5173/src/lib/resources/SFP1.pdf'
+		href: '/resources/SFP1.pdf'
 	},
 	{
 		index: 9,
 		title:
 			'Judith Soon & Nevena Rebic. Pharmacist checklist for medical abortion. 2018. CART-GRAC 2020.',
-		href: 'http://localhost:5173/src/lib/resources/C68.pdf'
+		href: '/resources/C68.pdf'
 	},
 	{
 		index: 10,
 		title:
 			'Judith Soon & Nevena Rebic. Pharmacist resource guide for medical abortion. 2018. CART-GRAC 2020.',
-		href: 'http://localhost:5173/src/lib/resources/C67.pdf'
+		href: '/resources/C67.pdf'
 	},
 	{
 		index: 11,
 		title:
 			'Linepharma International Limited. Health Canada MIFISO Product Monograph. Submission Control No: 265940. December 15, 2022.',
-		href: 'http://localhost:5173/src/lib/resources/C17-2.pdf'
+		href: '/resources/C17-2.pdf'
 	},
 	{
 		index: 12,
 		title: 'National Abortion Federation. Checklist for starting medical abortion services.',
-		href: 'http://localhost:5173/src/lib/resources/C43.pdf'
+		href: '/resources/C43.pdf'
 	},
 	{
 		index: 13,
 		title:
 			'National Abortion Federation. NAF Protocol for early abortion with mifepristone and misoprostol, 2016.',
-		href: 'http://localhost:5173/src/lib/resources/C6.pdf'
+		href: '/resources/C6.pdf'
 	},
 	{
 		index: 14,
 		title:
 			'Planned Parenthood Ottawa & the SHORE centre. What to expect during a medication abortion; 2017.',
-		href: 'http://localhost:5173/src/lib/resources/C74.pdf'
+		href: '/resources/C74.pdf'
 	},
 	{
 		index: 15,
 		title: 'Reproductive Health Access Project. Early abortion options; 2022.',
-		href: 'http://localhost:5173/src/lib/resources/C58-1.pdf'
+		href: '/resources/C58-1.pdf'
 	},
 	{
 		index: 16,
 		title:
 			'Reproductive Health Access Project. Integrating early abortion services into primary care; 2019.',
-		href: 'http://localhost:5173/src/lib/resources/C58-7.pdf'
+		href: '/resources/C58-7.pdf'
 	},
 	{
 		index: 17,
 		title:
 			'Royal College of Obstetricians and Gynaecologists. Best practice in abortion care; 2022.',
-		href: 'http://localhost:5173/src/lib/resources/RCOG1.pdf'
+		href: '/resources/RCOG1.pdf'
 	},
 	{
 		index: 18,
 		title: 'Wellness Within. Accessing Abortion in Canada.',
-		href: 'http://localhost:5173/src/lib/resources/C104-2.pdf'
+		href: '/resources/C104-2.pdf'
 	},
 	{
 		index: 19,
 		title:
 			'Women’s College Hospital. Client information about evidence-based telemedicine medication abortion. Adapted from Choice in Health clinic; 2020.',
-		href: 'http://localhost:5173/src/lib/resources/WCH1.pdf'
+		href: '/resources/WCH1.pdf'
 	},
 	{
 		index: 20,
 		title: 'World Health Organization. Abortion care guideline; 2022.',
-		href: 'http://localhost:5173/src/lib/resources/WHO1.pdf'
+		href: '/resources/WHO1.pdf'
 	},
 	{
 		index: 21,
 		title:
 			'Society of Obstetricians and Gynaecologists of Canada. Guideline No. 448: Prevention of Rh D Alloimmunization; 2024.',
-		href: 'http://localhost:5173/src/lib/resources/AJOG1.pdf'
+		href: '/resources/AJOG1.pdf'
 	}
 ];
 const outlines: { [key: string]: any } = {

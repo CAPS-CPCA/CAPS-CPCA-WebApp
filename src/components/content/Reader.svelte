@@ -67,7 +67,7 @@
 			{ regex: /(\S)\[(.*?)\]/g, replacement: '$1<a href="#ref" class="ref"><sup>$2</sup></a>' },
 			{
 				regex: /\[(.*?)\]\((.*?)\)/g,
-				replacement: '<a class="in" href="/src/lib/resources/$2.pdf" target="_blank">$1</a>'
+				replacement: '<a class="in" href="/resources/$2.pdf" target="_blank">$1</a>'
 			},
 			{
 				regex:
