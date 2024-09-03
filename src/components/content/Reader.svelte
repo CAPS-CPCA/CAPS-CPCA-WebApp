@@ -64,7 +64,11 @@
 
 	const regex = (content: any) => {
 		const replacementMap = [
-			{ regex: /\[(.*?)\]/g, replacement: '<a href="#ref" class="ref"><sup>[$1]</sup></a>' },
+			{ regex: /(\S)\[(.*?)\]/g, replacement: '$1<a href="#ref" class="ref"><sup>$2</sup></a>' },
+			{
+				regex: /\[(.*?)\]\((.*?)\)/g,
+				replacement: '<a class="in" href="/src/lib/resources/$2.pdf" target="_blank">$1</a>'
+			},
 			{
 				regex:
 					/(Initial visit:|Follow-up visit:|Initial visit and follow-up visit:|Telehealth:|Première visite:|Visite de suivi:|Télésanté:|Visite initiale et visite de suivi:)/g,
@@ -118,12 +122,8 @@
 					'<a class="ex" href="https://www.jogc.com/article/S1701-2163(24)00260-3/abstract" target="_blank">SOGC’s Guideline on Prevention of RhD Alloimmunization</a>'
 			},
 			{
-				regex: /Link: (.*?)\((.*?)\)/g,
-				replacement: 'Link: <a class="ex" href="$2" target="_blank">$1</a>'
-			},
-			{
-				regex: /Lien: (.*?)\((.*?)\)/g,
-				replacement: 'Lien: <a class="ex" href="$2" target="_blank">$1</a>'
+				regex: /(Link|Lien): (.*?)\((.*?)\)/g,
+				replacement: '$1: <a class="ex" href="$3" target="_blank">$2</a>'
 			},
 			{
 				regex: /Patient Assistance Fund:/g,

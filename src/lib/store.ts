@@ -1,99 +1,8 @@
+import * as Types from './types';
 import { assets } from './assets';
 import { modules } from './modules';
-import type { Modules } from './modules';
-import { outlines } from '../components/content/Outline';
 
-type Header = {
-	logos: { src: string; href: string }[];
-	partners: { title: string; href: string }[];
-	nav: {
-		type: 'normal' | 'content' | 'search' | 'switch' | 'exit';
-		title?: string;
-		href?: string | string[];
-		content?: { title: string; href: string }[];
-	}[];
-};
-
-type Footer = {
-	social: string[];
-	logo: string;
-	contact: { [key: string]: string };
-	copyright: string;
-};
-
-interface ImageData {
-	src: string;
-	alt: string;
-}
-
-interface HeroText {
-	f1: string;
-	f2?: string;
-	f3?: string;
-	f4?: string;
-}
-
-interface HeroContentData {
-	title: string | HeroText;
-	paragraphs: HeroText[];
-	image: ImageData;
-}
-
-type HeroBanner = {
-	type: 'banner';
-	id: 'home';
-	data: { image: ImageData };
-};
-
-type HeroContent = {
-	type: 'content';
-	reverse: boolean;
-	id: 'P' | 'D' | 'S' | 'A';
-	data: HeroContentData;
-};
-
-type HeroIcon = {
-	type: 'icon';
-	id: 'FAQ' | 'Search';
-	data: { title: string; image: ImageData };
-};
-
-type HeroType = HeroBanner | HeroContent | HeroIcon;
-
-type Cards = {
-	title: string;
-	desc: string;
-	link: [string, string];
-}[];
-
-type Survey = {
-	title: string;
-	para: string[];
-	button: string;
-	image: string;
-};
-
-type Newsletter = {
-	title: string;
-	para: string;
-	button: string;
-};
-
-type AboutSOGC = {
-	image: string;
-	title: string;
-	para: string[];
-};
-
-type Search = {
-	title: string;
-	placeholder: string;
-	button: string;
-};
-
-type Bibliography = { title: string; href: string }[];
-
-const headers: { [key: string]: Header } = {
+const headers: { [key: string]: Types.Header } = {
 	en: {
 		logos: [
 			{ src: assets.EnSOGC, href: 'https://sogc.org/' },
@@ -151,8 +60,7 @@ const headers: { [key: string]: Header } = {
 		]
 	}
 };
-
-const footers: { [key: string]: Footer } = {
+const footers: { [key: string]: Types.Footer } = {
 	en: {
 		social: ['', '', '', '', ''],
 		logo: assets.EnFooter,
@@ -181,8 +89,7 @@ const footers: { [key: string]: Footer } = {
 			'© 2024 tous droits réservés | Politique de confidentialité | Conditions d’utilisation | À propos |'
 	}
 };
-
-const heros: { [key: string]: HeroType[] } = {
+const heros: { [key: string]: Types.HeroType[] } = {
 	en: [
 		{
 			type: 'banner',
@@ -454,8 +361,7 @@ const heros: { [key: string]: HeroType[] } = {
 		}
 	]
 };
-
-const cards: { [key: string]: Cards } = {
+const cards: { [key: string]: Types.Cards } = {
 	en: [
 		{
 			title: 'Prescribing',
@@ -491,8 +397,7 @@ const cards: { [key: string]: Cards } = {
 		}
 	]
 };
-
-const surveys: { [key: string]: Survey } = {
+const surveys: { [key: string]: Types.Survey } = {
 	en: {
 		title: 'Help us support you',
 		para: [
@@ -512,8 +417,7 @@ const surveys: { [key: string]: Survey } = {
 		image: assets.FrSurvey
 	}
 };
-
-const newsletters: { [key: string]: Newsletter } = {
+const newsletters: { [key: string]: Types.Newsletter } = {
 	en: {
 		title: 'Stay in the loop',
 		para: 'Sign up to our newsletter and learn about multiple ways to be part of our community.',
@@ -525,8 +429,7 @@ const newsletters: { [key: string]: Newsletter } = {
 		button: 'Soumettre'
 	}
 };
-
-const aboutSOGCs: { [key: string]: AboutSOGC } = {
+const aboutSOGCs: { [key: string]: Types.AboutSOGC } = {
 	en: {
 		image: assets.EnSOGCLarge,
 		title: 'About the SOGC',
@@ -546,8 +449,7 @@ const aboutSOGCs: { [key: string]: AboutSOGC } = {
 		]
 	}
 };
-
-const searches: { [key: string]: Search } = {
+const searches: { [key: string]: Types.Search } = {
 	en: {
 		title: 'Search the CAPS Platform',
 		placeholder: 'Type here...',
@@ -559,142 +461,653 @@ const searches: { [key: string]: Search } = {
 		button: 'Rechercher'
 	}
 };
-
 export const Bibliography = [
 	{
 		index: 1,
 		title: 'Abortion care guideline. Geneva: World Health Organization; 2022.',
-		href: 'https://caps.sogc.org/wp-content/uploads/2024/01/WHO1.pdf'
+		href: '/src/lib/resources/WHO1.pdf'
 	},
 	{
 		index: 2,
 		title:
 			'Bancsi A & Grindrod K. Update on medical abortion. Canadian Family Physician; 2020; 66.',
-		href: 'https://caps.sogc.org/wp-content/uploads/2024/01/VCOP2.pdf'
+		href: 'http://localhost:5173/src/lib/resources/VCOP2.pdf'
 	},
 	{
 		index: 3,
 		title:
 			'Canada Abortion Providers Support, Planned Parenthood, & the University of British Columbia. Medical abortion prescriber checklist resource guide.',
-		href: 'https://caps.sogc.org/wp-content/uploads/2024/01/C63.pdf'
+		href: 'http://localhost:5173/src/lib/resources/C63.pdf'
 	},
 	{
 		index: 4,
 		title:
 			'Canadian Abortion Providers Support, Planned Parenthood, & the University of British Columbia. Medical abortion prescriber checklist.',
-		href: 'https://caps.sogc.org/wp-content/uploads/2024/01/C64.pdf'
+		href: 'http://localhost:5173/src/lib/resources/C64.pdf'
 	},
 	{
 		index: 5,
 		title:
 			'Costescu D, Guilbert E et al. Induced abortion: updated guidance during pandemics and periods of social disruption.',
-		href: 'https://caps.sogc.org/wp-content/uploads/2024/01/C31.pdf'
+		href: 'http://localhost:5173/src/lib/resources/C31.pdf'
 	},
 	{
 		index: 6,
 		title:
 			'Costescu D, Guilbert E et al. Medical abortion. Journal of Obstetrics and Gynaecology Canada, 2016; Volume 38, Issue 4, 366 – 389.',
-		href: 'https://caps.sogc.org/wp-content/uploads/2024/01/C14.pdf'
+		href: 'http://localhost:5173/src/lib/resources/C14.pdf'
 	},
 	{
 		index: 7,
 		title:
 			'Guilbert E, Costescu D, et al. Canadian protocol for the provision of medical abortion via telemedicine; SOGC 2020.',
-		href: 'https://caps.sogc.org/wp-content/uploads/2024/01/C29.pdf'
+		href: 'http://localhost:5173/src/lib/resources/C29.pdf'
 	},
 	{
 		index: 8,
 		title:
 			'Horvath S, Goyal V, Traxler S, Prager S. Society of Family Planning committee Consensus on Rh testing in early pregnancy. Contraception. 2022 Oct;114:1-5.',
-		href: 'https://caps.sogc.org/wp-content/uploads/2024/01/SFP1.pdf'
+		href: 'http://localhost:5173/src/lib/resources/SFP1.pdf'
 	},
 	{
 		index: 9,
 		title:
 			'Judith Soon & Nevena Rebic. Pharmacist checklist for medical abortion. 2018. CART-GRAC 2020.',
-		href: 'https://caps.sogc.org/wp-content/uploads/2024/01/C68.pdf'
+		href: 'http://localhost:5173/src/lib/resources/C68.pdf'
 	},
 	{
 		index: 10,
 		title:
 			'Judith Soon & Nevena Rebic. Pharmacist resource guide for medical abortion. 2018. CART-GRAC 2020.',
-		href: 'https://caps.sogc.org/wp-content/uploads/2024/01/C67.pdf'
+		href: 'http://localhost:5173/src/lib/resources/C67.pdf'
 	},
 	{
 		index: 11,
 		title:
 			'Linepharma International Limited. Health Canada MIFISO Product Monograph. Submission Control No: 265940. December 15, 2022.',
-		href: 'https://caps.sogc.org/wp-content/uploads/2024/01/C17-2.pdf'
+		href: 'http://localhost:5173/src/lib/resources/C17-2.pdf'
 	},
 	{
 		index: 12,
 		title: 'National Abortion Federation. Checklist for starting medical abortion services.',
-		href: 'https://caps.sogc.org/wp-content/uploads/2024/01/C43.pdf'
+		href: 'http://localhost:5173/src/lib/resources/C43.pdf'
 	},
 	{
 		index: 13,
 		title:
 			'National Abortion Federation. NAF Protocol for early abortion with mifepristone and misoprostol, 2016.',
-		href: 'https://caps.sogc.org/wp-content/uploads/2024/01/C6.pdf'
+		href: 'http://localhost:5173/src/lib/resources/C6.pdf'
 	},
 	{
 		index: 14,
 		title:
 			'Planned Parenthood Ottawa & the SHORE centre. What to expect during a medication abortion; 2017.',
-		href: 'https://caps.sogc.org/wp-content/uploads/2024/01/C74.pdf'
+		href: 'http://localhost:5173/src/lib/resources/C74.pdf'
 	},
 	{
 		index: 15,
 		title: 'Reproductive Health Access Project. Early abortion options; 2022.',
-		href: 'https://caps.sogc.org/wp-content/uploads/2024/01/C58-1.pdf'
+		href: 'http://localhost:5173/src/lib/resources/C58-1.pdf'
 	},
 	{
 		index: 16,
 		title:
 			'Reproductive Health Access Project. Integrating early abortion services into primary care; 2019.',
-		href: 'https://caps.sogc.org/wp-content/uploads/2024/01/C58-7.pdf'
+		href: 'http://localhost:5173/src/lib/resources/C58-7.pdf'
 	},
 	{
 		index: 17,
 		title:
 			'Royal College of Obstetricians and Gynaecologists. Best practice in abortion care; 2022.',
-		href: 'https://caps.sogc.org/wp-content/uploads/2024/01/RCOG1.pdf'
+		href: 'http://localhost:5173/src/lib/resources/RCOG1.pdf'
 	},
 	{
 		index: 18,
 		title: 'Wellness Within. Accessing Abortion in Canada.',
-		href: 'https://caps.sogc.org/wp-content/uploads/2024/01/C104-2.pdf'
+		href: 'http://localhost:5173/src/lib/resources/C104-2.pdf'
 	},
 	{
 		index: 19,
 		title:
 			'Women’s College Hospital. Client information about evidence-based telemedicine medication abortion. Adapted from Choice in Health clinic; 2020.',
-		href: 'https://caps.sogc.org/wp-content/uploads/2024/01/WCH1.pdf'
+		href: 'http://localhost:5173/src/lib/resources/WCH1.pdf'
 	},
 	{
 		index: 20,
 		title: 'World Health Organization. Abortion care guideline; 2022.',
-		href: 'https://caps.sogc.org/wp-content/uploads/2024/01/WHO1.pdf'
+		href: 'http://localhost:5173/src/lib/resources/WHO1.pdf'
 	},
 	{
 		index: 21,
 		title:
 			'Society of Obstetricians and Gynaecologists of Canada. Guideline No. 448: Prevention of Rh D Alloimmunization; 2024.',
-		href: 'https://www.ajog.org/article/S0002-9378(24)00368-5/fulltext?dgcid=raven_jbs_aip_email)'
+		href: 'http://localhost:5173/src/lib/resources/AJOG1.pdf'
 	}
 ];
+const outlines: { [key: string]: any } = {
+	en: {
+		'/prescribing': {
+			subpages: [
+				{
+					href: '/prescribing/about-mifegymiso#M1',
+					title: 'About Mifegymiso',
+					modules: {
+						M1: 'Mechanism of Action',
+						M2: 'Efficacy & Safety',
+						M3: 'Indication & Contraindications'
+					}
+				},
+				{
+					href: '/prescribing/patient-counselling#M5',
+					title: 'Patient Counselling',
+					modules: {
+						M5: 'Pre-abortion Counselling',
+						M6: 'Abortion Options',
+						M14: 'Informed Consent',
+						M15: 'Administration Instruction',
+						M33: 'Missed Doses',
+						M16: 'Side-effect Management'
+					}
+				},
+				{
+					href: '/prescribing/medical-evaluation#M8',
+					title: 'Pre-abortion Medical Evaluation',
+					modules: {
+						M8: 'Basic screening',
+						M9: 'Pregnancy & Gestational Age screening',
+						M10: 'Ectopic Pregnancy',
+						M11: 'Pregnancies of Unknown Location',
+						M12: 'Rhesus screening',
+						M13: 'Anemia, STIs & others'
+					}
+				},
+				{
+					href: '/prescribing/assessment#M17',
+					title: 'Post-abortion Assessment',
+					modules: {
+						M17: 'Post-abortion Follow-up',
+						M18: 'Abortion Completion Assessment',
+						M19: 'Complication Management',
+						M20: 'Post-abortion Contraception'
+					}
+				},
+				{
+					href: '/prescribing/virtual-hybrid-care#M21',
+					title: 'Virtual & Hybrid Care',
+					modules: {
+						M21: 'Initial Steps',
+						M22: 'Virtual Assessment',
+						M14: 'Informed Consent',
+						M23: 'Follow-up'
+					}
+				}
+			],
+			resources: [
+				{
+					href: '/prescribing/billing-codes#B1',
+					title: 'Physician Billing Codes',
+					modules: {
+						B1: 'Alberta',
+						B2: 'British Columbia',
+						B3: 'Manitoba',
+						B4: 'New Brunswick',
+						B5: 'Newfoundland & Labrador',
+						B6: 'Northwest Territories',
+						B7: 'Nova Scotia',
+						B8: 'Nunavut',
+						B9: 'Ontario',
+						B10: 'Prince Edward Island',
+						B11: 'Quebec',
+						B12: 'Saskatchewan',
+						B13: 'Yukon'
+					}
+				},
+				{
+					href: '/prescribing/regulations-insurance-inclusivity#M26',
+					title: 'Regulations, Insurance & Inclusivity Toolkits',
+					modules: {
+						M26: 'Regulatory landscape',
+						M27: 'Facility setup',
+						M28: 'Addressing abortion concerns',
+						C1: 'Federal insurance schemes',
+						M36: 'Non-insured patients',
+						M37: '2SLGBTQIA+ patients',
+						M38: 'Indigenous patients'
+					}
+				},
+				{
+					href: '/prescribing/clinical-resources#S1',
+					title: 'Guidelines, Checklists & Toolkits',
+					modules: {
+						S1: 'Checklists and Resource Guides',
+						S2: 'Training and Webinars',
+						S3: 'Product Monographs, Guidelines and Protocols',
+						S4: 'Consent Form samples',
+						S5: 'Patient Resources',
+						S6: 'Toolkits for Addressing Abortion Concerns',
+						S7: 'Toolkits for Supporting Underserved Communities'
+					}
+				}
+			]
+		},
+		'/dispensing': {
+			subpages: [
+				{
+					href: '/dispensing/coverage-&-insurance#C1',
+					title: 'Coverage & Insurance',
+					modules: {
+						C1: 'Federal Insurance Schemes',
+						M36: 'Non-Insured Patients',
+						C2: 'Alberta',
+						C3: 'British Columbia',
+						C4: 'Manitoba',
+						C5: 'New Brunswick',
+						C6: 'Newfoundland & Labrador',
+						C7: 'Northwest Territories',
+						C8: 'Nova Scotia',
+						C9: 'Nunavut',
+						C10: 'Ontario',
+						C11: 'Prince Edward Island',
+						C12: 'Quebec',
+						C13: 'Saskatchewan',
+						C14: 'Yukon'
+					}
+				},
+				{
+					href: '/dispensing/patient-communication#M32',
+					title: 'Patient Communication',
+					modules: {
+						M32: 'Key counselling points',
+						M15: 'Administration instructions',
+						M33: 'Missed doses',
+						M16: 'Side effect management',
+						M19: 'Complication management',
+						M34: 'Optional follow-up',
+						M20: 'Post-abortion contraception'
+					}
+				},
+				{
+					href: '/dispensing/about-mifegymiso#M1',
+					title: 'About Mifegymiso',
+					modules: {
+						M1: 'Mechanism of action',
+						M29: 'Drug interactions',
+						M30: 'Pharmacokinetics',
+						M2: 'Efficacy & safety',
+						M3: 'Indication & contraindications',
+						M31: 'Clinical assessments'
+					}
+				}
+			],
+			resources: [
+				{
+					href: '/dispensing/regulations-inclusivity#M26',
+					title: 'Regulations & Inclusivity Toolkits',
+					modules: {
+						M26: 'Regulatory Landscape',
+						M35: 'Facility Setup',
+						M28: 'Addressing Abortion Concerns',
+						M37: '2SLGBTQIA+ Patients',
+						M38: 'Indigenous Patients'
+					}
+				},
+				{
+					href: '/dispensing/clinical-resources#S8',
+					title: 'Guidelines, Checklists & Toolkits',
+					modules: {
+						S8: 'Checklists and Resource Guides',
+						S9: 'Training and Webinars',
+						S10: 'Product Monographs, Guidelines and Protocols',
+						S11: 'Posters and Patient Materials',
+						S12: 'Toolkits for Addressing Abortion Concerns',
+						S13: 'Toolkits for Supporting Underserved Communities'
+					}
+				}
+			]
+		},
+		'/supporting-roles': {
+			subpages: [
+				{
+					href: '/supporting-roles/medication-abortion#M39',
+					title: 'Medication Abortion',
+					modules: {
+						M39: 'What is Medication Abortion',
+						M3: 'Indication & Contraindications',
+						M40: 'Who Can Prescribe',
+						M41: 'Where to Get the Medication'
+					}
+				},
+				{
+					href: '/supporting-roles/client-counselling#M42',
+					title: 'Client Counselling',
+					modules: {
+						M42: 'How to Counsel Clients',
+						M43: 'How to Prepare for Medication Abortion',
+						M15: 'Administration Instruction',
+						M33: 'Missed Doses',
+						M16: 'Side-effect Management',
+						M44: 'How to Support After Abortion'
+					}
+				}
+			],
+			resources: [
+				{
+					href: '/supporting-roles/resources#S14',
+					title: 'Guides, Talklines, Toolkits',
+					modules: {
+						S14: 'About Medication Abortion',
+						S15: 'Locating Providers of Medication Abortion',
+						S16: 'Guides for Managing Medication Abortion at Home',
+						S17: 'Talk-lines for Post-Abortion Emotional Support',
+						S18: 'Toolkits for Addressing Abortion Concerns',
+						S19: 'Toolkits for Supporting Underserved Communities'
+					}
+				}
+			]
+		},
+		'/faq': {
+			subpages: [
+				{
+					href: '/faq#F1',
+					title: 'Medication',
+					modules: {}
+				},
+				{
+					href: '/faq#F2',
+					title: 'Patient Counselling',
+					modules: {}
+				},
+				{
+					href: '/faq#F3',
+					title: 'Side effects & Complications',
+					modules: {}
+				},
+				{
+					href: '/faq#F4',
+					title: 'Breastfeeding',
+					modules: {}
+				},
+				{
+					href: '/faq#F5',
+					title: 'Multiple Gestation',
+					modules: {}
+				},
+				{
+					href: '/faq#F6',
+					title: 'Methadone',
+					modules: {}
+				}
+			]
+		}
+	},
+	fr: {
+		'/prescrire': {
+			subpages: [
+				{
+					href: '/prescrire/a-propos-du-mife-miso#M1',
+					title: 'À propos du mifé-miso',
+					modules: {
+						M1: 'Mécanisme d’action',
+						M2: 'Efficacité et sécurité',
+						M3: 'Indications et contre-indications'
+					}
+				},
+				{
+					href: '/prescrire/counseling-de-la-personne#M5',
+					title: 'Counseling de la personne',
+					modules: {
+						M5: 'Counseling pré-avortement',
+						M6: 'Options d’avortement',
+						M14: 'Consentement éclairé',
+						M15: 'Instructions d’administration',
+						M33: 'Doses manquées',
+						M16: 'Gestion des effets secondaires'
+					}
+				},
+				{
+					href: '/prescrire/evaluation-medicale#M8',
+					title: 'Évaluation pré-avortement',
+					modules: {
+						M8: 'Dépistage de base',
+						M9: 'Détermination de l’âge gestationnel',
+						M10: 'Grossesse ectopique',
+						M11: 'Grossesse de localisation indéterminée',
+						M12: 'Dépistage du statut Rh',
+						M13: 'Anémie, ITSS et autres'
+					}
+				},
+				{
+					href: '/prescrire/evaluation-post-avortement#M17',
+					title: 'Évaluation post-avortement',
+					modules: {
+						M17: 'Suivi post-avortement',
+						M18: 'Évaluation du succès de l’avortement',
+						M19: 'Gestion des complications',
+						M20: 'Contraception post-avortement'
+					}
+				},
+				{
+					href: '/prescrire/soins-virtuels-hybrides#M21',
+					title: 'Soins virtuels et hybrides',
+					modules: {
+						M21: 'Étapes initiales',
+						M22: 'Évaluation virtuelle',
+						M14: 'Consentement éclairé',
+						M23: 'Suivi'
+					}
+				}
+			],
+			resources: [
+				{
+					href: '/prescrire/codes-de-facturation#B1',
+					title: 'Codes de facturation',
+					modules: {
+						B1: 'Alberta',
+						B2: 'Colombie-Britannique',
+						B3: 'Manitoba',
+						B4: 'Nouveau Brunswick',
+						B5: 'Terre-Neuve et Labrador',
+						B6: 'Territoires du Nord-Ouest',
+						B7: 'Nouvelle-Écosse',
+						B8: 'Nunavut',
+						B9: 'Ontario',
+						B10: 'Île-du-Prince-Édouard',
+						B11: 'Québec',
+						B12: 'Saskatchewan',
+						B13: 'Yukon'
+					}
+				},
+				{
+					href: '/prescrire/reglements-assurance-inclusivite#M26',
+					title: 'Règlements, assurance et inclusivité',
+					modules: {
+						M26: 'Contexte réglementaire',
+						M27: 'Configuration des installations',
+						M28: 'Répondre aux préoccupations liées à l’avortement',
+						C1: 'Régimes d’assurance fédéraux',
+						M36: 'Personnes non-assurées',
+						M37: 'Personnes 2ELGBTQIA+',
+						M38: 'Personnes autochtones'
+					}
+				},
+				{
+					href: '/prescrire/ressources-cliniques#S1',
+					title: 'Lignes directrices et autres ressources',
+					modules: {
+						S1: 'Guides et aides-mémoires',
+						S2: 'Formations et webinaires',
+						S3: 'Monographies, lignes directrices et protocoles',
+						S4: 'Exemples de formulaires de consentement',
+						S5: 'Instructions pour la patientèle',
+						S6: 'Boîtes à outils pour répondre aux préoccupations liées à l’avortement',
+						S7: 'Boîtes à outils pour soutenir les communautés mal desservies'
+					}
+				}
+			]
+		},
+		'/dispenser': {
+			subpages: [
+				{
+					href: '/dispenser/couverture-et-assurance#C1',
+					title: 'Couverture et assurance',
+					modules: {
+						C1: 'Régimes d’assurance fédéraux',
+						M36: 'Personnes non-assurées',
+						C2: 'Alberta',
+						C3: 'Colombie-Britannique',
+						C4: 'Manitoba',
+						C5: 'Nouveau Brunswick',
+						C6: 'Terre-Neuve et Labrador',
+						C7: 'Territoires du Nord-Ouest',
+						C8: 'Nouvelle-Écosse',
+						C9: 'Nunavut',
+						C10: 'Ontario',
+						C11: 'Île-du-Prince-Édouard',
+						C12: 'Québec',
+						C13: 'Saskatchewan',
+						C14: 'Yukon'
+					}
+				},
+				{
+					href: '/dispenser/communication#M32',
+					title: 'Communication',
+					modules: {
+						M32: 'Points clés du counseling',
+						M15: 'Instructions d’administration',
+						M33: 'Doses manquées',
+						M16: 'Gestion des effets secondaires',
+						M19: 'Gestion des complications',
+						M34: 'Suivi facultatif',
+						M20: 'Contraception post-avortement'
+					}
+				},
+				{
+					href: '/dispenser/a-propos-du-mife-miso#M1',
+					title: 'À propos du mifé-miso',
+					modules: {
+						M1: 'Mécanisme d’action',
+						M29: 'Interactions médicamenteuses',
+						M30: 'Pharmacocinétique',
+						M2: 'Efficacité et sécurité',
+						M3: 'Indications et contre-indications',
+						M31: 'Évaluations cliniques'
+					}
+				}
+			],
+			resources: [
+				{
+					href: '/dispenser/reglements-inclusivite#M26',
+					title: 'Réglements et inclusivité',
+					modules: {
+						M26: 'Contexte réglementaire',
+						M35: 'Configuration des installations',
+						M28: 'Répondre aux préoccupations liées à l’avortement',
+						M37: 'Personnes 2ELGBTQIA+',
+						M38: 'Personnes autochtones'
+					}
+				},
+				{
+					href: '/dispenser/ressources-cliniques#S8',
+					title: 'Lignes directrices et autres ressources',
+					modules: {
+						S8: 'Guides et aides-mémoires',
+						S9: 'Formations et webinaires',
+						S10: 'Monographies, lignes directrices et protocoles',
+						S11: 'Affiches et documents pour la patientèle',
+						S12: 'Boîtes à outils pour répondre aux préoccupations liées à l’avortement',
+						S13: 'Boîtes à outils pour soutenir les communautés mal desservies'
+					}
+				}
+			]
+		},
+		'/r%C3%B4les-de-soutien': {
+			subpages: [
+				{
+					href: '/r%C3%B4les-de-soutien/avortement-par-medicaments#M39',
+					title: 'Avortement par medicaments',
+					modules: {
+						M39: 'À propos du MIFÉ-MISO',
+						M3: 'Indications et contraindications',
+						M40: 'Qui peut prescrire',
+						M41: 'Où obtenir le medicament'
+					}
+				},
+				{
+					href: '/r%C3%B4les-de-soutien/counseling-de-la-client#M42',
+					title: 'Counseling de la personne',
+					modules: {
+						M42: 'Comment conseiller la personne',
+						M43: 'Se préparer à l’avortement par medicaments',
+						M15: 'Instructions d’administration',
+						M33: 'Doses manquées',
+						M16: 'Gestion des effets secondaires',
+						M44: 'Offrir du soutien post-avortement'
+					}
+				}
+			],
+			resources: [
+				{
+					href: '/r%C3%B4les-de-soutien/ressources#S14',
+					title: 'Lignes directrices et autres ressources',
+					modules: {
+						S14: 'À propos de l’avortement par medicaments',
+						S15: 'Trouver des prestataires d’avortement par medicaments',
+						S16: 'Guides pour gérer l’avortement par médicaments à domicile',
+						S17: 'Lignes d’écoute pour le soutien émotionnel',
+						S18: 'Boîtes à outils pour répondre aux préoccupations liées à l’avortement',
+						S19: 'Boîtes à outils pour soutenir les communautés mal desservies'
+					}
+				}
+			]
+		},
+		'/faq': {
+			subpages: [
+				{
+					href: '/faq#F1',
+					title: 'Médicaments',
+					modules: {}
+				},
+				{
+					href: '/faq#F2',
+					title: 'Counseling',
+					modules: {}
+				},
+				{
+					href: '/faq#F3',
+					title: 'Effets secondaires et complications',
+					modules: {}
+				},
+				{
+					href: '/faq#F4',
+					title: 'Allaitement',
+					modules: {}
+				},
+				{
+					href: '/faq#F5',
+					title: 'Grossesse multiple',
+					modules: {}
+				},
+				{
+					href: '/faq#F6',
+					title: 'Methadone',
+					modules: {}
+				}
+			]
+		}
+	}
+};
 
 export function getTranslation(lang: string): {
-	outline: any;
-	modules: Modules;
-	header: Header;
-	footer: Footer;
-	hero: HeroType[];
-	cards: Cards;
-	survey: Survey;
-	newsletter: Newsletter;
-	aboutSOGC: AboutSOGC;
-	search: Search;
+	outline: Types.Outline;
+	modules: Types.Modules;
+	header: Types.Header;
+	footer: Types.Footer;
+	hero: Types.HeroType[];
+	cards: Types.Cards;
+	survey: Types.Survey;
+	newsletter: Types.Newsletter;
+	aboutSOGC: Types.AboutSOGC;
+	search: Types.Search;
 } {
 	return {
 		outline: outlines[lang],
