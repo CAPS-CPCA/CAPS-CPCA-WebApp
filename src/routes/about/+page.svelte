@@ -44,7 +44,7 @@
 						acknowledge the input and support from our partnering physicians, nurse practitioners,
 						midwives and pharmacists, and from our collaborating organizations:
 					</p>
-					<img src={assets.Partners} alt="partners" />
+					<enhanced:img src={assets.Partners} alt="partners" />
 				</div>
 
 				<h1>Content Development Process</h1>

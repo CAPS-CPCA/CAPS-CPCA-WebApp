@@ -26,11 +26,13 @@
 			<ul>
 				<div class="logo">
 					{#if isSticky}
-						<a href={data.logos[1].href}><img src={data.logos[1].src} alt="CAPS-CPCA Logo" /></a>
-					{:else}
-						<a href={data.logos[0].href} target="_blank"
-							><img src={data.logos[0].src} alt="SOGC Logo" /></a
+						<a href={data.logos[1].href}
+							><enhanced:img src={data.logos[1].src} alt="CAPS-CPCA Logo" /></a
 						>
+					{:else}
+						<a href={data.logos[0].href} target="_blank">
+							<enhanced:img src={data.logos[0].src} alt="SOGC Logo" />
+						</a>
 					{/if}
 				</div>
 				{#each data.nav as { type, title, content, href }}

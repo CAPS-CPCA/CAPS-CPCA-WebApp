@@ -6,7 +6,7 @@
 	{#if data}
 		<div class="container">
 			<div class="card">
-				<img src={data.image} alt="SOGC Logo" />
+				<enhanced:img src={data.image} alt="SOGC Logo" />
 				<h2>{data.title}</h2>
 				{#each data.para as para}
 					<p>{para}</p>

@@ -1,13 +1,5 @@
-import { getTranslation } from './store';
-import { get, writable } from 'svelte/store';
 import { browser } from '$app/environment';
 import { goto } from '$app/navigation';
-
-// Translation data
-export const translations: { [key: string]: any } = {
-	en: getTranslation('en'),
-	fr: getTranslation('fr')
-};
 
 // Redirect function for content path changes
 export function redirect(url: string) {

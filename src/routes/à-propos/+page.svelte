@@ -50,7 +50,7 @@
 						Nous sommes également reconnaissants du soutien financier de Santé Canada. Les opinions
 						exprimées ici ne représentent pas nécessairement celles de Santé Canada:
 					</p>
-					<img src={assets.Partners} alt="partners" />
+					<enhanced:img src={assets.Partners} alt="partners" />
 				</div>
 
 				<h1>Content Development Process</h1>

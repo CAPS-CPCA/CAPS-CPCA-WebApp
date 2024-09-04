@@ -1,19 +1,19 @@
 <script>
-	import { assets } from '$lib/assets/index';
+	import { assets } from '../lib/assets/index';
 	export let data;
 </script>
 
 <footer>
 	{#if data}
 		<div class="container">
-			<a class="top" href="#top"><img src={assets.ArrowUp} alt="back to top" /></a>
+			<a class="top" href="#top"><enhanced:img src={assets.ArrowUp} alt="back to top" /></a>
 			<div class="social">
 				{#each data.social as i}
 					<li>{i}</li>
 				{/each}
 			</div>
 			<div class="bottom">
-				<a href="http://sogc.org/"><img src={data.logo} alt="footer logo" /></a>
+				<a href="http://sogc.org/"><enhanced:img src={data.logo} alt="footer logo" /></a>
 				<div class="contact">
 					<ul>
 						{#each Object.entries(data.contact) as [key, value]}

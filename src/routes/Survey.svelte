@@ -12,7 +12,7 @@
 				{/each}
 				<button class="primary">{data.button}</button>
 			</div>
-			<img src={data.image} alt="Survey" />
+			<enhanced:img src={data.image} alt="Survey" />
 		</div>
 	{/if}
 </section>
@@ -29,10 +29,9 @@
 		transition: all 0.3s ease-in-out;
 	}
 	img {
-		margin-right: 4rem;
 		transition: all 0.3s ease-in-out;
 	}
 	img:hover {
-		transform: scale(1.1);
+		transform: scale(0.95);
 	}
 </style>

@@ -11,7 +11,7 @@
 	{#if hero !== null}
 		<section class={hero.type}>
 			{#if hero.id === 'home'}
-				<img src={hero.data.image.src} alt={hero.data.image.alt} />
+				<enhanced:img src={hero.data.image.src} alt={hero.data.image.alt} />
 			{:else if ['P', 'D', 'S', 'A'].includes(hero.id)}
 				<div class="container base" class:reverse={hero.reverse}>
 					<div>
