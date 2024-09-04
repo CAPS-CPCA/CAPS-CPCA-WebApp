@@ -5,222 +5,222 @@
 
 /* Main theme colors */
 :root {
-  --Primary: #011627;
-  --Primary-stroke: #0f3e65;
-  --Highlight: #20a4f3;
-  --Pressed: #0e6eb8;
-  --Background: #f6f7f8;
-  /* Content type colors */
-  --Prescribing: #ff3366;
-  --Dispensing: #2ec4b6;
-  --Supporting: #fb9246;
-  /* Module type colors */
-  --MIFE: #2ec4b6;
-  --MISO: #fb9246;
+	--Primary: #011627;
+	--Primary-stroke: #0f3e65;
+	--Highlight: #20a4f3;
+	--Pressed: #0e6eb8;
+	--Background: #f6f7f8;
+	/* Content type colors */
+	--Prescribing: #ff3366;
+	--Dispensing: #2ec4b6;
+	--Supporting: #fb9246;
+	/* Module type colors */
+	--MIFE: #2ec4b6;
+	--MISO: #fb9246;
 }
 
 /* Reset CSS */
 html {
-  font-size: 14px;
-  scroll-behavior: smooth;
+	font-size: 14px;
+	scroll-behavior: smooth;
 }
 body {
-  margin: 0;
-  padding-top: 132px;
-  box-sizing: border-box;
-  background: var(--Background);
+	margin: 0;
+	padding-top: 132px;
+	box-sizing: border-box;
+	background: var(--Background);
 }
 
 /* Typography */
 sup {
-  font-size: 75%;
+	font-size: 75%;
 }
 a {
-  text-decoration: none;
-  color: var(--Background);
+	text-decoration: none;
+	color: var(--Background);
 }
 a.in {
-  color: #296ec8;
-  border-bottom: 1px solid;
+	color: #296ec8;
+	border-bottom: 1px solid;
 }
 a.in:hover {
-  color: var(--Highlight);
+	color: var(--Highlight);
 }
 a.ex {
-  font-weight: 600;
-  color: #0e6eb8;
+	font-weight: 600;
+	color: #0e6eb8;
 }
 a.ex:hover {
-  color: #20a4f3;
+	color: #20a4f3;
 }
 p,
 h1 {
-  margin: 0;
-  color: var(--Primary);
+	margin: 0;
+	color: var(--Primary);
 }
 p {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  font-size: 1.25rem;
-  line-height: 1.5;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 1.25rem;
+	line-height: 1.5;
 }
 h1 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  font-size: 2.85rem;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 2.85rem;
 }
 h2 {
-  margin: 0;
-  color: #3e3e3e;
-  font-family: 'Roboto';
-  font-weight: 600;
+	margin: 0;
+	color: #3e3e3e;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 600;
 }
 span {
-  font-weight: 600;
+	font-weight: 600;
 }
 table {
-  font-family: 'Roboto';
-  color: #3e3e3e;
-  text-align: left;
-  border-collapse: collapse;
-  border: 2px solid #545454;
+	font-family: 'Roboto', sans-serif;
+	color: #3e3e3e;
+	text-align: left;
+	border-collapse: collapse;
+	border: 2px solid #545454;
 }
 td,
 th {
-  font-size: 1.25rem;
-  padding: 1rem 2rem;
-  vertical-align: top;
-  border: 1px solid #545454;
+	font-size: 1.25rem;
+	padding: 1rem 2rem;
+	vertical-align: top;
+	border: 1px solid #545454;
 }
 .module {
-  position: relative;
-  padding: 3.5rem 4.5rem;
-  border: 1px solid #545454;
-  background: #f6f7f8;
+	position: relative;
+	padding: 3.5rem 4.5rem;
+	border: 1px solid #545454;
+	background: #f6f7f8;
 }
 .module > *:not(li):not(:last-child):not(.left) {
-  margin-bottom: 2rem;
+	margin-bottom: 2rem;
 }
 .module p {
-  color: var(--Primary);
-  font-size: 1.25rem;
-  font-family: 'Roboto';
-  background: none;
-  line-height: 1.75;
+	color: var(--Primary);
+	font-size: 1.25rem;
+	font-family: 'Roboto', sans-serif;
+	background: none;
+	line-height: 1.75;
 }
 .module a {
-  font-size: 1.25rem;
-  font-family: 'Roboto';
-  line-height: 1.75;
-  transition: 150ms ease-in-out;
+	font-size: 1.25rem;
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.75;
+	transition: 150ms ease-in-out;
 }
 .module li {
-  color: #3e3e3e;
-  padding-left: 1.5rem;
-  font-size: 1.25rem;
-  font-family: 'Roboto';
-  line-height: 1.75;
+	color: #3e3e3e;
+	padding-left: 1.5rem;
+	font-size: 1.25rem;
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.75;
 }
 .module ul li {
-  list-style: disc;
+	list-style: disc;
 }
 .no-count {
-  margin-top: 2rem;
-  list-style-type: none;
-  counter-increment: list-item 0;
+	margin-top: 2rem;
+	list-style-type: none;
+	counter-increment: list-item 0;
 }
 
 .left {
-  width: 9rem;
-  float: left;
-  padding-right: 2.5rem;
+	width: 9rem;
+	float: left;
+	padding-right: 2.5rem;
 }
 .right {
-  width: 8rem;
-  float: right;
-  padding-left: 8rem;
+	width: 8rem;
+	float: right;
+	padding-left: 8rem;
 }
 .left img,
 .right img {
-  max-width: 100%;
+	max-width: 100%;
 }
 /* UI */
 .img {
-  padding: 2rem 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	padding: 2rem 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 button.primary,
 a.primary {
-  color: var(--Background);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: fit-content;
-  font-family: 'Roboto', Sans-serif;
-  font-size: 1.5rem;
-  font-weight: 400;
-  letter-spacing: 1px;
-  background-color: var(--Primary);
-  border: none;
-  border-radius: 1rem;
-  padding: 0.75rem 3.5rem;
-  transition: all 0.3s ease;
+	color: var(--Background);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: fit-content;
+	font-family: 'Roboto', Sans-serif;
+	font-size: 1.5rem;
+	font-weight: 400;
+	letter-spacing: 1px;
+	background-color: var(--Primary);
+	border: none;
+	border-radius: 1rem;
+	padding: 0.75rem 3.5rem;
+	transition: all 0.3s ease;
 }
 button.primary:hover,
 a.primary:hover {
-  background-color: var(--Highlight);
+	background-color: var(--Highlight);
 }
 button.primary:active,
 a.primary:active {
-  background-color: var(--Pressed);
+	background-color: var(--Pressed);
 }
 a.secondary {
-  color: var(--Primary);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Roboto', Sans-serif;
-  font-size: 1.25rem;
-  font-weight: 400;
-  border: 3px solid var(--Primary);
-  transition: all 0.3s ease;
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  text-decoration: none;
+	color: var(--Primary);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Roboto', Sans-serif;
+	font-size: 1.25rem;
+	font-weight: 400;
+	border: 3px solid var(--Primary);
+	transition: all 0.3s ease;
+	padding: 0.5rem 1rem;
+	border-radius: 0.5rem;
+	text-decoration: none;
 }
 a.secondary:hover {
-  border: 3px solid var(--Highlight);
-  color: var(--Highlight);
+	border: 3px solid var(--Highlight);
+	color: var(--Highlight);
 }
 a.secondary:active {
-  border: 3px solid var(--Pressed);
-  color: var(--Pressed);
+	border: 3px solid var(--Pressed);
+	color: var(--Pressed);
 }
 a.secondary.selected {
-  color: var(--Background);
-  background-color: var(--Primary);
-  border: 3px solid var(--Primary);
+	color: var(--Background);
+	background-color: var(--Primary);
+	border: 3px solid var(--Primary);
 }
 a.ref {
-  color: var(--Primary);
+	color: var(--Primary);
 }
 a.ref:hover {
-  color: var(--Highlight);
+	color: var(--Highlight);
 }
 
 /* Layout */
 section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 div.container {
-  display: flex;
-  width: 100%;
-  max-width: 1600px;
+	display: flex;
+	width: 100%;
+	max-width: 1600px;
 }
 div.container > * {
-  flex: 1;
+	flex: 1;
 }
