@@ -2,6 +2,8 @@
 	import { page } from '$app/stores';
 	import Hero from '../../components/Hero.svelte';
 
+	export let data;
+
 	function setID(url: string) {
 		switch (true) {
 			case url.includes('prescribing') || url.includes('prescrire'):
@@ -19,5 +21,5 @@
 	$: id = setID($page.url.pathname);
 </script>
 
-<Hero type="content" {id} />
+<Hero type="content" {id} data={$data.hero} />
 <slot />

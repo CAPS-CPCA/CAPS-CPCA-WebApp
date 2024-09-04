@@ -1,32 +1,34 @@
 <script>
 	import { assets } from '$lib/assets/index';
-	import { data } from '$lib/data';
+	export let data;
 </script>
 
 <footer>
-	<div class="container">
-		<a class="top" href="#top"><img src={assets.ArrowUp} alt="back to top" /></a>
-		<div class="social">
-			{#each $data.footer.social as i}
-				<li>{i}</li>
-			{/each}
-		</div>
-		<div class="bottom">
-			<a href="http://sogc.org/"><img src={$data.footer.logo} alt="footer logo" /></a>
-			<div class="contact">
-				<ul>
-					{#each Object.entries($data.footer.contact) as [key, value]}
-						{#if key !== 'mailto:info@sogc.com'}
-							<li>{value}</li>
-						{:else}
-							<li><a href={key}>{value}</a></li>
-						{/if}
-					{/each}
-				</ul>
+	{#if data}
+		<div class="container">
+			<a class="top" href="#top"><img src={assets.ArrowUp} alt="back to top" /></a>
+			<div class="social">
+				{#each data.social as i}
+					<li>{i}</li>
+				{/each}
 			</div>
-			<p class="copyright">{$data.footer.copyright}</p>
+			<div class="bottom">
+				<a href="http://sogc.org/"><img src={data.logo} alt="footer logo" /></a>
+				<div class="contact">
+					<ul>
+						{#each Object.entries(data.contact) as [key, value]}
+							{#if key !== 'mailto:info@sogc.com'}
+								<li>{value}</li>
+							{:else}
+								<li><a href={key}>{value}</a></li>
+							{/if}
+						{/each}
+					</ul>
+				</div>
+				<p class="copyright">{data.copyright}</p>
+			</div>
 		</div>
-	</div>
+	{/if}
 </footer>
 
 <style>

@@ -1,20 +1,22 @@
 <script lang="ts">
-	import { data } from '$lib/data';
+	export let data;
 </script>
 
 <section class="newsletter">
-	<div class="container">
-		<div class="card">
-			<h1>{$data.newsletter.title}</h1>
-			<p>{$data.newsletter.para}</p>
+	{#if data}
+		<div class="container">
+			<div class="card">
+				<h1>{data.title}</h1>
+				<p>{data.para}</p>
+			</div>
+			<div class="card">
+				<form class="form">
+					<input type="email" placeholder="john.doe@email.com" />
+					<button class="primary" type="submit">{data.button}</button>
+				</form>
+			</div>
 		</div>
-		<div class="card">
-			<form class="form">
-				<input type="email" placeholder="john.doe@email.com" />
-				<button class="primary" type="submit">{$data.newsletter.button}</button>
-			</form>
-		</div>
-	</div>
+	{/if}
 </section>
 
 <style>
@@ -23,7 +25,7 @@
 		color: white;
 	}
 	.container {
-		background: url(../../lib/assets/newsletter.png) no-repeat center center;
+		background: url(../lib/assets/newsletter.png) no-repeat center center;
 		background-size: contain;
 	}
 	.card {

@@ -2748,7 +2748,7 @@ Visite de suivi: <b>8471</b> Visite intermédiaire régionale ou visite suivante
             Initier des discussions informelles avec vos collègues sur l’offre de services.
             Envisager de mener une enquête anonyme auprès du personnel et des clients pour avoir une idée de leurs opinions et de leurs sentiments à l’égard de l’AM.
             Envisager d’organiser un atelier pour clarifier les valeurs sur l’avortement, aborder l’opposition ou l’inconfort et déterminer les moyens de travailler ensemble pour fournir l’AM. Un atelier de clarification des valeurs liées à l’avortement peut être adapté en utilisant:`,
-						`[Values clarification toolkits](C35)</a> de la Fédération Nationale de l’Avortement.
+						` [Values clarification toolkits](C35)</a> de la Fédération Nationale de l’Avortement.
             Matériel sur le [Values clarification workshop](C58-10) du Reproductive Health Access Project.`,
 						`Envisager de créer un comité de planification pour discuter des objectifs, des tâches, des échéanciers, des obstacles et des solutions.
             Se renseigner sur d’autres centres de santé ou professionnels de la santé locaux qui ont intégré avec succès les services d’avortement dans leur pratique. Les inviter à des réunions, des ateliers et des séances de planification, ou solliciter leurs commentaires et conseils sur votre processus.

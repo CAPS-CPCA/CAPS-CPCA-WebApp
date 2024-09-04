@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Outline from './Outline.svelte';
+	export let data;
 
 	export let modules: any = [];
 	export let outline = true;
@@ -172,22 +173,24 @@
 </script>
 
 <div class="reader">
-	{#if outline}
-		<Outline />
-	{/if}
-	<div class="pane">
-		{#if modules.length === 0}
-			<h1>No Modules Found</h1>
-		{:else}
-			{#each modules as module}
-				<h1>{module.title}</h1>
-				<div class="module">
-					<div class="idholder" id={module.id}></div>
-					{@html regex(module.content)}
-				</div>
-			{/each}
+	{#if data}
+		{#if outline}
+			<Outline {data} />
 		{/if}
-	</div>
+		<div class="pane">
+			{#if modules.length === 0}
+				<h1>No Modules Found</h1>
+			{:else}
+				{#each modules as module}
+					<h1>{module.title}</h1>
+					<div class="module">
+						<div class="idholder" id={module.id}></div>
+						{@html regex(module.content)}
+					</div>
+				{/each}
+			{/if}
+		</div>
+	{/if}
 </div>
 
 <style>

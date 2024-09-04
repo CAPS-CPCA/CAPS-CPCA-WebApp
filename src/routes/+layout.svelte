@@ -1,13 +1,11 @@
 <script>
-	// import { data, userLang } from '$lib/data';
 	import '../global.css';
 	import Header from '../components/Header.svelte';
 	import Footer from '../components/Footer.svelte';
 
-	// $: lang = $userLang;
-	// $: console.log(lang);
+	export let data;
 </script>
 
-<Header />
+<Header data={$data.header} />
 <slot />
-<Footer />
+<Footer data={$data.footer} />

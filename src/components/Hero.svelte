@@ -1,42 +1,45 @@
 <script lang="ts">
-	import { data } from '$lib/data';
+	export let data: any;
 	export let type: string;
 	export let id: string;
 
-	$: hero = $data.hero.find((hero: any) => hero.type === type && hero.id === id);
+	let hero: any = null;
+	$: if (data) hero = data.find((hero: any) => hero.type === type && hero.id === id);
 </script>
 
 <main>
-	<section class={hero.type}>
-		{#if hero.id === 'home'}
-			<img src={hero.data.image.src} alt={hero.data.image.alt} />
-		{:else if ['P', 'D', 'S', 'A'].includes(hero.id)}
-			<div class="container base" class:reverse={hero.reverse}>
-				<div>
-					{#if typeof hero.data.title === 'string'}
-						<h1>{hero.data.title}</h1>
-					{:else}
-						<h1>
-							{hero.data.title.f1}<span class={hero.id}>{hero.data.title.f2}</span>{hero.data.title
-								.f3}
-						</h1>
-					{/if}
-					{#each hero.data.paragraphs as paragraph}
-						<p>
-							{paragraph.f1}<span>{paragraph.f2}</span>{paragraph.f3}
-							{#if paragraph.f4}
-								<i>{paragraph.f4}</i>
-							{/if}
-						</p>
-					{/each}
-				</div>
+	{#if hero !== null}
+		<section class={hero.type}>
+			{#if hero.id === 'home'}
 				<img src={hero.data.image.src} alt={hero.data.image.alt} />
-			</div>
-		{:else if ['FAQ', 'Search'].includes(hero.id)}
-			<img src={hero.data.image.src} alt={hero.data.image.alt} />
-			<h1>{hero.data.title}</h1>
-		{/if}
-	</section>
+			{:else if ['P', 'D', 'S', 'A'].includes(hero.id)}
+				<div class="container base" class:reverse={hero.reverse}>
+					<div>
+						{#if typeof hero.data.title === 'string'}
+							<h1>{hero.data.title}</h1>
+						{:else}
+							<h1>
+								{hero.data.title.f1}<span class={hero.id}>{hero.data.title.f2}</span>{hero.data
+									.title.f3}
+							</h1>
+						{/if}
+						{#each hero.data.paragraphs as paragraph}
+							<p>
+								{paragraph.f1}<span>{paragraph.f2}</span>{paragraph.f3}
+								{#if paragraph.f4}
+									<i>{paragraph.f4}</i>
+								{/if}
+							</p>
+						{/each}
+					</div>
+					<img src={hero.data.image.src} alt={hero.data.image.alt} />
+				</div>
+			{:else if ['FAQ', 'Search'].includes(hero.id)}
+				<img src={hero.data.image.src} alt={hero.data.image.alt} />
+				<h1>{hero.data.title}</h1>
+			{/if}
+		</section>
+	{/if}
 </main>
 
 <style>

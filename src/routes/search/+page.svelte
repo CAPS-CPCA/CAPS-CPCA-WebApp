@@ -1,69 +1,68 @@
 <script lang="ts">
-  import Reader from '../../components/content/Reader.svelte';
-  import type { ModuleType } from '$lib/modules';
-  import { data } from '$lib/data';
-  import { createSearch, searchHandler } from '$lib/search'
-  import { onDestroy } from 'svelte'
-  import Hero from '../../components/Hero.svelte';
+	import Reader from '../[...slug]/Reader.svelte';
+	import type { ModuleType } from '$lib/types';
+	import { createSearch, searchHandler } from '$lib/search';
+	import { onDestroy } from 'svelte';
+	import Hero from '../../components/Hero.svelte';
 
-  const searchModules: ModuleType[] = $data.modules.map((module: ModuleType) => ({
-      ...module,
-      searchTerms: `${module.title} ${module.content.data}`
-    }));
+	export let data;
 
-  const searchStore = createSearch(searchModules);
-  const unsubscribe = searchStore.subscribe((model) => searchHandler(model));
+	const searchModules: ModuleType[] = $data.modules
+		? $data.modules.map((module: ModuleType) => ({
+				...module,
+				searchTerms: `${module.title} ${module.content.data}`
+			}))
+		: [];
 
-  onDestroy(() => {
-    unsubscribe();
-  });
+	const searchStore = createSearch(searchModules);
+	const unsubscribe = searchStore.subscribe((model) => searchHandler(model));
+
+	onDestroy(() => {
+		unsubscribe();
+	});
 </script>
 
-<Hero type="icon" id="Search"/>
+<Hero type="icon" id="Search" data={$data.hero} />
 <form class="form">
-  <input type="search" placeholder={$data.search.placeholder} bind:value={$searchStore.search}>
-  <!-- <button class="primary" type="submit">{$data.search.button}</button> -->
+	<input type="search" placeholder={$data.search?.placeholder} bind:value={$searchStore.search} />
 </form>
-<br><br>
+<br /><br />
 <section class="reader">
-  <div class="container">
-    <Reader modules={$searchStore.filtered} outline={false}/>
-  </div>
+	<div class="container">
+		<Reader modules={$searchStore.filtered} outline={false} data={$data.outline} />
+	</div>
 </section>
 
-
 <style>
-.form {
-  display: flex;
-  height: 4rem;
-  justify-content: center;
-  align-items: center;
-}
-input {
-  padding: 0.95rem;
-  width: 20rem;
-  background-color: #F6F7F8;
-  border: 2px solid #01162740;
-  transition: all 0.1s ease-in-out;
-}
-input::placeholder {
-  font-family: 'Open Sans', sans-serif;
-  font-style: italic;
-}
-input:hover {
-  background-color: #8FD5FF;
-}
-input:focus {
-  outline: none;
-  background-color: #F6F7F8;
-  border: 2px solid var(--Highlight);
-}
-input:first-of-type {
-  border-radius: 1rem;
-}
-/* button:last-of-type {
+	.form {
+		display: flex;
+		height: 4rem;
+		justify-content: center;
+		align-items: center;
+	}
+	input {
+		padding: 0.95rem;
+		width: 20rem;
+		background-color: #f6f7f8;
+		border: 2px solid #01162740;
+		transition: all 0.1s ease-in-out;
+	}
+	input::placeholder {
+		font-family: 'Open Sans', sans-serif;
+		font-style: italic;
+	}
+	input:hover {
+		background-color: #8fd5ff;
+	}
+	input:focus {
+		outline: none;
+		background-color: #f6f7f8;
+		border: 2px solid var(--Highlight);
+	}
+	input:first-of-type {
+		border-radius: 1rem;
+	}
+	/* button:last-of-type {
   border-radius: 0 1rem 1rem 0;
 } */
 </style>
-
-

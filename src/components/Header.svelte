@@ -1,59 +1,58 @@
 <script lang="ts">
-	import { data, userLang } from '$lib/data';
 	import { browser } from '$app/environment';
 	import { page } from '$app/stores';
 
 	let isSticky = false;
 	$: if (browser) {
-		data.setLang($userLang);
 		isSticky = window.scrollY > 0;
 		window.addEventListener('scroll', () => {
 			isSticky = window.scrollY > 0;
 		});
 	}
-
+	export let data;
 	$: currentUrl = $page.url.pathname;
-	$: header = $data.header;
 </script>
 
 <header>
-	<div class="partner-sites" style={isSticky ? 'display: none;' : ''}>
-		<ul>
-			{#each header.partners as { href, title }}
-				<li><a {href}>{title}</a></li>
-			{/each}
-		</ul>
-	</div>
-	<nav>
-		<ul>
-			<div class="logo">
-				{#if isSticky}
-					<a href={header.logos[1].href}><img src={header.logos[1].src} alt="CAPS-CPCA Logo" /></a>
-				{:else}
-					<a href={header.logos[0].href} target="_blank"
-						><img src={header.logos[0].src} alt="SOGC Logo" /></a
-					>
-				{/if}
-			</div>
-			{#each header.nav as { type, title, content, href }}
-				{#if type === 'normal'}
-					<li><a {href} class:selected={href === currentUrl}>{title}</a></li>
-				{:else if type === 'content'}
-					{#each content as { title, href }}
-						<li>
-							<a data-sveltekit-noscroll {href} class:selected={currentUrl.includes(href)}
-								>{title}</a
-							>
-						</li>
-					{/each}
-				{:else if type === 'exit'}
-					<li><a {href} target="_self"><span id="exit">{title}</span></a></li>
-				{:else if type === 'switch'}
-					<li><button on:click={data.togLang}>{title}</button></li>
-				{/if}
-			{/each}
-		</ul>
-	</nav>
+	{#if data}
+		<div class="partner-sites" style={isSticky ? 'display: none;' : ''}>
+			<ul>
+				{#each data.partners as { href, title }}
+					<li><a {href}>{title}</a></li>
+				{/each}
+			</ul>
+		</div>
+		<nav>
+			<ul>
+				<div class="logo">
+					{#if isSticky}
+						<a href={data.logos[1].href}><img src={data.logos[1].src} alt="CAPS-CPCA Logo" /></a>
+					{:else}
+						<a href={data.logos[0].href} target="_blank"
+							><img src={data.logos[0].src} alt="SOGC Logo" /></a
+						>
+					{/if}
+				</div>
+				{#each data.nav as { type, title, content, href }}
+					{#if type === 'normal'}
+						<li><a {href} class:selected={href === currentUrl}>{title}</a></li>
+					{:else if type === 'content'}
+						{#each content as { title, href }}
+							<li>
+								<a data-sveltekit-noscroll {href} class:selected={currentUrl.includes(href)}
+									>{title}</a
+								>
+							</li>
+						{/each}
+					{:else if type === 'exit'}
+						<li><a {href} target="_self"><span id="exit">{title}</span></a></li>
+					{:else if type === 'switch'}
+						<li><button on:click={$page.data.toggleLang}>{title}</button></li>
+					{/if}
+				{/each}
+			</ul>
+		</nav>
+	{/if}
 </header>
 
 <style>

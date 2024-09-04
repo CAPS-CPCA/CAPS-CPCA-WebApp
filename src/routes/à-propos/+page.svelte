@@ -2,9 +2,11 @@
 	import { Bibliography } from '$lib/store';
 	import { assets } from '$lib/assets';
 	import Hero from '../../components/Hero.svelte';
+
+	export let data;
 </script>
 
-<Hero type="content" id="A" />
+<Hero type="content" id="A" data={$data.hero} />
 
 <section class="secreader">
 	<div class="container">
