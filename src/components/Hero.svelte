@@ -43,6 +43,7 @@
 </main>
 
 <style>
+	/* Common Styles */
 	.P {
 		color: var(--Prescribing);
 		font-weight: 700;
@@ -107,5 +108,15 @@
 	/* variant: content reverse */
 	.reverse {
 		flex-direction: row-reverse;
+	}
+
+	/* Mobile styles */
+	@media (max-width: 768px) {
+		.banner {
+			padding: 1rem;
+		}
+		.banner img {
+			border-radius: 2rem 2rem 0 0;
+		}
 	}
 </style>

@@ -391,7 +391,7 @@ const cards: { [key: string]: Types.Cards } = {
 			link: ['/dispenser', 'Voir']
 		},
 		{
-			title: 'Rôles de soutien',
+			title: 'Soutien',
 			desc: 'Cliquez ici si vous êtes travailleurs communautaires, travailleurs sociaux ou conseillers, des personnes à recourir à l’avortement par médicaments.',
 			link: ['/rôles-de-soutien', 'Voir']
 		}

@@ -224,3 +224,10 @@ div.container {
 div.container > * {
 	flex: 1;
 }
+
+/* Media Queries */
+@media (max-width: 768px) {
+	body {
+		padding-top: 75px;
+	}
+}

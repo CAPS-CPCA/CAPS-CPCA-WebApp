@@ -1,63 +1,177 @@
 <script lang="ts">
+	import { isMobile } from '$lib/responsive';
 	import { browser } from '$app/environment';
 	import { page } from '$app/stores';
+	import { onMount } from 'svelte';
 
-	let isSticky = false;
-	$: if (browser) {
-		isSticky = window.scrollY > 0;
-		window.addEventListener('scroll', () => {
-			isSticky = window.scrollY > 0;
-		});
-	}
 	export let data;
+	let mobileView: boolean;
+	let isSticky = false;
+	let toggleMenu = false;
+
+	const unsubscribe = isMobile.subscribe((value) => {
+		mobileView = value;
+	});
+
+	onMount(() => {
+		return () => {
+			unsubscribe();
+		};
+	});
+
+	const updateView = () => {
+		if (browser) {
+			isSticky = window.scrollY > 0;
+		}
+	};
+
+	$: {
+		if (browser) {
+			updateView();
+			const debouncedUpdateView = debounce(updateView, 100);
+			window.addEventListener('scroll', debouncedUpdateView);
+		}
+	}
+
 	$: currentUrl = $page.url.pathname;
+
+	function debounce(func: Function, wait: number) {
+		let timeout: number;
+		return function (...args: any[]) {
+			const later = () => {
+				clearTimeout(timeout);
+				func(...args);
+			};
+			clearTimeout(timeout);
+			timeout = setTimeout(later, wait);
+		};
+	}
 </script>
 
-<header>
-	{#if data}
-		<div class="partner-sites" style={isSticky ? 'display: none;' : ''}>
-			<ul>
-				{#each data.partners as { href, title }}
-					<li><a {href}>{title}</a></li>
-				{/each}
-			</ul>
-		</div>
-		<nav>
-			<ul>
-				<div class="logo">
-					{#if isSticky}
-						<a href={data.logos[1].href}
-							><enhanced:img src={data.logos[1].src} alt="CAPS-CPCA Logo" /></a
-						>
-					{:else}
-						<a href={data.logos[0].href} target="_blank">
-							<enhanced:img src={data.logos[0].src} alt="SOGC Logo" />
-						</a>
-					{/if}
-				</div>
+{#if data}
+	<header>
+		{#if mobileView}
+			<nav>
+				<ul>
+					<a class="mobile-logo" href="/"><h2>CAPS-CPCA</h2></a>
+					{#each data.nav as { type, title, href }}
+						{#if type === 'switch'}
+							<li><button on:click={$page.data.toggleLang}>{title}</button></li>
+						{:else if type === 'normal' && title === '🔍'}
+							<li><a {href}>{title}</a></li>
+						{/if}
+					{/each}
+					<li>
+						<button class="burger" on:click={() => (toggleMenu = !toggleMenu)}>
+							{toggleMenu ? '✖' : '☰'}
+						</button>
+					</li>
+				</ul>
+			</nav>
+			<div class="menu" class:active={toggleMenu}>
 				{#each data.nav as { type, title, content, href }}
-					{#if type === 'normal'}
-						<li><a {href} class:selected={href === currentUrl}>{title}</a></li>
+					{#if type === 'normal' && title !== '🔍'}
+						<a on:click={() => (toggleMenu = false)} {href} class:selected={href === currentUrl}
+							>{title}</a
+						>
 					{:else if type === 'content'}
 						{#each content as { title, href }}
-							<li>
-								<a data-sveltekit-noscroll {href} class:selected={currentUrl.includes(href)}
-									>{title}</a
-								>
-							</li>
+							<a
+								on:click={() => (toggleMenu = false)}
+								data-sveltekit-noscroll
+								{href}
+								class:selected={currentUrl.includes(href)}>{title}</a
+							>
 						{/each}
-					{:else if type === 'exit'}
-						<li><a {href} target="_self"><span id="exit">{title}</span></a></li>
-					{:else if type === 'switch'}
-						<li><button on:click={$page.data.toggleLang}>{title}</button></li>
 					{/if}
 				{/each}
-			</ul>
-		</nav>
-	{/if}
-</header>
+			</div>
+		{:else}
+			<div class="partner-sites" style={isSticky ? 'display: none;' : ''}>
+				<ul>
+					{#each data.partners as { href, title }}
+						<li><a {href}>{title}</a></li>
+					{/each}
+				</ul>
+			</div>
+			<nav>
+				<ul>
+					<div class="logo">
+						{#if isSticky}
+							<a href={data.logos[1].href}
+								><enhanced:img src={data.logos[1].src} alt="CAPS-CPCA Logo" /></a
+							>
+						{:else}
+							<a href={data.logos[0].href} target="_blank">
+								<enhanced:img src={data.logos[0].src} alt="SOGC Logo" />
+							</a>
+						{/if}
+					</div>
+					{#each data.nav as { type, title, content, href }}
+						{#if type === 'normal'}
+							<li><a {href} class:selected={href === currentUrl}>{title}</a></li>
+						{:else if type === 'content'}
+							{#each content as { title, href }}
+								<li>
+									<a data-sveltekit-noscroll {href} class:selected={currentUrl.includes(href)}
+										>{title}</a
+									>
+								</li>
+							{/each}
+						{:else if type === 'exit'}
+							<li><a {href} target="_self"><span id="exit">{title}</span></a></li>
+						{:else if type === 'switch'}
+							<li><button on:click={$page.data.toggleLang}>{title}</button></li>
+						{/if}
+					{/each}
+				</ul>
+			</nav>
+		{/if}
+	</header>
+{/if}
 
 <style>
+	/* Mobile specific styles */
+	@media (max-width: 768px) {
+		.mobile-logo {
+			position: absolute;
+			left: 3rem;
+		}
+		.burger {
+			border: none;
+			cursor: pointer;
+			transition: all 0.3s ease-in-out;
+		}
+		h2 {
+			font-family: 'Roboto', sans-serif;
+			font-size: 1.5rem;
+			font-weight: 500;
+			color: var(--Background);
+		}
+		.menu {
+			display: flex;
+			flex-direction: column;
+			position: fixed;
+			top: 4.1rem;
+			right: 0;
+			width: 70%;
+			height: 100vh;
+			background: var(--Primary);
+			transition: all 0.3s ease-in-out;
+			transform: translateX(100%);
+		}
+		.menu a {
+			padding: 1rem 3rem;
+			font-family: 'Roboto', sans-serif;
+			font-size: 1.5rem;
+		}
+		.menu a:first-of-type {
+			margin-top: 2rem;
+		}
+		.menu.active {
+			transform: translateX(0%);
+		}
+	}
 	/* Specific Sheet for Navigation bar */
 	.logo {
 		position: absolute;
@@ -127,7 +241,7 @@
 	}
 	ul {
 		margin: 0;
-		padding: 0;
+		padding: 0 3rem;
 		height: 100%;
 		width: 1200px;
 		position: relative;

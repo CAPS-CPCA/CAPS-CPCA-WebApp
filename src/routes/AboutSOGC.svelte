@@ -17,6 +17,7 @@
 </section>
 
 <style>
+	/* Common styles */
 	img {
 		margin-bottom: 5rem;
 	}
@@ -32,20 +33,46 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		padding: 5rem 20rem;
 	}
 	h2 {
 		font-family: 'Roboto', sans-serif;
 		font-weight: bold;
 		text-align: center;
-		font-size: 1.5rem;
 		margin-bottom: 2rem;
 	}
 	p {
 		line-height: 2rem;
 		font-family: 'Roboto', sans-serif;
-		font-size: 1.5rem;
 		text-align: center;
 		margin-bottom: 2rem;
+	}
+
+	/* Mobile specific styles */
+	@media (max-width: 768px) {
+		.container {
+			padding: 0 1rem;
+		}
+		.card {
+			padding: 2.5rem;
+		}
+		h2 {
+			font-size: 1.5rem;
+		}
+		p {
+			font-size: 1.25rem;
+		}
+	}
+
+	/* Desktop specific styles */
+	@media (min-width: 769px) {
+		.card {
+			padding: 5rem 20rem;
+		}
+		h2 {
+			font-size: 2rem;
+		}
+		p {
+			font-size: 1.5rem;
+		}
 	}
 </style>
