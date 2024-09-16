@@ -84,11 +84,11 @@
 		}
 		button {
 			flex: 1;
-			padding: 1.5rem;
+			padding: 1.5rem 0;
 			background: var(--Primary);
 			color: gray;
 			font-family: 'Roboto', sans-serif;
-			font-size: 1.5rem;
+			font-size: 1.25rem;
 			border: none;
 			cursor: pointer;
 			transition: all 0.3s ease-in-out;
