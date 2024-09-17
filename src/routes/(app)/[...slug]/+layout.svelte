@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import Hero from '../../components/Hero.svelte';
+	import Hero from '$lib/components/Hero.svelte';
 
 	export let data;
 

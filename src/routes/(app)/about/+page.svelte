@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Bibliography } from '$lib/store';
 	import { assets } from '$lib/assets';
-	import Hero from '../../components/Hero.svelte';
+	import Hero from '$lib/components/Hero.svelte';
 
 	export let data;
 </script>
@@ -161,6 +161,7 @@
 
 <style>
 	img {
+		height: auto;
 		width: 100%;
 		margin-top: 2rem;
 	}

@@ -44,6 +44,9 @@
 
 <style>
 	/* Common Styles */
+	main {
+		margin-top: 10rem;
+	}
 	.P {
 		color: var(--Prescribing);
 		font-weight: 700;

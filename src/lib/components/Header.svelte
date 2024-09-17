@@ -210,14 +210,14 @@
 		gap: 1rem;
 		background: white;
 	}
-	.partner-sites ul li:first-of-type {
+	.partner-sites ul li:nth-of-type(2) {
 		display: flex;
 		align-items: center;
 		padding: 0px 2rem;
 		height: 3rem;
 		background: var(--Primary);
 	}
-	.partner-sites ul li:first-of-type a {
+	.partner-sites ul li:nth-of-type(2) a {
 		color: var(--Background);
 	}
 	.partner-sites ul li a {
