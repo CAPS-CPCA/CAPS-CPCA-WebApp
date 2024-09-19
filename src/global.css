@@ -26,7 +26,6 @@ html {
 }
 body {
 	margin: 0;
-	/* padding-top: 132px; */
 	box-sizing: border-box;
 	background: var(--Background);
 }
@@ -223,11 +222,4 @@ div.container {
 }
 div.container > * {
 	flex: 1;
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-	body {
-		padding-top: 75px;
-	}
 }

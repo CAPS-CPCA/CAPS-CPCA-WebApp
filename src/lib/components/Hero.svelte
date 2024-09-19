@@ -121,5 +121,8 @@
 		.banner img {
 			border-radius: 2rem 2rem 0 0;
 		}
+		main {
+			margin-top: 4.5rem;
+		}
 	}
 </style>
