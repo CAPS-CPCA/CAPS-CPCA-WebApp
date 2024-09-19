@@ -90,7 +90,7 @@
 			<div class="partner-sites" style={isSticky ? 'display: none;' : ''}>
 				<ul>
 					{#each data.partners as { href, title }}
-						<li><a {href}>{title}</a></li>
+						<li><a {href} target="_blank">{title}</a></li>
 					{/each}
 				</ul>
 			</div>
