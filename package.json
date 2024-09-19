@@ -18,6 +18,7 @@
 		"@sveltejs/kit": "^2.5.25",
 		"@sveltejs/vite-plugin-svelte": "^3.1.2",
 		"@types/eslint": "^9.6.1",
+		"@types/gtag.js": "^0.0.20",
 		"eslint": "^9.9.1",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.43.0",

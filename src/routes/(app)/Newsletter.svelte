@@ -26,7 +26,7 @@
 		color: white;
 	}
 	.container {
-		background: url(../lib/assets/newsletter.png) no-repeat center center;
+		background: url(../../lib/assets/newsletter.png) no-repeat center center;
 	}
 	.card {
 		display: flex;
