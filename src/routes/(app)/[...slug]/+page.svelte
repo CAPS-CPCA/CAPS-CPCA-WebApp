@@ -4,8 +4,25 @@
 	import { page } from '$app/stores';
 	import { Bibliography } from '$lib/store';
 	import Reader from './Reader.svelte';
+	import { isMobile } from '$lib/responsive';
+	import { onMount } from 'svelte';
+
+	let mobileView: boolean;
+
+	const unsubscribe = isMobile.subscribe((value) => {
+		mobileView = value;
+	});
+
+	onMount(() => {
+		return () => {
+			unsubscribe();
+		};
+	});
 
 	export let data;
+	$: locator = $page.url.pathname.split('/').filter((item) => item !== '')[0];
+	$: subpage = $page.url.pathname.split('/').filter((item) => item !== '')[1];
+	$: sharelink = $page.url.pathname;
 
 	$: redirect($page.url.pathname);
 	$: modules = $data.modules;
@@ -46,6 +63,19 @@
 	$: refs = getRefs($page.url.pathname);
 </script>
 
+{#if mobileView}
+	<div class="pagelocator">
+		<p>{locator} > {subpage}</p>
+		<button
+			on:click={() => {
+				navigator.clipboard.writeText(sharelink);
+				alert('Link copied to clipboard');
+			}}
+		>
+			Share
+		</button>
+	</div>
+{/if}
 <section class="reader">
 	<div class="container">
 		{#if modules}
@@ -88,5 +118,29 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+	}
+	@media (max-width: 768px) {
+		.pagelocator {
+			display: flex;
+			padding: 1rem 2rem;
+			position: fixed;
+			top: 4rem;
+			width: 100%;
+			background: #236fb3;
+			gap: 2rem;
+			z-index: 100;
+		}
+		p {
+			color: white;
+			font-weight: 600;
+		}
+		button {
+			background: white;
+			color: #236fb3;
+			border: none;
+			padding: 0.5rem 1rem;
+			border-radius: 0.5rem;
+			cursor: pointer;
+		}
 	}
 </style>
