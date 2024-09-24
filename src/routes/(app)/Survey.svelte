@@ -12,7 +12,9 @@
 				{/each}
 				<button class="primary">{data.button}</button>
 			</div>
-			<enhanced:img src={data.image} alt="Survey" />
+			<a href={data.link} target="_blank" rel="noopener noreferrer"
+				><enhanced:img src={data.image} alt="Survey" /></a
+			>
 		</div>
 	{/if}
 </section>

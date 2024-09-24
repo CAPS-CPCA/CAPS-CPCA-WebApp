@@ -66,6 +66,7 @@ export type Survey = {
 	para: string[];
 	button: string;
 	image: string;
+	link: string;
 };
 
 export type Newsletter = {

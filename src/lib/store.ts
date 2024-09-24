@@ -407,7 +407,8 @@ const surveys: { [key: string]: Types.Survey } = {
 			'When you choose to enable cookies, you consent to share your device information and you will be asked to fill in this survey only once.'
 		],
 		button: 'Enable cookies',
-		image: assets.EnSurvey
+		image: assets.EnSurvey,
+		link: 'https://ubc.ca1.qualtrics.com/jfe/form/SV_8A0oCJ4ekZTF8rQ'
 	},
 	fr: {
 		title: 'Aidez-nous à mieux vous soutenir',
@@ -416,7 +417,8 @@ const surveys: { [key: string]: Types.Survey } = {
 			'Lorsque vous choisissez d’activer les cookies, vous consentez à partager les informations de votre appareil et vous serez invité à remplir ce sondage une seule fois.'
 		],
 		button: 'Accepter les cookies',
-		image: assets.FrSurvey
+		image: assets.FrSurvey,
+		link: 'https://ubc.ca1.qualtrics.com/jfe/form/SV_eQfivMOTtDLsaKG'
 	}
 };
 const newsletters: { [key: string]: Types.Newsletter } = {
