@@ -3,7 +3,7 @@
 	import type { ModuleType } from '$lib/types';
 	import { createSearch, searchHandler } from '$lib/search';
 	import { onDestroy } from 'svelte';
-	import Hero from '$lib/components/hero.svelte';
+	import Hero from '$lib/components/Hero.svelte';
 
 	export let data;
 

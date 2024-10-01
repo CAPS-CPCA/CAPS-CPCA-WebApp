@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Bibliography } from '$lib/store';
 	import { assets } from '$lib/assets';
-	import Hero from '$lib/components/hero.svelte';
+	import Hero from '$lib/components/Hero.svelte';
 
 	export let data;
 </script>
