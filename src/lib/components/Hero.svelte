@@ -43,7 +43,7 @@
 </main>
 
 <style>
-	/* Common Styles */
+	/* General Styles */
 	main {
 		margin-top: 10rem;
 	}
@@ -123,6 +123,18 @@
 		}
 		main {
 			margin-top: 4.5rem;
+		}
+
+		.container {
+			margin-top: 3rem;
+			gap: 0;
+			flex-direction: column-reverse;
+		}
+		.container div h1 {
+			padding-bottom: 1rem;
+		}
+		.base {
+			padding: 3rem;
 		}
 	}
 </style>

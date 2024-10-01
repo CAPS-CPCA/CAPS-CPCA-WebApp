@@ -29,6 +29,9 @@ body {
 	box-sizing: border-box;
 	background: var(--Background);
 }
+img {
+	max-width: 100%;
+}
 
 /* Typography */
 sup {

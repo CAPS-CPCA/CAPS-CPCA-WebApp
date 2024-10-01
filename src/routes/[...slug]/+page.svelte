@@ -83,6 +83,7 @@
 		{/if}
 	</div>
 </section>
+
 {#if refs.length > 0}
 	<section id="ref">
 		<div class="module references">
@@ -102,6 +103,7 @@
 {/if}
 
 <style>
+	/* General Styles */
 	.references {
 		border-radius: 1.15rem 1.15rem 0 0;
 		box-sizing: border-box;
@@ -119,7 +121,17 @@
 		justify-content: center;
 		align-items: center;
 	}
+	/* Mobile Styles */
 	@media (max-width: 768px) {
+		.references {
+			border: none;
+			padding: 2rem;
+			margin-bottom: 2rem;
+		}
+		.references a {
+			font-size: 1.15rem;
+		}
+
 		.pagelocator {
 			display: flex;
 			padding: 1rem 2rem;

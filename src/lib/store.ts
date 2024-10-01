@@ -9,7 +9,6 @@ const headers: { [key: string]: Types.Header } = {
 			{ src: assets.CAPS, href: '/' }
 		],
 		partners: [
-			{ title: 'CART-GRAC', href: '/CART-Access' },
 			{ title: 'MEDICATION ABORTION', href: '/' },
 			{ title: 'SOGC.ORG', href: 'https://sogc.org/' }
 		],
@@ -40,7 +39,6 @@ const headers: { [key: string]: Types.Header } = {
 			{ src: assets.CAPS, href: '/' }
 		],
 		partners: [
-			{ title: 'CART-GRAC', href: '/CART-Access' },
 			{ title: 'AVORTEMENT PAR MÉDICAMENTS', href: '/' },
 			{ title: 'SOGC.ORG', href: 'https://sogc.org/fr/' }
 		],

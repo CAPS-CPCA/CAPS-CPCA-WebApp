@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { modulePath } from '$lib/modules';
 	import { page } from '$app/stores';
-	import Hero from '$lib/components/Hero.svelte';
+	import Hero from '$lib/components/hero.svelte';
 	import Reader from '../[...slug]/Reader.svelte';
 
 	export let data;

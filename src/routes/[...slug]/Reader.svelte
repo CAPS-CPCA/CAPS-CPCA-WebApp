@@ -1,9 +1,22 @@
 <script lang="ts">
 	import Outline from './Outline.svelte';
+	import { isMobile } from '$lib/responsive';
+	import { onMount } from 'svelte';
 	export let data;
 
+	let mobileView: boolean;
 	export let modules: any = [];
 	export let outline = true;
+
+	const unsubscribe = isMobile.subscribe((value) => {
+		mobileView = value;
+	});
+
+	onMount(() => {
+		return () => {
+			unsubscribe();
+		};
+	});
 
 	function handleP(data: string) {
 		return `<p>${data.replace(/\n/g, '<br>')}</p>`;
@@ -174,7 +187,7 @@
 
 <div class="reader">
 	{#if data}
-		{#if outline}
+		{#if outline && !mobileView}
 			<Outline {data} />
 		{/if}
 		<div class="pane">
@@ -194,6 +207,7 @@
 </div>
 
 <style>
+	/* Common styles */
 	.reader {
 		position: relative;
 		display: flex;
@@ -226,5 +240,25 @@
 		top: -10rem;
 		left: 0;
 		right: 0;
+	}
+
+	/* Module styles */
+	@media (max-width: 768px) {
+		.reader {
+			border-radius: 1rem;
+			flex-direction: column;
+			margin-bottom: 2rem;
+		}
+		.pane {
+			padding: 0 2rem 2rem 2rem;
+		}
+		.pane h1 {
+			margin-top: 2rem;
+			padding: 2rem;
+			font-size: 1.5rem;
+		}
+		.module {
+			padding: 2rem;
+		}
 	}
 </style>
