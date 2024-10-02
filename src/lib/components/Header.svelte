@@ -152,7 +152,7 @@
 			display: flex;
 			flex-direction: column;
 			position: fixed;
-			top: 4.1rem;
+			top: 4rem;
 			right: 0;
 			width: 70%;
 			height: 100vh;
@@ -163,7 +163,7 @@
 		.menu a {
 			padding: 1rem 3rem;
 			font-family: 'Roboto', sans-serif;
-			font-size: 1.5rem;
+			font-size: 1.25rem;
 		}
 		.menu a:first-of-type {
 			margin-top: 2rem;

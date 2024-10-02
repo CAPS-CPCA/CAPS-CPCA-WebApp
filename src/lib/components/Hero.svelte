@@ -119,7 +119,7 @@
 			padding: 1rem;
 		}
 		.banner img {
-			border-radius: 2rem 2rem 0 0;
+			border-radius: 1rem 1rem 0 0;
 		}
 		main {
 			margin-top: 4.5rem;
@@ -131,10 +131,18 @@
 			flex-direction: column-reverse;
 		}
 		.container div h1 {
+			font-size: 2.15rem;
 			padding-bottom: 1rem;
 		}
+		h1 {
+			font-size: 2rem;
+		}
 		.base {
-			padding: 3rem;
+			padding: 2rem;
+		}
+		.base p {
+			font-size: 1.2rem;
+			line-height: 2rem;
 		}
 	}
 </style>

@@ -252,9 +252,12 @@
 			border-radius: 1rem;
 			flex-direction: column;
 			margin-bottom: 2rem;
+			border: none;
+			border-radius: none;
+			background: none;
 		}
 		.pane {
-			padding: 0 2rem 2rem 2rem;
+			padding: 0;
 		}
 		.pane h1 {
 			margin-top: 2rem;
@@ -263,6 +266,7 @@
 		}
 		.module {
 			padding: 2rem;
+			border: none;
 		}
 	}
 </style>

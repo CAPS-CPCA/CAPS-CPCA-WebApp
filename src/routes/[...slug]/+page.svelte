@@ -126,9 +126,8 @@
 	/* Mobile Styles */
 	@media (max-width: 768px) {
 		.references {
-			border: none;
+			border-radius: 0;
 			padding: 2rem;
-			margin-bottom: 2rem;
 		}
 		.references a {
 			font-size: 1.15rem;
@@ -141,12 +140,17 @@
 		.pagelocator {
 			display: flex;
 			padding: 1rem 2rem;
+			box-sizing: border-box;
 			position: fixed;
 			top: 4rem;
 			width: 100%;
+			justify-content: space-between;
 			background: #236fb3;
-			gap: 2rem;
 			z-index: 100;
+		}
+		.pagelocator p {
+			align-self: center;
+			font-size: 1rem;
 		}
 		p {
 			color: white;

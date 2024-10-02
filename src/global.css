@@ -30,6 +30,7 @@ body {
 	background: var(--Background);
 }
 img {
+	max-height: 100%;
 	max-width: 100%;
 }
 
@@ -146,6 +147,31 @@ th {
 .right img {
 	max-width: 100%;
 }
+/* Mobile typography */
+@media (max-width: 768px) {
+	.module p {
+		font-size: 1.2rem;
+	}
+	.module a {
+		font-size: 1.2rem;
+	}
+	.module li {
+		font-size: 1.2rem;
+		padding-left: 0.5rem;
+	}
+	.module ul,
+	ol {
+		padding-left: 1.5rem;
+	}
+	.right {
+		padding-left: 0;
+	}
+	td,
+	th {
+		font-size: 1.2rem;
+	}
+}
+
 /* UI */
 .img {
 	padding: 2rem 0;
