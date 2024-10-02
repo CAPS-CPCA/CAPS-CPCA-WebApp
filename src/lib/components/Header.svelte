@@ -14,38 +14,29 @@
 	});
 
 	onMount(() => {
+		if (window.location.hash) {
+			setTimeout(() => {
+				const element = document.getElementById(window.location.hash.slice(1));
+				if (element) {
+					element.scrollIntoView();
+				}
+			}, 150);
+		}
 		return () => {
 			unsubscribe();
 		};
 	});
 
-	const updateView = () => {
-		if (browser) {
-			isSticky = window.scrollY > 0;
-		}
-	};
-
 	$: {
 		if (browser) {
-			updateView();
-			const debouncedUpdateView = debounce(updateView, 100);
-			window.addEventListener('scroll', debouncedUpdateView);
+			const updateView = () => {
+				isSticky = window.scrollY > 0;
+			};
+			window.addEventListener('scroll', updateView);
 		}
 	}
 
 	$: currentUrl = $page.url.pathname;
-
-	function debounce(func: Function, wait: number) {
-		let timeout: number;
-		return function (...args: any[]) {
-			const later = () => {
-				clearTimeout(timeout);
-				func(...args);
-			};
-			clearTimeout(timeout);
-			timeout = setTimeout(later, wait);
-		};
-	}
 </script>
 
 {#if data}
