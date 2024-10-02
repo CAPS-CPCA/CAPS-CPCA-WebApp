@@ -28,9 +28,7 @@ export function togglePath() {
 		'/dispensing': '/dispenser',
 		'/dispenser': '/dispensing',
 		'/supporting-roles': '/r%C3%B4les-de-soutien',
-		'/r%C3%B4les-de-soutien': '/supporting-roles',
-		'/about': '/%C3%A0-propos',
-		'/%C3%A0-propos': '/about'
+		'/r%C3%B4les-de-soutien': '/supporting-roles'
 	};
 
 	for (const key in pathMap) {

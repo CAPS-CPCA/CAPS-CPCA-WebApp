@@ -53,7 +53,7 @@ const headers: { [key: string]: Types.Header } = {
 				]
 			},
 			{ type: 'normal', title: 'FAQ', href: '/faq' },
-			{ type: 'normal', title: 'À propos de nous', href: '/%C3%A0-propos' },
+			{ type: 'normal', title: 'À propos de nous', href: '/about' },
 			{ type: 'normal', title: '🔍', href: '/search' },
 			{ type: 'switch', title: 'EN' },
 			{ type: 'exit', title: 'Sortie', href: 'https://www.meteomedia.com/ca' }

@@ -11,7 +11,7 @@ import CAPS from './logo-caps.png?enhanced';
 import Newsletter from './newsletter.png';
 import EnSurvey from './survey-en.png?enhanced';
 import FrSurvey from './survey-fr.png?enhanced';
-import Partners from './partner-logos.png?enhanced';
+import Partners from './partner-logos.png';
 import ArrowUp from './ico-arrow-up.png?enhanced';
 import Ectopic from './ico-ectopic-pregnancy.png';
 // modules

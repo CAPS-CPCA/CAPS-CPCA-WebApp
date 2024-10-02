@@ -148,6 +148,10 @@
 				regex: /Norma Scarborough Fund \| Action Canada: Visit actioncanadashr.org/g,
 				replacement:
 					'<a class="ex" href="https://actioncanadashr.org/" target="_blank">Norma Scarborough Fund | Action Canada: Visit actioncanadashr.org</a>'
+			},
+			{
+				regex: /bib: (.*?)\((.*?)\)/g,
+				replacement: '<a class="ref" href="$2" target="_blank">$1</a>'
 			}
 		];
 		let html = '';

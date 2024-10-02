@@ -1947,6 +1947,83 @@ Schedule a first virtual visit via telephone or video.`
 					Link: ally-toolkit()`
 				]
 			}
+		},
+		{
+			id: 'M46',
+			title: 'About Us',
+			content: {
+				type: ['p', 'ol', 'p', 'i-full'],
+				data: [
+					`Commuanuté de pratique Canadienne sur l'avortement (CAPS-CPCA) is a virtual community of practice for clinicians and non-clinicians who are interested in providing and supporting medication abortion. CAPS-CPCA was initiated by the Contraception and Abortion Research Team (CART) at the University of British Columbia. In 2017, the first version of the CAPS-CPCA website was released in a subscription-based format to facilitate communications on best practices among medication abortion providers. In 2023, in response to changes in the regulatory landscape and clinical guidelines of medication abortion, CART-GRAC and the Society of Obstetricians and Gynaecologists of Canada worked together to develop the second generation of CAPS-CPCA, which is publicly available and targets both healthcare providers and allied helping professionals such as community workers, social workers, doulas and counsellors. The second generation of CAPS-CPCA is the joint effort of many individuals and organizations, including:`,
+					`Website developer: Department of Computing Science, University of Alberta
+						Graphic designer: Pinwheel Communication Design (www.pinwheeldesign.ca)
+						Translator: Marianne Manuge
+						Content reviewer: Andrea Houle, Anna Sherlock, Ashleigh McCullagh-Cheung, Coral Maloney, David Ram, Inna Genkin, Lyndsay Palsson, Mélina Castonguay, Nnamdi Ezugwu, Rahima Alani, Sarah Anderson, Vallée Carol-Anne`,
+					'We are also grateful for the financial support by Health Canada. The views expressed herein do not necessarily represent the views of Health Canada. Lastly, we would like to acknowledge the input and support from our partnering physicians, nurse practitioners, midwives and pharmacists, and from our collaborating organizations:',
+					assets.Partners
+				]
+			}
+		},
+		{
+			id: 'M45',
+			title: 'Content Development Process',
+			content: {
+				type: ['p', 'h2', 'ol', 'h2', 'ol', 'h2', 'ol'],
+				data: [
+					`Canadian Abortion Provider Support – Communauté de pratique Canadienne sur l’avortement (CAPS-CPCA) is a web-based resource for clinicians and non-clinicians who are interested in providing and supporting medication abortion. CAPS-CPCA was initiated by the Contraception and Abortion Research Team-Groupe de recherche sur l’avortement et la contraception (CART-GRAC) and funded by Health Canada.
+					
+					The content in this website was co-developed by the CAPS-CPCA development team and providers of medication abortion across Canada. Through this co-development process, we attempted to capture the most common guidelines and practices and, whenever possible, explain the variation in these practices. Nevertheless, we acknowledge that the information we present here may differ from your knowledge and experiences.
+					
+					Please write to us at <a href="mailto:ubcfmpr-gcaps@mail.ubc.ca" class="ex">ubcfmpr-gcaps@mail.ubc.ca</a> if you have any feedback.
+					
+					<b>The content presented in this website was updated as of November 2023</b> and developed through the three phases described below:`,
+					'Phase 1: Resource curation',
+					`More than <b>200 written documents</b> on medication abortion such as protocols, checklists, guidelines, toolkits, manuals, instructions and factsheets were identified and retrieved by the content team through collaboration with various healthcare and advocacy organizations in Canada such as the Society of Obstetricians and Gynecologists of Canada (SOGC), National Federation of Abortion Canada, Canadian Pharmacists Association an Action Canada for Sexual Health & Rights.
+						The title and content of these documents were then screened to narrow down the relevant resources into a list of over <b>60 documents</b>. These documents were included if they (1) discuss any aspects of medication abortion services and care, (2) are intended for healthcare providers such as physicians, nurse practitioners, pharmacists, and midwives, social workers and birth attendants, and (3) are applicable to Canadian context.
+						Of 60 documents, 30 documents were deemed important and then reviewed and updated by <b>10 medication abortion providers (family and OB/GYN physicians, nurse practitioners, midwives and pharmacists)</b> to ensure that the most recent guidelines and practices are captured.`,
+					'Phase 2: Content writing',
+					`The scope and skeletal framework of the online content were brainstormed and developed in consultation with the collaborating partners and medication abortion providers.
+						The online content was first drafted by the content team through summarizing and synthesizing the information from the 60 documents.
+						The first draft was reviewed by the 10 medication abortion providers, who provided feedback and suggestions to improve the accuracy, consistency and clarity of the content. The feedback and suggestions were then compiled, reviewed and incorporated by the content team. Discrepancies in the suggestions and comments were discussed and clarified. These suggestions and feedback were then incorporated to revise the first draft into the second draft.
+						The second draft was reviewed by another 2 MA providers and their feedback and suggestions were reviewed and incorporated to create the third draft.
+						The third draft was reviewed and revised by the SOGC, and then finalized for phase 3.`,
+					'Phase 3: Content migration and testing',
+					`The online content developed in the Phase 2 was migrated to the CAPS-CPCA webpages.
+						These webpages were then shared with additional 30 medication abortion providers with diverse background to test for inclusive and destigmatizing languages and for webpages’ functionality, navigation, look-and-feel, and content.
+						Suggestions from users were incorporated to revise both the content and visual elements of the webpages.`
+				]
+			}
+		},
+		{
+			id: 'M47',
+			title: 'Bibliography',
+			content: {
+				type: ['p', 'ol'],
+				data: [
+					`The content in this website was developed based on the information provided in the following references. Please note that the content in this website was updated as of November 2023 and this reference list may not capture the most recent guidelines, checklists and tools published after this date.`,
+					`bib: Abortion care guideline. Geneva: World Health Organization; 2022(/resources/WHO1.pdf).
+					bib: Bancsi A & Grindrod K. Update on medical abortion. Canadian Family Physician; 2020; 66(/resources/VCOP2.pdf).
+					bib: Canada Abortion Providers Support, Planned Parenthood, & the University of British Columbia. Medical abortion prescriber checklist resource guide(/resources/C63.pdf).
+					bib: Canadian Abortion Providers Support, Planned Parenthood, & the University of British Columbia. Medical abortion prescriber checklist(/resources/C64.pdf).
+					bib: Costescu D, Guilbert E et al. Induced abortion: updated guidance during pandemics and periods of social disruption(/resources/C31.pdf).
+					bib: Costescu D, Guilbert E et al. Medical abortion. Journal of Obstetrics and Gynaecology Canada, 2016; Volume 38, Issue 4, 366 – 389(/resources/C14.pdf).
+					bib: Guilbert E, Costescu D, et al. Canadian protocol for the provision of medical abortion via telemedicine; SOGC 2020(/resources/C29.pdf).
+					bib: Horvath S, Goyal V, Traxler S, Prager S. Society of Family Planning committee Consensus on Rh testing in early pregnancy. Contraception. 2022 Oct;114:1-5(/resoureces/SFP1.pdf).
+					bib: Judith Soon & Nevena Rebic. Pharmacist checklist for medical abortion. 2018. CART-GRAC 2020(/resources/C68.pdf).
+					bib: Judith Soon & Nevena Rebic. Pharmacist resource guide for medical abortion. 2018. CART-GRAC 2020(/resources/C67.pdf).
+					bib: Linepharma International Limited. Health Canada MIFISO Product Monograph. Submission Control No: 265940. December 15, 2022(/resources/C17-2.pdf).
+					bib: National Abortion Federation. Checklist for starting medical abortion services(/resources/C43.pdf).
+					bib: National Abortion Federation. NAF Protocol for early abortion with mife and miso, 2016(/resources/C6.pdf).
+					bib: Planned Parenthood Ottawa & the SHORE centre. What to expect during a medication abortion; 2017(/resources/C74.pdf).
+					bib: Reproductive Health Access Project. Early abortion options; 2022(/resources/C58-1.pdf).
+					bib: Reproductive Health Access Project. Integrating early abortion services into primary care; 2019(/resources/C58-7.pdf).
+					bib: Royal College of Obstetricians and Gynaecologists. Best practice in abortion care; 2022(/resources/RCOG1.pdf).
+					bib: Wellness Within. Accessing Abortion in Canada(/resources/C104.2.pdf).
+					bib: Women’s College Hospital. Client information about evidence-based telemedicine medication abortion. Adapted from Choice in Health clinic; 2020(/resources/WCH1.pdf).
+					bib: World Health Organization. Abortion care guideline; 2022(/resources/WHO.pdf).
+					bib: Society of Obstetricians and Gynaecologists of Canada. Guideline No. 448: Prevention of Rh D Alloimmunization; 2024(/resources/AJOG1.pdf).`
+				]
+			}
 		}
 	],
 	fr: [
@@ -3895,6 +3972,83 @@ En résumé, il semble que Mifé-Miso pourrait ralentir le métabolisme de la m�
 					Link: ally-toolkit()`
 				]
 			}
+		},
+		{
+			id: 'M46',
+			title: 'À propos de nous',
+			content: {
+				type: ['p', 'ol', 'p', 'i-full'],
+				data: [
+					`Canadian Abortion Providers Support – Communauté de pratique Canadienne sur l’avortement (CAPS-CPCA) est une communauté de pratique virtuelle pour les cliniciens et non-cliniciens qui souhaitent fournir et soutenir l’avortement par médicaments. CAPS-CPCA a été lancé par l’équipe de recherche sur la contraception et l’avortement-Groupe de recherche sur l’avortement et la contraception (CART-GRAC) de l’Université de la Colombie-Britannique. En 2017, la première version du site web CAPS-CPCA a été publiée sous forme d’abonnement pour faciliter la communication sur les meilleures pratiques entre les prestataires d’avortement par médicaments. En 2023, en réponse aux changements dans le paysage réglementaire et aux lignes directrices cliniques sur l’avortement par médicaments, le CART-GRAC et La SOGC ont travaillé ensemble pour développer la deuxième génération du CAPS-CPCA, qui est accessible au public et cible à la fois les soins de santé prestataires et professionnels alliés tels que les travailleurs communautaires, les travailleurs sociaux, les doulas et les conseillers. Nous sommes reconnaissants pour les contributions et le soutien de nos médecins, infirmières praticiennes, sages-femmes et pharmaciens partenaires, ainsi que de nos organisations collaboratrices:`,
+					`Website developer: Department of Computing Science, University of Alberta
+					Graphic designer: Pinwheel Communication Design (www.pinwheeldesign.ca)
+					Translator: Marianne Manuge
+					Content reviewer: Andrea Houle, Anna Sherlock, Ashleigh McCullagh-Cheung, Coral Maloney, David Ram, Inna Genkin, Lyndsay Palsson, Mélina Castonguay, Nnamdi Ezugwu, Rahima Alani, Sarah Anderson, Vallée Carol-Anne`,
+					'Nous tenons également à remercier le Département des sciences informatiques de l’Université de l’Alberta pour le développement du site web CAPS-CPCA, Pinwheel Communication Design (www.pinwheeldesign.ca) pour la conception des infographies et des illustrations du site web, et Marianne Manuge pour la traduction du contenu en français. Nous sommes également reconnaissants du soutien financier de Santé Canada. Les opinions exprimées ici ne représentent pas nécessairement celles de Santé Canada:',
+					assets.Partners
+				]
+			}
+		},
+		{
+			id: 'M45',
+			title: 'Processus de développement de contenu',
+			content: {
+				type: ['p', 'h2', 'ol', 'h2', 'ol', 'h2', 'ol'],
+				data: [
+					`Le contenu de ce site Web a été co-développé par l’équipe de développement du CAPS-CPCA et des fournisseurs d’avortement par médicaments à travers le Canada.
+
+					Grâce à ce processus de co-développement, nous avons tenté de capturer les lignes directrices et les pratiques les plus courantes et, dans la mesure du possible, d’expliquer les variations de ces pratiques. Cependant, nous reconnaissons que les informations que nous présentons ici peuvent différer de vos connaissances et de votre expérience.
+
+					Veuillez nous écrire à <a href="mailto:ubcfmpr-gcaps@mail.ubc.ca" class="ex">ubcfmpr-gcaps@mail.ubc.ca</a> si vous avez des commentaires.
+
+					<b>Le contenu présenté sur ce site web a été mis à jour en novembre 2023</b> et développé à travers les trois phases décrites ci-dessous:`,
+					'Phase 1: Conservation des ressources',
+					`Plus de <b>200 documents écrits</b> sur l’avortement tels que des protocoles, des listes de contrôle, des lignes directrices, des boîtes à outils, des manuels, des instructions et des fiches d’information, ont été identifiés et récupérés par l’équipe chargée du contenu, grâce à la collaboration avec diverses organisations de soins de santé et de défense des droits au Canada, telles que La SOGC, la Fédération Nationale de l’Avortement (NAF), l’Association des pharmaciens du Canada et Action Canada pour la santé et les droits sexuels.
+					Le titre et le contenu de ces documents ont ensuite été examinés afin de limiter les ressources pertinentes à une liste de plus de <b>60 documents</b>. Ces documents ont été inclus s’ils (1) abordent les aspects des services et soins d’avortement par médicaments, (2) sont destinés aux professionnels de la santé tels que les médecins, les infirmières praticiennes spécialisées, les pharmaciens, les sages-femmes, les travailleurs sociaux et les aides à l’accouchement, et (3) sont applicables au contexte canadien.
+					Sur les 60 documents, 30 ont été jugés importants, puis examinés et mis à jour par <b>10 fournisseurs d’avortement par médicaments (médecins de famille et obstétriciens / gynécologues, infirmières praticiennes spécialisées, sages-femmes et pharmaciens)</b> afin de s’assurer que les lignes directrices et les pratiques les plus récentes sont respectées.`,
+					'Phase 2: Rédaction de contenu',
+					`La portée et le cadre du contenu en ligne ont été examinés et développés en consultation avec des partenaires collaborateurs et des fournisseurs d’avortement par médicaments.
+					Le contenu en ligne a été initialement rédigé par l’équipe de contenu en résumant et en synthétisant les informations provenant des 60 documents.
+					La première ébauche a été examinée par les 10 fournisseurs d’avortement par médicaments, qui ont fourni des commentaires et des suggestions pour améliorer l’exactitude, la cohérence et la clarté du contenu. Les commentaires et suggestions ont ensuite été compilés, examinés et intégrés par l’équipe chargée du contenu. Les divergences dans les suggestions et commentaires ont été discutées et clarifiées. Ces suggestions et commentaires ont ensuite été integrés dans une deuxième ébauche.
+					La deuxième ébauche a été examinée par 2 autres fournisseurs d’AM et leurs commentaires et suggestions ont été examinés et integrés dans une troisième ébauche.
+					La troisième ébauche a été examinée et révisée par La SOGC, puis finalisée pour la phase 3.`,
+					'Phase 3: Migration et tests de contenu',
+					`Le contenu en ligne développé lors de la phase 2 a été migré vers les pages Web du CAPS-CPCA.
+					Ces pages Web ont ensuite été partagées avec 30 autres fournisseurs d’avortement par médicaments d’expérience variable pour tester le caractère inclusif et déstigmatisé le langage ainsi que la fonctionnalité, la navigation, l’apparence et le contenu des pages web.
+					Les suggestions des utilisateurs ont été intégrées pour réviser à la fois le contenu et les éléments visuels des pages web.`
+				]
+			}
+		},
+		{
+			id: 'M47',
+			title: 'Bibliographie',
+			content: {
+				type: ['p', 'ol'],
+				data: [
+					`Le contenu de ce site web a été développé sur la base des informations fournies dans les références suivantes. Il est à noter que le contenu de ce site web a été mis à jour en novembre 2023 et que cette liste de référence peut ne pas refléter les lignes directrices, listes de contrôle et outils les plus récents publiés après cette date.`,
+					`bib: Abortion care guideline. Geneva: World Health Organization; 2022(/resources/WHO1.pdf).
+					bib: Bancsi A & Grindrod K. Update on medical abortion. Canadian Family Physician; 2020; 66(/resources/VCOP2.pdf).
+					bib: Canada Abortion Providers Support, Planned Parenthood, & the University of British Columbia. Medical abortion prescriber checklist resource guide(/resources/C63.pdf).
+					bib: Canadian Abortion Providers Support, Planned Parenthood, & the University of British Columbia. Medical abortion prescriber checklist(/resources/C64.pdf).
+					bib: Costescu D, Guilbert E et al. Induced abortion: updated guidance during pandemics and periods of social disruption(/resources/C31.pdf).
+					bib: Costescu D, Guilbert E et al. Medical abortion. Journal of Obstetrics and Gynaecology Canada, 2016; Volume 38, Issue 4, 366 – 389(/resources/C14.pdf).
+					bib: Guilbert E, Costescu D, et al. Canadian protocol for the provision of medical abortion via telemedicine; SOGC 2020(/resources/C29.pdf).
+					bib: Horvath S, Goyal V, Traxler S, Prager S. Society of Family Planning committee Consensus on Rh testing in early pregnancy. Contraception. 2022 Oct;114:1-5(/resoureces/SFP1.pdf).
+					bib: Judith Soon & Nevena Rebic. Pharmacist checklist for medical abortion. 2018. CART-GRAC 2020(/resources/C68.pdf).
+					bib: Judith Soon & Nevena Rebic. Pharmacist resource guide for medical abortion. 2018. CART-GRAC 2020(/resources/C67.pdf).
+					bib: Linepharma International Limited. Health Canada MIFISO Product Monograph. Submission Control No: 265940. December 15, 2022(/resources/C17-2.pdf).
+					bib: National Abortion Federation. Checklist for starting medical abortion services(/resources/C43.pdf).
+					bib: National Abortion Federation. NAF Protocol for early abortion with mife and miso, 2016(/resources/C6.pdf).
+					bib: Planned Parenthood Ottawa & the SHORE centre. What to expect during a medication abortion; 2017(/resources/C74.pdf).
+					bib: Reproductive Health Access Project. Early abortion options; 2022(/resources/C58-1.pdf).
+					bib: Reproductive Health Access Project. Integrating early abortion services into primary care; 2019(/resources/C58-7.pdf).
+					bib: Royal College of Obstetricians and Gynaecologists. Best practice in abortion care; 2022(/resources/RCOG1.pdf).
+					bib: Wellness Within. Accessing Abortion in Canada(/resources/C104.2.pdf).
+					bib: Women’s College Hospital. Client information about evidence-based telemedicine medication abortion. Adapted from Choice in Health clinic; 2020(/resources/WCH1.pdf).
+					bib: World Health Organization. Abortion care guideline; 2022(/resources/WHO.pdf).
+					bib: Society of Obstetricians and Gynaecologists of Canada. Guideline No. 448: Prevention of Rh D Alloimmunization; 2024(/resources/AJOG1.pdf).`
+				]
+			}
 		}
 	]
 };
@@ -3923,6 +4077,7 @@ export function modulePath(path: string, modules: Modules) {
     '/prescrire/reglements-assurance-inclusivite': ['M26', 'M27', 'M28', 'C1', 'M36', 'M37', 'M38'],
     '/prescribing/clinical-resources': ['S1','S2','S3','S4','S5','S6','S7'],
     '/prescrire/ressources-cliniques': ['S1','S2','S3','S4','S5','S6','S7'],
+
     '/dispensing/coverage-&-insurance': ['C1', 'M36', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10', 'C11', 'C12', 'C13', 'C14'],
     '/dispenser/couverture-et-assurance': ['C1', 'M36', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10', 'C11', 'C12', 'C13', 'C14'],
     '/dispensing/patient-communication': ['M32', 'M15', 'M33', 'M16', 'M19', 'M34', 'M20'],
@@ -3933,13 +4088,17 @@ export function modulePath(path: string, modules: Modules) {
     '/dispenser/reglements-inclusivite': ['M26', 'M35', 'M28', 'M37', 'M38'],
     '/dispensing/clinical-resources': ['S8','S9','S10','S11','S12','S13'],
     '/dispenser/ressources-cliniques': ['S8','S9','S10','S11','S12','S13'],
+
     '/supporting-roles/medication-abortion': ['M39', 'M3', 'M40', 'M41'],
     '/r%C3%B4les-de-soutien/avortement-par-medicaments': ['M39', 'M3', 'M40', 'M41'],
     '/supporting-roles/client-counselling': ['M42', 'M43', 'M15', 'M33', 'M16', 'M44'],
     '/r%C3%B4les-de-soutien/counseling-de-la-client': ['M42', 'M43', 'M15', 'M33', 'M16', 'M44'],
     '/supporting-roles/resources': ['S14','S15','S16','S17','S18','S19'],
     '/r%C3%B4les-de-soutien/ressources': ['S14','S15','S16','S17','S18','S19'],
+
     '/faq': ['F1', 'F2', 'F3', 'F4', 'F5', 'F6'],
+
+	'/about': ['M46', 'M45', 'M47'],
   };
 
   return getModules(modulePaths[path] || [''], modules)
