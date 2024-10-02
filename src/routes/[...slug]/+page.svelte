@@ -88,16 +88,18 @@
 	<section id="ref">
 		<div class="module references">
 			<h2>References</h2>
-			{#each refs as ref}
-				<li>
-					<a
-						href={Bibliography.filter((item) => item.index === ref)[0].href}
-						target="_blank"
-						class="ref"
-						><b>{ref}</b> — {Bibliography.filter((item) => item.index === ref)[0].title}</a
-					>
-				</li>
-			{/each}
+			<ul class="ref">
+				{#each refs as ref}
+					<li>
+						<a
+							href={Bibliography.filter((item) => item.index === ref)[0].href}
+							target="_blank"
+							class="ref"
+							><b>{ref}</b> — {Bibliography.filter((item) => item.index === ref)[0].title}</a
+						>
+					</li>
+				{/each}
+			</ul>
 		</div>
 	</section>
 {/if}
@@ -130,6 +132,10 @@
 		}
 		.references a {
 			font-size: 1.15rem;
+		}
+		.ref {
+			padding: 0;
+			margin: 0;
 		}
 
 		.pagelocator {
