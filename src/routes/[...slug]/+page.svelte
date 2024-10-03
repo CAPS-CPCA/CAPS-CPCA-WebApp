@@ -6,6 +6,7 @@
 	import Reader from './Reader.svelte';
 	import { isMobile } from '$lib/responsive';
 	import { onMount } from 'svelte';
+	import Jumper from './Jumper.svelte';
 
 	let mobileView: boolean;
 
@@ -75,6 +76,7 @@
 			Share
 		</button>
 	</div>
+	<Jumper data={$data.outline} />
 {/if}
 <section class="reader">
 	<div class="container">
