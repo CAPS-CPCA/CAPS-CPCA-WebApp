@@ -20,7 +20,7 @@ function createData() {
 		toggleLang() {
 			userLang.update((lang) => (lang === 'en' ? 'fr' : 'en'));
 			togglePath();
-			console.log('userLang', get(userLang));
+			// console.log('userLang', get(userLang));
 		}
 	};
 }

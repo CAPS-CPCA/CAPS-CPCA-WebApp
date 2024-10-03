@@ -23,9 +23,6 @@
 			}
 		}
 	});
-
-	$: console.log(outline);
-
 	$: selectedUrl = selectedHref.split('#')[0] + '#' + selectedHash;
 </script>
 
@@ -73,19 +70,22 @@
 	}
 	select {
 		width: 100%;
-		padding: 0.5rem;
+		padding: 0.75rem;
+		font-family: 'Roboto', sans-serif;
+		font-size: 1rem;
 		border: none;
-		border-radius: 0.25rem;
+		border-radius: 0.5rem;
 		background: white;
 	}
 	button {
 		align-self: center;
 		width: fit-content;
-		padding: 0.5rem 1rem;
+		padding: 0.75rem 1rem;
 		border: none;
-		border-radius: 0.25rem;
+		border-radius: 0.5rem;
 		background: var(--Highlight);
 		color: white;
+		font-size: 1rem;
 		font-weight: 600;
 		cursor: pointer;
 	}

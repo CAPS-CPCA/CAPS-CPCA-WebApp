@@ -144,5 +144,8 @@
 			font-size: 1.2rem;
 			line-height: 2rem;
 		}
+		.icon img {
+			max-height: auto;
+		}
 	}
 </style>
