@@ -22,7 +22,7 @@
 	export let data;
 	$: locator = $page.url.pathname.split('/').filter((item) => item !== '')[0];
 	$: subpage = $page.url.pathname.split('/').filter((item) => item !== '')[1];
-	$: sharelink = $page.url.pathname;
+	$: sharelink = $page.url.href;
 
 	$: redirect($page.url.pathname);
 	$: modules = $data.modules;
@@ -69,7 +69,7 @@
 		<button
 			on:click={() => {
 				navigator.clipboard.writeText(sharelink);
-				alert('Link copied to clipboard');
+				alert(sharelink + ' copied to clipboard');
 			}}
 		>
 			Share
