@@ -44,11 +44,6 @@
 <button class="copy" on:click={copyLink} aria-label="Copy link">🔗</button>
 
 <style>
-	@media (max-width: 768px) {
-		.copy {
-			right: 1rem;
-		}
-	}
 	.copy {
 		position: absolute;
 		top: -4rem;
@@ -58,5 +53,10 @@
 		padding: 0.5rem 1rem;
 		cursor: pointer;
 		z-index: 50;
+	}
+	@media (max-width: 768px) {
+		.copy {
+			right: 1rem;
+		}
 	}
 </style>

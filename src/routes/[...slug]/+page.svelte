@@ -67,14 +67,6 @@
 {#if mobileView}
 	<div class="pagelocator">
 		<p>{locator} > {subpage}</p>
-		<button
-			on:click={() => {
-				navigator.clipboard.writeText(sharelink);
-				alert(sharelink + ' copied to clipboard');
-			}}
-		>
-			Share
-		</button>
 	</div>
 	<Jumper data={$data.outline} />
 {/if}
@@ -141,7 +133,7 @@
 
 		.pagelocator {
 			display: flex;
-			padding: 1rem 2rem;
+			padding: 0.5rem 2rem;
 			box-sizing: border-box;
 			position: fixed;
 			top: 4rem;

@@ -270,7 +270,7 @@
 			border: none;
 		}
 		.idholder {
-			top: -14rem;
+			top: -12rem;
 		}
 	}
 </style>
