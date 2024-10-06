@@ -29,7 +29,8 @@
 <section>
 	{#if outline}
 		<div class="container base">
-			<h1>On this page</h1>
+			<h1>Jump to a section</h1>
+			<p>Please select both section and module</p>
 			<select bind:value={selectedHref}>
 				{#each Object.keys(outline) as section}
 					{#each outline[section] as item}
@@ -48,7 +49,13 @@
 					{/if}
 				{/each}
 			{/each}
-			<button on:click={() => goto(selectedUrl)}>Go</button>
+			<button
+				on:click={() => {
+					goto(selectedUrl, { replaceState: true, state: { from: current } });
+				}}
+			>
+				Go</button
+			>
 		</div>
 	{/if}
 </section>
@@ -67,6 +74,10 @@
 		color: white;
 		font-weight: 600;
 		font-size: 1.5rem;
+	}
+	p {
+		color: white;
+		font-size: 1rem;
 	}
 	select {
 		width: 100%;
