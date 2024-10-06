@@ -1,11 +1,10 @@
 <script lang="ts">
-	import { page } from '$app/stores';
+	import CopyBtn from './CopyBtn.svelte';
 	import Outline from './Outline.svelte';
 	import { isMobile } from '$lib/responsive';
 	import { onMount } from 'svelte';
 	export let data;
 
-	let current = $page.url.href;
 	let mobileView: boolean;
 	export let modules: any = [];
 	export let outline = true;
@@ -19,13 +18,6 @@
 			unsubscribe();
 		};
 	});
-
-	function copyLink(e: any) {
-		const id = e.target.nextElementSibling.id;
-		const link = `${current}#${id}`;
-		navigator.clipboard.writeText(link);
-		alert('Link copied to clipboard');
-	}
 
 	function handleP(data: string) {
 		return `<p>${data.replace(/\n/g, '<br>')}</p>`;
@@ -210,7 +202,7 @@
 				{#each modules as module}
 					<h1>{module.title}</h1>
 					<div class="module">
-						<button class="copy" on:click={copyLink}>🔗</button>
+						<CopyBtn />
 						<div class="idholder" id={module.id}></div>
 						{@html regex(module.content)}
 					</div>
@@ -222,18 +214,6 @@
 
 <style>
 	/* Common styles */
-	.copy {
-		position: absolute;
-		top: -4rem;
-		right: 2.5rem;
-		background: var(--Primary);
-		color: white;
-		border: none;
-		border-radius: 0.5rem;
-		padding: 0.5rem 1rem;
-		cursor: pointer;
-		z-index: 50;
-	}
 	.reader {
 		position: relative;
 		display: flex;
@@ -270,9 +250,6 @@
 
 	/* Module styles */
 	@media (max-width: 768px) {
-		.copy {
-			right: 1rem;
-		}
 		.reader {
 			flex-direction: column;
 			margin-bottom: 2rem;
