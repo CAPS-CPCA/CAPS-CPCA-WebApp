@@ -150,13 +150,5 @@
 			color: white;
 			font-weight: 600;
 		}
-		button {
-			background: white;
-			color: #236fb3;
-			border: none;
-			padding: 0.5rem 1rem;
-			border-radius: 0.5rem;
-			cursor: pointer;
-		}
 	}
 </style>
