@@ -1,20 +1,57 @@
 <script lang="ts">
 	export let data;
+	let email = '';
+	let successMessage = '';
+	let isSubmitting = false;
+
+	async function handleSubmit(event: Event) {
+		event.preventDefault();
+		if (isSubmitting) return;
+		isSubmitting = true;
+
+		if (!validateEmail(email)) {
+			alert('Please enter a valid email address.');
+			isSubmitting = false;
+			return;
+		}
+
+		try {
+			const response = await fetch('/api/subscribe', {
+				method: 'POST',
+				headers: { 'Content-Type': 'application/json' },
+				body: JSON.stringify({ email })
+			});
+
+			const result = await response.json();
+			successMessage = response.ok ? result.success : 'Failed to send email.';
+		} catch (error) {
+			console.error('Error:', error);
+			alert('An error occurred.');
+		} finally {
+			isSubmitting = false;
+		}
+	}
+
+	function validateEmail(email: string): boolean {
+		return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+	}
 </script>
 
 <section class="newsletter">
 	{#if data}
-		<div class="container m-container">
-			<div class="card m-card">
+		<div class="container">
+			<div class="card">
 				<h1>{data.title}</h1>
 				<p>{data.para}</p>
 			</div>
-			<div class="card m-card">
-				<form method="POST" class="form">
-					<input name="email" type="email" placeholder="john.doe@email.com" />
-					<button class="primary" type="submit">{data.button}</button>
+			<div class="card">
+				<form method="POST" class="form" on:submit={handleSubmit}>
+					<input name="email" type="email" placeholder="john.doe@email.com" bind:value={email} />
+					<button class="primary" type="submit" disabled={isSubmitting}>{data.button}</button>
 				</form>
-				<p class="success">{data?.success || ''}</p>
+				{#if successMessage}
+					<p class="success">{successMessage}</p>
+				{/if}
 			</div>
 		</div>
 	{/if}
@@ -27,17 +64,29 @@
 		color: white;
 	}
 	.container {
+		padding: 0 5rem;
 		background: url(../lib/assets/newsletter.png) no-repeat center center;
+		background-size: contain;
 	}
 	.card {
 		display: flex;
+		gap: 2.5rem;
+		padding: 5rem;
 		justify-content: center;
 		flex-direction: column;
 		transition: all 0.3s ease-in-out;
 	}
-	.card h1,
-	.card p {
+	.card h1 {
+		font-size: 2rem;
 		color: white;
+	}
+	.card p {
+		font-size: 1.5rem;
+		color: white;
+	}
+	.card p.success {
+		font-size: 1rem;
+		color: greenyellow;
 	}
 	.form {
 		display: flex;
@@ -74,12 +123,13 @@
 	/* Mobile specific styles */
 	@media (max-width: 768px) {
 		.container {
+			background-size: cover;
 			flex-direction: column;
-			background: none;
-			padding: 3.5rem;
+			padding: 3rem;
 			gap: 2rem;
 		}
 		.card {
+			padding: 0;
 			gap: 1.5rem;
 		}
 		.card h1 {
@@ -87,24 +137,6 @@
 		}
 		.card p {
 			font-size: 1.25rem;
-		}
-	}
-
-	/* Desktop specific styles */
-	@media (min-width: 769px) {
-		.container {
-			padding: 0 5rem;
-			background-size: contain;
-		}
-		.card {
-			gap: 2.5rem;
-			padding: 5rem;
-		}
-		.card h1 {
-			font-size: 2rem;
-		}
-		.card p {
-			font-size: 1.5rem;
 		}
 	}
 </style>
