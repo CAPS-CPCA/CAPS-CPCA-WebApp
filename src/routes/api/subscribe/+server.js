@@ -4,7 +4,7 @@ import transporter from '$lib/emailSetup.server.js';
 export async function POST({ request }) {
 	const { email } = await request.json();
 
-	const sendTo = 'mecag41592@paxnw.com';
+	const sendTo = 'ubcfmpr-gcaps@mail.ubc.ca';
 
 	const html = `<p>You have a new subscriber: ${email}</p>`;
 	const message = {
