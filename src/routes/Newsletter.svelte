@@ -10,10 +10,11 @@
 				<p>{data.para}</p>
 			</div>
 			<div class="card m-card">
-				<form class="form">
-					<input type="email" placeholder="john.doe@email.com" />
+				<form method="POST" class="form">
+					<input name="email" type="email" placeholder="john.doe@email.com" />
 					<button class="primary" type="submit">{data.button}</button>
 				</form>
+				<p class="success">{data?.success || ''}</p>
 			</div>
 		</div>
 	{/if}
