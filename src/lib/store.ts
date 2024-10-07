@@ -399,22 +399,28 @@ const cards: { [key: string]: Types.Cards } = {
 };
 const surveys: { [key: string]: Types.Survey } = {
 	en: {
-		title: 'Help us support you',
-		para: [
+		title_init: 'Help us support you',
+		title_end: 'Thank you',
+		para_init: [
 			'By default, this website does not store identifying information about the device or the website user. With this setting, you might see our evaluation survey more than once. This survey is to gather your user experience and feedback.',
 			'When you choose to enable cookies, you consent to share your device information and you will be asked to fill in this survey only once.'
 		],
-		button: 'Enable cookies',
+		para_end: ['Your feedback is valuable to us, thank you for participating in the survey.'],
+		button_init: 'Enable cookies',
+		button_accept: 'Accepted',
 		image: assets.EnSurvey,
 		link: 'https://ubc.ca1.qualtrics.com/jfe/form/SV_8A0oCJ4ekZTF8rQ'
 	},
 	fr: {
-		title: 'Aidez-nous à mieux vous soutenir',
-		para: [
+		title_init: 'Aidez-nous à mieux vous soutenir',
+		title_end: 'Merci beaucoup',
+		para_init: [
 			'Par défaut, ce site web ne stocke pas d’informations d’identification sur l’appareil ou l’utilisateur du site web. Avec ce paramètre, vous pourriez voir notre sondage d’évaluation plus d’une fois. Ce sondage vise à recueillir votre expérience en tant qu’utilisateur.',
 			'Lorsque vous choisissez d’activer les cookies, vous consentez à partager les informations de votre appareil et vous serez invité à remplir ce sondage une seule fois.'
 		],
-		button: 'Accepter les cookies',
+		para_end: ['Vos commentaires sont précieux pour nous, merci de participer au sondage.'],
+		button_init: 'Accepter les cookies',
+		button_accept: 'Accepté',
 		image: assets.FrSurvey,
 		link: 'https://ubc.ca1.qualtrics.com/jfe/form/SV_eQfivMOTtDLsaKG'
 	}
