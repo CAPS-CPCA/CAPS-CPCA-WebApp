@@ -62,7 +62,13 @@
 	input:first-of-type {
 		border-radius: 1rem;
 	}
-	/* button:last-of-type {
-  border-radius: 0 1rem 1rem 0;
-} */
+
+	/* Mobile */
+	@media (max-width: 768px) {
+		.form {
+			position: sticky;
+			top: 5rem;
+			z-index: 1000;
+		}
+	}
 </style>
