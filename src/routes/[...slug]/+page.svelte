@@ -7,6 +7,11 @@
 	import { isMobile } from '$lib/responsive';
 	import { onMount } from 'svelte';
 	import Jumper from './Jumper.svelte';
+	import { browser } from '$app/environment';
+
+	function Titlefy(path: string) {
+		return decodeURI(path.replace(/-/g, ' ').replace(/\b\w/g, (char) => char.toUpperCase()));
+	}
 
 	let mobileView: boolean;
 
@@ -23,7 +28,6 @@
 	export let data;
 	$: locator = $page.url.pathname.split('/').filter((item) => item !== '')[0];
 	$: subpage = $page.url.pathname.split('/').filter((item) => item !== '')[1];
-	$: sharelink = $page.url.href;
 
 	$: redirect($page.url.pathname);
 	$: modules = $data.modules;
@@ -42,12 +46,10 @@
 			'soins-virtuels-hybrides': [2, 4, 5, 6, 7, 10, 19],
 			'regulations-insurance-inclusivity': [1, 2, 12, 16],
 			'reglements-assurance-inclusivite': [1, 2, 12, 16],
-
 			'patient-communication': [6, 9, 10],
 			communication: [6, 9, 10],
 			'regulations-inclusivity': [1, 2, 16],
 			'reglements-inclusivite': [1, 2, 16],
-
 			'medication-abortion': [2, 5, 6, 7, 11, 13, 14, 15, 18],
 			'avortement-par-medicaments': [2, 5, 6, 7, 11, 13, 14, 15, 18],
 			'client-counselling': [2, 6, 10],
@@ -62,6 +64,7 @@
 	}
 
 	$: refs = getRefs($page.url.pathname);
+	$: if (browser) document.title = Titlefy(locator);
 </script>
 
 {#if mobileView}

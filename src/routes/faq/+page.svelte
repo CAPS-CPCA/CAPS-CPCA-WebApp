@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import { modulePath } from '$lib/modules';
 	import { page } from '$app/stores';
 	import Hero from '$lib/components/Hero.svelte';
@@ -7,6 +8,11 @@
 	export let data;
 
 	$: modules = $data.modules;
+
+	onMount(() => {
+		document.title =
+			localStorage.getItem('lang') === 'en' ? 'Frequently asked questions' : 'Questions fréquentes';
+	});
 </script>
 
 <Hero type="icon" id="FAQ" data={$data.hero} />

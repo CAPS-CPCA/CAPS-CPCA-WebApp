@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import Reader from '../[...slug]/Reader.svelte';
 	import type { ModuleType } from '$lib/types';
 	import { createSearch, searchHandler } from '$lib/search';
@@ -6,6 +7,10 @@
 	import Hero from '$lib/components/Hero.svelte';
 
 	export let data;
+
+	onMount(() => {
+		document.title = localStorage.getItem('lang') === 'en' ? 'Search' : 'Recherche';
+	});
 
 	const searchModules: ModuleType[] = $data.modules
 		? $data.modules.map((module: ModuleType) => ({
