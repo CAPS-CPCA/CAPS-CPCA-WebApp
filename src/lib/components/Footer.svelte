@@ -24,9 +24,11 @@
 			<div class="container m-container">
 				<a class="top" href="#top"><enhanced:img src={assets.ArrowUp} alt="back to top" /></a>
 				<div class="social m-social">
-					{#each data.social as i}
-						<li>{i}</li>
-					{/each}
+					<ul>
+						{#each data.social as i}
+							<li>{i}</li>
+						{/each}
+					</ul>
 				</div>
 				<div class="bottom m-bottom">
 					<a href="http://sogc.org/"><enhanced:img src={data.logo} alt="footer logo" /></a>
@@ -132,6 +134,11 @@
 		font-weight: 400;
 		font-size: 1rem;
 	}
+	.social ul {
+		padding: 0;
+		display: flex;
+		gap: 1.5rem;
+	}
 	.social li {
 		list-style-type: none;
 		border: 2px solid #ffffff;
@@ -207,7 +214,7 @@
 			display: flex;
 			align-items: center;
 			gap: 1.5rem;
-			margin: 4rem 0 2rem 0;
+			margin: 2rem 0 2rem 0;
 		}
 		.m-social li {
 			width: 2.75rem;

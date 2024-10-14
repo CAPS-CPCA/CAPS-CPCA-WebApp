@@ -44,7 +44,9 @@
 		{#if mobileView}
 			<nav>
 				<ul>
-					<a class="mobile-logo" href="/"><h2>CAPS-CPCA</h2></a>
+					<li>
+						<a href="/"><h2>CAPS-CPCA</h2></a>
+					</li>
 					{#each data.nav as { type, title, href }}
 						{#if type === 'switch'}
 							<li><button on:click={$page.data.toggleLang}>{title}</button></li>
@@ -87,17 +89,19 @@
 			</div>
 			<nav>
 				<ul>
-					<div class="logo">
-						{#if isSticky}
-							<a href={data.logos[1].href}
-								><enhanced:img src={data.logos[1].src} alt="CAPS-CPCA Logo" /></a
-							>
-						{:else}
-							<a href={data.logos[0].href} target="_blank">
-								<enhanced:img src={data.logos[0].src} alt="SOGC Logo" />
-							</a>
-						{/if}
-					</div>
+					<li>
+						<div class="logo">
+							{#if isSticky}
+								<a href={data.logos[1].href}
+									><enhanced:img src={data.logos[1].src} alt="CAPS-CPCA Logo" /></a
+								>
+							{:else}
+								<a href={data.logos[0].href} target="_blank">
+									<enhanced:img src={data.logos[0].src} alt="SOGC Logo" />
+								</a>
+							{/if}
+						</div>
+					</li>
 					{#each data.nav as { type, title, content, href }}
 						{#if type === 'normal'}
 							<li><a {href} class:selected={href === currentUrl}>{title}</a></li>
@@ -124,9 +128,8 @@
 <style>
 	/* Mobile specific styles */
 	@media (max-width: 768px) {
-		.mobile-logo {
-			position: absolute;
-			left: 3rem;
+		nav ul {
+			justify-content: space-between;
 		}
 		.burger {
 			border: none;
