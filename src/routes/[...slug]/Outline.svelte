@@ -87,18 +87,20 @@
 									>{outline[section][page].title}</a
 								>
 							</li>
-							<div
+							<li
 								class="bulletin"
 								style={outline[section][page].href.includes(current) ? '' : 'display: none;'}
 							>
-								{#each Object.keys(outline[section][page].modules) as module}
-									<li>
-										<a href={'#' + module} class="tertiary" class:selected={false}
-											>{outline[section][page].modules[module]}</a
-										>
-									</li>
-								{/each}
-							</div>
+								<menu>
+									{#each Object.keys(outline[section][page].modules) as module}
+										<li>
+											<a href={'#' + module} class="tertiary" class:selected={false}
+												>{outline[section][page].modules[module]}</a
+											>
+										</li>
+									{/each}
+								</menu>
+							</li>
 						{/each}
 					</ul>
 				{/each}
@@ -150,6 +152,17 @@
 	.tertiary.selected::before {
 		content: '>';
 		margin-right: 0.5rem;
+	}
+	menu {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		padding: 0;
+		margin: 0;
+	}
+	menu li {
+		list-style-type: none;
+		padding: 0;
 	}
 	.bulletin {
 		display: flex;

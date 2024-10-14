@@ -50,9 +50,11 @@
 			<div class="container d-container">
 				<a class="top" href="#top"><enhanced:img src={assets.ArrowUp} alt="back to top" /></a>
 				<div class="social d-social">
-					{#each data.social as i}
-						<li>{i}</li>
-					{/each}
+					<ul>
+						{#each data.social as i}
+							<li>{i}</li>
+						{/each}
+					</ul>
 				</div>
 				<div class="bottom d-bottom">
 					<a href="http://sogc.org/"><enhanced:img src={data.logo} alt="footer logo" /></a>

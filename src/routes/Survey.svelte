@@ -26,7 +26,7 @@
 					rel="noopener noreferrer"
 					on:click={() => {
 						if ($consent) $page.data.toggleSurvey();
-					}}><enhanced:img src={data.image} alt="Survey" /></a
+					}}><enhanced:img class="responsive-img" src={data.image} alt="Survey" /></a
 				>
 			{:else}
 				<div class="card">
@@ -55,6 +55,11 @@
 	}
 	img:hover {
 		transform: scale(0.95);
+	}
+	.responsive-img {
+		width: 100%;
+		height: auto;
+		display: block;
 	}
 
 	/* Mobile styles */
