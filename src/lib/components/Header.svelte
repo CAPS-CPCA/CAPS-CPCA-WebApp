@@ -138,7 +138,7 @@
 		}
 		h2 {
 			font-family: 'Roboto', sans-serif;
-			font-size: 1.5rem;
+			font-size: 1.25rem;
 			font-weight: 500;
 			color: var(--Background);
 		}
