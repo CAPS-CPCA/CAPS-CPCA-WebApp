@@ -31,7 +31,7 @@
 		<div class="container base">
 			<h1>Jump to a section</h1>
 			<p>Please select both section and module</p>
-			<select bind:value={selectedHref}>
+			<select bind:value={selectedHref} aria-label="Select a section">
 				{#each Object.keys(outline) as section}
 					{#each outline[section] as item}
 						<option value={item.href}>{item.title}</option>
@@ -41,7 +41,7 @@
 			{#each Object.keys(outline) as section}
 				{#each outline[section] as item}
 					{#if item.href === selectedHref}
-						<select bind:value={selectedHash}>
+						<select bind:value={selectedHash} aria-label="Select a module">
 							{#each Object.entries(item.modules) as [id, module]}
 								<option value={id}>{module}</option>
 							{/each}
@@ -94,7 +94,7 @@
 		padding: 0.75rem 1rem;
 		border: none;
 		border-radius: 0.5rem;
-		background: var(--Highlight);
+		background: var(--Primary);
 		color: white;
 		font-size: 1rem;
 		font-weight: 600;

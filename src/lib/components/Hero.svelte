@@ -77,11 +77,13 @@
 		padding: 3rem;
 	}
 	.icon img {
-		max-height: 25rem;
+		max-width: 20rem;
+		width: 100%;
+		height: auto;
 	}
 	/* variant: content */
 	span {
-		color: #0074e4;
+		color: #07539b;
 		font-weight: 700;
 	}
 	.base {

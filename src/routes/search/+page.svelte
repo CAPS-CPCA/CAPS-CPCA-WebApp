@@ -72,7 +72,7 @@
 		.form {
 			position: sticky;
 			top: 5rem;
-			z-index: 1000;
+			z-index: 5;
 		}
 	}
 </style>
