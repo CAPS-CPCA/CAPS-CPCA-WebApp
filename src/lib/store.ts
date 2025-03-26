@@ -49,7 +49,7 @@ const headers: { [key: string]: Types.Header } = {
 				content: [
 					{ title: 'Prescrire', href: '/prescrire' },
 					{ title: 'Dispenser', href: '/dispenser' },
-					{ title: 'Rôles de soutien', href: '/r%C3%B4les-de-soutien' }
+					{ title: 'Rôles de soutien', href: '/roles-de-soutien' }
 				]
 			},
 			{ type: 'normal', title: 'FAQ', href: '/faq' },
@@ -1028,10 +1028,10 @@ const outlines: { [key: string]: any } = {
 				}
 			]
 		},
-		'/r%C3%B4les-de-soutien': {
+		'/roles-de-soutien': {
 			subpages: [
 				{
-					href: '/r%C3%B4les-de-soutien/avortement-par-medicaments#M39',
+					href: '/roles-de-soutien/avortement-par-medicaments#M39',
 					title: 'Avortement par medicaments',
 					modules: {
 						M39: 'À propos du MIFÉ-MISO',
@@ -1041,7 +1041,7 @@ const outlines: { [key: string]: any } = {
 					}
 				},
 				{
-					href: '/r%C3%B4les-de-soutien/counseling-de-la-client#M42',
+					href: '/roles-de-soutien/counseling-de-la-client#M42',
 					title: 'Counseling de la personne',
 					modules: {
 						M42: 'Comment conseiller la personne',
@@ -1055,7 +1055,7 @@ const outlines: { [key: string]: any } = {
 			],
 			resources: [
 				{
-					href: '/r%C3%B4les-de-soutien/ressources#S14',
+					href: '/roles-de-soutien/ressources#S14',
 					title: 'Lignes directrices et autres ressources',
 					modules: {
 						S14: 'À propos de l’avortement par medicaments',

@@ -29,9 +29,18 @@ body {
 	box-sizing: border-box;
 	background: var(--Background);
 }
+figure {
+	margin: 0;
+}
 img {
 	max-height: 100%;
-	max-width: 100%;
+	width: 100%;
+}
+img[class^="wp-image-"] {
+    height: auto;
+    width: 100%;
+    aspect-ratio: attr(width) / attr(height);
+    object-fit: contain;
 }
 
 /* Typography */
@@ -140,6 +149,7 @@ th {
 }
 .right {
 	width: 8rem;
+	height: 8rem;
 	float: right;
 	padding-left: 8rem;
 }

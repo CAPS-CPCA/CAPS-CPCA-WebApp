@@ -10,7 +10,7 @@ export function redirect(url: string) {
 			'/dispensing': '/dispensing/coverage-&-insurance',
 			'/dispenser': '/dispenser/couverture-et-assurance',
 			'/supporting-roles': '/supporting-roles/medication-abortion',
-			'/r%C3%B4les-de-soutien': '/r%C3%B4les-de-soutien/avortement-par-medicaments'
+			'/roles-de-soutien': '/roles-de-soutien/avortement-par-medicaments'
 		};
 		const newPath = pathMap[url];
 		if (newPath) {
@@ -27,8 +27,8 @@ export function togglePath() {
 		'/prescrire': '/prescribing',
 		'/dispensing': '/dispenser',
 		'/dispenser': '/dispensing',
-		'/supporting-roles': '/r%C3%B4les-de-soutien',
-		'/r%C3%B4les-de-soutien': '/supporting-roles'
+		'/supporting-roles': '/roles-de-soutien',
+		'/roles-de-soutien': '/supporting-roles'
 	};
 
 	for (const key in pathMap) {

@@ -2642,7 +2642,7 @@ Visite de suivi: <b>8471</b> Visite intermédiaire régionale ou visite suivante
 		},
 		{
 			id: 'B11',
-			title: 'Quebec',
+			title: 'Québec',
 			content: {
 				type: ['p', 'h2', 'p', 'h2', 'p'],
 				data: [
@@ -3028,7 +3028,7 @@ Visite de suivi: <b>8471</b> Visite intermédiaire régionale ou visite suivante
 		},
 		{
 			id: 'C6',
-			title: 'Terre neuve & Labrador',
+			title: 'Terre-Neuve et Labrador',
 			content: {
 				type: ['p'],
 				data: [
@@ -3095,7 +3095,7 @@ Lien: www.pharmacytechnologysolutions.ca(https://www.pharmacytechnologysolutions
 		},
 		{
 			id: 'C11',
-			title: 'Île-du-Prince Édouard',
+			title: 'Île-du-Prince-Édouard',
 			content: {
 				type: ['p'],
 				data: [
@@ -3239,7 +3239,7 @@ Le profil pharmacocinétique du MISO varie considérablement selon la voie d’a
 		},
 		{
 			id: 'M31',
-			title: 'Évaluation clinique',
+			title: 'Évaluations cliniques',
 			content: {
 				type: ['p', 'ulul'],
 				data: [
@@ -3644,7 +3644,7 @@ En résumé, il semble que Mifé-Miso pourrait ralentir le métabolisme de la m�
 		},
 		{
 			id: 'S6',
-			title: "Boîtes à outils pour répondre aux préoccupations liées à l'avortement",
+			title: "Boîtes à outils pour répondre aux préoccupations liées à l’avortement",
 			content: {
 				type: ['p'],
 				data: [
@@ -4090,11 +4090,11 @@ export function modulePath(path: string, modules: Modules) {
     '/dispenser/ressources-cliniques': ['S8','S9','S10','S11','S12','S13'],
 
     '/supporting-roles/medication-abortion': ['M39', 'M3', 'M40', 'M41'],
-    '/r%C3%B4les-de-soutien/avortement-par-medicaments': ['M39', 'M3', 'M40', 'M41'],
+    '/roles-de-soutien/avortement-par-medicaments': ['M39', 'M3', 'M40', 'M41'],
     '/supporting-roles/client-counselling': ['M42', 'M43', 'M15', 'M33', 'M16', 'M44'],
-    '/r%C3%B4les-de-soutien/counseling-de-la-client': ['M42', 'M43', 'M15', 'M33', 'M16', 'M44'],
+    '/roles-de-soutien/counseling-de-la-client': ['M42', 'M43', 'M15', 'M33', 'M16', 'M44'],
     '/supporting-roles/resources': ['S14','S15','S16','S17','S18','S19'],
-    '/r%C3%B4les-de-soutien/ressources': ['S14','S15','S16','S17','S18','S19'],
+    '/roles-de-soutien/ressources': ['S14','S15','S16','S17','S18','S19'],
 
     '/faq': ['F1', 'F2', 'F3', 'F4', 'F5', 'F6'],
 
