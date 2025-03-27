@@ -1,25 +1,16 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import Reader from '../[...slug]/Reader.svelte';
-	import type { ModuleType } from '$lib/types';
 	import { createSearch, searchHandler } from '$lib/search';
 	import { onDestroy } from 'svelte';
 	import Hero from '$lib/components/Hero.svelte';
 	import { page } from '$app/state';
-	import { browser } from '$app/environment';
 
 	export let data;
 
 	onMount(() => {
 		document.title = localStorage.getItem('lang') === 'en' ? 'Search' : 'Recherche';
 	});
-
-	// const searchModules: ModuleType[] = $data.modules
-	// 	? $data.modules.map((module: ModuleType) => ({
-	// 			...module,
-	// 			searchTerms: `${module.title} ${module.content.data}`
-	// 		}))
-	// 	: [];
 
 	const searchModules: any = page.data.apidata
 		? page.data.apidata.map((module: any) => ({

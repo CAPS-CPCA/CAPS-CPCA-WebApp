@@ -102,15 +102,9 @@ export type Outline = {
 	}[];
 };
 
-type ContentType = {
-	type: string[];
-	data: (string | string[] | string[][])[];
-};
-
 export type ModuleType = {
 	id: string;
 	title: string;
-	content: ContentType;
 };
 
 export type Modules = ModuleType[];
