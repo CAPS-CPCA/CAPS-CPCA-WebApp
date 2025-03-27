@@ -15,6 +15,7 @@ export function redirect(url: string) {
 		const newPath = pathMap[url];
 		if (newPath) {
 			goto(newPath, { noScroll: true });
+			return;
 		}
 	}
 }

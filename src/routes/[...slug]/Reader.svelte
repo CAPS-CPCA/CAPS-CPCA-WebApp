@@ -142,7 +142,13 @@
 						<div class="module">
 							<CopyBtn />
 							<div class="idholder" id={module.id}></div>
+							{
+								#if getContent(module.title, getSlug($page.url.pathname)) !== undefined
+							}
 							{@html apiregex(getContent(module.title, getSlug($page.url.pathname)))}
+							{:else}
+								<p>Content not found</p>
+							{/if}
 						</div>
 					{/each}
 				{/if}
