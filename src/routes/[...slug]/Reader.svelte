@@ -4,6 +4,7 @@
 	import { isMobile } from '$lib/responsive';
 	import { onMount } from 'svelte';
 	import { page } from '$app/stores';
+	import { base } from '$app/paths';
 	export let data;
 
 	let mobileView: boolean;
@@ -121,13 +122,14 @@
 
 	function getSlug(slug: string) {
 		// Extract the first segment of the slug after removing the leading '/'
-		const segments = slug.split('/').filter(Boolean);
+		const segments = slug.replace(base, '').split('/').filter(Boolean);
 		const result = segments[0] || '';
+		console.log('Slug:', result);
 		return result;
 	}
 </script>
 
-{#if $page.url.pathname != '/search'}
+{#if $page.url.pathname.includes('search')}
 	<div class="reader">
 		{#if data}
 			{#if outline && !mobileView}
@@ -138,17 +140,11 @@
 					<h1>No Modules Found</h1>
 				{:else}
 					{#each modules as module}
-						<h1>{module.title}</h1>
+						<h1>{module.title.rendered}</h1>
 						<div class="module">
 							<CopyBtn />
 							<div class="idholder" id={module.id}></div>
-							{
-								#if getContent(module.title, getSlug($page.url.pathname)) !== undefined
-							}
-							{@html apiregex(getContent(module.title, getSlug($page.url.pathname)))}
-							{:else}
-								<p>Content not found</p>
-							{/if}
+							{@html apiregex(module.content.rendered)}
 						</div>
 					{/each}
 				{/if}
@@ -166,11 +162,17 @@
 					<h1>No Modules Found</h1>
 				{:else}
 					{#each modules as module}
-						<h1>{module.title.rendered}</h1>
+						<h1>{module.title}</h1>
 						<div class="module">
 							<CopyBtn />
 							<div class="idholder" id={module.id}></div>
-							{@html apiregex(module.content.rendered)}
+							{
+								#if getContent(module.title, getSlug($page.url.pathname)) !== undefined
+							}
+								{@html apiregex(getContent(module.title, getSlug($page.url.pathname)))}
+							{:else}
+								<p>Content not found</p>
+							{/if}
 						</div>
 					{/each}
 				{/if}

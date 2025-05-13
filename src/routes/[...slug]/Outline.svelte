@@ -2,6 +2,7 @@
 	import { browser } from '$app/environment';
 	import { page } from '$app/stores';
 	import { onDestroy } from 'svelte';
+	import {base} from '$app/paths';
 
 	export let data;
 
@@ -48,7 +49,7 @@
 	let isCollapsed = false;
 	let outlineClass = 'atTop';
 
-	$: current = $page.url.pathname;
+	$: current = $page.url.pathname.replace(base, '');
 	$: outlineType = '/' + current.split('/')[1];
 	$: outline = data[outlineType] || {};
 
@@ -81,7 +82,7 @@
 						{#each Object.keys(outline[section]) as page}
 							<li>
 								<a
-									href={outline[section][page].href}
+									href={base}{outline[section][page].href}
 									class="secondary"
 									class:selected={outline[section][page].href.includes(current)}
 									>{outline[section][page].title}</a
@@ -94,7 +95,7 @@
 								<menu>
 									{#each Object.keys(outline[section][page].modules) as module}
 										<li>
-											<a href={'#' + module} class="tertiary" class:selected={false}
+											<a href={base}{'#' + module} class="tertiary" class:selected={false}
 												>{outline[section][page].modules[module]}</a
 											>
 										</li>
@@ -122,7 +123,7 @@
 					<ul>
 						{#each Object.keys(outline[section]) as page}
 							<li>
-								<a href={outline[section][page].href} class="secondary"
+								<a href={base}{outline[section][page].href} class="secondary"
 									>{outline[section][page].title}</a
 								>
 							</li>

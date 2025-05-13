@@ -3,6 +3,7 @@
 	import { browser } from '$app/environment';
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
+	import { base } from '$app/paths';
 
 	export let data;
 	let mobileView: boolean;
@@ -51,7 +52,7 @@
 						{#if type === 'switch'}
 							<li><button on:click={$page.data.toggleLang}>{title}</button></li>
 						{:else if type === 'normal' && title === '🔍'}
-							<li><a {href}>{title}</a></li>
+							<li><a href={base}{href}>{title}</a></li>
 						{/if}
 					{/each}
 					<li>
@@ -64,7 +65,7 @@
 			<div class="menu" class:active={toggleMenu}>
 				{#each data.nav as { type, title, content, href }}
 					{#if type === 'normal' && title !== '🔍'}
-						<a on:click={() => (toggleMenu = false)} {href} class:selected={href === currentUrl}
+						<a on:click={() => (toggleMenu = false)} href={base}{href} class:selected={href === currentUrl}
 							>{title}</a
 						>
 					{:else if type === 'content'}
@@ -72,7 +73,7 @@
 							<a
 								on:click={() => (toggleMenu = false)}
 								data-sveltekit-noscroll
-								{href}
+								href={base}{href}
 								class:selected={currentUrl.includes(href)}>{title}</a
 							>
 						{/each}
@@ -83,7 +84,7 @@
 			<div class="partner-sites" style={isSticky ? 'display: none;' : ''}>
 				<ul>
 					{#each data.partners as { href, title }}
-						<li><a {href} target="_blank">{title}</a></li>
+						<li><a href={base}{href} target="_blank">{title}</a></li>
 					{/each}
 				</ul>
 			</div>
@@ -104,17 +105,17 @@
 					</li>
 					{#each data.nav as { type, title, content, href }}
 						{#if type === 'normal'}
-							<li><a {href} class:selected={href === currentUrl}>{title}</a></li>
+							<li><a href={base}{href} class:selected={href === currentUrl}>{title}</a></li>
 						{:else if type === 'content'}
 							{#each content as { title, href }}
 								<li>
-									<a data-sveltekit-noscroll {href} class:selected={currentUrl.includes(href)}
+									<a data-sveltekit-noscroll href="{base}{href}" class:selected={currentUrl.includes(href)}
 										>{title}</a
 									>
 								</li>
 							{/each}
 						{:else if type === 'exit'}
-							<li><a {href} target="_self"><span id="exit">{title}</span></a></li>
+							<li><a href={base}{href} target="_self"><span id="exit">{title}</span></a></li>
 						{:else if type === 'switch'}
 							<li><button on:click={$page.data.toggleLang}>{title}</button></li>
 						{/if}

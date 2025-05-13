@@ -1,3 +1,5 @@
+// export const prerender = true;
+
 import { getTranslation } from '$lib/store';
 import { togglePath } from '$lib/data';
 import { writable, get } from 'svelte/store';

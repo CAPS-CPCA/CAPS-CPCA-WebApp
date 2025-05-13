@@ -8,6 +8,7 @@
 	import { onMount } from 'svelte';
 	import Jumper from './Jumper.svelte';
 	import { browser } from '$app/environment';
+	import { base } from '$app/paths';
 
 	function Titlefy(path: string) {
 		return decodeURI(path.replace(/-/g, ' ').replace(/\b\w/g, (char) => char.toUpperCase()));
@@ -29,7 +30,7 @@
 	$: locator = $page.url.pathname.split('/').filter((item) => item !== '')[0];
 	$: subpage = $page.url.pathname.split('/').filter((item) => item !== '')[1];
 
-	$: redirect($page.url.pathname);
+	$: redirect($page.url.pathname.replace(base, ''));
 	$: modules = $data.modules;
 
 	function getRefs(path: string) {

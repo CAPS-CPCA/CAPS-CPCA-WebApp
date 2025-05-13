@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { isMobile } from '$lib/responsive';
 	import { onMount } from 'svelte';
+	import { base } from '$app/paths';
 
 	export let data;
 
@@ -37,7 +38,7 @@
 				{#if data[selectedCard]}
 					<div class="card">
 						<p>{data[selectedCard].desc}</p>
-						<a class="primary" href={data[selectedCard].link[0]}>{data[selectedCard].link[1]}</a>
+						<a class="primary" href={base}{data[selectedCard].link[0]}>{data[selectedCard].link[1]}</a>
 					</div>
 				{/if}
 			</div>
@@ -47,7 +48,7 @@
 					<div class="card">
 						<h1>{title}</h1>
 						<p>{desc}</p>
-						<a class="primary" href={link[0]}>{link[1]}</a>
+						<a class="primary" href={base}{link[0]}>{link[1]}</a>
 					</div>
 				{/each}
 			</div>

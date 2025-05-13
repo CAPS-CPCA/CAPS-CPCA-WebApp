@@ -1,5 +1,6 @@
 import { browser } from '$app/environment';
 import { goto } from '$app/navigation';
+import { base } from '$app/paths';
 
 // Redirect function for content path changes
 export function redirect(url: string) {
@@ -14,7 +15,7 @@ export function redirect(url: string) {
 		};
 		const newPath = pathMap[url];
 		if (newPath) {
-			goto(newPath, { noScroll: true });
+			goto(`${base}${newPath}`, { noScroll: true });
 			return;
 		}
 	}
