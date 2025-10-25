@@ -124,7 +124,6 @@
 		// Extract the first segment of the slug after removing the leading '/'
 		const segments = slug.replace(base, '').split('/').filter(Boolean);
 		const result = segments[0] || '';
-		console.log('Slug:', result);
 		return result;
 	}
 </script>

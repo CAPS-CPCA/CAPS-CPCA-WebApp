@@ -17,7 +17,7 @@ const config = {
 		}),
 		paths: {
 			relative: true,
-            base: process.env.BASE_PATH || '/staging'
+            base: process.env.BASE_PATH || ''
         }
 	}
 };
