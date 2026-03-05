@@ -33,38 +33,34 @@
 	$: redirect($page.url.pathname.replace(base, ''));
 	$: modules = $data.modules;
 
-	function getRefs(path: string) {
-		const refMap: { [key: string]: number[] } = {
-			'about-mifegymiso': [5, 6, 7, 10, 11, 13, 21],
-			'a-propos-du-mife-miso': [5, 6, 7, 10, 11, 13, 21],
-			'patient-counselling': [2, 4, 6, 7, 10],
-			'counseling-de-la-personne': [2, 4, 6, 7, 10],
-			'medical-evaluation': [6, 8, 20],
-			'evaluation-medicale': [6, 8, 20],
-			assessment: [3, 6, 7],
-			'evaluation-post-avortement': [3, 6, 7],
-			'virtual-hybrid-care': [2, 4, 5, 6, 7, 10, 19],
-			'soins-virtuels-hybrides': [2, 4, 5, 6, 7, 10, 19],
-			'regulations-insurance-inclusivity': [1, 2, 12, 16],
-			'reglements-assurance-inclusivite': [1, 2, 12, 16],
-			'patient-communication': [6, 9, 10],
-			communication: [6, 9, 10],
-			'regulations-inclusivity': [1, 2, 16],
-			'reglements-inclusivite': [1, 2, 16],
-			'medication-abortion': [2, 5, 6, 7, 11, 13, 14, 15, 18],
-			'avortement-par-medicaments': [2, 5, 6, 7, 11, 13, 14, 15, 18],
-			'client-counselling': [2, 6, 10],
-			'counseling-de-la-client': [2, 6, 10]
-		};
-		for (const key in refMap) {
-			if (path.includes(key)) {
-				return refMap[key];
-			}
-		}
-		return [];
+	function getSlug(url: string) {
+		const segments = url.replace(base, '').split('/').filter(Boolean);
+		return segments[0] || '';
 	}
 
-	$: refs = getRefs($page.url.pathname);
+	function extractRefs(url: string, modules: any, apidata: any[]): number[] {
+		if (!modules || !apidata) return [];
+		const pageModules = modulePath(url, modules);
+		const slug = getSlug(url);
+		const allContent = pageModules
+			.map((mod: any) => {
+				let title = mod.title;
+				if (title.includes('&')) title = title.replace('&', '&amp;');
+				const objArray = apidata.filter((item: any) => item.title.rendered === title);
+				const obj = objArray.find((item: any) => item.class_list.includes('category-' + slug));
+				return obj?.content?.rendered || '';
+			})
+			.join(' ');
+		const matches = allContent.matchAll(/\S\[(\d+)\]/g);
+		const refSet = new Set<number>();
+		for (const match of matches) {
+			refSet.add(parseInt(match[1], 10));
+		}
+		return [...refSet].sort((a, b) => a - b);
+	}
+
+	$: refs = extractRefs($page.url.pathname, $data.modules, $page.data.apidata)
+		.filter((ref) => Bibliography.some((item) => item.index === ref));
 	$: if (browser) document.title = Titlefy(locator);
 </script>
 

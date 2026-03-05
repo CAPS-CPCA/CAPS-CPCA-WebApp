@@ -590,7 +590,126 @@ export const Bibliography = [
 		title:
 			'Society of Obstetricians and Gynaecologists of Canada. Guideline No. 448: Prevention of Rh D Alloimmunization; 2024.',
 		href: '/resources/AJOG1.pdf'
-	}
+	},
+	  {
+    index: 22,
+    title:
+      "Fung-Kee-Fung K, Wong K, Walsh J, et al. Guideline no. 448: Prevention of rh d alloimmunization. Journal of Obstetrics and Gynaecology Canada. 2024;46:102449.",
+    href: "https://dx.doi.org/10.1016/j.jogc.2024.102449",
+  },
+  {
+    index: 23,
+    title:
+      "Acog clinical practice update: Rh d immune globulin administration after abortion or pregnancy loss at less than 12 weeks of gestation. Obstetrics &amp; Gynecology. 2024;144:e140-e3.",
+    href: "https://dx.doi.org/10.1097/AOG.0000000000005733",
+  },
+  {
+    index: 24,
+    title:
+      "Medication abortion up to 70 days of gestation. Obstetrics &amp; Gynecology. 2020;136:e31-e47.",
+    href: "https://dx.doi.org/10.1097/AOG.0000000000004082",
+  },
+  {
+    index: 25,
+    title:
+      "Touval O, Ellert A, Daykan Y, et al. The efficacy of mifepristone-misoprostol regimen versus misoprostol-only for medication abortion at 22 + 0/7 to 30 + 0/7 weeks’ gestation. Archives of Gynecology and Obstetrics. 2024;311:749-56.",
+    href: "https://dx.doi.org/10.1007/s00404-024-07737-2",
+  },
+  {
+    index: 26,
+    title:
+      "Zwerling B, Edelman A, Jackson A, et al. Society of family planning clinical recommendation: Medication abortion between 14 0/7 and 27 6/7 weeks of gestation. American Journal of Obstetrics and Gynecology. 2025;233:229-49.",
+    href: "https://dx.doi.org/10.1016/j.ajog.2023.09.097",
+  },
+  {
+    index: 27,
+    title:
+      "Costescu D, Guilbert É. No. 360-induced abortion: Surgical abortion and second trimester medical methods. Journal of Obstetrics and Gynaecology Canada. 2018;40:750-83.",
+    href: "https://dx.doi.org/10.1016/j.jogc.2017.12.010",
+  },
+  {
+    index: 28,
+    title:
+      "Majeed K, Syed H, Murtaza M, et al. Efficacy and safety of oral versus vaginal misoprostol for medical management of first trimester missed abortion: A systematic review and meta-analysis. European Journal of Obstetrics &amp; Gynecology and Reproductive Biology. 2025;305:92-9.",
+    href: "https://dx.doi.org/10.1016/j.ejogrb.2024.12.015",
+  },
+  {
+    index: 29,
+    title:
+      "Sabloak T, Ryan I, Nahi S, et al. Intimate partner violence detected during abortion-related visits: A systematic review of screenings and interventions. American Journal of Perinatology. 2024;41:1697-705.",
+    href: "https://dx.doi.org/10.1055/s-0044-1779746",
+  },
+  {
+    index: 30,
+    title:
+      "Cely-Andrade L, Cárdenas-Garzón K, Enríquez-Santander LC, et al. Telemedicine for the provision of medication abortion to pregnant people at up to twelve weeks of pregnancy: A systematic literature review and meta-analysis. Reproductive Health. 2024;21.",
+    href: "https://dx.doi.org/10.1186/s12978-024-01864-4",
+  },
+  {
+    index: 31,
+    title:
+      "Hunter C, Burck M, Chambers C, et al. Test or no-test: Comparison of medication abortion outcomes and adverse events when forgoing ultrasound, laboratory testing, and physical examination. Journal of Obstetrics and Gynaecology Canada. 2025;47:102730.",
+    href: "https://dx.doi.org/10.1016/j.jogc.2024.102730",
+  },
+  {
+    index: 32,
+    title:
+      "Cleeve A, Wallengren E, Brandell K, et al. No test medical abortion – a review of the evidence on selective use of preabortion testing. Current Opinion in Obstetrics &amp; Gynecology. 2024;36:378-83.",
+    href: "https://dx.doi.org/10.1097/GCO.0000000000000981",
+  },
+  {
+    index: 33,
+    title:
+      "Guilbert E, Costescu D, Wagner M, et al. Canadian protocol for the provision of medical abortion via telemedicine; 2022",
+  },
+  {
+    index: 34,
+    title:
+      "Aiken A, Lohr P, Lord J, et al. Effectiveness, safety and acceptability of no‐test medical abortion (termination of pregnancy) provided via telemedicine: A national cohort study. BJOG: An International Journal of Obstetrics &amp; Gynaecology. 2021;128:1464-74.",
+    href: "https://dx.doi.org/10.1111/1471-0528.16668",
+  },
+  {
+    index: 35,
+    title:
+      "Nippita S, Cansino C, Goldberg AB, et al. Society of family planning clinical recommendation: Management of undesired pregnancy of unknown location and abortion at less than 42 days of gestation. Contraception. 2025;150:110865.",
+    href: "https://dx.doi.org/10.1016/j.contraception.2025.110865",
+  },
+  {
+    index: 36,
+    title:
+      "Jar-Allah T, Brandell K, Gyllenberg F, et al. Change in hcg levels after very early medication abortion for pregnancy of unknown location or probable intrauterine pregnancy. Contraception. 2025;147:110902.",
+    href: "https://dx.doi.org/10.1016/j.contraception.2025.110902",
+  },
+  {
+    index: 37,
+    title:
+      "Costescu D, Guilbert E, Bernardin J, et al. Medical abortion. Journal of Obstetrics and Gynaecology Canada. 2016;38:366-89.",
+    href: "https://dx.doi.org/10.1016/j.jogc.2016.01.002",
+  },
+  {
+    index: 38,
+    title:
+      "Fuerst M, Prewitt KC, Garg B, et al. Association of body mass index on time to fetal expulsion for individuals undergoing medication abortion over 13 weeks gestational duration. Contraception. 2025;143:110752.",
+    href: "https://dx.doi.org/10.1016/j.contraception.2024.110752",
+  },
+  {
+    index: 39,
+    title:
+      "Biggs MA, Ralph L, Ehrenreich K, et al. No-test screening protocols may disproportionately exclude structurally oppressed communities who could benefit from accessing medication abortion. Health Equity. 2025;9:189-200.",
+    href: "https://dx.doi.org/10.1089/heq.2024.0128",
+  },
+  {
+    index: 40,
+    title:
+      "Brandell K, Jar-Allah T, Reynolds-Wright J, et al. Randomized trial of very early medication abortion. New England Journal of Medicine. 2024;391:1685-95.",
+    href: "https://dx.doi.org/10.1056/NEJMoa2401646",
+  },
+  {
+    index: 41,
+    title:
+      "Grossman D, Raifman S, Morris N, et al. Mail-order pharmacy dispensing of mifepristone for medication abortion after in-person screening. JAMA Internal Medicine. 2024;184:873.",
+    href: "https://dx.doi.org/10.1001/jamainternmed.2024.1476",
+  },
 ];
 const outlines: { [key: string]: any } = {
 	en: {
