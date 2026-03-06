@@ -51,12 +51,21 @@
 				return obj?.content?.rendered || '';
 			})
 			.join(' ');
-		const matches = allContent.matchAll(/\S\[(\d+)\]/g);
-		const refSet = new Set<number>();
+		const matches = allContent.matchAll(/\S\[([0-9,.\s]+)\]/g);
+		const refs: number[] = [];
+		const seen = new Set<number>();
 		for (const match of matches) {
-			refSet.add(parseInt(match[1], 10));
+			const refString = match[1];
+			const numbers = refString.match(/\d+/g) || [];
+			for (const num of numbers) {
+				const numInt = parseInt(num, 10);
+				if (!seen.has(numInt)) {
+					seen.add(numInt);
+					refs.push(numInt);
+				}
+			}
 		}
-		return [...refSet].sort((a, b) => a - b);
+		return refs.sort((a, b) => a - b);
 	}
 
 	$: refs = extractRefs($page.url.pathname, $data.modules, $page.data.apidata)
@@ -83,7 +92,7 @@
 		<div class="module references">
 			<h2>References</h2>
 			<ul class="ref">
-				{#each refs as ref}
+				{#each refs as ref (ref)}
 					<li>
 						<a
 							href={Bibliography.filter((item) => item.index === ref)[0].href}
