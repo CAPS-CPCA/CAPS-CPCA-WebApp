@@ -532,8 +532,8 @@ export const Bibliography = [
 	{
 		index: 11,
 		title:
-			'Linepharma International Limited. Health Canada MIFISO Product Monograph. Submission Control No: 265940. December 15, 2022.',
-		href: '/resources/C17-2.pdf'
+			'Nordic Pharma Canada Inc. MIFEGYMISO Product Monograph. Submission Control No: 289927. February 11, 2025.',
+		href: '/resources/C17-3.pdf'
 	},
 	{
 		index: 12,

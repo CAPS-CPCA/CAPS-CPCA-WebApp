@@ -51,11 +51,15 @@
 				return obj?.content?.rendered || '';
 			})
 			.join(' ');
-		const matches = allContent.matchAll(/\S\[([0-9,.\s]+)\]/g);
+		// Match patterns like [26], [26,27], [24,25,...], etc.
+		// Requires non-whitespace before bracket (handles "text[25]" and ".[25]")
+		// Negative lookahead (?!\() ensures we don't match [text] from link patterns [text](url)
+		const matches = allContent.matchAll(/\S\[([0-9,.\s]+)\](?!\()/g);
 		const refs: number[] = [];
 		const seen = new Set<number>();
 		for (const match of matches) {
 			const refString = match[1];
+			// Extract all individual numbers, ignoring commas, spaces, and ellipsis
 			const numbers = refString.match(/\d+/g) || [];
 			for (const num of numbers) {
 				const numInt = parseInt(num, 10);
