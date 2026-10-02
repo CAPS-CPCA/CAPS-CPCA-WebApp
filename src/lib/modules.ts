@@ -85,7 +85,7 @@ export const modules: { [key: string]: Modules } = {
 		},
 		{
 			id: 'M22',
-			title: 'Virtual Assessment',
+			title: 'Virtual Abortion or No-Test abortion Assessment',
 		},
 		{
 			id: 'M23',
@@ -399,7 +399,7 @@ export const modules: { [key: string]: Modules } = {
 		},
 		{
 			id: 'M5',
-			title: 'Counseling pré-avortement',
+			title: 'Counseling préavortement',
 		},
 		{
 			id: 'M6',
@@ -467,7 +467,7 @@ export const modules: { [key: string]: Modules } = {
 		},
 		{
 			id: 'M22',
-			title: 'Évaluation virtuelle',
+			title: 'Évaluation virtuelle ou évaluation sans test préalable',
 		},
 		{
 			id: 'M23',
@@ -527,7 +527,7 @@ export const modules: { [key: string]: Modules } = {
 		},
 		{
 			id: 'M26',
-			title: 'Contexte réglementaire',
+			title: 'Contexte règlementaire',
 		},
 		{
 			id: 'M27',
@@ -543,7 +543,7 @@ export const modules: { [key: string]: Modules } = {
 		},
 		{
 			id: 'M36',
-			title: 'Personnes non-assurées',
+			title: 'Personnes non assurés',
 		},
 		{
 			id: 'M37',
@@ -675,11 +675,11 @@ export const modules: { [key: string]: Modules } = {
 		},
 		{
 			id: 'F6',
-			title: 'Methadone',
+			title: 'Méthadone',
 		},
 		{
 			id: 'S1',
-			title: 'Guides et aides-mémoires',
+			title: 'Guides et aide-mémoires',
 		},
 		{
 			id: 'S2',
@@ -707,7 +707,7 @@ export const modules: { [key: string]: Modules } = {
 		},
 		{
 			id: 'S8',
-			title: 'Guides et aides-mémoires',
+			title: 'Guides et aide-mémoires',
 		},
 		{
 			id: 'S9',

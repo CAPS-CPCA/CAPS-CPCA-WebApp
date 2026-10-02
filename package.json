@@ -37,5 +37,9 @@
 	"dependencies": {
 		"amplify-adapter": "^0.1.4",
 		"nodemailer": "^6.10.1"
+	},
+	"allowScripts": {
+		"esbuild@0.25.12": true,
+		"esbuild@0.21.5": true
 	}
 }

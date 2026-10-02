@@ -238,20 +238,20 @@ const heros: { [key: string]: Types.HeroType[] } = {
 			data: {
 				title: {
 					f1: 'Ressources pour ',
-					f2: 'prescrire',
-					f3: " l'avortement par médicaments"
+					f2: 'la prescription',
+					f3: " de l'avortement par médicaments"
 				},
 				paragraphs: [
 					{
 						f1: 'Si vous êtes ',
-						f2: 'médecins, infirmières praticiennes spécialisées et sages-femmes',
-						f3: ' et que vous prescrivez actuellement ou envisagez de prescrire le Mifé-Miso, veuillez faire défiler vers le bas pour obtenir des informations sur ',
-						f4: "les médicaments, les conseils en matière d'avortement, les processus cliniques, les soins virtuels, les codes de facturation et les boîtes à outils d'inclusivité."
+						f2: 'médecin, infirmier(ère) praticien(ne) spécialisé(e) ou sages-femme',
+						f3: ' et que vous prescrivez actuellement ou envisagez de prescrire le Mifegymiso, veuillez consulter les renseignements ci-dessous concernant ',
+						f4: "ce médicament, le counseling en matière d'avortement, les processus cliniques, les soins virtuels, les codes de facturation et les trousses de ressources sur l'inclusivité."
 					},
 					{
 						f1: 'Si vous êtes ',
-						f2: 'sages-femmes, infirmières autorisées et médecins',
-						f3: ' et que vous recherchez des informations sur la prescription du Mifé-Miso pour soutenir votre équipe, vous êtes également au bon endroit.'
+						f2: 'sages-femme, infirmier(ère) autorisé(e) ou médecin',
+						f3: ' et que vous recherchez des informations sur la prescription du Mifegymiso pour soutenir votre équipe, vous êtes également au bon endroit.'
 					}
 				],
 				image: {
@@ -273,13 +273,13 @@ const heros: { [key: string]: Types.HeroType[] } = {
 				paragraphs: [
 					{
 						f1: 'Si vous êtes ',
-						f2: 'pharmaciens ou tout autre clinicien qui dispense actuellement ou prévoyez de distribuer du Mifé-Miso',
-						f3: ' veuillez faire défiler vers le bas pour obtenir des informations sur ',
-						f4: "les médicaments, les instructions d'administration, les doses oubliées, la gestion des effets secondaires, l'assurance et les boîtes à outils d'inclusivité."
+						f2: 'pharmacien(ne) ou un(e) professionnel(le) de la santé qui dispense actuellement Mifégymiso ou prévoit le faire',
+						f3: ' veuillez consulter les renseignements ci-dessous concernant ',
+						f4: "le médicament, les instructions d'administration, les doses oubliées, la prise en charge des effets secondaires, l'assurance et les trousses de ressources d'inclusivité."
 					},
 					{
 						f1: 'Si vous êtes ',
-						f2: 'sages-femmes, infirmières autorisées et médecins',
+						f2: 'sages-femmes, infirmier(ère)s autorisé(e)s ou médecins',
 						f3: ' et que vous recherchez des informations sur la prescription du Mifé-Miso pour soutenir votre équipe, vous êtes également au bon endroit.'
 					}
 				],
@@ -387,7 +387,7 @@ const cards: { [key: string]: Types.Cards } = {
 		},
 		{
 			title: 'Dispenser',
-			desc: 'Cliquez ici si vous êtes pharmaciens ou tout autre clinicien qui dispense actuellement ou envisage de délivrer du Mifé-Miso.',
+			desc: 'Cliquez ici si vous êtes pharmacien(ne) ou clinicien(ne) et que vous dispensez actuellement le Mifegymiso ou prévoyez de le faire.',
 			link: ['/dispenser', 'Voir']
 		},
 		{
@@ -415,8 +415,8 @@ const surveys: { [key: string]: Types.Survey } = {
 		title_init: 'Aidez-nous à mieux vous soutenir',
 		title_end: 'Merci beaucoup',
 		para_init: [
-			'Par défaut, ce site web ne stocke pas d’informations d’identification sur l’appareil ou l’utilisateur du site web. Avec ce paramètre, vous pourriez voir notre sondage d’évaluation plus d’une fois. Ce sondage vise à recueillir votre expérience en tant qu’utilisateur.',
-			'Lorsque vous choisissez d’activer les cookies, vous consentez à partager les informations de votre appareil et vous serez invité à remplir ce sondage une seule fois.'
+			'Par défaut, ce site web ne stocke pas de données d’identification de l’appareil ou de l’utilisateur. Avec ce paramètre, vous pourriez voir notre sondage d’évaluation plus d’une fois. Ce sondage vise à mesurer votre expérience utilisateur et à recueillir vos commentaires.',
+			'En choisissant d’activer les témoins (cookies), vous consentez à partager les données de votre appareil et vous ne serez invité à remplir ce sondage qu’une seule fois.'
 		],
 		para_end: ['Vos commentaires sont précieux pour nous, merci de participer au sondage.'],
 		button_init: 'Accepter les cookies',
@@ -433,7 +433,7 @@ const newsletters: { [key: string]: Types.Newsletter } = {
 	},
 	fr: {
 		title: 'Soyez au fait',
-		para: 'Inscrivez-vous à notre infolettre afin de connaître les différentes façons de faire partie de la communauté.',
+		para: 'Inscrivez-vous à notre infolettre afin de découvrir comment vous joindre à notre communauté.',
 		button: 'Soumettre'
 	}
 };
@@ -451,9 +451,9 @@ const aboutSOGCs: { [key: string]: Types.AboutSOGC } = {
 		image: assets.FrSOGCLarge,
 		title: 'À propos de la SOGC',
 		para: [
-			'La Société des obstétriciens et gynécologues du Canada (SOGC) est une association professionnelle en santé regroupant plus de 3 500 professionnels de la santé issus de différentes disciplines – notamment des obstétriciens, des gynécologues, des médecins de famille, des infirmières, des sages-femmes et des partenaires en santé – œuvrant dans le domaine de la santé sexuelle et reproductive.',
+			'La Société des obstétriciens et gynécologues du Canada (SOGC) est une association professionnelle en santé regroupant plus de 3 500 professionnel(le)s de la santé issus de différentes disciplines – notamment des obstétriciens, des gynécologues, des médecins de famille, des infirmières, des sages-femmes et des professionnels paramédicaux – œuvrant dans le domaine de la santé sexuelle et reproductive.',
 			'La mission de la SOGC est de promouvoir l’excellence des pratiques en obstétrique et en gynécologie, et d’améliorer la santé des femmes d’ici et d’ailleurs par la défense des droits, la collaboration, l’éducation et le leadership.',
-			'Chef de file canadien en matière de santé sexuelle et reproductive, la SOGC produit des lignes directrices nationales d’éducation publique et médicale.'
+			'Chef de file canadien en matière de santé sexuelle et reproductive, la SOGC produit des lignes directrices nationales pour la sensibilisation du public et la formation du corps médical.'
 		]
 	}
 };
@@ -717,7 +717,7 @@ const outlines: { [key: string]: any } = {
 			subpages: [
 				{
 					href: '/prescribing/about-mifegymiso#M1',
-					title: 'About Mifegymiso',
+					title: 'About Mifepristone/Misoprostol Tablets',
 					modules: {
 						M1: 'Mechanism of Action',
 						M2: 'Efficacy & Safety',
@@ -763,7 +763,7 @@ const outlines: { [key: string]: any } = {
 					title: 'Virtual & Hybrid Care',
 					modules: {
 						M21: 'Initial Steps',
-						M22: 'Virtual Assessment',
+						M22: 'Virtual Abortion or No-Test abortion Assessment',
 						M14: 'Informed Consent',
 						M23: 'Follow-up'
 					}
@@ -855,7 +855,7 @@ const outlines: { [key: string]: any } = {
 				},
 				{
 					href: '/dispensing/about-mifegymiso#M1',
-					title: 'About Mifegymiso',
+					title: 'About Mifepristone/Misoprostol Tablets',
 					modules: {
 						M1: 'Mechanism of action',
 						M29: 'Drug interactions',
@@ -972,7 +972,7 @@ const outlines: { [key: string]: any } = {
 			subpages: [
 				{
 					href: '/prescrire/a-propos-du-mife-miso#M1',
-					title: 'À propos du mifé-miso',
+					title: 'À propos des comprimés de mifépristone et de misoprostol',
 					modules: {
 						M1: 'Mécanisme d’action',
 						M2: 'Efficacité et sécurité',
@@ -983,7 +983,7 @@ const outlines: { [key: string]: any } = {
 					href: '/prescrire/counseling-de-la-personne#M5',
 					title: 'Counseling de la personne',
 					modules: {
-						M5: 'Counseling pré-avortement',
+						M5: 'Counseling préavortement',
 						M6: 'Options d’avortement',
 						M14: 'Consentement éclairé',
 						M15: 'Instructions d’administration',
@@ -993,7 +993,7 @@ const outlines: { [key: string]: any } = {
 				},
 				{
 					href: '/prescrire/evaluation-medicale#M8',
-					title: 'Évaluation pré-avortement',
+					title: 'Évaluation préavortement',
 					modules: {
 						M8: 'Dépistage de base',
 						M9: 'Détermination de l’âge gestationnel',
@@ -1018,7 +1018,7 @@ const outlines: { [key: string]: any } = {
 					title: 'Soins virtuels et hybrides',
 					modules: {
 						M21: 'Étapes initiales',
-						M22: 'Évaluation virtuelle',
+						M22: 'Évaluation virtuelle ou évaluation sans test préalable',
 						M14: 'Consentement éclairé',
 						M23: 'Suivi'
 					}
@@ -1048,11 +1048,11 @@ const outlines: { [key: string]: any } = {
 					href: '/prescrire/reglements-assurance-inclusivite#M26',
 					title: 'Règlements, assurance et inclusivité',
 					modules: {
-						M26: 'Contexte réglementaire',
+						M26: 'Contexte règlementaire',
 						M27: 'Configuration des installations',
 						M28: 'Répondre aux préoccupations liées à l’avortement',
 						C1: 'Régimes d’assurance fédéraux',
-						M36: 'Personnes non-assurées',
+						M36: 'Personnes non assurés',
 						M37: 'Personnes 2ELGBTQIA+',
 						M38: 'Personnes autochtones'
 					}
@@ -1061,7 +1061,7 @@ const outlines: { [key: string]: any } = {
 					href: '/prescrire/ressources-cliniques#S1',
 					title: 'Lignes directrices et autres ressources',
 					modules: {
-						S1: 'Guides et aides-mémoires',
+						S1: 'Guides et aide-mémoires',
 						S2: 'Formations et webinaires',
 						S3: 'Monographies, lignes directrices et protocoles',
 						S4: 'Exemples de formulaires de consentement',
@@ -1079,7 +1079,7 @@ const outlines: { [key: string]: any } = {
 					title: 'Couverture et assurance',
 					modules: {
 						C1: 'Régimes d’assurance fédéraux',
-						M36: 'Personnes non-assurées',
+						M36: 'Personnes non assurés',
 						C2: 'Alberta',
 						C3: 'Colombie-Britannique',
 						C4: 'Manitoba',
@@ -1110,7 +1110,7 @@ const outlines: { [key: string]: any } = {
 				},
 				{
 					href: '/dispenser/a-propos-du-mife-miso#M1',
-					title: 'À propos du mifé-miso',
+					title: 'À propos des comprimés de mifépristone et de misoprostol',
 					modules: {
 						M1: 'Mécanisme d’action',
 						M29: 'Interactions médicamenteuses',
@@ -1126,7 +1126,7 @@ const outlines: { [key: string]: any } = {
 					href: '/dispenser/reglements-inclusivite#M26',
 					title: 'Réglements et inclusivité',
 					modules: {
-						M26: 'Contexte réglementaire',
+						M26: 'Contexte règlementaire',
 						M35: 'Configuration des installations',
 						M28: 'Répondre aux préoccupations liées à l’avortement',
 						M37: 'Personnes 2ELGBTQIA+',
@@ -1137,7 +1137,7 @@ const outlines: { [key: string]: any } = {
 					href: '/dispenser/ressources-cliniques#S8',
 					title: 'Lignes directrices et autres ressources',
 					modules: {
-						S8: 'Guides et aides-mémoires',
+						S8: 'Guides et aide-mémoires',
 						S9: 'Formations et webinaires',
 						S10: 'Monographies, lignes directrices et protocoles',
 						S11: 'Affiches et documents pour la patientèle',
@@ -1154,7 +1154,7 @@ const outlines: { [key: string]: any } = {
 					title: 'Avortement par medicaments',
 					modules: {
 						M39: 'À propos du MIFÉ-MISO',
-						M3: 'Indications et contraindications',
+						M3: 'Indications et contre-indications',
 						M40: 'Qui peut prescrire',
 						M41: 'Où obtenir le medicament'
 					}
@@ -1216,7 +1216,7 @@ const outlines: { [key: string]: any } = {
 				},
 				{
 					href: '/faq#F6',
-					title: 'Methadone',
+					title: 'Méthadone',
 					modules: {}
 				}
 			]
